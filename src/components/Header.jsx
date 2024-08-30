@@ -21,11 +21,11 @@ const Header = () => {
       </section>
       <section className="w-full flex flex-row justify-around h-16 md:h-20 bg-dark-gray px-5">
         <div className="flex justify-start items-center basis-1/2 md:basis-1/6 text-white">
-          <Link to="/">
+          <Link to="/prime-detailing">
             <p className="font-sans text-white text-xl font-bold md:text-2xl">
               PRIME
             </p>
-            <p className="font-sans text-white text-center text-xs md:text-sm">
+            <p className="font-sans text-white text-center text-xs tracking-widest">
               DETAILING
             </p>
           </Link>

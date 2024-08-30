@@ -39,7 +39,7 @@ const Navbar = () => {
             <NavLink
               onClick={() => setMenuOpen(!menuOpen)}
               to={`/${link}`}
-              className="flex justify-center items-center text-gray md:hover:text-white focus:text-white hover:text-white bg-black md:bg-inherit hover:bg-dark-gray md:hover:bg-inherit w-[100%] h-12 md:w-full text-base font-semibold focus:font-bold p-2"
+              className="flex justify-center items-center text-gray md:hover:text-white focus:text-white hover:text-white bg-black md:bg-inherit hover:bg-dark-gray md:hover:bg-inherit w-[100%] h-12 md:w-full text-base  focus:font-bold p-2"
             >
               {link}
             </NavLink>
