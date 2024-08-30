@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./UI/Button";
-import detailingVideo from "../assets/videos/6158070-hd_1920_1080_30fps.mp4";
+import detailingVideo from "../assets/videos/6158070-hd_1920_1080_30fps_resized.mp4";
 
 const Hero = () => {
   return (
