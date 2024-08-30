@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <main className="w-full z-10">
       <div className="relative">
-        <div>
+        <div className="bg-black">
           <video
-            className="opacity-40 object-cover min-h-[450px]"
+            className="opacity-40 object-cover min-h-[450px] w-full mx-auto"
             autoPlay
             loop
             muted
@@ -25,7 +25,7 @@ const Hero = () => {
             and safeguard your vehicle with the care it deserves.
           </p>
           <div className="pt-2 md:pt-5 flex flex-col xs:flex-row justify-center items-center">
-            <div className="md:p-2">
+            <div className="p-2 md:p-5">
               <Button children={"BOOK NOW"} color={"primary"} />
             </div>
             <div className="md:p-2">
