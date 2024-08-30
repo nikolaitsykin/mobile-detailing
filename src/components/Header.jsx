@@ -4,7 +4,7 @@ import Navbar from "./UI/Navbar";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <header className="flex flex-col w-full top-0 z-999">
+    <header className="flex flex-col w-full sticky top-0 z-20">
       <section className="h-16 md:h-20 flex flex-col justify-between sm:flex-row w-full bg-dark-gray px-5">
         <div className="flex items-center basis-1/2 md:basis-1/3">
           <span className="text-white text-xs sm:text-sm md:text-base">
@@ -30,10 +30,10 @@ const Header = () => {
             </p>
           </Link>
         </div>
-        <div className="flex justify-between items-center w-full ">
+        <div className="flex justify-between items-center w-full">
           <Navbar />
         </div>
-        <div className="ml-0 hidden md:visible md:flex md:flex-col justify-center items-end basis-1/2 md:basis-1/6  min-w-40">
+        <div className=" hidden md:visible md:flex md:flex-col justify-center items-end basis-1/2 md:basis-1/6 min-w-36">
           <span className="text-white font-sans text-xs md:text-sm">
             FREE CONSULTATION
           </span>

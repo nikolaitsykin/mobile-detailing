@@ -34,7 +34,7 @@ const Navbar = () => {
         {links.map((link) => (
           <li
             key={link}
-            className="flex jutify-end md:justify-center items-center basis-1/6 rounded-lg"
+            className="flex jutify-end md:justify-center items-center basis-1/6"
           >
             <NavLink
               onClick={() => setMenuOpen(!menuOpen)}

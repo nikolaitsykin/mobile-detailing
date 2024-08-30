@@ -5,7 +5,7 @@ import deluxeInteriorWashImage from "./assets/images/pexels-khunkorn-laowisit-13
 import deluxeExteriorWashImage from "./assets/images/AdobeStock_799868847.jpeg";
 import premiumInteriorWashImage from "./assets/images/AdobeStock_539555302.jpeg";
 import regularInteriorWashImage from "./assets/images/AdobeStock_399584907.jpeg";
-import regularExteriorWashImage from "./assets/images/car-wash-detailing-station (1).jpg";
+import regularExteriorWashImage from "./assets/images/car-wash-detailing-station_1.jpg";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
 export const secondaryStyle =
