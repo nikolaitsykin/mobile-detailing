@@ -1,14 +1,12 @@
 import React from "react";
 import Button from "./UI/Button";
 import detailingVideo from "../assets/videos/6158070-hd_1920_1080_30fps.mp4";
-import Video from "./Video";
 
 const Hero = () => {
   return (
     <main className="w-full z-10">
       <div className="relative">
         <div className="bg-black">
-          {/* <Video /> */}
           <video
             className="opacity-40 object-cover min-h-[450px] w-full mx-auto"
             autoPlay

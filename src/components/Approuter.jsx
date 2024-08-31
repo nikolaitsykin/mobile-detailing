@@ -8,6 +8,7 @@ import Membership from "./routes/Membership";
 import Reviews from "./routes/Reviews";
 import Root from "./routes/Root";
 import Services from "./routes/Services";
+import Hero from "./Hero";
 
 const Approuter = () => {
   const router = [
@@ -42,8 +43,13 @@ const Approuter = () => {
       errorElement: <ErrorPage />,
     },
     {
-      path: "/Services",
+      path: "/services",
       element: <Services />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "*",
+      element: <Hero />,
       errorElement: <ErrorPage />,
     },
   ];

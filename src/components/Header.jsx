@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="flex flex-col w-full sticky top-0 z-20">
-      <section className="h-16 md:h-20 flex flex-col justify-between sm:flex-row w-full bg-dark-gray px-5 lg:px-16">
+      <section className="h-16 md:h-20 flex justify-between w-full bg-dark-gray px-5 lg:px-16">
         <div className="flex items-center basis-1/2 md:basis-1/3">
-          <span className="text-white text-xs sm:text-sm md:text-base">
+          <span className="text-white text-sm md:text-base">
             Apex | Cary | Holly Springs
           </span>
         </div>
-        <div className="flex justify-center items-center basis-1/2 md:basis-1/3 ">
+        <div className="hidden md:flex md:visible justify-center items-center basis-1/2 md:basis-1/3 ">
           <span className="text-white px-4 text-xs s:text-sm sm:text-base md:text-lg font-semibold"></span>
         </div>
-        <div className="hidden md:flex md:justify-end md:basis-1/3 md:visible">
+        <div className="flex md:justify-end md:basis-1/3">
           <Button children={"Request Quote"} color={"primary"} />
         </div>
       </section>
@@ -22,10 +22,10 @@ const Header = () => {
         <div className="flex justify-start items-center basis-1/2 md:basis-1/6 text-white">
           <Link to="/prime-detailing">
             <div className="mx-5 lg:ml-16">
-              <p className="font-sans text-white text-xl font-bold md:text-2xl">
+              <p className="font-sans text-white font-bold text-2xl md:text-3xl">
                 PRIME
               </p>
-              <p className="font-sans text-white text-center text-xs tracking-widest">
+              <p className="font-sans text-white text-center text-xs tracking-widest md:text-sm">
                 DETAILING
               </p>
             </div>

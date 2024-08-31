@@ -11,8 +11,8 @@ const Button = ({ children, color, onClick }) => {
   return (
     <div className="flex items-center">
       <button
-        className={`text-xs s:text-sm sm:text-xs md:text-sm p-2 border shadow
-          min-w-40 sm:w-44 min-h-10 sm:h-10 flex justify-center items-center rounded-full
+        className={`text-xs md:text-sm p-2 border shadow
+          min-w-32 md:w-44 min-h-10 sm:h-10 flex justify-center items-center rounded-full
           ${buttonStyle[color]}
         `}
         onClick={onClick}
