@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/prime-detailing/static/css/main.662fd2ca.css",
-    "main.js": "/prime-detailing/static/js/main.e6bf0a44.js",
+    "main.css": "/prime-detailing/static/css/main.0f5636c5.css",
+    "main.js": "/prime-detailing/static/js/main.c75ef7d1.js",
     "static/media/6158070-hd_1920_1080_30fps.mp4": "/prime-detailing/static/media/6158070-hd_1920_1080_30fps.62f05731eddaa2614ef3.mp4",
     "static/media/AdobeStock_273206890.jpeg": "/prime-detailing/static/media/AdobeStock_273206890.6502cae9e3c962983d51.jpeg",
     "static/media/car-wash-detailing-station.jpg": "/prime-detailing/static/media/car-wash-detailing-station.dbc7e5a29b9e3ce175cb.jpg",
@@ -13,11 +13,11 @@
     "static/media/man-polish-salon-car-garage_1157-36595.jpg": "/prime-detailing/static/media/man-polish-salon-car-garage_1157-36595.dc215bfc77d6d7bba76a.jpg",
     "static/media/AdobeStock_799868847.jpeg": "/prime-detailing/static/media/AdobeStock_799868847.abd4f33da89da6c927ac.jpeg",
     "index.html": "/prime-detailing/index.html",
-    "main.662fd2ca.css.map": "/prime-detailing/static/css/main.662fd2ca.css.map",
-    "main.e6bf0a44.js.map": "/prime-detailing/static/js/main.e6bf0a44.js.map"
+    "main.0f5636c5.css.map": "/prime-detailing/static/css/main.0f5636c5.css.map",
+    "main.c75ef7d1.js.map": "/prime-detailing/static/js/main.c75ef7d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.662fd2ca.css",
-    "static/js/main.e6bf0a44.js"
+    "static/css/main.0f5636c5.css",
+    "static/js/main.c75ef7d1.js"
   ]
 }
