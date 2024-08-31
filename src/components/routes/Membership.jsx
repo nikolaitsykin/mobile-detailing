@@ -7,8 +7,8 @@ import Button from "../UI/Button";
 const Membership = () => {
   return (
     <div className="bg-white">
-      <section className="w-[75%] mx-auto mt-7">
-        <h1 className="font-semibold text-xl text-center text-black my-3">
+      <section className="w-[75%] mx-auto pt-5">
+        <h1 className=" text-xl text-center text-black my-3">
           Prime Membership: Shine All Year Long
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
@@ -20,7 +20,7 @@ const Membership = () => {
             exclusive member-only rates.
           </p>
           <div className="bg-gray text-black rounded-xl p-3">
-            <h2 className=" text-lg font-semibold">Membership Benefits:</h2>
+            <h2 className=" text-lg ">Membership Benefits:</h2>
             <ul className="text-sm px-4 ">
               {membershipBenefits.map((benefit) => (
                 <li key={benefit} className="list-disc leading-5 py-1">
@@ -29,7 +29,7 @@ const Membership = () => {
               ))}
             </ul>
           </div>
-          <h2 className="text-lg font-semibold text-center mt-7 text-black">
+          <h2 className="text-lg  text-center mt-7 text-black">
             Subscription Plans
           </h2>
           <div className="text-black rounded-xl">

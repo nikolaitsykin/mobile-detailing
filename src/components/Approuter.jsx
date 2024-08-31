@@ -13,7 +13,7 @@ import Hero from "./Hero";
 const Approuter = () => {
   const router = [
     {
-      path: "/prime-detailing/",
+      path: "/",
       element: <Root />,
       errorElement: <ErrorPage />,
     },

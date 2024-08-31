@@ -5,7 +5,7 @@ import Card from "./Card";
 const Package = ({ packageType }) => {
   return (
     <div aria-label="Essential" className="min-h-[810px] w-full p-2 text-black">
-      <h2 className="font-semibold text-xl text-center  pt-2">
+      <h2 className=" text-xl text-center  pt-2">
         {packageType.title}
       </h2>
       <p className="text-center text-md w-144 p-2">{packageType.duration}</p>

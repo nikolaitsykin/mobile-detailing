@@ -22,11 +22,14 @@ const Navbar = (props) => {
     "About",
   ];
 
+  const navLinkStyle =
+    "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white bg-black lg:bg-inherit hover:bg-gray lg:hover:bg-inherit w-[100%] h-12 lg:w-full text-base focus:font-bold p-2";
+
   return (
-    <nav className="w-full text-white flex flex-col md:flex-row md:justify-evenly items-end">
+    <nav className="w-full text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="mx-5 md:mx-10 md:hidden items-end"
+        className="mx-5 md:mx-10 lg:hidden items-end"
       >
         {isMenuOpen ? (
           <RxCross1 size="2rem" color="fffafa" />
@@ -35,19 +38,21 @@ const Navbar = (props) => {
         )}
       </div>
       <ul
-        className={`top-32 w-full ${
+        className={`top-32 lg:top-40 w-full ${
           isMenuOpen ? "absolute" : "hidden"
-        } flex md:flex md:static flex-col md:flex-row w-full`}
+        } flex lg:flex lg:static flex-col lg:flex-row w-full`}
       >
         {links.map((link) => (
           <li
             key={link}
-            className="flex jutify-end md:justify-center items-center basis-1/6"
+            className="flex jutify-end lg:justify-center items-center basis-1/6"
           >
             <NavLink
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               to={`/${link}`}
-              className="flex justify-center items-center text-gray md:hover:text-white focus:text-white hover:text-white bg-black md:bg-inherit hover:bg-dark-gray md:hover:bg-inherit w-[100%] h-12 md:w-full text-base  focus:font-bold p-2"
+              className={({ isActive }) =>
+                isActive ? `text-white font-semibold ${navLinkStyle}` : `text-gray ${navLinkStyle}`
+              }
             >
               {link}
             </NavLink>

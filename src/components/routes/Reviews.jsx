@@ -3,8 +3,8 @@ import React from "react";
 const Reviews = () => {
   return (
     <div className="bg-white">
-      <section className="w-[75%] mx-auto mt-7">
-        <h1 className="font-semibold text-xl text-center text-black my-3">
+      <section className="w-[75%] mx-auto pt-5">
+      <h1 className=" text-xl text-center text-black my-3">
           Reviews
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">

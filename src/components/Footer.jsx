@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="flex justify-evenly flex-col md:flex-row">
           <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3 px-4 flex justify-start ">
             <div className="min-w-48">
-              <h2 className=" text-md md:text-lg font-semibold">
+              <h2 className="text-white  text-md md:text-lg ">
                 Prime Detailing
               </h2>
               <p className="text-xs md:text-sm font-light py-2">
@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="flex basis-1/2 md:basis-2/3 ">
             <div className="basis-1/2 px-4">
               <div className="flex flex-col min-w-42">
-                <h2 className="font-semibold text-md md:text-lg ">Links</h2>
+                <h2 className="text-white  text-md md:text-lg ">Links</h2>
                 <ul className="pt-2">
                   {links.map((link) => (
                     <li
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             <div className="basis-1/2 px-4">
               <div className="min-w-42">
-                <h2 className="font-semibold text-md md:text-lg  mb-3">
+                <h2 className="text-white  text-md md:text-lg mb-3">
                   Adress
                 </h2>
                 <span className=" text-xs sm:text-sm md:text-md font-light my-3">
@@ -56,7 +56,7 @@ const Footer = () => {
                 </span>
               </div>
               <div className="pt-3">
-                <h2 className="font-semibold text-md md:text-lg ">
+                <h2 className="text-white  text-md md:text-lg ">
                   Open Hours
                 </h2>
                 <span className="text-start  text-xs sm:text-sm md:text-md font-light">
