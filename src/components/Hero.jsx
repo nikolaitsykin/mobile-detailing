@@ -14,9 +14,8 @@ const Hero = () => {
             muted
             type="video/mp4"
             playsInline
-          >
-            <sourse src={detailingVideo} />
-          </video>
+            src={detailingVideo}
+          />
         </div>
         <div className="absolute top-1 sm:inset-y-8 px-10 py-32 sm:px-32">
           <p className="text-white text-xl md:text-4xl w-full flex justify-center">

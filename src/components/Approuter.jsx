@@ -12,7 +12,7 @@ import Services from "./routes/Services";
 const Approuter = () => {
   const router = [
     {
-      path: "/prime-detailing",
+      path: "/prime-detailing/",
       element: <Root />,
       errorElement: <ErrorPage />,
     },
