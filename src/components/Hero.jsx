@@ -31,7 +31,9 @@ const Hero = () => {
               <Button children={"BOOK NOW"} color={"primary"} />
             </div>
             <div className="md:p-2">
-              <Button children={"CALL NOW"} color={"primary"} />
+              <a href="tel:2673106864" className="flex">
+                <Button children={"CALL NOW"} color={"primary"} />
+              </a>
             </div>
           </div>
         </div>
