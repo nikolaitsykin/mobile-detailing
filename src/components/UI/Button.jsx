@@ -3,9 +3,9 @@ import React from "react";
 const Button = ({ children, color, onClick, type }) => {
   const buttonStyle = {
     primary:
-      "text-black bg-gray hover:bg-black hover:text-white border-dark-gray hover:border-white",
+      "text-black bg-gray active:bg-black active:text-white border-dark-gray active:border-white hover:scale-105",
     secondary:
-      "text-white hover:text-white bg-blue hover:bg-dark-blue border-blue hover:border-white",
+      "text-white active:text-white bg-blue active:bg-dark-blue border-blue active:border-white hover:scale-105",
   };
 
   return (

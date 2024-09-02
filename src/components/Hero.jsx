@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <main className=" w-full z-10">
+    <main className="w-full z-10">
       <div className="relative">
         <div className="bg-black">
           <video
@@ -40,6 +40,18 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        <section className="w-[80%] mx-auto py-16">
+          <div className="text-black text-xs md:text-sm w-full flex justify-center">
+            We Bring Detailing to Your Doorstep Whether you’re at home, your
+            apartment, or the office, we come to you. Our fully equipped mobile
+            detailing unit carries everything needed—including our own power and
+            water supply—to provide top-notch service wherever you are. All we
+            need is access to your vehicle, and we’ll take care of the rest. We
+            proudly serve Goldsboro, NC, and the surrounding areas. While there
+            may be some location-based limitations or criteria, we always strive
+            to accommodate your needs and schedule you in.
+          </div>
+        </section>
       </div>
     </main>
   );
