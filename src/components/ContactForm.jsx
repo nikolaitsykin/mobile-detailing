@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import InputField from "../UI/InputField";
-import SelectField from "../UI/SelectField";
-import TextareaField from "../UI/TextareaField";
+import InputField from "./UI/InputField";
+import SelectField from "./UI/SelectField";
+import TextareaField from "./UI/TextareaField";
 import emailjs from "@emailjs/browser";
-import Button from "../UI/Button";
+import Button from "./UI/Button";
 
 const ContactForm = () => {
   const [values, setValues] = useState({
@@ -56,7 +56,7 @@ const ContactForm = () => {
     }));
   };
   return (
-    <div className="w-[70%] mx-auto">
+    <div className="w-[90%] md:w-[70%] mx-auto">
       {status && renderAlert()}
       <form
         className="flex flex-col items-center justify-center w-full"
