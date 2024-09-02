@@ -1,13 +1,13 @@
 import React from "react";
 import img from "../../assets/images/car-wash-detailing-station.jpg";
-import { membershipBenefits, monthly, beWeekly } from "../../constants";
+import { membershipBenefits, monthly, biWeekly } from "../../constants";
 import Card from "../Card";
 import Button from "../UI/Button";
 
 const Membership = () => {
   return (
-    <div className="bg-white">
-      <section className="w-[75%] mx-auto pt-5">
+    <div className="bg-white py-8">
+      <section className="w-[75%] mx-auto">
         <h1 className=" text-xl text-center text-black my-3">
           Prime Membership: Shine All Year Long
         </h1>
@@ -38,12 +38,12 @@ const Membership = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 place-items-center bg-gray rounded-xl">
               <Card
-                title={beWeekly.title}
-                services={beWeekly.service}
+                title={biWeekly.title}
+                services={biWeekly.service}
                 image={img}
-                price={beWeekly.prices}
-                packageType={beWeekly.package}
-                discount={beWeekly.discount}
+                price={biWeekly.prices}
+                packageType={biWeekly.package}
+                discount={biWeekly.discount}
               />
 
               <Card

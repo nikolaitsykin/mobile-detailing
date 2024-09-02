@@ -9,8 +9,8 @@ import Package from "../Package";
 
 const Services = () => {
   return (
-    <div className="bg-white">
-      <section className="w-[75%] mx-auto pt-5">
+    <div className="bg-white py-8">
+      <section className="w-[75%] mx-auto">
       <h1 className=" text-xl text-center text-black my-3">
           Services
         </h1>

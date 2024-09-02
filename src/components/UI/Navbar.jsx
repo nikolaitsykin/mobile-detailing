@@ -29,7 +29,7 @@ const Navbar = (props) => {
     <nav className="w-full text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="mx-5 md:mx-10 lg:hidden items-end"
+        className="mx-5 lg:hidden items-end"
       >
         {isMenuOpen ? (
           <RxCross1 size="2rem" color="fffafa" />
@@ -38,20 +38,22 @@ const Navbar = (props) => {
         )}
       </div>
       <ul
-        className={`top-32 lg:top-40 w-full ${
+        className={`top-32 md:top-40 w-full ${
           isMenuOpen ? "absolute" : "hidden"
         } flex lg:flex lg:static flex-col lg:flex-row w-full`}
       >
         {links.map((link) => (
           <li
             key={link}
-            className="flex jutify-end lg:justify-center items-center basis-1/6"
+            className="flex jutify-end lg:justify-center items-center md:basis-1/6"
           >
             <NavLink
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               to={`/${link}`}
               className={({ isActive }) =>
-                isActive ? `text-white font-semibold ${navLinkStyle}` : `text-gray ${navLinkStyle}`
+                isActive
+                  ? `text-white font-semibold ${navLinkStyle}`
+                  : `text-gray ${navLinkStyle}`
               }
             >
               {link}

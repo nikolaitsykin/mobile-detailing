@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "./UI/Button";
 import detailingVideo from "../assets/videos/6158070-hd_1920_1080_30fps.mp4";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <main className="w-full z-10">
+    <main className=" w-full z-10">
       <div className="relative">
         <div className="bg-black">
           <video
@@ -28,7 +29,9 @@ const Hero = () => {
           </p>
           <div className="pt-2 md:pt-5 flex flex-col xs:flex-row justify-center items-center">
             <div className="p-2 md:p-5">
-              <Button children={"BOOK NOW"} color={"primary"} />
+              <Link to="/booking">
+                <Button children={"BOOK NOW"} color={"primary"} />
+              </Link>
             </div>
             <div className="md:p-2">
               <a href="tel:2673106864" className="flex">

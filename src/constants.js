@@ -194,7 +194,7 @@ export const regularWash = {
   duration: "for Members Only.",
 };
 
-export const beWeekly = {
+export const biWeekly = {
   title: "Bi-Weekly",
   service: [
     "For those who demand their vehicle always looksimmaculate, with a full detail every two weeks with the best price.",

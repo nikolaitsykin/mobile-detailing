@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Package = ({ packageType }) => {
   return (
-    <div aria-label="Essential" className="min-h-[810px] w-full p-2 text-black">
+    <div aria-label={packageType.title} className=" w-full p-2 text-black">
       <h2 className=" text-xl text-center  pt-2">
         {packageType.title}
       </h2>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ children, color, onClick }) => {
+const Button = ({ children, color, onClick, type }) => {
   const buttonStyle = {
     primary:
       "text-black bg-gray hover:bg-black hover:text-white border-dark-gray hover:border-white",
@@ -16,7 +16,7 @@ const Button = ({ children, color, onClick }) => {
           ${buttonStyle[color]}
         `}
         onClick={onClick}
-        type="button"
+        type={type}
         tabIndex={0}
       >
         {children}
