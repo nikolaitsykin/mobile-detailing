@@ -1,28 +1,58 @@
 import React from "react";
 import PriceTable from "./PriceTable";
+import { Link } from "react-router-dom";
+import Button from "./UI/Button";
 
-const Card = ({ title, image, services, price, discount, packageType }) => {
+const Card = ({
+  title,
+  image,
+  description,
+  services,
+  price,
+  discount,
+  packageType,
+  button,
+}) => {
   return (
-    <div className="w-full min-h-96 h-full flex flex-col items-center justify-between rounded-2xl p-3 mx-2 bg-gray text-black">
-      <h3 className="text-center  ">{title}</h3>
+    <div className="w-full h-full flex flex-col items-center justify-between rounded-2xl p-3 mx-auto bg-gray text-black">
       <img
-        className="w-full max-w-80 align-start rounded-lg my-2"
+        className="w-full  align-start rounded-lg my-2"
         src={image}
         alt="Car wash"
       />
-      <div className="flex flex-col w-full max-w-80 my-1">
-        {services.map((service) => (
-          <p key={service} className="text-start list-none text-sm p-1">
-            {service}
-          </p>
-        ))}
-      </div>
+      <h3 className="text-center">{title}</h3>
+      {description && (
+        <div className="flex flex-col w-full my-1">
+          <p className="text-sm">{description}</p>
+        </div>
+      )}
+      {services && (
+        <div className="flex flex-col w-full my-1 h-full">
+          <ul>
+            {services.map((service) => (
+              <li
+                key={service}
+                className="text-start list-none text-sm p-[2px]"
+              >
+                {service}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       {price && (
         <PriceTable
           packageType={packageType}
           price={price}
           discount={discount}
         />
+      )}
+      {button && (
+        <div className="w-full my-1 flex justify-center">
+          <Link to="/services">
+            <Button children={button} color={"secondary"} />
+          </Link>
+        </div>
       )}
     </div>
   );

@@ -1,11 +1,17 @@
-import basicExteriorWashImage from "./assets/images/car-front-foglight.jpg";
-import basicInteriorWashImage from "./assets/images/man-polish-salon-car-garage_1157-36595.jpg";
+import interiorDetailingServiceImage from "./assets/images/AdobeStock_243325383.jpeg";
 import premiumExteriorWashImage from "./assets/images/AdobeStock_273206890.jpeg";
-import deluxeInteriorWashImage from "./assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
-import deluxeExteriorWashImage from "./assets/images/AdobeStock_799868847.jpeg";
-import premiumInteriorWashImage from "./assets/images/AdobeStock_539555302.jpeg";
+import paintCorrectionServiceImage from "./assets/images/AdobeStock_358030596.jpeg";
+import ceramicCoatingServiceImage from "./assets/images/AdobeStock_359545366.jpeg";
+import exteriorDetailingServiceImage from "./assets/images/AdobeStock_397247724.jpeg";
 import regularInteriorWashImage from "./assets/images/AdobeStock_399584907.jpeg";
+import ppfServiceImage from "./assets/images/AdobeStock_428622212.jpeg";
+import premiumInteriorWashImage from "./assets/images/AdobeStock_539555302.jpeg";
+import deluxeExteriorWashImage from "./assets/images/AdobeStock_799868847.jpeg";
+import headlightRestorationServiceImage from "./assets/images/AdobeStock_892817405.jpeg";
+import basicExteriorWashImage from "./assets/images/car-front-foglight.jpg";
 import regularExteriorWashImage from "./assets/images/car-wash-detailing-station_1.jpg";
+import basicInteriorWashImage from "./assets/images/man-polish-salon-car-garage_1157-36595.jpg";
+import deluxeInteriorWashImage from "./assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
 export const secondaryStyle =
@@ -18,15 +24,14 @@ export const basicExteriorServices = [
   "✔ Rim Cleaning w/ Safe Brushes",
   "✔ Tire Shining",
   "✔ Drying w/ Extremely Soft Towels",
-  "✔ Spray Wax",
   "✔ Windows Cleaning",
-  "✔ Satine Black Tire Dressing",
+  "✔ Spray Wax",
+  "✘ Satine Black Tire Dressing",
   "✘ Iron Removal",
   "✘ Clay Bar Exterior Surfaces",
   "✘ 2 Stage Bug & Tar Prep",
   "✘ One Stage Rotary Polish",
   "✘ Spray Premium Ceramic Coating",
-  "✘ 2 Stage Rotary Cut & Polish",
 ];
 export const basicInteriorServices = [
   "✔ Door Seals and Door Jamb Cleaning",
@@ -43,7 +48,6 @@ export const basicInteriorServices = [
   "✘ Headliner cleaning w/ Enzyme Cleaner",
   "✘ Ozone Generator Treatment",
   "✘ Eliminate dirt, stains, germs & bacteria",
-  "✘ Front and Rear Seat Removal",
 ];
 
 export const primeExteriorServices = [
@@ -53,15 +57,14 @@ export const primeExteriorServices = [
   "✔ Rim Cleaning w/ Safe Brushes",
   "✔ Tire Shining",
   "✔ Drying w/ Extremely Soft Towels",
-  "✔ Spray Wax",
   "✔ Windows Cleaning",
+  "✔ Spray Wax",
   "✔ Satine Black Tire Dressing",
   "✔ Iron Removal",
   "✔ Clay Bar Exterior Surfaces",
   "✔ 2 Stage Bug & Tar Prep",
   "✘ One Stage Rotary Polish",
   "✘ Spray Premium Ceramic Coating",
-  "✘ 2 Stage Rotary Cut & Polish",
 ];
 export const primeInteriorServices = [
   "✔ Door Seals and Door Jamb Cleaning",
@@ -78,7 +81,6 @@ export const primeInteriorServices = [
   "✘ Headliner cleaning w/ Enzyme Cleaner",
   "✘ Ozone Generator Treatment",
   "✘ Eliminate dirt, stains, germs & bacteria",
-  "✘ Front and Rear Seat Removal",
 ];
 
 export const deluxeExteriorServices = [
@@ -88,15 +90,14 @@ export const deluxeExteriorServices = [
   "✔ Rim Cleaning w/ Safe Brushes",
   "✔ Tire Shining",
   "✔ Drying w/ Extremely Soft Towels",
-  "✔ Spray Wax",
   "✔ Windows Cleaning",
+  "✔ Spray Wax",
   "✔ Satine Black Tire Dressing",
   "✔ Iron Removal",
   "✔ Clay Bar Exterior Surfaces",
   "✔ 2 Stage Bug & Tar Prep",
   "✔ One Stage Rotary Polish",
   "✔ Spray Premium Ceramic Coating",
-  "✔ 2 Stage Rotary Cut & Polish",
 ];
 export const deluxeInteriorServices = [
   "✔ Door Seals and Door Jamb Cleaning",
@@ -113,7 +114,6 @@ export const deluxeInteriorServices = [
   "✔ Headliner cleaning w/ Enzyme Cleaner",
   "✔ Ozone Generator Treatment",
   "✔ Eliminate dirt, stains, germs & bacteria",
-  "✔ Front and Rear Seat Removal",
 ];
 
 export const regularExteriorServices = [
@@ -221,3 +221,40 @@ export const membershipBenefits = [
   "Monthly Service: Get your vehicle serviced every month, with a monthly detail at a discounted rate.",
   // "Bonus Perks: Receive complimentary add-ons like tire shine, interior fragrance, or seasonal protection services",
 ];
+
+export const exteriorDetailingService = {
+  title: "Exterior Detailing",
+  description:
+    "Our exterior wash service at Prime Detailing includes a thorough hand wash, gentle decontamination, and precision drying, leaving your vehicle spotless and protected from the elements.",
+  image: exteriorDetailingServiceImage,
+};
+export const interiorDetailingService = {
+  title: "Interior Detailing",
+  description:
+    "Our interior detailing service at Prime Detailing includes deep cleaning, vacuuming, upholstery treatment, and conditioning of all surfaces. We ensure your vehicle’s interior is fresh, spotless, and comfortable, down to the smallest detail",
+  image: interiorDetailingServiceImage,
+};
+export const paintCorrectionService = {
+  title: "Paint Correction",
+  description:
+    "Our paint correction service at Prime Detailing carefully removes swirl marks, scratches, and imperfections, restoring your vehicle’s paint to a flawless, showroom-quality finish.  image: paintCorrectionServiceImage.",
+  image: paintCorrectionServiceImage,
+};
+export const headlightRestorationService = {
+  title: "Headlight Restoration",
+  description:
+    "Our headlight restoration service at Prime Detailing removes oxidation and haze, restoring clarity and brightness to your headlights. We improve visibility and enhance your vehicle’s overall appearance.",
+  image: headlightRestorationServiceImage,
+};
+export const ceramicCoatingService = {
+  title: "Ceramic Coating",
+  description:
+    "Our ceramic coating service at Prime Detailing provides a durable, high-gloss layer of protection that shields your vehicle’s paint from UV rays, dirt, and contaminants, keeping it looking pristine for longer.",
+  image: ceramicCoatingServiceImage,
+};
+export const ppfService = {
+  title: "Paint Protection Film",
+  description:
+    "Our paint protection film service at Prime Detailing applies a nearly invisible layer of durable film to your vehicle's exterior, safeguarding the paint from chips, scratches, and road debris while preserving its flawless finish.",
+  image: ppfServiceImage,
+};

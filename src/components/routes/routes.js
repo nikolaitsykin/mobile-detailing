@@ -3,14 +3,14 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import ErrorPage from "../error-page";
 import Hero from "../Hero";
-import About from "../routes/About";
-import Booking from "../routes/Booking";
-import FAQs from "../routes/FAQs";
-import Gallery from "../routes/Gallery";
-import Membership from "../routes/Membership";
-import Reviews from "../routes/Reviews";
+import About from "./AboutPage";
+import Booking from "./BookingPage";
+import FAQs from "./FAQsPage";
+import Gallery from "./GalleryPage";
+import Membership from "./MembershipPage";
+import Reviews from "./ReviewsPage";
 import Root from "../routes/Root";
-import Services from "../routes/Services";
+import Services from "../routes/ServicesPage";
 
 export const routes = createBrowserRouter([
   {

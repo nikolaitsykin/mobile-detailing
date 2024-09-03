@@ -8,7 +8,7 @@ const Package = ({ packageType }) => {
       <h2 className=" text-xl text-center  pt-2">
         {packageType.title}
       </h2>
-      <p className="text-center text-md w-144 p-2">{packageType.duration}</p>
+      <p className="text-center text-md p-2">{packageType.duration}</p>
       <div className="flex justify-center items-center md:items-start flex-col md:flex-row px-2">
         <Card
           title={packageType.exteriorTitle}

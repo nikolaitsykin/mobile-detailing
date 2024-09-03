@@ -4,16 +4,14 @@ import {
   deluxePackage,
   primePackage,
   regularWash,
-} from "../../constants";
+} from "../../data";
 import Package from "../Package";
 
 const Services = () => {
   return (
     <div className="bg-white py-8">
       <section className="w-[80%] mx-auto">
-      <h1 className=" text-xl text-center text-black my-3">
-          Services
-        </h1>
+        <h1 className="text-3xl text-center text-black my-3">Services</h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
           Washing a car may seem simple, but achieving a flawless finish
           requires more than just a quick rinse. If you're looking for a fast,

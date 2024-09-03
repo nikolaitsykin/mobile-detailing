@@ -17,7 +17,7 @@ const Header = () => {
       <section className="h-16 md:h-20 flex justify-between w-full bg-dark-gray px-5 lg:px-16">
         <div className="flex items-center basis-1/2 md:basis-1/3">
           <span className="text-white text-sm md:text-base">
-            Apex | Cary | Holly Springs
+            Raleigh | Cary | Holly Springs
           </span>
         </div>
         <div className="hidden md:flex md:visible justify-center items-center basis-1/2 md:basis-1/3 ">

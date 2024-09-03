@@ -21,19 +21,18 @@ const Footer = () => {
               <h2 className="text-white  text-md md:text-lg ">
                 Prime Detailing
               </h2>
-              <p className="text-xs md:text-sm font-light py-2">
-                Prime is your premier destination for top-notch automotive
-                detailing services. We specialize in enhancing the beauty of
-                your vehicle through meticulous care and superior products.
-                Discover a new level of brilliance for your car with Prime
-                Detailing!
+              <p className="text-xs md:text-sm font-light pt-3">
+                Prime Detailing, based in Apex, serves the Triangle area with
+                top-tier mobile automotive detailing. We specialize in ceramic
+                coating, paint protection film, paint restoration, and headlight
+                restoration—bringing high-quality care directly to you.
               </p>
             </div>
           </div>
           <div className="flex basis-1/2 md:basis-2/3 ">
             <div className="basis-1/2 px-4">
               <div className="flex flex-col min-w-42">
-                <h2 className="text-white  text-md md:text-lg ">Links</h2>
+                <h4 className="text-white  text-md md:text-lg ">Links</h4>
                 <ul className="pt-2">
                   {links.map((link) => (
                     <li
@@ -48,19 +47,17 @@ const Footer = () => {
             </div>
             <div className="basis-1/2 px-4">
               <div className="min-w-42">
-                <h2 className="text-white  text-md md:text-lg mb-3">
-                  Adress
-                </h2>
-                <span className=" text-xs sm:text-sm md:text-md font-light my-3">
-                  Cary | Apex | Holly Springs
+                <h4 className="text-white  text-md md:text-lg mb-3">Adress</h4>
+                <span className=" text-xs sm:text-sm md:text-md font-light">
+                  219 N Salem St, Apex, NC 27502
                 </span>
               </div>
-              <div className="pt-3">
-                <h2 className="text-white  text-md md:text-lg ">
+              <div className="pt-3 min-w-42">
+                <h4 className="text-white text-md md:text-lg mb-3">
                   Open Hours
-                </h2>
-                <span className="text-start  text-xs sm:text-sm md:text-md font-light">
-                  <p>MON-FRI 5-8PM </p>
+                </h4>
+                <span className="text-start text-xs sm:text-sm md:text-md font-light">
+                  <p>MON-FRI 5-8PM</p>
                   <p>SAT-SUN 9-5PM</p>
                 </span>
               </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../assets/images/car-wash-detailing-station.jpg";
-import { membershipBenefits, monthly, biWeekly } from "../../constants";
+import { membershipBenefits, monthly, biWeekly } from "../../data";
 import Card from "../Card";
 import Button from "../UI/Button";
 
@@ -8,7 +8,7 @@ const Membership = () => {
   return (
     <div className="bg-white py-8">
       <section className="w-[80%] mx-auto">
-      <h1 className=" text-xl text-center text-black my-3">
+        <h1 className=" text-3xl text-center text-black my-3">
           Prime Membership: Shine All Year Long
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
