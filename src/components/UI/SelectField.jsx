@@ -10,14 +10,20 @@ const SelectField = (props) => {
         onChange={handleChange}
         defaultValue="package"
         name={name}
-        className="w-full rounded-sm text-black border-dark-gray p-1"
+        className="w-full text-dark-dark-gray bg-light-gray p-1 text-sm"
       >
-        <option value="package" disabled>
+        <option  value="package" disabled>
           Choose Package
         </option>
-        <option value="basicDetail">Basic Detail</option>
-        <option value="primeDetail">Prime Detail</option>
-        <option value="deluxeDetail">Deluxe Detail</option>
+        <option  value="basicDetail">
+          Basic Detail
+        </option>
+        <option  value="primeDetail">
+          Prime Detail
+        </option>
+        <option  value="deluxeDetail">
+          Deluxe Detail
+        </option>
       </select>
     </div>
   );

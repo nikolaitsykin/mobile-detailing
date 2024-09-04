@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="relative">
         <div className="bg-black">
           <video
-            className="opacity-40 object-cover min-h-[450px] w-full mx-auto"
+            className="opacity-40 object-cover min-h-[450px] h-[450px] w-full mx-auto"
             autoPlay
             loop
             playsInline
@@ -19,16 +19,16 @@ const Hero = () => {
             src={detailingVideo}
           />
         </div>
-        <div className="absolute top-28 md:top-32 lg:top-56 left-1/2 -translate-x-1/2 text-center w-[80%]">
-          <h1 className="text-white text-xl md:text-4xl w-full flex justify-center">
-            Mobile detailing service in Triagle area
+        <div className="absolute top-28 md:top-32 left-1/2 -translate-x-1/2 text-center w-[80%]">
+          <h1 className="text-white animate-slidein300 opacity-0 text-2xl md:text-3xl lg:text-5xl w-full flex justify-center tracking-widest font-syne font-bold">
+            PRIME AUTOMOTIVE DETAILING
           </h1>
-          <p className="text-xs  md:text-sm text-white pt-5 w-full flex justify-center">
+          <p className="text-xs animate-slidein500 opacity-0 md:text-base text-white pt-5 w-full flex justify-center">
             Whether you want to protect your car or give it a clean look, we
             deliver top-quality service at the best prices. Trust us to enhance
             and safeguard your vehicle with the care it deserves.
           </p>
-          <div className="pt-2 md:pt-5 flex flex-col xs:flex-row justify-center items-center">
+          <div className="pt-2 animate-slidein700 opacity-0  md:pt-5 flex flex-col xs:flex-row justify-center items-center">
             <span className="p-2 md:p-5">
               <Link to="/booking">
                 <Button children={"BOOK NOW"} color={"primary"} />
@@ -56,11 +56,9 @@ const Hero = () => {
             to accommodate your needs and fit you into our schedule.
           </article>
         </section>
-        <section className="w-[80%] mx-auto my-5 px-2 py-5 rounded-xl">
+        <section className="w-[80%] bg-light-gray mx-auto my-5 py-5">
           <h2 className="text-black text-2xl text-center p-5">What we offer</h2>
-          <div className="mx-auto">
-            <Services />
-          </div>
+          <Services />
         </section>
       </div>
     </main>

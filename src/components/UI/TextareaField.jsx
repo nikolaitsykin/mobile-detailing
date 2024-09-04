@@ -10,9 +10,10 @@ const TextareaField = (props) => {
         onChange={handleChange}
         name={name}
         rows="4"
-        className="p-1 rounded-sm text-black w-full"
+        className="p-1  text-black bg-light-gray w-full font-inherit text-sm"
         value={value}
-      >Type here...</textarea>
+        placeholder="You can leave a message here..."
+      ></textarea>
     </div>
   );
 };

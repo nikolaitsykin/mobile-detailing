@@ -1,13 +1,12 @@
 import React from "react";
 import Button from "./UI/Button";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const Package = ({ packageType }) => {
   return (
     <div aria-label={packageType.title} className=" w-full p-2 text-black">
-      <h2 className=" text-xl text-center  pt-2">
-        {packageType.title}
-      </h2>
+      <h2 className=" text-xl text-center  pt-2">{packageType.title}</h2>
       <p className="text-center text-md p-2">{packageType.duration}</p>
       <div className="flex justify-center items-center md:items-start flex-col md:flex-row px-2">
         <Card
@@ -40,7 +39,9 @@ const Package = ({ packageType }) => {
         </div>
       </div>
       <div className="flex justify-center p-2">
-        <Button children={"Book"} color={"secondary"} />
+        <Link to="/booking">
+          <Button children={"Book"} color={"secondary"} />
+        </Link>
       </div>
     </div>
   );

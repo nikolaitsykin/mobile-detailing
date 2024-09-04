@@ -15,7 +15,6 @@ const ContactForm = () => {
     message: "",
     address: "",
   });
-  const [errorMessage, setErrorMessage] = useState("");
   const [status, setStatus] = useState("");
 
   const handleSubmit = (e) => {
@@ -51,11 +50,6 @@ const ContactForm = () => {
   }, [status]);
 
   const handleChange = (e) => {
-    const value = e.target.value;
-    /* clear error on change */
-    if (errorMessage !== "") {
-      setErrorMessage("");
-    }
     setValues((values) => ({
       ...values,
       [e.target.name]: e.target.value,
@@ -76,7 +70,6 @@ const ContactForm = () => {
           name="fullName"
           type="text"
           placeholder="John Doe"
-          required
         />
         <InputField
           value={values.vehicle}
@@ -101,7 +94,6 @@ const ContactForm = () => {
           name="mobile"
           type="tel"
           placeholder="267 123 4567"
-          required
         />
         <InputField
           value={values.address}
@@ -137,8 +129,8 @@ const ContactForm = () => {
 };
 
 const renderAlert = () => (
-  <div className="px-4 py-3 leading-normal mb-5 text-center">
-    <p>Your message submitted successfully</p>
+  <div className="px-4 py-3 leading-normal text-blue-700 bg-blue-100  mb-5 text-center">
+    <p>your message submitted successfully</p>
   </div>
 );
 

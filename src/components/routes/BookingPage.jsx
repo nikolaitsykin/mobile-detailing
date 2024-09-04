@@ -12,7 +12,7 @@ const Booking = () => {
             estimate for your project needs.”
           </p>
         </article>
-        <div className="bg-gray my-3 text-black flex justify-center mx-auto mb-5 py-3 rounded-xl">
+        <div className=" my-3 text-black flex justify-center mx-auto mb-5 py-3 ">
           <ContactForm />
         </div>
       </section>

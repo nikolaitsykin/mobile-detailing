@@ -16,10 +16,10 @@ const About = () => {
             passion for cars and commitment to quality led me to turn a lifelong
             hobby into a business—Prime Detailing.
           </p>
-          <div className="bg-gray my-3 rounded-xl flex flex-col md:flex-row items-center">
+          <div className="my-3  flex flex-col md:flex-row items-center">
             <div className="p-3 min-w-72 md:min-w-96">
               <img
-                className="object-cover rounded-xl w-72 md:w-96"
+                className="object-cover  w-72 md:w-96"
                 src={img}
                 alt="Business owner"
               />

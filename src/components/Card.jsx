@@ -14,9 +14,9 @@ const Card = ({
   button,
 }) => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-between rounded-2xl p-3 mx-auto bg-gray text-black">
+    <div className="w-full h-full flex flex-col items-center justify-between p-4 mx-auto  text-black">
       <img
-        className="w-full  align-start rounded-lg my-2"
+        className="w-full hover:scale-105 duration-700 align-start my-2"
         src={image}
         alt="Car wash"
       />

@@ -24,16 +24,12 @@ const Services = () => {
           inside and out. Experience the Prime difference, where every detail
           counts.
         </article>
-        <div className="bg-gray my-3 rounded-xl">
+      </section>
+      <section className="w-[80%] mx-auto">
+        <div className="w-full mx-auto">
           <Package packageType={basicPackage} />
-        </div>
-        <div className="bg-gray my-3 rounded-xl">
           <Package packageType={primePackage} />
-        </div>
-        <div className="bg-gray my-3 rounded-xl">
           <Package packageType={deluxePackage} />
-        </div>
-        <div className="bg-gray my-3 rounded-xl">
           <Package packageType={regularWash} />
         </div>
       </section>
