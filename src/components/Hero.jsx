@@ -6,7 +6,7 @@ import Button from "./UI/Button";
 
 const Hero = () => {
   return (
-    <main className="w-full z-10 bg-white pb-8">
+    <main className="w-full z-10 bg-white pb-8 font-poppins">
       <div className="relative">
         <div className="bg-black">
           <video

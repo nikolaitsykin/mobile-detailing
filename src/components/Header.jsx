@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header
-      className={`z-20 flex flex-col w-full sticky transition-all duration-500 ${
+      className={`font-poppins z-20 flex flex-col w-full sticky transition-all duration-500 ${
         scrollDirection === "down" ? "-top-32 md:-top-40" : "top-0"
       }`}
     >
