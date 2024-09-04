@@ -3,7 +3,7 @@ import React from "react";
 const Button = ({ children, color, onClick, type }) => {
   const buttonStyle = {
     primary:
-      "text-black bg-light-gray active:bg-black active:text-white border-dark-gray active:border-white hover:bg-black hover:border-white hover:text-white",
+      "text-black bg-white active:bg-black active:text-white border-dark-gray active:border-white hover:bg-black hover:border-white hover:text-white",
     secondary:
       "text-white active:text-white bg-blue active:bg-dark-blue border-blue hover:bg-dark-blue hover:bg-dark-blue",
   };

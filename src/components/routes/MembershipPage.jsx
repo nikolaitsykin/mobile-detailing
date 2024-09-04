@@ -21,7 +21,7 @@ const Membership = () => {
             exclusive member-only rates.
           </p>
         </article>
-        <div className="bg-light-gray text-black  p-3">
+        <div className=" text-black  p-3">
           <h2 className=" text-lg ">Membership Benefits:</h2>
           <ul className="text-sm px-4 ">
             {membershipBenefits.map((benefit) => (
