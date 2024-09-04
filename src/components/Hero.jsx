@@ -56,7 +56,7 @@ const Hero = () => {
             to accommodate your needs and fit you into our schedule.
           </article>
         </section>
-        <section className="w-[80%] bg-light-gray mx-auto my-5 py-5">
+        <section className="w-[80%] mx-auto my-5 py-5">
           <h2 className="text-black text-2xl text-center p-5">What we offer</h2>
           <Services />
         </section>
