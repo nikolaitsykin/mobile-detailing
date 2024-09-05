@@ -4,7 +4,7 @@ import {
   deluxePackage,
   primePackage,
   regularWash,
-} from "../../data";
+} from "../../utils/data";
 import Package from "../Package";
 import ppfImage from "../../assets/images/ppf.png";
 

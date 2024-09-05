@@ -2,7 +2,7 @@ import React from "react";
 import ceramicImage from "../../assets/images/Ceramic.png";
 import {
     exteriorDetailingService
-} from "../../data";
+} from "../../utils/data";
 import Card from "../Card";
 
 const Ceramic = () => {

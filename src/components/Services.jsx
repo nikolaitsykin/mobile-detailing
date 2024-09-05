@@ -6,7 +6,7 @@ import {
   interiorDetailingService,
   paintCorrectionService,
   ppfService,
-} from "../data";
+} from "../utils/data";
 import Card from "./Card";
 import { Outlet } from "react-router-dom";
 

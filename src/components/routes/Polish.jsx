@@ -4,7 +4,7 @@ import {
   deluxePackage,
   primePackage,
   regularWash,
-} from "../../data";
+} from "../../utils/data";
 import Package from "../Package";
 import carPolishImage from "../../assets/images/AdobeStock_231761289.jpeg";
 
