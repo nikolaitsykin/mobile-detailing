@@ -3,6 +3,7 @@ import { FaPhone } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 const Navbar = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,7 +16,7 @@ const Navbar = (props) => {
   }, [isMenuOpen]);
 
   const links = [
-    "Services",
+    // "Services",
     "Reviews",
     "FAQs",
     "Gallery",
@@ -24,7 +25,7 @@ const Navbar = (props) => {
   ];
 
   const navLinkStyle =
-    "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] tracking-widest h-12 lg:w-full text-xl lg:text-base l p-2";
+    "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-bold h-12 lg:w-full text-lg lg:text-base p-2";
 
   return (
     <nav className="w-full text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
@@ -52,6 +53,20 @@ const Navbar = (props) => {
           isMenuOpen ? "absolute" : "hidden"
         }   flex lg:flex lg:static flex-col lg:flex-row w-full`}
       >
+        <li className="flex jutify-end lg:justify-center items-center md:basis-1/6">
+          <NavHashLink
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className={({ isActive }) =>
+              isActive
+                ? `text-white ${navLinkStyle}`
+                : `text-gray ${navLinkStyle}`
+            }
+            smooth
+            to="/#services"
+          >
+            Services
+          </NavHashLink>
+        </li>
         {links.map((link) => (
           <li
             key={link}

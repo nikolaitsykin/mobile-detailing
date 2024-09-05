@@ -191,7 +191,7 @@ export const regularWash = {
     "Small Cars $90 | Midsize SUVs/Trucks $110 | Large SUVs/Trucks/Vans $130",
   prices: ["$90", "$110", "$130"],
   cars: ["Small Cars", "Midsize SUVs/Trucks", "Large SUVs/Trucks/Vans"],
-  duration: "for Members Only.",
+  duration: "for Members Only",
 };
 
 export const biWeekly = {

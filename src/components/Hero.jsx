@@ -6,20 +6,9 @@ import Button from "./UI/Button";
 
 const Hero = () => {
   return (
-    <main className="w-full z-10 bg-white pb-8 font-poppins">
+    <main className="w-full z-20 bg-white pb-8 font-poppins">
       <div className="relative">
-        <div className="bg-black">
-          <video
-            className="opacity-40 object-cover min-h-[450px] h-[450px] w-full mx-auto"
-            autoPlay
-            loop
-            playsInline
-            muted
-            type="video/mp4"
-            src={detailingVideo}
-          />
-        </div>
-        <div className="absolute top-28 md:top-32 left-1/2 -translate-x-1/2 text-center w-[80%]">
+        <div className="z-10 absolute top-28 md:top-32 left-1/2 -translate-x-1/2 text-center w-[80%]">
           <h1 className="text-white animate-slidein300 opacity-0 text-2xl md:text-3xl lg:text-5xl w-full flex justify-center tracking-widest font-syne font-bold">
             PRIME AUTOMOTIVE DETAILING
           </h1>
@@ -41,9 +30,20 @@ const Hero = () => {
             </span>
           </div>
         </div>
-        <section className="w-[80%] mx-auto py-5  my-5">
+        <div className="bg-black">
+          <video
+            className="opacity-60 object-cover min-h-[450px] h-[550px] w-full mx-auto"
+            autoPlay
+            loop
+            playsInline
+            muted
+            type="video/mp4"
+            src={detailingVideo}
+          />
+        </div>
+        <section className="w-[80%] mx-auto my-5">
           <article className="text-black text-sm md:text-sm w-full flex flex-col justify-center">
-            <h2 className="text-black text-2xl text-center p-5">
+            <h2 className="text-black text-2xl text-center p-3">
               We Bring Detailing to Your Doorstep
             </h2>
             Whether you’re at home, your apartment, or the office, we bring our
@@ -56,8 +56,13 @@ const Hero = () => {
             to accommodate your needs and fit you into our schedule.
           </article>
         </section>
-        <section className="w-[80%] mx-auto my-5 py-5">
-          <h2 className="text-black text-2xl text-center p-5">What we offer</h2>
+        <section className="w-[80%] mx-auto my-5">
+          <h2
+            id="services"
+            className="text-black text-2xl text-center p-5 font-syne font-bold"
+          >
+            OUR SERVICES
+          </h2>
           <Services />
         </section>
       </div>

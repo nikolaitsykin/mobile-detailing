@@ -1,6 +1,6 @@
 import React from "react";
-import PriceTable from "./PriceTable";
 import { Link } from "react-router-dom";
+import PriceTable from "./PriceTable";
 import Button from "./UI/Button";
 
 const Card = ({
@@ -12,15 +12,19 @@ const Card = ({
   discount,
   packageType,
   button,
+  link,
+  border,
 }) => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-between p-4 mx-auto  text-black">
+    <div
+      className={`w-full h-full flex flex-col items-center justify-between p-4 m-1 mx-auto text-black ${border}`}
+    >
       <img
         className="w-full hover:scale-105 duration-700 align-start my-2"
         src={image}
         alt="Car wash"
       />
-      <h3 className="text-center">{title}</h3>
+      <h3 className="text-center font-syne font-bold">{title}</h3>
       {description && (
         <div className="flex flex-col w-full my-1">
           <p className="text-sm">{description}</p>
@@ -49,7 +53,7 @@ const Card = ({
       )}
       {button && (
         <div className="w-full my-1 flex justify-center">
-          <Link to="/services">
+          <Link preventScrollReset={false} to={`/${link}`}>
             <Button children={button} color={"secondary"} />
           </Link>
         </div>

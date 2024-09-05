@@ -3,14 +3,18 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import ErrorPage from "../error-page";
 import Hero from "../Hero";
+import Root from "../routes/Root";
 import About from "./AboutPage";
+import AutoDetailing from "./AutoDetailing";
 import Booking from "./BookingPage";
+import Ceramic from "./Ceramic";
 import FAQs from "./FAQsPage";
 import Gallery from "./GalleryPage";
+import Headlights from "./Headlights";
 import Membership from "./MembershipPage";
+import PPF from "./PPF";
 import Reviews from "./ReviewsPage";
-import Root from "../routes/Root";
-import Services from "../routes/ServicesPage";
+import Polish from "./Polish";
 
 export const routes = createBrowserRouter([
   {
@@ -46,8 +50,24 @@ export const routes = createBrowserRouter([
         element: <Reviews />,
       },
       {
-        path: "/services",
-        element: <Services />,
+        path: "/auto-detailing",
+        element: <AutoDetailing />,
+      },
+      {
+        path: "/ceramic-coating",
+        element: <Ceramic />,
+      },
+      {
+        path: "/headlight-restoration",
+        element: <Headlights />,
+      },
+      {
+        path: "/ppf",
+        element: <PPF />,
+      },
+      {
+        path: "/paint-correction",
+        element: <Polish />,
       },
       {
         path: "*",

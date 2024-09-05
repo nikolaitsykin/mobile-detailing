@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex justify-start items-center basis:1/3 md:basis-1/6 text-white ">
           <Link to="/">
             <div className="mx-5 lg:ml-16">
-              <p className="text-2xl md:text-3xl">PRIME</p>
+              <p className="text-2xl md:text-2xl font-syne font-bold flex items-end">PRIME</p>
               <p className="text-center text-xs tracking-widest md:text-sm">
                 DETAILING
               </p>

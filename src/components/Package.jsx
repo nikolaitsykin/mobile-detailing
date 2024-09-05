@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Package = ({ packageType }) => {
   return (
-    <div aria-label={packageType.title} className=" w-full p-2 text-black">
-      <h2 className=" text-xl text-center  pt-2">{packageType.title}</h2>
+    <div aria-label={packageType.title} className=" w-full p-2 m-2 text-black border-2">
+      <h2 className=" text-xl text-center pt-2 tracking-widest font-syne font-bold">{packageType.title}</h2>
       <p className="text-center text-md p-2">{packageType.duration}</p>
       <div className="flex justify-center items-center md:items-start flex-col md:flex-row px-2">
         <Card
