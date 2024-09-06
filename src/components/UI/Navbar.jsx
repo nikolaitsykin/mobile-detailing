@@ -3,7 +3,6 @@ import { FaPhone } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
-import { NavHashLink } from "react-router-hash-link";
 const Navbar = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,19 +15,20 @@ const Navbar = (props) => {
   }, [isMenuOpen]);
 
   const links = [
-    // "Services",
-    "Reviews",
+    "SERVICES",
+    "REVIEWS",
     "FAQs",
-    "Gallery",
-    "Membership",
-    "About",
+    // "GALLERY",
+    // "MEMBERSHIP",
+    "ABOUT",
   ];
 
+
   const navLinkStyle =
-    "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-bold h-12 lg:w-full text-lg lg:text-base p-2";
+    "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-semibold h-12 lg:w-full text-md p-2 tracking-widest";
 
   return (
-    <nav className="w-full text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
+    <nav className=" w-full text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
       <div className="flex justify-end ">
         <div className="flex lg:hidden justify-center items-center mx-2 active:scale-110 duration-300">
           <a href="tel:2673106864">
@@ -53,24 +53,11 @@ const Navbar = (props) => {
           isMenuOpen ? "absolute" : "hidden"
         }   flex lg:flex lg:static flex-col lg:flex-row w-full`}
       >
-        <li className="flex jutify-end lg:justify-center items-center md:basis-1/6">
-          <NavHashLink
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={({ isActive }) =>
-              isActive
-                ? `text-white ${navLinkStyle}`
-                : `text-gray ${navLinkStyle}`
-            }
-            smooth
-            to="/#services"
-          >
-            Services
-          </NavHashLink>
-        </li>
         {links.map((link) => (
+          // console.log(links.length),
           <li
             key={link}
-            className="flex jutify-end lg:justify-center items-center md:basis-1/6"
+            className={`flex jutify-end lg:justify-center items-center md:basis-1/${links.length}`}
           >
             <NavLink
               onClick={() => setIsMenuOpen(!isMenuOpen)}

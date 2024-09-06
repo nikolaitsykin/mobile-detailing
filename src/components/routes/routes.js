@@ -14,7 +14,7 @@ import Headlights from "./Headlights";
 import Membership from "./MembershipPage";
 import PPF from "./PPF";
 import Reviews from "./ReviewsPage";
-import Polish from "./Polish";
+import PaintCorrection from "./PaintCorrection";
 
 export const routes = createBrowserRouter([
   {
@@ -67,7 +67,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/paint-correction",
-        element: <Polish />,
+        element: <PaintCorrection />,
       },
       {
         path: "*",

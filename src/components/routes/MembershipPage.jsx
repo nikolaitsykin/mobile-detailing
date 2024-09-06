@@ -3,6 +3,7 @@ import img from "../../assets/images/car-wash-detailing-station.jpg";
 import { membershipBenefits, monthly, biWeekly } from "../../utils/data";
 import Card from "../Card";
 import Button from "../UI/Button";
+import { Link } from "react-router-dom";
 
 const Membership = () => {
   return (
@@ -43,7 +44,7 @@ const Membership = () => {
               title={biWeekly.title}
               services={biWeekly.service}
               image={img}
-              price={biWeekly.prices}
+              priceTable={biWeekly.prices}
               packageType={biWeekly.package}
               discount={biWeekly.discount}
             />
@@ -52,7 +53,7 @@ const Membership = () => {
               title={monthly.title}
               services={monthly.service}
               image={img}
-              price={monthly.prices}
+              priceTable={monthly.prices}
               packageType={monthly.package}
               discount={monthly.discount}
             />
@@ -65,7 +66,9 @@ const Membership = () => {
           savings!
         </p>
         <div className="flex justify-center mb-5">
-          <Button children={"Become a Member"} color={"secondary"} />
+          <Link className="w-[80%] flex justify-center items-center" to="/membership">
+            <Button children={"Become a Member"} color={"secondary"} />
+          </Link>
         </div>
       </section>
     </div>

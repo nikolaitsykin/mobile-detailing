@@ -13,7 +13,7 @@ const SelectField = (props) => {
         className="w-full text-dark-dark-gray bg-light-gray p-1 text-sm"
       >
         <option  value="package" disabled>
-          Choose Package
+          Choose Service
         </option>
         <option  value="basicDetail">
           Basic Detail

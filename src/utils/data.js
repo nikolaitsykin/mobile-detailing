@@ -12,6 +12,9 @@ import basicExteriorWashImage from "../assets/images/car-front-foglight.jpg";
 import regularExteriorWashImage from "../assets/images/car-wash-detailing-station_1.jpg";
 import basicInteriorWashImage from "../assets/images/man-polish-salon-car-garage_1157-36595.jpg";
 import deluxeInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
+import twoStepPaintCorrectionImage from "../assets/images/AdobeStock_378443659.jpeg";
+import primeHeadlightRestorationImage from "../assets/images/AdobeStock_397247724.jpeg";
+import primeCeramicCoatingImage from "../assets/images/AdobeStock_799868847.jpeg";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
 export const secondaryStyle =
@@ -227,34 +230,131 @@ export const exteriorDetailingService = {
   description:
     "Our exterior wash service at Prime Detailing includes a thorough hand wash, gentle decontamination, and precision drying, leaving your vehicle spotless and protected from the elements.",
   image: exteriorDetailingServiceImage,
+  link: "auto-detailing",
 };
 export const interiorDetailingService = {
   title: "Interior Detailing",
   description:
     "Our interior detailing service at Prime Detailing includes deep cleaning, vacuuming, upholstery treatment, and conditioning of all surfaces. We ensure your vehicle’s interior is fresh, spotless, and comfortable, down to the smallest detail",
   image: interiorDetailingServiceImage,
+  link: "auto-detailing",
 };
 export const paintCorrectionService = {
   title: "Paint Correction",
   description:
     "Our paint correction service at Prime Detailing carefully removes swirl marks, scratches, and imperfections, restoring your vehicle’s paint to a flawless, showroom-quality finish.  image: paintCorrectionServiceImage.",
   image: paintCorrectionServiceImage,
+  link: "paint-correction",
 };
 export const headlightRestorationService = {
   title: "Headlight Restoration",
   description:
     "Our headlight restoration service at Prime Detailing removes oxidation and haze, restoring clarity and brightness to your headlights. We improve visibility and enhance your vehicle’s overall appearance.",
   image: headlightRestorationServiceImage,
+  link: "headlight-restoration",
 };
 export const ceramicCoatingService = {
   title: "Ceramic Coating",
   description:
     "Our ceramic coating service at Prime Detailing provides a durable, high-gloss layer of protection that shields your vehicle’s paint from UV rays, dirt, and contaminants, keeping it looking pristine for longer.",
   image: ceramicCoatingServiceImage,
+  link: "ceramic-coating",
 };
 export const ppfService = {
   title: "Paint Protection Film",
   description:
     "Our paint protection film service at Prime Detailing applies a nearly invisible layer of durable film to your vehicle's exterior, safeguarding the paint from chips, scratches, and road debris while preserving its flawless finish.",
   image: ppfServiceImage,
+  link: "paint-protection-film",
+};
+
+export const autoDetailingServices = [
+  exteriorDetailingService,
+  interiorDetailingService,
+  // paintCorrectionService,
+  // headlightRestorationService,
+  // ppfService,
+  // ceramicCoatingService,
+];
+
+export const oneStepPaintCorrection = {
+  title: "1-step paint correction",
+  description: "1-step paint correction",
+  image: paintCorrectionServiceImage,
+};
+
+export const twoStepPaintCorrection = {
+  title: "2-step paint correction",
+  description: "2-step paint correction",
+  image: twoStepPaintCorrectionImage,
+};
+
+export const basicHeadlightRestorationServices = [
+  "✔ Clean Headlight",
+  "✔ Heavy Cutting Compound",
+  "✔ Rotary Wool Polish",
+  "✔ UV protection",
+  "✘ 1-Step Wet Sand",
+  "✘ 2-Step Grit Wet Sand",
+];
+
+export const primeHeadlightRestorationServices = [
+  "✔ Clean Headlight",
+  "✔ Heavy Cutting Compound",
+  "✔ Rotary Wool Polish",
+  "✔ UV protection",
+  "✔ 1-Step Wet Sand",
+  "✔ 2-Step Grit Wet Sand",
+];
+
+export const basicHeadlightRestoration = {
+  title: "Basic Headlight Restoration",
+  description:
+    "You can choose this service as an add-on to any of our other services.",
+  services: basicHeadlightRestorationServices,
+  image: headlightRestorationServiceImage,
+  price: ["$150"],
+};
+
+export const primeHeadlightRestoration = {
+  title: "Prime Headlight Restoration",
+  description:
+    "You can choose this service as an add-on to any of our other services.",
+  services: primeHeadlightRestorationServices,
+  image: primeHeadlightRestorationImage,
+  price: ["$200"],
+};
+
+export const basicCeramicCoatingServices = [
+  "✔ Clean Headlight",
+  "✔ Heavy Cutting Compound",
+  "✔ Rotary Wool Polish",
+  "✔ UV protection",
+  "✘ 1-Step Wet Sand",
+  "✘ 2-Step Grit Wet Sand",
+];
+
+export const primeCeramicCoatingServices = [
+  "✔ Clean Headlight",
+  "✔ Heavy Cutting Compound",
+  "✔ Rotary Wool Polish",
+  "✔ UV protection",
+  "✔ 1-Step Wet Sand",
+  "✔ 2-Step Grit Wet Sand",
+];
+
+export const basicCeramicCoating = {
+  title: "Basic Ceramic Coating",
+  description: "Description",
+  services: basicCeramicCoatingServices,
+  image: ceramicCoatingServiceImage,
+  price: ["$550"],
+};
+
+export const primeCeramicCoating = {
+  title: "Prime Ceramic Coating",
+  description: "Description",
+  services: primeCeramicCoatingServices,
+  image: primeCeramicCoatingImage,
+  price: ["$800"],
 };

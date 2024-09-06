@@ -9,6 +9,7 @@ const Card = ({
   description,
   services,
   price,
+  priceTable,
   discount,
   packageType,
   button,
@@ -17,7 +18,7 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`w-full h-full flex flex-col items-center justify-between p-4 m-1 mx-auto text-black ${border}`}
+      className={`w-full h-full max-w-md flex flex-col items-center justify-between p-4 m-1 mx-auto text-black ${border}`}
     >
       <img
         className="w-full hover:scale-105 duration-700 align-start my-2"
@@ -44,16 +45,21 @@ const Card = ({
           </ul>
         </div>
       )}
-      {price && (
+      {priceTable && (
         <PriceTable
           packageType={packageType}
-          price={price}
+          price={priceTable}
           discount={discount}
         />
       )}
+      {price && <div className="text-sm">{price}</div>}
       {button && (
-        <div className="w-full my-1 flex justify-center">
-          <Link preventScrollReset={false} to={`/${link}`}>
+        <div className="my-1 flex justify-center w-[100%]">
+          <Link
+            className="w-[80%] flex justify-center items-center"
+            preventScrollReset={false}
+            to={`/${link}`}
+          >
             <Button children={button} color={"secondary"} />
           </Link>
         </div>

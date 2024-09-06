@@ -1,51 +1,100 @@
 import React from "react";
-import img from "../../assets/images/close-up-car-care-process_23-2149193590.jpg";
 
 const About = () => {
   return (
     <div className="bg-white py-8">
       <section className="w-[80%] mx-auto">
-        <h1 className=" text-3xl text-center text-black my-3">
-          Our Story: Family, Cars, and a New Beginning
+        <h1 className=" text-4xl text-center text-black my-3 font-syne font-bold">
+          ABOUT DETAILING GUYS
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
-          <p className="py-2 text-start">
-            In 2022, our family made the move to North Carolina, drawn by the
-            opportunities and the beauty of this state. After over a decade of
-            working a 9-to-5 job, I realized it was time for a change. My
-            passion for cars and commitment to quality led me to turn a lifelong
-            hobby into a business—Prime Detailing.
+          <p className="py-2">
+            At Detailing Guys, we’re all about making your car look its
+            best—without you ever having to leave your driveway. We’ve built our
+            business on the simple belief that quality car care should be
+            convenient, professional, and hassle-free. That’s why we bring our
+            detailing expertise straight to your door, giving you a
+            showroom-ready vehicle with none of the stress.
           </p>
-          <div className="my-3  flex flex-col md:flex-row items-center">
-            <div className="p-3 min-w-72 md:min-w-96">
-              <img
-                className="object-cover  w-72 md:w-96"
-                src={img}
-                alt="Business owner"
-              />
-            </div>
-            <div className="p-3">
-              <p className="my-3">Meet Rick, our founder and Lead Detailer.</p>
-              <p className="text-sm">
-                As a car enthusiast, I've always taken pride in keeping vehicles
-                in top condition, whether it was my own car or helping out
-                friends and family. To me, a car is more than just a way to get
-                from point A to point B; it’s a reflection of its owner. The joy
-                of seeing a car restored to its pristine state is what inspired
-                me to start this venture.
-              </p>
-            </div>
+          <div className="my-3 items-center">
+            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+              Our story
+            </h2>
+            <p>
+              Detailing Guys started with one goal in mind: to redefine what car
+              detailing means for busy people. We get it—whether you're a mom
+              with a van full of kids or an entrepreneur driving a supercar,
+              finding time to take care of your vehicle isn’t always easy. But
+              that doesn’t mean your car should suffer. As car enthusiasts
+              ourselves, we know how important it is to keep your vehicle in top
+              shape. But life gets busy. So, we changed the game by offering
+              mobile detailing services that fit into your schedule—whether
+              you’re at home, at work, or anywhere else. We make sure your car
+              looks flawless, so you can focus on what matters most in your life
+              without worrying about your vehicle’s upkeep. 
+              <b>
+                No matter who you are or what you drive, we’ve got you covered.
+              </b>
+            </p>
           </div>
-          <p className="py-2 text-start">
-            Together with my wife, we built Prime Detailing from the ground up,
-            ensuring that every service we provide reflects our dedication to
-            excellence. As a family-owned and operated business, we understand
-            the value of trust, quality, and personalized service. We treat
-            every vehicle as if it were our own, paying attention to every
-            detail and using only the best products and techniques. Our goal is
-            to deliver a detailing experience that goes beyond expectations,
-            leaving your car looking and feeling like new.
-          </p>
+          <div className="my-3 items-center">
+            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+              What Drives Us
+            </h2>
+            <p>
+              Our mission is simple: make your car shine, inside and out, with
+              unmatched attention to detail. We use premium eco-friendly
+              products, modern techniques, and a whole lot of passion to bring
+              your car back to life. From a quick clean-up to full detailing
+              packages, we do it all with the same level of care we’d give our
+              own vehicles.
+            </p>
+          </div>
+          <div className="my-3 items-center">
+            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+              Why Choose Detailing Guys?
+            </h2>
+            <ol>
+              <li>
+                We Come to You: Your time is valuable. We show up at your home,
+                office, or anywhere that’s convenient for you.
+              </li>
+              <li>
+                Quality Above All: We don’t cut corners. Every service is done
+                by trained professionals with the highest quality standards.
+              </li>
+              <li>
+                Eco-Friendly: We care about your and your kids, your car, your
+                neigbourhood, our country and the planet. If we wouldn’t care,
+                who else would? That’s why we use environmentally-friendly
+                products that deliver incredible results without the harsh
+                chemicals.
+              </li>
+              <li>
+                Customer First: We’re here for one thing—making sure you love
+                the way your car looks. We treat every vehicle as if it were our
+                own and every customer like family.
+              </li>
+            </ol>
+          </div>
+          <div className="my-3 items-center">
+            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+              The Detailing Guys Difference
+            </h2>
+            <p>
+              We know how busy life can get. That’s why we make it easy to give
+              your car the attention it deserves. Whether it’s a quick refresh
+              or a deep clean, our team delivers flawless results right where
+              you are—so you can spend less time worrying about your car and
+              more time enjoying it.
+            </p>
+          </div>
+          <div className="my-3 items-center">
+            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+              Ready to experience detailing that fits your life? Book with
+              Detailing Guys today and let us bring the shine to you!
+            </h2>
+          </div>
         </article>
       </section>
     </div>

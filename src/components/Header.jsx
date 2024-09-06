@@ -4,6 +4,7 @@ import Navbar from "./UI/Navbar";
 import { Link } from "react-router-dom";
 import { FaPhone } from "react-icons/fa6";
 import useScrollDirection from "../hooks/useScrollDirection";
+import logo from "../assets/images/detailing_guys_logo.png"
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
@@ -16,8 +17,8 @@ const Header = () => {
     >
       <section className="h-16 md:h-20 flex justify-between w-full bg-dark-gray px-5 lg:px-16">
         <div className="flex items-center basis-1/2 md:basis-1/3">
-          <span className="text-white text-sm md:text-base">
-            Raleigh | Cary | Holly Springs
+          <span className="text-white text-xs md:text-sm lg:text-base font-syne font-bold">
+            RALEIGH
           </span>
         </div>
         <div className="hidden md:flex md:visible justify-center items-center basis-1/2 md:basis-1/3 ">
@@ -30,13 +31,14 @@ const Header = () => {
         </div>
       </section>
       <section className="w-full flex flex-row justify-around h-16 md:h-20 bg-dark-gray">
-        <div className="flex justify-start items-center basis:1/3 md:basis-1/6 text-white ">
+        <div className="flex justify-start items-center basis:1/3 md:basis-1/6 text-white h-16 md:h-20">
           <Link to="/">
-            <div className="mx-5 lg:ml-16">
-              <p className="text-2xl md:text-2xl font-syne font-bold flex items-end">PRIME</p>
+            <div className="ml-5 lg:ml-16 h-16 md:h-20 w-16 md:w-20">
+              <img className="h-16 md:h-20 w-16 md:w-20 p-[1px]" src={logo} alt="logo" />
+              {/* <p className="text-2xl md:text-2xl font-syne font-bold flex items-end">PRIME</p>
               <p className="text-center text-xs tracking-widest md:text-sm">
                 DETAILING
-              </p>
+              </p> */}
             </div>
           </Link>
         </div>

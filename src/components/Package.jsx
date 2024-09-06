@@ -39,7 +39,7 @@ const Package = ({ packageType }) => {
         </div>
       </div>
       <div className="flex justify-center p-2">
-        <Link to="/booking">
+        <Link className="w-[80%] flex justify-center items-center" to="/booking">
           <Button children={"Book"} color={"secondary"} />
         </Link>
       </div>
