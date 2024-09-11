@@ -8,7 +8,7 @@ const About = () => {
         <h1 className=" text-4xl text-center text-black my-3 font-syne font-bold">
           ABOUT DETAILING GUYS
         </h1>
-        <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
+        <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
           <p className="py-2">
             At Detailing Guys, we’re committed to making your car look its
             best—right from the convenience of your driveway. Our business is
@@ -18,7 +18,7 @@ const About = () => {
             go anywhere.
           </p>
           <div className="my-3 items-center">
-            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold">
               Our story
             </h2>
             <p>
@@ -29,13 +29,14 @@ const About = () => {
               time for vehicle care isn’t always easy. That’s why we offer
               mobile detailing services that work around your schedule. As
               passionate car enthusiasts, we know how important it is to
-              maintain your car’s appearance, and we’re here to help.
-              <br />
-              No matter who you are or what you drive, we’ve got you covered.
+              maintain your car’s appearance, and we’re here to help.{" "}
+              <strong>
+                No matter who you are or what you drive, we’ve got you covered.
+              </strong>
             </p>
           </div>
           <div className="my-3 items-center">
-            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold">
               What Drives Us
             </h2>
             <p>
@@ -47,7 +48,7 @@ const About = () => {
             </p>
           </div>
           <div className="my-3 items-center ">
-            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold">
               Why Choose Detailing Guys?
             </h2>
             <ol>
@@ -75,7 +76,7 @@ const About = () => {
             </ol>
           </div>
           <div className="my-3 items-center">
-            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold">
               The Detailing Guys Difference
             </h2>
             <p>
@@ -86,11 +87,11 @@ const About = () => {
               it.
             </p>
           </div>
-          <div className="my-3 items-center">
-            <h2 className="text-black text-3xl text-center p-3 font-syne font-semibold">
+          <div className="mt-3 items-center">
+            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold">
               Ready to Experience a New Level of Care?
             </h2>
-            <h3 className="text-black text-lg font-syne font-semibold">
+            <h3 className="text-black text-base md:text-lg font-syne font-semibold">
               Book with Detailing Guys today, and let us bring the shine to
               you—all while doing our part for the environment!
             </h3>

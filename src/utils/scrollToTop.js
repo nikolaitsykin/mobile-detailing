@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { FaAngleDoubleUp } from "react-icons/fa";
-import { classNames } from "./helpers";
 
 const ScrollToTop = () => {
   // Extracts pathname property(key) from an object

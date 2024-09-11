@@ -6,8 +6,8 @@ const Hero = () => {
     <div className="w-full z-20 bg-white pb-8 font-poppins">
       <div className="relative">
         <section className="w-[90%] md:w-[80%] mx-auto my-5">
-          <article className="text-black text-sm md:text-sm w-full flex flex-col justify-center">
-            <h2 className="text-black text-2xl text-center p-3 font-syne font-semibold">
+          <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
+            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold">
               We Bring Detailing to Your Doorstep
             </h2>
             <p>
@@ -26,21 +26,21 @@ const Hero = () => {
         <section className="w-[90%] md:w-[80%] mx-auto my-5">
           <h2
             id="services"
-            className="text-black text-2xl text-center p-5 font-syne font-bold"
+            className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold"
           >
             OUR SERVICES
           </h2>
           <Services />
         </section>
         <section className="w-[90%] md:w-[80%] mx-auto">
-          <article className="text-black text-sm md:text-sm w-full flex flex-col justify-center">
-            <h3
+          <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
+            <h2
               id="how-we-do-it"
-              className="text-black text-2xl text-center p-5 mt-5 font-syne font-bold"
+              className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold"
             >
               Say Goodbye to Mess and Hello to a Healthier, Cleaner Car with
               Eco-Friendly Detailing
-            </h3>
+            </h2>
             <p>
               Sick and tired of dirt, stains, and spills wreaking havoc on your
               car’s interior? These things can be detrimental not only to the

@@ -1,8 +1,12 @@
 const InputField = (props) => {
-  const { handleChange, label, name, type, value, placeholder } = props;
+  const { handleChange, label, name, type, value, placeholder } =
+    props;
   return (
     <div className="w-full p-1">
-      <label className="flex flex-col font-syne font-semibold text-md" htmlFor={name}>
+      <label
+        className="flex flex-col font-syne font-semibold text-md"
+        htmlFor={name}
+      >
         {label}
       </label>
       <input

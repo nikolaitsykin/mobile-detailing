@@ -18,7 +18,7 @@ const AutoDetailing = () => {
         />
       </div>
       <div className="w-[90%] md:w-[80%] mx-auto">
-        <div className="w-[90%] md:w-[80%] mx-auto z-10 absolute top-10 md:top-32 left-1/2 -translate-x-1/2 text-center">
+        <div className="w-[90%] md:w-[80%] mx-auto z-10 absolute top-10 md:top-40 left-1/2 -translate-x-1/2 text-center">
           <h1
             id="mobile-detailing"
             className="text-white animate-slidein300 opacity-0 text-2xl md:text-3xl lg:text-5xl w-full flex justify-center tracking-widest font-syne font-bold"

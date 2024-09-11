@@ -2,16 +2,18 @@ import React from "react";
 import detailingVideo from "../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
 import BookButtons from "../BookButtons";
 import Hero from "../Hero";
+import Button from "../UI/Button";
+import { Link } from "react-router-dom";
 
 const Root = () => {
   return (
     <main className="w-full z-20 bg-white pb-8 font-poppins">
-      <div className="relative">
+      <div className="relative text-sm md:text-base">
         <div className="w-[90%]  mx-auto z-10 absolute top-36 md:top-40 left-1/2 -translate-x-1/2 text-center">
           <h1 className="text-white animate-slidein300 opacity-0 text-3xl sm:text-4xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
             PRIME AUTO DETAILING
           </h1>
-          <p className="text-xs animate-slidein500 opacity-0 md:text-base text-white pt-5 w-full flex justify-center">
+          <p className=" animate-slidein500 opacity-0 md:text-base text-white pt-5 w-full flex justify-center">
             Whether you want to protect your car or give it a clean look, we
             deliver top-quality service at the best prices. Trust us to enhance
             and safeguard your vehicle with the care it deserves.
@@ -32,14 +34,14 @@ const Root = () => {
         <Hero />
         <div className="w-[90%] md:w-[80%] mx-auto">
           <div>
-            <article className="text-black text-sm md:text-sm w-full flex flex-col justify-center">
+            <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
               <h2
                 id="about-us"
-                className="text-black text-2xl text-center p-5 font-syne font-bold"
+                className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold"
               >
                 ABOUT US
               </h2>
-              <h3 className="text-black text-lg font-syne font-semibold">
+              <h3 className="text-black text-base md:text-lg font-syne font-semibold">
                 Who we are?
               </h3>
               <p>
@@ -52,7 +54,7 @@ const Root = () => {
               </p>
               <br />
               <br />
-              <h3 className="text-black text-lg font-syne font-semibold">
+              <h3 className="text-black text-base md:text-lg font-syne font-semibold">
                 Our mission
               </h3>
               <p>
@@ -67,7 +69,7 @@ const Root = () => {
               </p>
               <br />
               <br />
-              <h3 className="text-black text-lg font-syne font-semibold">
+              <h3 className="text-black text-base md:text-lg font-syne font-semibold">
                 Our values
               </h3>
               <p>
@@ -77,16 +79,21 @@ const Root = () => {
                 sustainability front and center.
               </p>
             </article>
+            <div className="my-5 pt-5">
+              <Link to={"/about"}>
+                <Button color={"secondary"} children={"Learn More"} />
+              </Link>
+            </div>
           </div>
           <div>
-            <article className="text-black text-sm md:text-sm w-full flex flex-col justify-center">
+            <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
               <h2
                 id="what-is-detailing"
-                className="text-black text-2xl text-center p-5 mt-5 font-syne font-bold"
+                className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold"
               >
                 WHAT IS ‘DETAILING’?
               </h2>
-              <h3 className="text-black text-lg font-syne font-semibold">
+              <h3 className="text-black text-base md:text-lg font-syne font-semibold">
                 Detailing
               </h3>
               <p>
@@ -111,10 +118,11 @@ const Root = () => {
                 world stays healthy.
               </p>
             </article>
-            <p className="text-black text-2xl text-center p-5 font-syne font-bold mt-10">
+            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold my-10">
+              {" "}
               Choose Detailing Guys for results that protect both your car and
               the environment, powered by premium, eco-friendly products.
-            </p>
+            </h2>
           </div>
           <div className="w-[90%] md:w-[80%] mx-auto mb-10">
             <BookButtons color={"secondary"} />

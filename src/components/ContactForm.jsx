@@ -6,6 +6,22 @@ import emailjs from "@emailjs/browser";
 import Button from "./UI/Button";
 
 const ContactForm = () => {
+  const [checked, setChecked] = useState(false);
+  const [error, setError] = useState(false);
+  const [errorCheckbox, setErrorCheckbox] = useState(null);
+
+  const handleCheckBoxChange = (event) => {
+    if (event.target.checked) {
+      setChecked(true);
+      setErrorCheckbox(null);
+      console.log("ACCEPTED TERMS");
+    } else {
+      setChecked(false);
+      console.log("DIDN'T ACCEPT TERMS");
+      setErrorCheckbox("You must accept the terms");
+    }
+  };
+
   const [values, setValues] = useState({
     fullName: "",
     vehicle: "",
@@ -23,26 +39,33 @@ const ContactForm = () => {
   const [status, setStatus] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    if (values.fullName === "") {
-      setErrorMessage("Full Name is required");
-      return;
-    }
-    if (values.email === "") {
-      setErrorMessage("E-Mail is required");
-      return;
-    }
-    if (values.mobile === "") {
-      setErrorMessage("Mobile is required");
-      return;
-    }
-    if (values.address === "") {
-      setErrorMessage("Service Address is required");
-      return;
-    }
-    if (values.service === "") {
-      setErrorMessage("Service type is required");
-      return;
+    if (checked === false) {
+      setError(true);
+      setErrorCheckbox("You must accept the terms");
+    } else {
+      e.preventDefault();
+      e.preventDefault();
+
+      if (values.fullName === "") {
+        setErrorMessage("Full Name is required");
+        return;
+      }
+      if (values.email === "") {
+        setErrorMessage("E-Mail is required");
+        return;
+      }
+      if (values.mobile === "") {
+        setErrorMessage("Mobile is required");
+        return;
+      }
+      if (values.address === "") {
+        setErrorMessage("Service Address is required");
+        return;
+      }
+      if (values.service === "") {
+        setErrorMessage("Service type is required");
+        return;
+      }
     }
 
     emailjs
@@ -193,6 +216,7 @@ const ContactForm = () => {
                 // "Deluxe Detail"
               ]}
               value={values.service}
+              required
             />
             {/* <SelectField
             handleChange={handleChange}
@@ -212,12 +236,12 @@ const ContactForm = () => {
           <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
             4. Select date and time what will be best for you
           </h3>
-          <p className="text-black text-md my-1 p-0.5">
+          <p className="text-black text-base my-1 p-0.5">
             We currently offer services on weekends between 9 AM and 6 PM
           </p>
           <div className="w-full grid grid-cols-1 md:grid-cols-2">
             <InputField
-              value={values.vehicle}
+              value={values.date}
               handleChange={handleChange}
               label="Preferred Date"
               name="date"
@@ -225,7 +249,7 @@ const ContactForm = () => {
               placeholder="eg. 01/01/2024"
             />
             <InputField
-              value={values.year}
+              value={values.time}
               handleChange={handleChange}
               label="Preferred Time"
               name="time"
@@ -239,9 +263,22 @@ const ContactForm = () => {
           handleChange={handleChange}
           label="Anything else we should know?"
           name="message"
-        />
-        <div className="flex justify-cente py-3">
+        />{" "}
+        <div className="w-full flex justify-start items-start">
+          <input
+            type="checkbox"
+            className="w-4 h-4"
+            onChange={handleCheckBoxChange}
+          />
+          <label htmlFor="terms">
+            I understand that the detailing service requires access to power and
+            water, and I guarantee that both will be provided and accessible at
+            the time of service
+          </label>
+        </div>
+        <div className="flex justify-cente py-3 ">
           <Button
+            // {checked ? "disabled" : "enabled"}
             type="submit"
             children="SEND SERVICE REQUEST"
             color={"secondary"}

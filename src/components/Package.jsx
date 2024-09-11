@@ -28,11 +28,11 @@ const Package = ({ packageType }) => {
         />
       </div>
       <p className="text-center text-sm p-3">{packageType.duration}</p>
-
-      <div className="flex justify-center p-4">
+      <div className="flex justify-center p-4 mb-4">
         <Link
           className="w-[80%] flex justify-center items-center"
-          to="/booking"
+          target="_blank"
+          to="https://squareup.com/appointments/book/t25pubegvfjcw1/LDK47FK18Z9GH/start"
         >
           <Button children={"Book"} color={"secondary"} />
         </Link>
