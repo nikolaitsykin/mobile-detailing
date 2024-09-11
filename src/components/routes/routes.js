@@ -50,7 +50,7 @@ export const routes = createBrowserRouter([
         element: <Reviews />,
       },
       {
-        path: "/auto-detailing",
+        path: "/mobile-detailing",
         element: <AutoDetailing />,
       },
       {

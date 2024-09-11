@@ -3,6 +3,7 @@ import { FaPhone } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 const Navbar = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -14,15 +15,7 @@ const Navbar = (props) => {
     }
   }, [isMenuOpen]);
 
-  const links = [
-    "SERVICES",
-    "REVIEWS",
-    "FAQs",
-    // "GALLERY",
-    // "MEMBERSHIP",
-    "ABOUT",
-  ];
-
+  const links = ["reviews", "faqs", "about"];
 
   const navLinkStyle =
     "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-semibold h-12 lg:w-full text-md p-2 tracking-widest";
@@ -53,11 +46,27 @@ const Navbar = (props) => {
           isMenuOpen ? "absolute" : "hidden"
         }   flex lg:flex lg:static flex-col lg:flex-row w-full`}
       >
+        <li
+          key={"services"}
+          className="flex jutify-end lg:justify-center items-center basis-1/4"
+        >
+          <NavHashLink
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            to={`/#${"services"}`}
+            className={({ $isActive }) =>
+              $isActive
+                ? `text-white ${navLinkStyle}`
+                : `text-gray ${navLinkStyle}`
+            }
+          >
+            {"services".toUpperCase()}
+          </NavHashLink>
+        </li>
+
         {links.map((link) => (
-          // console.log(links.length),
           <li
             key={link}
-            className={`flex jutify-end lg:justify-center items-center md:basis-1/${links.length}`}
+            className="flex jutify-end lg:justify-center items-center basis-1/4"
           >
             <NavLink
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -68,7 +77,7 @@ const Navbar = (props) => {
                   : `text-gray ${navLinkStyle}`
               }
             >
-              {link}
+              {link.toUpperCase()}
             </NavLink>
           </li>
         ))}

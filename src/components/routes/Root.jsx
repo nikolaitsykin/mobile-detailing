@@ -1,38 +1,26 @@
 import React from "react";
-import Hero from "../Hero";
-import Button from "../UI/Button";
-import { Link } from "react-router-dom";
 import detailingVideo from "../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
+import BookButtons from "../BookButtons";
+import Hero from "../Hero";
 
 const Root = () => {
   return (
     <main className="w-full z-20 bg-white pb-8 font-poppins">
       <div className="relative">
-        <div className="w-[80%] z-10 absolute top-32 md:top-32 left-1/2 -translate-x-1/2 text-center">
-          <h1 className="text-white animate-slidein300 opacity-0 text-2xl sm:text-3xl md:text-5xl w-full flex justify-center tracking-widest font-syne font-bold">
-            PRIME AUTOMOTIVE DETAILING
+        <div className="w-[90%]  mx-auto z-10 absolute top-36 md:top-40 left-1/2 -translate-x-1/2 text-center">
+          <h1 className="text-white animate-slidein300 opacity-0 text-3xl sm:text-4xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
+            PRIME AUTO DETAILING
           </h1>
           <p className="text-xs animate-slidein500 opacity-0 md:text-base text-white pt-5 w-full flex justify-center">
             Whether you want to protect your car or give it a clean look, we
             deliver top-quality service at the best prices. Trust us to enhance
             and safeguard your vehicle with the care it deserves.
           </p>
-          <div className="pt-2 animate-slidein700 opacity-0  md:pt-5 flex flex-col xs:flex-row justify-center items-center">
-            <span className="p-2 md:p-5">
-              <Link to="/booking">
-                <Button children={"BOOK NOW"} color={"primary"} />
-              </Link>
-            </span>
-            <span className="md:p-2">
-              <a href="tel:2673106864" className="flex">
-                <Button children={"CALL NOW"} color={"primary"} />
-              </a>
-            </span>
-          </div>
+          <BookButtons color={"primary"} />
         </div>
         <div className="bg-black">
           <video
-            className="opacity-60 object-cover min-h-[450px] h-[550px] w-full mx-auto"
+            className="opacity-60 object-cover min-h-[550px] md:h-[600px] w-full mx-auto"
             autoPlay
             loop
             playsInline
@@ -42,6 +30,96 @@ const Root = () => {
           />
         </div>
         <Hero />
+        <div className="w-[90%] md:w-[80%] mx-auto">
+          <div>
+            <article className="text-black text-sm md:text-sm w-full flex flex-col justify-center">
+              <h2
+                id="about-us"
+                className="text-black text-2xl text-center p-5 font-syne font-bold"
+              >
+                ABOUT US
+              </h2>
+              <h3 className="text-black text-lg font-syne font-semibold">
+                Who we are?
+              </h3>
+              <p>
+                Detailing Guys is a highly-rated detailing company based in
+                Apex, serving the Triangle area. We specialize in providing
+                eco-friendly detailing solutions that keep your vehicle looking
+                its best while caring for the environment. From entry-level
+                services to advanced paint correction and ceramic coatings, we
+                ensure that your car is well-protected and looking sharp.
+              </p>
+              <br />
+              <br />
+              <h3 className="text-black text-lg font-syne font-semibold">
+                Our mission
+              </h3>
+              <p>
+                Our mission is to deliver premium detailing results while using
+                safe, environmentally-conscious products. That's why we use
+                brands known for their eco-friendly, biodegradable formulations
+                that are safe for you, your kids, your pets, your car and gentle
+                on the planet. We believe in doing our part to reduce
+                environmental impact, offering sustainable solutions that
+                protect your vehicle without compromising our commitment to the
+                earth.
+              </p>
+              <br />
+              <br />
+              <h3 className="text-black text-lg font-syne font-semibold">
+                Our values
+              </h3>
+              <p>
+                With experience detailing everything from family cars to
+                high-performance vehicles, we aim to maintain your car's value
+                and enhance your driving experience—all while keeping
+                sustainability front and center.
+              </p>
+            </article>
+          </div>
+          <div>
+            <article className="text-black text-sm md:text-sm w-full flex flex-col justify-center">
+              <h2
+                id="what-is-detailing"
+                className="text-black text-2xl text-center p-5 mt-5 font-syne font-bold"
+              >
+                WHAT IS ‘DETAILING’?
+              </h2>
+              <h3 className="text-black text-lg font-syne font-semibold">
+                Detailing
+              </h3>
+              <p>
+                Detailing goes beyond the usual wash. It’s about using advanced
+                techniques and safe, eco-friendly products to clean, restore,
+                and protect your vehicle inside and out. Whether it’s paint
+                correction, interior deep cleaning, or restoring surfaces,
+                detailing is about bringing your car back to life.
+              </p>
+              <br />
+              <br />
+              <h3 className="text-black text-lg font-syne font-semibold">
+                Our approach
+              </h3>
+              <p>
+                At Detailing Guys, we’re committed to partner with brands which
+                innovative products ensure high performance while protecting the
+                environment. Their line of eco-friendly, pH-balanced chemicals
+                guarantees that your vehicle receives the care it deserves
+                without harmful effects on our planet. From daily drivers to
+                luxury vehicles, we make sure your car looks great, and our
+                world stays healthy.
+              </p>
+            </article>
+            <p className="text-black text-2xl text-center p-5 font-syne font-bold mt-10">
+              Choose Detailing Guys for results that protect both your car and
+              the environment, powered by premium, eco-friendly products.
+            </p>
+          </div>
+          <div className="w-[90%] md:w-[80%] mx-auto mb-10">
+            <BookButtons color={"secondary"} />
+          </div>
+        </div>
       </div>
     </main>
   );

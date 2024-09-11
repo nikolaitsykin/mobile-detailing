@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  basicPackage,
-  deluxePackage,
-  primePackage,
-  regularWash,
-} from "../../utils/data";
-import Package from "../Package";
 import ppfImage from "../../assets/images/paint_protection.png";
 
 const PPF = () => {
@@ -48,10 +41,7 @@ const PPF = () => {
           Package Options
         </h2>
         <div className="w-full mx-auto">
-          <Package packageType={basicPackage} />
-          <Package packageType={primePackage} />
-          <Package packageType={deluxePackage} />
-          <Package packageType={regularWash} />
+          
         </div>
       </section>
     </section>

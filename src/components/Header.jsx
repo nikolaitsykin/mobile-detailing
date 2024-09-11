@@ -1,20 +1,13 @@
 import React from "react";
+import { FaPhone } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/detailing_guys_logo.png";
 import Button from "./UI/Button";
 import Navbar from "./UI/Navbar";
-import { Link } from "react-router-dom";
-import { FaPhone } from "react-icons/fa6";
-import useScrollDirection from "../hooks/useScrollDirection";
-import logo from "../assets/images/detailing_guys_logo.png"
 
 const Header = () => {
-  const scrollDirection = useScrollDirection();
-
   return (
-    <header
-      className={`font-poppins z-20 flex flex-col w-full sticky transition-all duration-500 ${
-        scrollDirection === "down" ? "-top-32 md:-top-40" : "top-0"
-      }`}
-    >
+    <header className="font-poppins z-20 flex flex-col w-full sticky transition-all duration-500">
       <section className="h-16 md:h-20 flex justify-between w-full bg-dark-gray px-5 lg:px-16">
         <div className="flex items-center basis-1/2 md:basis-1/3">
           <span className="text-white text-xs md:text-sm lg:text-base font-syne font-bold">
@@ -33,12 +26,12 @@ const Header = () => {
       <section className="w-full flex flex-row justify-around h-16 md:h-20 bg-dark-gray">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/6 text-white h-16 md:h-20">
           <Link to="/">
-            <div className="ml-5 lg:ml-16 h-16 md:h-20 w-16 md:w-20">
-              <img className="h-16 md:h-20 w-16 md:w-20 p-[1px]" src={logo} alt="logo" />
-              {/* <p className="text-2xl md:text-2xl font-syne font-bold flex items-end">PRIME</p>
-              <p className="text-center text-xs tracking-widest md:text-sm">
-                DETAILING
-              </p> */}
+            <div className="ml-4 lg:ml-16 h-16 md:h-20 w-16 md:w-20">
+              <img
+                className="h-16 md:h-20 w-16 md:w-20 p-1"
+                src={logo}
+                alt="logo"
+              />
             </div>
           </Link>
         </div>
@@ -47,7 +40,7 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex justify-end items-center md:basis-1/6 min-w-48 mr-16">
           <a href="tel:2673106864" className="flex">
-            <div className=" flex justify-center items-center mx-2">
+            <div className="flex justify-center items-center mx-2">
               <FaPhone size="2rem" color="fffafa" />
             </div>
             <div className="hidden lg:flex lg:flex-col justify-center items-end ">

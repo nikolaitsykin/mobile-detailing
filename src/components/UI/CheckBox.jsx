@@ -1,14 +1,14 @@
-const SelectField = (props) => {
-  const { label, handleChange, name, defaultOption, options, value } = props;
+import React from "react";
+
+const Checkbox = (props) => {
+  const { label, handleChange, name, defaultOption, options } = props;
   return (
     <div className="w-full p-1">
-      <label
-        className="flex flex-col font-syne font-semibold text-md"
-        htmlFor={name}
-      >
+      <label className="flex flex-col font-semibold" htmlFor={name}>
         {label}
       </label>
-      <select
+      <input
+        type="checkbox"
         id={name}
         onChange={handleChange}
         defaultValue="package"
@@ -23,9 +23,9 @@ const SelectField = (props) => {
             {option}
           </option>
         ))}
-      </select>
+      </input>
     </div>
   );
 };
 
-export default SelectField;
+export default Checkbox;

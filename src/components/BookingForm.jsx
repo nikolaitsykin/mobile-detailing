@@ -127,7 +127,6 @@ const ContactForm = () => {
     </div>
   );
 };
-
 const renderAlert = () => (
   <div className="px-4 py-3 leading-normal text-blue-700 bg-blue-100  mb-5 text-center">
     <p>your message submitted successfully</p>

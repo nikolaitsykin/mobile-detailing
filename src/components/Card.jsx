@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PriceTable from "./PriceTable";
 import Button from "./UI/Button";
 
 const Card = ({
@@ -9,16 +8,13 @@ const Card = ({
   description,
   services,
   price,
-  priceTable,
-  discount,
-  packageType,
   button,
   link,
   border,
 }) => {
   return (
     <div
-      className={`w-full h-full max-w-md flex flex-col items-center justify-between p-4 m-1 mx-auto text-black ${border}`}
+      className={`w-[90%] md:w-[80%] h-full max-w-md flex flex-col items-center justify-between p-4 m-1 mx-auto text-black ${border}`}
     >
       <img
         className="w-full hover:scale-105 duration-700 align-start my-2"
@@ -32,25 +28,18 @@ const Card = ({
         </div>
       )}
       {services && (
-        <div className="flex flex-col w-full my-1 h-full">
+        <div className="flex flex-col w-full my-1 h-full ">
           <ul>
             {services.map((service) => (
               <li
                 key={service}
-                className="text-start list-none text-sm p-[2px]"
+                className="text-start list-none text-sm p-[2px] whitespace-pre-wrap"
               >
                 {service}
               </li>
             ))}
           </ul>
         </div>
-      )}
-      {priceTable && (
-        <PriceTable
-          packageType={packageType}
-          price={priceTable}
-          discount={discount}
-        />
       )}
       {price && <div className="text-sm">{price}</div>}
       {button && (
