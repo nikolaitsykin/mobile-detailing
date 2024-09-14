@@ -4,24 +4,10 @@ import SelectField from "./UI/SelectField";
 import TextareaField from "./UI/TextareaField";
 import emailjs from "@emailjs/browser";
 import Button from "./UI/Button";
+import Checkbox from "./UI/Checkbox";
 
 const ContactForm = () => {
-  const [checked, setChecked] = useState(false);
-  const [error, setError] = useState(false);
-  const [errorCheckbox, setErrorCheckbox] = useState(null);
-
-  const handleCheckBoxChange = (event) => {
-    if (event.target.checked) {
-      setChecked(true);
-      setErrorCheckbox(null);
-      console.log("ACCEPTED TERMS");
-    } else {
-      setChecked(false);
-      console.log("DIDN'T ACCEPT TERMS");
-      setErrorCheckbox("You must accept the terms");
-    }
-  };
-
+  const [isChecked, setIsChecked] = useState(false);
   const [values, setValues] = useState({
     fullName: "",
     vehicle: "",
@@ -35,39 +21,58 @@ const ContactForm = () => {
     time: "",
     message: "",
   });
-  const [errorMessage, setErrorMessage] = useState("");
+  const [error, setError] = useState(false);
   const [status, setStatus] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const checkHandler = () => {
+    setIsChecked(!isChecked);
+  };
+
+  const handleChange = (e) => {
+    const target = e?.target;
+    const value = target ? target.value : "";
+    const name = target ? target.name : "";
+
+    setValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = (e) => {
-    if (checked === false) {
+    e.preventDefault();
+
+    if (!values.fullName || values.fullName === "") {
+      setErrorMessage("Full Name is required");
       setError(true);
-      setErrorCheckbox("You must accept the terms");
-    } else {
-      e.preventDefault();
-      e.preventDefault();
-
-      if (values.fullName === "") {
-        setErrorMessage("Full Name is required");
-        return;
-      }
-      if (values.email === "") {
-        setErrorMessage("E-Mail is required");
-        return;
-      }
-      if (values.mobile === "") {
-        setErrorMessage("Mobile is required");
-        return;
-      }
-      if (values.address === "") {
-        setErrorMessage("Service Address is required");
-        return;
-      }
-      if (values.service === "") {
-        setErrorMessage("Service type is required");
-        return;
-      }
+      return;
     }
-
+    if (!values.email || values.email === "") {
+      setErrorMessage("E-Mail is required");
+      setError(true);
+      return;
+    }
+    if (!values.mobile || values.mobile === "") {
+      setErrorMessage("Mobile is required");
+      setError(true);
+      return;
+    }
+    if (!values.address || values.address === "") {
+      setErrorMessage("Service Address is required");
+      setError(true);
+      return;
+    }
+    if (!values.service || values.service === "") {
+      setErrorMessage("Service type is required");
+      setError(true);
+      return;
+    }
+    if (!isChecked) {
+      setErrorMessage("Please accept terms and conditions");
+      setError(true);
+      return;
+    }
     emailjs
       .send("service_2fhr2hn", "template_7dtehrt", values, "QaHYb2JsoQeJCIYVd")
       .then(
@@ -87,9 +92,13 @@ const ContactForm = () => {
             message: "",
           });
           setStatus("SUCCESS");
+          setError(false);
+          setIsChecked(false);
         },
         (error) => {
           console.log("FAILED...", error);
+          setErrorMessage(error.message);
+          setError(true);
         }
       );
   };
@@ -98,31 +107,22 @@ const ContactForm = () => {
     if (status === "SUCCESS") {
       setTimeout(() => {
         setStatus("");
+        setError(false);
       }, 3000);
     }
   }, [status]);
-
-  const handleChange = (e) => {
-    const target = e.target;
-    const value = target ? target.value : "";
-    const name = target ? target.name : "";
-    /* clear error on change */
-    if (errorMessage !== "") {
-      setErrorMessage("");
-    }
-    if (name) {
-      setValues((values) => ({
-        ...values,
-        [name]: value,
-      }));
-    }
-  };
 
   const renderAlert = () => {
     if (status === "SUCCESS") {
       return (
         <div className="px-4 py-3 leading-normal mb-5 text-center">
           <p>Your message submitted successfully</p>
+        </div>
+      );
+    } else if (error) {
+      return (
+        <div className="px-4 py-3 leading-normal mb-5 text-center text-red-500">
+          <p>{errorMessage}</p>
         </div>
       );
     }
@@ -132,7 +132,7 @@ const ContactForm = () => {
     <div className="w-full  mx-auto">
       <form className="flex flex-col w-full" onSubmit={handleSubmit}>
         <h3 className="text-black text-2xl my-4 border-b border-gray font-syne font-semibold">
-          Contact us today
+          Tell us about
         </h3>
         <div className="w-full flex flex-col">
           <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
@@ -144,7 +144,7 @@ const ContactForm = () => {
               handleChange={handleChange}
               label="Full Name"
               name="fullName"
-              type="text"
+              type="name"
               placeholder="John Doe"
               required
             />
@@ -163,7 +163,7 @@ const ContactForm = () => {
               label="Phone Number"
               name="mobile"
               type="tel"
-              placeholder="267 123 4567"
+              placeholder="(919) 906-0099"
               required
             />
             <InputField
@@ -171,9 +171,10 @@ const ContactForm = () => {
               handleChange={handleChange}
               label="Where would you like us to serve?"
               name="address"
-              type="text"
+              type="address"
               placeholder="327 S Academy St, Cary"
               autocomplete="address"
+              required
             />
           </div>
         </div>
@@ -189,14 +190,16 @@ const ContactForm = () => {
               name="vehicle"
               type="text"
               placeholder="Toyota RAV4"
+              required
             />
             <InputField
               value={values.year}
               handleChange={handleChange}
               label="Your Vehicle Year"
               name="year"
-              type="text"
+              type="year"
               placeholder="2023"
+              required
             />
           </div>
         </div>
@@ -216,7 +219,6 @@ const ContactForm = () => {
                 // "Deluxe Detail"
               ]}
               value={values.service}
-              required
             />
             {/* <SelectField
             handleChange={handleChange}
@@ -237,7 +239,8 @@ const ContactForm = () => {
             4. Select date and time what will be best for you
           </h3>
           <p className="text-black text-base my-1 p-0.5">
-            We currently offer services on weekends between 9 AM and 6 PM
+            We currently offer services on weekdays between 5 PM and 8 PM and
+            weekends between 9 AM and 6 PM
           </p>
           <div className="w-full grid grid-cols-1 md:grid-cols-2">
             <InputField
@@ -245,16 +248,18 @@ const ContactForm = () => {
               handleChange={handleChange}
               label="Preferred Date"
               name="date"
-              type="text"
+              type="date"
               placeholder="eg. 01/01/2024"
+              required
             />
             <InputField
               value={values.time}
               handleChange={handleChange}
               label="Preferred Time"
               name="time"
-              type="text"
+              type="time"
               placeholder="eg. 10:00 AM"
+              required
             />
           </div>
         </div>
@@ -265,31 +270,27 @@ const ContactForm = () => {
           name="message"
         />{" "}
         <div className="w-full flex justify-start items-start">
-          <input
-            type="checkbox"
-            className="w-4 h-4"
-            onChange={handleCheckBoxChange}
+          <Checkbox
+            checkHandler={checkHandler}
+            name="terms"
+            value={values.terms}
+            required
           />
-          <label htmlFor="terms">
-            I understand that the detailing service requires access to power and
-            water, and I guarantee that both will be provided and accessible at
-            the time of service
-          </label>
         </div>
+        {errorMessage && (
+          <div className="text-red-500 text-center">{errorMessage}</div>
+        )}
         <div className="flex justify-cente py-3 ">
           <Button
-            // {checked ? "disabled" : "enabled"}
             type="submit"
             children="SEND SERVICE REQUEST"
-            color={"secondary"}
+            color="secondary"
             className="w-full"
+            disabled={error}
           />
         </div>
       </form>
       {status && renderAlert()}
-      {errorMessage && (
-        <div className="text-red-500 text-center">{errorMessage}</div>
-      )}
     </div>
   );
 };

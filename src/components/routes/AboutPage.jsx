@@ -1,11 +1,26 @@
 import React from "react";
 import BookButtons from "../BookButtons";
+import carImage from "../../assets/images/man-polishing-car-inside-car-service.jpg";
 
 const About = () => {
   return (
-    <div className="bg-white py-8">
+    <div className="w-full z-20 bg-white pb-8 font-poppins">
+      <div className="relative">
+        <div className="w-[90%] mx-auto z-10 absolute top-36 md:top-28 left-1/2 -translate-x-1/2 text-center">
+          <h1 className="text-white animate-slidein300 opacity-0 text-3xl sm:text-4xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
+            Detailing Guys: Professional Service, Personal Care
+          </h1>
+        </div>
+        <div className="bg-black">
+          <img
+            className="w-full object-cover h-[450px] mx-auto opacity-50"
+            src={carImage}
+            alt="car"
+          />
+        </div>
+      </div>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h1 className=" text-4xl text-center text-black my-3 font-syne font-bold">
+        <h1 className=" text-4xl text-center text-black my-12 font-syne font-bold">
           ABOUT DETAILING GUYS
         </h1>
         <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">

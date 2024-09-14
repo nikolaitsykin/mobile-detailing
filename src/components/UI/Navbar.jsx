@@ -14,7 +14,7 @@ const Navbar = (props) => {
     }
   }, [isMenuOpen]);
 
-  const links = ["detailing", "reviews", "faqs", "about"];
+  const links = ["services", "reviews", "faqs", "about"];
 
   const navLinkStyle =
     "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-semibold h-12 lg:w-full text-md p-2 tracking-widest";
@@ -23,7 +23,7 @@ const Navbar = (props) => {
     <nav className=" w-full text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
       <div className="flex justify-end ">
         <div className="flex lg:hidden justify-center items-center mx-2 active:scale-110 duration-300">
-          <a href="tel:2673106864">
+          <a href="tel:919 906 0099">
             <div className="hover:scale-110 duration-700">
               <FaPhone size="1.5rem" color="fffafa" />
             </div>

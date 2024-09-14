@@ -8,7 +8,7 @@ import Card from "../Card";
 
 const Ceramic = () => {
   return (
-    <section className="bg-white pb-8 relative">
+    <section className="bg-white pb-8 font-poppins">
       <div className="bg-black">
         <img
           className="w-full object-cover opacity-60"

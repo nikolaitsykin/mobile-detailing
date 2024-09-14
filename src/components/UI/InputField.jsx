@@ -1,6 +1,5 @@
 const InputField = (props) => {
-  const { handleChange, label, name, type, value, placeholder } =
-    props;
+  const { handleChange, label, name, type, value, placeholder } = props;
   return (
     <div className="w-full p-1">
       <label

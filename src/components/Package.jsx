@@ -8,9 +8,9 @@ const Package = ({ packageType }) => {
   return (
     <div className="w-full text-black border my-2 mx-auto">
       <div>
-        <h2 className=" text-xl text-center pt-2 tracking-widest font-syne font-bold">
+        <h3 className=" text-xl text-center pt-2 font-syne font-bold">
           {packageType.title}
-        </h2>
+        </h3>
       </div>
       <div>
         <Menu service={packageType} />

@@ -32,7 +32,7 @@ const Membership = () => {
             ))}
           </ul>
         </div>
-        <h2 className="text-lg  text-center mt-7 text-black">
+        <h2 className="text-lg  text-center mt-7 text-black font-poppins">
           Subscription Plans
         </h2>
         <div className="text-black ">

@@ -41,7 +41,11 @@ const Card = ({
           </ul>
         </div>
       )}
-      {price && <div className="text-xs md:text-sm">{price}</div>}
+      {price && (
+        <div className="p-1 text-center font-syne font-semibold text-xl">
+          {price}
+        </div>
+      )}
       {button && (
         <div className="my-1 flex justify-center w-[100%]">
           <Link

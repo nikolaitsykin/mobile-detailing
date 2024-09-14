@@ -31,9 +31,9 @@ const Menu = ({ service }) => {
         {carsSizes &&
           carsSizes.map((car) => (
             <TabPanel key={car.title}>
-              <h2 className="p-1 text-center font-syne font-semibold text-xl">
+              <div className="p-1 text-center font-syne font-semibold text-xl">
                 Starts at {service.price[tabIndex]}
-              </h2>
+              </div>
             </TabPanel>
           ))}
       </Tabs>

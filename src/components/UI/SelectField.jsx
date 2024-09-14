@@ -9,17 +9,19 @@ const SelectField = (props) => {
         {label}
       </label>
       <select
+        required
         id={name}
+        value={value}
         onChange={handleChange}
         defaultValue="package"
         name={name}
         className="w-full text-dark-gray bg-light-gray my-1 p-2 text-sm "
       >
-        <option value="package" disabled>
+        <option value="package" disabled className="text-sm p-1">
           {defaultOption}
         </option>
         {options.map((option) => (
-          <option key={option} value={option} className="text-sm">
+          <option key={option} value={option} className="text-sm p-1">
             {option}
           </option>
         ))}

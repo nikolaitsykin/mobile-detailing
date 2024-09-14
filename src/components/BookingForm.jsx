@@ -93,7 +93,7 @@ const ContactForm = () => {
           label="Mobile"
           name="mobile"
           type="tel"
-          placeholder="267 123 4567"
+          placeholder="(919) 906-0099"
         />
         <InputField
           value={values.address}

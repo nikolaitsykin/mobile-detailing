@@ -1,11 +1,13 @@
 import React from "react";
 
-const Button = ({ children, color, onClick, type }) => {
+const Button = ({ children, color, onClick, type, disabled }) => {
   const buttonStyle = {
     primary:
       "text-black bg-white active:bg-black active:text-white border-dark-gray active:border-white hover:bg-black hover:border-white hover:text-white",
     secondary:
       "text-white active:text-white bg-blue active:bg-navy border-blue hover:bg-navy",
+    disabled:
+      "text-white active:text-white bg-blue active:bg-navy border-blue hover:bg-navy opacity-53",
   };
 
   return (

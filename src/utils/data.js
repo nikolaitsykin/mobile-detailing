@@ -15,6 +15,8 @@ import deluxeInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1
 import twoStepPaintCorrectionImage from "../assets/images/AdobeStock_378443659.jpeg";
 import primeHeadlightRestorationImage from "../assets/images/AdobeStock_397247724.jpeg";
 import primeCeramicCoatingImage from "../assets/images/AdobeStock_799868847.jpeg";
+import headlinerCleaningImage from "../assets/images/how-to-clean-car-headliner-to-factory-new-in-one-weekend-238181_900x.jpg";
+import engineDetailingImage from "../assets/images/AdobeStock_255876084 2.jpeg";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
 export const secondaryStyle =
@@ -53,8 +55,8 @@ export const essentialExteriorServices = [
   "☒ Iron Removal to Protect and Maintain Paint Integrity",
   "☒ Clay Bar Treatment for a Smooth, Contaminant-Free Surface",
   "☒ Two-Stage Bug & Tar Removal for a Spotless Exterior",
-  "☒ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
-  "☒ Application of Premium Spray Ceramic Coating for Protection",
+  // "☒ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
+  // "☒ Application of Premium Spray Ceramic Coating for Protection",
 ];
 export const essentialInteriorServices = [
   "☑ Thorough Cleaning of Door Seals & Jambs",
@@ -69,9 +71,9 @@ export const essentialInteriorServices = [
   "☒ Leather Protection & Conditioning for Long-Lasting Care",
   "☒ Meticulous Cracks & Crevices Cleaning",
   "☒ Pet hair/Sand removal",
-  "☒ Headliner Cleaning with Enzyme Cleaner for a Spotless Look",
-  "☒ Ozone Treatment for Complete Odor Neutralization",
-  "☒ Effective Removal of Dirt, Stains, and Harmful Bacteria",
+  // "☒ Headliner Cleaning with Enzyme Cleaner for a Spotless Look",
+  // "☒ Ozone Treatment for Complete Odor Neutralization",
+  // "☒ Effective Removal of Dirt, Stains, and Harmful Bacteria",
 ];
 
 export const primeExteriorServices = [
@@ -88,8 +90,8 @@ export const primeExteriorServices = [
   "☑ Iron Removal to Protect and Maintain Paint Integrity",
   "☑ Clay Bar Treatment for a Smooth, Contaminant-Free Surface",
   "☑ Two-Stage Bug & Tar Removal for a Spotless Exterior",
-  "☒ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
-  "☒ Application of Premium Spray Ceramic Coating for Protection",
+  // "☒ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
+  // "☒ Application of Premium Spray Ceramic Coating for Protection",
 ];
 export const primeInteriorServices = [
   "☑ Thorough Cleaning of Door Seals & Jambs",
@@ -104,9 +106,9 @@ export const primeInteriorServices = [
   "☑ Leather Protection & Conditioning for Long-Lasting Care",
   "☑ Meticulous Cracks & Crevices Cleaning",
   "☑ Pet hair/Sand removal",
-  "☒ Headliner Cleaning with Enzyme Cleaner for a Spotless Look",
-  "☒ Ozone Treatment for Complete Odor Neutralization",
-  "☒ Effective Removal of Dirt, Stains, and Harmful Bacteria",
+  // "☒ Headliner Cleaning with Enzyme Cleaner for a Spotless Look",
+  // "☒ Ozone Treatment for Complete Odor Neutralization",
+  // "☒ Effective Removal of Dirt, Stains, and Harmful Bacteria",
 ];
 
 export const deluxeExteriorServices = [
@@ -210,6 +212,26 @@ export const regularWash = {
   cars: ["Small Cars", "Midsize SUVs/Trucks", "Large SUVs/Trucks/Vans"],
   duration: "for Members Only",
 };
+
+export const exteriorAddons = [
+  {
+    title: "Engine Bay Detailing",
+    image: engineDetailingImage,
+    description:
+      "Our Engine Bay Detailing service safely removes dirt, grease, and grime using eco-friendly products. We enhance the appearance and longevity of your engine with a thorough, detailed clean, leaving it spotless and ready for optimal performance.",
+    price: "Starts at $50",
+  },
+];
+
+export const interiorAddons = [
+  {
+    title: "Headliner Restoration",
+    image: headlinerCleaningImage,
+    description:
+      "Rediscover the road with our Headlight Restoration service. Eliminate dim, cloudy headlights and enjoy enhanced visibility and safety. Our solution will make your headlights look like new again. Schedule your appointment today and experience the clear difference!",
+    price: "Starts at $75",
+  },
+];
 
 export const biWeekly = {
   title: "Bi-Weekly",
@@ -387,7 +409,7 @@ export const generalQuestions = [
   {
     title: "How Can I Book A Detail?",
     description:
-      "You can call us at (267) 310-6864 or request a book an appointment online. Click the “book now” button to visit our appointments page to book online.",
+      "You can call us at (919) 906-0099, request a quote through our contact page or just simply book online. Click the “request a quote” button to visit our contact page to request a quote. Click the “book now” button to visit our appointments page to book online.",
   },
   {
     title: "What Do I Need to Do Before My Appointment?",

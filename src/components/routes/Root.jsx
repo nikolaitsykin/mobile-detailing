@@ -9,7 +9,7 @@ const Root = () => {
   return (
     <main className="w-full z-20 bg-white pb-8 font-poppins">
       <div className="relative text-sm md:text-base">
-        <div className="w-[90%]  mx-auto z-10 absolute top-36 md:top-40 left-1/2 -translate-x-1/2 text-center">
+        <div className="w-[90%] mx-auto z-10 absolute top-36 md:top-40 left-1/2 -translate-x-1/2 text-center">
           <h1 className="text-white animate-slidein300 opacity-0 text-3xl sm:text-4xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
             PRIME AUTO DETAILING
           </h1>
@@ -22,7 +22,7 @@ const Root = () => {
         </div>
         <div className="bg-black">
           <video
-            className="opacity-60 object-cover min-h-[550px] md:h-[600px] w-full mx-auto"
+            className="opacity-50 object-cover min-h-[450px] md:h-[550px] w-full mx-auto"
             autoPlay
             loop
             playsInline

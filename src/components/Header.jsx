@@ -18,9 +18,12 @@ const Header = () => {
           <span className="text-white px-4 text-xs s:text-sm sm:text-base md:text-lg"></span>
         </div>
         <div className="flex md:justify-end md:basis-1/3 items-center">
-          <Link to="/booking">
+        <span className=" min-w-48">
+        <Link to="/booking">
             <Button children={"Request Quote"} color={"primary"} />
           </Link>
+
+        </span>
         </div>
       </section>
       <section className="w-full flex flex-row justify-around h-16 md:h-20 bg-dark-gray">
@@ -39,7 +42,7 @@ const Header = () => {
           <Navbar />
         </div>
         <div className="hidden lg:flex justify-end items-center md:basis-1/6 min-w-48 mr-16">
-          <a href="tel:2673106864" className="flex">
+          <a href="tel:919 906 0099" className="flex">
             <div className="flex justify-center items-center mx-2">
               <FaPhone size="2rem" color="fffafa" />
             </div>
@@ -48,7 +51,7 @@ const Header = () => {
                 FREE CONSULTATION
               </span>
               <span className="text-white text-base md:text-lg font-semibold">
-                (123) 456-7890
+                (919) 906-0099
               </span>
             </div>
           </a>
