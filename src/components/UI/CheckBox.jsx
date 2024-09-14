@@ -1,7 +1,6 @@
 import React from "react";
 
-const Checkbox = ({checkHandler, isChecked}) => {
- 
+const Checkbox = ({ checkHandler }) => {
   return (
     <div className="w-full p-1 flex items-start">
       <input

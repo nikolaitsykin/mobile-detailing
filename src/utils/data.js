@@ -15,7 +15,7 @@ import deluxeInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1
 import twoStepPaintCorrectionImage from "../assets/images/AdobeStock_378443659.jpeg";
 import primeHeadlightRestorationImage from "../assets/images/AdobeStock_397247724.jpeg";
 import primeCeramicCoatingImage from "../assets/images/AdobeStock_799868847.jpeg";
-import headlinerCleaningImage from "../assets/images/how-to-clean-car-headliner-to-factory-new-in-one-weekend-238181_900x.jpg";
+import headlinerCleaningImage from "../assets/images/how-to-clean-car-headliner-to-factory-new-in-one-weekend-238181_900x .jpg";
 import engineDetailingImage from "../assets/images/AdobeStock_255876084 2.jpeg";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
