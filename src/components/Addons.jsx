@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../Card";
-import { interiorAddons, exteriorAddons } from "../../utils/data";
+import Card from "./Card";
+import { interiorAddons, exteriorAddons } from "../utils/data";
 
 const Addons = () => {
   return (

@@ -1,10 +1,10 @@
+import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
+import Button from "./UI/Button";
+import Checkbox from "./UI/Checkbox";
 import InputField from "./UI/InputField";
 import SelectField from "./UI/SelectField";
 import TextareaField from "./UI/TextareaField";
-import emailjs from "@emailjs/browser";
-import Button from "./UI/Button";
-import Checkbox from "./UI/Checkbox";
 
 const ContactForm = () => {
   const [isChecked, setIsChecked] = useState(false);

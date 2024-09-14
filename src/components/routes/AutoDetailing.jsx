@@ -5,8 +5,8 @@ import {
   // deluxePackage,
   primePackage,
 } from "../../utils/data";
+import Addons from "../Addons";
 import Package from "../Package";
-import Addons from "./Addons";
 
 const AutoDetailing = () => {
   return (

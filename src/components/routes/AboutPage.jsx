@@ -1,6 +1,6 @@
 import React from "react";
-import BookButtons from "../BookButtons";
 import carImage from "../../assets/images/man-polishing-car-inside-car-service.jpg";
+import BookButtons from "../BookButtons";
 
 const About = () => {
   return (
