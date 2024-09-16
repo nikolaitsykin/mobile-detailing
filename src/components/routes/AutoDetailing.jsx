@@ -14,7 +14,7 @@ const AutoDetailing = () => {
       <div className="relative">
         <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
           <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
-            Professional Car Care, Wherever You Are
+            MOBILE DETAILING
           </h1>
         </div>
         <div className="bg-black">
@@ -32,22 +32,13 @@ const AutoDetailing = () => {
             Exterior and Interior Detailing
           </h2>
           <p className="text-sm md:text-base">
-            Whether you’re at home, your apartment, or the office, we bring our
-            services directly to you. Our fully equipped mobile detailing unit
-            has everything we need to provide top-notch care for your vehicle.
-            We do require access to a power and water supply, but once that’s
-            arranged, we’ll take care of the rest. We proudly serve Raleigh,
-            Cary, Holly Springs, and the surrounding areas. While there may be
-            some location-based limitations or criteria, we always do our best
-            to accommodate your needs and fit you into our schedule.
-          </p>
-          <p className="text-sm md:text-base">
             Washing a car might seem simple, but achieving a flawless finish
             requires more than just a quick rinse. If you're looking for a fast,
             budget-friendly wash, Detailing Guys might not be the right fit. We
             take detailing to the next level, both inside and out. Our advanced
             washing and drying techniques go beyond removing everyday dirt,
             grime, bird droppings, and dust—while minimizing surface scratches.
+            <br />
             <br />
             Inside, we use only safe, eco-friendly detergents, ensuring that
             every surface is thoroughly cleaned and conditioned. Our products

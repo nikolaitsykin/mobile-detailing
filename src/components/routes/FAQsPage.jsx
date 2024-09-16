@@ -9,7 +9,7 @@ const FAQs = () => {
       <div className="relative">
         <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
           <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
-            Detailing Guys FAQs
+            FAQs
           </h1>
         </div>
         <div className="bg-black">
@@ -22,7 +22,7 @@ const FAQs = () => {
       </div>
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article>
-          <h2 className="text-3xl md:text-4xl text-center text-black font-syne font-bold">
+          <h2 className="text-2xl text-center text-black font-syne font-bold">
             Everything You Need to Know
           </h2>
           <FaqItem title="General Questions" questions={generalQuestions} />

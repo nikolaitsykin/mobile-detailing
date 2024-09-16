@@ -22,13 +22,17 @@ const ServicesPage = () => {
         </div>
       </div>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2
-          id="services"
-          className="text-black text-xl md:text-4xl text-center py-12 font-syne font-bold"
-        >
-          Our Services
-        </h2>
-        <Services />
+        <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
+          <h2
+            id="services"
+            className="text-black text-2xl  text-center font-syne font-bold"
+          >
+            Our Services
+          </h2>
+          <div className="pt-5">
+            <Services />
+          </div>
+        </article>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto ">
         <h2 className="text-black text-2xl text-center p-5 font-syne font-bold">

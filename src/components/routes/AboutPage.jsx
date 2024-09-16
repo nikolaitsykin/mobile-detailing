@@ -8,7 +8,7 @@ const AboutPage = () => {
       <div className="relative">
         <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
           <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
-            Professional Service, Personal Care
+            ABOUT
           </h1>
         </div>
         <div className="bg-black">
@@ -21,8 +21,8 @@ const AboutPage = () => {
       </div>
       <section>
         <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
-          <h2 className="text-2xl md:text-4xl text-center text-black font-syne font-bold">
-            About Detailing Guys
+          <h2 className="text-2xl text-center text-black font-syne font-bold">
+          Professional Service, Personal Care
           </h2>
           <p className="py-2">
             At Detailing Guys, we're committed to making your car look its

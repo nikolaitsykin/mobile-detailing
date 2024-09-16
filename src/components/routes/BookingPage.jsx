@@ -6,7 +6,7 @@ const Booking = () => {
     <div className="bg-white py-8 font-poppins">
       <section className="w-[90%] md:w-[80%] mx-auto">
         <h1 className=" text-3xl text-center text-black my-3 font-syne font-semibold">
-          Request a Quote
+          REQUEST A QUOTE
         </h1>
         <article className="text-sm md:text-base text-start text-black">
           <p className="p-1  text-center">

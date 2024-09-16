@@ -11,7 +11,7 @@ const Root = () => {
       <div className="relative text-sm md:text-base">
         <div className="w-[90%] mx-auto z-10 absolute top-36 md:top-40 left-1/2 -translate-x-1/2 text-center">
           <h1 className="animate-slidein500 opacity-0 text-white text-3xl sm:text-4xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
-            PRIME AUTO DETAILING
+            PROFESSIONAL AUTO DETAILING
           </h1>
           <p className="animate-slidein700 opacity-0 text-xs md:text-base text-white py-5 w-full flex justify-center">
             Whether you want to protect your car or give it a clean look, we

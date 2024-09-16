@@ -1,15 +1,11 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import Services from "./Services";
 
 const Hero = () => {
-  const location = useLocation();
-  console.log(location);
-
   return (
     <div className="w-full z-20 bg-white font-poppins">
       <section>
-        <h2 className="text-black text-2xl md:text-4xl text-center font-syne font-bold">
+        <h2 className="text-black text-2xl text-center font-syne font-bold">
           Detailing to Your Doorstep
         </h2>
         <p className="text-sm md:text-base">
