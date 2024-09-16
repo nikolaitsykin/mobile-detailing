@@ -26,7 +26,7 @@ const Header = () => {
           <span className="text-white px-4 text-xs s:text-sm sm:text-base md:text-lg"></span>
         </div>
         <div className="flex md:justify-end md:basis-1/3 items-center">
-          <span className=" min-w-48">
+          <span className="min-w-32 md:min-w-48">
             <Link to="/booking">
               <Button children={"Request Quote"} color={"primary"} />
             </Link>
