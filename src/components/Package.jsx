@@ -1,9 +1,7 @@
 import React from "react";
-import Button from "./UI/Button";
 import Card from "./Card";
-import { Link } from "react-router-dom";
+import BookButtons from "./UI/BookButtons";
 import Menu from "./UI/Menu";
-
 const Package = ({ packageType }) => {
   return (
     <div className="w-full text-black border my-2 mx-auto">
@@ -29,13 +27,7 @@ const Package = ({ packageType }) => {
       </div>
       <p className="text-center text-sm p-3">{packageType.duration}</p>
       <div className="flex justify-center p-4 mb-4">
-        <Link
-          className="w-[80%] flex justify-center items-center"
-          target="_blank"
-          to="https://squareup.com/appointments/book/t25pubegvfjcw1/LDK47FK18Z9GH/start"
-        >
-          <Button children={"Book"} color={"secondary"} />
-        </Link>
+        <BookButtons color="secondary" />
       </div>
     </div>
   );

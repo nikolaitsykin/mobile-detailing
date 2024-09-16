@@ -2,14 +2,14 @@ import React from "react";
 
 const FaqItem = ({ title, questions }) => {
   return (
-    <div>
-      <h3 className="text-black text-xl md:text-2xl text-center p-5 mt-5 font-syne font-bold">
+    <div className="">
+      <h3 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold">
         {title}
       </h3>
       {questions.map((question, index) => (
         <div
           key={"div" + index}
-          className="text-black text-sm md:text-sm w-full flex flex-col justify-center my-1"
+          className="text-black text-sm md:text-sm w-full flex flex-col justify-center my-4"
         >
           <h4
             key={"header" + index}

@@ -4,7 +4,6 @@ import App from "../App";
 import ErrorPage from "../error-page";
 import Hero from "../Hero";
 import Root from "../routes/Root";
-import About from "./AboutPage";
 import AutoDetailing from "./AutoDetailing";
 import Booking from "./BookingPage";
 import Ceramic from "./Ceramic";
@@ -15,6 +14,8 @@ import Membership from "./MembershipPage";
 import PPF from "./PPF";
 import Reviews from "./ReviewsPage";
 import PaintCorrection from "./PaintCorrection";
+import AboutPage from "./AboutPage";
+import ServicesPage from "./ServicesPage";
 
 export const routes = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const routes = createBrowserRouter([
         element: <Root />,
       },
       {
+        path: "/services",
+        element: <ServicesPage />,
+      },
+      {
         path: "/booking",
         element: <Booking />,
       },
@@ -35,7 +40,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: <AboutPage />,
       },
       {
         path: "/FAQs",

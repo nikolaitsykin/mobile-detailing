@@ -130,7 +130,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-full  mx-auto">
-      <form className="flex flex-col w-full" onSubmit={handleSubmit}>
+      <form className="flex flex-col mx-auto md:w-full" onSubmit={handleSubmit}>
         <h3 className="text-black text-2xl my-4 border-b border-gray font-syne font-semibold">
           Tell us about
         </h3>
@@ -220,18 +220,14 @@ const ContactForm = () => {
               ]}
               value={values.service}
             />
-            {/* <SelectField
-            handleChange={handleChange}
-            name="addon"
-            label="Which add-on are you interested in?"
-            defaultOption={"Choose your add-on"}
-            options={[
-              "Headlights Restoration",
-              "Engine Bay Cleaning",
-              "Excessive Pet Hair Removal",
-              "Headliner Cleaning",
-            ]}
-          /> */}
+            <InputField
+              value={values.addon}
+              handleChange={handleChange}
+              label="Which addons are you interested in?"
+              name="addon"
+              type="text"
+              placeholder="Engine Bay Detail, Pet Hair Removal, Headliner Detail."
+            />
           </div>
         </div>
         <div className="w-full flex flex-col">

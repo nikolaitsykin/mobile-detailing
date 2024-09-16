@@ -13,7 +13,6 @@ const SelectField = (props) => {
         id={name}
         value={value}
         onChange={handleChange}
-        defaultValue="package"
         name={name}
         className="w-full text-dark-gray bg-light-gray my-1 p-2 text-sm "
       >

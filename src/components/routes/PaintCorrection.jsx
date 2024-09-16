@@ -8,7 +8,7 @@ import Card from "../Card";
 
 const Polish = () => {
   return (
-    <section className="bg-white pb-8 relative">
+    <section className="bg-white  relative">
       <div className="bg-black">
         <img
           className="w-full object-cover opacity-60"
@@ -28,16 +28,16 @@ const Polish = () => {
         <h2 className="text-black text-2xl text-center p-5 font-syne font-bold animate-slidein500 opacity-0">
           Paint correction
         </h2>
-        <article className="text-sm md:text-base tracking-wide leading-6 animate-slidein700 opacity-0 text-start text-black">
+        <article className="text-sm md:text-base tracking-wide leading-6  text-start text-black">
           Washing a car may seem simple, but achieving a flawless finish
           requires more than just a quick rinse. If you're looking for a fast,
-          budget-friendly wash, we might not be the right fit. At Prime, we take
+          budget-friendly wash, we might not be the right fit. At Detailing Guys, we take
           detailing to the next level, both inside and out. Our service goes
           beyond removing everyday dirt, grime, bird droppings, and dust—we use
           advanced washing and drying techniques that significantly reduce
           surface scratches. We also meticulously clean and condition every
           interior surface, ensuring your vehicle looks and feels pristine
-          inside and out. Experience the Prime difference, where every detail
+          inside and out. Experience the difference, where every detail
           counts.
         </article>
       </div>

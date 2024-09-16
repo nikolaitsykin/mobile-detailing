@@ -11,13 +11,13 @@ const Membership = () => {
       <section className="w-[80%] mx-auto">
         <div></div>
         <h1 className=" text-3xl text-center text-black my-3">
-          Prime Membership: Shine All Year Long
+          Membership: Shine All Year Long
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
           <p className=" p-2">
-            At Prime, we believe your vehicle deserves the best care, not just
+            At Detailing Guys, we believe your vehicle deserves the best care, not just
             once in a while, but all year round. That’s why we’ve created the
-            Prime Membership — a convenient and cost-effective way to keep your
+            Membership — a convenient and cost-effective way to keep your
             car looking its best, inside and out, with regular detailing at
             exclusive member-only rates.
           </p>
@@ -60,7 +60,7 @@ const Membership = () => {
           </div>
         </div>
         <p className="my-1 text-sm md:text-base p-3">
-          Join the Prime Membership today and keep your vehicle in showroom
+          Join the Membership today and keep your vehicle in showroom
           condition all year long. Sign up now to start enjoying the benefits of
           regular, high-quality detailing with the added bonus of exclusive
           savings!

@@ -4,10 +4,18 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/detailing_guys_logo.png";
 import Button from "./UI/Button";
 import Navbar from "./UI/Navbar";
+import useScrollDirection from "../hooks/useScrollDirection";
 
 const Header = () => {
+  const scrollDirection = useScrollDirection();
+
   return (
-    <header className="font-poppins z-20 flex flex-col w-full sticky transition-all duration-500">
+    <header
+      className={`font-poppins z-20 flex flex-col w-full sticky transition-all duration-300 ${
+        scrollDirection === "down" ? "-top-32 md:-top-40" : "top-0"
+      }`}
+    >
+      {" "}
       <section className="h-16 md:h-20 flex justify-between w-full bg-dark-gray px-5 lg:px-16">
         <div className="flex items-center basis-1/2 md:basis-1/3">
           <span className="text-white text-xs md:text-sm lg:text-base font-syne font-bold">
@@ -18,12 +26,11 @@ const Header = () => {
           <span className="text-white px-4 text-xs s:text-sm sm:text-base md:text-lg"></span>
         </div>
         <div className="flex md:justify-end md:basis-1/3 items-center">
-        <span className=" min-w-48">
-        <Link to="/booking">
-            <Button children={"Request Quote"} color={"primary"} />
-          </Link>
-
-        </span>
+          <span className=" min-w-48">
+            <Link to="/booking">
+              <Button children={"Request Quote"} color={"primary"} />
+            </Link>
+          </span>
         </div>
       </section>
       <section className="w-full flex flex-row justify-around h-16 md:h-20 bg-dark-gray">

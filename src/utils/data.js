@@ -17,6 +17,7 @@ import primeHeadlightRestorationImage from "../assets/images/AdobeStock_39724772
 import primeCeramicCoatingImage from "../assets/images/AdobeStock_799868847.jpeg";
 import headlinerCleaningImage from "../assets/images/how-to-clean-car-headliner-to-factory-new-in-one-weekend-238181_900x .jpg";
 import engineDetailingImage from "../assets/images/AdobeStock_255876084 2.jpeg";
+import petHairRemovalImage from "../assets/images/hair-removal.jpg";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
 export const secondaryStyle =
@@ -110,6 +111,10 @@ export const primeInteriorServices = [
   // "☒ Ozone Treatment for Complete Odor Neutralization",
   // "☒ Effective Removal of Dirt, Stains, and Harmful Bacteria",
 ];
+
+export const advancedExteriorServices = [];
+
+export const advancedInteriorServices = [];
 
 export const deluxeExteriorServices = [
   "☑ Multi-Step Pre-Cleaning for Maximum Dirt Removal",
@@ -213,7 +218,14 @@ export const regularWash = {
   duration: "for Members Only",
 };
 
-export const exteriorAddons = [
+export const addons = [
+  {
+    title: "Headliner Restoration",
+    image: headlinerCleaningImage,
+    description:
+      "Rediscover the road with our Headlight Restoration service. Eliminate dim, cloudy headlights and enjoy enhanced visibility and safety. Our solution will make your headlights look like new again. Schedule your appointment today and experience the clear difference!",
+    price: "Starts at $75",
+  },
   {
     title: "Engine Bay Detailing",
     image: engineDetailingImage,
@@ -221,15 +233,12 @@ export const exteriorAddons = [
       "Our Engine Bay Detailing service safely removes dirt, grease, and grime using eco-friendly products. We enhance the appearance and longevity of your engine with a thorough, detailed clean, leaving it spotless and ready for optimal performance.",
     price: "Starts at $50",
   },
-];
-
-export const interiorAddons = [
   {
-    title: "Headliner Restoration",
-    image: headlinerCleaningImage,
+    title: "Excessive Pet Hair Removal",
+    image: petHairRemovalImage,
     description:
-      "Rediscover the road with our Headlight Restoration service. Eliminate dim, cloudy headlights and enjoy enhanced visibility and safety. Our solution will make your headlights look like new again. Schedule your appointment today and experience the clear difference!",
-    price: "Starts at $75",
+      "Our Excessive Pet Hair Removal add-on is designed to tackle stubborn pet hair that regular cleaning can’t handle. We thoroughly remove pet hair from seats, carpets, and hard-to-reach areas using specialized tools and techniques, leaving your vehicle fresh, clean, and fur-free.",
+    price: "Starts at $50",
   },
 ];
 
@@ -288,28 +297,28 @@ export const interiorDetailingService = {
 export const paintCorrectionService = {
   title: "Paint Correction",
   description:
-    "Our paint correction service at Prime Detailing carefully removes swirl marks, scratches, and imperfections, restoring your vehicle’s paint to a flawless, showroom-quality finish.  image: paintCorrectionServiceImage.",
+    "Our paint correction service at Detailing Guys carefully removes swirl marks, scratches, and imperfections, restoring your vehicle’s paint to a flawless, showroom-quality finish.  image: paintCorrectionServiceImage.",
   image: paintCorrectionServiceImage,
   link: "paint-correction",
 };
 export const headlightRestorationService = {
   title: "Headlight Restoration",
   description:
-    "Our headlight restoration service at Prime Detailing removes oxidation and haze, restoring clarity and brightness to your headlights. We improve visibility and enhance your vehicle’s overall appearance.",
+    "Our headlight restoration service at Detailing Guys removes oxidation and haze, restoring clarity and brightness to your headlights. We improve visibility and enhance your vehicle’s overall appearance.",
   image: headlightRestorationServiceImage,
   link: "headlight-restoration",
 };
 export const ceramicCoatingService = {
   title: "Ceramic Coating",
   description:
-    "Our ceramic coating service at Prime Detailing provides a durable, high-gloss layer of protection that shields your vehicle’s paint from UV rays, dirt, and contaminants, keeping it looking pristine for longer.",
+    "Our ceramic coating service at Detailing Guys provides a durable, high-gloss layer of protection that shields your vehicle’s paint from UV rays, dirt, and contaminants, keeping it looking pristine for longer.",
   image: ceramicCoatingServiceImage,
   link: "ceramic-coating",
 };
 export const ppfService = {
   title: "Paint Protection Film",
   description:
-    "Our paint protection film service at Prime Detailing applies a nearly invisible layer of durable film to your vehicle's exterior, safeguarding the paint from chips, scratches, and road debris while preserving its flawless finish.",
+    "Our paint protection film service at Detailing Guys applies a nearly invisible layer of durable film to your vehicle's exterior, safeguarding the paint from chips, scratches, and road debris while preserving its flawless finish.",
   image: ppfServiceImage,
   link: "paint-protection-film",
 };
@@ -478,5 +487,73 @@ export const autoDetailingQuestions = [
   {
     title: "Do Detail Packages Include Both Exterior and Interior?",
     description: "Our detail packages include interior and exterior services.",
+  },
+];
+
+export const sustainability = [
+  {
+    title: "1. Biodegradable Car Wash Soap",
+    description:
+      "Our biodegradable car wash soap cleans your vehicle thoroughly without introducing harmful chemicals to the environment. Made from natural, non-toxic ingredients, it breaks down easily, ensuring no pollution to local water sources. Plus, it’s gentle on your skin, so you don’t have to worry about irritation or allergic reactions.",
+  },
+  {
+    title: "2. Microfiber Towels",
+    description:
+      "Our microfiber towels are made from synthetic fibers that pick up dirt without scratching your car’s surface. These towels are reusable and washable, providing a sustainable option over disposable products. Once they’ve reached their end of life, they’re recyclable, ensuring we continue to reduce waste.",
+  },
+  {
+    title: "3. Waterless Car Wash",
+    description:
+      "In areas where water conservation is key, our waterless car wash uses safe lubricants and cleaners to remove dirt and grime. It’s a perfect solution for saving water while still delivering a spotless finish—all with eco-friendly ingredients that are biodegradable and safe.",
+  },
+  {
+    title: "4. Bamboo Brushes",
+    description:
+      "Our bamboo brushes offer an earth-friendly alternative to synthetic materials. Biodegradable and sustainable, bamboo is naturally durable and gentle, ensuring no scratches while cleaning, and it won’t contribute to landfill waste.",
+  },
+  {
+    title: "5. Interior Detailing Sprays",
+    description:
+      "For interior cleaning, we use sprays made from plant-based, biodegradable ingredients. These products, free of harsh chemicals, are safe for your car’s surfaces and safe for your family, ensuring a fresh, clean environment without harmful residues.",
+  },
+  {
+    title: "6. Electric Pressure Washers",
+    description:
+      "We opt for electric pressure washers over gas-powered ones to reduce emissions and noise pollution. These machines use renewable energy sources and produce less greenhouse gas, making them a greener option for effective car cleaning.",
+  },
+  {
+    title: "7. Eco-Friendly Carpet Cleaner",
+    description:
+      "Our eco-friendly carpet cleaners use plant-based enzymes and surfactants to break down stains and dirt, ensuring a deep clean without harsh chemicals. They’re perfect for families, as they’re safe for use around both kids and pets.",
+  },
+  {
+    title: "8. Steam Cleaning",
+    description:
+      "Our steam cleaning services use nothing but water heated to high temperatures to remove dirt and bacteria. This method is not only incredibly effective but eliminates the need for chemical cleaners, ensuring a safe and eco-friendly solution for deep cleaning.",
+  },
+  {
+    title: "9. Natural Leather Cleaner",
+    description:
+      "Our natural leather cleaners are made from biodegradable, plant-based oils and surfactants. They effectively clean and protect your car’s leather while being safe for both pets and children, ensuring no harmful exposure from chemical residues.",
+  },
+  {
+    title: "10. Green Glass Cleaner",
+    description:
+      "We use green glass cleaners formulated with natural ingredients like vinegar and plant-based surfactants. These cleaners leave your windows spotless without streaks and are completely safe for your family and the environment.",
+  },
+  {
+    title: "11. Steam-Powered Cleaning Gun",
+    description:
+      "Our microfiber towels are made from synthetic fibers that pick up dirt without scratching your car’s surface. These towels are reusable and washable, providing a sustainable option over disposable products. Once they’ve reached their end of life, they’re recyclable, ensuring we continue to reduce waste.",
+  },
+  {
+    title: "12. Eco-Friendly Wheel Cleaner",
+    description:
+      "We care for your wheels with biodegradable, non-toxic wheel cleaners made from natural citrus oils and surfactants. These products effectively remove brake dust and grime while being gentle on your wheels and the environment.",
+  },
+  {
+    title: "Conclusion",
+    description:
+      "At Detailing Guys, we make sure that every product we use is safe for your car, your family, and the planet. Our eco-friendly detailing supplies ensure you get the highest quality service without any harmful side effects. By choosing sustainable options, you can keep your car looking its best while doing your part to protect the environment. Ready for a clean car that’s good for the earth? Let Detailing Guys take care of it!",
   },
 ];

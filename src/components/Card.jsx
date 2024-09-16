@@ -14,21 +14,21 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`w-full h-full max-w-xl flex flex-col items-center justify-between p-4 m-1 mx-auto text-black ${border}`}
+      className={`w-full h-full flex flex-col items-center justify-between p-4  mx-auto text-black ${border}`}
     >
       <img
-        className="w-full hover:scale-105 duration-700 align-start my-2"
+        className="w-full max-w-xl hover:scale-105 duration-700 align-start my-3"
         src={image}
         alt="Car wash"
       />
-      <h3 className="text-center font-syne font-bold">{title}</h3>
+      <h3 className="max-w-xl text-center font-syne font-bold">{title}</h3>
       {description && (
-        <div className="flex flex-col w-full my-1">
+        <div className="flex flex-col w-full max-w-xl my-1">
           <p className=" text-xs md:text-sm">{description}</p>
         </div>
       )}
       {services && (
-        <div className="flex flex-col w-full my-1 h-full ">
+        <div className="flex flex-col w-full max-w-xl my-1 h-full ">
           <ul>
             {services.map((service) => (
               <li

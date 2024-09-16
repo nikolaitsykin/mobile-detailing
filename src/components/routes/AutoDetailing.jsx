@@ -10,27 +10,27 @@ import Package from "../Package";
 
 const AutoDetailing = () => {
   return (
-    <section className="bg-white pb-8 relative font-poppins">
-      <div className="bg-black">
-        <img
-          className="w-full object-cover opacity-60 h-[450px]"
-          src={detailingImage}
-          alt="Auto detailing"
-        />
-      </div>
-      <div className="w-[90%] md:w-[80%] mx-auto">
-        <div className="w-[90%] md:w-[80%] mx-auto z-10 absolute top-32 md:top-32 left-1/2 -translate-x-1/2 text-center">
-          <h1
-            id="mobile-detailing"
-            className="text-white animate-slidein300 opacity-0 text-3xl sm:text-4xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold"
-          >
-            Mobile Detailing: Professional Car Care, Wherever You Are
+    <div className="w-full z-20 bg-white font-poppins">
+      <div className="relative">
+        <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
+          <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
+            Professional Car Care, Wherever You Are
           </h1>
         </div>
-        <h2 className="text-black text-2xl text-center p-5 font-syne font-bold animate-slidein500 opacity-0 mt-2">
-          Exterior and Interior Detailing
-        </h2>
+        <div className="bg-black">
+          <img
+            className="w-full object-cover h-[450px] mx-auto opacity-40"
+            src={detailingImage}
+            alt="Auto detailing"
+          />
+        </div>
+        <div className="w-[90%] md:w-[80%] mx-auto"></div>
+      </div>
+      <section>
         <article className=" text-start text-black">
+          <h2 className="text-black text-2xl text-center p-5 font-syne font-bold">
+            Exterior and Interior Detailing
+          </h2>
           <p className="text-sm md:text-base">
             Whether you’re at home, your apartment, or the office, we bring our
             services directly to you. Our fully equipped mobile detailing unit
@@ -58,7 +58,7 @@ const AutoDetailing = () => {
             well-being matters.
           </p>
         </article>
-      </div>
+      </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
         <h2 className="text-black text-2xl text-center p-5 font-syne font-bold">
           Package Options
@@ -76,8 +76,8 @@ const AutoDetailing = () => {
         </h2>
         <Addons />
       </section>
-      <section className="w-[90%] md:w-[80%] mx-auto">
-        <article className="text-black text-sm md:text-base w-full flex flex-col justify-center my-16">
+      <section className="w-[90%] md:w-[80%] mx-auto pb-10">
+        <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
           <h2
             id="how-we-do-it"
             className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold"
@@ -97,7 +97,7 @@ const AutoDetailing = () => {
           </p>
         </article>
       </section>
-    </section>
+    </div>
   );
 };
 

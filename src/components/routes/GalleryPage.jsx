@@ -8,7 +8,7 @@ const Gallery = () => {
           Gallery
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
-          <p className="p-20 h-[100vh]  text-center">Chapter is coming soon!</p>
+          <p className=" text-center">Chapter is coming soon!</p>
         </article>
       </section>
     </div>

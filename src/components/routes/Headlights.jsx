@@ -8,7 +8,7 @@ import {
 
 const Headlights = () => {
   return (
-    <section className="bg-white pb-8 relative">
+    <section className="bg-white  relative">
       <div className="bg-black">
         <img
           className="w-full object-cover opacity-60"
@@ -28,7 +28,7 @@ const Headlights = () => {
         <h2 className="text-black text-2xl text-center p-5 font-syne font-bold animate-slidein500 opacity-0">
           Auto Detailing
         </h2>
-        <article className="text-sm md:text-base tracking-wide leading-6 animate-slidein700 opacity-0 text-start text-black">
+        <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
           Washing a car may seem simple, but achieving a flawless finish
           requires more than just a quick rinse. If you're looking for a fast,
           budget-friendly wash, we might not be the right fit. At Prime, we take
