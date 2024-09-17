@@ -19,7 +19,9 @@ const Promos = () => {
 
   return (
     <div className="w-full">
-      <h2 className="text-2xl font-syne font-semibold">Promo</h2>
+      <h2 className="text-2xl text-center text-black font-syne font-bold">
+        Promo
+      </h2>
       <Slider {...settings} className="w-full mx-1">
         {permanentPromos.map((item, index) => (
           <PromoItem

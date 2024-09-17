@@ -42,7 +42,7 @@ const Root = () => {
           <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
             <h2
               id="about-us"
-              className="text-black text-xl md:text-2xl text-center font-syne font-bold"
+              className="text-black text-2xl md:text-2xl text-center font-syne font-bold"
             >
               About Us
             </h2>
@@ -78,7 +78,7 @@ const Root = () => {
             </div>
             <h2
               id="what-is-detailing"
-              className="text-black text-xl md:text-2xl text-center font-syne font-bold"
+              className="text-black text-2xl md:text-2xl text-center font-syne font-bold"
             >
               What is Detailing?
             </h2>
