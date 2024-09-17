@@ -4,6 +4,7 @@ import detailingVideo from "../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
 import Hero from "../Hero";
 import BookButtons from "../UI/BookButtons";
 import Button from "../UI/Button";
+import Promos from "../Promos";
 
 const Root = () => {
   return (
@@ -31,7 +32,12 @@ const Root = () => {
             src={detailingVideo}
           />
         </div>
-        <Hero />
+        <div>
+          <Hero />
+        </div>
+        <div className="w-[90%] md:w-[80%] mx-auto bg-white">
+          <Promos />
+        </div>
         <section className="w-[90%] md:w-[80%] mx-auto">
           <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
             <h2

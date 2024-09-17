@@ -1,8 +1,7 @@
 import React from "react";
 import carImage from "../../assets/images/AdobeStock_198465715.jpeg";
-import Services from "../Services";
 import { sustainability } from "../../utils/data";
-import Addons from "../Addons";
+import Services from "../Services";
 
 const ServicesPage = () => {
   return (
@@ -10,7 +9,7 @@ const ServicesPage = () => {
       <div className="relative">
         <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
           <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
-            Premium Mobile Detailing: Inside and Out
+            SERVICES
           </h1>
         </div>
         <div className="bg-black">
@@ -27,18 +26,12 @@ const ServicesPage = () => {
             id="services"
             className="text-black text-2xl  text-center font-syne font-bold"
           >
-            Our Services
+            What we offer
           </h2>
           <div className="pt-5">
             <Services />
           </div>
         </article>
-      </section>
-      <section className="w-[90%] md:w-[80%] mx-auto ">
-        <h2 className="text-black text-2xl text-center p-5 font-syne font-bold">
-          Addons
-        </h2>
-        <Addons />
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
         <article className="text-sm md:text-base text-start text-black">

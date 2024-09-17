@@ -13,7 +13,7 @@ const Footer = () => {
   const businessHours = ["MON-FRI 5-8PM", "SAT-SUN 9-5PM"];
 
   return (
-    <footer className="relative bg-dark-gray min-h-48 py-10 text-gray">
+    <footer className="relative bg-black min-h-48 py-10 text-gray">
       <section className="flex justify-evenly flex-col md:flex-row ">
         <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3 px-4 flex justify-start">
           <div className="min-w-48">

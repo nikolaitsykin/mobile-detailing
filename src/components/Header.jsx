@@ -16,7 +16,7 @@ const Header = () => {
       }`}
     >
       {" "}
-      <section className="h-16 md:h-20 flex justify-between w-full bg-dark-gray px-5 lg:px-16">
+      <section className="h-16 md:h-20 flex justify-between w-full bg-black px-5 lg:px-16">
         <div className="flex items-center basis-1/2 md:basis-1/3">
           <span className="text-white text-xs md:text-sm lg:text-base font-syne font-bold">
             RALEIGH
@@ -33,7 +33,7 @@ const Header = () => {
           </span>
         </div>
       </section>
-      <section className="w-full flex flex-row justify-around h-16 md:h-20 bg-dark-gray">
+      <section className="w-full flex flex-row justify-around h-16 md:h-20 bg-black">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/6 text-white h-16 md:h-20">
           <Link to="/">
             <div className="ml-4 lg:ml-16 h-16 md:h-20 w-16 md:w-20">
