@@ -3,12 +3,12 @@ import backgroundImage from "../assets/images/pexels-elina-araja-1743227-3311382
 
 const PromoItem = ({ title, image, description }) => {
   return (
-    <div className="bg-dark-gray h-48 w-full mx-auto relative">
-      <div className="mx-auto z-10 absolute px-4 py-2 grid grid-cols-1 h-full ">
-        <h2 className="text-white p-1 text-3xl md:text-4xl font-semibold w-full self-center">
+    <div className=" h-48 w-full mx-auto ">
+      <div className="mx-auto z-10  px-4 py-2 grid grid-cols-1 h-full ">
+        <h2 className="text-white p-1 text-3xl md:text-4xl font-semibold w-full self-end">
           {title}
         </h2>
-        <p className="text-white p-1 font-light text-xl md:text-2xl self-center">
+        <p className="text-white p-1 font-normal text-xl md:text-2xl self-start">
           {description}
         </p>
       </div>
