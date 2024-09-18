@@ -65,7 +65,7 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex justify-end items-center md:basis-1/6 min-w-48 mr-16">
           <a href="tel:919 906 0099" className="flex">
-            <div className="flex justify-center items-center mx-2">
+            <div className="flex justify-center items-center mr-3">
               <FaPhone size="2rem" color="fffafa" />
             </div>
             <div className="hidden lg:flex lg:flex-col justify-center items-end ">

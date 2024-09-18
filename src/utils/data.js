@@ -18,6 +18,10 @@ import primeCeramicCoatingImage from "../assets/images/AdobeStock_799868847.jpeg
 import headlinerCleaningImage from "../assets/images/how-to-clean-car-headliner-to-factory-new-in-one-weekend-238181_900x .jpg";
 import engineDetailingImage from "../assets/images/AdobeStock_255876084 2.jpeg";
 import petHairRemovalImage from "../assets/images/hair-removal.jpg";
+import promoImageOne from "../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.jpg";
+import promoImageTwo from "../assets/images/photo-boards-KZNTEn2r6tw-unsplash.jpg";
+import promoImageThree from "../assets/images/meric-dagli-3KJpF86nR4c-unsplash.jpg";
+import promoImageFour from "../assets/images/josep-martins-nAsdr5DC2Ss-unsplash.jpg";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
 export const secondaryStyle =
@@ -563,15 +567,18 @@ export const permanentPromos = [
     title: "20% Off for First-Time Customers",
     description:
       "Welcome new clients with a discount on their first detailing service.",
+    image: promoImageOne,
   },
   {
     title: "Refer a Friend and Save 10%",
     description:
-      "Both the referrer and the new customer get 15% off their next service.",
+      "When you refer a friend, you’ll receive 10% off your next service after their first appointment is completed.",
+    image: promoImageTwo,
   },
   {
     title: "Loyalty Program",
     description: "After every 5 services, get your 6th service at 50% off.",
+    image: promoImageThree,
   },
 ];
 

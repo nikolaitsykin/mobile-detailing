@@ -22,7 +22,7 @@ const Navbar = (props) => {
   return (
     <nav className=" w-full text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
       <div className="flex justify-end ">
-        <div className="flex lg:hidden justify-center items-center mx-2 active:scale-110 duration-300">
+        <div className="flex lg:hidden justify-center items-center mr-3 active:scale-110 duration-300">
           <a href="tel:919 906 0099">
             <div className="hover:scale-110 duration-700">
               <FaPhone size="1.5rem" color="fffafa" />
