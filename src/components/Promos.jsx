@@ -8,13 +8,13 @@ import backgroundImage from "../assets/images/pexels-elina-araja-1743227-3311382
 
 const Promos = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     centerPadding: "10px",
   };
 

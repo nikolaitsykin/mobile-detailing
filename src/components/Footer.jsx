@@ -21,8 +21,7 @@ const Footer = () => {
             <p className="text-xs md:text-sm font-light pt-3">
               Based in Apex, we serve the Triangle area with top-tier mobile
               automotive detailing. We specialize in ceramic coating, paint
-              protection film, paint restoration, and headlight
-              restoration—bringing high-quality care directly to you.
+              protection film & paint restoration—bringing high-quality care directly to you.
             </p>
           </div>
         </div>
