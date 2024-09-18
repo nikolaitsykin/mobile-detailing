@@ -572,7 +572,7 @@ export const permanentPromos = [
   {
     title: "Refer a Friend and Save 10%",
     description:
-      "When you refer a friend, you’ll receive 10% off your next service after their first appointment is completed.",
+      "Get 10% off your next service when your friend completes their first booking",
     image: promoImageTwo,
   },
   {
