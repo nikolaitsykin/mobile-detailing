@@ -2,19 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import detailingVideo from "../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
 import Hero from "../Hero";
+import Promos from "../Promos";
 import BookButtons from "../UI/BookButtons";
 import Button from "../UI/Button";
-import Promos from "../Promos";
 
 const Root = () => {
   return (
     <main className="w-full z-10 bg-white font-poppins">
       <div className="relative text-sm md:text-base">
         <div className="w-[90%] mx-auto z-10 absolute top-36 md:top-40 left-1/2 -translate-x-1/2 text-center">
-          <h1 className="animate-slidein500 opacity-0 text-white text-3xl sm:text-4xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
+          <h1 className="animate-slidein500 opacity-0 text-white text-3xl sm:text-4xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             PROFESSIONAL AUTO DETAILING
           </h1>
-          <p className="animate-slidein700 opacity-0 text-xs md:text-base text-white py-5 w-full flex justify-center">
+          <p className="animate-slidein700 opacity-0 text-xs md:text-base text-white py-5 w-full flex justify-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Whether you want to protect your car or give it a clean look, we
             deliver top-quality service. Trust us to enhance and safeguard your
             vehicle with the care it deserves.

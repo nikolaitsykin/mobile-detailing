@@ -8,7 +8,7 @@ const ServicesPage = () => {
     <div className="w-full z-20 bg-white font-poppins pb-10">
       <div className="relative">
         <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
-          <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold">
+          <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             SERVICES
           </h1>
         </div>
