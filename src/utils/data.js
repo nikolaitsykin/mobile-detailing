@@ -21,7 +21,6 @@ import petHairRemovalImage from "../assets/images/hair-removal.jpg";
 import promoImageOne from "../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.jpg";
 import promoImageTwo from "../assets/images/photo-boards-KZNTEn2r6tw-unsplash.jpg";
 import promoImageThree from "../assets/images/meric-dagli-3KJpF86nR4c-unsplash.jpg";
-import promoImageFour from "../assets/images/josep-martins-nAsdr5DC2Ss-unsplash.jpg";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
 export const secondaryStyle =
