@@ -44,13 +44,13 @@ const Footer = () => {
           </div>
           <div className="basis-1/2 px-4">
             <div className="min-w-42">
-              <h4 className="text-white text-md md:text-lg mb-3 font-medium">Address</h4>
+              <h4 className="text-white text-md md:text-lg md:mb-3 font-medium">Address</h4>
               <span className="text-start text-xs sm:text-sm md:text-md font-light">
                 {businessAddress}
               </span>
             </div>
-            <div className="pt-3 min-w-42">
-              <h4 className="text-white text-md md:text-lg mb-3 font-medium">Open Hours</h4>
+            <div className="pt-2 md:pt-3 min-w-42">
+              <h4 className="text-white text-md md:text-lg md:mb-3 font-medium">Open Hours</h4>
               <span className="text-start text-xs sm:text-sm md:text-md font-light">
                 {businessHours.map((hour) => (
                   <p key={hour}>{hour}</p>
