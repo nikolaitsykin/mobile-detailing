@@ -73,6 +73,8 @@ const ContactForm = () => {
       setError(true);
       return;
     }
+
+    // console.log(values);
     emailjs
       .send("service_2fhr2hn", "template_7dtehrt", values, "QaHYb2JsoQeJCIYVd")
       .then(
@@ -107,8 +109,11 @@ const ContactForm = () => {
     if (status === "SUCCESS") {
       setTimeout(() => {
         setStatus("");
-        setError(false);
       }, 3000);
+      setTimeout(() => {
+        setError(false);
+        setErrorMessage("");
+      }, 1000);
     }
   }, [status]);
 
@@ -212,9 +217,9 @@ const ContactForm = () => {
               handleChange={handleChange}
               name="service"
               label="Which service are you interested in?"
-              defaultOption={"Preferred service"}
+              defaultOption="Preferred service"
               options={[
-                "Basic Detail",
+                "Essential Detail",
                 "Prime Detail",
                 // "Deluxe Detail"
               ]}

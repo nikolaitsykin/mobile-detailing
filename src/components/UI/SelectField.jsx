@@ -1,5 +1,7 @@
 const SelectField = (props) => {
   const { label, handleChange, name, defaultOption, options, value } = props;
+
+  // console.log(value);
   return (
     <div className="w-full p-1">
       <label
@@ -16,11 +18,12 @@ const SelectField = (props) => {
         name={name}
         className="w-full text-dark-gray bg-light-gray my-1 p-2 text-sm "
       >
-        <option value="package" disabled className="text-sm p-1">
+        <option key="blankKey" hidden value className="text-sm p-1">
           {defaultOption}
         </option>
-        {options.map((option) => (
-          <option key={option} value={option} className="text-sm p-1">
+
+        {options.map((option, index) => (
+          <option key={index} value={option} className="text-sm p-1">
             {option}
           </option>
         ))}
