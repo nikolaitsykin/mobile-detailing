@@ -15,14 +15,15 @@
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
-  width: 30px;
+  color: white;
+  width: 40px;
 }
 
 .slick-prev,
 .slick-next {
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
+  z-index: 20;
 }
 
 @layer base {

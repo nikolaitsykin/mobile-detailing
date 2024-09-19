@@ -1,16 +1,10 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/detailing_guys_logo.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 import Navbar from "./UI/Navbar";
-import {
-  FACEBOOK_URL,
-  INSTAGRAM_URL,
-  TIKTOK_URL,
-  YOUTUBE_URL,
-} from "../utils/constants";
+import SocialButtons from "./UI/SocialButtons";
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
@@ -32,20 +26,7 @@ const Header = () => {
           <span className="text-white px-4 text-xs s:text-sm sm:text-base md:text-lg"></span>
         </div>
         <div className="flex md:justify-end md:basis-1/3 items-center">
-          <span className="min-w-24 md:min-w-48 flex justify-between">
-            <Link to={FACEBOOK_URL} target="_blank">
-              <FaFacebook size="1rem" color="fffafa" />
-            </Link>
-            <Link to={INSTAGRAM_URL} target="_blank">
-              <FaInstagram size="1rem" color="fffafa" />
-            </Link>
-            <Link to="" target="_blank">
-              <FaYoutube size="1rem" color="fffafa" />
-            </Link>
-            <Link to="" target="_blank">
-              <FaTiktok size="1rem" color="fffafa" />
-            </Link>
-          </span>
+          <SocialButtons />
         </div>
       </section>
       <section className="w-full flex flex-row justify-around h-16 md:h-20 bg-black">
