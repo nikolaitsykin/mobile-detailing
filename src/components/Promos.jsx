@@ -20,7 +20,7 @@ const Promos = () => {
 
   return (
     <div className="w-full ">
-      <h2 className="text-2xl text-center text-black font-syne font-bold">
+      <h2 className=" text-center text-black">
         Promo
       </h2>
       {/* <div className="bg-black w-full mx-auto h-48">
@@ -30,7 +30,7 @@ const Promos = () => {
           className="object-cover w-full mx-auto h-48"
         />
       </div> */}
-      <Slider {...settings} className="w-full h-48">
+      <Slider {...settings} className="w-full h-56">
         {permanentPromos.map((item, index) => (
           <PromoItem
             key={index}

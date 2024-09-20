@@ -6,7 +6,7 @@ const Package = ({ packageType }) => {
   return (
     <div className="w-full text-black border my-2 mx-auto">
       <div>
-        <h3 className=" text-xl text-center pt-2 font-syne font-bold">
+        <h3 className=" text-center py-6">
           {packageType.title}
         </h3>
       </div>
@@ -26,7 +26,7 @@ const Package = ({ packageType }) => {
         />
       </div>
       <p className="text-center text-sm p-3">{packageType.duration}</p>
-      <div className="flex justify-center p-4 mb-4">
+      <div className="flex justify-center mb-4">
         <BookButtons color="secondary" />
       </div>
     </div>

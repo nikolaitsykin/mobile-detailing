@@ -13,7 +13,7 @@ const AutoDetailing = () => {
     <div className="w-full z-20 bg-white font-poppins">
       <div className="relative">
         <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
-          <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h1 className="text-white animate-slidein300 opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             MOBILE DETAILING
           </h1>
         </div>
@@ -28,10 +28,10 @@ const AutoDetailing = () => {
       </div>
       <section>
         <article className=" text-start text-black">
-          <h2 className="text-black text-2xl text-center p-5 font-syne font-bold">
+          <h2 className=" p-5 ">
             Exterior and Interior Detailing
           </h2>
-          <p className="text-sm md:text-base">
+          <p className="">
             Washing a car might seem simple, but achieving a flawless finish
             requires more than just a quick rinse. If you're looking for a fast,
             budget-friendly wash, Detailing Guys might not be the right fit. We
@@ -51,7 +51,7 @@ const AutoDetailing = () => {
         </article>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="text-black text-2xl text-center p-5 font-syne font-bold">
+        <h2 className=" p-5 ">
           Package Options
         </h2>
         <div className="w-full mx-auto">
@@ -62,16 +62,16 @@ const AutoDetailing = () => {
         </div>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="text-black text-2xl text-center p-5 font-syne font-bold">
+        <h2 className=" p-5 ">
           Addons
         </h2>
         <Addons />
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto pb-10">
-        <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
+        <article className=" w-full flex flex-col justify-center">
           <h2
             id="how-we-do-it"
-            className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold"
+            className=" p-5 "
           >
             Say Goodbye to Mess and Hello to a Healthier, Cleaner Car with
             Eco-Friendly Detailing

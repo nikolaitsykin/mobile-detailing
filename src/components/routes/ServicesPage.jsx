@@ -8,7 +8,7 @@ const ServicesPage = () => {
     <div className="w-full z-20 bg-white font-poppins pb-10">
       <div className="relative">
         <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
-          <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h1 className="text-white animate-slidein300 opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             SERVICES
           </h1>
         </div>
@@ -21,10 +21,10 @@ const ServicesPage = () => {
         </div>
       </div>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
+        <article className="">
           <h2
             id="services"
-            className="text-black text-2xl  text-center font-syne font-bold"
+            className=""
           >
             What we offer
           </h2>
@@ -34,10 +34,10 @@ const ServicesPage = () => {
         </article>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <article className="text-sm md:text-base text-start text-black">
+        <article className="">
           <h2
             id="embracing-sustainability"
-            className="text-black text-2xl text-center p-5 font-syne font-bold"
+            className=" p-5 "
           >
             Embracing Sustainability: Eco-Friendly Detailing for a Cleaner Car
             and a Greener Planet
@@ -57,9 +57,9 @@ const ServicesPage = () => {
           </p>
           {sustainability.map((item, index) => (
             <div className="my-4" key={index}>
-              <h3 className="text-black text-lg font-syne font-semibold">
+              <h5 className="">
                 {item.title}
-              </h3>
+              </h5>
               <p>{item.description}</p>
             </div>
           ))}

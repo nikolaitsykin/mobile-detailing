@@ -14,26 +14,26 @@ const Menu = ({ service }) => {
         id="controlled-tabs"
         selectedTabClassName="bg-black text-white"
       >
-        <TabList className="my-6 flex flex-col md:flex-row md:justify-between md:items-center ">
+        <TabList className=" flex flex-col md:flex-row md:justify-between md:items-center ">
           {carsSizes &&
             carsSizes.map((car) => (
               <Tab
                 key={car.title}
                 className="cursor-pointer p-1 text-center bg-grey-background outline-none flex flex-col flex-grow justify-center items-center"
               >
-                <p className="font-syne font-semibold text-xl">{car.title}</p>
-                <p className="font-syne font-semibold text-xs whitespace-pre-wrap">
+                <h3 className="p-1">{car.title}</h3>
+                <h5 className="font-syne font-semibold text-xs whitespace-pre-wrap">
                   {car.description}
-                </p>
+                </h5>
               </Tab>
             ))}
         </TabList>
         {carsSizes &&
           carsSizes.map((car) => (
             <TabPanel key={car.title}>
-              <div className="p-1 text-center font-syne font-semibold text-xl">
+              <h4 className="p-5 text-center">
                 Starts at {service.price[tabIndex]}
-              </div>
+              </h4>
             </TabPanel>
           ))}
       </Tabs>

@@ -4,7 +4,7 @@ const Reviews = () => {
   return (
     <div id="reviews" className="bg-white py-8 font-poppins">
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h1 className=" text-4xl text-center text-black my-3 font-syne font-bold">
+        <h1 className="text-4xl text-center text-black my-3">
           REVIEWS
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">

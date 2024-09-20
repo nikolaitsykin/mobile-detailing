@@ -5,10 +5,10 @@ import carImage from "../../assets/images/pexels-khunkorn-laowisit-1359149-52332
 
 const FAQs = () => {
   return (
-    <div className="w-full z-20 bg-white font-poppins">
+    <div className="w-full z-20 bg-white">
       <div className="relative">
         <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
-          <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h1 className="text-white animate-slidein300 opacity-0  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             FAQs
           </h1>
         </div>
@@ -22,7 +22,7 @@ const FAQs = () => {
       </div>
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article>
-          <h2 className="text-2xl text-center text-black font-syne font-bold">
+          <h2 className=" ">
             Everything You Need to Know
           </h2>
           <FaqItem title="General Questions" questions={generalQuestions} />

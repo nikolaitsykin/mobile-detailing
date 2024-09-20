@@ -17,13 +17,13 @@ const Card = ({
       className={`w-full h-full flex flex-col items-center justify-between p-4  mx-auto text-black ${border}`}
     >
       <img
-        className="w-full max-w-xl hover:scale-105 duration-700 align-start my-3"
+        className="w-full max-w-xl hover:scale-105 duration-700 align-start mb-3"
         src={image}
         alt="Car wash"
       />
-      <h3 className="max-w-xl text-center font-syne font-bold">{title}</h3>
+      <h5 className="max-w-xl text-center">{title}</h5>
       {description && (
-        <div className="flex flex-col w-full max-w-xl my-1">
+        <div className="flex flex-col w-full max-w-xl my-3">
           <p className=" text-xs md:text-sm">{description}</p>
         </div>
       )}

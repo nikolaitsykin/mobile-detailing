@@ -8,6 +8,9 @@ module.exports = {
       syne: '"Syne", sans-serif',
     },
     extend: {
+      dropShadow: {
+        "header": "0_1.2px_1.2px_rgba(0,0,0,0.8)",
+      },
       keyframes: {
         appear: {
           "0%": {

@@ -22,10 +22,7 @@ const Header = () => {
             RALEIGH
           </span>
         </div>
-        <div className="hidden md:flex md:visible justify-center items-center basis-1/2 md:basis-1/3 ">
-          <span className="text-white px-4 text-xs s:text-sm sm:text-base md:text-lg"></span>
-        </div>
-        <div className="flex md:justify-end md:basis-1/3 items-center">
+        <div className="flex md:justify-end basis-1/4 md:basis-1/3 items-center">
           <SocialButtons />
         </div>
       </section>

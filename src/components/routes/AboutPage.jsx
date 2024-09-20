@@ -4,10 +4,10 @@ import BookButtons from "../UI/BookButtons";
 
 const AboutPage = () => {
   return (
-    <div className="w-full z-20 bg-white font-poppins">
+    <div className="w-full z-20 bg-white">
       <div className="relative">
         <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
-          <h1 className="text-white animate-slidein300 opacity-0 text-4xl sm:text-5xl md:text-6xl w-full flex justify-center tracking-widest font-syne font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h1 className="text-white animate-slidein300 opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             ABOUT
           </h1>
         </div>
@@ -20,8 +20,8 @@ const AboutPage = () => {
         </div>
       </div>
       <section>
-        <article className="text-black text-sm md:text-base w-full flex flex-col justify-center">
-          <h2 className="text-2xl text-center text-black font-syne font-bold">
+        <article className="text-black flex flex-col justify-center">
+          <h2 className="">
           Professional Service, Personal Care
           </h2>
           <p className="py-2">
@@ -33,7 +33,7 @@ const AboutPage = () => {
             go anywhere.
           </p>
           <div className=" items-center">
-            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-semibold">
+            <h2 className=" p-5">
               Our Story
             </h2>
             <p>
@@ -51,7 +51,7 @@ const AboutPage = () => {
             </p>
           </div>
           <div className=" items-center">
-            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-semibold">
+            <h2 className=" p-5">
               What Drives Us
             </h2>
             <p>
@@ -63,7 +63,7 @@ const AboutPage = () => {
             </p>
           </div>
           <div className=" items-center ">
-            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-semibold">
+            <h2 className=" p-5 ">
               Why Choose Detailing Guys?
             </h2>
             <ol>
@@ -91,7 +91,7 @@ const AboutPage = () => {
             </ol>
           </div>
           <div className=" items-center">
-            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-semibold">
+            <h2 className=" p-5 ">
               The Detailing Guys Difference
             </h2>
             <p>
@@ -103,10 +103,10 @@ const AboutPage = () => {
             </p>
           </div>
           <div className=" items-center">
-            <h2 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-semibold">
+            <h2 className=" p-5 ">
               Ready to Experience a New Level of Care?
             </h2>
-            <p className="text-black text-base md:text-lg font-syne font-semibold">
+            <p className=" text-base md:text-lg font-syne font-semibold">
               Book with Detailing Guys today, and let us bring the shine to
               you—all while doing our part for the environment!
             </p>

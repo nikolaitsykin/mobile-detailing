@@ -3,9 +3,9 @@ import ContactForm from "../ContactForm";
 
 const Booking = () => {
   return (
-    <div className="bg-white py-8 font-poppins">
+    <div className="bg-white py-8">
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h1 className=" text-3xl text-center text-black my-3 font-syne font-semibold">
+        <h1 className=" text-3xl text-center text-black my-3">
           REQUEST A QUOTE
         </h1>
         <article className="text-sm md:text-base text-start text-black">

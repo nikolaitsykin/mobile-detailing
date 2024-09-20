@@ -8,7 +8,7 @@ import Card from "../Card";
 
 const Ceramic = () => {
   return (
-    <section className="bg-white font-poppins">
+    <section className="bg-white">
       <div className="bg-black">
         <img
           className="w-full object-cover opacity-60"
@@ -20,15 +20,15 @@ const Ceramic = () => {
         <div className="w-[80%] z-10 absolute top-10 md:top-32 left-1/2 -translate-x-1/2 text-center">
           <h1
             id="auto-detailing"
-            className="text-white animate-slidein300 opacity-0 text-2xl md:text-3xl lg:text-5xl w-full flex justify-center tracking-widest font-syne font-bold"
+            className="text-white animate-slidein300 opacity-0"
           >
             Ceramic Coating
           </h1>
         </div>
-        <h2 className="text-black text-2xl text-center p-5 font-syne font-bold  ">
+        <h2 className=" p-5">
           Auto Detailing
         </h2>
-        <article className="text-sm md:text-base tracking-wide  text-start text-black">
+        <article className="">
           Washing a car may seem simple, but achieving a flawless finish
           requires more than just a quick rinse. If you're looking for a fast,
           budget-friendly wash, we might not be the right fit. At Prime, we take
@@ -42,7 +42,7 @@ const Ceramic = () => {
         </article>
       </div>
       <section className="w-[90%] mx-auto">
-        <h2 className="text-black text-2xl text-center p-5 font-syne font-bold">
+        <h2 className=" p-5 ">
           Package Options
         </h2>
         <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-2">

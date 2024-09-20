@@ -3,23 +3,23 @@ import React from "react";
 const FaqItem = ({ title, questions }) => {
   return (
     <div className="">
-      <h3 className="text-black text-xl md:text-2xl text-center p-5 font-syne font-bold">
+      <h3 className="text-center p-5 ">
         {title}
       </h3>
       {questions.map((question, index) => (
         <div
           key={"div" + index}
-          className="text-black text-sm md:text-sm w-full flex flex-col justify-center my-4"
+          className=" w-full  my-4"
         >
-          <h4
+          <h5
             key={"header" + index}
-            className="text-black text-base md:text-lg font-syne font-semibold"
+            className=""
           >
             {question.title}
-          </h4>
+          </h5>
           <p
             key={"question" + index}
-            className="text-black text-sm md:text-base"
+            className=""
           >
             {question.description}
           </p>
