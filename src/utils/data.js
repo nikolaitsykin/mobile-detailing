@@ -55,12 +55,12 @@ export const essentialExteriorServices = [
   "☑ Gentle Drying with Ultra-Soft Towels to Prevent Scratches",
   "☑ Crystal-Clear Windows Cleaning",
   "☑ Wax Spray for a Glossy Finish",
-  "☒ Satin Black Tire Dressing for a Sleek, Refined Appearance",
-  "☒ Iron Removal to Protect and Maintain Paint Integrity",
-  "☒ Clay Bar Treatment for a Smooth, Contaminant-Free Surface",
-  "☒ Two-Stage Bug & Tar Removal for a Spotless Exterior",
-  // "☒ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
-  // "☒ Application of Premium Spray Ceramic Coating for Protection",
+  "✖ Satin Black Tire Dressing for a Sleek, Refined Appearance",
+  "✖ Iron Removal to Protect and Maintain Paint Integrity",
+  "✖ Clay Bar Treatment for a Smooth, Contaminant-Free Surface",
+  "✖ Two-Stage Bug & Tar Removal for a Spotless Exterior",
+  // "✖ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
+  // "✖ Application of Premium Spray Ceramic Coating for Protection",
 ];
 export const essentialInteriorServices = [
   "☑ Thorough Cleaning of Door Seals & Jambs",
@@ -70,14 +70,13 @@ export const essentialInteriorServices = [
   "☑ Streak-Free Glass Cleaning",
   "☑ Fresh Air Freshener Application",
   "☑ Protective Plastic Dressing for a Clean, Lasting Finish",
-  "🗹 Deep Hot Water Shampoo for Stubborn Stains",
-  "🗹 Steam Cleaning for Plastics, Glass, and Leather",
-  "☒ Leather Protection & Conditioning for Long-Lasting Care",
-  "✘ Meticulous Cracks & Crevices Cleaning",
-  "ⓧ ⒳ ✖ ✗ ✘ Pet hair/Sand removal",
-  // "☒ Headliner Cleaning with Enzyme Cleaner for a Spotless Look",
-  // "☒ Ozone Treatment for Complete Odor Neutralization",
-  // "☒ Effective Removal of Dirt, Stains, and Harmful Bacteria",
+  "✖ Deep Hot Water Shampoo for Stubborn Stains",
+  "✖ Steam Cleaning for Plastics, Glass, and Leather",
+  "✖ Leather Protection & Conditioning for Long-Lasting Care",
+  "✖ Meticulous Cracks & Crevices Cleaning",
+  "✖ Pet hair/Sand removal",
+  // "✖ Ozone Treatment for Complete Odor Neutralization",
+  // "✖ Effective Removal of Dirt, Stains, and Harmful Bacteria",
 ];
 
 export const primeExteriorServices = [
@@ -94,8 +93,8 @@ export const primeExteriorServices = [
   "☑ Iron Removal to Protect and Maintain Paint Integrity",
   "☑ Clay Bar Treatment for a Smooth, Contaminant-Free Surface",
   "☑ Two-Stage Bug & Tar Removal for a Spotless Exterior",
-  // "☒ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
-  // "☒ Application of Premium Spray Ceramic Coating for Protection",
+  // "✖ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
+  // "✖ Application of Premium Spray Ceramic Coating for Protection",
 ];
 export const primeInteriorServices = [
   "☑ Thorough Cleaning of Door Seals & Jambs",
@@ -110,9 +109,8 @@ export const primeInteriorServices = [
   "☑ Leather Protection & Conditioning for Long-Lasting Care",
   "☑ Meticulous Cracks & Crevices Cleaning",
   "☑ Pet hair/Sand removal",
-  // "☒ Headliner Cleaning with Enzyme Cleaner for a Spotless Look",
-  // "☒ Ozone Treatment for Complete Odor Neutralization",
-  // "☒ Effective Removal of Dirt, Stains, and Harmful Bacteria",
+  // "✖ Ozone Treatment for Complete Odor Neutralization",
+  // "✖ Effective Removal of Dirt, Stains, and Harmful Bacteria",
 ];
 
 export const advancedExteriorServices = [];
