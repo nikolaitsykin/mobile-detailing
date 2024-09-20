@@ -74,7 +74,7 @@ export const essentialInteriorServices = [
   "🗹 Steam Cleaning for Plastics, Glass, and Leather",
   "☒ Leather Protection & Conditioning for Long-Lasting Care",
   "✘ Meticulous Cracks & Crevices Cleaning",
-  "✖ Pet hair/Sand removal",
+  "ⓧ ⒳ ✖ ✗ ✘ Pet hair/Sand removal",
   // "☒ Headliner Cleaning with Enzyme Cleaner for a Spotless Look",
   // "☒ Ozone Treatment for Complete Odor Neutralization",
   // "☒ Effective Removal of Dirt, Stains, and Harmful Bacteria",
