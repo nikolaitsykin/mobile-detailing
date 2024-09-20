@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { addons } from "../utils/data";
+import { addons } from "../utils/addons";
 
 const Addons = () => {
   return (

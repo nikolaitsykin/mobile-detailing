@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../assets/images/car-wash-detailing-station.jpg";
-import { membershipBenefits, monthly, biWeekly } from "../../utils/data";
+import { membershipBenefits, monthly, biWeekly } from "../../utils/detailingPackages";
 import Card from "../Card";
 import Button from "../UI/Button";
 import { Link } from "react-router-dom";

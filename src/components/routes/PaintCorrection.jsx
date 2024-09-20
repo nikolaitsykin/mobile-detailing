@@ -3,7 +3,7 @@ import carPolishImage from "../../assets/images/car_polish.png";
 import {
   oneStepPaintCorrection,
   twoStepPaintCorrection
-} from "../../utils/data";
+} from "../../utils/services";
 import Card from "../Card";
 
 const Polish = () => {

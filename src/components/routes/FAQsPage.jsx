@@ -1,5 +1,5 @@
 import React from "react";
-import { autoDetailingQuestions, generalQuestions } from "../../utils/data";
+import { autoDetailingQuestions, generalQuestions } from "../../utils/faq";
 import FaqItem from "../FaqItem";
 import carImage from "../../assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
 

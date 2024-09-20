@@ -3,7 +3,7 @@ import ceramicImage from "../../assets/images/ceramic_coating.png";
 import {
   basicCeramicCoating,
   primeCeramicCoating
-} from "../../utils/data";
+} from "../../utils/services";
 import Card from "../Card";
 
 const Ceramic = () => {

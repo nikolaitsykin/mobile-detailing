@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { autoDetailingServices } from "../utils/data";
+import { autoDetailingServices } from "../utils/services";
 import Card from "./Card";
 
 const Services = () => {

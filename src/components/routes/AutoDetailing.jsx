@@ -1,10 +1,12 @@
 import React from "react";
 import detailingImage from "../../assets/images/autodetailing.png";
 import {
+  deluxePackage,
   essentialPackage,
   // deluxePackage,
   primePackage,
-} from "../../utils/data";
+  ultimatePackage,
+} from "../../utils/detailingPackages";
 import Addons from "../Addons";
 import Package from "../Package";
 
@@ -28,9 +30,7 @@ const AutoDetailing = () => {
       </div>
       <section>
         <article className=" text-start text-black">
-          <h2 className=" p-5 ">
-            Exterior and Interior Detailing
-          </h2>
+          <h2 className=" p-5 ">Exterior and Interior Detailing</h2>
           <p className="">
             Washing a car might seem simple, but achieving a flawless finish
             requires more than just a quick rinse. If you're looking for a fast,
@@ -51,28 +51,21 @@ const AutoDetailing = () => {
         </article>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className=" p-5 ">
-          Package Options
-        </h2>
+        <h2 className=" p-5 ">Auto Detail Packages</h2>
         <div className="w-full mx-auto">
           <Package packageType={essentialPackage} />
           <Package packageType={primePackage} />
-          {/* <Package packageType={deluxePackage} /> */}
-          {/* <Package packageType={regularWash} /> */}
+          <Package packageType={deluxePackage} />
+          <Package packageType={ultimatePackage} />
         </div>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className=" p-5 ">
-          Addons
-        </h2>
+        <h2 className=" p-5 ">Addons</h2>
         <Addons />
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto pb-10">
         <article className=" w-full flex flex-col justify-center">
-          <h2
-            id="how-we-do-it"
-            className=" p-5 "
-          >
+          <h2 id="how-we-do-it" className=" p-5 ">
             Say Goodbye to Mess and Hello to a Healthier, Cleaner Car with
             Eco-Friendly Detailing
           </h2>

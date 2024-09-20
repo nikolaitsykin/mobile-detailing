@@ -4,7 +4,7 @@ import Card from "../Card";
 import {
   basicHeadlightRestoration,
   primeHeadlightRestoration,
-} from "../../utils/data";
+} from "../../utils/services";
 
 const Headlights = () => {
   return (

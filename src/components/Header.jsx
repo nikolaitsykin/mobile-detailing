@@ -12,11 +12,11 @@ const Header = () => {
   return (
     <header
       className={`font-poppins z-20 flex flex-col w-full sticky transition-all duration-300 ${
-        scrollDirection === "down" ? "-top-32 md:-top-40" : "top-0"
+        scrollDirection === "down" ? "-top-26 md:-top-36" : "top-0"
       }`}
     >
       {" "}
-      <section className="h-16 md:h-20 flex justify-between w-full bg-black px-5 lg:px-16">
+      <section className="h-10 md:h-16 flex justify-between w-full bg-black px-5 lg:px-16">
         <div className="flex items-center basis-1/2 md:basis-1/3">
           <span className="text-white text-xs md:text-sm lg:text-base font-syne font-bold">
             RALEIGH

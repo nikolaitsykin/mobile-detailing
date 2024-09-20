@@ -1,6 +1,6 @@
 import React from "react";
 import carImage from "../../assets/images/AdobeStock_198465715.jpeg";
-import { sustainability } from "../../utils/data";
+import { sustainability } from "../../utils/sustainability";
 import Services from "../Services";
 
 const ServicesPage = () => {
@@ -34,10 +34,10 @@ const ServicesPage = () => {
         </article>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <article className="">
+        <article className="px-5 py-0">
           <h2
             id="embracing-sustainability"
-            className=" p-5 "
+            className="px-5 "
           >
             Embracing Sustainability: Eco-Friendly Detailing for a Cleaner Car
             and a Greener Planet

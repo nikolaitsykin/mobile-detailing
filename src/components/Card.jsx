@@ -24,7 +24,7 @@ const Card = ({
       <h5 className="max-w-xl text-center">{title}</h5>
       {description && (
         <div className="flex flex-col w-full max-w-xl my-3">
-          <p className=" text-xs md:text-sm">{description}</p>
+          <p className="">{description}</p>
         </div>
       )}
       {services && (
@@ -33,7 +33,7 @@ const Card = ({
             {services.map((service) => (
               <li
                 key={service}
-                className="text-start list-none text-xs md:text-sm p-[2px] whitespace-pre-wrap"
+                className="text-start list-none  p-[2px] whitespace-pre-wrap"
               >
                 {service}
               </li>

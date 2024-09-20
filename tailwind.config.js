@@ -50,11 +50,8 @@ module.exports = {
       },
     },
     screens: {
-      xxs: "298px",
-      // => @media (max-width: 524px) { ... }
-
-      xs: "398px",
-      // => @media (max-width: 524px) { ... }
+      xs: "389px",
+      // => @media (max-width: 398px) { ... }
 
       s: "524px",
       // => @media (max-width: 524px) { ... }

@@ -1,6 +1,6 @@
 import React from "react";
 import PromoItem from "./PromoItem";
-import { permanentPromos, temporaryPromoNow } from "../utils/data";
+import { permanentPromos, currentTemporaryPromo } from "../utils/promos";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,9 +20,7 @@ const Promos = () => {
 
   return (
     <div className="w-full ">
-      <h2 className=" text-center text-black">
-        Promo
-      </h2>
+      <h2 className=" text-center text-black">Promo</h2>
       {/* <div className="bg-black w-full mx-auto h-48">
         <img
           src={backgroundImage}
@@ -40,9 +38,9 @@ const Promos = () => {
           />
         ))}
         <PromoItem
-          key={temporaryPromoNow.index}
-          title={temporaryPromoNow.title}
-          description={temporaryPromoNow.description}
+          key={currentTemporaryPromo.index}
+          title={currentTemporaryPromo.title}
+          description={currentTemporaryPromo.description}
           image={backgroundImage}
         />
       </Slider>

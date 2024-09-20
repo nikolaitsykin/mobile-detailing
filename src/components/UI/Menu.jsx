@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { carsSizes } from "../../utils/data";
+import { carsSizes } from "../../utils/detailingPackages";
 
 const Menu = ({ service }) => {
   const [tabIndex, setTabIndex] = useState(0);
