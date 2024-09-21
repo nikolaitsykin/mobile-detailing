@@ -1,29 +1,27 @@
 import React from "react";
-import carImage from "../../assets/images/man-washing-his-car-garage_1157-26072.jpg";
 import BookButtons from "../UI/BookButtons";
+import image from "../../assets/images/man-washing-his-car-garage_1157-26072.jpg";
 
 const AboutPage = () => {
   return (
-    <div className="w-full z-20 bg-white">
-      <div className="relative">
-        <div className="w-[80%] mx-auto z-10 absolute top-40 md:top-40 left-1/2 -translate-x-1/2 text-center">
-          <h1 className="text-white animate-slidein300 opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+    <div className="w-full z-20 bg-white font-poppins">
+      <div className="w-full bg-black">
+        <img
+          className="w-full object-cover h-[450px] mx-auto opacity-50"
+          src={image}
+          alt="car"
+        />
+      </div>
+      <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-24 md:top-28">
+        <div className="w-[90%] flex flex-col justify-center text-white">
+          <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             ABOUT
           </h1>
-        </div>
-        <div className="bg-black">
-          <img
-            className="w-full object-cover h-[450px] mx-auto opacity-40"
-            src={carImage}
-            alt="car"
-          />
         </div>
       </div>
       <section>
         <article className="text-black flex flex-col justify-center">
-          <h2 className="">
-          Professional Service, Personal Care
-          </h2>
+          <h2 className="">Professional Service, Personal Care</h2>
           <p className="py-2">
             At Detailing Guys, we're committed to making your car look its
             best—right from the convenience of your driveway. Our business is
@@ -33,9 +31,7 @@ const AboutPage = () => {
             go anywhere.
           </p>
           <div className=" items-center">
-            <h2 className=" p-5">
-              Our Story
-            </h2>
+            <h2 className=" p-5">Our Story</h2>
             <p>
               Detailing Guys was born with a simple goal: to redefine car
               detailing for people with busy lives. Whether you're juggling
@@ -51,9 +47,7 @@ const AboutPage = () => {
             </p>
           </div>
           <div className=" items-center">
-            <h2 className=" p-5">
-              What Drives Us
-            </h2>
+            <h2 className=" p-5">What Drives Us</h2>
             <p>
               Our mission is clear: to make your car shine, inside and out, with
               exceptional attention to detail. We use premium, eco-friendly
@@ -63,9 +57,7 @@ const AboutPage = () => {
             </p>
           </div>
           <div className=" items-center ">
-            <h2 className=" p-5 ">
-              Why Choose Detailing Guys?
-            </h2>
+            <h2 className=" p-5 ">Why Choose Detailing Guys?</h2>
             <ol>
               <li className="list-disc">
                 <strong>We Come to You:</strong> Your time is valuable. We show
@@ -91,9 +83,7 @@ const AboutPage = () => {
             </ol>
           </div>
           <div className=" items-center">
-            <h2 className=" p-5 ">
-              The Detailing Guys Difference
-            </h2>
+            <h2 className=" p-5 ">The Detailing Guys Difference</h2>
             <p>
               Life can be hectic, and maintaining your car shouldn't be a
               hassle. Whether you need a simple refresh or a full detailing
@@ -103,9 +93,7 @@ const AboutPage = () => {
             </p>
           </div>
           <div className=" items-center">
-            <h2 className=" p-5 ">
-              Ready to Experience a New Level of Care?
-            </h2>
+            <h2 className=" p-5 ">Ready to Experience a New Level of Care?</h2>
             <p className=" text-base md:text-lg font-syne font-semibold">
               Book with Detailing Guys today, and let us bring the shine to
               you—all while doing our part for the environment!

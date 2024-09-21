@@ -12,11 +12,11 @@ const Header = () => {
   return (
     <header
       className={`font-poppins z-20 flex flex-col w-full sticky transition-all duration-300 ${
-        scrollDirection === "down" ? "-top-26 md:-top-36" : "top-0"
+        scrollDirection === "down" ? "-top-20 md:-top-32" : "top-0"
       }`}
     >
       {" "}
-      <section className="h-10 md:h-16 flex justify-between w-full bg-black px-5 lg:px-16">
+      <section className="h-10 md:h-14 flex justify-between w-full bg-black px-5 lg:px-16">
         <div className="flex items-center basis-1/2 md:basis-1/3">
           <span className="text-white text-xs md:text-sm lg:text-base font-syne font-bold">
             RALEIGH
@@ -26,12 +26,12 @@ const Header = () => {
           <SocialButtons />
         </div>
       </section>
-      <section className="w-full flex flex-row justify-around h-16 md:h-20 bg-black">
-        <div className="flex justify-start items-center basis:1/3 md:basis-1/6 text-white h-16 md:h-20">
+      <section className="w-full flex flex-row justify-around h-12 md:h-16 bg-black">
+        <div className="flex justify-start items-center basis:1/3 md:basis-1/6">
           <Link to="/">
-            <div className="ml-4 lg:ml-16 h-16 md:h-20 w-16 md:w-20">
+            <div className="ml-4 lg:ml-16 h-12 w-12 md:w-14 md:h-14">
               <img
-                className="h-16 md:h-20 w-16 md:w-20 p-1"
+                className="h-12 w-12 md:w-14 md:h-14 p-2"
                 src={logo}
                 alt="logo"
               />

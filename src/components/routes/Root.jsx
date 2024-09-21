@@ -8,13 +8,25 @@ import Button from "../UI/Button";
 
 const Root = () => {
   return (
-    <main className="w-full z-10 bg-white ">
-      <div className="relative text-sm md:text-base">
-        <div className="w-[90%] mx-auto z-10 absolute top-36 md:top-40 left-1/2 -translate-x-1/2 text-center text-white">
-          <h1 className="animate-slidein500 opacity-0  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+    <main className="w-full bg-white">
+      <div className="w-full bg-black">
+        <video
+          className="opacity-50 object-cover min-h-[450px] md:h-[550px] w-full mx-auto"
+          autoPlay
+          loop
+          playsInline
+          muted
+          type="video/mp4"
+          src={detailingVideo}
+        />
+      </div>
+      {/* <div className="w-full object-cover h-[450px] flex justify-center items-center bg-fixed bg-[url('/src/assets/images/man-washing-his-car-garage_1157-26072.jpg')]"> */}
+      <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-28 md:top-40">
+        <div className="w-[90%] flex flex-col justify-center text-white">
+          <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             PROFESSIONAL AUTO DETAILING
           </h1>
-          <p className="animate-slidein700 opacity-0 text-xs md:text-base py-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <p className="animate-slidein700 text-center opacity-0 text-xs md:text-base py-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Whether you want to protect your car or give it a clean look, we
             deliver top-quality service. Trust us to enhance and safeguard your
             vehicle with the care it deserves.
@@ -23,17 +35,8 @@ const Root = () => {
             <BookButtons color="primary" />
           </div>
         </div>
-        <div className="bg-black">
-          <video
-            className="opacity-50 object-cover min-h-[450px] md:h-[550px] w-full mx-auto"
-            autoPlay
-            loop
-            playsInline
-            muted
-            type="video/mp4"
-            src={detailingVideo}
-          />
-        </div>
+      </div>
+      <div className="z-100">
         <div>
           <Hero />
         </div>
@@ -41,7 +44,7 @@ const Root = () => {
           <Promos />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto">
-          <article className="text-black  w-full ">
+          <article className="text-black w-full">
             <h2 id="about-us" className="">
               About Us
             </h2>
@@ -78,7 +81,6 @@ const Root = () => {
               techniques and safe, eco-friendly products to clean, restore, and
               protect your vehicle inside and out.
             </p>
-
             <h4 className="">Our approach</h4>
             <p>
               At Detailing Guys, we're committed to partner with brands which
@@ -94,6 +96,17 @@ const Root = () => {
             <div className="pb-10">
               <BookButtons color="secondary" />
             </div>
+            <p className="text-white text-[1px]">
+              Ceramic Coating Raleigh / Ceramic Coating Apex / Ceramic Coating
+              Cary/ Ceramic Coating Holly Springs/ Ceramic Coating Garner /
+              Paint Protection Film Raleigh / PPF Raleigh / PPF Apex / PPF Cary
+              / PPF Holly Springs / PPF Garner / Modesta / Ceramic Coating /
+              LLumar / STEK / GTechniq / Majestic Solutions / Detailing /
+              Detailing Guys / Mobile Detailing Raleigh / Mobile Detailing Apex
+              / Mobile Detailing Cary / Mobile Detailing Holly Springs / Mobile
+              Detailing Garner / / Auto Detailing / Auto Detailing Raleigh /
+              Auto Detailing Apex / Auto Detailing Cary / Auto Detailing
+            </p>
           </article>
         </section>
       </div>

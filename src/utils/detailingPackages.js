@@ -1,8 +1,8 @@
 import interiorDetailingServiceImage from "../assets/images/AdobeStock_243325383.jpeg";
-import premiumExteriorWashImage from "../assets/images/AdobeStock_273206890.jpeg";
+import primeExteriorWashImage from "../assets/images/AdobeStock_273206890.jpeg";
 import exteriorDetailingServiceImage from "../assets/images/AdobeStock_397247724.jpeg";
 import regularInteriorWashImage from "../assets/images/AdobeStock_399584907.jpeg";
-import premiumInteriorWashImage from "../assets/images/AdobeStock_539555302.jpeg";
+import primeInteriorWashImage from "../assets/images/AdobeStock_539555302.jpeg";
 import deluxeExteriorWashImage from "../assets/images/AdobeStock_799868847.jpeg";
 import essentialExteriorWashImage from "../assets/images/car-front-foglight.jpg";
 import regularExteriorWashImage from "../assets/images/car-wash-detailing-station_1.jpg";
@@ -12,7 +12,7 @@ import deluxeInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1
 export const carsSizes = [
   {
     title: "Small",
-    description: "Volkswagen GTI,\nMazda 3",
+    description: "Kia Forte,\nMazda 3",
   },
   {
     title: "Midsize",
@@ -34,8 +34,8 @@ export const essentialExteriorServices = [
   "✔ Wheels Cleaned",
   "✔ Tire Shine Applied",
   "✔ Windows Cleaned",
-  "✖ Spray Wax Applied",
-  "✖ Windows Water Repellent Applied",
+  "✔ Spray Wax Applied",
+  "✔ Windows Water Repellent Applied",
   "✖ Exterior Cracks & Crevices Steamed",
   "✖ Iron Removed",
   "✖ Bug & Tar Removed",
@@ -49,11 +49,11 @@ export const essentialInteriorServices = [
   "✔ Door Seals & Panels Cleaned",
   "✔ Interior & Trunk Vacuumed",
   "✔ Surfaces & Plastics Wiped",
-  "✔ Carpet & Floor Mats Cleaned",
+  "✔ Floor Mats Cleaned",
   "✔ Glasses & Mirrors Cleaned",
   "✔ Freshener Applied",
-  "✖ Cracks & Crevices Cleaned",
-  "✖ Carpet & Floor Mats Shampooed",
+  "✔ Cracks & Crevices Cleaned",
+  "✔ Carpet Cleaned & Vacuumed",
   "✖ Cracks & Crevices Steamed",
   "✖ Vents & Compartments Steamed",
   "✖ Surfaces & Plastics Steamed",
@@ -65,7 +65,7 @@ export const essentialInteriorServices = [
 ];
 
 export const primeExteriorServices = [
- "✔ Vehicle Hand Wash & Dryed",
+  "✔ Vehicle Hand Wash & Dryed",
   "✔ Door & Trunk Jambs Cleaned",
   "✔ Gas Cap and Valve Cleaned",
   "✔ Wheels Cleaned",
@@ -75,7 +75,7 @@ export const primeExteriorServices = [
   "✔ Windows Water Repellent Applied",
   "✔ Exterior Cracks & Crevices Steamed",
   "✔ Iron Removed",
-  "✖ Bug & Tar Removed",
+  "✔ Bug & Tar Removed",
   "✖ Clay Bar Treatment",
   "✖ Door & Trunk Jambs Protected",
   "✖ Wheels Protection Applied",
@@ -83,7 +83,7 @@ export const primeExteriorServices = [
   "✖ Premium Spray Ceramic Coating Applied",
 ];
 export const primeInteriorServices = [
- "✔ Door Seals & Panels Cleaned",
+  "✔ Door Seals & Panels Cleaned",
   "✔ Interior & Trunk Vacuumed",
   "✔ Surfaces & Plastics Wiped",
   "✔ Carpet & Floor Mats Cleaned",
@@ -92,10 +92,10 @@ export const primeInteriorServices = [
   "✔ Cracks & Crevices Cleaned",
   "✔ Carpet & Floor Mats Shampooed",
   "✔ Cracks & Crevices Steamed",
-  "✖ Vents & Compartments Steamed",
-  "✖ Surfaces & Plastics Steamed",
-  "✖ Carpet & Floor Mats Steamed",
-  "✖ Plastic & Vinyl Protection Dressed",
+  "✔ Vents & Compartments Steamed",
+  "✔ Surfaces & Plastics Steamed",
+  "✔ Carpet & Floor Mats Steamed",
+  "✖ Plastic & Vinyl Protection Applied",
   "✖ Fabric/Leather Conditioning Applied",
   "✖ Carpet & Floor Mats Protection Applied",
   "✖ Ozone Odor Treatment",
@@ -114,7 +114,7 @@ export const deluxeExteriorServices = [
   "✔ Exterior Cracks & Crevices Steamed",
   "✔ Iron Removed",
   "✔ Bug & Tar Removed",
-  "✔ Clay Bar Treatment",
+  "✖ Clay Bar Treatment",
   "✖ Wheels Protection Applied",
   "✖ One-Stage Rotary Polish ",
   "✖ Premium Spray Ceramic Coating Applied",
@@ -201,45 +201,45 @@ export const essentialPackage = {
   interiorImage: essentialInteriorWashImage,
   exteriorServices: essentialExteriorServices,
   interiorServices: essentialInteriorServices,
-  price: ["$150", "$175", "$200", "$225"],
+  price: ["$200", "$225", "$250", "$275"],
   duration: "Duration: Up to 2 hours depending on vehicle size and condition.",
 };
+
+// export const primePackage = {
+//   title: "Prime Package",
+//   exteriorTitle: "Exterior",
+//   interiorTitle: "Interior",
+//   exteriorImage: premiumExteriorWashImage,
+//   interiorImage: premiumInteriorWashImage,
+//   exteriorServices: primeExteriorServices,
+//   interiorServices: primeInteriorServices,
+//   price: ["$250", "$275`", "$300", "$325"],
+//   duration: "Duration: Up to 3 hours depending on vehicle size and condition.",
+// };
 
 export const primePackage = {
   title: "Prime Package",
   exteriorTitle: "Exterior",
   interiorTitle: "Interior",
-  exteriorImage: premiumExteriorWashImage,
-  interiorImage: premiumInteriorWashImage,
+  exteriorImage: primeExteriorWashImage,
+  interiorImage: primeInteriorWashImage,
   exteriorServices: primeExteriorServices,
   interiorServices: primeInteriorServices,
-  price: ["$250", "$275`", "$300", "$325"],
-  duration: "Duration: Up to 3 hours depending on vehicle size and condition.",
-};
-
-export const deluxePackage = {
-  title: "Deluxe Package",
-  exteriorTitle: "Exterior",
-  interiorTitle: "Interior",
-  exteriorImage: deluxeExteriorWashImage,
-  interiorImage: deluxeInteriorWashImage,
-  exteriorServices: deluxeExteriorServices,
-  interiorServices: deluxeInteriorServices,
   price: ["$375", "$400", "$425", "$450"],
   duration: "Duration: Up to 4 hours depending on vehicle size and condition.",
 };
 
 export const ultimatePackage = {
-    title: "Deluxe Package",
-    exteriorTitle: "Exterior",
-    interiorTitle: "Interior",
-    exteriorImage: deluxeExteriorWashImage,
-    interiorImage: deluxeInteriorWashImage,
-    exteriorServices: ultimateExteriorServices,
-    interiorServices: ultimateInteriorServices,
-    price: ["$475", "$500", "$525", "$550"],
-    duration: "Duration: Up to 6 hours depending on vehicle size and condition.",
-  };
+  title: "Ultimate Package",
+  exteriorTitle: "Exterior",
+  interiorTitle: "Interior",
+  exteriorImage: deluxeExteriorWashImage,
+  interiorImage: deluxeInteriorWashImage,
+  exteriorServices: ultimateExteriorServices,
+  interiorServices: ultimateInteriorServices,
+  price: ["$500", "$525", "$550", "$575"],
+  duration: "Duration: Up to 6 hours depending on vehicle size and condition.",
+};
 
 export const regularWash = {
   title: "Regular Wash",

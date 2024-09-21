@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const BookButtons = ({ color }) => {
   return (
-    <div className="py-5 flex flex-col xs:flex-row justify-center items-center">
+    <div className="py-5 flex  justify-center items-center">
       <div className="my-1 min-w-40 md:min-w-48">
         <Link
           to="https://squareup.com/appointments/book/t25pubegvfjcw1/LDK47FK18Z9GH/start"

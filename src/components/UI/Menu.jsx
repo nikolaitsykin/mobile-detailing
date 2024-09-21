@@ -14,15 +14,15 @@ const Menu = ({ service }) => {
         id="controlled-tabs"
         selectedTabClassName="bg-black text-white"
       >
-        <TabList className=" flex flex-col md:flex-row md:justify-between md:items-center ">
+        <TabList className="flex flex-col md:flex-row md:justify-between md:items-center">
           {carsSizes &&
             carsSizes.map((car) => (
               <Tab
                 key={car.title}
-                className="cursor-pointer p-1 text-center bg-grey-background outline-none flex flex-col flex-grow justify-center items-center"
+                className="cursor-pointer p-1 text-center outline-none flex flex-col basis-1/4 justify-center items-center"
               >
                 <h3 className="p-1">{car.title}</h3>
-                <h5 className="font-syne font-semibold text-xs whitespace-pre-wrap">
+                <h5 className="font-syne font-semibold text-xs md:text whitespace-pre-wrap">
                   {car.description}
                 </h5>
               </Tab>

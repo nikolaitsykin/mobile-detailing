@@ -19,15 +19,8 @@ const Promos = () => {
   };
 
   return (
-    <div className="w-full ">
-      <h2 className=" text-center text-black">Promo</h2>
-      {/* <div className="bg-black w-full mx-auto h-48">
-        <img
-          src={backgroundImage}
-          alt="background"
-          className="object-cover w-full mx-auto h-48"
-        />
-      </div> */}
+    <div className="w-full">
+      <h2 className="text-center text-black">Promo</h2>
       <Slider {...settings} className="w-full h-56">
         {permanentPromos.map((item, index) => (
           <PromoItem

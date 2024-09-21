@@ -41,7 +41,7 @@ const Navbar = (props) => {
         </div>
       </div>
       <ul
-        className={`bg-black top-32 md:top-40 w-full ${
+        className={`bg-black top-20 md:top-32 w-full ${
           isMenuOpen ? "absolute" : "hidden"
         }   flex lg:flex lg:static flex-col lg:flex-row w-full`}
       >
