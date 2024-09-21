@@ -21,14 +21,14 @@ const Footer = () => {
             </h5>
             <p className="pt-3">
               Based in Apex, we serve the Triangle area with top-tier mobile
-              automotive detailing. We specialize in ceramic coating, paint
-              protection film & paint restoration—bringing high-quality care
+              automotive detailing. We specialize in auto detailing, mobile detailing, ceramic coating, paint
+              protection film & paint restoration — bringing high-quality care
               directly to you.
             </p>
           </div>
         </div>
         <div className="flex basis-1/2 md:basis-2/3">
-          <div className="basis-1/3 md:px-4">
+          <div className="basis-1/3 pr-4">
             <div className="flex flex-col min-w-42">
               <h5 className="text-white font-poppins md:mb-3 font-medium">
                 Links
@@ -45,7 +45,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="basis-1/3 px-4 ">
+          <div className="basis-1/3 pr-4 ">
             <div className="">
               <h5 className="text-white font-poppins md:mb-3 font-medium">
                 Locations
@@ -64,12 +64,12 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="basis-1/3 px-4 ">
+          <div className="basis-1/3">
             <div className="">
               <h5 className="text-white font-poppins md:mb-3 font-medium">
                 Address
               </h5>
-              <span className=" md:text-md">{businessAddress}</span>
+              <span className="">{businessAddress}</span>
             </div>
             <div className="pt-2 md:pt-3 ">
               <h5 className="text-white font-poppins md:mb-3 font-medium">
