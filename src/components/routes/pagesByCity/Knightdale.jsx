@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import detailingVideo from "../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
-import Hero from "../Hero";
-import Promos from "../Promos";
-import BookButtons from "../UI/BookButtons";
-import Button from "../UI/Button";
+import detailingVideo from "../../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
+import Hero from "../../Hero";
+import Promos from "../../Promos";
+import BookButtons from "../../UI/BookButtons";
+import Button from "../../UI/Button";
 
-const Root = () => {
+const RootKnightdale = () => {
   return (
     <main className="w-full bg-white">
       <div className="w-full bg-black">
@@ -23,7 +23,7 @@ const Root = () => {
       <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-28 md:top-40">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 uppercase text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Professional Auto Detailing{" "}
+            Knightdale Professional Auto Detailing
           </h1>
           <p className="animate-slidein700 text-center opacity-0 text-xs md:text-base py-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Whether you want to protect your car or give it a clean look, we
@@ -113,4 +113,4 @@ const Root = () => {
   );
 };
 
-export default Root;
+export default RootKnightdale;
