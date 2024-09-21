@@ -4,10 +4,10 @@ const PromoItem = ({ title, image, description }) => {
   return (
     <div className="h-56 w-full mx-auto relative font-poppins">
       <div className="mx-auto z-10 px-7 py-2 grid grid-cols-1 h-full absolute">
-        <h2 className="text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] p-1 font-medium text-3xl md:text-5xl w-full self-end">
+        <h2 className="text-white text-start drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] p-1 font-medium text-3xl md:text-5xl w-full self-end">
           {title}
         </h2>
-        <p className="text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] p-1 font-normal text-lg md:text-2xl self-start">
+        <p className="text-white text-start drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] p-1 font-normal text-lg md:text-2xl self-start">
           {description}
         </p>
       </div>
