@@ -28,7 +28,7 @@ export const carsSizes = [
   },
 ];
 export const essentialExteriorServices = [
-  "✔ Vehicle Hand Wash & Dryed",
+  "✔ Vehicle Hand Washed & Dryed",
   "✔ Door & Trunk Jambs Cleaned",
   "✔ Gas Cap and Valve Cleaned",
   "✔ Wheels Cleaned",
@@ -65,7 +65,7 @@ export const essentialInteriorServices = [
 ];
 
 export const primeExteriorServices = [
-  "✔ Vehicle Hand Wash & Dryed",
+  "✔ Vehicle Hand Washed & Dryed",
   "✔ Door & Trunk Jambs Cleaned",
   "✔ Gas Cap and Valve Cleaned",
   "✔ Wheels Cleaned",
@@ -102,7 +102,7 @@ export const primeInteriorServices = [
 ];
 
 export const deluxeExteriorServices = [
-  "✔ Vehicle Hand Wash & Dryed",
+  "✔ Vehicle Hand Washed & Dryed",
   "✔ Door & Trunk Jambs Cleaned",
   "✔ Gas Cap and Valve Cleaned",
   "✔ Wheels Cleaned",
@@ -139,7 +139,7 @@ export const deluxeInteriorServices = [
 ];
 
 export const ultimateExteriorServices = [
-  "✔ Vehicle Hand Wash & Dryed",
+  "✔ Vehicle Hand Washed & Dryed",
   "✔ Door & Trunk Jambs Cleaned",
   "✔ Gas Cap and Valve Cleaned",
   "✔ Wheels Cleaned",

@@ -11,10 +11,10 @@ const Hero = () => {
           services directly to you. Our fully equipped mobile detailing unit has
           everything we need to provide top-notch care for your vehicle. We do
           require access to a power and water supply, but once that’s arranged,
-          we’ll take care of the rest. We proudly serve Raleigh, Cary, Holly
-          Springs, and the surrounding areas. While there may be some
-          location-based limitations or criteria, we always do our best to
-          accommodate your needs and fit you into our schedule.
+          we’ll take care of the rest. We proudly serve Triangle and the
+          surrounding areas. While there may be some location-based limitations
+          or criteria, we always do our best to accommodate your needs and fit
+          you into our schedule.
         </p>
       </section>
       <section>
