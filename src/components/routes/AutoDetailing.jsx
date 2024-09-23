@@ -52,7 +52,6 @@ const AutoDetailing = () => {
         <div className="w-full mx-auto">
           <Package packageType={essentialPackage} />
           <Package packageType={primePackage} />
-          {/* <Package packageType={deluxePackage} /> */}
           <Package packageType={ultimatePackage} />
         </div>
       </section>

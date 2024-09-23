@@ -1,15 +1,15 @@
 import engineDetailingImage from "../assets/images/AdobeStock_255876084 2.jpeg";
 import petHairRemovalImage from "../assets/images/hair-removal.jpg";
-import headlinerCleaningImage from "../assets/images/how-to-clean-car-headliner-to-factory-new-in-one-weekend-238181_900x .jpg";
+// import headlinerCleaningImage from "../assets/images/how-to-clean-car-headliner-to-factory-new-in-one-weekend-238181_900x .jpg";
 
 export const addons = [
-  {
-    title: "Headliner Restoration",
-    image: headlinerCleaningImage,
-    description:
-      "Rediscover the road with our Headlight Restoration service. Eliminate dim, cloudy headlights and enjoy enhanced visibility and safety. Our solution will make your headlights look like new again. Schedule your appointment today and experience the clear difference!",
-    price: "Starts at $75",
-  },
+  // {
+  //   title: "Headliner Restoration",
+  //   image: headlinerCleaningImage,
+  //   description:
+  //     "Rediscover the road with our Headlight Restoration service. Eliminate dim, cloudy headlights and enjoy enhanced visibility and safety. Our solution will make your headlights look like new again. Schedule your appointment today and experience the clear difference!",
+  //   price: "Starts at $75",
+  // },
   {
     title: "Engine Bay Detailing",
     image: engineDetailingImage,

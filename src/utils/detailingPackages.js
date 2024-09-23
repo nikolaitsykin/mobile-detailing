@@ -3,11 +3,11 @@ import primeExteriorWashImage from "../assets/images/AdobeStock_273206890.jpeg";
 import exteriorDetailingServiceImage from "../assets/images/AdobeStock_397247724.jpeg";
 import regularInteriorWashImage from "../assets/images/AdobeStock_399584907.jpeg";
 import primeInteriorWashImage from "../assets/images/AdobeStock_539555302.jpeg";
-import deluxeExteriorWashImage from "../assets/images/AdobeStock_799868847.jpeg";
+import ultimateExteriorWashImage from "../assets/images/AdobeStock_799868847.jpeg";
 import essentialExteriorWashImage from "../assets/images/car-front-foglight.jpg";
 import regularExteriorWashImage from "../assets/images/car-wash-detailing-station_1.jpg";
 import essentialInteriorWashImage from "../assets/images/man-polish-salon-car-garage_1157-36595.jpg";
-import deluxeInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
+import ultimateInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
 
 export const carsSizes = [
   {
@@ -31,37 +31,35 @@ export const essentialExteriorServices = [
   "✔ Vehicle Hand Washed & Dryed",
   "✔ Door & Trunk Jambs Cleaned",
   "✔ Gas Cap and Valve Cleaned",
-  "✔ Wheels Cleaned",
+  "✔ Tires & Wheels Cleaned",
   "✔ Tire Shine Applied",
   "✔ Windows Cleaned",
   "✔ Spray Wax Applied",
   "✔ Windows Water Repellent Applied",
-  "✖ Exterior Cracks & Crevices Steamed",
   "✖ Iron Removed",
   "✖ Bug & Tar Removed",
   "✖ Clay Bar Treatment",
+  "✖ Premium Spray Gloss Enhancer Applied",
   "✖ Door & Trunk Jambs Protected",
   "✖ Wheels Protection Applied",
-  "✖ One-Stage Rotary Polish ",
-  "✖ Premium Spray Ceramic Coating Applied",
+  "✖ Ultra Ceramic Coating Applied",
 ];
 export const essentialInteriorServices = [
-  "✔ Door Seals & Panels Cleaned",
   "✔ Interior & Trunk Vacuumed",
-  "✔ Surfaces & Plastics Wiped",
-  "✔ Floor Mats Cleaned",
+  "✔ Door Panels Cleaned",
+  "✔ Interior Wiped",
+  "✔ Floor Mats Washed",
   "✔ Glasses & Mirrors Cleaned",
-  "✔ Freshener Applied",
+  "✔ Cup Holders Cleaned",
   "✔ Cracks & Crevices Cleaned",
-  "✔ Carpet Cleaned & Vacuumed",
+  "✖ Fabric/Leather Seats Cleaned",
+  "✖ Carpet & Floor Mats Steamed",
   "✖ Cracks & Crevices Steamed",
   "✖ Vents & Compartments Steamed",
-  "✖ Surfaces & Plastics Steamed",
-  "✖ Carpet & Floor Mats Steamed",
-  "✖ Plastic & Vinyl Protection Dressed",
+  "✖ Interior & Seats Steamed",
+  "✖ Cup Holders Steamed",
   "✖ Fabric/Leather Conditioning Applied",
-  "✖ Carpet & Floor Mats Protection Applied",
-  "✖ Ozone Odor Treatment",
+  "✖ Interior UV & Dust Protection Applied",
 ];
 
 export const primeExteriorServices = [
@@ -73,69 +71,30 @@ export const primeExteriorServices = [
   "✔ Windows Cleaned",
   "✔ Spray Wax Applied",
   "✔ Windows Water Repellent Applied",
-  "✔ Exterior Cracks & Crevices Steamed",
   "✔ Iron Removed",
   "✔ Bug & Tar Removed",
-  "✖ Clay Bar Treatment",
+  "✔ Clay Bar Treatment",
+  "✔ Premium Spray Gloss Enhancer Applied",
   "✖ Door & Trunk Jambs Protected",
   "✖ Wheels Protection Applied",
-  "✖ One-Stage Rotary Polish ",
-  "✖ Premium Spray Ceramic Coating Applied",
+  "✖ Ultra Ceramic Coating Applied",
 ];
 export const primeInteriorServices = [
-  "✔ Door Seals & Panels Cleaned",
   "✔ Interior & Trunk Vacuumed",
-  "✔ Surfaces & Plastics Wiped",
-  "✔ Carpet & Floor Mats Cleaned",
+  "✔ Door Panels Cleaned",
+  "✔ Interior Wiped",
+  "✔ Floor Mats Washed",
   "✔ Glasses & Mirrors Cleaned",
-  "✔ Freshener Applied",
+  "✔ Cup Holders Cleaned",
   "✔ Cracks & Crevices Cleaned",
-  "✔ Carpet & Floor Mats Shampooed",
+  "✔ Fabric/Leather Seats Cleaned",
+  "✔ Carpet & Floor Mats Steamed",
   "✔ Cracks & Crevices Steamed",
   "✔ Vents & Compartments Steamed",
-  "✔ Surfaces & Plastics Steamed",
-  "✔ Carpet & Floor Mats Steamed",
-  "✖ Plastic & Vinyl Protection Applied",
+  "✔ Interior & Seats Steamed",
+  "✔ Cup Holders Steamed",
   "✖ Fabric/Leather Conditioning Applied",
-  "✖ Carpet & Floor Mats Protection Applied",
-  "✖ Ozone Odor Treatment",
-];
-
-export const deluxeExteriorServices = [
-  "✔ Vehicle Hand Washed & Dryed",
-  "✔ Door & Trunk Jambs Cleaned",
-  "✔ Gas Cap and Valve Cleaned",
-  "✔ Wheels Cleaned",
-  "✔ Tire Shine Applied",
-  "✔ Windows Cleaned",
-  "✔ Spray Wax Applied",
-  "✔ Door & Trunk Jambs Protected",
-  "✔ Windows Water Repellent Applied",
-  "✔ Exterior Cracks & Crevices Steamed",
-  "✔ Iron Removed",
-  "✔ Bug & Tar Removed",
-  "✖ Clay Bar Treatment",
-  "✖ Wheels Protection Applied",
-  "✖ One-Stage Rotary Polish ",
-  "✖ Premium Spray Ceramic Coating Applied",
-];
-export const deluxeInteriorServices = [
-  "✔ Door Seals & Panels Cleaned",
-  "✔ Interior & Trunk Vacuumed",
-  "✔ Surfaces & Plastics Wiped",
-  "✔ Carpet & Floor Mats Cleaned",
-  "✔ Glasses & Mirrors Cleaned",
-  "✔ Freshener Applied",
-  "✔ Cracks & Crevices Cleaned",
-  "✔ Carpet & Floor Mats Shampooed",
-  "✔ Cracks & Crevices Steamed",
-  "✔ Vents & Compartments Steamed",
-  "✔ Surfaces & Plastics Steamed",
-  "✔ Carpet & Floor Mats Steamed",
-  "✖ Plastic & Vinyl Protection Dressed",
-  "✖ Fabric/Leather Conditioning Applied",
-  "✖ Carpet & Floor Mats Protection Applied",
-  "✖ Ozone Odor Treatment",
+  "✖ Interior UV & Dust Protection Applied",
 ];
 
 export const ultimateExteriorServices = [
@@ -146,34 +105,32 @@ export const ultimateExteriorServices = [
   "✔ Tire Shine Applied",
   "✔ Windows Cleaned",
   "✔ Spray Wax Applied",
-  "✔ Door & Trunk Jambs Protected",
   "✔ Windows Water Repellent Applied",
-  "✔ Exterior Cracks & Crevices Steamed",
   "✔ Iron Removed",
   "✔ Bug & Tar Removed",
   "✔ Clay Bar Treatment",
+  "✔ Premium Spray Gloss Enhancer Applied",
+  "✔ Door & Trunk Jambs Protected",
   "✔ Wheels Protection Applied",
-  "✔ One-Stage Rotary Polish ",
-  "✔ Premium Spray Ceramic Coating Applied",
+  "✔ Ultra Ceramic Coating Applied",
 ];
 
 export const ultimateInteriorServices = [
-  "✔ Door Seals & Panels Cleaned",
   "✔ Interior & Trunk Vacuumed",
-  "✔ Surfaces & Plastics Wiped",
-  "✔ Carpet & Floor Mats Cleaned",
+  "✔ Door Panels Cleaned",
+  "✔ Interior Wiped",
+  "✔ Floor Mats Washed",
   "✔ Glasses & Mirrors Cleaned",
-  "✔ Freshener Applied",
+  "✔ Cup Holders Cleaned",
   "✔ Cracks & Crevices Cleaned",
-  "✔ Carpet & Floor Mats Shampooed",
+  "✔ Fabric/Leather Seats Cleaned",
+  "✔ Carpet & Floor Mats Steamed",
   "✔ Cracks & Crevices Steamed",
   "✔ Vents & Compartments Steamed",
-  "✔ Surfaces & Plastics Steamed",
-  "✔ Carpet & Floor Mats Steamed",
-  "✔ Plastic & Vinyl Protection Dressed",
+  "✔ Interior & Seats Steamed",
+  "✔ Cup Holders Steamed",
   "✔ Fabric/Leather Conditioning Applied",
-  "✔ Carpet & Floor Mats Protection Applied",
-  "✔ Ozone Odor Treatment",
+  "✔ Interior UV & Dust Protection Applied",
 ];
 
 export const regularExteriorServices = [
@@ -201,21 +158,9 @@ export const essentialPackage = {
   interiorImage: essentialInteriorWashImage,
   exteriorServices: essentialExteriorServices,
   interiorServices: essentialInteriorServices,
-  price: ["$200", "$225", "$250", "$275"],
-  duration: "Duration: Up to 2 hours depending on vehicle size and condition.",
+  price: ["$175", "$200", "$225", "$250"],
+  duration: "Duration: Up to 3 hours depending on vehicle size and condition.",
 };
-
-// export const primePackage = {
-//   title: "Prime Package",
-//   exteriorTitle: "Exterior",
-//   interiorTitle: "Interior",
-//   exteriorImage: premiumExteriorWashImage,
-//   interiorImage: premiumInteriorWashImage,
-//   exteriorServices: primeExteriorServices,
-//   interiorServices: primeInteriorServices,
-//   price: ["$250", "$275`", "$300", "$325"],
-//   duration: "Duration: Up to 3 hours depending on vehicle size and condition.",
-// };
 
 export const primePackage = {
   title: "Prime Package",
@@ -225,19 +170,19 @@ export const primePackage = {
   interiorImage: primeInteriorWashImage,
   exteriorServices: primeExteriorServices,
   interiorServices: primeInteriorServices,
-  price: ["$375", "$400", "$425", "$450"],
-  duration: "Duration: Up to 4 hours depending on vehicle size and condition.",
+  price: ["$325", "$350", "$375", "$400"],
+  duration: "Duration: Up to 5 hours depending on vehicle size and condition.",
 };
 
 export const ultimatePackage = {
   title: "Ultimate Package",
   exteriorTitle: "Exterior",
   interiorTitle: "Interior",
-  exteriorImage: deluxeExteriorWashImage,
-  interiorImage: deluxeInteriorWashImage,
+  exteriorImage: ultimateExteriorWashImage,
+  interiorImage: ultimateInteriorWashImage,
   exteriorServices: ultimateExteriorServices,
   interiorServices: ultimateInteriorServices,
-  price: ["$500", "$525", "$550", "$575"],
+  price: ["$425", "$450", "$475", "$500"],
   duration: "Duration: Up to 6 hours depending on vehicle size and condition.",
 };
 
@@ -279,7 +224,7 @@ export const biWeekly = {
     "Regular wash",
     "Essential Detail",
     "Prime Detail",
-    "Deluxe Detail",
+    "Ultimate Detail",
   ],
   prices: ["x", "from $150", "from $225", "from $300"],
   discount: ["from $90", "from $120", "from $180", "from $240"],
@@ -290,12 +235,7 @@ export const monthly = {
   service: [
     "Perfect for those who want a consistently clean ride, with a monthly full detail at a discounted rate.",
   ],
-  package: [
-    "Regular wash",
-    "Essential Detail",
-    "Prime Detail",
-    "Deluxe Detail",
-  ],
+  package: ["Regular wash", "Essential Detail", "Prime Detail", "U Detail"],
   prices: ["x", "from $150", "from $225", "from $300"],
   discount: ["from $90", "from $135", "from $200", "from $270"],
 };
