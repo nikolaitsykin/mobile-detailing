@@ -31,5 +31,5 @@ export const footerLinks = [
 
 export const links = ["mobile-detailing", "services", "services", "services"];
 
-export const businessAddress = "219 N Salem St, Apex, NC 27502";
+export const businessAddress = "Apex, NC 27529";
 export const businessHours = ["MON-FRI 5-8PM", "SAT-SUN 9-5PM"];

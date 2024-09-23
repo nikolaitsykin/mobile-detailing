@@ -3,9 +3,8 @@ import { FaPhone } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/detailing_guys_logo.png";
 import useScrollDirection from "../hooks/useScrollDirection";
-import Navbar from "./UI/Navbar";
-import SocialButtons from "./UI/SocialButtons";
 import Button from "./UI/Button";
+import Navbar from "./UI/Navbar";
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
