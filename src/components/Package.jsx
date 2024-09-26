@@ -26,7 +26,9 @@ const Package = ({ packageType }) => {
           description={packageType.interiorDescription}
         />
       </div>
-      <p className="text-center text-sm p-3">{packageType.duration}</p>
+      <div className="text-center text-sm mt-2 p-4">
+        {packageType.duration}{" "}
+      </div>
       <div className="flex justify-center items-center p-5">
         <Link
           className="w-[80%] flex justify-center items-center"

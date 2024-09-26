@@ -21,7 +21,7 @@ export const addons = [
     title: "Excessive Pet Hair Removal",
     image: petHairRemovalImage,
     description:
-      "Our Excessive Pet Hair Removal add-on is designed to tackle stubborn pet hair that regular cleaning can’t handle. We thoroughly remove pet hair from seats, carpets, and hard-to-reach areas using specialized tools and techniques, leaving your vehicle fresh, clean, and fur-free.",
+      "Our Excessive Pet Hair Removal add-on is designed to tackle stubborn pet hair that regular cleaning can’t handle. We thoroughly remove pet hair from seats, carpets, and hard-to-reach areas using specialized tools and techniques, leaving your vehicle fur-free.",
     price: "Starts at $50",
   },
 ];

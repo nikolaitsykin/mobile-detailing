@@ -86,7 +86,7 @@ export const specialPackage = {
   exteriorDescription:
     "We hand wash and dry your vehicle, clean the wheels, tires, and door jambs, and apply tire shine. Your windows are protected, and we finish with clay bar treatment, iron decontamination, and a lasting ceramic coating for long-term gloss and protection.",
   interiorDescription:
-    "We vacuum and steam clean the interior, carpets, and trunk, removing pet hair and sand. Seats, vents, and surfaces get a steam clean, followed by conditioning and UV protection. We finish with spotless glass and mirrors for a polished look.",
+    "We vacuum and steam the interior, carpets, mats and trunk, removing pet hair and sand. Seats, vents, and surfaces get a steam clean, followed by conditioning and UV protection. We finish with spotless glass and mirrors for a polished look.",
   link: BOOKING_PATH,
   button: "Get Started",
   price: ["$400", "$420", "$440", "$460"],
@@ -128,7 +128,7 @@ export const steamAndGuard = {
   image: primeInteriorWashImage,
   services: steamAndGuardInteriorServices,
   description:
-    "We vacuum and steam clean the interior, carpets, and trunk, taking care of pet hair and sand. Seats, vents, and surfaces get a deep steam treatment, followed by conditioning and UV protection. Finally, we ensure the glass and mirrors are spotless for a polished finish.",
+    "We vacuum and steam the interior, carpets, and trunk, taking care of pet hair and sand. Seats, vents, and surfaces get a deep steam treatment, followed by conditioning and UV protection. Finally, we ensure the glass and mirrors are spotless for a polished finish.",
   price: ["$260", "$280", "$300", "$320"],
   duration: "Duration: Up to 4 hours depending on vehicle size and condition.",
 };

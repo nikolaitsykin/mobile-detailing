@@ -18,7 +18,7 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`w-full flex flex-col items-center justify-start mx-auto text-black ${border} border-gray`}
+      className={`w-full  flex flex-col items-center  mx-auto text-black ${border} border-gray`}
     >
       {name && <h3 className=" text-center py-6">{name}</h3>}
       {service && (
@@ -38,8 +38,8 @@ const Card = ({
         </div>
       )}
       {services && (
-        <div className="flex flex-col justify-start max-w-xl my-1 h-full px-4">
-          <ul>
+        <div className="flex flex-col justify-between items-center w-full max-w-xl my-1 h-full px-4">
+          <ul className="h-full">
             {services.map((service) => (
               <li
                 key={service}
@@ -52,17 +52,15 @@ const Card = ({
         </div>
       )}
       {price && (
-        <div className="p-1 text-center font-syne font-semibold text-xl">
-          {price}
+        <div className="flex justify-center items-end w-full">
+          <h4 className="p-5"> {price}</h4>
         </div>
       )}
       {duration && (
-        <div className="text-center text-sm mt-2 p-4">
-          {duration}
-        </div>
+        <div className="text-center text-sm mt-2 p-4">{duration}</div>
       )}
       {button && (
-        <div className="my-5 flex justify-center items-end w-[100%] px-4 h-full">
+        <div className="my-5 flex justify-center items-end w-[100%] px-4">
           <Link
             className="w-[80%] flex justify-center items-center"
             preventScrollReset={false}
