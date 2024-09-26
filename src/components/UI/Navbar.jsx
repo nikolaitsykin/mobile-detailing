@@ -58,7 +58,7 @@ const Navbar = () => {
         {links.map((link) => (
           <li
             key={link}
-            className="flex jutify-end lg:justify-center items-center basis-1/4"
+            className={`flex jutify-end lg:justify-center items-center basis-1/${links.length}`}
           >
             <NavLink
               onClick={() => setIsMenuOpen(false)}
