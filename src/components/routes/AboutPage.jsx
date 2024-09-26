@@ -56,9 +56,9 @@ const AboutPage = () => {
               ensure your car receives the same level of care we give our own.
             </p>
           </div>
-          <div className=" items-center ">
+          <div className="items-center ">
             <h2 className=" p-5 ">Why Choose Detailing Guys?</h2>
-            <ol>
+            <ul className="pl-5">
               <li className="list-disc">
                 <strong>We Come to You:</strong> Your time is valuable. We show
                 up wherever it's most convenient for you—home, work, or anywhere
@@ -80,7 +80,7 @@ const AboutPage = () => {
                 were our own and every customer like family, making sure you
                 love the way your car looks.
               </li>
-            </ol>
+            </ul>
           </div>
           <div className=" items-center">
             <h2 className=" p-5 ">The Detailing Guys Difference</h2>

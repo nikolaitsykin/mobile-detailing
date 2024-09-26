@@ -67,7 +67,7 @@ export const sustainability = [
 ];
 
 export const whatToExpect = [
-  "✔  We’ll come directly to your location—just provide access to water and a safe spot for our team to park.",
+  "✔  We’ll come directly to your location—just provide access to water, power and a safe spot for our team to park.",
   "✔  Hand over your keys, and when we’re done, you’ll pick up your car.",
   "✔  You can pay on-site or wait for an invoice.",
   "✔  While we aim to arrive on time, factors like weather or previous appointments can sometimes affect our schedule. If there’s a change, we’ll notify you as soon as possible—though it might occasionally be on the same day. We appreciate your understanding and flexibility! ",

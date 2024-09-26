@@ -37,10 +37,8 @@ const BookingPage = () => {
           <ul>
             <li>
               ✔ Book your appointment online or give us a call at {" "}
-              <a href={CALL_NUMBER} className="underline text-blue">
-                (919) 906-0099
-              </a>
-              . Be sure to include your address when scheduling!
+              <a href={CALL_NUMBER} className="underline text-blue">(919) 906-0099</a>. Be sure to include your
+              address when scheduling!
             </li>
             {whatToExpect.map((item, index) => (
               <li key={index}>{item}</li>
