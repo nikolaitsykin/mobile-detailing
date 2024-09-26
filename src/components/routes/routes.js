@@ -5,7 +5,7 @@ import ErrorPage from "../error-page";
 import Hero from "../Hero";
 import Root from "../routes/Root";
 import AutoDetailing from "./AutoDetailing";
-import Booking from "./BookingPage";
+import ContactPage from "./ContactPage";
 import Ceramic from "./Ceramic";
 import FAQs from "./FAQsPage";
 import Gallery from "./GalleryPage";
@@ -23,6 +23,20 @@ import RootHollySprings from "./pagesByCity/HollySprings";
 import RootMorrisville from "./pagesByCity/Morrisville";
 import RootKnightdale from "./pagesByCity/Knightdale";
 import RootGarner from "./pagesByCity/Garner";
+import ServiceItemPage from "./ServiceItemPage";
+import BookingPage from "./BookingPage";
+import {
+  ABOUT_PATH,
+  BOOKING_PATH,
+  CONTACT_PATH,
+  FAQS_PATH,
+  GALLERY_PATH,
+  HOME_PATH,
+  MEMBERSHIP_PATH,
+  MOBILE_DETAILING_PATH,
+  REVIEWS_PATH,
+  SERVICES_PATH,
+} from "../../utils/constants";
 
 export const routes = createBrowserRouter([
   {
@@ -30,40 +44,48 @@ export const routes = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: HOME_PATH,
         element: <Root />,
       },
       {
-        path: "/services",
+        path: SERVICES_PATH,
         element: <ServicesPage />,
       },
       {
-        path: "/booking",
-        element: <Booking />,
+        path: BOOKING_PATH,
+        element: <BookingPage />,
       },
       {
-        path: "/membership",
+        path: CONTACT_PATH,
+        element: <ContactPage />,
+      },
+      {
+        path: MEMBERSHIP_PATH,
         element: <Membership />,
       },
       {
-        path: "/about",
+        path: ABOUT_PATH,
         element: <AboutPage />,
       },
       {
-        path: "/FAQs",
+        path: FAQS_PATH,
         element: <FAQs />,
       },
       {
-        path: "/gallery",
+        path: GALLERY_PATH,
         element: <Gallery />,
       },
       {
-        path: "/reviews",
+        path: REVIEWS_PATH,
         element: <Reviews />,
       },
       {
-        path: "/mobile-detailing",
+        path: MOBILE_DETAILING_PATH,
         element: <AutoDetailing />,
+      },
+      {
+        path: "/:serviceId",
+        element: <ServiceItemPage />,
       },
       {
         path: "/ceramic-coating",

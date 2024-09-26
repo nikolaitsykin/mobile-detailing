@@ -143,7 +143,7 @@ const ContactForm = () => {
           <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
             1. Your personal details
           </h3>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-2">
             <InputField
               value={values.fullName}
               handleChange={handleChange}
@@ -187,7 +187,7 @@ const ContactForm = () => {
           <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
             2. Your vehicle details
           </h3>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
             <InputField
               value={values.vehicle}
               handleChange={handleChange}
@@ -212,7 +212,7 @@ const ContactForm = () => {
           <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
             3. Select your preferred service
           </h3>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
             <SelectField
               handleChange={handleChange}
               name="service"
@@ -239,11 +239,11 @@ const ContactForm = () => {
           <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
             4. Select date and time what will be best for you
           </h3>
-          <p className="text-black text-base my-1 p-0.5">
+          <p className="text-black text-base my-3">
             We currently offer services on weekdays between 5 PM and 8 PM and
             weekends between 9 AM and 6 PM
           </p>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
             <InputField
               value={values.date}
               handleChange={handleChange}
@@ -281,7 +281,7 @@ const ContactForm = () => {
         {errorMessage && (
           <div className="text-red-500 text-center">{errorMessage}</div>
         )}
-        <div className="flex justify-cente py-3 ">
+        <div className="flex justify-cente mt-12">
           <Button
             type="submit"
             children="SEND SERVICE REQUEST"

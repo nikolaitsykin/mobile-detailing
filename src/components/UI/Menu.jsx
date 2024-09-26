@@ -7,33 +7,36 @@ const Menu = ({ service }) => {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
-    <div>
+    <div className="w-full flex">
       <Tabs
         selectedIndex={tabIndex}
         onSelect={(index) => setTabIndex(index)}
         id="controlled-tabs"
         selectedTabClassName="bg-black text-white"
+        className="flex flex-col justify-end w-full h-max"
       >
-        <TabList className="flex flex-col md:flex-row md:justify-between md:items-center">
+        <TabList className="grid grid-flow-col place-self-stretch md:flex-row md:items-start w-full h-max">
           {carsSizes &&
             carsSizes.map((car) => (
               <Tab
                 key={car.title}
-                className="cursor-pointer p-1 text-center outline-none flex flex-col basis-1/4 justify-center items-center"
+                className="h-max cursor-pointer p-1 text-center outline-none justify-center items-center"
               >
-                <h3 className="p-1">{car.title}</h3>
-                <h5 className="font-syne font-semibold text-xs md:text whitespace-pre-wrap">
+                <h5 className="">{car.title}</h5>
+                <p className=" p-0.5 font-syne font-semibold text-xs whitespace-pre-wrap">
                   {car.description}
-                </h5>
+                </p>
               </Tab>
             ))}
         </TabList>
         {carsSizes &&
           carsSizes.map((car) => (
             <TabPanel key={car.title}>
-              <h4 className="p-5 text-center">
-                Starts at {service.price[tabIndex]}
-              </h4>
+              {service && (
+                <h4 className="p-5 text-center">
+                  Starts at {service.price[tabIndex]}
+                </h4>
+              )}
             </TabPanel>
           ))}
       </Tabs>

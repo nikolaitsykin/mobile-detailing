@@ -1,10 +1,17 @@
 import React from "react";
 import { FaPhone } from "react-icons/fa6";
+import { TbMessageCircleUser } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/detailing_guys_logo.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 import Button from "./UI/Button";
 import Navbar from "./UI/Navbar";
+import {
+  CALL_NUMBER,
+  CONTACT_PATH,
+  HOME_PATH,
+  TEXT_NUMBER,
+} from "../utils/constants";
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
@@ -16,19 +23,9 @@ const Header = () => {
       }`}
     >
       {" "}
-      {/* <section className="h-10 md:h-14 flex justify-between w-full bg-black px-5 lg:px-16">
-        <div className="flex items-center basis-1/2 md:basis-1/3">
-          <span className="text-white text-xs md:text-sm lg:text-base font-syne font-bold">
-            RALEIGH
-          </span>
-        </div>
-        <div className="flex md:justify-end basis-1/4 md:basis-1/3 items-center">
-          <SocialButtons />
-        </div>
-      </section> */}
       <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/6">
-          <Link to="/">
+          <Link to={HOME_PATH}>
             <div className="ml-4 lg:ml-16 h-16 w-16 md:w-20 md:h-20">
               <img
                 className="h-16 w-16 md:w-20 md:h-20 p-2"
@@ -38,17 +35,27 @@ const Header = () => {
             </div>
           </Link>
         </div>
-        <div className="flex justify-between items-center w-full md:basis-5/6">
+        <div className="flex justify-between items-center w-full md:basis-4/6">
           <Navbar />
         </div>
-        <div className="hidden lg:flex justify-end items-center md:basis-1/6 min-w-48 mr-16">
-          <a href="tel:9199060099" className="flex">
-            <div className="flex justify-center items-center mr-5">
-              <FaPhone size="2rem" color="fffafa" />
-            </div>
-          </a>
+        <div className="hidden lg:flex justify-end items-center md:basis-2/6 min-w-48 mr-16">
+          <div>
+            <a href={CALL_NUMBER} className="flex">
+              <div className="flex justify-center items-center mr-5">
+                <FaPhone size="2rem" color="fffafa" />
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href={TEXT_NUMBER} className="flex">
+              <div className="flex justify-center items-center mr-5">
+                <TbMessageCircleUser size="2.5rem" color="fffafa" />
+              </div>
+            </a>
+          </div>
+
           <div className="hidden lg:flex">
-            <Link to="/booking">
+            <Link to={CONTACT_PATH}>
               <Button children={"Request Quote"} color={"primary"} />
             </Link>
           </div>

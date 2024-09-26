@@ -2,7 +2,7 @@ import React from "react";
 
 const Checkbox = ({ checkHandler }) => {
   return (
-    <div className="w-full p-1 flex items-start">
+    <div className="w-full py-1 flex items-start">
       <input
         type="checkbox"
         id="checkbox"

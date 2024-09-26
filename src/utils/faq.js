@@ -1,10 +1,5 @@
 export const generalQuestions = [
   {
-    title: "How Can I Book A Detail?",
-    description:
-      "You can call us at (919) 906-0099, request a quote through our contact page or just simply book online. Click the “request a quote” button to visit our contact page to request a quote. Click the “book now” button to visit our appointments page to book online.",
-  },
-  {
     title: "What Do I Need to Do Before My Appointment?",
     description:
       "We highly recommend removing all personal and loose items from your vehicle before your appointment. This helps our team ensure we can complete the service promptly. We take care of the rest!",
@@ -30,7 +25,7 @@ export const autoDetailingQuestions = [
   {
     title: "What Does an Auto Detail Include?",
     description:
-      "A typical detail at Eco Car Cafe includes hand car washing, vacuuming, interior steam cleaning, window cleaning and a wax treatment. A more extensive detail includes cleaning the wheels and tires, leather and stain treatments, complete steam sanitization, and cut & buff treatment.",
+      "A typical detail at Detailing Guys includes cleaning the wheels and tires, hand car washing, vacuuming, interior cleaning, window cleaning and a wax treatment. A more extensive detail includes protecting exterior surfaces, wheels and tires, leather and stain treatments, complete steam sanitization, interior protection, and cut & buff treatment.",
   },
   {
     title: "Can I Add Anything To My Detail?",
@@ -40,12 +35,12 @@ export const autoDetailingQuestions = [
   {
     title: "How Long Will My Detail Take?",
     description:
-      "Many factors determine how long a detail will take, and because your time is valuable, we try hard to be on time with all our services. However, please note that all times are estimates and are not guaranteed. Depending on the package and service you select, your detail can take anywhere from 2 to 6 hours. For example, the Essential Detail package takes 2-3 hours. Again, these are estimated timeframes.",
+      "Many factors determine how long a detail will take, and because your time is valuable, we try hard to be on time with all our services. However, please note that all times are estimates and are not guaranteed. Depending on the package and service you select, your detail can take anywhere from 1 to 6 hours. For example, the Wash & Wax package takes 1-2 hours. Again, these are estimated timeframes.",
   },
   {
-    title: "What is the Price Range for Eco Car Cafe Details?",
+    title: "What is the Price Range for Detailing Guys?",
     description:
-      "Depending on the type of detail and size of your vehicle, it can range anywhere from $225 to $500+",
+      "Depending on the type of detail and size of your vehicle, it can range anywhere from $120 to $450+.",
   },
   {
     title: "Will Detailing Damage My Car?",
@@ -55,7 +50,7 @@ export const autoDetailingQuestions = [
   {
     title: "What Do You Use To Clean My Car?",
     description:
-      "We’re proud of the fact that we’re eco-friendly. Our customers’ health and the environment is important to us, so we strive to use organic, all-natural cleaning products in our interior services. Our steam cleaning techniques also allow us to avoid those nasty toxic chemicals without compromising the quality of our services.",
+      "We’re proud of the fact that we’re eco-friendly. Our customers’ health and the environment is important to us, so we strive to use products that are environmentally safe, eco-friendly, and made exclusively in the USA. Our steam cleaning techniques also allow us to avoid those nasty toxic chemicals without compromising the quality of our services.",
   },
   {
     title:

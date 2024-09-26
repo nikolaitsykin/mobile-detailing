@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /private/
+
+# Allow all other directories
+User-agent: *
+Allow: /

@@ -1,7 +1,7 @@
 const TextareaField = (props) => {
   const { handleChange, label, name, value } = props;
   return (
-    <div className="w-full p-1">
+    <div className="w-full py-1">
       <label className="flex flex-col font-syne font-semibold text-md" htmlFor={name}>
         {label}
       </label>

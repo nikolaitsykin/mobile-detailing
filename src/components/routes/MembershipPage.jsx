@@ -1,9 +1,14 @@
 import React from "react";
 import img from "../../assets/images/car-wash-detailing-station.jpg";
-import { membershipBenefits, monthly, biWeekly } from "../../utils/detailingPackages";
+import {
+  membershipBenefits,
+  monthly,
+  biWeekly,
+} from "../../utils/detailingPackages";
 import Card from "../Card";
 import Button from "../UI/Button";
 import { Link } from "react-router-dom";
+import { MEMBERSHIP_PATH } from "../../utils/constants";
 
 const Membership = () => {
   return (
@@ -15,10 +20,10 @@ const Membership = () => {
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
           <p className=" p-2">
-            At Detailing Guys, we believe your vehicle deserves the best care, not just
-            once in a while, but all year round. That’s why we’ve created the
-            Membership — a convenient and cost-effective way to keep your
-            car looking its best, inside and out, with regular detailing at
+            At Detailing Guys, we believe your vehicle deserves the best care,
+            not just once in a while, but all year round. That’s why we’ve
+            created the Membership — a convenient and cost-effective way to keep
+            your car looking its best, inside and out, with regular detailing at
             exclusive member-only rates.
           </p>
         </article>
@@ -60,13 +65,15 @@ const Membership = () => {
           </div>
         </div>
         <p className="my-1 text-sm md:text-base p-3">
-          Join the Membership today and keep your vehicle in showroom
-          condition all year long. Sign up now to start enjoying the benefits of
-          regular, high-quality detailing with the added bonus of exclusive
-          savings!
+          Join the Membership today and keep your vehicle in showroom condition
+          all year long. Sign up now to start enjoying the benefits of regular,
+          high-quality detailing with the added bonus of exclusive savings!
         </p>
         <div className="flex justify-center mb-5">
-          <Link className="w-[80%] flex justify-center items-center" to="/membership">
+          <Link
+            className="w-[80%] flex justify-center items-center"
+            to={MEMBERSHIP_PATH}
+          >
             <Button children={"Become a Member"} color={"secondary"} />
           </Link>
         </div>

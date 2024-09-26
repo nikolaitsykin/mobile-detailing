@@ -16,28 +16,29 @@ const Footer = () => {
       <section className="flex justify-evenly flex-col md:flex-row ">
         <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3  flex justify-start">
           <div className="min-w-48 pr-5">
-            <h5 className="text-white font-poppins font-medium">
+            <h5 className="text-white font-poppins font-medium text-sm md:text-base">
               Detailing Guys
             </h5>
-            <p className="pt-3">
-              Based in Apex, we serve the Triangle area with top-tier mobile
-              automotive detailing. We specialize in auto detailing, mobile detailing, ceramic coating, paint
-              protection film & paint restoration — bringing high-quality care
-              directly to you.
+            <p className="pt-3 text-xs md:text-sm">
+              Based in Apex, North Carolina we serve the Triangle area with
+              top-tier mobile automotive detailing. We specialize in auto
+              detailing, mobile detailing, ceramic coating, paint protection
+              film & paint restoration — bringing high-quality care directly to
+              you.
             </p>
           </div>
         </div>
         <div className="flex basis-1/2 md:basis-2/3">
           <div className="basis-1/3 pr-4">
             <div className="flex flex-col min-w-42">
-              <h5 className="text-white font-poppins md:mb-3 font-medium">
+              <h5 className="text-white font-poppins md:mb-3 font-medium text-sm md:text-base">
                 Links
               </h5>
               <ul className="">
                 {footerLinks.map((link, index) => (
                   <li
                     key={link}
-                    className="text-gray hover:text-white py-[2px] "
+                    className="text-gray hover:text-white py-[2px] text-xs md:text-sm"
                   >
                     <NavLink to={`/${links[index]}`}>{link}</NavLink>
                   </li>
@@ -47,14 +48,14 @@ const Footer = () => {
           </div>
           <div className="basis-1/3 pr-4 ">
             <div className="">
-              <h5 className="text-white font-poppins md:mb-3 font-medium">
+              <h5 className="text-white font-poppins md:mb-3 font-medium text-sm md:text-base">
                 Locations
               </h5>
               <ul className="">
                 {locations.map((location, index) => (
                   <li
                     key={location}
-                    className="text-gray hover:text-white py-[2px]"
+                    className="text-gray hover:text-white py-[2px] text-xs md:text-sm"
                   >
                     <NavLink to={`/${locationLinks[index]}`}>
                       {location}
@@ -66,16 +67,16 @@ const Footer = () => {
           </div>
           <div className="basis-1/3">
             <div className="">
-              <h5 className="text-white font-poppins md:mb-3 font-medium">
+              <h5 className="text-white font-poppins md:mb-3 font-medium text-sm md:text-base">
                 Address
               </h5>
-              <span className="">{businessAddress}</span>
+              <span className="text-xs md:text-sm">{businessAddress}</span>
             </div>
             <div className="pt-2 md:pt-3 ">
-              <h5 className="text-white font-poppins md:mb-3 font-medium">
+              <h5 className="text-white font-poppins md:mb-3 font-medium text-sm md:text-base">
                 Open Hours
               </h5>
-              <span className="  flex flex-col ">
+              <span className="flex flex-col text-xs md:text-sm">
                 {businessHours.map((hour) => (
                   <p key={hour} className="pr-2">
                     {hour}

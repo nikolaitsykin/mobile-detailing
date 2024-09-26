@@ -5,6 +5,7 @@ import Hero from "../../Hero";
 import Promos from "../../Promos";
 import BookButtons from "../../UI/BookButtons";
 import Button from "../../UI/Button";
+import { ABOUT_PATH } from "../../../utils/constants";
 
 const RootGarner = () => {
   return (
@@ -67,8 +68,8 @@ const RootGarner = () => {
               front and center.
             </p>
             <div className="my-5 pt-5">
-              <Link to="/about">
-                <Button color="secondary" children="Learn More" />
+            <Link to={ABOUT_PATH}>
+            <Button color="secondary" children="Learn More" />
               </Link>
             </div>
             <h2 id="what-is-detailing" className="">

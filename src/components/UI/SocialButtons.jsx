@@ -1,13 +1,8 @@
 import React from "react";
-import {
-  FACEBOOK_URL,
-  INSTAGRAM_URL,
-  TIKTOK_URL,
-  YOUTUBE_URL,
-} from "../../utils/constants";
-import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FACEBOOK_URL, INSTAGRAM_URL } from "../../utils/constants";
 
 const SocialButtons = () => {
   return (

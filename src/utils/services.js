@@ -6,6 +6,12 @@ import ppfServiceImage from "../assets/images/AdobeStock_428622212.jpeg";
 import primeCeramicCoatingImage from "../assets/images/AdobeStock_799868847.jpeg";
 import headlightRestorationServiceImage from "../assets/images/AdobeStock_892817405.jpeg";
 import {
+  shineAndShield,
+  steamAndGuard,
+  washAndWax,
+  wipeAndClean,
+} from "./newDetailingPackages";
+import {
   exteriorDetailingService,
   interiorDetailingService,
 } from "./detailingPackages";
@@ -192,6 +198,9 @@ export const ppfService = {
   image: ppfServiceImage,
   link: "paint-protection-film",
 };
+
+export const exteriorDetailingServices = [washAndWax, shineAndShield];
+export const interiorDetailingServices = [wipeAndClean, steamAndGuard];
 
 export const autoDetailingServices = [
   exteriorDetailingService,
