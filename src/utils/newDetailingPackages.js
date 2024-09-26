@@ -6,6 +6,7 @@ import fullDetailInteriorWashImage from "../assets/images/AdobeStock_243325383.j
 import fullDetailExteriorWashImage from "../assets/images/pexels-tima-miroshnichenko-6872146.jpg";
 import essentialInteriorWashImage from "../assets/images/man-polish-salon-car-garage_1157-36595.jpg";
 import ultimateInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
+import { BOOKING_PATH } from "./constants";
 
 export const washAndWaxExteriorServices = [
   "✔ Vehicle Hand Washed & Dried",
@@ -68,7 +69,7 @@ export const fullDetailPackage = {
     "We start with a complete hand wash and dry, clean the door and trunk jambs, and make sure your tires and wheels are shining. After that, we apply a premium spray wax for long-lasting protection and treat the windows with a water repellent for a crystal-clear finish.",
   interiorDescription:
     "For the interior, we’ll vacuum the entire space, including the trunk, shampoo the mats, and wipe down the seats. Door panels, jambs, surfaces, and cup holders get a thorough clean, and we finish up with spotless glass and mirrors for a fresh and clean look.",
-  link: "/booking",
+  link: BOOKING_PATH,
   button: "Get Started",
   price: ["$220", "$240", "$260", "$280"],
   duration: "Duration: Up to 4 hours depending on vehicle size and condition.",
@@ -86,7 +87,7 @@ export const specialPackage = {
     "We hand wash and dry your vehicle, clean the wheels, tires, and door jambs, and apply tire shine. Your windows are protected, and we finish with clay bar treatment, iron decontamination, and a lasting ceramic coating for long-term gloss and protection.",
   interiorDescription:
     "We vacuum and steam clean the interior, carpets, and trunk, removing pet hair and sand. Seats, vents, and surfaces get a steam clean, followed by conditioning and UV protection. We finish with spotless glass and mirrors for a polished look.",
-  link: "/booking",
+  link: BOOKING_PATH,
   button: "Get Started",
   price: ["$400", "$420", "$440", "$460"],
   duration: "Duration: Up to 6 hours depending on vehicle size and condition.",
@@ -100,7 +101,6 @@ export const washAndWax = {
   description:
     "We start with a full hand wash and dry, clean up the door and trunk jambs, and get your tires and wheels shining. Then, we apply a premium spray wax for long-lasting protection and treat the windows with a water repellent for a crystal-clear finish.",
   duration: "Duration: Up to 2 hours depending on vehicle size and condition.",
-  link: "wash-and-wax",
 };
 
 export const wipeAndClean = {

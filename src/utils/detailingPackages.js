@@ -8,11 +8,12 @@ import essentialExteriorWashImage from "../assets/images/car-front-foglight.jpg"
 import regularExteriorWashImage from "../assets/images/car-wash-detailing-station_1.jpg";
 import essentialInteriorWashImage from "../assets/images/man-polish-salon-car-garage_1157-36595.jpg";
 import ultimateInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
+import { MOBILE_DETAILING_PATH } from "./constants";
 
 export const carsSizes = [
   {
     title: "Small",
-    description: "Kia Forte,\nFord Focus",
+    description: "VW Jetta,\nFord Focus",
   },
   {
     title: "Middle",
@@ -207,14 +208,14 @@ export const exteriorDetailingService = {
   description:
     "Our exterior wash includes a thorough hand wash, decontamination, and precision drying for a spotless, protected finish.",
   image: exteriorDetailingServiceImage,
-  link: "mobile-detailing",
+  link: MOBILE_DETAILING_PATH,
 };
 export const interiorDetailingService = {
   title: "Interior Detailing",
   description:
     "Our interior detailing offers deep cleaning, vacuuming, and upholstery care, ensuring a fresh, spotless, and comfortable interior.",
   image: interiorDetailingServiceImage,
-  link: "mobile-detailing",
+  link: MOBILE_DETAILING_PATH,
 };
 
 export const biWeekly = {
