@@ -1,15 +1,12 @@
 import React from "react";
-import { Outlet, useParams } from "react-router-dom";
-import Card from "../Card";
+// import { Outlet, useParams } from "react-router-dom";
+// import Card from "../Card";
 
 const ServiceItemPage = ({ item }) => {
-  let params = useParams();
-
-  console.log(params.serviceId);
-
+  // let params = useParams();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-      <Card
+      {/* <Card
         key={item.title}
         title={item.title}
         image={item.image}
@@ -17,7 +14,7 @@ const ServiceItemPage = ({ item }) => {
         button={"Explore"}
         border={"border"}
       />
-      <Outlet />
+      <Outlet /> */}
     </div>
   );
 };

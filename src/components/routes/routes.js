@@ -45,95 +45,118 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: HOME_PATH,
+        name: "Home",
         element: <Root />,
       },
       {
         path: SERVICES_PATH,
+        name: "Services",
         element: <ServicesPage />,
       },
       {
         path: BOOKING_PATH,
+        name: "Booking",
         element: <BookingPage />,
       },
       {
         path: CONTACT_PATH,
+        name: "Contact",
         element: <ContactPage />,
       },
       {
         path: MEMBERSHIP_PATH,
+        name: "Membership",
         element: <Membership />,
       },
       {
         path: ABOUT_PATH,
+        name: "About",
         element: <AboutPage />,
       },
       {
         path: FAQS_PATH,
+        name: "FAQs",
         element: <FAQs />,
       },
       {
         path: GALLERY_PATH,
+        name: "Gallery",
         element: <Gallery />,
       },
       {
         path: REVIEWS_PATH,
+        name: "Reviews",
         element: <Reviews />,
       },
       {
         path: MOBILE_DETAILING_PATH,
+        name: "Mobile Detailing",
         element: <AutoDetailing />,
       },
       {
         path: "/:serviceId",
+        name: "Service Item",
         element: <ServiceItemPage />,
       },
       {
         path: "/ceramic-coating",
+        name: "Ceramic Coating",
         element: <Ceramic />,
       },
       {
         path: "/headlight-restoration",
+        name: "Headlight Restoration",
         element: <Headlights />,
       },
       {
         path: "/ppf",
+        name: "PPF",
         element: <PPF />,
       },
       {
         path: "/paint-correction",
+        name: "Paint Correction",
         element: <PaintCorrection />,
       },
       {
         path: "/auto-detailing-apex",
+        name: "Apex",
         element: <RootApex />,
       },
       {
         path: "/auto-detailing-raleigh",
+        name: "Raleigh",
         element: <RootRaleigh />,
       },
       {
         path: "/auto-detailing-cary",
+        name: "Cary",
         element: <RootCary />,
       },
       {
         path: "/auto-detailing-holly-springs",
+        name: "Holly Springs",
         element: <RootHollySprings />,
       },
       {
         path: "/auto-detailing-morrisville",
+        name: "Morrisville",
         element: <RootMorrisville />,
       },
       {
         path: "/auto-detailing-knightdale",
+        name: "Knightdale",
         element: <RootKnightdale />,
       },
       {
         path: "/auto-detailing-garner",
+        name: "Garner",
         element: <RootGarner />,
       },
       {
-        path: "*",
-        element: <Hero />,
+        // path: "*",
+        name: "404",
+        element: <ErrorPage />,
       },
     ],
   },
