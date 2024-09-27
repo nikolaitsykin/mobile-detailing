@@ -29,7 +29,7 @@ const Package = ({ packageType }) => {
       <div className="text-center text-sm mt-2 p-4">
         {packageType.duration}{" "}
       </div>
-      <div className="flex justify-center items-center p-5">
+      <div className="mb-10 mt-4 flex justify-center items-center">
         <Link
           className="w-[80%] flex justify-center items-center"
           preventScrollReset={false}

@@ -15,6 +15,7 @@ const Card = ({
   link,
   border,
   duration,
+  addon
 }) => {
   return (
     <div
@@ -35,12 +36,12 @@ const Card = ({
       )}
       <h5 className="max-w-xl text-center">{title}</h5>
       {description && (
-        <div className="flex flex-col w-full max-w-xl my-3 px-4 text-sm">
+        <div className="flex flex-col w-full max-w-xl  px-4 text-sm">
           <p className="">{description}</p>
         </div>
       )}
       {services && (
-        <div className="flex flex-col justify-between items-center w-full max-w-xl my-1 h-full px-4">
+        <div className="flex flex-col justify-between items-center w-full max-w-xl my-5 h-full px-4">
           <ul className="h-full">
             {services.map((service) => (
               <li
@@ -62,7 +63,7 @@ const Card = ({
         <div className="text-center text-sm mt-2 p-4">{duration}</div>
       )}
       {button && (
-        <div className="my-5 flex justify-center items-end w-[100%] px-4">
+        <div className="mb-10 mt-4 flex justify-center items-end w-[100%] px-4">
           <Link
             className="w-[80%] flex justify-center items-center"
             preventScrollReset={false}

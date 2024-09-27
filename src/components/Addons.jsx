@@ -4,11 +4,12 @@ import { addons } from "../utils/addons";
 
 const Addons = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
       {addons.map((addon, index) => (
         <Card
           key={index}
-          title={addon.title}
+          addon
+          name={addon.title}
           image={addon.image}
           description={addon.description}
           price={addon.price}
