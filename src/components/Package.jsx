@@ -33,7 +33,7 @@ const Package = ({ packageType }) => {
         <Link
           className="w-[80%] flex justify-center items-center"
           preventScrollReset={false}
-          to={`/${packageType.link}`}
+          to={`${packageType.link}`}
         >
           <Button children={packageType.button} color={"secondary"} />
         </Link>

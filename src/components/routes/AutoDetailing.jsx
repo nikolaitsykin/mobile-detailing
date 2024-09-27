@@ -33,7 +33,7 @@ const AutoDetailing = () => {
       </div>
       <section>
         <article className=" text-start text-black">
-          <h2 className=" p-5 ">Exterior and Interior Detailing</h2>
+          <h2 className="">Exterior and Interior Detailing</h2>
           <p className="">
             Washing a car might seem simple, but achieving a flawless finish
             requires more than just a quick rinse. If you're looking for a fast,
@@ -54,7 +54,7 @@ const AutoDetailing = () => {
         </article>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className=" p-5 ">Exterior Detail Services</h2>
+        <h2 className="">Exterior Detail Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {exteriorDetailingServices.map((item, index) => (
             <Card
@@ -74,7 +74,7 @@ const AutoDetailing = () => {
         </div>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className=" p-5 ">Interior Detail Services</h2>
+        <h2 className="">Interior Detail Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {interiorDetailingServices.map((item, index) => (
             <Card
@@ -95,19 +95,19 @@ const AutoDetailing = () => {
       </section>
 
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className=" p-5 ">Auto Detail Packages</h2>
+        <h2 className="">Full Exterior & Interior</h2>
         <div className="w-full mx-auto">
           <Package packageType={fullDetailPackage} />
           <Package packageType={specialPackage} />
         </div>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className=" p-5 ">Addons</h2>
+        <h2 className="">Addons</h2>
         <Addons />
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto pb-10">
         <article className=" w-full flex flex-col justify-center">
-          <h2 id="how-we-do-it" className=" p-5 ">
+          <h2 id="how-we-do-it" className="">
             Say Goodbye to Mess and Hello to a Healthier, Cleaner Car with
             Eco-Friendly Detailing
           </h2>

@@ -4,14 +4,14 @@ import { TbMessageCircleUser } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/detailing_guys_logo.png";
 import useScrollDirection from "../hooks/useScrollDirection";
+import {
+  BOOKING_PATH,
+  CALL_NUMBER,
+  HOME_PATH,
+  TEXT_NUMBER
+} from "../utils/constants";
 import Button from "./UI/Button";
 import Navbar from "./UI/Navbar";
-import {
-  CALL_NUMBER,
-  CONTACT_PATH,
-  HOME_PATH,
-  TEXT_NUMBER,
-} from "../utils/constants";
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
@@ -55,8 +55,8 @@ const Header = () => {
           </div>
 
           <div className="hidden lg:flex">
-            <Link to={CONTACT_PATH}>
-              <Button children={"Request Quote"} color={"primary"} />
+            <Link to={BOOKING_PATH}>
+              <Button children={"Book Now"} color={"primary"} />
             </Link>
           </div>
         </div>

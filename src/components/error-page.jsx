@@ -11,6 +11,9 @@ const ErrorPage = () => {
       <p className="text-lg">
         <i>{error.statusText || error.message}</i>
       </p>
+      <div>
+        Butt
+      </div>
     </div>
   );
 };

@@ -161,6 +161,8 @@ export const essentialPackage = {
   exteriorServices: essentialExteriorServices,
   interiorServices: essentialInteriorServices,
   price: ["$175", "$200", "$225", "$250"],
+  description:
+    "Our comprehensive detailing service starts with a thorough hand wash and dry, cleaning door and trunk jambs, gas cap, tires, and wheels, followed by tire shine and a spray wax for a glossy finish. Windows are cleaned and treated with water repellent for added protection. We vacuum the interior and trunk, shampoo floor mats, wipe down fabric or leather seats, door panels, and all surfaces. We also clean cup holders, cracks, & crevices, and ensure your mirrors and glass are spotless for a fresh, polished look.",
   duration: "Duration: Up to 3 hours depending on vehicle size and condition.",
 };
 
@@ -173,6 +175,8 @@ export const primePackage = {
   exteriorServices: primeExteriorServices,
   interiorServices: primeInteriorServices,
   price: ["$325", "$350", "$375", "$400"],
+  description:
+    "Our advanced and most popular detailing service includes a complete hand wash and dry cleaning, door and trunk jambs, gas cap, and wheels, followed by tire shine, spray wax, and window water repellent for added protection. We remove iron, bugs, and tar, provide a clay bar treatment, and finish with a premium spray gloss enhancer for an outstanding shine. Inside, we vacuum and steam clean the carpets, floor mats, trunk, and seats, wipe down all surfaces, and clean & steam vents, cracks, crevices, and cup holders. Glass and mirrors are left spotless, ensuring a thorough and refreshed vehicle inside and out.",
   duration: "Duration: Up to 5 hours depending on vehicle size and condition.",
 };
 
@@ -185,9 +189,10 @@ export const ultimatePackage = {
   exteriorServices: ultimateExteriorServices,
   interiorServices: ultimateInteriorServices,
   price: ["$425", "$450", "$475", "$500"],
+  description:
+    "Our ultimate detailing service offers the highest level of care for your vehicle. We start with a meticulous hand wash and dry, cleaning door and trunk jambs, gas cap, and wheels, followed by tire shine, and water repellent for windows. Iron, bugs, and tar are removed, and a clay bar treatment is applied for a smooth finish. We then protect door jambs and wheels with ceramic coating and finish with an ultra ceramic coating for long-lasting shine. Inside, we vacuum and steam clean carpets, floor mats, and trunk, clean & steam seats and surfaces, apply fabric/leather conditioning, and provide interior UV and dust protection. Every detail, from vents to cup holders, is thoroughly cleaned and protected.",
   duration: "Duration: Up to 6 hours depending on vehicle size and condition.",
 };
-
 
 export const regularWash = {
   title: "Regular Wash",

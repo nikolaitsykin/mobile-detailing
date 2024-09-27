@@ -16,6 +16,7 @@ const Card = ({
   border,
   duration,
 }) => {
+
   return (
     <div
       className={`w-full  flex flex-col items-center  mx-auto text-black ${border} border-gray`}
