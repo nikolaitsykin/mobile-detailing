@@ -219,9 +219,12 @@ const ContactForm = () => {
               label="Which service are you interested in?"
               defaultOption="Preferred service"
               options={[
-                "Essential Detail",
-                "Prime Detail",
-                // "Deluxe Detail"
+                "Wash & Wax",
+                "Wipe & Clean",
+                "Shine & Shield",
+                "Steam & Guard",
+                "Full Detail",
+                "Detailing Guys Special"
               ]}
               value={values.service}
             />
