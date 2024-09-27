@@ -11,9 +11,9 @@ const Button = ({ children, color, onClick, type }) => {
   };
 
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center items-center w-full ">
       <button
-        className={`tracking-widest text-xs md:text-sm p-2 border shadow
+        className={`tracking-widest text-xs md:text-sm p-2 border shadow rounded-sm
           min-w-40 md:max-w-72 w-[90%] min-h-10 sm:h-10 flex justify-center items-center
           ${buttonStyle[color]}
         `}
