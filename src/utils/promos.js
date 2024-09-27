@@ -6,7 +6,7 @@ export const permanentPromos = [
   {
     title: "20% Off for First-Time Customers",
     description:
-      "Welcome new clients with a discount on their first detailing service.",
+      "Welcome new clients with a 20% discount on their first detailing service.",
     image: promoImageOne,
   },
   {
@@ -25,7 +25,7 @@ export const permanentPromos = [
 export const temporaryPromos = [
   {
     title: "January: New Year, New Car",
-    description: "Start the year fresh with 20% off all detailing services.",
+    description: "Start the year fresh with 15% off all detailing services.",
   },
   {
     title: "February: Valentine’s Shine",
@@ -33,11 +33,11 @@ export const temporaryPromos = [
   },
   {
     title: "March: Spring Cleaning Special",
-    description: "15% off interior detailing to clear out the winter mess.",
+    description: "10% off interior detailing to clear out the winter mess.",
   },
   {
     title: "April: Shine into Spring",
-    description: "Get 10% off any ceramic or wax service.",
+    description: "Get 10% off any detailing with our ceramic service.",
   },
   {
     title: "May: Mother's Day Special",
@@ -58,16 +58,17 @@ export const temporaryPromos = [
   },
   {
     title: "September: End of Summer Detail",
-    description: "15% off for prepping your car for fall.",
+    description: "10% off for prepping your car for fall.",
   },
   {
     title: "October: Spooky Clean",
     description:
-      "Enjoy 15% off any full detail package and get a free surprise add-on with your service",
+      "Enjoy 10% off any full detail package and get a free surprise",
   },
   {
-    title: "November: Black Friday Special",
-    description: "15% off any detailing service for one day only",
+    title: "November: Winter-Ready Special",
+    description:
+      "Prepare your car for winter with a 10% discount on our Signature Detail Package.",
   },
   {
     title: "December: Holiday Gift Package",

@@ -22,7 +22,7 @@ const Navbar = () => {
     "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-semibold h-12 lg:w-full text-md tracking-widest";
 
   return (
-    <nav className="w-full text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
+    <nav className="w-[90%] text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
       <div className="flex justify-end ">
         <div className="flex lg:hidden justify-center items-center mr-7 active:scale-110 duration-300">
           <a href={CALL_NUMBER}>
@@ -51,9 +51,9 @@ const Navbar = () => {
         </div>
       </div>
       <ul
-        className={`bg-black top-20 md:top-32 px-4 w-full ${
+        className={`bg-black top-20 md:top-32 w-full ${
           isMenuOpen ? "absolute" : "hidden"
-        }   flex lg:flex lg:static flex-col lg:flex-row w-full`}
+        }   flex lg:flex lg:static flex-col lg:flex-row w-[90%]`}
       >
         {links.map((link) => (
           <li

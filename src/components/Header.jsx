@@ -24,7 +24,7 @@ const Header = () => {
     >
       {" "}
       <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
-        <div className="flex justify-start items-center basis:1/3 md:basis-1/6">
+        <div className="flex justify-start items-center basis:1/3 md:basis-1/7">
           <Link to={HOME_PATH}>
             <div className="ml-4 lg:ml-16 h-16 w-16 md:w-20 md:h-20">
               <img
@@ -35,10 +35,10 @@ const Header = () => {
             </div>
           </Link>
         </div>
-        <div className="flex justify-between items-center w-full md:basis-5/7">
+        <div className="flex justify-between items-center w-full md:basis-3/7">
           <Navbar />
         </div>
-        <div className="hidden lg:flex justify-end items-center md:basis-2/6 min-w-48 mr-16">
+        <div className="hidden lg:flex justify-end items-center md:basis-2/7 min-w-48 mr-16">
           <div>
             <a href={CALL_NUMBER} className="flex">
               <div className="flex justify-center items-center mr-5">
