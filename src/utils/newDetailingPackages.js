@@ -1,11 +1,11 @@
-import primeExteriorWashImage from "../assets/images/AdobeStock_273206890.jpeg";
-import primeInteriorWashImage from "../assets/images/AdobeStock_539555302.jpeg";
-import ultimateExteriorWashImage from "../assets/images/AdobeStock_799868847.jpeg";
-import essentialExteriorWashImage from "../assets/images/car-front-foglight.jpg";
-import fullDetailInteriorWashImage from "../assets/images/AdobeStock_243325383.jpeg";
-import fullDetailExteriorWashImage from "../assets/images/pexels-tima-miroshnichenko-6872146.jpg";
-import essentialInteriorWashImage from "../assets/images/man-polish-salon-car-garage_1157-36595.jpg";
-import ultimateInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
+// import primeExteriorWashImage from "../assets/images/AdobeStock_273206890.jpeg";
+// import primeInteriorWashImage from "../assets/images/AdobeStock_539555302.jpeg";
+// import ultimateExteriorWashImage from "../assets/images/AdobeStock_799868847.jpeg";
+// import essentialExteriorWashImage from "../assets/images/car-front-foglight.jpg";
+// import fullDetailInteriorWashImage from "../assets/images/AdobeStock_243325383.jpeg";
+// import fullDetailExteriorWashImage from "../assets/images/pexels-tima-miroshnichenko-6872146.jpg";
+// import essentialInteriorWashImage from "../assets/images/man-polish-salon-car-garage_1157-36595.jpg";
+// import ultimateInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
 import { BOOKING_PATH } from "./constants";
 
 export const washAndWaxExteriorServices = [
