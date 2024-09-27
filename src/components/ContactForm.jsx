@@ -26,8 +26,6 @@ const ContactForm = () => {
   const [status, setStatus] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  console.log(values.terms);
-
   const checkHandler = () => {
     setValues((prevState) => ({
       ...prevState,
@@ -85,7 +83,6 @@ const ContactForm = () => {
       return;
     }
 
-    // console.log(values);
     emailjs
       .send("service_2fhr2hn", "template_7dtehrt", values, "QaHYb2JsoQeJCIYVd")
       .then(
