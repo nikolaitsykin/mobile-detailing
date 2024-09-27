@@ -20,13 +20,19 @@ const ContactForm = () => {
     date: "",
     time: "",
     message: "",
+    terms: false,
   });
   const [error, setError] = useState(false);
   const [status, setStatus] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
+  console.log(values.terms);
+
   const checkHandler = () => {
-    setIsChecked(!isChecked);
+    setValues((prevState) => ({
+      ...prevState,
+      terms: !prevState.terms,
+    }));
   };
 
   const handleChange = (e) => {
@@ -68,6 +74,11 @@ const ContactForm = () => {
       setError(true);
       return;
     }
+    if (!values.terms || values.service === false) {
+      setErrorMessage("Please accept terms and conditions");
+      setError(true);
+      return;
+    }
     if (!isChecked) {
       setErrorMessage("Please accept terms and conditions");
       setError(true);
@@ -92,6 +103,7 @@ const ContactForm = () => {
             date: "",
             time: "",
             message: "",
+            terms: false,
           });
           setStatus("SUCCESS");
           setError(false);
@@ -113,7 +125,7 @@ const ContactForm = () => {
       setTimeout(() => {
         setError(false);
         setErrorMessage("");
-      }, 1000);
+      }, 300);
     }
   }, [status]);
 
@@ -224,7 +236,7 @@ const ContactForm = () => {
                 "Shine & Shield",
                 "Steam & Guard",
                 "Full Detail",
-                "Detailing Guys Special"
+                "Detailing Guys Special",
               ]}
               value={values.service}
             />
@@ -234,7 +246,7 @@ const ContactForm = () => {
               label="Which addons are you interested in?"
               name="addon"
               type="text"
-              placeholder="Engine Bay Detail, Pet Hair Removal, Headliner Detail."
+              placeholder="Engine Bay Detail, Pet Hair Removal."
             />
           </div>
         </div>

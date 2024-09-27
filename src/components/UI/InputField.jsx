@@ -10,7 +10,7 @@ const InputField = (props) => {
       </label>
       <input
         id={name}
-        className="my-1 p-2 text-black w-full bg-light-gray rounded-sm text-sm placeholder:text-sm placeholder:font-sans focus:border-blue"
+        className="my-1 p-2 text-black w-full bg-light-gray rounded-sm text-sm placeholder:text-sm placeholder:font-sans focus:outline-blue"
         type={type}
         onChange={handleChange}
         value={value}
