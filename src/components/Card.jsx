@@ -16,7 +16,6 @@ const Card = ({
   border,
   duration,
 }) => {
-
   return (
     <div
       className={`w-full  flex flex-col items-center  mx-auto text-black ${border} border-gray`}
@@ -27,11 +26,13 @@ const Card = ({
           <Menu service={service} card={true} />
         </div>
       )}
-      <img
-        className="w-full max-w-xl hover:scale-105 duration-700 align-start mb-3 p-4"
-        src={image}
-        alt="Car wash"
-      />
+      {image && (
+        <img
+          className="w-full max-w-xl hover:scale-105 duration-700 align-start mb-3 p-4"
+          src={image}
+          alt="Car wash"
+        />
+      )}
       <h5 className="max-w-xl text-center">{title}</h5>
       {description && (
         <div className="flex flex-col w-full max-w-xl my-3 px-4 text-sm">

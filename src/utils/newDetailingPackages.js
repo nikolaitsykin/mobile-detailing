@@ -61,8 +61,8 @@ export const fullDetailPackage = {
   title: "Full Detail",
   exteriorTitle: "Exterior",
   interiorTitle: "Interior",
-  exteriorImage: fullDetailExteriorWashImage,
-  interiorImage: fullDetailInteriorWashImage,
+  // exteriorImage: fullDetailExteriorWashImage,
+  // interiorImage: fullDetailInteriorWashImage,
   exteriorServices: washAndWaxExteriorServices,
   interiorServices: wipeAndCleanInteriorServices,
   exteriorDescription:
@@ -79,8 +79,8 @@ export const specialPackage = {
   title: "Detailing Guys Special",
   exteriorTitle: "Exterior",
   interiorTitle: "Interior",
-  exteriorImage: ultimateExteriorWashImage,
-  interiorImage: ultimateInteriorWashImage,
+  // exteriorImage: ultimateExteriorWashImage,
+  // interiorImage: ultimateInteriorWashImage,
   exteriorServices: shineAndShieldExteriorServices,
   interiorServices: steamAndGuardInteriorServices,
   exteriorDescription:
@@ -95,7 +95,7 @@ export const specialPackage = {
 
 export const washAndWax = {
   title: "Wash & Wax",
-  image: essentialExteriorWashImage,
+  // image: essentialExteriorWashImage,
   services: washAndWaxExteriorServices,
   price: ["$120", "$130", "$140", "$150"],
   link: BOOKING_PATH,
@@ -106,7 +106,7 @@ export const washAndWax = {
 
 export const wipeAndClean = {
   title: "Wipe & Clean",
-  image: essentialInteriorWashImage,
+  // image: essentialInteriorWashImage,
   services: wipeAndCleanInteriorServices,
   description:
     "We vacuum the interior and trunk, shampoo the mats, and wipe down the fabric or leather seats. The door panels, jambs, surfaces and plastics, and cup holders get a full clean, and we’ll finish with spotless glass and mirrors for a fresh look.",
@@ -116,7 +116,7 @@ export const wipeAndClean = {
 
 export const shineAndShield = {
   title: "Shine & Shield",
-  image: primeExteriorWashImage,
+  // image: primeExteriorWashImage,
   services: shineAndShieldExteriorServices,
   price: ["$220", "$240", "$260", "$280"],
   link: BOOKING_PATH,
@@ -127,7 +127,7 @@ export const shineAndShield = {
 
 export const steamAndGuard = {
   title: "Steam & Guard",
-  image: primeInteriorWashImage,
+  // image: primeInteriorWashImage,
   services: steamAndGuardInteriorServices,
   link: BOOKING_PATH,
   description:
