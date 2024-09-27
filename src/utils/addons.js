@@ -12,14 +12,14 @@ export const addons = [
   // },
   {
     title: "Engine Bay Detailing",
-    image: engineDetailingImage,
+    // image: engineDetailingImage,
     description:
       "Our Engine Bay Detailing service safely removes dirt, grease, and grime using eco-friendly products. We enhance the appearance and longevity of your engine with a thorough, detailed clean, leaving it spotless and ready for optimal performance.",
     price: "Starts at $50",
   },
   {
     title: "Excessive Pet Hair Removal",
-    image: petHairRemovalImage,
+    // image: petHairRemovalImage,
     description:
       "Our Excessive Pet Hair Removal add-on is designed to tackle stubborn pet hair that regular cleaning can’t handle. We thoroughly remove pet hair from seats, carpets, and hard-to-reach areas using specialized tools and techniques, leaving your vehicle fur-free.",
     price: "Starts at $50",
