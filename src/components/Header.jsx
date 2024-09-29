@@ -2,7 +2,7 @@ import React from "react";
 import { FaPhone } from "react-icons/fa6";
 import { TbMessageCircleUser } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/detailing_guys_logo.png";
+import logo from "../assets/images/DG logo converted_300.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 import {
   BOOKING_PATH,
@@ -26,9 +26,9 @@ const Header = () => {
       <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/7">
           <Link to={HOME_PATH}>
-            <div className="ml-4 lg:ml-16 h-16 w-16 md:w-20 md:h-20">
+            <div className="ml-4 lg:ml-16 h-20 w-20 md:w-24 md:h-24">
               <img
-                className="h-16 w-16 md:w-20 md:h-20 p-2"
+                className="h-20 w-20 md:w-24 md:h-24 p-2"
                 src={logo}
                 alt="logo"
               />

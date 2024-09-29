@@ -6,7 +6,7 @@ import { FACEBOOK_URL, INSTAGRAM_URL } from "../../utils/constants";
 
 const SocialButtons = () => {
   return (
-    <div className="w-32 xs:w-40 md:min-w-48 flex justify-between">
+    <div className="w-32 xs:w-40 md:min-w-48 flex justify-start gap-4">
       <IconContext.Provider value={{ className: "social-icon" }}>
         <Link to={FACEBOOK_URL} target="_blank">
           <FaFacebook />
@@ -14,12 +14,12 @@ const SocialButtons = () => {
         <Link to={INSTAGRAM_URL} target="_blank">
           <FaInstagram />
         </Link>
-        <Link to="" target="_blank">
+        {/* <Link to="" target="_blank">∂ß
           <FaYoutube />
         </Link>
         <Link to="" target="_blank">
           <FaTiktok />
-        </Link>
+        </Link> */}
       </IconContext.Provider>
     </div>
   );
