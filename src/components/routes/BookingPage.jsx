@@ -4,15 +4,31 @@ import { whatToExpect } from "../../utils/sustainability";
 import carSpacingNeeded from "../../assets/images/car_spacing.png";
 import { Link } from "react-router-dom";
 import { CALL_NUMBER } from "../../utils/constants";
+import detailingImage from "../../assets/images/paint_protection.png";
 
 const BookingPage = () => {
   return (
-    <div className="bg-white py-8">
+    <div className="w-full z-20 bg-white font-poppins">
+      <div className="w-full bg-black">
+        <img
+          className="w-full object-cover h-[450px] mx-auto opacity-50"
+          src={detailingImage}
+          alt="car"
+        />
+      </div>
+      <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-24 md:top-28">
+        <div className="w-[90%] flex flex-col justify-center text-white">
+          <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+            BOOKING
+          </h1>
+        </div>
+      </div>
+
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h1 className=" text-3xl text-center text-black my-3">
-          BOOK YOUR APPOINTMENT TODAY
-        </h1>
-        <article className="py-3">
+        <h2 className="">
+          Book your appointment today
+        </h2>
+        <article className="pb-3">
           <p className="py-1">
             Detailing Guys has been proudly serving our community, offering the
             convenience of mobile detailing right at your doorstep. We
@@ -36,9 +52,12 @@ const BookingPage = () => {
           <h3 className="text-center p-3">What to Expect</h3>
           <ul>
             <li>
-              ✔ Book your appointment online, contact us by clicking the "Request a Quote" button or give us a call at {" "}
-              <a href={CALL_NUMBER} className="underline text-blue">(919) 906-0099</a>. Be sure to include your
-              address when scheduling!
+              ✔ Book your appointment online, contact us by clicking the
+              "Request a Quote" button or give us a call at{" "}
+              <a href={CALL_NUMBER} className="underline text-blue">
+                (919) 906-0099
+              </a>
+              . Be sure to include your address when scheduling!
             </li>
             {whatToExpect.map((item, index) => (
               <li key={index}>{item}</li>

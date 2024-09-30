@@ -35,7 +35,7 @@ const Header = () => {
             </div>
           </Link>
         </div>
-        <div className="flex justify-end md:justify-between items-center w-full md:basis-3/7">
+        <div className="flex  md:justify-between items-center w-full md:basis-3/7">
           <Navbar />
         </div>
         <div className="hidden lg:flex justify-end items-center md:basis-2/7 min-w-48 mr-16">

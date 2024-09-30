@@ -22,7 +22,7 @@ const Navbar = () => {
     "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-semibold h-12 lg:w-full text-md tracking-widest";
 
   return (
-    <nav className="w-[90%] text-white flex flex-col md:ml-5 lg:flex-row lg:justify-evenly items-end">
+    <nav className="w-full lg:w-[90%] text-white flex flex-col md:ml-5 lg:flex-row lg:justify-evenly items-end">
       <div className="flex justify-end gap-2">
         <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300">
           <a href={CALL_NUMBER}>
@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         <div
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="mr-5 md:mr-0 lg:hidden items-end active:scale-110 duration-300"
+          className="mr-5 md:mr-16 lg:hidden items-end active:scale-110 duration-300"
         >
           {isMenuOpen ? (
             <RxCross1 size="1.5rem" color="fffafa" />
@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
       </div>
       <ul
-        className={`bg-black top-20 md:top-32 w-full ${
+        className={`bg-black top-20 md:top-28 w-full ${
           isMenuOpen ? "absolute" : "hidden"
         }   flex lg:flex lg:static flex-col lg:flex-row w-[90%]`}
       >
