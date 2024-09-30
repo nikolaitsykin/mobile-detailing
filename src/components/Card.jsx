@@ -36,16 +36,16 @@ const Card = ({
       )}
       <h5 className="max-w-xl text-center">{title}</h5>
       {description && (
-        <div className="flex flex-col w-full max-w-xl px-4 text-sm">
+        <div className="flex flex-col w-full max-w-xl px-4 text-sm whitespace-pre-wrap">
           <p className="">{description}</p>
         </div>
       )}
       {services && (
         <div className="flex flex-col justify-between items-center w-full max-w-xl my-5 h-full px-4">
           <ul className="h-full">
-            {services.map((service) => (
+            {services.map((service, index) => (
               <li
-                key={service}
+                key={index}
                 className="text-start text-sm list-none p-[2px] whitespace-pre-wrap"
               >
                 {service}

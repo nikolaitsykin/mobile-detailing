@@ -1,10 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import detailingImage from "../../assets/images/autodetailing.png";
-import {
-  specialPackage,
-  fullDetailPackage,
-} from "../../utils/newDetailingPackages";
+import { BOOKING_PATH } from "../../utils/constants";
+import { specialPackage } from "../../utils/newDetailingPackages";
 import {
   exteriorDetailingServices,
   interiorDetailingServices,
@@ -12,7 +10,6 @@ import {
 import Addons from "../Addons";
 import Card from "../Card";
 import Package from "../Package";
-import { BOOKING_PATH } from "../../utils/constants";
 
 const AutoDetailing = () => {
   return (
@@ -54,6 +51,12 @@ const AutoDetailing = () => {
         </article>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
+        <h2 className="">Full Exterior & Interior</h2>
+        <div className="w-full mx-auto">
+          <Package packageType={specialPackage} />
+        </div>
+      </section>
+      <section className="w-[90%] md:w-[80%] mx-auto">
         <h2 className="">Exterior Detail Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {exteriorDetailingServices.map((item, index) => (
@@ -91,14 +94,6 @@ const AutoDetailing = () => {
             />
           ))}
           <Outlet />
-        </div>
-      </section>
-
-      <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="">Full Exterior & Interior</h2>
-        <div className="w-full mx-auto">
-          <Package packageType={fullDetailPackage} />
-          <Package packageType={specialPackage} />
         </div>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">

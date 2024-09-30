@@ -5,7 +5,7 @@ import Button from "./UI/Button";
 import Menu from "./UI/Menu";
 const Package = ({ packageType }) => {
   return (
-    <div className="w-full text-black my-2 mx-auto border border-gray">
+    <div className="w-full text-black mx-auto border border-gray">
       <div>
         <h3 className=" text-center py-6">{packageType.title}</h3>
       </div>

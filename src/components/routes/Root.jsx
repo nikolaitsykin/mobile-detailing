@@ -45,7 +45,7 @@ const Root = () => {
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto">
           <article className="text-black w-full">
-            <h2 id="about-us" className="">
+            <h2 id="about-us">
               About Us
             </h2>
             <div className="pt-5">

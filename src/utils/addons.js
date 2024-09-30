@@ -4,10 +4,10 @@ import petHairRemovalImage from "../assets/images/hair-removal.jpg";
 
 export const addons = [
   // {
-  //   title: "Headliner Restoration",
-  //   image: headlinerCleaningImage,
+  //   title: "Headliner Steam Sanitize",
+  //   // image: headlinerCleaningImage,
   //   description:
-  //     "Rediscover the road with our Headlight Restoration service. Eliminate dim, cloudy headlights and enjoy enhanced visibility and safety. Our solution will make your headlights look like new again. Schedule your appointment today and experience the clear difference!",
+  //     "Rediscover the road with our Headlight Steam Sanitize service. Eliminate dim, cloudy headlights and enjoy enhanced visibility and safety. Our solution will make your headlights fill like new again. Schedule your appointment today and experience the clear difference!",
   //   price: "Starts at $75",
   // },
   {
@@ -18,10 +18,10 @@ export const addons = [
     price: "Starts at $50",
   },
   {
-    title: "Excessive Pet Hair Removal",
+    title: "Excessive Pet Hair/Sand Removal",
     // image: petHairRemovalImage,
     description:
-      "Our Excessive Pet Hair Removal add-on is designed to tackle stubborn pet hair that regular cleaning can’t handle. We thoroughly remove pet hair from seats, carpets, and hard-to-reach areas using specialized tools and techniques, leaving your vehicle fur-free.",
+      "Our Excessive Pet Hair/Sand Removal add-on is designed to tackle stubborn pet hair or sand that regular cleaning can’t handle. We thoroughly remove pet hair or sand from seats, carpets, trunk and hard-to-reach areas using specialized tools and techniques, leaving your vehicle fur- and sand-free.",
     price: "Starts at $50",
   },
 ];

@@ -17,7 +17,7 @@ export const permanentPromos = [
   },
   {
     title: "Loyalty Program",
-    description: "After every 5 services, get your 6th service at 50% off.",
+    description: "After every 5 services, get your 6th any service at 50% off.",
     image: promoImageThree,
   },
 ];
@@ -41,7 +41,7 @@ export const temporaryPromos = [
   },
   {
     title: "May: Mother's Day Special",
-    description: "10% off detailing services as a gift for moms.",
+    description: "10% off all detailing services as a gift for moms.",
   },
   {
     title: "June: Father's Day Detail",
@@ -63,7 +63,7 @@ export const temporaryPromos = [
   {
     title: "October: Spooky Clean",
     description:
-      "Enjoy 10% off any full detail package and get a free surprise",
+      "Enjoy 10% off any exterior detail package and get a free surprise",
   },
   {
     title: "November: Winter-Ready Special",
