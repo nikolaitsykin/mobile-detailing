@@ -33,17 +33,20 @@ const AboutPage = () => {
           <div className=" items-center">
             <h2 className=" p-5">Our Story</h2>
             <p>
-              Detailing Guys was born with a simple goal: to redefine car
-              detailing for people with busy lives. Whether you're juggling
-              family responsibilities, constantly on the move, or just love
-              keeping your car in perfect condition, we understand that finding
-              time for vehicle care isn't always easy. That's why we offer
-              mobile detailing services that work around your schedule. As
-              passionate car enthusiasts, we know how important it is to
-              maintain your car's appearance, and we're here to help.{" "}
-              <strong>
-                No matter who you are or what you drive, we've got you covered.
-              </strong>
+              Hi! I'm Nik, the owner of Detailing Guys. I started this business
+              out of a passion for taking care of cars—starting with my own,
+              then extending to family and friends. Now, I’m excited to bring
+              that same level of care and attention to you. Detailing Guys was
+              founded with a simple goal: to redefine car detailing for people
+              with busy lives. Whether you’re juggling family responsibilities,
+              constantly on the move, or just want to keep your car in top
+              shape, I understand that finding time for vehicle care isn’t
+              always easy. That’s why we offer mobile detailing services that
+              fit around your schedule. As a car enthusiast, I know how
+              important it is to maintain your car’s appearance, and I’m here to
+              help. When I’m not detailing, I’m spending time with my family,
+              hiking local parks, or biking the trails. I’m also always looking
+              for ways to improve our eco-friendly services.
             </p>
           </div>
           <div className=" items-center">

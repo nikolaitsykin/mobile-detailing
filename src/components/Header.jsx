@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header
-      className={`font-poppins z-20 flex flex-col w-full sticky transition-all duration-300 ${
+      className={`font-poppins z-30 flex flex-col w-full sticky transition-all duration-300 ${
         scrollDirection === "down" ? "-top-20 md:-top-32" : "top-0"
       }`}
     >
@@ -26,30 +26,30 @@ const Header = () => {
       <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/7">
           <Link to={HOME_PATH}>
-            <div className="ml-4 lg:ml-16 h-20 w-20 md:w-24 md:h-24">
+            <div className="ml-2 md:ml-10 lg:ml-10 h-16 w-16 md:w-20 md:h-20">
               <img
-                className="h-20 w-20 md:w-24 md:h-24 p-2"
+                className="h-full w-full"
                 src={logo}
                 alt="logo"
               />
             </div>
           </Link>
         </div>
-        <div className="flex justify-between items-center w-full md:basis-3/7">
+        <div className="flex justify-end md:justify-between items-center w-full md:basis-3/7">
           <Navbar />
         </div>
         <div className="hidden lg:flex justify-end items-center md:basis-2/7 min-w-48 mr-16">
           <div>
             <a href={CALL_NUMBER} className="flex">
               <div className="flex justify-center items-center mr-5">
-                <FaPhone size="2rem" color="fffafa" />
+                <FaPhone size="1.5rem" color="fffafa" />
               </div>
             </a>
           </div>
           <div>
             <a href={TEXT_NUMBER} className="flex">
               <div className="flex justify-center items-center mr-5">
-                <TbMessageCircleUser size="2.5rem" color="fffafa" />
+                <TbMessageCircleUser size="2rem" color="fffafa" />
               </div>
             </a>
           </div>

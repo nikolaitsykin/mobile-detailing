@@ -48,7 +48,7 @@ const Root = () => {
             <h2 id="about-us">
               About Us
             </h2>
-            <div className="pt-5">
+            <div className="">
               <h4 className="">Who we are?</h4>
               <p>
                 Detailing Guys is a highly-rated detailing company based in

@@ -22,31 +22,30 @@ const Navbar = () => {
     "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-semibold h-12 lg:w-full text-md tracking-widest";
 
   return (
-    <nav className="w-[90%] text-white flex flex-col lg:flex-row lg:justify-evenly items-end">
-      <div className="flex justify-end ">
-        <div className="flex lg:hidden justify-center items-center mr-7 active:scale-110 duration-300">
+    <nav className="w-[90%] text-white flex flex-col md:ml-5 lg:flex-row lg:justify-evenly items-end">
+      <div className="flex justify-end gap-2">
+        <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300">
           <a href={CALL_NUMBER}>
             <div className="hover:scale-110 duration-700">
-              <FaPhone size="1.5rem" color="fffafa" />
+              <FaPhone size="1.2rem" color="fffafa" />
             </div>
           </a>
         </div>
-        <div className="flex lg:hidden justify-center items-center mr-7 active:scale-110 duration-300">
+        <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300">
           <a href={TEXT_NUMBER}>
             <div className="hover:scale-110 duration-700">
-              <TbMessageCircleUser size="2rem" color="fffafa" />
+              <TbMessageCircleUser size="1.5rem" color="fffafa" />
             </div>
           </a>
         </div>
-
         <div
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="mr-5 lg:hidden items-end active:scale-110 duration-300"
+          className="mr-5 md:mr-0 lg:hidden items-end active:scale-110 duration-300"
         >
           {isMenuOpen ? (
-            <RxCross1 size="2rem" color="fffafa" />
+            <RxCross1 size="1.5rem" color="fffafa" />
           ) : (
-            <IoMenu size="2.5rem" color="fffafa" />
+            <IoMenu size="2rem" color="fffafa" />
           )}
         </div>
       </div>

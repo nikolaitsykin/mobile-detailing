@@ -1,6 +1,6 @@
 import React from "react";
 import { autoDetailingQuestions, generalQuestions } from "../../utils/faq";
-import image from "../../assets/images/AdobeStock_378443659.jpeg";
+import image from "../../assets/images/AdobeStock_399584907.jpeg";
 import FaqItem from "../FaqItem";
 import { Link } from "react-router-dom";
 import { BOOKING_URL, CALL_NUMBER, CONTACT_PATH } from "../../utils/constants";
@@ -25,7 +25,7 @@ const FAQs = () => {
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article>
           <h2 className=" ">Everything You Need to Know</h2>
-          <h3 className="text-center p-5 ">General Questions</h3>
+          <h3 className="text-center py-0 mb-4">General Questions</h3>
           <h5>How Can I Book A Detail?</h5>
           <p>
             You can call us at {" "}
@@ -48,7 +48,7 @@ const FAQs = () => {
             button to visit our appointments page to book online.
           </p>{" "}
           <FaqItem questions={generalQuestions} />
-          <h3 className="text-center p-5 ">Detailing Questions</h3>
+          <h3 className="text-center py-0">Detailing Questions</h3>
           <FaqItem questions={autoDetailingQuestions} />
         </article>
       </section>

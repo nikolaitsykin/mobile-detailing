@@ -48,28 +48,34 @@ const RootHollySprings = () => {
             <h2 id="about-us" className="">
               About Us
             </h2>
-            <h4 className="">Who we are?</h4>
-            <p>
-              Detailing Guys is a highly-rated detailing company based in Apex,
-              serving the Triangle area. We specialize in providing eco-friendly
-              detailing solutions that keep your vehicle looking its best while
-              caring for the environment.
-            </p>
-            <h4 className="">Our mission</h4>
-            <p>
-              Our mission is to deliver premium detailing results while using
-              safe, environmentally-conscious products.
-            </p>
-            <h4 className="">Our values</h4>
-            <p>
-              With experience detailing everything from family cars to
-              high-performance vehicles, we aim to maintain your car's value and
-              enhance your driving experience—all while keeping sustainability
-              front and center.
-            </p>
+            <div className="">
+              <h4 className="">Who we are?</h4>
+              <p>
+                Detailing Guys is a highly-rated detailing company based in
+                Apex, serving the Triangle area. We specialize in providing
+                eco-friendly detailing solutions that keep your vehicle looking
+                its best while caring for the environment.
+              </p>
+            </div>
+            <div className="pt-5">
+              <h4 className="">Our mission</h4>
+              <p>
+                Our mission is to deliver premium detailing results while using
+                safe, environmentally-conscious products.
+              </p>
+            </div>
+            <div className="pt-5">
+              <h4 className="">Our values</h4>
+              <p>
+                With experience detailing everything from family cars to
+                high-performance vehicles, we aim to maintain your car's value
+                and enhance your driving experience—all while keeping
+                sustainability front and center.
+              </p>
+            </div>
             <div className="my-5 pt-5">
-            <Link to={ABOUT_PATH}>
-            <Button color="secondary" children="Learn More" />
+              <Link to={ABOUT_PATH}>
+                <Button color="secondary" children="Learn More" />
               </Link>
             </div>
             <h2 id="what-is-detailing" className="">
