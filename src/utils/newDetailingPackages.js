@@ -10,7 +10,7 @@ import { BOOKING_PATH } from "./constants";
 
 export const washAndWaxExteriorServices = [
   "✔ Vehicle Hand Washed & Dried",
-  "✔ Door & Trunk Jambs Cleaned",
+  "✔ Door Jambs Cleaned",
   "✔ Gas Cap and Valve Cleaned",
   "✔ Tires & Wheels Cleaned",
   "✔ Tire Shine Applied",
@@ -100,7 +100,7 @@ export const washAndWax = {
   price: ["$100", "$115", "$130", "$150"],
   link: BOOKING_PATH,
   description:
-    "We start with a full hand wash and dry, clean up the door and trunk jambs, and get your tires and wheels shining. Then, we apply a premium spray wax for long-lasting protection and treat the windows with a water repellent for a crystal-clear finish.",
+    "We start with a full hand wash and dry, clean up the door jambs, and get your tires and wheels shining. Then, we apply a premium spray wax for long-lasting protection and treat the windows with a water repellent for a crystal-clear finish.",
   duration: "Duration: Up to 2 hours depending on vehicle size and condition.",
 };
 

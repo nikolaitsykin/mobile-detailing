@@ -1,4 +1,4 @@
-import interiorDetailingServiceImage from "../assets/images/AdobeStock_243325383.jpeg";
+import interiorDetailingServiceImage from "../assets/images/AdobeStock_539555302.jpeg";
 import primeExteriorWashImage from "../assets/images/AdobeStock_273206890.jpeg";
 import exteriorDetailingServiceImage from "../assets/images/AdobeStock_397247724.jpeg";
 import regularInteriorWashImage from "../assets/images/AdobeStock_399584907.jpeg";
@@ -24,7 +24,7 @@ export const carsSizes = [
     description: "Toyota Tacoma,\n Dodge Durango",
   },
   {
-    title: "XL",
+    title: "X-Large",
     description: "GMC Yukon,\nHonda Odyssey",
   },
 ];
