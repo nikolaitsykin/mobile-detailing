@@ -20,81 +20,79 @@ const AboutPage = () => {
         </div>
       </div>
       <section>
-        <article className="text-black flex flex-col justify-center py-5">
-          <h2 className="p-5">Our Story</h2>{" "}
-          <p>
-            {" "}
-            Hi! I'm Nik, the owner of Detailing Guys. My passion for car care
-            started with my own vehicles and quickly extended to helping family
-            and friends keep their cars in top shape. What began as a hobby has
-            now evolved into Detailing Guys, where I’m proud to offer the same
-            level of detail-oriented service to a broader community. Our goal is
-            simple: to redefine car detailing for people with busy lives. Since
-            I still maintain a day-to-day job and prioritize my family, we
-            operate during evenings and weekends to fit seamlessly into your
-            schedule. As a car enthusiast, I understand the importance of
-            maintaining your vehicle’s appearance, and I’m committed to bringing
-            that same level of care to yours. When I’m not detailing, I’m
-            spending time with my family, hiking in local parks, or biking
-            trails, always looking for new ways to enhance our eco-friendly
-            approach. At Detailing Guys, we ensure your car shines—while making
-            the process effortless for you.{" "}
+        <article className="text-black flex flex-col justify-center">
+          <h2 className="">Professional Service, Personal Care</h2>
+          <p className="py-2">
+            At Detailing Guys, we're committed to making your car look its
+            best—right from the convenience of your driveway. Our business is
+            built on the belief that top-quality car care should be easy,
+            professional, and stress-free. We bring our detailing expertise
+            straight to you, ensuring your vehicle shines without you needing to
+            go anywhere.
           </p>
-          <h2 className="p-5">What Drives Us</h2>{" "}
+          <h2 className=" p-5">Our Story</h2>
           <p>
-            {" "}
-            Our mission is simple: to give your car the meticulous care it
-            deserves, inside and out. Using premium, eco-friendly products, we
-            take pride in providing outstanding results without harming the
-            environment. Whether it's a quick refresh or a full detailing
-            package, we treat every vehicle with the same level of care as if it
-            were our own.{" "}
-          </p>{" "}
-          <h2 className="p-5">Why Choose Detailing Guys?</h2>{" "}
+            Hi! I'm Nik, the owner of Detailing Guys. What started as a passion
+            for taking care of my own car quickly grew into helping family and
+            friends. Now, I'm excited to share that same care and attention with
+            you. Detailing Guys was created with a simple goal: to make car
+            detailing easier for people with busy lives. Whether you’re juggling
+            family responsibilities, constantly on the move, or simply love
+            keeping your car in top shape, we understand how hard it can be to
+            find time for vehicle care. That’s why we offer mobile detailing
+            services that work around your schedule. As passionate car
+            enthusiasts, we’re here to help you maintain your car’s appearance,
+            whenever and wherever it’s most convenient for you.{" "}
+            <strong>
+              No matter who you are or what you drive, we've got you covered.
+            </strong>
+          </p>
+          <h2 className=" p-5">What Drives Us</h2>
+          <p>
+            Our mission is clear: to make your car shine, inside and out, with
+            exceptional attention to detail. We use premium, eco-friendly
+            products that are tough on dirt but gentle on the environment.
+            Whether it's a quick cleanup or an in-depth detailing service, we
+            ensure your car receives the same level of care we give our own.
+          </p>
+          <h2 className=" p-5 ">Why Choose Detailing Guys?</h2>
           <ul className="pl-5">
-            {" "}
             <li className="list-disc">
-              {" "}
-              <strong>We Come to You:</strong> We understand how valuable your
-              time is. That’s why we bring our service to you—whether at home,
-              work, or wherever is most convenient.{" "}
-            </li>{" "}
+              <strong>We Come to You:</strong> Your time is valuable. We show up
+              wherever it's most convenient for you—home, work, or anywhere
+              else.
+            </li>
             <li className="list-disc">
-              {" "}
-              <strong>Quality Without Compromise:</strong> Our trained
-              professionals consistently deliver high-quality results, focusing
-              on every detail, without cutting corners.{" "}
-            </li>{" "}
+              <strong>Quality Above All:</strong> Our trained professionals
+              deliver high-quality results every time, without cutting corners.
+            </li>
             <li className="list-disc">
-              {" "}
-              <strong>Eco-Friendly Products:</strong> We're committed to
-              protecting both your vehicle and the environment by using
-              eco-friendly car care products that deliver great results without
-              harmful chemicals.{" "}
-            </li>{" "}
+              <strong>Environmental-safe:</strong>We believe in protecting your
+              car and the environment. That's why we exclusively use safe,
+              eco-friendly Car Care products that offer outstanding results
+              without harmful chemicals.
+            </li>
             <li className="list-disc">
-              {" "}
-              <strong>Customer-Centered Service:</strong> Every customer is
-              treated like family, and every car gets the same attention to
-              detail as if it were our own.{" "}
-            </li>{" "}
-          </ul>{" "}
-          <h2 className="p-5">The Detailing Guys Difference</h2>{" "}
+              <strong>Customer First:</strong> We treat every vehicle as if it
+              were our own and every customer like family, making sure you love
+              the way your car looks.
+            </li>
+          </ul>
+          <h2 className=" p-5 ">The Detailing Guys Difference</h2>
           <p>
-            {" "}
-            We know life gets busy, and keeping your car looking great shouldn't
-            be a hassle. Whether you’re looking for a quick refresh or a full
-            detailing experience, we deliver flawless results right to your
-            door—so you can spend less time worrying about your car and more
-            time enjoying it.{" "}
-          </p>{" "}
-          <h2 className="p-5">Ready to Experience a New Level of Care?</h2>{" "}
-          <p className="text-base md:text-lg font-syne font-semibold">
-            {" "}
-            Book with Detailing Guys today and let us bring the shine to you—all
-            while doing our part to care for the environment!{" "}
-          </p>{" "}
-          <BookButtons color="secondary" />
+            Life can be hectic, and maintaining your car shouldn't be a hassle.
+            Whether you need a simple refresh or a full detailing package, we
+            bring flawless results right to your door. Spend less time worrying
+            about your car's appearance and more time enjoying it.
+          </p>
+          <h2 className=" p-5 ">Ready to Experience a New Level of Care?</h2>
+          <p className=" text-base md:text-lg font-syne font-semibold">
+            Book with Detailing Guys today, and let us bring the shine to
+            you—all while doing our part for the environment!
+          </p>
+          <div className="py-10">
+            <BookButtons color="secondary" />
+          </div>
         </article>
       </section>
     </div>

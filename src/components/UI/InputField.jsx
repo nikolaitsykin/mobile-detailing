@@ -1,5 +1,13 @@
 const InputField = (props) => {
-  const { handleChange, label, name, type, value, placeholder } = props;
+  const {
+    handleChange,
+    label,
+    name,
+    type,
+    value,
+    placeholder,
+    required,
+  } = props;
   return (
     <div className="w-full py-1">
       <label
@@ -17,7 +25,7 @@ const InputField = (props) => {
         name={name}
         placeholder={placeholder}
         autoComplete="off"
-        required
+        required={required}
       />
     </div>
   );

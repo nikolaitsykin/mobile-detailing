@@ -1,5 +1,5 @@
 const SelectField = (props) => {
-  const { label, handleChange, name, defaultOption, options, value } = props;
+  const { label, handleChange, name, defaultOption, options, value, required } = props;
 
   // console.log(value);
   return (
@@ -11,7 +11,7 @@ const SelectField = (props) => {
         {label}
       </label>
       <select
-        required
+        required={required}
         id={name}
         value={value}
         onChange={handleChange}

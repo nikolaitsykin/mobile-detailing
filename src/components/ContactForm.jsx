@@ -20,17 +20,13 @@ const ContactForm = () => {
     date: "",
     time: "",
     message: "",
-    terms: false,
   });
   const [error, setError] = useState(false);
   const [status, setStatus] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const checkHandler = () => {
-    setValues((prevState) => ({
-      ...prevState,
-      terms: !prevState.terms,
-    }));
+    setIsChecked(!isChecked);
   };
 
   const handleChange = (e) => {
@@ -72,11 +68,6 @@ const ContactForm = () => {
       setError(true);
       return;
     }
-    if (!values.terms || values.service === false) {
-      setErrorMessage("Please accept terms and conditions");
-      setError(true);
-      return;
-    }
     if (!isChecked) {
       setErrorMessage("Please accept terms and conditions");
       setError(true);
@@ -100,7 +91,6 @@ const ContactForm = () => {
             date: "",
             time: "",
             message: "",
-            terms: false,
           });
           setStatus("SUCCESS");
           setError(false);
@@ -116,13 +106,11 @@ const ContactForm = () => {
 
   useEffect(() => {
     if (status === "SUCCESS") {
+      setError(false);
+      setErrorMessage("");
       setTimeout(() => {
         setStatus("");
       }, 3000);
-      setTimeout(() => {
-        setError(false);
-        setErrorMessage("");
-      }, 300);
     }
   }, [status]);
 
@@ -133,7 +121,7 @@ const ContactForm = () => {
           <p>Your message submitted successfully</p>
         </div>
       );
-    } else if (error) {
+    } else if (errorMessage) {
       return (
         <div className="px-4 py-3 leading-normal mb-5 text-center text-red-500">
           <p>{errorMessage}</p>
@@ -160,7 +148,7 @@ const ContactForm = () => {
               name="fullName"
               type="name"
               placeholder="John Doe"
-              required
+              required={true}
             />
             <InputField
               value={values.email}
@@ -169,7 +157,7 @@ const ContactForm = () => {
               name="email"
               type="email"
               placeholder="jphn@example.com"
-              required
+              required={true}
             />
             <InputField
               value={values.mobile}
@@ -178,7 +166,7 @@ const ContactForm = () => {
               name="mobile"
               type="tel"
               placeholder="(919) 906-0099"
-              required
+              required={true}
             />
             <InputField
               value={values.address}
@@ -188,7 +176,7 @@ const ContactForm = () => {
               type="address"
               placeholder="327 S Academy St, Cary"
               autocomplete="address"
-              required
+              required={true}
             />
           </div>
         </div>
@@ -204,7 +192,7 @@ const ContactForm = () => {
               name="vehicle"
               type="text"
               placeholder="Toyota RAV4"
-              required
+              required={true}
             />
             <InputField
               value={values.year}
@@ -213,7 +201,7 @@ const ContactForm = () => {
               name="year"
               type="year"
               placeholder="2023"
-              required
+              required={true}
             />
           </div>
         </div>
@@ -236,6 +224,7 @@ const ContactForm = () => {
                 "Detailing Guys Special",
               ]}
               value={values.service}
+              required={true}
             />
             <InputField
               value={values.addon}
@@ -243,7 +232,7 @@ const ContactForm = () => {
               label="Which addons are you interested in?"
               name="addon"
               type="text"
-              placeholder="Engine Bay Detail, Pet Hair Removal."
+              placeholder="Engine Bay Detail, Pet Hair Removal"
             />
           </div>
         </div>
@@ -263,7 +252,7 @@ const ContactForm = () => {
               name="date"
               type="date"
               placeholder="eg. 01/01/2024"
-              required
+              required={true}
             />
             <InputField
               value={values.time}
@@ -272,7 +261,7 @@ const ContactForm = () => {
               name="time"
               type="time"
               placeholder="eg. 10:00 AM"
-              required
+              required={true}
             />
           </div>
         </div>
@@ -281,19 +270,20 @@ const ContactForm = () => {
           handleChange={handleChange}
           label="Anything else we should know?"
           name="message"
-        />{" "}
+        />
         <div className="w-full flex justify-start items-start">
           <Checkbox
             checkHandler={checkHandler}
             name="terms"
             value={values.terms}
-            required
           />
         </div>
         {errorMessage && (
-          <div className="text-red-500 text-center">{errorMessage}</div>
+          <div className="text-red-500 text-center pt-5">{errorMessage}</div>
         )}
-        <div className="flex justify-cente mt-12">
+        {status && renderAlert()}
+
+        <div className="flex justify-cente mt-8">
           <Button
             type="submit"
             children="SEND SERVICE REQUEST"
@@ -303,7 +293,6 @@ const ContactForm = () => {
           />
         </div>
       </form>
-      {status && renderAlert()}
     </div>
   );
 };

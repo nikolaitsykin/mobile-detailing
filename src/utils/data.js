@@ -32,4 +32,4 @@ export const footerLinks = [
 export const links = ["mobile-detailing", "services", "services", "services"];
 
 export const businessAddress = "Apex, NC 27529";
-export const businessHours = ["MON-FRI 5-7PM", "SAT-SUN 9-5PM"];
+export const businessHours = ["MON-SUN 9-6PM"];

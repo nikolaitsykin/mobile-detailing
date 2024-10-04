@@ -22,7 +22,7 @@ const Navbar = () => {
     "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-semibold h-12 lg:w-full text-md tracking-widest";
 
   return (
-    <nav className="w-full lg:w-[90%] text-white flex flex-col md:ml-5 lg:flex-row lg:justify-evenly items-end">
+    <nav className="w-full lg:w-[85%] text-white flex flex-col md:ml-5 lg:flex-row lg:justify-evenly items-end">
       <div className="flex justify-end gap-2">
         <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300">
           <a href={CALL_NUMBER}>
