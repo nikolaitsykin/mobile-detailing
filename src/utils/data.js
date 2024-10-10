@@ -40,3 +40,5 @@ export const servicesLinks = ["Services", "Booking", "Faqs", "About"];
 
 export const businessAddress = "Apex, NC 27529";
 export const businessHours = ["MON-SUN 9-7PM"];
+
+export const businessName = "Spotless";

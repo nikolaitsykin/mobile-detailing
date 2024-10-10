@@ -5,6 +5,7 @@ import carSpacingNeeded from "../../assets/images/car_spacing.png";
 import { Link } from "react-router-dom";
 import { CALL_NUMBER } from "../../utils/constants";
 import detailingImage from "../../assets/images/man-polish-salon-car-garage_1157-36595.jpg";
+import { businessName } from "../../utils/data";
 
 const BookingPage = () => {
   return (
@@ -28,7 +29,7 @@ const BookingPage = () => {
         <h2 className="">Book your appointment today</h2>
         <article className="pb-3">
           <p className="py-1">
-            Spotless has been proudly serving our community, offering the
+            {businessName} has been proudly serving our community, offering the
             convenience of mobile detailing right at your doorstep. We
             understand that life gets busy, so we bring our eco-friendly,
             high-quality services to you.{" "}

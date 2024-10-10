@@ -1,6 +1,7 @@
 import React from "react";
 import BookButtons from "../UI/BookButtons";
 import image from "../../assets/images/man-washing-his-car-garage_1157-26072.jpg";
+import { businessName } from "../../utils/data";
 
 const AboutPage = () => {
   return (
@@ -23,7 +24,7 @@ const AboutPage = () => {
         <article className="text-black flex flex-col justify-center">
           <h2 className="">Professional Service, Personal Care</h2>
           <p className="py-2">
-            At Spotless, we're committed to making your car look its
+            At {businessName}, we're committed to making your car look its
             best—right from the convenience of your driveway. Our business is
             built on the belief that top-quality car care should be easy,
             professional, and stress-free. We bring our detailing expertise
@@ -32,10 +33,10 @@ const AboutPage = () => {
           </p>
           <h2 className=" p-5">Our Story</h2>
           <p>
-            Hi! I'm Nik, the owner of Spotless. What started as a passion
+            Hi! I'm Nik, the owner of {businessName}. What started as a passion
             for taking care of my own car quickly grew into helping family and
             friends. Now, I'm excited to share that same care and attention with
-            you. Spotless was created with a simple goal: to make car
+            you. {businessName} was created with a simple goal: to make car
             detailing easier for people with busy lives. Whether you’re juggling
             family responsibilities, constantly on the move, or simply love
             keeping your car in top shape, we understand how hard it can be to
@@ -55,7 +56,7 @@ const AboutPage = () => {
             Whether it's a quick cleanup or an in-depth detailing service, we
             ensure your car receives the same level of care we give our own.
           </p>
-          <h2 className=" p-5 ">Why Choose Spotless?</h2>
+          <h2 className=" p-5 ">Why Choose {businessName}?</h2>
           <ul className="pl-5">
             <li className="list-disc">
               <strong>We Come to You:</strong> Your time is valuable. We show up
@@ -78,7 +79,7 @@ const AboutPage = () => {
               the way your car looks.
             </li>
           </ul>
-          <h2 className=" p-5 ">The Spotless Difference</h2>
+          <h2 className=" p-5 ">The {businessName} Difference</h2>
           <p>
             Life can be hectic, and maintaining your car shouldn't be a hassle.
             Whether you need a simple refresh or a full detailing package, we
@@ -87,7 +88,7 @@ const AboutPage = () => {
           </p>
           <h2 className=" p-5 ">Ready to Experience a New Level of Care?</h2>
           <p className=" text-base md:text-lg font-syne font-semibold">
-            Book with Spotless today, and let us bring the shine to
+            Book with {businessName} today, and let us bring the shine to
             you—all while doing our part for the environment!
           </p>
           <div className="py-10">

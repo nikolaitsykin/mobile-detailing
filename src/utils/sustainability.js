@@ -1,3 +1,5 @@
+import { businessName } from "./data";
+
 export const sustainability = [
   {
     title: "1. Biodegradable Car Wash Soap",
@@ -61,8 +63,7 @@ export const sustainability = [
   },
   {
     title: "Conclusion",
-    description:
-      "At Spotless, we make sure that every product we use is safe for your car, your family, and the planet. Our eco-friendly detailing supplies ensure you get the highest quality service without any harmful side effects. By choosing sustainable options, you can keep your car looking its best while doing your part to protect the environment. Ready for a clean car that’s good for the earth? Let Spotless take care of it!",
+    description: `"At ${businessName}, we make sure that every product we use is safe for your car, your family, and the planet. Our eco-friendly detailing supplies ensure you get the highest quality service without any harmful side effects. By choosing sustainable options, you can keep your car looking its best while doing your part to protect the environment. Ready for a clean car that’s good for the earth? Let ${businessName} take care of it!"`,
   },
 ];
 

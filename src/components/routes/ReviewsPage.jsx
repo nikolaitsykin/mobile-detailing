@@ -1,4 +1,5 @@
 import React from "react";
+import { businessName } from "../../utils/data";
 
 const Reviews = () => {
   return (
@@ -9,7 +10,7 @@ const Reviews = () => {
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
           <p className="py-2">
-            At Spotless, we’re committed to making your car look its
+            At {businessName}, we’re committed to making your car look its
             best—right from the convenience of your driveway. Our business is
             built on the belief that top-quality car care should be easy,
             professional, and stress-free. We bring our detailing expertise

@@ -9,6 +9,7 @@ import Card from "../Card";
 import Button from "../UI/Button";
 import { Link } from "react-router-dom";
 import { MEMBERSHIP_PATH } from "../../utils/constants";
+import { businessName } from "../../utils/data";
 
 const Membership = () => {
   return (
@@ -20,7 +21,7 @@ const Membership = () => {
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
           <p className=" p-2">
-            At Spotless, we believe your vehicle deserves the best care,
+            At {businessName}, we believe your vehicle deserves the best care,
             not just once in a while, but all year round. That’s why we’ve
             created the Membership — a convenient and cost-effective way to keep
             your car looking its best, inside and out, with regular detailing at

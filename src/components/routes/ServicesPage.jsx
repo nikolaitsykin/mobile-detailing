@@ -2,6 +2,7 @@ import React from "react";
 import { sustainability } from "../../utils/sustainability";
 import Services from "../Services";
 import image from "../../assets/images/AdobeStock_198465715.jpeg";
+import { businessName } from "../../utils/data";
 
 const ServicesPage = () => {
   return (
@@ -39,7 +40,7 @@ const ServicesPage = () => {
           <p>
             In recent years, the demand for eco-friendly products has surged
             across industries, and the auto detailing world is no exception. At
-            Spotless, we’ve embraced this shift by prioritizing
+            {businessName}, we’ve embraced this shift by prioritizing
             sustainability in everything we do. Eco-friendly detailing supplies
             have become the go-to choice for car owners and professionals who
             care about reducing their environmental footprint. From
