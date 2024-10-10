@@ -221,7 +221,6 @@ const ContactForm = () => {
                 "Shine & Shield",
                 "Steam & Guard",
                 "Full Detail",
-                "Detailing Guys Special",
               ]}
               value={values.service}
               required={true}

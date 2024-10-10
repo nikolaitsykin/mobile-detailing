@@ -3,9 +3,9 @@ import React from "react";
 const Button = ({ children, color, onClick, type }) => {
   const buttonStyle = {
     primary:
-      "text-white  active:bg-white active:text-black border-white active:border-black hover:bg-white hover:border-black hover:text-black",
+      "text-white font-medium active:bg-white active:text-black border-white active:border-black hover:bg-white hover:border-black hover:text-black hover:font-semibold",
     secondary:
-      "text-white active:text-white bg-blue active:bg-navy border-blue hover:bg-navy",
+      "text-white font-medium active:text-white bg-blue active:bg-navy border-blue hover:bg-navy",
     disabled:
       "text-white active:text-white bg-blue active:bg-navy border-blue hover:bg-navy opacity-53",
   };

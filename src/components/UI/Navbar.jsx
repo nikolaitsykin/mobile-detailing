@@ -5,6 +5,7 @@ import { TbMessageCircleUser } from "react-icons/tb";
 import { RxCross1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 import { CALL_NUMBER, TEXT_NUMBER } from "../../utils/constants";
+import { servicesLinks } from "../../utils/data";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,10 +17,10 @@ const Navbar = () => {
     }
   }, [isMenuOpen]);
 
-  const links = ["services", "booking", "faqs", "about"];
+  // const links = ["services", "booking", "faqs", "about"];
 
   const navLinkStyle =
-    "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] font-syne font-semibold h-12 lg:w-full text-md tracking-widest";
+    "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] h-12 lg:w-full text-md";
 
   return (
     <nav className="w-full lg:w-[85%] text-white flex flex-col md:ml-5 lg:flex-row lg:justify-evenly items-end">
@@ -54,10 +55,10 @@ const Navbar = () => {
           isMenuOpen ? "absolute" : "hidden"
         }   flex lg:flex lg:static flex-col lg:flex-row w-[90%]`}
       >
-        {links.map((link) => (
+        {servicesLinks.map((link) => (
           <li
             key={link}
-            className={`flex jutify-end lg:justify-center items-center basis-1/${links.length}`}
+            className={`flex jutify-end lg:justify-center items-center basis-1/${servicesLinks.length}`}
           >
             <NavLink
               onClick={() => setIsMenuOpen(false)}
@@ -68,7 +69,7 @@ const Navbar = () => {
                   : `text-gray ${navLinkStyle}`
               }
             >
-              {link.toUpperCase()}
+              {link}
             </NavLink>
           </li>
         ))}

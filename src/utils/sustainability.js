@@ -62,7 +62,7 @@ export const sustainability = [
   {
     title: "Conclusion",
     description:
-      "At Detailing Guys, we make sure that every product we use is safe for your car, your family, and the planet. Our eco-friendly detailing supplies ensure you get the highest quality service without any harmful side effects. By choosing sustainable options, you can keep your car looking its best while doing your part to protect the environment. Ready for a clean car that’s good for the earth? Let Detailing Guys take care of it!",
+      "At Spotless, we make sure that every product we use is safe for your car, your family, and the planet. Our eco-friendly detailing supplies ensure you get the highest quality service without any harmful side effects. By choosing sustainable options, you can keep your car looking its best while doing your part to protect the environment. Ready for a clean car that’s good for the earth? Let Spotless take care of it!",
   },
 ];
 

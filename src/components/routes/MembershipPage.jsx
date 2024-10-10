@@ -20,7 +20,7 @@ const Membership = () => {
         </h1>
         <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
           <p className=" p-2">
-            At Detailing Guys, we believe your vehicle deserves the best care,
+            At Spotless, we believe your vehicle deserves the best care,
             not just once in a while, but all year round. That’s why we’ve
             created the Membership — a convenient and cost-effective way to keep
             your car looking its best, inside and out, with regular detailing at

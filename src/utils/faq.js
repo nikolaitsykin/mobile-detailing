@@ -25,7 +25,7 @@ export const autoDetailingQuestions = [
   {
     title: "What Does an Auto Detail Include?",
     description:
-      "A typical detail at Detailing Guys includes cleaning the wheels and tires, hand car washing, vacuuming, interior cleaning, window cleaning and a wax treatment. A more extensive detail includes protecting exterior surfaces, wheels and tires, leather and stain treatments, complete steam sanitization, interior protection, and cut & buff treatment.",
+      "A typical detail at Spotless includes cleaning the wheels and tires, hand car washing, vacuuming, interior cleaning, window cleaning and a wax treatment. A more extensive detail includes protecting exterior surfaces, wheels and tires, leather and stain treatments, complete steam sanitization, interior protection, and cut & buff treatment.",
   },
   {
     title: "Can I Add Anything To My Detail?",
@@ -38,7 +38,7 @@ export const autoDetailingQuestions = [
       "Many factors determine how long a detail will take, and because your time is valuable, we try hard to be on time with all our services. However, please note that all times are estimates and are not guaranteed. Depending on the package and service you select, your detail can take anywhere from 1 to 6 hours. For example, the Wash & Wax package takes 1-2 hours. Again, these are estimated timeframes.",
   },
   {
-    title: "What is the Price Range for Detailing Guys?",
+    title: "What is the Price Range for Spotless?",
     description:
       "Depending on the type of detail and size of your vehicle, it can range anywhere from $120 to $450+.",
   },

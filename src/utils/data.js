@@ -29,7 +29,14 @@ export const footerLinks = [
   "PPF",
 ];
 
-export const links = ["mobile-detailing", "services", "services", "services"];
+export const footerLinksActual = [
+  "mobile-detailing",
+  "services",
+  "services",
+  "services",
+];
+
+export const servicesLinks = ["Services", "Booking", "Faqs", "About"];
 
 export const businessAddress = "Apex, NC 27529";
-export const businessHours = ["MON-SUN 9-6PM"];
+export const businessHours = ["MON-SUN 9-7PM"];

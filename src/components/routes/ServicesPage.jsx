@@ -16,7 +16,7 @@ const ServicesPage = () => {
       <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-24 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            SERVICES
+            Services
           </h1>
         </div>
       </div>
@@ -39,7 +39,7 @@ const ServicesPage = () => {
           <p>
             In recent years, the demand for eco-friendly products has surged
             across industries, and the auto detailing world is no exception. At
-            Detailing Guys, we’ve embraced this shift by prioritizing
+            Spotless, we’ve embraced this shift by prioritizing
             sustainability in everything we do. Eco-friendly detailing supplies
             have become the go-to choice for car owners and professionals who
             care about reducing their environmental footprint. From

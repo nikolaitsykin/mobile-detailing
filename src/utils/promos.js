@@ -63,7 +63,7 @@ export const temporaryPromos = [
   {
     title: "October: Spooky Clean",
     description:
-      "Enjoy 10% off any exterior detail package and get a free surprise",
+      "Enjoy 10% off any exterior detail service and get a free surprise",
   },
   {
     title: "November: Winter-Ready Special",

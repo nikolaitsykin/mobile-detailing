@@ -31,7 +31,7 @@ const Polish = () => {
         <article className="">
           Washing a car may seem simple, but achieving a flawless finish
           requires more than just a quick rinse. If you're looking for a fast,
-          budget-friendly wash, we might not be the right fit. At Detailing Guys, we take
+          budget-friendly wash, we might not be the right fit. At Spotless, we take
           detailing to the next level, both inside and out. Our service goes
           beyond removing everyday dirt, grime, bird droppings, and dust—we use
           advanced washing and drying techniques that significantly reduce

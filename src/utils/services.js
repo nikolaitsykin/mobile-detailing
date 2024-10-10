@@ -173,28 +173,28 @@ export const regularInteriorServices = [
 export const paintCorrectionService = {
   title: "Paint Correction",
   description:
-    "Our paint correction service at Detailing Guys carefully removes swirl marks, scratches, and imperfections, restoring your vehicle’s paint to a flawless, showroom-quality finish.  image: paintCorrectionServiceImage.",
+    "Our paint correction service at Spotless carefully removes swirl marks, scratches, and imperfections, restoring your vehicle’s paint to a flawless, showroom-quality finish.  image: paintCorrectionServiceImage.",
   image: paintCorrectionServiceImage,
   link: "paint-correction",
 };
 export const headlightRestorationService = {
   title: "Headlight Restoration",
   description:
-    "Our headlight restoration service at Detailing Guys removes oxidation and haze, restoring clarity and brightness to your headlights. We improve visibility and enhance your vehicle’s overall appearance.",
+    "Our headlight restoration service at Spotless removes oxidation and haze, restoring clarity and brightness to your headlights. We improve visibility and enhance your vehicle’s overall appearance.",
   image: headlightRestorationServiceImage,
   link: "headlight-restoration",
 };
 export const ceramicCoatingService = {
   title: "Ceramic Coating",
   description:
-    "Our ceramic coating service at Detailing Guys provides a durable, high-gloss layer of protection that shields your vehicle’s paint from UV rays, dirt, and contaminants, keeping it looking pristine for longer.",
+    "Our ceramic coating service at Spotless provides a durable, high-gloss layer of protection that shields your vehicle’s paint from UV rays, dirt, and contaminants, keeping it looking pristine for longer.",
   image: ceramicCoatingServiceImage,
   link: "ceramic-coating",
 };
 export const ppfService = {
   title: "Paint Protection Film",
   description:
-    "Our paint protection film service at Detailing Guys applies a nearly invisible layer of durable film to your vehicle's exterior, safeguarding the paint from chips, scratches, and road debris while preserving its flawless finish.",
+    "Our paint protection film service at Spotless applies a nearly invisible layer of durable film to your vehicle's exterior, safeguarding the paint from chips, scratches, and road debris while preserving its flawless finish.",
   image: ppfServiceImage,
   link: "paint-protection-film",
 };

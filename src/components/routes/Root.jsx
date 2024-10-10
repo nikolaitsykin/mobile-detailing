@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import detailingVideo from "../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
+import { ABOUT_PATH, BOOKING_PATH } from "../../utils/constants";
 import Hero from "../Hero";
 import Promos from "../Promos";
-import BookButtons from "../UI/BookButtons";
 import Button from "../UI/Button";
-import { ABOUT_PATH } from "../../utils/constants";
 
 const Root = () => {
   return (
@@ -23,16 +22,19 @@ const Root = () => {
       </div>
       <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-28 md:top-40">
         <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className="animate-slidein500 uppercase text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Professional Auto Detailing{" "}
+          <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+            Premier Mobile Auto Detailing{" "}
           </h1>
-          <p className="animate-slidein700 text-center opacity-0 text-xs md:text-base py-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <p className="animate-slidein700 text-center opacity-0 text-xs md:text-lg py-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Whether you want to protect your car or give it a clean look, we
-            deliver top-quality service. Trust us to enhance and safeguard your
-            vehicle with the care it deserves.
+            deliver top-quality service.
           </p>
-          <div className="animate-slidein700 opacity-0">
-            <BookButtons color="primary" />
+          <div className="animate-slidein700 opacity-0  flex justify-center">
+            <div className="min-w-48">
+              <Link to={BOOKING_PATH}>
+                <Button children={"BOOK NOW"} color={"primary"} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -45,14 +47,12 @@ const Root = () => {
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto">
           <article className="text-black w-full">
-            <h2 id="about-us">
-              About Us
-            </h2>
+            <h2 id="about-us">About Us</h2>
             <div className="">
               <h4 className="">Who we are?</h4>
               <p>
-                Detailing Guys is a highly-rated detailing company based in
-                Apex, serving the Triangle area. We specialize in providing
+                Spotless is a highly-rated detailing company based in Apex,
+                serving the Triangle area. We specialize in providing
                 eco-friendly detailing solutions that keep your vehicle looking
                 its best while caring for the environment.
               </p>
@@ -92,7 +92,7 @@ const Root = () => {
             <div className="pt-5">
               <h4 className="">Our approach</h4>
               <p>
-                At Detailing Guys, we're committed to partner with brands which
+                At Spotless, we're committed to partner with brands which
                 innovative products ensure high performance while protecting the
                 environment. Their line of eco-friendly, pH-balanced chemicals
                 guarantees that your vehicle receives the care it deserves
@@ -100,11 +100,15 @@ const Root = () => {
               </p>
             </div>
             <p className="text-black text-lg md:text-xl text-center my-10 font-medium">
-              Choose Detailing Guys for results that protect both your car and
-              the environment, powered by premium, eco-friendly products.
+              Choose Spotless for results that protect both your car and the
+              environment, powered by premium, eco-friendly products.
             </p>
             <div className="pb-10">
-              <BookButtons color="secondary" />
+            <div className="min-w-48">
+              <Link to={BOOKING_PATH}>
+                <Button children={"BOOK NOW"} color={"secondary"} />
+              </Link>
+            </div>
             </div>
             <p className="text-white text-[1px]">
               Ceramic Coating Raleigh / Ceramic Coating Apex / Ceramic Coating
@@ -112,8 +116,8 @@ const Root = () => {
               Paint Protection Film Raleigh / PPF Raleigh / PPF Apex / PPF Cary
               / PPF Holly Springs / PPF Garner / Modesta / Ceramic Coating /
               LLumar / STEK / GTechniq / Majestic Solutions / Detailing /
-              Detailing Guys / Mobile Detailing Raleigh / Mobile Detailing Apex
-              / Mobile Detailing Cary / Mobile Detailing Holly Springs / Mobile
+              Spotless / Mobile Detailing Raleigh / Mobile Detailing Apex /
+              Mobile Detailing Cary / Mobile Detailing Holly Springs / Mobile
               Detailing Garner / / Auto Detailing / Auto Detailing Raleigh /
               Auto Detailing Apex / Auto Detailing Cary / Auto Detailing
             </p>

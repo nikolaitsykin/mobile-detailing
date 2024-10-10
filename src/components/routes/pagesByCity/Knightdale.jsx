@@ -51,7 +51,7 @@ const RootKnightdale = () => {
             <div className="">
               <h4 className="">Who we are?</h4>
               <p>
-                Detailing Guys is a highly-rated detailing company based in
+              Spotless is a highly-rated detailing company based in
                 Apex, serving the Triangle area. We specialize in providing
                 eco-friendly detailing solutions that keep your vehicle looking
                 its best while caring for the environment.
@@ -89,14 +89,14 @@ const RootKnightdale = () => {
             </p>
             <h4 className="">Our approach</h4>
             <p>
-              At Detailing Guys, we're committed to partner with brands which
+              At Spotless, we're committed to partner with brands which
               innovative products ensure high performance while protecting the
               environment. Their line of eco-friendly, pH-balanced chemicals
               guarantees that your vehicle receives the care it deserves without
               harmful effects on our planet.
             </p>
             <p className="text-black text-lg md:text-xl text-center my-10 font-medium">
-              Choose Detailing Guys for results that protect both your car and
+              Choose Spotless for results that protect both your car and
               the environment, powered by premium, eco-friendly products.
             </p>
             <div className="pb-10">
@@ -108,7 +108,7 @@ const RootKnightdale = () => {
               Paint Protection Film Raleigh / PPF Raleigh / PPF Apex / PPF Cary
               / PPF Holly Springs / PPF Garner / Modesta / Ceramic Coating /
               LLumar / STEK / GTechniq / Majestic Solutions / Detailing /
-              Detailing Guys / Mobile Detailing Raleigh / Mobile Detailing Apex
+              Spotless / Mobile Detailing Raleigh / Mobile Detailing Apex
               / Mobile Detailing Cary / Mobile Detailing Holly Springs / Mobile
               Detailing Garner / / Auto Detailing / Auto Detailing Raleigh /
               Auto Detailing Apex / Auto Detailing Cary / Auto Detailing

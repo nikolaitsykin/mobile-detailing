@@ -2,7 +2,7 @@ import React from "react";
 import { FaPhone } from "react-icons/fa6";
 import { TbMessageCircleUser } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/DG logo converted_300.png";
+import logo from "../assets/images/spotless_logo_300.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 import {
   BOOKING_PATH,
@@ -26,9 +26,9 @@ const Header = () => {
       <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/7">
           <Link to={HOME_PATH}>
-            <div className="ml-2 md:ml-10 lg:ml-10 h-16 w-16 md:w-20 md:h-20">
+            <div className="ml-2 md:ml-10 lg:ml-10 w-28 lg:w-32">
               <img
-                className="h-full w-full"
+                className="h-full w-full object-contain"
                 src={logo}
                 alt="logo"
               />
@@ -56,7 +56,7 @@ const Header = () => {
 
           <div className="hidden lg:flex">
             <Link to={BOOKING_PATH}>
-              <Button children={"Book Now"} color={"primary"} />
+              <Button children={"BOOK NOW"} color={"primary"} />
             </Link>
           </div>
         </div>

@@ -24,7 +24,7 @@ const AutoDetailing = () => {
       <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-24 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            MOBILE DETAILING
+            Mobile Detailing
           </h1>
         </div>
       </div>
@@ -34,7 +34,7 @@ const AutoDetailing = () => {
           <p className="">
             Washing a car might seem simple, but achieving a flawless finish
             requires more than just a quick rinse. If you're looking for a fast,
-            budget-friendly wash, Detailing Guys might not be the right fit. We
+            budget-friendly wash, Spotless might not be the right fit. We
             take detailing to the next level, both inside and out. Our advanced
             washing and drying techniques go beyond removing everyday dirt,
             grime, bird droppings, and dust—while minimizing surface scratches.
@@ -43,7 +43,7 @@ const AutoDetailing = () => {
             Inside, we use only safe, eco-friendly detergents, ensuring that
             every surface is thoroughly cleaned and conditioned. Our products
             are not just tough on messes but gentle enough for you, your kids,
-            and your pets. With Detailing Guys, you get a pristine vehicle that
+            and your pets. With Spotless, you get a pristine vehicle that
             looks and feels fresh, without compromising safety or quality.
             Experience detailing where every detail counts—because your family’s
             well-being matters.

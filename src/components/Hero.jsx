@@ -3,7 +3,7 @@ import Services from "./Services";
 
 const Hero = () => {
   return (
-    <div className="w-full bg-white font-poppins ">
+    <div className="w-full bg-white ">
       <section>
         <h2 className="">Detailing to Your Doorstep</h2>
         <p className="">
