@@ -101,7 +101,7 @@ const AutoDetailing = () => {
         <h2 className="">Addons</h2>
         <Addons />
       </section>
-      <section className="w-[90%] md:w-[80%] mx-auto pb-10">
+      <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article className=" w-full flex flex-col justify-center">
           <h2 id="how-we-do-it" className="">
             Say Goodbye to Mess and Hello to a Healthier, Cleaner Car with

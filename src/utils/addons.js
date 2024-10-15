@@ -14,7 +14,7 @@ export const addons = [
     title: "Engine Bay Detailing",
     // image: engineDetailingImage,
     description:
-      "Our Engine Bay Detailing service safely removes dirt, grease, and grime using eco-friendly products. We enhance the appearance and longevity of your engine with a thorough, detailed clean, leaving it spotless and ready for optimal performance.",
+      "Our Engine Bay Detailing service safely removes dirt, grease, and grime using eco-friendly products. We enhance the appearance and longevity of your engine with a thorough, detailed clean, leaving it spotless and ready for optimal performance.\n\n",
     price: "Starts at $50",
   },
   {

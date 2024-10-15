@@ -12,20 +12,16 @@ import { MOBILE_DETAILING_PATH } from "./constants";
 
 export const carsSizes = [
   {
-    title: "Small",
-    description: "VW Jetta,\nFord Focus",
+    title: "Standard",
+    description: "VW Jetta,\nHyundai Tucson",
   },
   {
-    title: "Middle",
-    description: "Hyundai Tucson,\nChevrolet Impala",
+    title: "Midsize",
+    description: "Grand Wagoneer, \nToyota Tacoma",
   },
   {
     title: "Large",
-    description: "Toyota Tacoma,\n Dodge Durango",
-  },
-  {
-    title: "X-Large",
-    description: "GMC Yukon,\nHonda Odyssey",
+    description: "Ford F-350,\nHonda Odyssey",
   },
 ];
 
