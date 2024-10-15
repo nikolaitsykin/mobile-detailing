@@ -12,7 +12,7 @@ const Root = () => {
     <main className="w-full bg-white">
       <div className="w-full bg-black">
         <video
-          className="opacity-50 object-cover min-h-[450px] md:h-[550px] w-full mx-auto"
+          className="opacity-50 object-cover h-[450px] md:h-[550px] w-full mx-auto"
           autoPlay
           loop
           playsInline
@@ -21,7 +21,7 @@ const Root = () => {
           src={detailingVideo}
         />
       </div>
-      <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-28 md:top-40">
+      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             Premier Mobile Auto Detailing{" "}
