@@ -10,6 +10,7 @@ import {
   steamAndGuard,
   washAndWax,
   wipeAndClean,
+  fullDetail,
 } from "./newDetailingPackages";
 import {
   exteriorDetailingService,
@@ -185,22 +186,27 @@ export const headlightRestorationService = {
 };
 export const ceramicCoatingService = {
   title: "Ceramic Coating",
-  description:
-`    "Our ceramic coating service at ${businessName} provides a durable, high-gloss layer of protection that shields your vehicle’s paint from UV rays, dirt, and contaminants, keeping it looking pristine for longer."`,  image: ceramicCoatingServiceImage,
+  description: `    "Our ceramic coating service at ${businessName} provides a durable, high-gloss layer of protection that shields your vehicle’s paint from UV rays, dirt, and contaminants, keeping it looking pristine for longer."`,
+  image: ceramicCoatingServiceImage,
   link: "ceramic-coating",
 };
 export const ppfService = {
   title: "Paint Protection Film",
-  description:
-    `"Our paint protection film service at ${businessName} applies a nearly invisible layer of durable film to your vehicle's exterior, safeguarding the paint from chips, scratches, and road debris while preserving its flawless finish."`,
+  description: `"Our paint protection film service at ${businessName} applies a nearly invisible layer of durable film to your vehicle's exterior, safeguarding the paint from chips, scratches, and road debris while preserving its flawless finish."`,
   image: ppfServiceImage,
   link: "paint-protection-film",
 };
 
 export const exteriorDetailingServices = [washAndWax, shineAndShield];
 export const interiorDetailingServices = [wipeAndClean, steamAndGuard];
+export const detailingServices = [
+  washAndWax,
+  shineAndShield,
+  steamAndGuard,
+  fullDetail,
+];
 
-export const autoDetailingServices = [
+export const detailingServicesTypes = [
   exteriorDetailingService,
   interiorDetailingService,
   // paintCorrectionService,

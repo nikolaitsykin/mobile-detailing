@@ -1,5 +1,5 @@
 import React from "react";
-import ppfImage from "../../assets/images/paint_protection.png";
+import ppfImage from "../../assets/images/AdobeStock_428622212.jpeg";
 
 const PPF = () => {
   return (

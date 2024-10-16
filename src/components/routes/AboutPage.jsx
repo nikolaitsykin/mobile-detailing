@@ -1,7 +1,7 @@
 import React from "react";
 import BookButtons from "../UI/BookButtons";
 import image from "../../assets/images/man-washing-his-car-garage_1157-26072.jpg";
-import { businessName } from "../../utils/data";
+import { businessName, fullBusinessName } from "../../utils/data";
 
 const AboutPage = () => {
   return (
@@ -13,10 +13,10 @@ const AboutPage = () => {
           alt="car"
         />
       </div>
-      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-20 md:top-28">
+      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            ABOUT
+            About
           </h1>
         </div>
       </div>
@@ -24,7 +24,7 @@ const AboutPage = () => {
         <article className="text-black flex flex-col justify-center">
           <h2 className="">Professional Service, Personal Care</h2>
           <p className="py-2">
-            At {businessName}, we're committed to making your car look its
+            At {fullBusinessName}, we're committed to making your car look its
             best—right from the convenience of your driveway. Our business is
             built on the belief that top-quality car care should be easy,
             professional, and stress-free. We bring our detailing expertise
@@ -33,7 +33,7 @@ const AboutPage = () => {
           </p>
           <h2 className=" p-5">Our Story</h2>
           <p>
-            Hi! I'm Nik, the owner of {businessName}. What started as a passion
+            Hi! I'm Nik, the owner of {fullBusinessName}. What started as a passion
             for taking care of my own car quickly grew into helping family and
             friends. Now, I'm excited to share that same care and attention with
             you. {businessName} was created with a simple goal: to make car

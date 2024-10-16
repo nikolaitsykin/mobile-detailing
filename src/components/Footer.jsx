@@ -22,10 +22,9 @@ const Footer = () => {
               <img className="h-12 object-contain" src={logo} alt="logo" />
             </div>
             <p className="pt-3 text-xs md:text-sm">
-              Based in Apex, North Carolina we serve the Triangle area with
-              top-tier mobile automotive detailing. We specialize in mobile
-              detailing, paint correction and ceramic coating, — bringing
-              high-quality care directly to you.
+              We specialize in mobile detailing, paint correction and ceramic
+              coating, — bringing high-quality care directly to you. We serve
+              Raleigh and surrounding areas.
             </p>
           </div>
         </div>

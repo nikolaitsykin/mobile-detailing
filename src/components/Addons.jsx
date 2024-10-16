@@ -13,7 +13,7 @@ const Addons = () => {
           image={addon.image}
           description={addon.description}
           price={addon.price}
-          border={"border"}
+          // border={"border"}
         />
       ))}
     </div>

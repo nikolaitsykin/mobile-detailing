@@ -1,11 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import detailingImage from "../../assets/images/autodetailing.png";
+import detailingImage from "../../assets/images/AdobeStock_397247724.jpeg";
 import { BOOKING_PATH } from "../../utils/constants";
 import { specialPackage } from "../../utils/newDetailingPackages";
 import {
   exteriorDetailingServices,
   interiorDetailingServices,
+  detailingServices
 } from "../../utils/services";
 import Addons from "../Addons";
 import Card from "../Card";
@@ -22,7 +23,7 @@ const AutoDetailing = () => {
           alt="car"
         />
       </div>
-      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-20 md:top-28">
+      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             Mobile Detailing
@@ -51,16 +52,16 @@ const AutoDetailing = () => {
           </p>
         </article>
       </section>
-      <section className="w-[90%] md:w-[80%] mx-auto">
+      {/* <section className="w-[90%] md:w-[80%] mx-auto">
         <h2 className="">Full Exterior & Interior</h2>
         <div className="w-full mx-auto">
           <Package packageType={specialPackage} />
         </div>
-      </section>
+      </section> */}
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="">Exterior Detail Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {exteriorDetailingServices.map((item, index) => (
+        <h2 className="">Mobile Detailing Services</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
+          {detailingServices.map((item, index) => (
             <Card
               key={index}
               name={item.title}
@@ -71,13 +72,14 @@ const AutoDetailing = () => {
               duration={item.duration}
               link={BOOKING_PATH}
               button={"Get Started"}
-              border={"border"}
+              background={item.background}
+              // border={"border"}
             />
           ))}
           <Outlet />
         </div>
       </section>
-      <section className="w-[90%] md:w-[80%] mx-auto">
+      {/* <section className="w-[90%] md:w-[80%] mx-auto">
         <h2 className="">Interior Detail Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {interiorDetailingServices.map((item, index) => (
@@ -96,7 +98,7 @@ const AutoDetailing = () => {
           ))}
           <Outlet />
         </div>
-      </section>
+      </section> */}
       <section className="w-[90%] md:w-[80%] mx-auto">
         <h2 className="">Addons</h2>
         <Addons />

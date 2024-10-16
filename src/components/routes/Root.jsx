@@ -5,7 +5,7 @@ import { ABOUT_PATH, BOOKING_PATH } from "../../utils/constants";
 import Hero from "../Hero";
 import Promos from "../Promos";
 import Button from "../UI/Button";
-import { businessName } from "../../utils/data";
+import { businessName, fullBusinessName } from "../../utils/data";
 
 const Root = () => {
   return (
@@ -52,10 +52,10 @@ const Root = () => {
             <div className="">
               <h4 className="">Who we are?</h4>
               <p>
-                {businessName} is a highly-rated detailing company based in Apex,
-                serving the Triangle area. We specialize in providing
-                eco-friendly detailing solutions that keep your vehicle looking
-                its best while caring for the environment.
+                {fullBusinessName} is a detailing company serving the Raleigh
+                and surrounding areas. We specialize in providing eco-friendly
+                detailing solutions that keep your vehicle looking its best
+                while caring for the environment.
               </p>
             </div>
             <div className="pt-5">
@@ -101,15 +101,15 @@ const Root = () => {
               </p>
             </div>
             <p className="text-black text-lg md:text-xl text-center my-10 font-medium">
-              Choose {businessName} for results that protect both your car and the
-              environment, powered by premium, eco-friendly products.
+              Choose {businessName} for results that protect both your car and
+              the environment, powered by premium, eco-friendly products.
             </p>
             <div className="pb-10">
-            <div className="min-w-48">
-              <Link to={BOOKING_PATH}>
-                <Button children={"BOOK NOW"} color={"secondary"} />
-              </Link>
-            </div>
+              <div className="min-w-48">
+                <Link to={BOOKING_PATH}>
+                  <Button children={"BOOK NOW"} color={"secondary"} />
+                </Link>
+              </div>
             </div>
             <p className="text-white text-[1px]">
               Ceramic Coating Raleigh / Ceramic Coating Apex / Ceramic Coating
@@ -117,8 +117,8 @@ const Root = () => {
               Paint Protection Film Raleigh / PPF Raleigh / PPF Apex / PPF Cary
               / PPF Holly Springs / PPF Garner / Modesta / Ceramic Coating /
               LLumar / STEK / GTechniq / Majestic Solutions / Detailing /
-              {businessName} / Mobile Detailing Raleigh / Mobile Detailing Apex /
-              Mobile Detailing Cary / Mobile Detailing Holly Springs / Mobile
+              {businessName} / Mobile Detailing Raleigh / Mobile Detailing Apex
+              / Mobile Detailing Cary / Mobile Detailing Holly Springs / Mobile
               Detailing Garner / / Auto Detailing / Auto Detailing Raleigh /
               Auto Detailing Apex / Auto Detailing Cary / Auto Detailing
             </p>

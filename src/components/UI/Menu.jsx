@@ -12,18 +12,18 @@ const Menu = ({ service }) => {
         selectedIndex={tabIndex}
         onSelect={(index) => setTabIndex(index)}
         id="controlled-tabs"
-        selectedTabClassName="bg-black text-white"
+        selectedTabClassName="bg-black text-white max-h-24"
         className="w-full"
       >
-        <TabList className=" flex flex-col md:flex-row md:justify-start md:items-censter w-full">
+        <TabList className=" flex flex-col xs:flex-row lg:flex-col  w-full max-w-xl">
           {carsSizes &&
             carsSizes.map((car) => (
               <Tab
                 key={car.title}
-                className="cursor-pointer p-1 text-center bg-grey-background outline-none flex flex-col flex-grow justify-start items-center basis-1/4 "
+                className="cursor-pointer px-1 text-center bg-grey-background outline-none flex flex-col justify-center items-center basis-1/3"
               >
                 <h5 className="">{car.title}</h5>
-                <p className="p-0.5 font-syne font-semibold text-xs whitespace-pre-wrap">
+                <p className="p-0.5 font-syne font-semibold text-xs whitespace-pre-wrap h-full">
                   {car.description}
                 </p>
               </Tab>

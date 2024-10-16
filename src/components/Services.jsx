@@ -1,12 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { autoDetailingServices } from "../utils/services";
+import { detailingServicesTypes } from "../utils/services";
 import Card from "./Card";
 
 const Services = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-      {autoDetailingServices.map((service) => (
+      {detailingServicesTypes.map((service) => (
         <Card
           key={service.title}
           title={service.title}
@@ -14,7 +14,7 @@ const Services = () => {
           description={service.description}
           button={"Explore"}
           link={service.link}
-          border={"border"}
+          // border={"border"}
         />
       ))}
       <Outlet />

@@ -6,7 +6,7 @@ import Promos from "../../Promos";
 import BookButtons from "../../UI/BookButtons";
 import Button from "../../UI/Button";
 import { ABOUT_PATH } from "../../../utils/constants";
-import { businessName } from "../../../utils/data";
+import { businessName, fullBusinessName } from "../../../utils/data";
 
 const RootMorrisville = () => {
   return (
@@ -52,8 +52,8 @@ const RootMorrisville = () => {
             <div className="">
               <h4 className="">Who we are?</h4>
               <p>
-              {businessName} is a highly-rated detailing company based in
-                Apex, serving the Triangle area. We specialize in providing
+              {fullBusinessName} is a detailing company serving the
+                Raleigh and surrounding areas. We specialize in providing
                 eco-friendly detailing solutions that keep your vehicle looking
                 its best while caring for the environment.
               </p>
