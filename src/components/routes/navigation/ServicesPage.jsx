@@ -4,7 +4,6 @@ import Services from "../../Services";
 import image from "../../../assets/images/AdobeStock_198465715.jpeg";
 import { businessName } from "../../../utils/data";
 
-
 const ServicesPage = () => {
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
@@ -39,17 +38,22 @@ const ServicesPage = () => {
             and a Greener Planet
           </h2>
           <p>
-            In recent years, the demand for eco-friendly products has surged
-            across industries, and the auto detailing world is no exception. At
-            {businessName}, we’ve embraced this shift by prioritizing
-            sustainability in everything we do. Eco-friendly detailing supplies
-            have become the go-to choice for car owners and professionals who
-            care about reducing their environmental footprint. From
-            biodegradable cleaners to reusable towels, the industry now offers a
-            wide range of eco-conscious options that deliver exceptional results
-            without harm. Let us introduce you to some of the best sustainable
-            vehicle detailing products and techniques we use to keep your car
-            looking great—while protecting the planet.
+            In recent years, the demand for{" "}
+            <strong>eco-friendly car detailing</strong> products has surged
+            across industries, and the <strong>mobile auto detailing</strong>{" "}
+            world is no exception. At {businessName}, we’ve embraced this shift
+            by prioritizing <strong>sustainable car detailing</strong> in
+            everything we do. <strong>Eco-friendly detailing supplies</strong>{" "}
+            have become the go-to choice for car owners and detailing
+            professionals who care about reducing their environmental footprint.
+            From <strong>biodegradable car cleaners</strong> to{" "}
+            <strong>reusable microfiber towels</strong>, the auto detailing
+            industry now offers a wide range of{" "}
+            <strong>eco-conscious car care</strong> options that deliver
+            exceptional results without harm. Let us introduce you to some of
+            the best <strong>sustainable vehicle detailing</strong> products and
+            techniques we use to keep your car looking great—while protecting
+            the planet.
           </p>
           {sustainability.map((item, index) => (
             <div className="my-4" key={index}>

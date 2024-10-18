@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import detailingImage from "../../../assets/images/AdobeStock_397247724.jpeg";
+import detailingImage from "../../../assets/images/AdobeStock_539555302.jpeg";
 import { MOBILE_INTERIOR_DETAILING_BOOKING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { interiorDetailingServices } from "../../../utils/services";
