@@ -1,17 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/images/spotless_logo_with_slogan.png";
 import {
-  footerLinks,
-  footerLinksActual,
-  locations,
-  locationLinks,
   businessAddress,
   businessHours,
-  businessName,
+  footerLinks,
+  footerLinksActual,
   fullBusinessName,
+  locationLinks,
+  locations
 } from "../utils/data";
 import SocialButtons from "./UI/SocialButtons";
-import logo from "../assets/images/spotless_logo_with_slogan.png";
 
 const Footer = () => {
   return (

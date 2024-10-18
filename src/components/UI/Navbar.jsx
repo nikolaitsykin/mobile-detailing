@@ -23,14 +23,14 @@ const Navbar = () => {
   return (
     <nav className="w-full lg:w-[85%] text-white flex flex-col md:ml-5 lg:flex-row justify-around items-end">
       <div className="flex justify-end gap-2">
-        <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300">
+        <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300 ">
           <a href={CALL_NUMBER}>
             <div className="hover:scale-110 duration-700">
               <FaPhone size="1.2rem" color="fffafa" />
             </div>
           </a>
         </div>
-        <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300">
+        <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300 ">
           <a href={TEXT_NUMBER}>
             <div className="hover:scale-110 duration-700">
               <TbMessageCircleUser size="1.5rem" color="fffafa" />
@@ -48,30 +48,30 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <ul
-        className={` top-20 md:top-28 ${
-          isMenuOpen ? "absolute" : "hidden"
-        }   flex lg:flex lg:static flex-col lg:flex-row w-full`}
-      >
-        {servicesLinks.map((link, index) => (
-          <li
-            key={link}
-            className="flex jutify-end lg:justify-center items-center basis-1/4"
-          >
-            <NavLink
-              onClick={() => setIsMenuOpen(false)}
-              to={`/${servicesLinksActual[index]}`}
-              className={({ isActive }) =>
-                isActive
-                  ? `text-white ${navLinkStyle}`
-                  : `text-gray ${navLinkStyle}`
-              }
+        <ul
+          className={` top-20 md:top-28 ${
+            isMenuOpen ? "absolute" : "hidden"
+          }   flex lg:flex lg:static flex-col lg:flex-row w-full bg-black`}
+        >
+          {servicesLinks.map((link, index) => (
+            <li
+              key={link}
+              className="flex jutify-end lg:justify-center items-center basis-1/4"
             >
-              {link}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
+              <NavLink
+                onClick={() => setIsMenuOpen(false)}
+                to={`/${servicesLinksActual[index]}`}
+                className={({ isActive }) =>
+                  isActive
+                    ? `text-white ${navLinkStyle}`
+                    : `text-gray ${navLinkStyle}`
+                }
+              >
+                {link}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
     </nav>
   );
 };
