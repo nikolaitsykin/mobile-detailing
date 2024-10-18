@@ -1,7 +1,7 @@
 export const FACEBOOK_URL = "https://www.facebook.com/getspotless";
-export const INSTAGRAM_URL = "https://www.instagram.com/getspotlessnc/";
-// export const YOUTUBE_URL = "https://www.instagram.com/yourdetailingguys/";
-// export const TIKTOK_URL = "https://www.instagram.com/yourdetailingguys/";
+export const INSTAGRAM_URL = "https://www.instagram.com/getspotlessnow/";
+export const YOUTUBE_URL = "https://www.youtube.com/@SpotlessMobileDetailing";
+export const TIKTOK_URL = "https://www.tiktok.com/@spotless.mobile.detail";
 
 export const BOOKING_URL =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services";
