@@ -37,6 +37,7 @@ export const footerLinksActual = [
 ];
 
 export const servicesLinks = ["Services", "Booking", "Faqs", "About"];
+export const servicesLinksActual = ["services", "booking", "faqs", "about"];
 
 export const businessAddress = "Apex, NC 27529";
 export const businessHours = ["MON-SUN 9-7PM"];

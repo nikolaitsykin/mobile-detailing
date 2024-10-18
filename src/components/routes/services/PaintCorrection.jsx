@@ -1,15 +1,15 @@
 import React from "react";
-import carPolishImage from "../../assets/images/AdobeStock_406854263.jpeg";
+import carPolishImage from "../../../assets/images/AdobeStock_406854263.jpeg";
 import {
   oneStepPaintCorrection,
   twoStepPaintCorrection
-} from "../../utils/services";
-import Card from "../Card";
-import { businessName } from "../../utils/data";
+} from "../../../utils/services";
+import Card from "../../Card";
+import { businessName } from "../../../utils/data";
 
 const Polish = () => {
   return (
-    <section className="bg-white  relative">
+    <section id="paint-correction" className="bg-white  relative">
       <div className="bg-black">
         <img
           className="w-full object-cover opacity-60"

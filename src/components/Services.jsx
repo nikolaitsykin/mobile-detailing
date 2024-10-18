@@ -1,20 +1,20 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { detailingServicesTypes } from "../utils/services";
-import Card from "./Card";
+import ServiceItem from "./ServiceItem";
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div id="services" className="grid grid-cols-1 md:grid-cols-3 gap-3">
       {detailingServicesTypes.map((service) => (
-        <Card
+        <ServiceItem
           key={service.title}
           title={service.title}
           image={service.image}
           description={service.description}
           button={"Explore"}
           link={service.link}
-          // border={"border"}
+          background={service.background}
         />
       ))}
       <Outlet />

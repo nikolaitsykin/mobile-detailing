@@ -1,19 +1,19 @@
 import React from "react";
 import Card from "./Card";
 import { addons } from "../utils/addons";
+import Addon from "./Addon";
 
 const Addons = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pb-5">
       {addons.map((addon, index) => (
-        <Card
+        <Addon
           key={index}
           addon
-          name={addon.title}
+          title={addon.title}
           image={addon.image}
           description={addon.description}
           price={addon.price}
-          // border={"border"}
         />
       ))}
     </div>

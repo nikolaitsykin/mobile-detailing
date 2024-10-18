@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import detailingVideo from "../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
-import { ABOUT_PATH, BOOKING_PATH } from "../../utils/constants";
+import {
+  ABOUT_PATH,
+  BOOKING_PAGE_PATH
+} from "../../utils/constants";
+import { businessName, fullBusinessName } from "../../utils/data";
 import Hero from "../Hero";
 import Promos from "../Promos";
 import Button from "../UI/Button";
-import { businessName, fullBusinessName } from "../../utils/data";
 
 const Root = () => {
   return (
@@ -21,18 +24,21 @@ const Root = () => {
           src={detailingVideo}
         />
       </div>
-      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-28">
+      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-36">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Premier Mobile Auto Detailing{" "}
+            Spotless Mobile Detailing
           </h1>
-          <p className="animate-slidein700 text-center opacity-0 text-xs md:text-lg py-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <p className="animate-slidein700 text-center opacity-0 text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Mobile Car Detailing in Raleigh & Surrounding Areas.
+          </p>
+          <p className="animate-slidein700 text-center opacity-0 text-xs md:text-lg pb-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Whether you want to protect your car or give it a clean look, we
             deliver top-quality service.
           </p>
           <div className="animate-slidein700 opacity-0  flex justify-center">
             <div className="min-w-48">
-              <Link to={BOOKING_PATH}>
+              <Link to={BOOKING_PAGE_PATH}>
                 <Button children={"BOOK NOW"} color={"primary"} />
               </Link>
             </div>
@@ -52,10 +58,10 @@ const Root = () => {
             <div className="">
               <h4 className="">Who we are?</h4>
               <p>
-                {fullBusinessName} is a detailing company serving the Raleigh
-                and surrounding areas. We specialize in providing eco-friendly
-                detailing solutions that keep your vehicle looking its best
-                while caring for the environment.
+                {fullBusinessName} serves Raleigh and surrounding areas. We
+                specialize in providing eco-friendly detailing solutions that
+                keep your vehicle looking its best while caring for the
+                environment.
               </p>
             </div>
             <div className="pt-5">
@@ -106,7 +112,7 @@ const Root = () => {
             </p>
             <div className="pb-10">
               <div className="min-w-48">
-                <Link to={BOOKING_PATH}>
+                <Link to={BOOKING_PAGE_PATH}>
                   <Button children={"BOOK NOW"} color={"secondary"} />
                 </Link>
               </div>
@@ -120,7 +126,8 @@ const Root = () => {
               {businessName} / Mobile Detailing Raleigh / Mobile Detailing Apex
               / Mobile Detailing Cary / Mobile Detailing Holly Springs / Mobile
               Detailing Garner / / Auto Detailing / Auto Detailing Raleigh /
-              Auto Detailing Apex / Auto Detailing Cary / Auto Detailing
+              Auto Detailing Apex / Auto Detailing Cary / Auto Detailing /
+              mobile detailing near me / apex mobile detailing /
             </p>
           </article>
         </section>

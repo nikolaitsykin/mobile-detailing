@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/spotless_logo_300.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 import {
-  BOOKING_PATH,
+  BOOKING_PAGE_PATH,
   CALL_NUMBER,
   HOME_PATH,
-  TEXT_NUMBER
+  TEXT_NUMBER,
 } from "../utils/constants";
 import Button from "./UI/Button";
 import Navbar from "./UI/Navbar";
@@ -22,7 +22,6 @@ const Header = () => {
         scrollDirection === "down" ? "-top-20 md:-top-32" : "top-0"
       }`}
     >
-      {" "}
       <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/7">
           <Link to={HOME_PATH}>
@@ -34,6 +33,10 @@ const Header = () => {
               />
             </div>
           </Link>
+          <h1 className="text-[1px] p-0">Spotless Mobile Detailing</h1>
+          <h2 className="text-[1px] p-0">
+            Mobile Car Detailing in Raleigh & Surrounding Areas
+          </h2>
         </div>
         <div className="flex  md:justify-between items-center w-full md:basis-3/7">
           <Navbar />
@@ -55,7 +58,7 @@ const Header = () => {
           </div>
 
           <div className="hidden lg:flex">
-            <Link to={BOOKING_PATH}>
+            <Link to={BOOKING_PAGE_PATH}>
               <Button children={"BOOK NOW"} color={"primary"} />
             </Link>
           </div>

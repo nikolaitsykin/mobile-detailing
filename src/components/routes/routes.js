@@ -1,42 +1,46 @@
+import BookingPage from "./navigation/BookingPage";
+import FAQs from "./navigation/FAQsPage";
 import * as React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
-import ErrorPage from "../error-page";
-import Hero from "../Hero";
-import Root from "../routes/Root";
-import AutoDetailing from "./AutoDetailing";
-import ContactPage from "./ContactPage";
-import Ceramic from "./Ceramic";
-import FAQs from "./FAQsPage";
-import Gallery from "./GalleryPage";
-import Headlights from "./Headlights";
-import Membership from "./MembershipPage";
-import PPF from "./PPF";
-import Reviews from "./ReviewsPage";
-import PaintCorrection from "./PaintCorrection";
-import AboutPage from "./AboutPage";
-import ServicesPage from "./ServicesPage";
-import RootApex from "./pagesByCity/Apex";
-import RootRaleigh from "./pagesByCity/Raleigh";
-import RootCary from "./pagesByCity/Cary";
-import RootHollySprings from "./pagesByCity/HollySprings";
-import RootMorrisville from "./pagesByCity/Morrisville";
-import RootKnightdale from "./pagesByCity/Knightdale";
-import RootGarner from "./pagesByCity/Garner";
-import ServiceItemPage from "./ServiceItemPage";
-import BookingPage from "./BookingPage";
 import {
   ABOUT_PATH,
-  BOOKING_PATH,
+  BOOKING_PAGE_PATH,
   CONTACT_PATH,
   FAQS_PATH,
   GALLERY_PATH,
   HOME_PATH,
   MEMBERSHIP_PATH,
-  MOBILE_DETAILING_PATH,
-  REVIEWS_PATH,
+  MOBILE_DETAILING_PATH_EXTERIOR,
+  MOBILE_DETAILING_PATH_FULL,
+  MOBILE_DETAILING_PATH_INTERIOR,
+  MOBILE_EXTERIOR_DETAILING_PATH,
+  MOBILE_FULL_DETAILING_PATH,
+  MOBILE_INTERIOR_DETAILING_PATH,
   SERVICES_PATH,
 } from "../../utils/constants";
+import App from "../App";
+import ErrorPage from "../error-page";
+import AboutPage from "./navigation/AboutPage";
+import Root from "../routes/Root";
+import MobileInteriorDetailing from "./services/MobileInteriorDetailing";
+import MobileExteriorDetailing from "./services/MobileExteriorDetailing";
+import MobileFullDetailing from "./services/MobileFullDetailing";
+import Ceramic from "./services/Ceramic";
+import ContactPage from "./navigation/ContactPage";
+import Gallery from "./navigation/GalleryPage";
+import Headlights from "./services/Headlights";
+import Membership from "./navigation/MembershipPage";
+import RootApex from "./pagesByCity/Apex";
+import RootCary from "./pagesByCity/Cary";
+import RootGarner from "./pagesByCity/Garner";
+import RootHollySprings from "./pagesByCity/HollySprings";
+import RootKnightdale from "./pagesByCity/Knightdale";
+import RootMorrisville from "./pagesByCity/Morrisville";
+import RootRaleigh from "./pagesByCity/Raleigh";
+import PaintCorrection from "./services/PaintCorrection";
+import PPF from "./services/PPF";
+import ServiceItemPage from "./ServiceItemPage";
+import ServicesPage from "./navigation/ServicesPage";
 
 export const routes = createBrowserRouter([
   {
@@ -54,7 +58,7 @@ export const routes = createBrowserRouter([
         element: <ServicesPage />,
       },
       {
-        path: BOOKING_PATH,
+        path: BOOKING_PAGE_PATH,
         name: "Booking",
         element: <BookingPage />,
       },
@@ -84,14 +88,19 @@ export const routes = createBrowserRouter([
         element: <Gallery />,
       },
       {
-        path: REVIEWS_PATH,
-        name: "Reviews",
-        element: <Reviews />,
+        path: MOBILE_INTERIOR_DETAILING_PATH,
+        name: "Mobile Interior Detailing",
+        element: <MobileInteriorDetailing />,
       },
       {
-        path: MOBILE_DETAILING_PATH,
-        name: "Mobile Detailing",
-        element: <AutoDetailing />,
+        path: MOBILE_EXTERIOR_DETAILING_PATH,
+        name: "Mobile Interior Detailing",
+        element: <MobileExteriorDetailing />,
+      },
+      {
+        path: MOBILE_FULL_DETAILING_PATH,
+        name: "Mobile Interior Detailing",
+        element: <MobileFullDetailing />,
       },
       {
         path: "/:serviceId",
@@ -154,7 +163,7 @@ export const routes = createBrowserRouter([
         element: <RootGarner />,
       },
       {
-        // path: "*",
+        path: "*",
         name: "404",
         element: <ErrorPage />,
       },

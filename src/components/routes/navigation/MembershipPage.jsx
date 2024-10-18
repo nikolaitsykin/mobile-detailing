@@ -1,19 +1,19 @@
 import React from "react";
-import img from "../../assets/images/car-wash-detailing-station.jpg";
+import img from "../../../assets/images/car-wash-detailing-station.jpg";
 import {
   membershipBenefits,
   monthly,
   biWeekly,
-} from "../../utils/detailingPackages";
-import Card from "../Card";
-import Button from "../UI/Button";
+} from "../../../utils/detailingPackages";
+import Card from "../../Card";
+import Button from "../../UI/Button";
 import { Link } from "react-router-dom";
-import { MEMBERSHIP_PATH } from "../../utils/constants";
-import { businessName } from "../../utils/data";
+import { MEMBERSHIP_PATH } from "../../../utils/constants";
+import { businessName } from "../../../utils/data";
 
 const Membership = () => {
   return (
-    <div className="bg-white py-8">
+    <div id="membership" className="bg-white py-8">
       <section className="w-[80%] mx-auto">
         <div></div>
         <h1 className=" text-3xl text-center text-black my-3">

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cascadia-code/scroll-to-hash-element": "^2.0.3",
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -47,8 +48,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-transform-private-property-in-object": "^7.23.4",
+    "@types/react-router-hash-link": "^2.4.9",
     "gh-pages": "^6.1.1",
-    "tailwindcss": "^3.4.7",
-    "@babel/plugin-transform-private-property-in-object": "^7.23.4"
+    "tailwindcss": "^3.4.7"
   }
 }

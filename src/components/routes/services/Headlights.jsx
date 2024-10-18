@@ -1,14 +1,14 @@
 import React from "react";
-import headlightImage from "../../assets/images/headlights_restoration.png";
-import Card from "../Card";
+import headlightImage from "../../../assets/images/headlights_restoration.png";
+import Card from "../../Card";
 import {
   basicHeadlightRestoration,
   primeHeadlightRestoration,
-} from "../../utils/services";
+} from "../../../utils/services";
 
 const Headlights = () => {
   return (
-    <section className="bg-white  relative">
+    <section id="headlights-restoration" className="bg-white  relative">
       <div className="bg-black">
         <img
           className="w-full object-cover opacity-60"

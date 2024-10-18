@@ -8,6 +8,7 @@ import {
   businessAddress,
   businessHours,
   businessName,
+  fullBusinessName,
 } from "../utils/data";
 import SocialButtons from "./UI/SocialButtons";
 import logo from "../assets/images/spotless_logo_with_slogan.png";
@@ -95,9 +96,7 @@ const Footer = () => {
             <SocialButtons />
           </div>
           <div>
-            <p className="text-white text-xxs sm:text-xs md:text-sm">
-              © 2024 {businessName}
-            </p>
+            <p className="text-gray text-xxs sm:text-xs md:text-sm">&copy; 2024 {fullBusinessName}. All rights reserved.</p>
           </div>
         </div>
       </section>

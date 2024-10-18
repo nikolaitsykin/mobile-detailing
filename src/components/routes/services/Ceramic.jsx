@@ -1,14 +1,14 @@
 import React from "react";
-import ceramicImage from "../../assets/images/ceramic_coating.png";
+import ceramicImage from "../../../assets/images/ceramic_coating.png";
 import {
   basicCeramicCoating,
   primeCeramicCoating
-} from "../../utils/services";
-import Card from "../Card";
+} from "../../../utils/services";
+import Card from "../../Card";
 
 const Ceramic = () => {
   return (
-    <section className="bg-white">
+    <section id="ceramic-coating" className="bg-white">
       <div className="bg-black">
         <img
           className="w-full object-cover opacity-60"

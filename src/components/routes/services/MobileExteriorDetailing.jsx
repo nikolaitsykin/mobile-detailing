@@ -1,21 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import detailingImage from "../../assets/images/AdobeStock_397247724.jpeg";
-import { BOOKING_PATH } from "../../utils/constants";
-import { specialPackage } from "../../utils/newDetailingPackages";
-import {
-  exteriorDetailingServices,
-  interiorDetailingServices,
-  detailingServices
-} from "../../utils/services";
-import Addons from "../Addons";
-import Card from "../Card";
-import Package from "../Package";
-import { businessName } from "../../utils/data";
+import detailingImage from "../../../assets/images/AdobeStock_397247724.jpeg";
+import { MOBILE_EXTERIOR_DETAILING_BOOKING_PATH } from "../../../utils/constants";
+import { businessName } from "../../../utils/data";
+import { exteriorDetailingServices } from "../../../utils/services";
+import Addons from "../../Addons";
+import Card from "../../Card";
+import Booking from "../../Booking";
 
 const AutoDetailing = () => {
   return (
-    <div className="w-full z-20 bg-white font-poppins">
+    <div id="exterior-detailing" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black">
         <img
           className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
@@ -26,13 +21,13 @@ const AutoDetailing = () => {
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Mobile Detailing
+            Mobile Exterior Detailing
           </h1>
         </div>
       </div>
       <section>
         <article className=" text-start text-black">
-          <h2 className="">Exterior and Interior Detailing</h2>
+          <h2 className="">Exterior Detailing</h2>
           <p className="">
             Washing a car might seem simple, but achieving a flawless finish
             requires more than just a quick rinse. If you're looking for a fast,
@@ -52,57 +47,33 @@ const AutoDetailing = () => {
           </p>
         </article>
       </section>
-      {/* <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="">Full Exterior & Interior</h2>
-        <div className="w-full mx-auto">
-          <Package packageType={specialPackage} />
-        </div>
-      </section> */}
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="">Mobile Detailing Services</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
-          {detailingServices.map((item, index) => (
-            <Card
-              key={index}
-              name={item.title}
-              service={item}
-              image={item.image}
-              services={item.services}
-              description={item.description}
-              duration={item.duration}
-              link={BOOKING_PATH}
-              button={"Get Started"}
-              background={item.background}
-              // border={"border"}
-            />
-          ))}
-          <Outlet />
-        </div>
+        <h2 id="exterior-detailing" className="">
+          Exterior Detailing Services
+        </h2>
+        {exteriorDetailingServices.map((item, index) => (
+          <Card
+            key={index}
+            title={item.title}
+            type={item.type}
+            service={item}
+            image={item.image}
+            services={item.services}
+            description={item.description}
+            duration={item.duration}
+            link={MOBILE_EXTERIOR_DETAILING_BOOKING_PATH}
+            button={"Get Started"}
+            background={item.background}
+          />
+        ))}
+        <Outlet />
       </section>
-      {/* <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="">Interior Detail Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {interiorDetailingServices.map((item, index) => (
-            <Card
-              key={index}
-              name={item.title}
-              service={item}
-              image={item.image}
-              description={item.description}
-              services={item.services}
-              duration={item.duration}
-              link={BOOKING_PATH}
-              button={"Get Started"}
-              border={"border"}
-            />
-          ))}
-          <Outlet />
-        </div>
-      </section> */}
       <section className="w-[90%] md:w-[80%] mx-auto">
         <h2 className="">Addons</h2>
         <Addons />
       </section>
+      <div id="booking" className="scroll-mb-[750px]"></div>
+      <Booking />
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article className=" w-full flex flex-col justify-center">
           <h2 id="how-we-do-it" className="">

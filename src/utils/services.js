@@ -10,167 +10,18 @@ import {
   steamAndGuard,
   washAndWax,
   wipeAndClean,
-  fullDetail,
+  spotlessFinish,
+  quickDetail,
+  deepCleaning,
+  quickWash,
+  quickClean,
 } from "./newDetailingPackages";
 import {
   exteriorDetailingService,
   interiorDetailingService,
+  fullDetailingService,
 } from "./detailingPackages";
 import { businessName } from "./data";
-
-export const essentialExteriorServices = [
-  "✔ Multi-Step Pre-Cleaning",
-  "✔ Hand Wash with pH-Balanced Soap",
-  "✔ Door Jamb Cleaning and Protection",
-  "✔ Gas Cap and Valve Cleaning",
-  "✔ Thorough Wheels Cleaning",
-  "✔ Tire Shining",
-  "✔ Gentle Drying with Ultra-Soft Towels",
-  "✔ Crystal-Clear Windows Cleaning",
-  "✔ Wax Spray for a Glossy Finish",
-  "✖ Satin Black Tire Dressing",
-  "✖ Iron Removal",
-  "✖ Clay Bar Treatment",
-  "✖ Bug & Tar Removal",
-  // "✖ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
-  // "✖ Application of Premium Spray Ceramic Coating for Protection",
-];
-export const essentialInteriorServices = [
-  "✔ Door Seals & Jambs Cleaning",
-  "✔ Vacuuming with Agitation",
-  "✔ Surface Cleaning",
-  "✔ Floor Mats Cleaning",
-  "✔ Streak-Free Glass Cleaning",
-  "✔ Freshener Application",
-  "✔ Protective Plastic Dressing",
-  "✖ Deep Hot Water Shampoo",
-  "✖ Steam Cleaning",
-  "✖ Leather Protection & Conditioning",
-  "✖ Cracks & Crevices Cleaning",
-  "✖ Pet hair/Sand removal",
-  // "✖ Ozone Treatment for Complete Odor Neutralization",
-  // "✖ Effective Removal of Dirt, Stains, and Harmful Bacteria",
-];
-
-export const primeExteriorServices = [
-  "✔ Multi-Step Pre-Cleaning",
-  "✔ Hand Wash with pH-Balanced Soap",
-  "✔ Door Jamb Cleaning and Protection",
-  "✔ Gas Cap and Valve Cleaning",
-  "✔ Thorough Wheels Cleaning",
-  "✔ Tire Shining",
-  "✔ Gentle Drying with Ultra-Soft Towels",
-  "✔ Crystal-Clear Windows Cleaning",
-  "✔ Wax Spray for a Glossy Finish",
-  "✔ Satin Black Tire Dressing",
-  "✔ Iron Removal",
-  "✔ Clay Bar Treatment",
-  "✔ Bug & Tar Removal",
-  // "✖ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
-  // "✖ Application of Premium Spray Ceramic Coating for Protection",
-];
-export const primeInteriorServices = [
-  "✔ Door Seals & Jambs Cleaning",
-  "✔ Vacuuming with Agitation",
-  "✔ Surface Cleaning",
-  "✔ Floor Mats Cleaning",
-  "✔ Streak-Free Glass Cleaning",
-  "✔ Freshener Application",
-  "✔ Protective Plastic Dressing",
-  "✔ Deep Hot Water Shampoo",
-  "✔ Steam Cleaning",
-  "✔ Leather Protection & Conditioning",
-  "✔ Cracks & Crevices Cleaning",
-  "✔ Pet hair/Sand removal",
-  // "✖ Ozone Treatment for Complete Odor Neutralization",
-  // "✖ Effective Removal of Dirt, Stains, and Harmful Bacteria",
-];
-
-export const deluxeExteriorServices = [
-  "✔ Multi-Step Pre-Cleaning for Maximum Dirt Removal",
-  "✔ Hand Wash with pH-Balanced Soap for Safe Paint Care",
-  "✔ Detailed Door Jamb Cleaning and Protection",
-  "✔ Gas Cap and Valve Cleaning",
-  "✔ Thorough Wheels Cleaning Using Safe, Effective Brushes",
-  "✔ Tire Shining for a Fresh, Finished Look",
-  "✔ Gentle Drying with Ultra-Soft Towels to Prevent Scratches",
-  "✔ Crystal-Clear Windows Cleaning",
-  "✔ Wax Spray for a Glossy Finish",
-  "✔ Satin Black Tire Dressing for a Sleek, Refined Appearance",
-  "✔ Iron Removal to Protect and Maintain Paint Integrity",
-  "✔ Clay Bar Treatment for a Smooth, Contaminant-Free Surface",
-  "✔ Two-Stage Bug & Tar Removal for a Spotless Exterior",
-  "✔ One-Stage Rotary Polish to Restore Shine and Remove Swirls",
-  "✔ Application of Premium Spray Ceramic Coating for Protection",
-];
-export const deluxeInteriorServices = [
-  "✔ Door Seals & Jambs Cleaning",
-  "✔ Vacuuming with Agitation",
-  "✔ Surface Cleaning",
-  "✔ Floor Mats Cleaning",
-  "✔ Streak-Free Glass Cleaning",
-  "✔ Freshener Application",
-  "✔ Protective Plastic Dressing",
-  "✔ Deep Hot Water Shampoo",
-  "✔ Steam Cleaning",
-  "✔ Leather Protection & Conditioning",
-  "✔ Cracks & Crevices Cleaning",
-  "✔ Pet hair/Sand removal",
-  "✔ Ozone Odor Treatment",
-  "✔ Dirt, Stains, and Harmful Bacteria Removal",
-];
-
-export const ultimateExteriorServices = [
-  "✔ Multi-Step Pre-Cleaning",
-  "✔ Hand Wash with pH-Balanced Soap",
-  "✔ Door Jamb Cleaning and Protection",
-  "✔ Gas Cap and Valve Cleaning",
-  "✔ Thorough Wheels Cleaning",
-  "✔ Tire Shining",
-  "✔ Gentle Drying with Ultra-Soft Towels",
-  "✔ Crystal-Clear Windows Cleaning",
-  "✔ Wax Spray for a Glossy Finish",
-  "✔ Satin Black Tire Dressing",
-  "✔ Iron Removal",
-  "✔ Clay Bar Treatment",
-  "✔ Bug & Tar Removal",
-  "✔ One-Stage Rotary Polish ",
-  "✔ Premium Spray Ceramic Coating Application",
-];
-
-export const ultimateInteriorServices = [
-  "✔ Door Seals & Jambs Cleaning",
-  "✔ Vacuuming with Agitation",
-  "✔ Surface Cleaning",
-  "✔ Floor Mats Cleaning",
-  "✔ Streak-Free Glass Cleaning",
-  "✔ Freshener Application",
-  "✔ Protective Plastic Dressing",
-  "✔ Deep Hot Water Shampoo",
-  "✔ Steam Cleaning",
-  "✔ Leather Protection & Conditioning",
-  "✔ Cracks & Crevices Cleaning",
-  "✔ Pet hair/Sand removal",
-  "✔ Ozone Odor Treatment",
-  "✔ Dirt, Stains, and Harmful Bacteria Removal",
-];
-
-export const regularExteriorServices = [
-  "☑ Hand Exterior Wash & Dry",
-  "☑ Quick Finish Shine",
-  "☑ Tire/rim Degreaser & Shine",
-  "☑ Windows Cleaning",
-  "☑ Exterior Bug Removal",
-  "☑ Spray Wax",
-];
-export const regularInteriorServices = [
-  "☑ Door Seals and Door Jamb Cleaning",
-  "☑ Deep Vacuum",
-  "☑ Floor Mats Cleaned",
-  "☑ Glass Cleaning",
-  "☑ Air Freshener",
-  "☑ Degrease leather seats, ​dash, doors, cup holders",
-];
 
 export const paintCorrectionService = {
   title: "Paint Correction",
@@ -197,18 +48,32 @@ export const ppfService = {
   link: "paint-protection-film",
 };
 
-export const exteriorDetailingServices = [washAndWax, shineAndShield];
-export const interiorDetailingServices = [wipeAndClean, steamAndGuard];
+export const exteriorDetailingServices = [
+  quickWash,
+  washAndWax,
+  shineAndShield,
+];
+export const interiorDetailingServices = [
+  quickClean,
+  wipeAndClean,
+  steamAndGuard,
+];
+export const fullDetailingServices = [
+  quickDetail,
+  deepCleaning,
+  spotlessFinish,
+];
 export const detailingServices = [
   washAndWax,
   shineAndShield,
   steamAndGuard,
-  fullDetail,
+  spotlessFinish,
 ];
 
 export const detailingServicesTypes = [
   exteriorDetailingService,
   interiorDetailingService,
+  fullDetailingService,
   // paintCorrectionService,
   // headlightRestorationService,
   // ppfService,
@@ -252,6 +117,7 @@ export const basicHeadlightRestoration = {
   services: basicHeadlightRestorationServices,
   image: headlightRestorationServiceImage,
   price: ["$150"],
+  backgroung: "none",
 };
 
 export const primeHeadlightRestoration = {
@@ -261,6 +127,7 @@ export const primeHeadlightRestoration = {
   services: primeHeadlightRestorationServices,
   image: primeHeadlightRestorationImage,
   price: ["$200"],
+  backgroung: "none",
 };
 
 export const basicCeramicCoatingServices = [
@@ -287,6 +154,7 @@ export const basicCeramicCoating = {
   services: basicCeramicCoatingServices,
   image: ceramicCoatingServiceImage,
   price: ["$550"],
+  backgroung: "none",
 };
 
 export const primeCeramicCoating = {
@@ -295,4 +163,5 @@ export const primeCeramicCoating = {
   services: primeCeramicCoatingServices,
   image: primeCeramicCoatingImage,
   price: ["$800"],
+  backgroung: "none",
 };

@@ -9,6 +9,8 @@ import { ABOUT_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
 
 const RootKnightdale = () => {
+  const currentCity = "Knightdale";
+
   return (
     <main className="w-full bg-white">
       <div className="w-full bg-black">
@@ -24,7 +26,7 @@ const RootKnightdale = () => {
       </div>
       <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-28 md:top-40">
         <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className="animate-slidein500 uppercase text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+          <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             Knightdale Professional Auto Detailing
           </h1>
           <p className="animate-slidein700 text-center opacity-0 text-xs md:text-base py-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
@@ -52,10 +54,10 @@ const RootKnightdale = () => {
             <div className="">
               <h4 className="">Who we are?</h4>
               <p>
-              {fullBusinessName} is a detailing company serving the
-                Raleigh and surrounding areas. We specialize in providing
-                eco-friendly detailing solutions that keep your vehicle looking
-                its best while caring for the environment.
+              {fullBusinessName} serves Knightdale and surrounding areas. We
+                specialize in providing eco-friendly detailing solutions that
+                keep your vehicle looking its best while caring for the
+                environment.
               </p>
             </div>
             <div className="pt-5">
@@ -104,15 +106,32 @@ const RootKnightdale = () => {
               <BookButtons color="secondary" />
             </div>
             <p className="text-white text-[1px]">
-              Ceramic Coating Raleigh / Ceramic Coating Apex / Ceramic Coating
-              Cary/ Ceramic Coating Holly Springs/ Ceramic Coating Garner /
-              Paint Protection Film Raleigh / PPF Raleigh / PPF Apex / PPF Cary
-              / PPF Holly Springs / PPF Garner / Modesta / Ceramic Coating /
-              LLumar / STEK / GTechniq / Majestic Solutions / Detailing /
-              {businessName} / Mobile Detailing Raleigh / Mobile Detailing Apex
-              / Mobile Detailing Cary / Mobile Detailing Holly Springs / Mobile
-              Detailing Garner / / Auto Detailing / Auto Detailing Raleigh /
-              Auto Detailing Apex / Auto Detailing Cary / Auto Detailing
+            "Ceramic Coating Raleigh" / "Ceramic Coating {currentCity} "/
+              "Ceramic Coating Cary" / "Ceramic Coating Holly Springs" /
+              "Ceramic Coating Garner" / "Paint Protection Film Raleigh" / "PPF
+              Raleigh" / "PPF {currentCity}" / "PPF Cary" / "PPF Holly Springs"
+              / "PPF Garner" / "Ceramic Coating" / "LLumar" / "STEK" /
+              "GTechniq" / "Majestic Solutions" / "Detailing" / {businessName} /
+              "Mobile Detailing Raleigh" / "Mobile Detailing {currentCity}" /
+              "Mobile Detailing Cary" / "Mobile Detailing Holly Springs" /
+              "Mobile Detailing Garner" / "Auto Detailing" / "Auto Detailing
+              Raleigh" / "Auto Detailing {currentCity}" / "Auto Detailing{" "}
+              {currentCity}" / "Mobile detailing" / "Auto detailing" / "Car
+              detailing services {currentCity}" / "Mobile car wash {currentCity}
+              " / "Car cleaning {currentCity}" / "Full car detailing" /
+              "Exterior detailing" / "Interior detailing" / "Paint correction" /
+              "Car wax and polish" / "Car shampoo" / " Detailing packages" /
+              "Mobile detailing near me" / "Eco-friendly car detailing" /
+              "Eco-friendly car detailing {currentCity}" / "Professional
+              detailing service {currentCity}" / "Mobile detailing {currentCity}
+              " / "Detailing for busy professionals {currentCity}" /" "Luxury
+              car detailing {currentCity}" / "Interior vacuuming {currentCity}"
+              / "Stain removal detailing {currentCity}" / "Car upholstery
+              cleaning {currentCity}" / "Headlight restoration {currentCity}" /
+              "Scratch removal {currentCity}" / "Hand wash detailing
+              {currentCity}" / "Mobile detailing business near me" / "Mobile
+              Detailing at home" / "Mobile detailing prices {currentCity}" /
+              "Mobile Detailing at home {currentCity}"
             </p>
           </article>
         </section>

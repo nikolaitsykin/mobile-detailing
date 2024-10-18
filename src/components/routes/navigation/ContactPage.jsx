@@ -1,9 +1,9 @@
 import React from "react";
-import ContactForm from "../ContactForm";
+import ContactForm from "../../ContactForm";
 
 const ContactPage = () => {
   return (
-    <div className="bg-white py-8">
+    <div id="contact" className="bg-white py-8">
       <section className="w-[90%] md:w-[80%] mx-auto">
         <h1 className=" text-3xl text-center text-black my-3">Contact Us</h1>
         <article className=" text-black">

@@ -1,9 +1,9 @@
 import React from "react";
-import ppfImage from "../../assets/images/AdobeStock_428622212.jpeg";
+import ppfImage from "../../../assets/images/AdobeStock_428622212.jpeg";
 
 const PPF = () => {
   return (
-    <section className="bg-white relative">
+    <section id="paint-protection-film" className="bg-white relative">
       <div className="bg-black">
         <img
           className="w-full object-cover opacity-60"
