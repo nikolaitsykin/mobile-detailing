@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import detailingVideo from "../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
 import { ABOUT_PATH, BOOKING_PAGE_PATH } from "../../utils/constants";
 import { businessName, fullBusinessName } from "../../utils/data";
 import Hero from "../Hero";
