@@ -4,7 +4,7 @@ import detailingVideo from "../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
 import { ABOUT_PATH, BOOKING_PAGE_PATH } from "../../utils/constants";
 import { businessName, fullBusinessName } from "../../utils/data";
 import Hero from "../Hero";
-import Promos from "../products/Promos";
+import Promos from "../Promos";
 import Button from "../UI/Button";
 
 const Root = () => {

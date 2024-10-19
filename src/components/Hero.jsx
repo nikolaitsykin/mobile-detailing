@@ -1,5 +1,5 @@
 import React from "react";
-import Services from "./products/Services";
+import Services from "./Services";
 import { fullBusinessName } from "../utils/data";
 import { Link } from "react-router-dom";
 import Button from "./UI/Button";
@@ -9,7 +9,7 @@ import detailingVideo from "../assets/videos/6158070-hd_1920_1080_30fps.mp4";
 const Hero = () => {
   return (
     <div className="w-full bg-white ">
-            <div className="w-full bg-black">
+      <div className="w-full bg-black">
         <video
           className="opacity-50 object-cover h-[450px] md:h-[550px] w-full mx-auto"
           autoPlay

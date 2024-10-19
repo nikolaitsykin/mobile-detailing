@@ -4,9 +4,9 @@ import detailingImage from "../../../assets/images/AdobeStock_273206890.jpeg";
 import { MOBILE_FULL_DETAILING_BOOKING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { fullDetailingServices } from "../../../utils/services";
-import Addons from "../../products/Addons";
+import Addons from "../../Addons";
 import Booking from "../../Booking";
-import Card from "../../products/Card";
+import Card from "../../Card";
 
 const AutoDetailing = () => {
   return (

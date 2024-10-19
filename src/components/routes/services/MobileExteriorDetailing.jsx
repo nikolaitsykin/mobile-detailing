@@ -7,8 +7,8 @@ import {
   interiorDetailingServices,
   fullDetailingServices,
 } from "../../../utils/services";
-import Addons from "../../products/Addons";
-import Card from "../../products/Card";
+import Addons from "../../Addons";
+import Card from "../../Card";
 import { businessName } from "../../../utils/data";
 
 const AutoDetailing = () => {

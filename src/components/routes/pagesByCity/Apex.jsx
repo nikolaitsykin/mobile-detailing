@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import detailingVideo from "../../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
 import Hero from "../../Hero";
-import Promos from "../../products/Promos";
+import Promos from "../../Promos";
 import BookButtons from "../../UI/BookButtons";
 import Button from "../../UI/Button";
 import { ABOUT_PATH } from "../../../utils/constants";

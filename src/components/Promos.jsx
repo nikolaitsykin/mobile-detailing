@@ -1,10 +1,10 @@
 import React from "react";
 import PromoItem from "./PromoItem";
-import { permanentPromos, currentTemporaryPromo } from "../../utils/promos";
+import { permanentPromos, currentTemporaryPromo } from "../utils/promos";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import backgroundImage from "../../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.jpg";
+// import backgroundImage from "../../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.jpg";
 
 const Promos = () => {
   const settings = {

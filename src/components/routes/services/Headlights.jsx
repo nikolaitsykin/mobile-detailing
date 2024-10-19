@@ -1,6 +1,6 @@
 import React from "react";
 import headlightImage from "../../../assets/images/headlights_restoration.png";
-import Card from "../../products/Card";
+import Card from "../../Card";
 import {
   basicHeadlightRestoration,
   primeHeadlightRestoration,

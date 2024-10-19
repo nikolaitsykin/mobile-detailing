@@ -1,7 +1,7 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-import Button from "../UI/Button";
-import Menu from "../UI/Menu";
+import Button from "./UI/Button";
+import Menu from "./UI/Menu";
 
 const Card = ({
   type,
