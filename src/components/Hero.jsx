@@ -44,17 +44,14 @@ const Hero = () => {
 
       <section>
         <article>
-          <h2 className="">Detailing to Your Doorstep</h2>
-          <p className="">
-            At {fullBusinessName}, we offer a range of high-quality mobile
-            detailing services that bring the car care to your doorstep. From{" "}
-            <strong>exterior detailing</strong> like <strong>Quick Wash</strong>
-            , <strong>Wash & Wax</strong> and <strong>Shine & Shield</strong> to
-            deep <strong>interior cleaning</strong> such as{" "}
-            <strong>Quick Clean</strong>, <strong>Wipe & Clean</strong> and{" "}
-            <strong>Steam & Guard</strong>, we’ve got you covered. We also
-            specialize in <strong>paint correction</strong> and
-            <strong>ceramic coating</strong> for long-lasting protection and
+          <h2>Detailing to Your Doorstep</h2>
+          <p>
+            At Spotless Mobile Detailing, we offer a range of high-quality
+            mobile detailing services that bring the car care to your doorstep.
+            From exterior detailing like Quick Wash , Wash & Wax and Shine &
+            Shield to deep interior cleaning such as ,Quick Clean, Wipe & Clean
+            and Steam & Guard, we’ve got you covered. We also specialize in
+            paint correction and ceramic coating for long-lasting protection and
             shine. Our fully equipped mobile detailing unit has everything we
             need to provide top-notch care for your vehicle. We do require
             access to a power and water supply, but once that’s arranged, we’ll
