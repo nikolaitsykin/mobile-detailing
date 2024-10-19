@@ -43,7 +43,7 @@ const ServiceItem = ({
         >
           {image && (
             <img
-              className="w-full max-w-xl align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
+              className="w-full w-lg align-start mb-3 px-4 py-1 rounded-sm overflow-hidden "
               src={image}
               alt="Car wash"
             />
