@@ -1,12 +1,15 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import detailingImage from "../../../assets/images/AdobeStock_397247724.jpeg";
-import { MOBILE_EXTERIOR_DETAILING_BOOKING_PATH } from "../../../utils/constants";
+import { BOOKING_PATH } from "../../../utils/constants";
+import {
+  exteriorDetailingServices,
+  interiorDetailingServices,
+  fullDetailingServices,
+} from "../../../utils/services";
+import Addons from "../../products/Addons";
+import Card from "../../products/Card";
 import { businessName } from "../../../utils/data";
-import { exteriorDetailingServices } from "../../../utils/services";
-import Addons from "../../Addons";
-import Card from "../../Card";
-import Booking from "../../Booking";
 
 const AutoDetailing = () => {
   return (
@@ -51,29 +54,76 @@ const AutoDetailing = () => {
         <h2 id="exterior-detailing" className="">
           Exterior Detailing Services
         </h2>
-        {exteriorDetailingServices.map((item, index) => (
-          <Card
-            key={index}
-            title={item.title}
-            type={item.type}
-            service={item}
-            image={item.image}
-            services={item.services}
-            description={item.description}
-            duration={item.duration}
-            link={MOBILE_EXTERIOR_DETAILING_BOOKING_PATH}
-            button={"Get Started"}
-            background={item.background}
-          />
-        ))}
-        <Outlet />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {exteriorDetailingServices.map((item, index) => (
+            <Card
+              key={index}
+              title={item.title}
+              type={item.type}
+              service={item}
+              image={item.image}
+              services={item.services}
+              description={item.description}
+              duration={item.duration}
+              link={BOOKING_PATH}
+              button={"Get Started"}
+              background={item.background}
+              bestValue={item.bestValue}
+            />
+          ))}
+        </div>
+      </section>
+      <section className="w-[90%] md:w-[80%] mx-auto">
+        <h2 id="interior-detailing" className="">
+          Interior Detail Services
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {interiorDetailingServices.map((item, index) => (
+            <Card
+              key={index}
+              title={item.title}
+              type={item.type}
+              service={item}
+              image={item.image}
+              description={item.description}
+              services={item.services}
+              duration={item.duration}
+              link={BOOKING_PATH}
+              button={"Get Started"}
+              border={"border"}
+            />
+          ))}
+          <Outlet />
+        </div>
+      </section>
+      <section className="w-[90%] md:w-[80%] mx-auto">
+        <h2 id="full-detailing" className="">
+          Full Detailing Services
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {fullDetailingServices.map((item, index) => (
+            <Card
+              key={index}
+              title={item.title}
+              type={item.type}
+              service={item}
+              image={item.image}
+              description={item.description}
+              services={item.services}
+              duration={item.duration}
+              link={BOOKING_PATH}
+              button={"Get Started"}
+              background={item.background}
+              bestValue={item.bestValue}
+            />
+          ))}
+          <Outlet />
+        </div>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
         <h2 className="">Addons</h2>
         <Addons />
       </section>
-      <div id="booking" className="scroll-mb-[750px]"></div>
-      <Booking />
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article className=" w-full flex flex-col justify-center">
           <h2 id="how-we-do-it" className="">

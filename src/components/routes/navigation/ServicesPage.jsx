@@ -1,6 +1,6 @@
 import React from "react";
 import { sustainability } from "../../../utils/sustainability";
-import Services from "../../Services";
+import Services from "../../products/Services";
 import image from "../../../assets/images/AdobeStock_198465715.jpeg";
 import { businessName } from "../../../utils/data";
 

@@ -5,7 +5,7 @@ import {
   monthly,
   biWeekly,
 } from "../../../utils/detailingPackages";
-import Card from "../../Card";
+import Card from "../../products/Card";
 import Button from "../../UI/Button";
 import { Link } from "react-router-dom";
 import { MEMBERSHIP_PATH } from "../../../utils/constants";

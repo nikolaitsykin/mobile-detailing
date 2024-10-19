@@ -20,7 +20,7 @@ const Menu = ({ service }) => {
             carsSizes.map((car) => (
               <Tab
                 key={car.title}
-                className="cursor-pointer px-1 outline-none basis-1/3 flex items-center justify-center border border-gray"
+                className="cursor-pointer m-0.5 px-1 outline-none basis-1/3 flex items-center justify-center border border-gray"
               >
                 <h5 className="h-12 flex justify-center items-center ">
                   {car.title}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { detailingServicesTypes } from "../utils/services";
+import { detailingServicesTypes } from "../../utils/services";
 import ServiceItem from "./ServiceItem";
 
 const Services = () => {

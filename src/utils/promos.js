@@ -1,13 +1,14 @@
 import promoImageOne from "../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.jpg";
 import promoImageTwo from "../assets/images/photo-boards-KZNTEn2r6tw-unsplash.jpg";
 import promoImageThree from "../assets/images/meric-dagli-3KJpF86nR4c-unsplash.jpg";
+import promoImageFour from "../assets/images/josep-martins-nAsdr5DC2Ss-unsplash.jpg";
 
 export const permanentPromos = [
   {
     title: "10% Off for First-Time Customers",
     description:
       "Welcome new clients with a 10% discount on their first detailing service.",
-    image: promoImageOne,
+    image: promoImageFour,
   },
   {
     title: "Refer a Friend and Save 5%",

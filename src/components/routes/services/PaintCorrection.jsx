@@ -4,7 +4,7 @@ import {
   oneStepPaintCorrection,
   twoStepPaintCorrection
 } from "../../../utils/services";
-import Card from "../../Card";
+import Card from "../../products/Card";
 import { businessName } from "../../../utils/data";
 
 const Polish = () => {

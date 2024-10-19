@@ -4,7 +4,7 @@ import detailingVideo from "../../../assets/videos/6158070-hd_1920_1080_30fps.mp
 import { ABOUT_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
 import Hero from "../../Hero";
-import Promos from "../../Promos";
+import Promos from "../../products/Promos";
 import BookButtons from "../../UI/BookButtons";
 import Button from "../../UI/Button";
 

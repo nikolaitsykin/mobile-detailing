@@ -34,7 +34,7 @@ const Booking = () => {
         <h3 className="text-center p-3">What to Expect</h3>
         <ul>
           <li>
-            ✔ Book your appointment online, contact us by clicking the "Request
+            ✔ Book your appointment online by clicking the "Book Online" button or contact us by clicking the "Request
             a Quote" button or give us a call at{" "}
             <a href={CALL_NUMBER} className="underline text-blue">
               (919)&nbsp;906&#8209;0099

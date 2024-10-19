@@ -1,5 +1,3 @@
-import BookingPage from "./navigation/BookingPage";
-import FAQs from "./navigation/FAQsPage";
 import * as React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import {
@@ -10,9 +8,6 @@ import {
   GALLERY_PATH,
   HOME_PATH,
   MEMBERSHIP_PATH,
-  MOBILE_DETAILING_PATH_EXTERIOR,
-  MOBILE_DETAILING_PATH_FULL,
-  MOBILE_DETAILING_PATH_INTERIOR,
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
@@ -20,16 +15,14 @@ import {
 } from "../../utils/constants";
 import App from "../App";
 import ErrorPage from "../error-page";
-import AboutPage from "./navigation/AboutPage";
 import Root from "../routes/Root";
-import MobileInteriorDetailing from "./services/MobileInteriorDetailing";
-import MobileExteriorDetailing from "./services/MobileExteriorDetailing";
-import MobileFullDetailing from "./services/MobileFullDetailing";
-import Ceramic from "./services/Ceramic";
+import AboutPage from "./navigation/AboutPage";
+import BookingPage from "./navigation/BookingPage";
 import ContactPage from "./navigation/ContactPage";
+import FAQs from "./navigation/FAQsPage";
 import Gallery from "./navigation/GalleryPage";
-import Headlights from "./services/Headlights";
 import Membership from "./navigation/MembershipPage";
+import ServicesPage from "./navigation/ServicesPage";
 import RootApex from "./pagesByCity/Apex";
 import RootCary from "./pagesByCity/Cary";
 import RootGarner from "./pagesByCity/Garner";
@@ -37,10 +30,13 @@ import RootHollySprings from "./pagesByCity/HollySprings";
 import RootKnightdale from "./pagesByCity/Knightdale";
 import RootMorrisville from "./pagesByCity/Morrisville";
 import RootRaleigh from "./pagesByCity/Raleigh";
+import Ceramic from "./services/Ceramic";
+import Headlights from "./services/Headlights";
+import MobileExteriorDetailing from "./services/MobileExteriorDetailing";
+import MobileFullDetailing from "./services/MobileFullDetailing";
+import MobileInteriorDetailing from "./services/MobileInteriorDetailing";
 import PaintCorrection from "./services/PaintCorrection";
 import PPF from "./services/PPF";
-import ServiceItemPage from "./ServiceItemPage";
-import ServicesPage from "./navigation/ServicesPage";
 
 export const routes = createBrowserRouter([
   {
@@ -101,11 +97,6 @@ export const routes = createBrowserRouter([
         path: MOBILE_FULL_DETAILING_PATH,
         name: "Mobile Interior Detailing",
         element: <MobileFullDetailing />,
-      },
-      {
-        path: "/:serviceId",
-        name: "Service Item",
-        element: <ServiceItemPage />,
       },
       {
         path: "/ceramic-coating",

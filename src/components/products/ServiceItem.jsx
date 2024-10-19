@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "./UI/Button";
-import Menu from "./UI/Menu";
-import { HashLink } from "react-router-hash-link";
+import Button from "../UI/Button";
+import Menu from "../UI/Menu";
 
 const ServiceItem = ({
   type,

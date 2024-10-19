@@ -1,10 +1,10 @@
 import React from "react";
 import PromoItem from "./PromoItem";
-import { permanentPromos, currentTemporaryPromo } from "../utils/promos";
+import { permanentPromos, currentTemporaryPromo } from "../../utils/promos";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import backgroundImage from "../assets/images/josep-martins-nAsdr5DC2Ss-unsplash.jpg";
+import backgroundImage from "../../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.jpg";
 
 const Promos = () => {
   const settings = {
@@ -19,7 +19,7 @@ const Promos = () => {
   };
 
   return (
-    <div className="w-full pb-5">
+    <div className="w-full pb-5 mt-5">
       <h2 className="text-center text-black">Detailing Deals</h2>
       <Slider {...settings} className="w-full h-56 pt-5">
         {permanentPromos.map((item, index) => (
@@ -30,12 +30,12 @@ const Promos = () => {
             image={item.image}
           />
         ))}
-        <PromoItem
+        {/* <PromoItem
           key={currentTemporaryPromo.index}
           title={currentTemporaryPromo.title}
           description={currentTemporaryPromo.description}
           image={backgroundImage}
-        />
+        /> */}
       </Slider>
     </div>
   );

@@ -4,8 +4,8 @@ import detailingImage from "../../../assets/images/AdobeStock_539555302.jpeg";
 import { MOBILE_INTERIOR_DETAILING_BOOKING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { interiorDetailingServices } from "../../../utils/services";
-import Addons from "../../Addons";
-import Card from "../../Card";
+import Addons from "../../products/Addons";
+import Card from "../../products/Card";
 import Booking from "../../Booking";
 
 const AutoDetailing = () => {
@@ -63,7 +63,9 @@ const AutoDetailing = () => {
             duration={item.duration}
             link={MOBILE_INTERIOR_DETAILING_BOOKING_PATH}
             button={"Get Started"}
-            border={"border"}
+            background={item.background}
+            bestValue={item.bestValue}
+
           />
         ))}
         <Outlet />

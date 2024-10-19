@@ -15,7 +15,7 @@ import {
   deepCleaning,
   quickWash,
   quickClean,
-} from "./newDetailingPackages";
+} from "./detailingPackages";
 import {
   exteriorDetailingService,
   interiorDetailingService,

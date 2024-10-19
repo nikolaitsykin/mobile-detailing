@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "./Card";
-import Button from "./UI/Button";
-import Menu from "./UI/Menu";
+import Button from "../UI/Button";
+import Menu from "../UI/Menu";
 const Package = ({ packageType }) => {
   return (
     <div className="w-full text-black mx-auto border border-gray">

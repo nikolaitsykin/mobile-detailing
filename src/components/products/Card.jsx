@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Button from "./UI/Button";
-import Menu from "./UI/Menu";
 import { HashLink } from "react-router-hash-link";
+import Button from "../UI/Button";
+import Menu from "../UI/Menu";
 
 const Card = ({
   type,
@@ -22,16 +21,14 @@ const Card = ({
     <div
       className={`mb-10 py-5 w-full mx-auto text-black border border-gray rounded-sm ${background}`}
     >
+      <div className="flex items-center justify-center">
+        <p className="text-lg font-medium text-blue animate-pulse">
+          {bestValue}
+        </p>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-start w-full">
         <div>
-          <div
-            className={`flex flex-col items-center justify-end ${
-              bestValue && "min-h-28"
-            }`}
-          >
-            <p className="text-lg font-medium text-blue animate-pulse">
-              {bestValue}
-            </p>
+          <div className="flex flex-col items-center justify-end">
             {title && <h3 className=" text-center py-1">{title}</h3>}
             {type && <h6 className="max-w-xl text-center pb-3">{type}</h6>}
           </div>
@@ -53,7 +50,7 @@ const Card = ({
               />
             )}
             {description && (
-              <div className="flex flex-col max-w-xl w-full px-4 pb-5 text-sm whitespace-pre-wrap">
+              <div className="flex flex-col max-w-xl w-full px-4 sm:pb-5 text-sm whitespace-pre-wrap">
                 <p className="">{description}</p>
               </div>
             )}
@@ -62,6 +59,8 @@ const Card = ({
         <div>
           {services && (
             <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
+              <div className="hidden sm:block sm:h-[75px]"></div>
+
               <ul className="h-full">
                 {services.map((service, index) => (
                   <li
@@ -80,7 +79,9 @@ const Card = ({
             </div>
           )}
           {duration && (
-            <div className="text-center text-sm mt-2 p-4">{duration}</div>
+            <div className="text-center sm:text-start text-sm mt-2 p-4">
+              {duration}
+            </div>
           )}
         </div>
       </div>

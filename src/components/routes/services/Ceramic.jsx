@@ -4,7 +4,7 @@ import {
   basicCeramicCoating,
   primeCeramicCoating
 } from "../../../utils/services";
-import Card from "../../Card";
+import Card from "../../products/Card";
 
 const Ceramic = () => {
   return (
