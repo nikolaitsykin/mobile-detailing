@@ -18,7 +18,7 @@ const Addon = ({ service, title, image, description, price, duration }) => {
         )}
         {description && (
           <div className=" max-w-xl w-full p-4 text-sm whitespace-pre-wrap">
-           {description}
+            {description}
           </div>
         )}
       </div>
