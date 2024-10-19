@@ -50,7 +50,7 @@ export const interiorDetailingService = {
   link: MOBILE_INTERIOR_DETAILING_PATH,
 };
 export const fullDetailingService = {
-  title: "Mobile Complete Detailing",
+  title: "Mobile In & Out Detailing",
   description:
     "Our full detailing packages include a thorough hand wash, decontamination, deep cleaning, vacuuming, and upholstery care, leaving your exterior and interior both shining, and comfortable.",
   image: primeExteriorWashImage,

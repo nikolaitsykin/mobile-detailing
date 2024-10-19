@@ -39,9 +39,7 @@ const ServiceItem = ({
           </div>
         )}
         <div
-          className={`grid grid-cols-1 ${
-            image ? "content-start h-full" : ""
-          } items-center w-full max-w-xl`}
+          className={`flex flex-col justify-start items-center w-full `}
         >
           {image && (
             <img

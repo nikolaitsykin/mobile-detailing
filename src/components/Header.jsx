@@ -2,7 +2,7 @@ import React from "react";
 import { FaPhone } from "react-icons/fa6";
 import { TbMessageCircleUser } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/spotless_logo_no_slogan.png";
+import logo from "../assets/images/spotless_logo_300.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 import {
   BOOKING_PAGE_PATH,
