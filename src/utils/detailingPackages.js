@@ -196,7 +196,7 @@ export const quickDetail = {
   type: "Full Detail Service",
   // image: fullDetailExteriorWashImage,
   services: quickDetailServices,
-  price: ["$140", "$160", "$180"],
+  price: ["$130", "$150", "$180"],
   carsSize: carTypes,
   link: BOOKING_PATH,
   description:
@@ -210,7 +210,7 @@ export const deepCleaning = {
   type: "Full Detail Service",
   // image: fullDetailExteriorWashImage,
   services: deepCleaningServices,
-  price: ["$200", "$220", "$240"],
+  price: ["$200", "$220", "$250"],
   carsSize: carTypes,
   link: BOOKING_PATH,
   description:
@@ -287,7 +287,7 @@ export const quickClean = {
     "We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.\n\n",
   price: ["$80", "$100", "$120"],
   carsSize: carTypes,
-  duration: "Duration: Up to 2 hours depending on vehicle size and condition.",
+  duration: "Duration: Up to 1.5 hours depending on vehicle size and condition.",
 };
 
 export const wipeAndClean = {
