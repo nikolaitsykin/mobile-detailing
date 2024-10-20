@@ -39,9 +39,9 @@ export const footerLinksActual = [
 export const servicesLinks = ["Services", "Booking", "Faqs", "About"];
 export const servicesLinksActual = ["services", "booking", "faqs", "about"];
 
-export const businessAddress = "Apex, NC 27529";
+export const businessAddress = "Apex, NC 27502";
 export const businessHours = ["MON-SUN 9-7PM"];
 
 export const businessName = "Spotless";
-export const fullBusinessName = "Spotless Mobile Detailing";
+export const fullBusinessName = "Spotless Auto Detailing";
 

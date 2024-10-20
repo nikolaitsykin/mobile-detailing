@@ -34,8 +34,9 @@ const Booking = () => {
         <h3 className="text-center p-3">What to Expect</h3>
         <ul>
           <li>
-            ✔ Book your appointment online by clicking the "Book Online" button or contact us by clicking the "Request
-            a Quote" button or give us a call at{" "}
+            ✔ Book your appointment online by clicking the "Book Online" button
+            or contact us by clicking the "Request a Quote" button or give us a
+            call at{" "}
             <a href={CALL_NUMBER} className="underline text-blue">
               (919)&nbsp;906&#8209;0099
             </a>
@@ -49,6 +50,7 @@ const Booking = () => {
       <div>
         <img src={carSpacingNeeded} alt="Space required for service" />
       </div>
+      <script src="https://square.site/appointments/buyer/widget/t25pubegvfjcw1/LDK47FK18Z9GH.js"></script>
     </section>
   );
 };

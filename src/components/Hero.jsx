@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-36">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Spotless Mobile Detailing
+            Spotless Auto Detailing
           </h1>
           <p className="animate-slidein700 text-center opacity-0 text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Mobile Car Detailing in Raleigh & Surrounding Areas.
@@ -46,7 +46,7 @@ const Hero = () => {
         <article>
           <h2>Detailing to Your Doorstep</h2>
           <p>
-            At Spotless Mobile Detailing, we offer a range of high-quality
+            At Spotless Auto Detailing, we offer a range of high-quality
             mobile detailing services that bring the car care to your doorstep.
             From exterior detailing like Quick Wash , Wash & Wax and Shine &
             Shield to deep interior cleaning such as ,Quick Clean, Wipe & Clean

@@ -33,7 +33,7 @@ const Header = () => {
               />
             </div>
           </Link>
-          <h1 className="text-[1px] p-0">Spotless Mobile Detailing</h1>
+          <h1 className="text-[1px] p-0">Spotless Auto Detailing</h1>
           <h2 className="text-[1px] p-0">
             Mobile Car Detailing in Raleigh & Surrounding Areas
           </h2>
