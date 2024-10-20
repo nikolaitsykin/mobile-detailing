@@ -54,7 +54,6 @@ const AutoDetailing = () => {
         <h2 id="exterior-detailing" className="">
           Exterior Detailing Services
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {exteriorDetailingServices.map((item, index) => (
             <Card
               key={index}
@@ -71,7 +70,6 @@ const AutoDetailing = () => {
               bestValue={item.bestValue}
             />
           ))}
-        </div>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
         <h2 id="interior-detailing" className="">
