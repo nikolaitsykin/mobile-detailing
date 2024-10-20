@@ -200,7 +200,7 @@ export const quickDetail = {
   carsSize: carTypes,
   link: BOOKING_PATH,
   description:
-    "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve, and clean the door jambs. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look. Both Quick Clean & Quick Wash services included in full detailing package with up to $60 savings.",
+    "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve, and clean the door jambs. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look. Both Quick Clean & Quick Wash services included in full detailing package with up to $40 savings.",
   duration: "Duration: Up to 2.5 hours depending on vehicle size and condition.",
   background: " ",
 };
@@ -214,7 +214,7 @@ export const deepCleaning = {
   carsSize: carTypes,
   link: BOOKING_PATH,
   description:
-    "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we clean the door jambs and ensure the tires and wheels are spotless. We follow with a clay bar treatment to decontaminate the paint and apply a premium spray wax for lasting protection. Finally, the windows are treated with a water repellent for clarity. We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. Using steam, we sanitize the fabric or leather seats and touch points to eliminate germs and bacteria. The surfaces, plastics, and cup holders get a deep clean, and we finish with spotless glass and mirrors. Both Wash & Wax and Wipe & Clean services included in full detailing package with up to $60 savings.",
+    "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we clean the door jambs and ensure the tires and wheels are spotless. We follow with a clay bar treatment to decontaminate the paint and apply a premium spray wax for lasting protection. Finally, the windows are treated with a water repellent for clarity. We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. Using steam, we sanitize the fabric or leather seats and touch points to eliminate germs and bacteria. The surfaces, plastics, and cup holders get a deep clean, and we finish with spotless glass and mirrors. Both Wash & Wax and Wipe & Clean services included in full detailing package with up to $70 savings.",
   duration: "Duration: Up to 4 hours depending on vehicle size and condition.",
   background: "gray",
   bestValue: "Most Popular",
