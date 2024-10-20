@@ -59,16 +59,21 @@ export const fullDetailingService = {
 
 export const quickDetailServices = [
   "✔ Vehicle Hand Washed & Dried",
+  "✔ Door Jambs Cleaned",
+  "✔ Gas Cap and Valve Cleaned",
   "✔ Tires & Wheels Cleaned",
   "✔ Tire Shine Applied",
-  "✔ Windows Cleaned and Protected",
-  "✔ Interior Vacuumed",
-  "✔ Door Panels & Jambs Wiped",
-  "✔ Surfaces & Plastics Wiped",
+  "✔ Windows Cleaned",
+  "✔ Interior & Floor Mats Vacuumed",
+  "✔ Leather Seats Wiped",
+  "✔ Door Panels & Jambs Cleaned",
+  "✔ Surfaces & Plastics Cleaned",
+  "✔ Vents, Cracks & Crevices Cleaned",
+  "✔ Cup Holders Cleaned",
   "✔ Glasses & Mirrors Cleaned",
 ];
 
-export const completeDetailServices = [
+export const deepCleaningServices = [
   "✔ Vehicle Hand Washed & Dried",
   "✔ Tires & Wheels Cleaned",
   "✔ Tire Shine Applied",
@@ -196,7 +201,7 @@ export const quickDetail = {
   link: BOOKING_PATH,
   description:
     "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve, and clean the door jambs. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look. Both Quick Clean & Quick Wash services included in full detailing package with up to $60 savings.",
-  duration: "Duration: Up to 2 hours depending on vehicle size and condition.",
+  duration: "Duration: Up to 2.5 hours depending on vehicle size and condition.",
   background: " ",
 };
 
@@ -204,7 +209,7 @@ export const deepCleaning = {
   title: "Deep Cleaning",
   type: "Full Detail Service",
   // image: fullDetailExteriorWashImage,
-  services: completeDetailServices,
+  services: deepCleaningServices,
   price: ["$200", "$220", "$240"],
   carsSize: carTypes,
   link: BOOKING_PATH,
@@ -280,7 +285,7 @@ export const quickClean = {
   services: quickCleanInteriorServices,
   description:
     "We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.\n\n",
-  price: ["$100", "$120", "$140"],
+  price: ["$80", "$100", "$120"],
   carsSize: carTypes,
   duration: "Duration: Up to 2 hours depending on vehicle size and condition.",
 };
