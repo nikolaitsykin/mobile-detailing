@@ -1,10 +1,9 @@
 import React from "react";
-import Services from "./Services";
-import { fullBusinessName } from "../utils/data";
 import { Link } from "react-router-dom";
-import Button from "./UI/Button";
-import { BOOKING_PAGE_PATH } from "../utils/constants";
 import detailingVideo from "../assets/videos/6158070-hd_1920_1080_30fps.mp4";
+import { BOOKING_PAGE_PATH } from "../utils/constants";
+import Services from "./Services";
+import Button from "./UI/Button";
 
 const Hero = () => {
   return (
