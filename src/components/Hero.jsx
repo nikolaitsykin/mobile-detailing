@@ -47,8 +47,8 @@ const Hero = () => {
           <p>
             At Spotless Auto Detailing, we offer a range of high-quality
             mobile detailing services that bring the car care to your doorstep.
-            From exterior detailing like Quick Wash , Wash & Wax and Shine &
-            Shield to deep interior cleaning such as ,Quick Clean, Wipe & Clean
+            From exterior detailing like Quick Wash, Wash & Wax and Shine &
+            Shield to deep interior cleaning such as, Quick Clean, Wipe & Clean
             and Steam & Guard, we’ve got you covered. We also specialize in
             paint correction and ceramic coating for long-lasting protection and
             shine. Our fully equipped mobile detailing unit has everything we

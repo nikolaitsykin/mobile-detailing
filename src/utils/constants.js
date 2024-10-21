@@ -19,15 +19,22 @@ export const GALLERY_PATH = "/gallery";
 export const REVIEWS_PATH = "/reviews";
 export const AUTO_DETAILING_PATH = "/auto-detailing";
 export const MOBILE_INTERIOR_DETAILING_PATH = "/mobile-interior-detailing";
-export const MOBILE_INTERIOR_DETAILING_BOOKING_PATH = "/mobile-interior-detailing#booking";
-
+export const MOBILE_INTERIOR_DETAILING_BOOKING_PATH =
+  "/mobile-interior-detailing#booking";
 export const MOBILE_EXTERIOR_DETAILING_PATH = "/mobile-exterior-detailing";
-export const MOBILE_EXTERIOR_DETAILING_BOOKING_PATH = "/mobile-exterior-detailing#booking";
-
+export const MOBILE_EXTERIOR_DETAILING_BOOKING_PATH =
+  "/mobile-exterior-detailing#booking";
 export const MOBILE_FULL_DETAILING_PATH = "/mobile-full-detailing";
-export const MOBILE_FULL_DETAILING_BOOKING_PATH = "/mobile-full-detailing#booking";
+export const MOBILE_FULL_DETAILING_BOOKING_PATH =
+  "/mobile-full-detailing#booking";
 
-
+export const APEX_PATH = "/auto-detailing-apex";
+export const RALEIGH_PATH = "/auto-detailing-raleigh";
+export const CARY_PATH = "/auto-detailing-cary";
+export const HOLLY_SPRINGS_PATH = "/auto-detailing-holly-springs";
+export const MORRISVILLE_PATH = "/auto-detailing-morrisville";
+export const KNIGHTDALE_PATH = "/auto-detailing-knightdale";
+export const GARNER_PATH = "/auto-detailing-garner";
 
 export const CALL_NUMBER = "tel:9199060099";
 export const TEXT_NUMBER = "sms:9199060099";
