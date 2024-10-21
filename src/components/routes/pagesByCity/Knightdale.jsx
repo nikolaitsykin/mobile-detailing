@@ -5,7 +5,7 @@ import Hero from "../../Hero";
 import Promos from "../../Promos";
 import BookButtons from "../../UI/BookButtons";
 import Button from "../../UI/Button";
-import { ABOUT_PATH } from "../../../utils/constants";
+import { ABOUT_PATH, BOOKING_PAGE_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
 
 const RootKnightdale = () => {
@@ -13,48 +13,20 @@ const RootKnightdale = () => {
 
   return (
     <main className="w-full bg-white">
-      <div className="w-full bg-black">
-        <video
-          className="opacity-50 object-cover min-h-[450px] md:h-[550px] w-full mx-auto"
-          autoPlay
-          loop
-          playsInline
-          muted
-          type="video/mp4"
-          src={detailingVideo}
-        />
-      </div>
-      <div className="w-full object-cover h-[450px] flex justify-center items-center absolute top-28 md:top-40">
-        <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Knightdale Professional Auto Detailing
-          </h1>
-          <p className="animate-slidein700 text-center opacity-0 text-xs md:text-base py-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Whether you want to protect your car or give it a clean look, we
-            deliver top-quality service. Trust us to enhance and safeguard your
-            vehicle with the care it deserves.
-          </p>
-          <div className="animate-slidein700 opacity-0">
-            <BookButtons color="primary" />
-          </div>
-        </div>
-      </div>
       <div className="z-100">
         <div>
-          <Hero />
+          <Hero city={currentCity}/>
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto bg-white">
           <Promos />
         </div>
-        <section className="w-[90%] md:w-[80%] mx-auto">
+        <section className="w-[90%] md:w-[80%] mx-auto mt-5">
           <article className="text-black w-full">
-            <h2 id="about-us" className="">
-              About Us
-            </h2>
+            <h2 id="about-us">About Us</h2>
             <div className="">
               <h4 className="">Who we are?</h4>
               <p>
-              {fullBusinessName} serves Knightdale and surrounding areas. We
+                {fullBusinessName} serves {currentCity} and surrounding areas. We
                 specialize in providing eco-friendly detailing solutions that
                 keep your vehicle looking its best while caring for the
                 environment.
@@ -84,54 +56,46 @@ const RootKnightdale = () => {
             <h2 id="what-is-detailing" className="">
               What is Detailing?
             </h2>
-            <h4 className="">Detailing is more than a ‘wash and polish’.</h4>
-            <p>
-              Detailing goes beyond the usual wash. It's about using advanced
-              techniques and safe, eco-friendly products to clean, restore, and
-              protect your vehicle inside and out.
-            </p>
-            <h4 className="">Our approach</h4>
-            <p>
-              At {businessName}, we're committed to partner with brands which
-              innovative products ensure high performance while protecting the
-              environment. Their line of eco-friendly, pH-balanced chemicals
-              guarantees that your vehicle receives the care it deserves without
-              harmful effects on our planet.
-            </p>
+            <div className="pt-5">
+              <h4 className="">Detailing is more than a ‘wash and polish’</h4>
+              <p>
+                Detailing goes beyond the usual wash. It's about using advanced
+                techniques and safe, eco-friendly products to clean, restore,
+                and protect your vehicle inside and out.
+              </p>
+            </div>
+            <div className="pt-5">
+              <h4 className="">Our approach</h4>
+              <p>
+                At {businessName}, we're committed to partner with brands which
+                innovative products ensure high performance while protecting the
+                environment. Their line of eco-friendly, pH-balanced chemicals
+                guarantees that your vehicle receives the care it deserves
+                without harmful effects on our planet.
+              </p>
+            </div>
             <p className="text-black text-lg md:text-xl text-center my-10 font-medium">
               Choose {businessName} for results that protect both your car and
               the environment, powered by premium, eco-friendly products.
             </p>
             <div className="pb-10">
-              <BookButtons color="secondary" />
+              <div className="min-w-48">
+                <Link to={BOOKING_PAGE_PATH}>
+                  <Button children={"BOOK NOW"} color={"secondary"} />
+                </Link>
+              </div>
             </div>
             <p className="text-white text-[1px]">
-            "Ceramic Coating Raleigh" / "Ceramic Coating {currentCity} "/
-              "Ceramic Coating Cary" / "Ceramic Coating Holly Springs" /
-              "Ceramic Coating Garner" / "Paint Protection Film Raleigh" / "PPF
-              Raleigh" / "PPF {currentCity}" / "PPF Cary" / "PPF Holly Springs"
-              / "PPF Garner" / "Ceramic Coating" / "LLumar" / "STEK" /
-              "GTechniq" / "Majestic Solutions" / "Detailing" / {businessName} /
-              "Mobile Detailing Raleigh" / "Mobile Detailing {currentCity}" /
-              "Mobile Detailing Cary" / "Mobile Detailing Holly Springs" /
-              "Mobile Detailing Garner" / "Auto Detailing" / "Auto Detailing
-              Raleigh" / "Auto Detailing {currentCity}" / "Auto Detailing{" "}
-              {currentCity}" / "Mobile detailing" / "Auto detailing" / "Car
-              detailing services {currentCity}" / "Mobile car wash {currentCity}
-              " / "Car cleaning {currentCity}" / "Full car detailing" /
-              "Exterior detailing" / "Interior detailing" / "Paint correction" /
-              "Car wax and polish" / "Car shampoo" / " Detailing packages" /
-              "Mobile detailing near me" / "Eco-friendly car detailing" /
-              "Eco-friendly car detailing {currentCity}" / "Professional
-              detailing service {currentCity}" / "Mobile detailing {currentCity}
-              " / "Detailing for busy professionals {currentCity}" /" "Luxury
-              car detailing {currentCity}" / "Interior vacuuming {currentCity}"
-              / "Stain removal detailing {currentCity}" / "Car upholstery
-              cleaning {currentCity}" / "Headlight restoration {currentCity}" /
-              "Scratch removal {currentCity}" / "Hand wash detailing
-              {currentCity}" / "Mobile detailing business near me" / "Mobile
-              Detailing at home" / "Mobile detailing prices {currentCity}" /
-              "Mobile Detailing at home {currentCity}"
+              Ceramic Coating Raleigh / Ceramic Coating Apex / Ceramic Coating
+              Cary/ Ceramic Coating Holly Springs/ Ceramic Coating Garner /
+              Paint Protection Film Raleigh / PPF Raleigh / PPF Apex / PPF Cary
+              / PPF Holly Springs / PPF Garner / Modesta / Ceramic Coating /
+              LLumar / STEK / GTechniq / Majestic Solutions / Detailing /
+              {businessName} / Mobile Detailing Raleigh / Mobile Detailing Apex
+              / Mobile Detailing Cary / Mobile Detailing Holly Springs / Mobile
+              Detailing Garner / / Auto Detailing / Auto Detailing Raleigh /
+              Auto Detailing Apex / Auto Detailing Cary / Auto Detailing /
+              mobile detailing near me / apex mobile detailing /
             </p>
           </article>
         </section>

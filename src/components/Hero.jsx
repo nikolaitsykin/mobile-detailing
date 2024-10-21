@@ -5,7 +5,7 @@ import { BOOKING_PAGE_PATH } from "../utils/constants";
 import Services from "./Services";
 import Button from "./UI/Button";
 
-const Hero = () => {
+const Hero = ({city}) => {
   return (
     <div className="w-full bg-white ">
       <div className="w-full bg-black">
@@ -22,10 +22,10 @@ const Hero = () => {
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-36">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Spotless Auto Detailing
+            {city} Spotless Auto Detailing
           </h1>
           <p className="animate-slidein700 text-center opacity-0 text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Mobile Car Detailing in Raleigh & Surrounding Areas.
+            Mobile Car Detailing in {city} & Surrounding Areas.
           </p>
           <p className="animate-slidein700 text-center opacity-0 text-xs md:text-lg pb-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Whether you want to protect your car or give it a clean look, we
@@ -54,7 +54,7 @@ const Hero = () => {
             shine. Our fully equipped mobile detailing unit has everything we
             need to provide top-notch care for your vehicle. We do require
             access to a power and water supply, but once that’s arranged, we’ll
-            take care of the rest. We proudly serve Raleigh and the surrounding
+            take care of the rest. We proudly serve {city} and the surrounding
             areas. While there may be some location-based limitations or
             criteria, we always do our best to accommodate your needs and fit
             you into our schedule.
