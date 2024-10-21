@@ -55,19 +55,19 @@ const AutoDetailing = () => {
         </h2>
         {exteriorDetailingServices.map((item, index) => (
           <Card
-            key={index}
-            title={item.title}
-            type={item.type}
-            service={item}
-            image={item.image}
-            services={item.services}
-            description={item.description}
-            duration={item.duration}
-            link={MOBILE_EXTERIOR_DETAILING_BOOKING_PATH}
-            button={"Get Started"}
-            background={item.background}
-            bestValue={item.bestValue}
-          />
+          key={index}
+          title={item.title}
+          type={item.type}
+          service={item}
+          image={item.image}
+          description={item.description}
+          services={item.services}
+          duration={item.duration}
+          link={MOBILE_EXTERIOR_DETAILING_BOOKING_PATH}
+          button={"Get Started"}
+          background={item.background}
+          bestValue={item.bestValue}
+        />
         ))}
         <Outlet />
       </section>

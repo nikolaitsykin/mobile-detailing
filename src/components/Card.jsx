@@ -13,16 +13,15 @@ const Card = ({
   price,
   button,
   link,
-  background,
   duration,
   bestValue,
 }) => {
   return (
     <div
-      className={`mb-10 py-5 w-full mx-auto text-black border border-gray rounded-sm ${background}`}
+      className={`mb-10 pb-5 w-full mx-auto text-black border border-gray rounded-md`}
     >
-      <div className="flex items-center justify-center">
-        <p className="text-lg font-medium text-blue animate-pulse">
+      <div className={`flex items-center justify-center rounded-t-md ${bestValue ? "bg-black py-5 mb-5" : "pt-5"}`}>
+        <p className="text-lg font-medium text-white animate-pulse ">
           {bestValue}
         </p>
       </div>
