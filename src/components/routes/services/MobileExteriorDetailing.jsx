@@ -2,13 +2,10 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import detailingImage from "../../../assets/images/AdobeStock_397247724.jpeg";
 import {
-  BOOKING_PATH,
   MOBILE_EXTERIOR_DETAILING_BOOKING_PATH
 } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
-import {
-  exteriorDetailingServices
-} from "../../../utils/services";
+import { exteriorDetailingServices } from "../../../utils/services";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
 import Card from "../../Card";
@@ -72,6 +69,7 @@ const AutoDetailing = () => {
             bestValue={item.bestValue}
           />
         ))}
+        <Outlet />
       </section>
       <div id="booking" className="scroll-mb-[750px]"></div>
       <Booking />
