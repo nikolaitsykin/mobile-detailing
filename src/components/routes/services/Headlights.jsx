@@ -42,7 +42,7 @@ const Headlights = () => {
         </article>
       </div>
       <section className="w-[90%] mx-auto">
-        <h2 className="text-black text-2xl text-center p-5 font-syne font-bold">
+        <h2 className="text-black text-2xl text-center p-5">
           Package Options
         </h2>
         <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-2">

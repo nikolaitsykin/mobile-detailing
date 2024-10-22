@@ -2,13 +2,32 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 // import { routes } from "./components/routes/routes";
-import "./index.css";
 import { createBrowserRouter } from "react-router-dom";
+import App from "./components/App";
+import ErrorPage from "./components/error-page";
+import AboutPage from "./components/routes/navigation/AboutPage";
+import BookingPage from "./components/routes/navigation/BookingPage";
+import ContactPage from "./components/routes/navigation/ContactPage";
+import FAQs from "./components/routes/navigation/FAQsPage";
+import ServicesPage from "./components/routes/navigation/ServicesPage";
+import RootApex from "./components/routes/pagesByCity/Apex";
+import RootCary from "./components/routes/pagesByCity/Cary";
+import RootGarner from "./components/routes/pagesByCity/Garner";
+import RootHollySprings from "./components/routes/pagesByCity/HollySprings";
+import RootKnightdale from "./components/routes/pagesByCity/Knightdale";
+import RootMorrisville from "./components/routes/pagesByCity/Morrisville";
+import RootRaleigh from "./components/routes/pagesByCity/Raleigh";
+import Root from "./components/routes/Root";
+import MobileExteriorDetailing from "./components/routes/services/MobileExteriorDetailing";
+import MobileFullDetailing from "./components/routes/services/MobileFullDetailing";
+import MobileInteriorDetailing from "./components/routes/services/MobileInteriorDetailing";
+import "./index.css";
 import {
   ABOUT_PATH,
   APEX_PATH,
   BOOKING_PAGE_PATH,
   CARY_PATH,
+  CONTACT_PATH,
   FAQS_PATH,
   GARNER_PATH,
   HOLLY_SPRINGS_PATH,
@@ -19,25 +38,8 @@ import {
   MOBILE_INTERIOR_DETAILING_PATH,
   MORRISVILLE_PATH,
   RALEIGH_PATH,
-  SERVICES_PATH,
+  SERVICES_PATH
 } from "./utils/constants";
-import App from "./components/App";
-import ErrorPage from "./components/error-page";
-import Root from "./components/routes/Root";
-import AboutPage from "./components/routes/navigation/AboutPage";
-import BookingPage from "./components/routes/navigation/BookingPage";
-import FAQs from "./components/routes/navigation/FAQsPage";
-import ServicesPage from "./components/routes/navigation/ServicesPage";
-import RootApex from "./components/routes/pagesByCity/Apex";
-import RootCary from "./components/routes/pagesByCity/Cary";
-import RootGarner from "./components/routes/pagesByCity/Garner";
-import RootHollySprings from "./components/routes/pagesByCity/HollySprings";
-import RootKnightdale from "./components/routes/pagesByCity/Knightdale";
-import RootMorrisville from "./components/routes/pagesByCity/Morrisville";
-import RootRaleigh from "./components/routes/pagesByCity/Raleigh";
-import MobileExteriorDetailing from "./components/routes/services/MobileExteriorDetailing";
-import MobileFullDetailing from "./components/routes/services/MobileFullDetailing";
-import MobileInteriorDetailing from "./components/routes/services/MobileInteriorDetailing";
 
 const routes = createBrowserRouter([
   {
@@ -57,15 +59,16 @@ const routes = createBrowserRouter([
         path: BOOKING_PAGE_PATH,
         element: <BookingPage />,
       },
-
       {
         path: ABOUT_PATH,
-        name: "About",
         element: <AboutPage />,
       },
       {
+        path: CONTACT_PATH,
+        element: <ContactPage />,
+      },
+      {
         path: FAQS_PATH,
-        name: "FAQs",
         element: <FAQs />,
       },
       {

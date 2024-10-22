@@ -87,7 +87,7 @@ const AboutPage = () => {
             about your car's appearance and more time enjoying it.
           </p>
           <h2 className=" p-5 ">Ready to Experience a New Level of Care?</h2>
-          <p className=" text-base md:text-lg font-syne font-semibold">
+          <p className=" text-base md:text-lg">
             Book with {businessName} today, and let us bring the shine to
             you—all while doing our part for the environment!
           </p>

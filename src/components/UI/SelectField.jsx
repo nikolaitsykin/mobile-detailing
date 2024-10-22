@@ -5,7 +5,7 @@ const SelectField = (props) => {
   return (
     <div className="w-full py-1">
       <label
-        className="flex flex-col font-syne font-semibold text-md"
+        className="flex flex-col text-md font-medium"
         htmlFor={name}
       >
         {label}

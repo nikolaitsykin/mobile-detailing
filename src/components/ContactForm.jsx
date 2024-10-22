@@ -133,11 +133,11 @@ const ContactForm = () => {
   return (
     <div className="w-full  mx-auto">
       <form className="flex flex-col mx-auto md:w-full" onSubmit={handleSubmit}>
-        <h3 className="text-black text-2xl my-4 border-b border-gray font-syne font-semibold">
+        <h3 className="text-black text-2xl my-4 border-b border-gray ">
           Tell us about
         </h3>
         <div className="w-full flex flex-col">
-          <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
+          <h3 className="text-black text-lg my-4 border-b border-gray py-1">
             1. Your personal details
           </h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-2">
@@ -181,7 +181,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="w-full flex flex-col">
-          <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
+          <h3 className="text-black text-lg my-4 border-b border-gray py-1">
             2. Your vehicle details
           </h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -206,7 +206,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div>
-          <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
+          <h3 className="text-black text-lg my-4 border-b border-gray py-1">
             3. Select your preferred service
           </h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -236,7 +236,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="w-full flex flex-col">
-          <h3 className="text-black font-syne font-semibold text-lg my-4 border-b border-gray py-1">
+          <h3 className="text-black text-lg my-4 border-b border-gray py-1">
             4. Select date and time what will be best for you
           </h3>
           <p className="text-black text-base my-3">
