@@ -18,7 +18,7 @@ const Footer = () => {
       <section className="flex justify-evenly flex-col md:flex-row ">
         <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3">
           <div className="min-w-48 md:pr-5 items-start">
-            <div className="">
+            <div>
               <img className="h-12 object-contain" src={logo} alt="logo" />
             </div>
             <p className="pt-3 text-xs md:text-sm">

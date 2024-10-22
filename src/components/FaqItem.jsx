@@ -2,7 +2,7 @@ import React from "react";
 
 const FaqItem = ({ questions }) => {
   return (
-    <div className="">
+    <div>
       
       {questions.map((question, index) => (
         <div key={"div" + index} className="w-full  my-4">

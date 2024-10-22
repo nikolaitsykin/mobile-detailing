@@ -1,7 +1,9 @@
 import React from "react";
-import { IconContext } from "react-icons";
-import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { ReactComponent as Facebook } from "../../assets/icons/facebook.svg";
+import { ReactComponent as Instagram } from "../../assets/icons/instagram.svg";
+import { ReactComponent as Tiktok } from "../../assets/icons/tik-tok.svg";
+import { ReactComponent as Youtube } from "../../assets/icons/youtube.svg";
 import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
@@ -12,20 +14,18 @@ import {
 const SocialButtons = () => {
   return (
     <div className="w-32 xs:w-40 md:min-w-48 flex justify-start items-center gap-4">
-      <IconContext.Provider value={{ className: "social-icon" }}>
-        <Link to={FACEBOOK_URL} target="_blank">
-          <FaFacebook size="1em" />
-        </Link>
-        <Link to={INSTAGRAM_URL} target="_blank">
-          <FaInstagram size="1em" />
-        </Link>
-        <Link to={TIKTOK_URL} target="_blank">
-          <FaTiktok size="0.9em" />
-        </Link>
-        <Link to={YOUTUBE_URL} target="_blank">
-          <FaYoutube size="1.1em" />
-        </Link>
-      </IconContext.Provider>
+      <Link to={FACEBOOK_URL} target="_blank">
+        <Facebook />
+      </Link>
+      <Link to={INSTAGRAM_URL} target="_blank">
+        <Instagram />
+      </Link>
+      <Link to={TIKTOK_URL} target="_blank">
+        <Tiktok />
+      </Link>
+      <Link to={YOUTUBE_URL} target="_blank">
+        <Youtube />
+      </Link>
     </div>
   );
 };

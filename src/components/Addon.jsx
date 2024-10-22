@@ -24,7 +24,7 @@ const Addon = ({ service, title, image, description, price, duration }) => {
       </div>
       {price && (
         <div className="flex justify-center items-end w-full p-5">
-          <h4 className=""> {price}</h4>
+          <h4> {price}</h4>
         </div>
       )}
       {duration && (

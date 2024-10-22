@@ -20,7 +20,7 @@ const AutoDetailing = () => {
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+          <h1 className=" text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             Mobile Exterior & Interior Detailing
           </h1>
         </div>
@@ -28,7 +28,7 @@ const AutoDetailing = () => {
       <section>
         <article className=" text-start text-black">
           <h2 className="">Mobile Exterior & Interior Detailing</h2>
-          <p className="">
+          <p>
             Washing a car might seem simple, but achieving a flawless finish
             requires more than just a quick rinse. If you're looking for a fast,
             budget-friendly wash, {businessName} might not be the right fit. We

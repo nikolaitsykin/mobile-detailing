@@ -9,7 +9,7 @@ import BookButtons from "./UI/BookButtons";
 const Booking = () => {
   return (
     <section id="" className="w-[90%] md:w-[80%] mx-auto">
-      <h2 className="">Book your appointment today</h2>
+      <h2>Book your appointment today</h2>
       <article className="pb-3">
         <p className="py-1">
           {businessName} has been proudly serving our community, offering the

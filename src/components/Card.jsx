@@ -50,7 +50,7 @@ const Card = ({
             )}
             {description && (
               <div className="flex flex-col max-w-xl w-full px-4 sm:pb-5 text-sm whitespace-pre-wrap">
-                <p className="">{description}</p>
+                <p >{description}</p>
               </div>
             )}
           </div>

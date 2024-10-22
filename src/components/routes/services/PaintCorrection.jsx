@@ -21,12 +21,12 @@ const Polish = () => {
         <div className="w-[80%] z-10 absolute top-10 md:top-32 left-1/2 -translate-x-1/2 text-center">
           <h1
             id="auto-detailing"
-            className="text-white animate-slidein300 opacity-0 "
+            className="text-white"
           >
             PAINT CORRECTION
           </h1>
         </div>
-        <h2 className=" animate-slidein500 opacity-0">
+        <h2>
           Paint correction
         </h2>
         <article className="">

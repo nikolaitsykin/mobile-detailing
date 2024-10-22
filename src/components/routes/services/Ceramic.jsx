@@ -20,7 +20,7 @@ const Ceramic = () => {
         <div className="w-[80%] z-10 absolute top-10 md:top-32 left-1/2 -translate-x-1/2 text-center">
           <h1
             id="auto-detailing"
-            className="text-white animate-slidein300 opacity-0"
+            className="text-white"
           >
             Ceramic Coating
           </h1>

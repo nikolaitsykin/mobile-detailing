@@ -17,7 +17,7 @@ const FAQs = () => {
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-24">
         <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className="animate-slidein500 text-center opacity-0 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+          <h1 className=" text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             FAQs
           </h1>
         </div>

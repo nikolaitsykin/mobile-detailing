@@ -20,15 +20,15 @@ const Headlights = () => {
         <div className="w-full z-10 absolute top-10 md:top-32 left-1/2 -translate-x-1/2 text-center">
           <h1
             id="auto-detailing"
-            className="text-white animate-slidein300 opacity-0"
+            className="text-white"
           >
             Headlights Restoration
           </h1>
         </div>
-        <h2 className=" p-5 animate-slidein500 opacity-0">
+        <h2 className=" p-5">
           Auto Detailing
         </h2>
-        <article className="">
+        <article>
           Washing a car may seem simple, but achieving a flawless finish
           requires more than just a quick rinse. If you're looking for a fast,
           budget-friendly wash, we might not be the right fit. At Prime, we take
