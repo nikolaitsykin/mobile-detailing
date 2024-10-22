@@ -23,7 +23,7 @@ const Hero = ({ city }) => {
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-36">
         <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className="text-xs sm:text-sm text-center font-extralight">
+          <h1 className="text-xs sm:text-base text-center font-light font-poppins p-4">
             Top-Tier Service in {city}, NC
           </h1>
           <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
@@ -32,7 +32,7 @@ const Hero = ({ city }) => {
           <p className=" text-center text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Mobile Auto Detailing in {city} & Surrounding Areas.
           </p>
-          <p className=" text-center text-xs md:text-lg pb-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <p className="font-poppins font-light text-center text-xs md:text-lg pb-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Whether you want to protect your car or give it a clean look, we
             deliver top-quality service.
           </p>
