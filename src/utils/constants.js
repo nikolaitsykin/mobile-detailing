@@ -49,13 +49,13 @@ export const DEEP_CLEANING_BOOKING_PATH = "/deep-cleaning#booking";
 export const SPOTLESS_FINISH_PATH = "/spotless-finish";
 export const SPOTLESS_FINISH_BOOKING_PATH = "/spotless-finish#booking";
 
-export const APEX_PATH = "/auto-detailing-apex";
-export const RALEIGH_PATH = "/auto-detailing-raleigh";
-export const CARY_PATH = "/auto-detailing-cary";
-export const HOLLY_SPRINGS_PATH = "/auto-detailing-holly-springs";
-export const MORRISVILLE_PATH = "/auto-detailing-morrisville";
-export const KNIGHTDALE_PATH = "/auto-detailing-knightdale";
-export const GARNER_PATH = "/auto-detailing-garner";
+export const APEX_PATH = "/apex";
+export const RALEIGH_PATH = "/raleigh";
+export const CARY_PATH = "/cary";
+export const HOLLY_SPRINGS_PATH = "/holly-springs";
+export const MORRISVILLE_PATH = "/morrisville";
+export const KNIGHTDALE_PATH = "/knightdale";
+export const GARNER_PATH = "/garner";
 
 export const CALL_NUMBER = "tel:9199060099";
 export const TEXT_NUMBER = "sms:9199060099";

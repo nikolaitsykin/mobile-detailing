@@ -13,13 +13,13 @@ export const locations = [
 ];
 
 export const locationLinks = [
-  "auto-detailing-apex",
-  "auto-detailing-cary",
-  "auto-detailing-garner",
-  "auto-detailing-holly-springs",
-  "auto-detailing-knightdale",
-  "auto-detailing-morrisville",
-  "auto-detailing-raleigh",
+  "apex",
+  "cary",
+  "garner",
+  "holly-springs",
+  "knightdale",
+  "morrisville",
+  "raleigh",
 ];
 
 export const footerLinks = [

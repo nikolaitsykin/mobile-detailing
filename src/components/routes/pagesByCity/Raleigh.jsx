@@ -13,7 +13,7 @@ const RootRaleigh = () => {
     <main className="w-full bg-white">
       <div className="z-100">
         <div>
-          <Hero city={currentCity}/>
+        <Hero city={currentCity} location={currentCity} />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto bg-white">
           <Promos />

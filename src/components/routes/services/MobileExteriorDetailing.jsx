@@ -1,9 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import detailingImage from "../../../assets/images/AdobeStock_397247724.jpeg";
-import {
-  MOBILE_EXTERIOR_DETAILING_BOOKING_PATH
-} from "../../../utils/constants";
+import { MOBILE_EXTERIOR_DETAILING_BOOKING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { exteriorDetailingServices } from "../../../utils/services";
 import Addons from "../../Addons";
@@ -32,11 +30,10 @@ const AutoDetailing = () => {
           <h2 className="">Exterior Detailing</h2>
           <p className="">
             Washing a car might seem simple, but achieving a flawless finish
-            requires more than just a quick rinse. If you're looking for a fast,
-            budget-friendly wash, {businessName} might not be the right fit. We
-            take detailing to the next level, both inside and out. Our advanced
-            washing and drying techniques go beyond removing everyday dirt,
-            grime, bird droppings, and dust—while minimizing surface scratches.
+            requires more than just a quick rinse. We take detailing to the next
+            level, both inside and out. Our advanced washing and drying
+            techniques go beyond removing everyday dirt, grime, bird droppings,
+            and dust—while minimizing surface scratches.
             <br />
             <br />
             Inside, we use only safe, eco-friendly detergents, ensuring that
@@ -55,19 +52,19 @@ const AutoDetailing = () => {
         </h2>
         {exteriorDetailingServices.map((item, index) => (
           <Card
-          key={index}
-          title={item.title}
-          type={item.type}
-          service={item}
-          image={item.image}
-          description={item.description}
-          services={item.services}
-          duration={item.duration}
-          link={MOBILE_EXTERIOR_DETAILING_BOOKING_PATH}
-          button={"Get Started"}
-          background={item.background}
-          bestValue={item.bestValue}
-        />
+            key={index}
+            title={item.title}
+            type={item.type}
+            service={item}
+            image={item.image}
+            description={item.description}
+            services={item.services}
+            duration={item.duration}
+            link={MOBILE_EXTERIOR_DETAILING_BOOKING_PATH}
+            button={"Get Started"}
+            background={item.background}
+            bestValue={item.bestValue}
+          />
         ))}
         <Outlet />
       </section>

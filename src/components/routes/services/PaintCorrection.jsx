@@ -2,7 +2,7 @@ import React from "react";
 import carPolishImage from "../../../assets/images/AdobeStock_406854263.jpeg";
 import {
   oneStepPaintCorrection,
-  twoStepPaintCorrection
+  twoStepPaintCorrection,
 } from "../../../utils/services";
 import Card from "../../Card";
 import { businessName } from "../../../utils/data";
@@ -19,33 +19,24 @@ const Polish = () => {
       </div>
       <div className="w-[80%] mx-auto">
         <div className="w-[80%] z-10 absolute top-10 md:top-32 left-1/2 -translate-x-1/2 text-center">
-          <h1
-            id="auto-detailing"
-            className="text-white"
-          >
+          <h1 id="auto-detailing" className="text-white">
             PAINT CORRECTION
           </h1>
         </div>
-        <h2>
-          Paint correction
-        </h2>
+        <h2>Paint correction</h2>
         <article className="">
           Washing a car may seem simple, but achieving a flawless finish
-          requires more than just a quick rinse. If you're looking for a fast,
-          budget-friendly wash, we might not be the right fit. At {businessName}, we take
+          requires more than just a quick rinse. At {businessName}, we take
           detailing to the next level, both inside and out. Our service goes
           beyond removing everyday dirt, grime, bird droppings, and dust—we use
           advanced washing and drying techniques that significantly reduce
           surface scratches. We also meticulously clean and condition every
           interior surface, ensuring your vehicle looks and feels pristine
-          inside and out. Experience the difference, where every detail
-          counts.
+          inside and out. Experience the difference, where every detail counts.
         </article>
       </div>
       <section className="w-[80%] mx-auto">
-        <h2 className=" p-5 ">
-          Package Options
-        </h2>
+        <h2 className=" p-5 ">Package Options</h2>
         <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2">
           <Card
             title={oneStepPaintCorrection.title}

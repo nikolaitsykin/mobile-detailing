@@ -30,11 +30,10 @@ const AutoDetailing = () => {
           <h2 className="">Interior Detailing</h2>
           <p className="">
             Washing a car might seem simple, but achieving a flawless finish
-            requires more than just a quick rinse. If you're looking for a fast,
-            budget-friendly wash, {businessName} might not be the right fit. We
-            take detailing to the next level, both inside and out. Our advanced
-            washing and drying techniques go beyond removing everyday dirt,
-            grime, bird droppings, and dust—while minimizing surface scratches.
+            requires more than just a quick rinse. We take detailing to the next
+            level, both inside and out. Our advanced washing and drying
+            techniques go beyond removing everyday dirt, grime, bird droppings,
+            and dust—while minimizing surface scratches.
             <br />
             <br />
             Inside, we use only safe, eco-friendly detergents, ensuring that
@@ -65,7 +64,6 @@ const AutoDetailing = () => {
             button={"Get Started"}
             background={item.background}
             bestValue={item.bestValue}
-
           />
         ))}
         <Outlet />

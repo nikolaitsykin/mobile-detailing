@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import detailingVideo from "../../../assets/videos/6158070-hd_1920_1080_30fps.mp4";
-import Hero from "../../Hero";
-import Promos from "../../Promos";
-import BookButtons from "../../UI/BookButtons";
-import Button from "../../UI/Button";
 import { ABOUT_PATH, BOOKING_PAGE_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
+import Hero from "../../Hero";
+import Promos from "../../Promos";
+import Button from "../../UI/Button";
 
 const RootHollySprings = () => {
   const currentCity = "Holly Springs";
@@ -15,7 +13,7 @@ const RootHollySprings = () => {
     <main className="w-full bg-white">
       <div className="z-100">
         <div>
-          <Hero city={currentCity}/>
+        <Hero city={currentCity} location={currentCity} />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto bg-white">
           <Promos />

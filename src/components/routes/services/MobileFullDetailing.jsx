@@ -30,11 +30,10 @@ const AutoDetailing = () => {
           <h2 className="">Mobile Exterior & Interior Detailing</h2>
           <p>
             Washing a car might seem simple, but achieving a flawless finish
-            requires more than just a quick rinse. If you're looking for a fast,
-            budget-friendly wash, {businessName} might not be the right fit. We
-            take detailing to the next level, both inside and out. Our advanced
-            washing and drying techniques go beyond removing everyday dirt,
-            grime, bird droppings, and dust—while minimizing surface scratches.
+            requires more than just a quick rinse. We take detailing to the next
+            level, both inside and out. Our advanced washing and drying
+            techniques go beyond removing everyday dirt, grime, bird droppings,
+            and dust—while minimizing surface scratches.
             <br />
             <br />
             Inside, we use only safe, eco-friendly detergents, ensuring that
@@ -73,7 +72,10 @@ const AutoDetailing = () => {
         <h2 className="">Addons</h2>
         <Addons />
       </section>
-      <div id="booking" className="scroll-mb-[850px] sm:scroll-mb-[800px] md:scroll-mb-[750px]"></div>
+      <div
+        id="booking"
+        className="scroll-mb-[850px] sm:scroll-mb-[800px] md:scroll-mb-[750px]"
+      ></div>
       <Booking />
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article className=" w-full flex flex-col justify-center">

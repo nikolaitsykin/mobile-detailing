@@ -5,7 +5,8 @@ import { BOOKING_PAGE_PATH } from "../utils/constants";
 import Services from "./Services";
 import Button from "./UI/Button";
 
-const Hero = ({ city }) => {
+const Hero = ({ city, location }) => {
+
   return (
     <div className="w-full bg-white ">
       <div className="w-full bg-black">
@@ -18,7 +19,6 @@ const Hero = ({ city }) => {
           type="video/mp4"
           src={detailingVideo}
           preload="none"
-          controls
         />
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-36">
@@ -27,7 +27,7 @@ const Hero = ({ city }) => {
             Top-Tier Service in {city}, NC
           </h1>
           <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Spotless Auto Detailing
+            {location} Premier Auto Detailing
           </h1>
           <p className=" text-center text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Mobile Auto Detailing in {city} & Surrounding Areas.
