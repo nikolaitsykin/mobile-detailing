@@ -1,5 +1,5 @@
 import React from "react";
-import headlightImage from "../../../assets/images/headlights_restoration.png";
+import headlightImage from "../../../assets/images/headlights_restoration.avif";
 import Card from "../../Card";
 import {
   basicHeadlightRestoration,

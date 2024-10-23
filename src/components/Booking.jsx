@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import carSpacingNeeded from "../assets/images/car_spacing_spotless.png";
+import carSpacingNeeded from "../assets/images/car_spacing_spotless.avif";
 import { CALL_NUMBER } from "../utils/constants";
 import { businessName } from "../utils/data";
 import { whatToExpect } from "../utils/sustainability";

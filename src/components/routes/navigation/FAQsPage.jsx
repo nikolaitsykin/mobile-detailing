@@ -1,6 +1,6 @@
 import React from "react";
 import { autoDetailingQuestions, generalQuestions } from "../../../utils/faq";
-import image from "../../../assets/images/AdobeStock_399584907.jpeg";
+import image from "../../../assets/images/AdobeStock_399584907.avif";
 import FaqItem from "../../FaqItem";
 import { Link } from "react-router-dom";
 import { BOOKING_URL, CALL_NUMBER, CONTACT_PATH } from "../../../utils/constants";

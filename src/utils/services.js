@@ -1,10 +1,10 @@
-import paintCorrectionServiceImage from "../assets/images/AdobeStock_358030596.jpeg";
-import ceramicCoatingServiceImage from "../assets/images/AdobeStock_359545366.jpeg";
-import twoStepPaintCorrectionImage from "../assets/images/AdobeStock_378443659.jpeg";
-import primeHeadlightRestorationImage from "../assets/images/AdobeStock_397247724.jpeg";
-import ppfServiceImage from "../assets/images/AdobeStock_428622212.jpeg";
-import primeCeramicCoatingImage from "../assets/images/AdobeStock_799868847.jpeg";
-import headlightRestorationServiceImage from "../assets/images/AdobeStock_892817405.jpeg";
+import paintCorrectionServiceImage from "../assets/images/AdobeStock_358030596.avif";
+import ceramicCoatingServiceImage from "../assets/images/AdobeStock_359545366.avif";
+import twoStepPaintCorrectionImage from "../assets/images/AdobeStock_378443659.avif";
+import primeHeadlightRestorationImage from "../assets/images/AdobeStock_397247724.avif";
+import ppfServiceImage from "../assets/images/AdobeStock_428622212.avif";
+import primeCeramicCoatingImage from "../assets/images/AdobeStock_799868847.avif";
+import headlightRestorationServiceImage from "../assets/images/AdobeStock_892817405.avif";
 import {
   shineAndShield,
   steamAndGuard,

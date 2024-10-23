@@ -1,5 +1,5 @@
 import React from "react";
-import ceramicImage from "../../../assets/images/ceramic_coating.png";
+import ceramicImage from "../../../assets/images/ceramic_coating.avif";
 import {
   basicCeramicCoating,
   primeCeramicCoating

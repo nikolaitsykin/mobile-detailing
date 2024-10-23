@@ -1,16 +1,16 @@
-import fullDetailInteriorWashImage from "../assets/images/AdobeStock_243325383.jpeg";
-import fullDetailExteriorWashImage from "../assets/images/pexels-tima-miroshnichenko-6872146.jpg";
+import fullDetailInteriorWashImage from "../assets/images/AdobeStock_243325383.avif";
+import fullDetailExteriorWashImage from "../assets/images/pexels-tima-miroshnichenko-6872146.avif";
 import { BOOKING_PATH } from "./constants";
-import interiorDetailingServiceImage from "../assets/images/AdobeStock_539555302.jpeg";
-import primeExteriorWashImage from "../assets/images/AdobeStock_273206890.jpeg";
-import exteriorDetailingServiceImage from "../assets/images/AdobeStock_397247724.jpeg";
-import regularInteriorWashImage from "../assets/images/AdobeStock_399584907.jpeg";
-import primeInteriorWashImage from "../assets/images/AdobeStock_539555302.jpeg";
-import ultimateExteriorWashImage from "../assets/images/AdobeStock_799868847.jpeg";
-import essentialExteriorWashImage from "../assets/images/car-front-foglight.jpg";
-import regularExteriorWashImage from "../assets/images/car-wash-detailing-station_1.jpg";
-import essentialInteriorWashImage from "../assets/images/man-polish-salon-car-garage_1157-36595.jpg";
-import ultimateInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1359149-5233285.jpg";
+import interiorDetailingServiceImage from "../assets/images/AdobeStock_539555302.avif";
+import primeExteriorWashImage from "../assets/images/AdobeStock_273206890.avif";
+import exteriorDetailingServiceImage from "../assets/images/AdobeStock_397247724.avif";
+import regularInteriorWashImage from "../assets/images/AdobeStock_399584907.avif";
+import primeInteriorWashImage from "../assets/images/AdobeStock_539555302.avif";
+import ultimateExteriorWashImage from "../assets/images/AdobeStock_799868847.avif";
+import essentialExteriorWashImage from "../assets/images/car-front-foglight.avif";
+import regularExteriorWashImage from "../assets/images/car-wash-detailing-station_1.avif";
+import essentialInteriorWashImage from "../assets/images/man-polish-salon-car-garage_1157-36595.avif";
+import ultimateInteriorWashImage from "../assets/images/pexels-khunkorn-laowisit-1359149-5233285.avif";
 import {
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,

@@ -4,10 +4,8 @@ module.exports = {
   content: ["./src/**/*.{html,jsx}"],
   theme: {
     fontFamily: {
-      krona: '"Krona One", serif',
       poppins: '"Poppins", sans-serif',
-      syne: '"Syne", sans-serif',
-    },
+      montserrat: '"Montserrat", sans-serif',},
     extend: {
       dropShadow: {
         "header": "0_1.2px_1.2px_rgba(0,0,0,0.8)",

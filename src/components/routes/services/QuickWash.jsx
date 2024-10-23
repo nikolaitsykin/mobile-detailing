@@ -1,5 +1,5 @@
 import React from 'react';
-import regularInteriorWashImage from "../assets/images/AdobeStock_399584907.jpeg";
+import regularInteriorWashImage from "../assets/images/AdobeStock_399584907.avif";
 
 
 const QuickWash = () => {

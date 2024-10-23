@@ -1,5 +1,5 @@
 import React from "react";
-import detailingImage from "../../../assets/images/man-polish-salon-car-garage_1157-36595.jpg";
+import detailingImage from "../../../assets/images/man-polish-salon-car-garage_1157-36595.avif";
 import Booking from "../../Booking";
 import Banner from "../../Banner";
 

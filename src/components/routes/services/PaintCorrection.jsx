@@ -1,5 +1,5 @@
 import React from "react";
-import carPolishImage from "../../../assets/images/AdobeStock_406854263.jpeg";
+import carPolishImage from "../../../assets/images/AdobeStock_406854263.avif";
 import {
   oneStepPaintCorrection,
   twoStepPaintCorrection,

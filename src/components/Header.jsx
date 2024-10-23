@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as MessageSms } from "../assets/icons/message-sms.svg";
 import { ReactComponent as PhoneCall } from "../assets/icons/phone-call.svg";
-import logo from "../assets/images/spotless_logo_300.png";
-import logoFull from "../assets/images/spotless_logo.png";
+import logoFull from "../assets/images/spotless_logo.avif";
 import useScrollDirection from "../hooks/useScrollDirection";
 
 import {
@@ -46,18 +45,18 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex justify-end items-center md:basis-2/7 min-w-48 mr-16">
           <div>
-            <a href={CALL_NUMBER} className="flex">
+            <Link to={CALL_NUMBER} className="flex">
               <div className="flex justify-center items-center mr-5">
                 <PhoneCall />
               </div>
-            </a>
+            </Link>
           </div>
           <div>
-            <a href={TEXT_NUMBER} className="flex">
+            <Link to={TEXT_NUMBER} className="flex">
               <div className="flex justify-center items-center mr-5">
                 <MessageSms/>
               </div>
-            </a>
+            </Link>
           </div>
 
           <div className="hidden lg:flex">

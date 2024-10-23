@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../../assets/images/man-washing-his-car-garage_1157-26072.jpg";
+import image from "../../../assets/images/man-washing-his-car-garage_1157-26072.avif";
 import BookButtons from "../../UI/BookButtons";
 import { businessName, fullBusinessName } from "../../../utils/data";
 import Banner from "../../Banner";

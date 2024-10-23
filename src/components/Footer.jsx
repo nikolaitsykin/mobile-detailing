@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/spotless_logo_with_slogan.png";
+import logo from "../assets/images/spotless_logo_with_slogan.avif";
 import {
   businessAddress,
   businessHours,

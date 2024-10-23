@@ -1,7 +1,7 @@
-import promoImageOne from "../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.jpg";
-import promoImageTwo from "../assets/images/photo-boards-KZNTEn2r6tw-unsplash.jpg";
-import promoImageThree from "../assets/images/meric-dagli-3KJpF86nR4c-unsplash.jpg";
-import promoImageFour from "../assets/images/josep-martins-nAsdr5DC2Ss-unsplash.jpg";
+import promoImageOne from "../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.avif";
+import promoImageTwo from "../assets/images/photo-boards-KZNTEn2r6tw-unsplash.avif";
+import promoImageThree from "../assets/images/meric-dagli-3KJpF86nR4c-unsplash.avif";
+import promoImageFour from "../assets/images/josep-martins-nAsdr5DC2Ss-unsplash.avif";
 
 export const permanentPromos = [
   {

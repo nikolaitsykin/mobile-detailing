@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import detailingImage from "../../../assets/images/AdobeStock_273206890.jpeg";
+import detailingImage from "../../../assets/images/AdobeStock_273206890.avif";
 import { MOBILE_FULL_DETAILING_BOOKING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { fullDetailingServices } from "../../../utils/services";
