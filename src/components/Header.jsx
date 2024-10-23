@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as MessageSms } from "../assets/icons/message-sms.svg";
 import { ReactComponent as PhoneCall } from "../assets/icons/phone-call.svg";
 import logo from "../assets/images/spotless_logo_300.png";
+import logoFull from "../assets/images/spotless_logo.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 
 import {
@@ -26,11 +27,12 @@ const Header = () => {
       <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/7">
           <Link to={HOME_PATH}>
-            <div className="ml-2 md:ml-10 lg:ml-10 w-28 lg:w-32">
+            <div className="ml-2 md:ml-10 lg:ml-10 w-20 lg:w-32">
               <img
                 className="h-full w-full object-contain"
-                src={logo}
+                src={logoFull}
                 alt="logo"
+                
               />
             </div>
           </Link>
