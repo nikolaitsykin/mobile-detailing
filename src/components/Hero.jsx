@@ -23,9 +23,9 @@ const Hero = ({ city, location }) => {
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-36">
         <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className="text-xs sm:text-base text-center font-light font-poppins p-4">
+          <h2 className="text-xs sm:text-base text-center font-light font-poppins p-4">
             Top-Tier Service in {city}, NC
-          </h1>
+          </h2>
           <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             {location} Premier Auto Detailing
           </h1>

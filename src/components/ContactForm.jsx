@@ -133,7 +133,7 @@ const ContactForm = () => {
   return (
     <div className="w-full  mx-auto">
       <form className="flex flex-col mx-auto md:w-full" onSubmit={handleSubmit}>
-        <h3 className="text-black text-2xl my-4 border-b border-gray ">
+        <h3 className="text-black text-2xl mt-4 py-1 border-b border-gray">
           Tell us about
         </h3>
         <div className="w-full flex flex-col">

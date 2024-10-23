@@ -82,7 +82,7 @@ const carTypes = [
 ];
 
 export const quickDetail = {
-  title: "Quick Detailing",
+  title: "Base Detailing",
   type: "Full Detail Service",
   // image: fullDetailExteriorWashImage,
   services: [
@@ -104,7 +104,7 @@ export const quickDetail = {
   carsSize: carTypes,
   link: BOOKING_PATH,
   description:
-    "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve, and clean the door jambs. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look. Both Quick Clean & Quick Wash services included in full detailing package with up to $40 savings.",
+    "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve, and clean the door jambs. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look. Both Base Wash & Base Clean services included in full detailing package with up to $40 savings.",
   duration:
     "Duration: Up to 2.5 hours depending on vehicle size and condition.",
   background: " ",
@@ -175,7 +175,7 @@ export const spotlessFinish = {
 };
 
 export const quickWash = {
-  title: "Quick Wash",
+  title: "Base Wash",
   type: "Exterior Service",
   // image: essentialExteriorWashImage,
   services: [
@@ -248,7 +248,7 @@ export const shineAndShield = {
 };
 
 export const quickClean = {
-  title: "Quick Clean",
+  title: "Base Clean",
   type: "Interior Service",
   // image: essentialInteriorWashImage,
   services: [
