@@ -1,6 +1,7 @@
 {
   "name": "spotless",
   "version": "0.1.0",
+  "homepage": "https://getspotlessnc.com/",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",

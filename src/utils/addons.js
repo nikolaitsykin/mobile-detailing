@@ -1,7 +1,5 @@
 // import headlinerCleaningImage from "../assets/images/how-to-clean-car-headliner-to-factory-new-in-one-weekend-238181_900x .jpg";
 
-import { type } from "@testing-library/user-event/dist/type";
-
 export const addons = [
   // {
   //   title: "Headliner Steam Sanitize",
@@ -31,7 +29,7 @@ export const addons = [
     type: "Exterior Service",
     description:
       "Provides a durable, high-gloss layer of protection for your vehicle's exterior, lasting up to 6 months. This advanced coating shields against dirt, UV rays, and contaminants, keeping your paintwork looking glossy and new while making future cleanings a breeze.",
-    price: "Starts at $80",
+    price: "Starts at $60",
   },
   {
     title: "Seats/Carpet Shampoo",

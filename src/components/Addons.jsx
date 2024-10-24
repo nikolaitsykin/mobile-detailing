@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./Card";
 import { addons } from "../utils/addons";
 import Addon from "./Addon";
 
