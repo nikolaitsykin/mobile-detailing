@@ -57,24 +57,6 @@ export const fullDetailingService = {
   link: MOBILE_FULL_DETAILING_PATH,
 };
 
-export const quickDetailServices = [];
-
-export const deepCleaningServices = [];
-
-export const spotlessFinishServices = [];
-
-export const quickWashExteriorServices = [];
-
-export const washAndWaxExteriorServices = [];
-
-export const shineAndShieldExteriorServices = [];
-
-export const quickCleanInteriorServices = [];
-
-export const wipeAndCleanInteriorServices = [];
-
-export const steamAndGuardInteriorServices = [];
-
 const carTypes = [
   "Sedans, compact cars, and coupes (e.g., Subaru Impreza, Kia Soul, Ford Mustang)",
   "SUVs, crossovers, and small trucks (e.g., Kia Sorento, Hyundai Tucson, Toyota Tacoma)",
@@ -100,7 +82,7 @@ export const quickDetail = {
     "✔ Cup Holders Cleaned",
     "✔ Glasses & Mirrors Cleaned",
   ],
-  price: ["$130", "$150", "$180"],
+  price: ["$125", "$150", "$175"],
   carsSize: carTypes,
   link: BOOKING_PATH,
   description:
@@ -132,7 +114,7 @@ export const deepCleaning = {
     "✔ Touch Points Steamed (e.g., handles, steering wheel, shift knob, etc.)",
     "✔ Glasses & Mirrors Cleaned",
   ],
-  price: ["$200", "$220", "$250"],
+  price: ["$200", "$225", "$250"],
   carsSize: carTypes,
   link: BOOKING_PATH,
   description:

@@ -3,8 +3,13 @@ import { autoDetailingQuestions, generalQuestions } from "../../../utils/faq";
 import image from "../../../assets/images/AdobeStock_399584907.avif";
 import FaqItem from "../../FaqItem";
 import { Link } from "react-router-dom";
-import { BOOKING_URL, CALL_NUMBER, CONTACT_PATH } from "../../../utils/constants";
+import {
+  BOOKING_URL,
+  CALL_NUMBER,
+  CONTACT_PATH,
+} from "../../../utils/constants";
 import Banner from "../../Banner";
+import BookButtons from "../../UI/BookButtons";
 
 const FAQs = () => {
   return (
@@ -16,20 +21,23 @@ const FAQs = () => {
           <h3 className="text-center py-0 mb-4">General Questions</h3>
           <h5>How Can I Book A Detail?</h5>
           <p>
-            You can call us at {" "}
-            <a href={CALL_NUMBER} className="underline text-blue">
+            You can call us at{" "}
+            <a href={CALL_NUMBER} className="underline text-blue font-semibold">
               (919) 906-0099
             </a>
             , request a quote through our contact page or just simply book
             online. Click the{" "}
-            <Link to={CONTACT_PATH} className="underline text-blue">
+            <Link
+              to={CONTACT_PATH}
+              className="underline text-blue font-semibold"
+            >
               Request a quote
             </Link>{" "}
             to visit our contact page to request a quote. Click the{" "}
             <Link
               to={BOOKING_URL}
               target="_blank"
-              className="underline text-blue"
+              className="underline text-blue font-semibold"
             >
               Book now
             </Link>{" "}
@@ -39,6 +47,7 @@ const FAQs = () => {
           <h3 className="text-center py-0">Detailing Questions</h3>
           <FaqItem questions={autoDetailingQuestions} />
         </article>
+        <BookButtons color={"secondary"} />
       </section>
     </div>
   );

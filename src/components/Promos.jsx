@@ -30,12 +30,6 @@ const Promos = () => {
             image={item.image}
           />
         ))}
-        {/* <PromoItem
-          key={currentTemporaryPromo.index}
-          title={currentTemporaryPromo.title}
-          description={currentTemporaryPromo.description}
-          image={backgroundImage}
-        /> */}
       </Slider>
     </div>
   );

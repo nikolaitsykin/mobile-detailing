@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as MessageSms } from "../assets/icons/message-sms.svg";
 import { ReactComponent as PhoneCall } from "../assets/icons/phone-call.svg";
-import logoFull from "../assets/images/spotless_logo.png";
+import logoFull from "../assets/images/spotless_logo_300.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 
 import {
