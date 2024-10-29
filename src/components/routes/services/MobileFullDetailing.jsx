@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import detailingImage from "../../../assets/images/AdobeStock_273206890.avif";
 import { MOBILE_FULL_DETAILING_BOOKING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
-import { fullDetailingServices } from "../../../utils/services";
+import { fullDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
 import Card from "../../Card";

@@ -35,28 +35,6 @@ export const carsSizes = [
   },
 ];
 
-export const exteriorDetailingService = {
-  title: "Mobile Exterior Detailing",
-  description:
-    "Our exterior wash includes a thorough hand wash, decontamination, and precision drying for a spotless, protected finish.",
-  image: exteriorDetailingServiceImage,
-  link: MOBILE_EXTERIOR_DETAILING_PATH,
-};
-export const interiorDetailingService = {
-  title: "Mobile Interior Detailing",
-  description:
-    "Our interior detailing offers deep cleaning, vacuuming, and upholstery care, ensuring a fresh, and comfortable interior.",
-  image: interiorDetailingServiceImage,
-  link: MOBILE_INTERIOR_DETAILING_PATH,
-};
-export const fullDetailingService = {
-  title: "Mobile In & Out Detailing",
-  description:
-    "Our full detailing packages include a thorough hand wash, decontamination, deep cleaning, vacuuming, and upholstery care, leaving your exterior and interior both shining, and comfortable.",
-  image: primeExteriorWashImage,
-  link: MOBILE_FULL_DETAILING_PATH,
-};
-
 const carTypes = [
   "Sedans, compact cars, and coupes (e.g., Subaru Impreza, Kia Soul, Ford Mustang)",
   "SUVs, crossovers, and small trucks (e.g., Kia Sorento, Hyundai Tucson, Toyota Tacoma)",
@@ -65,7 +43,7 @@ const carTypes = [
 
 export const quickDetail = {
   title: "Base Detailing",
-  type: "Full Detail Service",
+  type: "Package",
   // image: fullDetailExteriorWashImage,
   services: [
     "✔ Vehicle Hand Washed & Dried",
@@ -94,7 +72,7 @@ export const quickDetail = {
 
 export const deepCleaning = {
   title: "Deep Cleaning",
-  type: "Full Detail Service",
+  type: "Package",
   // image: fullDetailExteriorWashImage,
   services: [
     "✔ Vehicle Hand Washed & Dried",
@@ -126,7 +104,7 @@ export const deepCleaning = {
 
 export const spotlessFinish = {
   title: "Spotless Finish",
-  type: "Full Detail Service",
+  type: "Package",
   // image: ultimateExteriorWashImage,
   services: [
     "✔ Vehicle Hand Washed & Dried",
@@ -242,6 +220,8 @@ export const quickClean = {
     "✔ Cup Holders Cleaned",
     "✔ Glasses & Mirrors Cleaned",
   ],
+  link: BOOKING_PATH,
+
   description:
     "We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.\n\n",
   price: ["$80", "$100", "$120"],
@@ -265,6 +245,8 @@ export const wipeAndClean = {
     "✔ Touch Points Steamed (e.g., handles, steering wheel, shift knob, etc.)",
     "✔ Glasses & Mirrors Cleaned",
   ],
+  link: BOOKING_PATH,
+
   description:
     "We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. Using steam, we sanitize the fabric or leather seats and touch points to eliminate germs and bacteria. The surfaces, plastics, and cup holders get a deep clean, and we finish with spotless glass and mirrors.\n\n",
   price: ["$140", "$160", "$180"],
@@ -300,6 +282,47 @@ export const steamAndGuard = {
   carsSize: carTypes,
   duration: "Duration: Up to 4 hours depending on vehicle size and condition.",
   background: " ",
+};
+
+export const exteriorDetailingServices = [
+  quickWash,
+  washAndWax,
+  shineAndShield,
+];
+export const interiorDetailingServices = [
+  quickClean,
+  wipeAndClean,
+  steamAndGuard,
+];
+export const fullDetailingServices = [
+  quickDetail,
+  deepCleaning,
+  spotlessFinish,
+];
+
+export const exteriorDetailingService = {
+  title: "Mobile Exterior Detailing",
+  description:
+    "Our exterior wash includes a thorough hand wash, decontamination, and precision drying for a spotless, protected finish.",
+  image: exteriorDetailingServiceImage,
+  link: MOBILE_EXTERIOR_DETAILING_PATH,
+  options: exteriorDetailingServices,
+};
+export const interiorDetailingService = {
+  title: "Mobile Interior Detailing",
+  description:
+    "Our interior detailing offers deep cleaning, vacuuming, and upholstery care, ensuring a fresh, and comfortable interior.",
+  image: interiorDetailingServiceImage,
+  link: MOBILE_INTERIOR_DETAILING_PATH,
+  options: interiorDetailingServices,
+};
+export const fullDetailingService = {
+  title: "Mobile In & Out Detailing",
+  description:
+    "Our full detailing packages include a thorough hand wash, decontamination, deep cleaning, vacuuming, and upholstery care, leaving your exterior and interior both shining, and comfortable.",
+  image: primeExteriorWashImage,
+  link: MOBILE_FULL_DETAILING_PATH,
+  options: fullDetailingServices,
 };
 
 export const biWeekly = {

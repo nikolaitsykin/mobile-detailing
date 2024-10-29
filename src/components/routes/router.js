@@ -6,6 +6,7 @@ import {
     CARY_PATH,
     CONTACT_PATH,
     FAQS_PATH,
+    GALLERY_PATH,
     GARNER_PATH,
     HOLLY_SPRINGS_PATH,
     HOME_PATH,
@@ -36,6 +37,7 @@ import RootRaleigh from "./pagesByCity/Raleigh";
 import MobileExteriorDetailing from "./services/MobileExteriorDetailing";
 import MobileFullDetailing from "./services/MobileFullDetailing";
 import MobileInteriorDetailing from "./services/MobileInteriorDetailing";
+import Gallery from './navigation/GalleryPage';
 
 export const router = [
   {
@@ -93,7 +95,11 @@ export const router = [
         name: "FAQ's",
         element: <FAQs />,
       },
-
+      {
+        path: GALLERY_PATH,
+        name: "Gallery",
+        element: <Gallery />,
+      },
       {
         path: APEX_PATH,
         name: "Apex Auto Detailing",

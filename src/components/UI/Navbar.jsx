@@ -1,63 +1,41 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as Cross } from "../../assets/icons/cross.svg";
 import { ReactComponent as Menu } from "../../assets/icons/menu-burger.svg";
-import { ReactComponent as MessageSms } from "../../assets/icons/message-sms.svg";
-import { ReactComponent as PhoneCall } from "../../assets/icons/phone-call.svg";
-import { CALL_NUMBER, TEXT_NUMBER } from "../../utils/constants";
 import { servicesLinks, servicesLinksActual } from "../../utils/data";
+import ConntactsButtons from "./ConntactsButtons";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [isMenuOpen]);
+  const onMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const navLinkStyle =
-    "flex justify-center items-center text-gray lg:hover:text-white focus:text-white hover:text-white w-[100%] h-12 lg:w-full text-md";
-
+    "flex px-3 justify-start md:justify-center items-center text-gray focus:text-white hover:text-white w-[100%] h-12 md:w-full text-md";
   return (
-    <nav className="w-full lg:w-[85%] text-white flex flex-col md:ml-5 lg:flex-row justify-around items-end">
-      <div className="flex justify-end gap-2">
-        <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300 ">
-          <a href={CALL_NUMBER}>
-            <div className="hover:scale-110 duration-700">
-              <PhoneCall />
-            </div>
-          </a>
-        </div>
-        <div className="flex lg:hidden justify-center items-center active:scale-110 duration-300 px-2">
-          <a href={TEXT_NUMBER}>
-            <div className="hover:scale-110 duration-700">
-              <MessageSms />
-            </div>
-          </a>
-        </div>
-        <div
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="mr-5 md:mr-16 lg:hidden items-end active:scale-110 duration-300"
-        >
-          {isMenuOpen ? <Cross /> : <Menu />}
-        </div>
-      </div>
+    <nav className="w-full text-white flex flex-col md:ml-5 md:flex-row justify-around items-end ">
       <ul
-        className={` top-20 md:top-28 ${
+        className={`top-20 md:top-28 ${
           isMenuOpen ? "absolute" : "hidden"
-        }   flex lg:flex lg:static flex-col lg:flex-row w-full bg-black`}
+        }   flex md:flex md:static flex-col md:flex-row w-full bg-black lg:h-12 pl-3 md:pl-0`}
       >
-        {servicesLinks.map((link, index) => (
+        <li
+          key={"service"}
+          className={`flex jutify-end md:justify-center items-start md:basis-1/4`}
+        >
+          <Dropdown title={servicesLinks[0]} />
+        </li>
+        {servicesLinks.slice(1).map((link, index) => (
           <li
-            key={link}
-            className="flex jutify-end lg:justify-center items-center basis-1/4"
+            key={link + index}
+            className="flex jutify-end md:justify-center items-start md:basis-1/4"
           >
             <NavLink
-              onClick={() => setIsMenuOpen(false)}
-              to={`/${servicesLinksActual[index]}`}
+              onClick={onMenuClick}
+              to={`/${servicesLinksActual.slice(1)[index]}`}
               className={({ isActive }) =>
                 isActive
                   ? `text-white ${navLinkStyle}`
@@ -69,6 +47,15 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div className="flex justify-start items-center mr-5 md:mr-8">
+        <ConntactsButtons />
+        <div
+          onClick={onMenuClick}
+          className="flex md:hidden justify-center items-center active:scale-110 duration-300 pl-2 ml-2"
+        >
+          {isMenuOpen ? <Cross /> : <Menu />}
+        </div>
+      </div>
     </nav>
   );
 };

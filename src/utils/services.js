@@ -5,23 +5,11 @@ import primeHeadlightRestorationImage from "../assets/images/AdobeStock_39724772
 import ppfServiceImage from "../assets/images/AdobeStock_428622212.avif";
 import primeCeramicCoatingImage from "../assets/images/AdobeStock_799868847.avif";
 import headlightRestorationServiceImage from "../assets/images/AdobeStock_892817405.avif";
-import {
-  shineAndShield,
-  steamAndGuard,
-  washAndWax,
-  wipeAndClean,
-  spotlessFinish,
-  quickDetail,
-  deepCleaning,
-  quickWash,
-  quickClean,
-} from "./detailingPackages";
-import {
-  exteriorDetailingService,
-  interiorDetailingService,
-  fullDetailingService,
-} from "./detailingPackages";
 import { businessName } from "./data";
+import {
+  exteriorDetailingService, fullDetailingService, interiorDetailingService, shineAndShield, spotlessFinish, steamAndGuard,
+  washAndWax
+} from "./detailingPackages";
 
 export const paintCorrectionService = {
   title: "Paint Correction",
@@ -48,21 +36,6 @@ export const ppfService = {
   link: "paint-protection-film",
 };
 
-export const exteriorDetailingServices = [
-  quickWash,
-  washAndWax,
-  shineAndShield,
-];
-export const interiorDetailingServices = [
-  quickClean,
-  wipeAndClean,
-  steamAndGuard,
-];
-export const fullDetailingServices = [
-  quickDetail,
-  deepCleaning,
-  spotlessFinish,
-];
 export const detailingServices = [
   washAndWax,
   shineAndShield,

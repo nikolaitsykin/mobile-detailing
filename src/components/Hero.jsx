@@ -38,7 +38,7 @@ const Hero = ({ city, location }) => {
           <div className=" flex justify-center">
             <div className="min-w-48">
               <Link to={BOOKING_PAGE_PATH}>
-                <Button children={"BOOK NOW"} color={"primary"} />
+                <Button children={"BOOK NOW"} color={"primary"} border={'border'} />
               </Link>
             </div>
           </div>
