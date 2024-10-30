@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as Cross } from "../../assets/icons/cross.svg";
 import { ReactComponent as Menu } from "../../assets/icons/menu-burger.svg";
@@ -8,8 +8,8 @@ import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  const onMenuClick = () => {
+
+  const closeMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -26,7 +26,10 @@ const Navbar = () => {
           key={"service"}
           className={`flex jutify-end md:justify-center items-start md:basis-1/4`}
         >
-          <Dropdown title={servicesLinks[0]} onMenuClick={onMenuClick} />
+          <Dropdown
+            title={servicesLinks[0]}
+            closeMenu={closeMenu}
+          />
         </li>
         {servicesLinks.slice(1).map((link, index) => (
           <li
@@ -34,7 +37,7 @@ const Navbar = () => {
             className="flex jutify-end md:justify-center items-start md:basis-1/4"
           >
             <NavLink
-              onClick={onMenuClick}
+              onClick={closeMenu}
               to={`/${servicesLinksActual.slice(1)[index]}`}
               className={({ isActive }) =>
                 isActive
@@ -50,7 +53,7 @@ const Navbar = () => {
       <div className="flex justify-start items-center mr-5 md:mr-8">
         <ConntactsButtons />
         <div
-          onClick={onMenuClick}
+          onClick={closeMenu}
           className="flex md:hidden justify-center items-center active:scale-110 duration-300 pl-2 ml-2"
         >
           {isMenuOpen ? <Cross /> : <Menu />}
