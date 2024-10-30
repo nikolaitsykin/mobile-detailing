@@ -73,8 +73,8 @@ const SpotlessFinish = () => {
           </div>
         </section>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
-          <h2>{service.type.split(" ")[0]} Addons</h2>
-          <Addons type={service.type} />
+          <h2>Addons</h2>
+          <Addons full />
         </section>
         <div id="booking" className="scroll-mb-[750px]"></div>
         <Booking />
