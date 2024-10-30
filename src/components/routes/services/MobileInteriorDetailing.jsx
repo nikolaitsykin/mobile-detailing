@@ -69,8 +69,8 @@ const AutoDetailing = () => {
         <Outlet />
       </section>
       <section id="addons" className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="">Addons</h2>
-        <Addons />
+      <h2>{interiorDetailingServices[0].type.split(" ")[0]}{" "}Addons</h2>
+        <Addons type={interiorDetailingServices[0].type} />
       </section>
       <div id="booking" className="scroll-mb-[750px]"></div>
       <Booking />

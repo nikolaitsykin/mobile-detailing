@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ReactComponent as ArrowDown } from "../../assets/icons/arrow_down_icon.svg";
 import {
-  exteriorDetailingService,
   exteriorDetailingServices,
   fullDetailingServices,
   interiorDetailingServices,
@@ -10,6 +9,11 @@ import DropdownList from "./DropdownList";
 
 const Dropdown = ({ title }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const location = window.location.pathname;
+
+  useEffect(() => {
+    setIsDropdownOpen(false);
+  }, [location]);
 
   return (
     <div

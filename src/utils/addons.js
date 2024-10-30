@@ -17,7 +17,7 @@ export const addons = [
     price: "Starts at $50",
   },
   {
-    title: "Excessive Pet Hair/Sand Removal",
+    title: "Excessive Hair/Sand Removal",
     type: "Interior Service",
     // image: petHairRemovalImage,
     description:
@@ -25,7 +25,7 @@ export const addons = [
     price: "Starts at $50",
   },
   {
-    title: "Ultra Ceramic Coating (6 Months)",
+    title: "Ceramic Coating (6 Months)",
     type: "Exterior Service",
     description:
       "Provides a durable, high-gloss layer of protection for your vehicle's exterior, lasting up to 6 months. This advanced coating shields against dirt, UV rays, and contaminants, keeping your paintwork looking glossy and new while making future cleanings a breeze.",
@@ -33,7 +33,7 @@ export const addons = [
   },
   {
     title: "Seats/Carpet Shampoo",
-    type: "Exterior Service",
+    type: "Interior Service",
     description:
       "This treatment eliminates stains, dirt, and odors, leaving your fabric or leather seats and carpets looking and smelling fresh, with a like-new feel! Perfect for tackling everyday spills and grime buildup.\n\n",
     price: "Starts at $50",

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Addon = ({ service, title, image, description, price, duration }) => {
+const Addon = ({ type, title, image, description, price, duration }) => {
   return (
     <div className=" w-full flex flex-col items-center mx-auto text-black  rounded-sm border border-gray">
       {title && <h3 className=" text-center py-3">{title}</h3>}

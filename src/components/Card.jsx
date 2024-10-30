@@ -15,12 +15,18 @@ const Card = ({
   link,
   duration,
   bestValue,
+  singleService,
+  steps,
 }) => {
   return (
     <div
       className={`mb-10 pb-5 w-full mx-auto text-black border border-gray rounded-md`}
     >
-      <div className={`flex items-center justify-center rounded-t-md ${bestValue ? "bg-black py-5 mb-5" : "pt-5"}`}>
+      <div
+        className={`flex items-center justify-center rounded-t-md ${
+          bestValue ? "bg-black py-5 mb-5" : "pt-5"
+        }`}
+      >
         <p className="text-lg font-medium text-white animate-pulse ">
           {bestValue}
         </p>
@@ -31,17 +37,13 @@ const Card = ({
             {title && <h3 className=" text-center py-1">{title}</h3>}
             {type && <h6 className="max-w-xl text-center pb-3">{type}</h6>}
           </div>
-          {service && (
-            <div className="w-full px-4 max-w-xl">
-              <Menu service={service} card={true} />
-            </div>
-          )}
+
           <div
             className={`grid grid-cols-1 ${
               image ? "content-start h-full" : ""
             } items-center w-full max-w-xl`}
           >
-            {image && (
+            {singleService && image && (
               <img
                 className="w-full max-w-xl align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
                 src={image}
@@ -50,16 +52,21 @@ const Card = ({
             )}
             {description && (
               <div className="flex flex-col max-w-xl w-full px-4 sm:pb-5 text-sm whitespace-pre-wrap">
-                <p >{description}</p>
+                <p>{description}</p>
               </div>
             )}
           </div>
+          {service && (
+            <div className="w-full px-4 max-w-xl">
+              <Menu service={service} card={true} />
+            </div>
+          )}
+          
         </div>
         <div>
           {services && (
             <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
               <div className="hidden sm:block sm:h-[75px]"></div>
-
               <ul className="h-full">
                 {services.map((service, index) => (
                   <li
@@ -72,14 +79,33 @@ const Card = ({
               </ul>
             </div>
           )}
+          {steps && (
+            <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
+              <div className="hidden sm:block sm:h-[65px] md:h-[75px]"></div>
+              <h4 className="pt-5 sm:pt-0 pb-5 ">This service includes:</h4>
+              <ul className="h-full">
+                {steps.map((step, index) => (
+                  <li
+                    key={index}
+                    className="text-start text-sm list-none p-[2px] whitespace-pre-wrap"
+                  >
+                    {step}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           {price && (
             <div className="flex justify-center items-end w-full">
               <h4 className="p-5"> {price}</h4>
             </div>
           )}
-          {duration && (
+
+          {singleService && (
             <div className="text-center sm:text-start text-sm mt-2 p-4">
-              {duration}
+              *Pricing for this service is based on vehicles in average
+              condition. Additional services may be required. Examples include
+              pet hair/sand, staining, excessive messes, etc
             </div>
           )}
         </div>

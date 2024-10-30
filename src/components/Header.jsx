@@ -42,27 +42,6 @@ const Header = () => {
         <div className="flex items-center w-full lg:basis-6/7">
           <Navbar />
         </div>
-        {/* <div className="hidden md:flex justify-end items-center lg:basis-1/7 lg:min-w-48 mr-16"> */}
-        {/* <div>
-            <Link to={CALL_NUMBER} className="flex">
-              <div className="flex justify-center items-center mr-5">
-                <PhoneCall />
-              </div>
-            </Link>
-          </div> */}
-        {/* <div>
-            <Link to={TEXT_NUMBER} className="flex">
-              <div className="flex justify-center items-center mr-5">
-                <MessageSms/>
-              </div>
-            </Link>
-          </div> */}
-        {/* <div className="hidden lg:flex">
-            <Link to={BOOKING_PAGE_PATH}>
-              <Button children={"BOOK NOW"} color={"primary"} border='border'/>
-            </Link>
-          </div> */}
-        {/* </div> */}
       </section>
     </header>
   );

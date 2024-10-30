@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as Cross } from "../../assets/icons/cross.svg";
 import { ReactComponent as Menu } from "../../assets/icons/menu-burger.svg";
@@ -8,7 +8,12 @@ import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = window.location.pathname;
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]);
+  
   const onMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };

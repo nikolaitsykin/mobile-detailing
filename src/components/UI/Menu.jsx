@@ -3,11 +3,11 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { carsSizes } from "../../utils/detailingPackages";
 
-const Menu = ({ service }) => {
+const Menu = ({ service, singleService }) => {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
-    <div className="w-full">
+    <div className="w-full m-auto">
       <Tabs
         selectedIndex={tabIndex}
         onSelect={(index) => setTabIndex(index)}
@@ -15,7 +15,7 @@ const Menu = ({ service }) => {
         selectedTabClassName="bg-black text-white"
         className="w-full"
       >
-        <TabList className="flex flex-col sm:flex-row w-full max-w-xl">
+        <TabList className="flex flex-col sm:flex-row w-full">
           {carsSizes &&
             carsSizes.map((car) => (
               <Tab
@@ -32,13 +32,24 @@ const Menu = ({ service }) => {
           carsSizes.map((car) => (
             <TabPanel key={car.title}>
               {service && (
-                <div>
-                  <p className="pt-2 text-xs whitespace-pre-wrap h-full ">
+                <div className="w-full m-auto">
+                  <p className="pt-2 text-xs md:text-sm whitespace-pre-wrap h-full px-1">
                     {service.carsSize[tabIndex]}
                   </p>
-                  <h4 className="py-5 text-center">
-                    Starts at {service.price[tabIndex]}
-                  </h4>
+                  {singleService ? (
+                    <p className="py-5 text-center text-base md:text-2xl">
+                      Price starts at <strong>{service.price[tabIndex]}</strong>{" "}
+                      depending car condition
+                    </p>
+                  ) : (
+                    <h4 className="py-5 text-center">
+                      Starts at {service.price[tabIndex]}
+                    </h4>
+                  )}
+                  <div className="text-center sm:text-start text-sm px-4 mb-4 h-12">
+                    Duration: Up to {service.duration[tabIndex]} depending
+                    on vehicle size and condition.
+                  </div>
                 </div>
               )}
             </TabPanel>
