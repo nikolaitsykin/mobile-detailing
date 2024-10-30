@@ -231,7 +231,7 @@ const ContactForm = () => {
               label="Which addons are you interested in?"
               name="addon"
               type="text"
-              placeholder="Engine Bay Detail, Pet Hair Removal"
+              placeholder="Engine Bay Detail, Pet Hair Removal etc."
             />
           </div>
         </div>

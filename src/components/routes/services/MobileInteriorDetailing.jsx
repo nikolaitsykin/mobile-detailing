@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import detailingImage from "../../../assets/images/AdobeStock_539555302.avif";
 import { MOBILE_INTERIOR_DETAILING_BOOKING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
-import { interiorDetailingServices } from "../../../utils/services";
+import { interiorDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
 import Card from "../../Card";
 import Booking from "../../Booking";
@@ -69,8 +69,8 @@ const AutoDetailing = () => {
         <Outlet />
       </section>
       <section id="addons" className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="">Addons</h2>
-        <Addons />
+      <h2>{interiorDetailingServices[0].type.split(" ")[0]}{" "}Addons</h2>
+        <Addons type={interiorDetailingServices[0].type} />
       </section>
       <div id="booking" className="scroll-mb-[750px]"></div>
       <Booking />

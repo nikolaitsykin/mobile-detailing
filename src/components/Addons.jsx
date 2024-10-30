@@ -1,13 +1,14 @@
 import React from "react";
 import { addons } from "../utils/addons";
-import Addon from "./Addon";
+import AddonItem from "./AddonItem";
 
-const Addons = () => {
+const Addons = ({type}) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pb-5">
-      {addons.map((addon, index) => (
-        <Addon
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      {addons.filter((addon) => addon.type === type).map((addon, index) => (
+        <AddonItem
           key={index}
+          type={type}
           addon
           title={addon.title}
           image={addon.image}

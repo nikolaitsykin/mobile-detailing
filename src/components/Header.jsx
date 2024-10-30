@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as MessageSms } from "../assets/icons/message-sms.svg";
 import { ReactComponent as PhoneCall } from "../assets/icons/phone-call.svg";
-import logoFull from "../assets/images/spotless_logo.png";
+import logoFull from "../assets/images/spotless_logo_300.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 
 import {
   BOOKING_PAGE_PATH,
   CALL_NUMBER,
   HOME_PATH,
-  TEXT_NUMBER
+  TEXT_NUMBER,
 } from "../utils/constants";
 import Button from "./UI/Button";
 import Navbar from "./UI/Navbar";
@@ -26,12 +26,11 @@ const Header = () => {
       <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/7">
           <Link to={HOME_PATH}>
-            <div className="ml-2 md:ml-10 lg:ml-10 w-20 lg:w-32">
+            <div className="ml-5 md:ml-8 lg:ml-10 w-20 lg:w-32">
               <img
                 className="h-full w-full object-contain"
                 src={logoFull}
                 alt="logo"
-                
               />
             </div>
           </Link>
@@ -40,30 +39,8 @@ const Header = () => {
             Mobile Auto Detailing in Raleigh & Surrounding Areas
           </h2>
         </div>
-        <div className="flex  md:justify-between items-center w-full md:basis-3/7">
+        <div className="flex items-center w-full lg:basis-6/7">
           <Navbar />
-        </div>
-        <div className="hidden lg:flex justify-end items-center md:basis-2/7 min-w-48 mr-16">
-          <div>
-            <Link to={CALL_NUMBER} className="flex">
-              <div className="flex justify-center items-center mr-5">
-                <PhoneCall />
-              </div>
-            </Link>
-          </div>
-          <div>
-            <Link to={TEXT_NUMBER} className="flex">
-              <div className="flex justify-center items-center mr-5">
-                <MessageSms/>
-              </div>
-            </Link>
-          </div>
-
-          <div className="hidden lg:flex">
-            <Link to={BOOKING_PAGE_PATH}>
-              <Button children={"BOOK NOW"} color={"primary"} />
-            </Link>
-          </div>
         </div>
       </section>
     </header>

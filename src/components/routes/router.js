@@ -1,22 +1,32 @@
 import * as React from "react";
 import {
-    ABOUT_PATH,
-    APEX_PATH,
-    BOOKING_PAGE_PATH,
-    CARY_PATH,
-    CONTACT_PATH,
-    FAQS_PATH,
-    GARNER_PATH,
-    HOLLY_SPRINGS_PATH,
-    HOME_PATH,
-    KNIGHTDALE_PATH,
-    MOBILE_EXTERIOR_DETAILING_PATH,
-    MOBILE_FULL_DETAILING_PATH,
-    MOBILE_INTERIOR_DETAILING_PATH,
-    MORRISVILLE_PATH,
-    QUICK_WASH_PATH,
-    RALEIGH_PATH,
-    SERVICES_PATH
+  ABOUT_PATH,
+  APEX_PATH,
+  BASE_CLEAN_PATH,
+  BASE_DETAILING_BOOKING_PATH,
+  BASE_DETAILING_PATH,
+  BASE_WASH_PATH,
+  BOOKING_PAGE_PATH,
+  CARY_PATH,
+  CONTACT_PATH,
+  DEEP_CLEANING_PATH,
+  FAQS_PATH,
+  GALLERY_PATH,
+  GARNER_PATH,
+  HOLLY_SPRINGS_PATH,
+  HOME_PATH,
+  KNIGHTDALE_PATH,
+  MOBILE_EXTERIOR_DETAILING_PATH,
+  MOBILE_FULL_DETAILING_PATH,
+  MOBILE_INTERIOR_DETAILING_PATH,
+  MORRISVILLE_PATH,
+  RALEIGH_PATH,
+  SERVICES_PATH,
+  SHINE_AND_SHIELD_PATH,
+  SPOTLESS_FINISH_PATH,
+  STEAM_AND_GUARD_PATH,
+  WASH_AND_WAX_PATH,
+  WIPE_AND_CLEAN_PATH
 } from "../../utils/constants";
 import App from "../App";
 import ErrorPage from "../error-page";
@@ -25,6 +35,7 @@ import AboutPage from "./navigation/AboutPage";
 import BookingPage from "./navigation/BookingPage";
 import ContactPage from "./navigation/ContactPage";
 import FAQs from "./navigation/FAQsPage";
+import Gallery from "./navigation/GalleryPage";
 import ServicesPage from "./navigation/ServicesPage";
 import RootApex from "./pagesByCity/Apex";
 import RootCary from "./pagesByCity/Cary";
@@ -33,6 +44,15 @@ import RootHollySprings from "./pagesByCity/HollySprings";
 import RootKnightdale from "./pagesByCity/Knightdale";
 import RootMorrisville from "./pagesByCity/Morrisville";
 import RootRaleigh from "./pagesByCity/Raleigh";
+import BaseClean from "./services/detailing/BaseClean";
+import BaseDetailing from "./services/detailing/BaseDetailing";
+import BaseWash from "./services/detailing/BaseWash";
+import DeepCleaning from "./services/detailing/DeepCleaning";
+import ShineAndShield from "./services/detailing/ShineAndShield";
+import SpotlessFinish from "./services/detailing/SpotlessFinish";
+import SteamAndGuard from "./services/detailing/SteamAndGuard";
+import WashAndWax from "./services/detailing/WashAndWax";
+import WipeAndClean from "./services/detailing/WipeAndClean";
 import MobileExteriorDetailing from "./services/MobileExteriorDetailing";
 import MobileFullDetailing from "./services/MobileFullDetailing";
 import MobileInteriorDetailing from "./services/MobileInteriorDetailing";
@@ -64,13 +84,58 @@ export const router = [
         element: <MobileExteriorDetailing />,
       },
       {
-        path: MOBILE_FULL_DETAILING_PATH,
-        name: "Mobile Interior Detailing",
-        element: <MobileFullDetailing />,
+        path: BASE_WASH_PATH,
+        name: "Base Wash",
+        element: <BaseWash />,
       },
       {
-        path: QUICK_WASH_PATH,
-        name: "Quick Wash",
+        path: WASH_AND_WAX_PATH,
+        name: "Wash and Wax",
+        element: <WashAndWax />,
+      },
+      {
+        path: SHINE_AND_SHIELD_PATH,
+        name: "Shine and Shield",
+        element: <ShineAndShield />,
+      },
+      {
+        path: BASE_CLEAN_PATH,
+        name: "Base Clean",
+        element: <BaseClean />,
+      },
+      {
+        path: WIPE_AND_CLEAN_PATH,
+        name: "Wipe and Clean",
+        element: <WipeAndClean />,
+      },
+      {
+        path: STEAM_AND_GUARD_PATH,
+        name: "Steam and Guard",
+        element: <SteamAndGuard />,
+      },
+      {
+        path: BASE_DETAILING_PATH,
+        name: "Base Detailing",
+        element: <BaseDetailing />,
+      },
+      {
+        path: DEEP_CLEANING_PATH,
+        name: "Deep Cleaning",
+        element: <DeepCleaning />,
+      },
+      {
+        path: SPOTLESS_FINISH_PATH,
+        name: "Spotless Finish",
+        element: <SpotlessFinish />,
+      },
+      {
+        path: BASE_DETAILING_BOOKING_PATH,
+        name: "Base Detailing",
+        element: <BaseDetailing />,
+      },
+      {
+        path: MOBILE_FULL_DETAILING_PATH,
+        name: "Mobile Interior Detailing",
         element: <MobileFullDetailing />,
       },
       {
@@ -93,7 +158,11 @@ export const router = [
         name: "FAQ's",
         element: <FAQs />,
       },
-
+      {
+        path: GALLERY_PATH,
+        name: "Gallery",
+        element: <Gallery />,
+      },
       {
         path: APEX_PATH,
         name: "Apex Auto Detailing",

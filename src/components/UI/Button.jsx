@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ children, color, onClick, type }) => {
+const Button = ({ children, color, onClick, type, border, header }) => {
   const buttonStyle = {
     primary:
       "text-white font-medium active:bg-white active:text-black border-white active:border-black hover:bg-white hover:border-black hover:text-black hover:font-semibold",
@@ -13,8 +13,8 @@ const Button = ({ children, color, onClick, type }) => {
   return (
     <div className="flex justify-center items-center w-full ">
       <button
-        className={`tracking-widest text-xs md:text-sm  border shadow rounded-sm
-          min-w-40 md:max-w-72 w-full min-h-10 sm:h-10 flex justify-center items-center
+        className={`tracking-widest text-xs md:text-sm ${border} shadow rounded-sm
+          ${header ? "w-32 h-8 md:h-10 lg:w-40" : "w-40"}  md:max-w-72 h-10 flex justify-center items-center
           ${buttonStyle[color]}
         `}
         onClick={onClick}

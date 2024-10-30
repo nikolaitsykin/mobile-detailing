@@ -28,22 +28,22 @@ export const MOBILE_FULL_DETAILING_PATH = "/mobile-full-detailing";
 export const MOBILE_FULL_DETAILING_BOOKING_PATH =
   "/mobile-full-detailing#booking";
 
-export const QUICK_WASH_PATH = "/quick-wash";
-export const QUICK_WASH_BOOKING_PATH = "/quick-wash#booking";
+export const BASE_WASH_PATH = "/base-wash";
+export const BASE_WASH_BOOKING_PATH = "/base-wash#booking";
 export const WASH_AND_WAX_PATH = "/wash-and-wax";
 export const WASH_AND_WAX_BOOKING_PATH = "/wash-and-wax#booking";
 export const SHINE_AND_SHIELD_PATH = "/shine-and-shield";
 export const SHINE_AND_SHIELD_BOOKING_PATH = "/shine-and-shield#booking";
 
-export const QUICK_CLEAN_PATH = "/quick-clean";
-export const QUICK_CLEAN_BOOKING_PATH = "/quick-clean#booking";
+export const BASE_CLEAN_PATH = "/base-clean";
+export const BASE_CLEAN_BOOKING_PATH = "/base-clean#booking";
 export const WIPE_AND_CLEAN_PATH = "/wipe-and-clean";
 export const WIPE_AND_CLEAN_BOOKING_PATH = "/wipe-and-clean#booking";
 export const STEAM_AND_GUARD_PATH = "/steam-and-guard";
 export const STEAM_AND_GUARD_BOOKING_PATH = "/steam-and-guard#booking";
 
-export const QUICK_DETAILING_PATH = "/quick-detailing";
-export const QUICK_DETAILING_BOOKING_PATH = "/quick-detailing#booking";
+export const BASE_DETAILING_PATH = "/base-detailing";
+export const BASE_DETAILING_BOOKING_PATH = "/base-detailing#booking";
 export const DEEP_CLEANING_PATH = "/deep-cleaning";
 export const DEEP_CLEANING_BOOKING_PATH = "/deep-cleaning#booking";
 export const SPOTLESS_FINISH_PATH = "/spotless-finish";

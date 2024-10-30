@@ -1,9 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import detailingImage from "../../../assets/images/AdobeStock_397247724.avif";
-import { MOBILE_EXTERIOR_DETAILING_BOOKING_PATH } from "../../../utils/constants";
+import {
+  BASE_WASH_PATH,
+  MOBILE_EXTERIOR_DETAILING_BOOKING_PATH,
+} from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
-import { exteriorDetailingServices } from "../../../utils/services";
+import { exteriorDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
 import Card from "../../Card";
@@ -60,9 +63,8 @@ const AutoDetailing = () => {
             description={item.description}
             services={item.services}
             duration={item.duration}
-            link={MOBILE_EXTERIOR_DETAILING_BOOKING_PATH}
+            link={item.link}
             button={"Get Started"}
-            background={item.background}
             bestValue={item.bestValue}
           />
         ))}
@@ -71,8 +73,8 @@ const AutoDetailing = () => {
       <div id="booking" className="scroll-mb-[750px]"></div>
       <Booking />
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2>Addons</h2>
-        <Addons />
+        <h2>{exteriorDetailingServices[0].type.split(" ")[0]}{" "}Addons</h2>
+        <Addons type={exteriorDetailingServices[0].type} />
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article className=" w-full flex flex-col justify-center">

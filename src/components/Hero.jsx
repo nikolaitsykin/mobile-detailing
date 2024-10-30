@@ -6,7 +6,6 @@ import Services from "./Services";
 import Button from "./UI/Button";
 
 const Hero = ({ city, location }) => {
-
   return (
     <div className="w-full bg-white ">
       <div className="w-full bg-black">
@@ -30,7 +29,7 @@ const Hero = ({ city, location }) => {
             {location} Premier Auto Detailing
           </h1>
           <p className=" text-center text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Mobile Auto Detailing in {city} & Surrounding Areas.
+            Mobile Auto Detailing & Ceramic Coating serving {city} & Surrounding Areas.
           </p>
           <p className="font-poppins font-light text-center text-xs md:text-lg pb-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Whether you want to protect your car or give it a clean look, we
@@ -39,7 +38,7 @@ const Hero = ({ city, location }) => {
           <div className=" flex justify-center">
             <div className="min-w-48">
               <Link to={BOOKING_PAGE_PATH}>
-                <Button children={"BOOK NOW"} color={"primary"} />
+                <Button children={"BOOK NOW"} color={"primary"} border={'border'} />
               </Link>
             </div>
           </div>
