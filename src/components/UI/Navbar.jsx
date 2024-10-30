@@ -8,11 +8,6 @@ import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = window.location.pathname;
-
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location]);
   
   const onMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -31,7 +26,7 @@ const Navbar = () => {
           key={"service"}
           className={`flex jutify-end md:justify-center items-start md:basis-1/4`}
         >
-          <Dropdown title={servicesLinks[0]} />
+          <Dropdown title={servicesLinks[0]} onMenuClick={onMenuClick} />
         </li>
         {servicesLinks.slice(1).map((link, index) => (
           <li

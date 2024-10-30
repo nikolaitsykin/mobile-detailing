@@ -7,13 +7,13 @@ import {
 } from "../../utils/detailingPackages";
 import DropdownList from "./DropdownList";
 
-const Dropdown = ({ title }) => {
+const Dropdown = ({ title, onMenuClick }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const location = window.location.pathname;
 
   useEffect(() => {
     setIsDropdownOpen(false);
-  }, [location]);
+    onMenuClick();
+  }, []);
 
   return (
     <div
@@ -33,9 +33,18 @@ const Dropdown = ({ title }) => {
         className={`${isDropdownOpen ? "block" : "hidden"} 
             z-10 flex-col absolute bg-black min-w-32 md:min-w-36 shadow-lg ml-24 -mt-12 md:m-0`}
       >
-        <DropdownList options={interiorDetailingServices} />
-        <DropdownList options={exteriorDetailingServices} />
-        <DropdownList options={fullDetailingServices} />
+        <DropdownList
+          options={interiorDetailingServices}
+          onMenuClick={onMenuClick}
+        />
+        <DropdownList
+          options={exteriorDetailingServices}
+          onMenuClick={onMenuClick}
+        />
+        <DropdownList
+          options={fullDetailingServices}
+          onMenuClick={onMenuClick}
+        />
       </ul>
     </div>
   );

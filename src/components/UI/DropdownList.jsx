@@ -1,14 +1,21 @@
+import { on } from "events";
 import React, { useState } from "react";
 import { ReactComponent as ArrowDown } from "../../assets/icons/arrow_down_icon.svg";
 import DropdownItem from "./DropdownItem";
 
-const DropdownList = ({ options }) => {
+const DropdownList = ({ options, onMenuClick }) => {
   const [isOptionsOpen, setIsOptionsOpen] = useState(false);
+
+  const onClick = () => {
+    setIsOptionsOpen(!isOptionsOpen);
+    // onMenuClick();
+  };
 
   return (
     <li
       onMouseEnter={() => setIsOptionsOpen(true)}
       onMouseLeave={() => setIsOptionsOpen(false)}
+      onClick={onClick}
       id="interiorServices"
       key={"interiorServices"}
       className=" float-none px-3 text-left flex items-center hover:bg-dark-gray"
