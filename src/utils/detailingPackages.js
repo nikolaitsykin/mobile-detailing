@@ -88,7 +88,7 @@ export const baseDetail = {
   link: BASE_DETAILING_PATH,
   description:
     "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve, and clean the door jambs. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look. Both Base Wash & Base Clean services included in full detailing package with up to $40 savings.",
-  duration: ["Up to 2 hours", "Up to 2.5 hours", "Up to 3 hours"],
+  duration: ["2 hours", "2 hours 30 mins", "3 hours"],
   background: " ",
 };
 
@@ -134,7 +134,7 @@ export const deepCleaning = {
   link: DEEP_CLEANING_PATH,
   description:
     "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we clean the door jambs and ensure the tires and wheels are spotless. We follow with a clay bar treatment to decontaminate the paint and apply a premium spray wax for lasting protection. Finally, the windows are treated with a water repellent for clarity. We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. Using steam, we sanitize the fabric or leather seats and touch points to eliminate germs and bacteria. The surfaces, plastics, and cup holders get a deep clean, and we finish with spotless glass and mirrors. Both Wash & Wax and Wipe & Clean services included in full detailing package with up to $70 savings.",
-  duration: ["Up to 3.5 hours", "Up to 4 hours", "Up to 4.5 hours"],
+  duration: ["3 hours 30 mins", "4 hours", "4 hours 30 mins"],
   background: "gray",
   bestValue: "Most Popular",
 };
@@ -183,7 +183,7 @@ export const spotlessFinish = {
   link: SPOTLESS_FINISH_PATH,
   description:
     "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by spotless tires and wheels. After protecting the windows, we perform a clay bar treatment and iron decontamination. We finish with a durable ceramic coating for long-lasting gloss and protection. We vacuum and steam the interior, carpets, and trunk to remove pet hair and sand. Door panels, seats, vents, and surfaces receive a thorough cleaning with steam, followed by conditioning and UV protection. We ensure the glass and mirrors are spotless, leaving your vehicle looking polished.* Excessive pet hair or sand may require additional service. Both Shine & Shield and Steam & Guard services included in full detailing package with up to $80 savings.",
-  duration: ["Up to 5.5 hours", "Up to 6 hours", "Up to 6.5 hours"],
+  duration: ["5 hours 30 mins", "6 hours", "6 hours 30 mins"],
   background: "bg-gray",
   bestValue: "Best Value",
 };
@@ -213,7 +213,7 @@ export const baseWash = {
   link: BASE_WASH_PATH,
   description:
     "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve, and clean the door jambs. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish.",
-  duration: ["Up to 40 minutes", "Up to 50 minutes", "Up to 1 hour"],
+  duration: ["45 mins", "1 hour", "1 hour 15 mins"],
   background: " ",
 };
 
@@ -248,7 +248,7 @@ export const washAndWax = {
   link: WASH_AND_WAX_PATH,
   description:
     "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we clean the door jambs and ensure the tires and wheels are spotless. We follow with a clay bar treatment to decontaminate the paint and apply a premium spray wax for lasting protection. Finally, the windows are treated with a water repellent for clarity.",
-  duration: ["Up to 1.5 hours", "Up to 2 hours", "Up to 2.5 hours"],
+  duration: ["1 hour 30 mins", "1 hour 45 mins", "2 hours"],
   background: " ",
   bestValue: "Most Popular",
 };
@@ -287,7 +287,7 @@ export const shineAndShield = {
   link: SHINE_AND_SHIELD_PATH,
   description:
     "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by spotless tires and wheels. After protecting the windows, we perform a clay bar treatment and iron decontamination. We finish with a durable ceramic coating for long-lasting gloss and protection.",
-  duration: ["Up to 2.5 hours", "Up to 3 hours", "Up to 3.5 hours"],
+  duration: ["2 hours 30 mins", "2 hours 45 mins", "3 hours"],
   background: " ",
 };
 
@@ -318,7 +318,7 @@ export const baseClean = {
     "We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.\n\n",
   price: ["$80", "$100", "$120"],
   carsSize: carTypes,
-  duration: ["Up to 1 hours", "Up to 1.5 hours", "Up to 2 hours"],
+  duration: ["1 hour", "1 hour 30 mins", "2 hours"],
 };
 
 export const wipeAndClean = {
@@ -352,7 +352,7 @@ export const wipeAndClean = {
     "We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. Using steam, we sanitize the fabric or leather seats and touch points to eliminate germs and bacteria. The surfaces, plastics, and cup holders get a deep clean, and we finish with spotless glass and mirrors.\n\n",
   price: ["$140", "$160", "$180"],
   carsSize: carTypes,
-  duration: ["Up to 2.5 hours", "Up to 3 hours", "Up to 3.5 hours"],
+  duration: ["2 hours", "2 hours 30 mins", "3 hours"],
   background: " ",
   bestValue: "Most Popular",
 };
@@ -396,7 +396,7 @@ export const steamAndGuard = {
     "We vacuum and steam the interior, carpets, and trunk to remove pet hair and sand. Door panels, seats, vents, and surfaces receive a thorough cleaning with steam, followed by conditioning and UV protection. We ensure the glass and mirrors are spotless, leaving your vehicle looking polished.* Excessive pet hair or sand may require additional service.",
   price: ["$200", "$220", "$240"],
   carsSize: carTypes,
-  duration: ["Up to 3.5 hours", "Up to 4 hours", "Up to 4.5 hours"],
+  duration: ["3 hours", "3 hours 30 mins", "4 hours"],
   background: " ",
 };
 

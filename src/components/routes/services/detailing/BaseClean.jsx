@@ -33,7 +33,6 @@ const BaseClean = () => {
               steps={service.steps}
               image={service.image}
               singleService
-              duration={service.duration}
               link={service.link}
               bestValue={service.bestValue}
             />

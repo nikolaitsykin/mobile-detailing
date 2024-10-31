@@ -13,7 +13,6 @@ const Card = ({
   price,
   button,
   link,
-  duration,
   bestValue,
   singleService,
   steps,
