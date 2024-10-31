@@ -65,7 +65,7 @@ const WipeAndClean = () => {
               >
                 Steam & Guard
               </Link>{" "}
-              exterior service, which adds thorough interior and trunk
+              interior service, which adds thorough interior and trunk
               vacuuming, steam cleaning, conditioning and UV protection to
               interior surfaces. Book now for an detailing car cleaing experience
               that truly stands out!
