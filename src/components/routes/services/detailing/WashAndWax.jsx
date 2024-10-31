@@ -67,7 +67,7 @@ const WashAndWax = () => {
               </Link>{" "}
               exterior service, which adds clay bar treatment, gloss enhancment
               and ceramic coating application for up to 6 month of protection
-              for an unbeatable finish. Book now for an exterior car wash
+              for an unbeatable finish. Book now for an exterior car detailing
               experience that truly stands out!
             </p>
           </div>

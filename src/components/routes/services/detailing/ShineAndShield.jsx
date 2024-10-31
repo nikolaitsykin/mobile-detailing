@@ -66,8 +66,10 @@ const ShineAndShield = () => {
               >
                 Spotless Finish
               </Link>{" "}
-              full detailing package, which adds deep interior cleaning, steam treatment and UV & dust protection to your car's interior. Book now for an exterior car wash
-              experience that truly stands out!
+              full detailing package, which adds deep interior cleaning, steam
+              treatment and UV & dust protection to your car's interior. Book
+              now for complete detailing service experience that truly stands
+              out!
             </p>
           </div>
         </section>

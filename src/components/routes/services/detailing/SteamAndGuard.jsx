@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { SPOTLESS_FINISH_PATH } from "../../../../utils/constants";
 import { steamAndGuard } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
@@ -22,7 +23,7 @@ const SteamAndGuard = () => {
         <section className="mt-12">
           <article className=" text-start text-black">
             <h3 className="text-center mb-10">
-              Restore your car’s beauty with our professional exterior detailing
+              Restore your car’s beauty with our professional interior detailing
               services.
             </h3>
             <Card
@@ -41,34 +42,33 @@ const SteamAndGuard = () => {
         <section>
           <div className="text-xs md:text-sm">
             <p>
-              Tired of scratches and swirls on your car, even after all those $5
-              car washes? Those drive-thru machines can actually harm your paint
-              instead of helping it. Our exterior car wash is a better choice,
-              giving your car the care it really needs.
+              Rejuvinate your car's interior with our Steam & Guard Interior
+              Detailing Service! Our skilled technicians use premium
+              eco-friendly products, and proven techniques to clean every inch,
+              eliminating dust, dirt, and grime. Book today and enjoy a fresh,
+              like-new feel on every drive!
               <br />
               <br />
-              While we may not be the cheapest option, we offer top-notch
-              quality for our price. We don’t just “wash” your car—our exterior
-              detailing is designed to bring out a deep, lasting shine with
-              premium products and expert care.
+              With Spotless Auto Detailing’s Steam & Guard Package, enjoy a
+              thorough, high-quality clean that keeps your car looking and
+              smelling its best. Reach out today for a pristine, refreshed
+              interior that enhances both your driving experience and your car’s
+              value.
               <br />
               <br />
-              Our skilled team tackles everything from dirt and grime to bird
-              droppings and bug stains, leaving your car looking its best.
-              <br />
-              <br />
-              If you’re ready to take your car’s shine to the next level, try
+              If you’re dealing with more dust, dirt, pet hair, tough stains, or
+              extra mess, and want to keep your car looking its best, consider
               our{" "}
               <Link
                 className="underline text-blue font-semibold"
-                to="/wash-and-wax"
+                to={SPOTLESS_FINISH_PATH}
               >
-                Wash & Wax
+                Spotless Finish
               </Link>{" "}
-              exterior service, which adds clay bar treatment and wax
-              application for up to 1 month of protection for an unbeatable
-              finish. Book now for an exterior car wash experience that truly
-              stands out!
+              Full Detailing Package, which adds clay bar treatment, gloss
+              enhancment and ceramic coating application for up to 6 month of
+              protection for an unbeatable finish. Book now for complete
+              detailing service experience that truly stands out!
             </p>
           </div>
         </section>

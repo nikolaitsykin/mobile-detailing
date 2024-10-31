@@ -339,7 +339,7 @@ export const wipeAndClean = {
   steps: [
     "✔ Interior & Trunk Vacuumed – Total interior care",
     "✔ Floor Mats Shampooed – Fresh and stain-free",
-    "✔ Door Panels & Jambs – Thorough cleaning for a polished look",
+    "✔ Door Panels & Jambs – Thorough cleaning for a fresh look",
     "✔ Seats Steamed & Cleaned – Fresh, clean seating",
     "✔ Plastics & Surfaces Refreshed – Dust-free and like new",
     "✔ Vents & Crevices – Deep clean for every nook and cranny",

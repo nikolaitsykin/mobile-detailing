@@ -68,7 +68,7 @@ const BaseWash = () => {
               </Link>{" "}
               exterior service, which adds clay bar treatment and wax
               application for up to 1 month of protection for an unbeatable
-              finish. Book now for an exterior car wash experience that truly
+              finish. Book now for an exterior car detailing experience that truly
               stands out!
             </p>
           </div>

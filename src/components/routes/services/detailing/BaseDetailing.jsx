@@ -23,8 +23,8 @@ const BaseDetailing = () => {
         <section className="mt-12">
           <article className=" text-start text-black">
             <h3 className="text-center mb-10">
-              Restore your car’s beauty with our professional exterior detailing
-              services.
+              Restore your car’s beauty with our professional full exterior and
+              interior detailing services.
             </h3>
             <Card
               title={service.title}
@@ -48,14 +48,17 @@ const BaseDetailing = () => {
               giving your car the care it really needs.
               <br />
               <br />
-              While we may not be the cheapest option, we offer top-notch
-              quality for our price. We don’t just “wash” your car—our exterior
-              detailing is designed to bring out a deep, lasting shine with
-              premium products and expert care.
+              Our Full Exterior and Interior Detailing package is all about
+              quality. While we may not be the cheapest option, we offer
+              exceptional value for our price. We don’t just "wash" your car—our
+              detailing brings out a rich, long-lasting shine using premium
+              products and meticulous attention, ensuring your car looks and
+              feels its absolute best.
               <br />
               <br />
-              Our skilled team tackles everything from dirt and grime to bird
-              droppings and bug stains, leaving your car looking its best.
+              Our skilled team handles it all, from dirt, grime, bird droppings,
+              and bug stains on the exterior to dust, pet hair, and stains
+              inside, leaving your car looking its absolute best.
               <br />
               <br />
               If you’re ready to take your car’s shine to the next level, try
@@ -67,7 +70,9 @@ const BaseDetailing = () => {
                 Deep Cleaning
               </Link>{" "}
               exterior service, which adds clay bar treatment and wax
-              application for up to 1 month of protection for exterior services and trunk vacuuming, steam treatment to seats and interior services. Book now for an exterior car wash experience that truly
+              application for up to 1 month of protection for exterior services
+              and trunk vacuuming, steam treatment to seats and interior
+              services. Book now for an exterior car wash experience that truly
               stands out!
             </p>
           </div>

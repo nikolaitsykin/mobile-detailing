@@ -23,7 +23,7 @@ const BaseClean = () => {
         <section className="mt-12">
           <article className=" text-start text-black">
             <h3 className="text-center mb-10">
-              Restore your car’s beauty with our professional exterior detailing
+              Restore your car’s beauty with our professional interior detailing
               services.
             </h3>
             <Card
@@ -42,31 +42,30 @@ const BaseClean = () => {
         <section>
           <div className="text-xs md:text-sm">
             <p>
-              Tired of scratches and swirls on your car, even after all those $5
-              car washes? Those drive-thru machines can actually harm your paint
-              instead of helping it. Our exterior car wash is a better choice,
-              giving your car the care it really needs.
+              Refresh your car's interior with our Base Clean Interior Detailing
+              Service! Our skilled technicians use premium eco-friendly
+              products, and proven techniques to clean every inch, eliminating
+              dust, dirt, and grime. Book today and enjoy a fresh, like-new feel
+              on every drive!
               <br />
               <br />
-              While we may not be the cheapest option, we offer top-notch
-              quality for our price. We don’t just “wash” your car—our exterior
-              detailing is designed to bring out a deep, lasting shine with
-              premium products and expert care.
+              With Spotless Auto Detailing’s Base Clean Package, enjoy a
+              thorough, high-quality clean that keeps your car looking and
+              smelling its best. Reach out today for a pristine, refreshed
+              interior that enhances both your driving experience and your car’s
+              value.
               <br />
               <br />
-              Our skilled team tackles everything from dirt and grime to bird
-              droppings and bug stains, leaving your car looking its best.
-              <br />
-              <br />
-              If you’re ready to take your car’s shine to the next level, try
-              our{" "}
+              If you’re dealing with more dust, dirt, stains or extra mess, our{" "}
               <Link
                 className="underline text-blue font-semibold"
                 to={WIPE_AND_CLEAN_PATH}
               >
                 Wipe & Clean
               </Link>{" "}
-              exterior service, which adds trunk vacuuming and steam treatment to seats and touch points. Book now for an exterior car wash experience that truly
+              interior service, is the perfect solution for a deeper clean,
+              which adds trunk vacuuming and steam treatment to seats and touch
+              points. Book now for an interior car detailing experience that truly
               stands out!
             </p>
           </div>
