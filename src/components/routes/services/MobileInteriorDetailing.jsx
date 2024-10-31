@@ -1,12 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import detailingImage from "../../../assets/images/AdobeStock_539555302.avif";
-import { MOBILE_INTERIOR_DETAILING_BOOKING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { interiorDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
-import Card from "../../Card";
 import Booking from "../../Booking";
+import Card from "../../Card";
 
 const AutoDetailing = () => {
   return (
@@ -60,7 +59,7 @@ const AutoDetailing = () => {
             description={item.description}
             services={item.services}
             duration={item.duration}
-            link={MOBILE_INTERIOR_DETAILING_BOOKING_PATH}
+            link={item.link}
             button={"Get Started"}
             background={item.background}
             bestValue={item.bestValue}

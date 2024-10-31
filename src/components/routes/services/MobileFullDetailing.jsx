@@ -1,7 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import detailingImage from "../../../assets/images/AdobeStock_273206890.avif";
-import { MOBILE_FULL_DETAILING_BOOKING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { fullDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
@@ -60,7 +59,7 @@ const AutoDetailing = () => {
             description={item.description}
             services={item.services}
             duration={item.duration}
-            link={MOBILE_FULL_DETAILING_BOOKING_PATH}
+            link={item.link}
             button={"Get Started"}
             background={item.background}
             bestValue={item.bestValue}
