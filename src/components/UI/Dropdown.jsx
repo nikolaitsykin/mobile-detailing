@@ -32,18 +32,18 @@ const Dropdown = ({ title, closeMenu }) => {
       >
         <DropdownList
           options={exteriorDetailingServices}
-          closeMenu={closeMenu}
           closeDropdown={closeDropdown}
+          closeMenu={closeMenu}
         />
         <DropdownList
           options={interiorDetailingServices}
-          closeMenu={closeMenu}
           closeDropdown={closeDropdown}
+          closeMenu={closeMenu}
         />
         <DropdownList
           options={fullDetailingServices}
-          closeMenu={closeMenu}
           closeDropdown={closeDropdown}
+          closeMenu={closeMenu}
         />
       </ul>
     </div>

@@ -17,7 +17,6 @@ const DropdownItem = ({ name, title, link, closeMenu, closeDropdown }) => {
     >
       <NavLink
         key={name}
-        onClick={() => {}}
         to={`${link}`}
         className={({ isActive }) =>
           (isActive ? "text-white" : "text-gray") + ` ${dropdownLinkStyle}`

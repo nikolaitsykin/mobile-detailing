@@ -1,13 +1,10 @@
 const SelectField = (props) => {
-  const { label, handleChange, name, defaultOption, options, value, required } = props;
+  const { label, handleChange, name, defaultOption, options, value, required } =
+    props;
 
-  // console.log(value);
   return (
     <div className="w-full py-1">
-      <label
-        className="flex flex-col text-md font-medium"
-        htmlFor={name}
-      >
+      <label className="flex flex-col text-md font-medium" htmlFor={name}>
         {label}
       </label>
       <select
