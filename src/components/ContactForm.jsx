@@ -7,6 +7,7 @@ import SelectField from "./UI/SelectField";
 import TextareaField from "./UI/TextareaField";
 
 const ContactForm = () => {
+
   const [isChecked, setIsChecked] = useState(false);
   const [values, setValues] = useState({
     fullName: "",
@@ -281,7 +282,6 @@ const ContactForm = () => {
           <div className="text-red-500 text-center pt-5">{errorMessage}</div>
         )}
         {status && renderAlert()}
-
         <div className="flex justify-cente mt-8">
           <Button
             type="submit"
