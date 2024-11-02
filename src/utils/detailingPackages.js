@@ -83,7 +83,7 @@ export const baseDetail = {
     "✔ Vents & Crevices – Dust-free and tidy",
     "✔ Cup Holders Cleaned – Pristine and ready to go",
   ],
-  price: ["$125", "$150", "$175"],
+  price: ["$125", "$150", "$170"],
   carsSize: carTypes,
   link: BASE_DETAILING_PATH,
   description:
@@ -282,7 +282,7 @@ export const shineAndShield = {
     "✔ Ceramic Protection for Door Jambs & Wheels – Long-lasting shield",
     "✔ 6-Month Ceramic Coating – Superior protection for your paint",
   ],
-  price: ["$150", "$170", "$200"],
+  price: ["$160", "$180", "$200"],
   carsSize: carTypes,
   link: SHINE_AND_SHIELD_PATH,
   description:
