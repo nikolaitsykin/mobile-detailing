@@ -13,8 +13,8 @@
 
 .slick-prev,
 .slick-next {
+  margin-top: 30px;
   width: 80px;
-  height: 80px;
   z-index: 20;
 }
 

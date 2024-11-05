@@ -16,6 +16,11 @@ export const generalQuestions = [
     description:
       "We serve the Greater Raleigh area. If you are in Raleigh, Durham, Chapel Hill, Morrisville, Cary, Apex, Holly Springs Clayton, Garner or the surrounding areas, contact us for auto detailing today. Add your address to the notes section on our mobile scheduling page. A destination charge will apply for locations outside our 20-mile service radius.",
   },
+  {
+    title: "How can I pay for my service?",
+    description:
+      "We accept cash, credit cards, and debit cards. Receipts can be sent to you via email.",
+  },
 ];
 
 export const autoDetailingQuestions = [

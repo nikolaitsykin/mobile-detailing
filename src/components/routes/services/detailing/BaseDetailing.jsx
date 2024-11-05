@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { DEEP_CLEANING_PATH } from "../../../../utils/constants";
+import {
+  DEEP_CLEANING_PATH,
+  GOOGLE_REVIEWS_URL,
+} from "../../../../utils/constants";
 import { baseDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import EmbedWidget from "../../../ReviewsWidget";
 
 const BaseDetailing = () => {
   const service = baseDetail;
@@ -77,6 +81,9 @@ const BaseDetailing = () => {
             </p>
           </div>
         </section>
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
+          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+        </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>Addons</h2>
           <Addons full />

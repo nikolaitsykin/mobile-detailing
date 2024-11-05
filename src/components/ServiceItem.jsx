@@ -30,7 +30,7 @@ const ServiceItem = ({
           <p className="text-lg font-medium text-blue animate-pulse">
             {bestValue}
           </p>
-          {title && <h3 className=" text-center p-2">{title}</h3>}
+          {title && <h3 className="text-xl text-center p-3">{title}</h3>}
           {type && <h6 className="max-w-xl text-center pb-3">{type}</h6>}
         </div>
         {service && (

@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { WIPE_AND_CLEAN_PATH } from "../../../../utils/constants";
+import {
+  GOOGLE_REVIEWS_URL,
+  WIPE_AND_CLEAN_PATH,
+} from "../../../../utils/constants";
 import { baseClean } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import EmbedWidget from "../../../ReviewsWidget";
 
 const BaseClean = () => {
   const service = baseClean;
@@ -64,11 +68,14 @@ const BaseClean = () => {
               </Link>{" "}
               interior service, is the perfect solution for a deeper clean,
               which adds trunk vacuuming and steam treatment to seats and touch
-              points. Book now for an interior car detailing experience that truly
-              stands out!
+              points. Book now for an interior car detailing experience that
+              truly stands out!
             </p>
           </div>
         </section>
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
+          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+        </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>{service.type.split(" ")[0]} Addons</h2>
           <Addons type={service.type} />

@@ -411,7 +411,7 @@ export const fullDetailingServices = [baseDetail, deepCleaning, spotlessFinish];
 export const exteriorDetailingService = {
   title: "Mobile Exterior Detailing",
   description:
-    "Our exterior wash includes a thorough hand wash, decontamination, and precision drying for a spotless, protected finish.",
+    "Our exterior detailing includes a thorough hand wash, decontamination, and precision drying for a spotless, protected finish.",
   image: exteriorDetailingServiceImage,
   link: MOBILE_EXTERIOR_DETAILING_PATH,
   options: exteriorDetailingServices,
@@ -425,7 +425,7 @@ export const interiorDetailingService = {
   options: interiorDetailingServices,
 };
 export const fullDetailingService = {
-  title: "Mobile In & Out Detailing",
+  title: "Mobile Full Auto Detailing",
   description:
     "Our full detailing packages include a thorough hand wash, decontamination, deep cleaning, vacuuming, and upholstery care, leaving your exterior and interior both shining, and comfortable.",
   image: primeExteriorWashImage,

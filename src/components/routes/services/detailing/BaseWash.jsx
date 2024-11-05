@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { WASH_AND_WAX_PATH } from "../../../../utils/constants";
+import {
+  GOOGLE_REVIEWS_URL,
+  WASH_AND_WAX_PATH,
+} from "../../../../utils/constants";
 import { baseWash } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import EmbedWidget from "../../../ReviewsWidget";
 
 const BaseWash = () => {
   const service = baseWash;
@@ -68,15 +72,19 @@ const BaseWash = () => {
               </Link>{" "}
               exterior service, which adds clay bar treatment and wax
               application for up to 1 month of protection for an unbeatable
-              finish. Book now for an exterior car detailing experience that truly
-              stands out!
+              finish. Book now for an exterior car detailing experience that
+              truly stands out!
             </p>
           </div>
         </section>
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
+          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+        </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>{service.type.split(" ")[0]} Addons</h2>
           <Addons type={service.type} />
         </section>
+
         <div id="booking" className="scroll-mb-[750px]"></div>
         <Booking />
       </div>

@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SPOTLESS_FINISH_PATH } from "../../../../utils/constants";
+import {
+  GOOGLE_REVIEWS_URL,
+  SPOTLESS_FINISH_PATH,
+} from "../../../../utils/constants";
 import { deepCleaning } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import EmbedWidget from "../../../ReviewsWidget";
 
 const DeepCleaning = () => {
   const service = deepCleaning;
@@ -76,6 +80,9 @@ const DeepCleaning = () => {
             </p>
           </div>
         </section>
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
+          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+        </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>Addons</h2>
           <Addons full />

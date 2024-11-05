@@ -12,72 +12,63 @@ const AboutPage = () => {
         <article className="text-black flex flex-col justify-center">
           <h2 className="">Professional Service, Personal Care</h2>
           <p className="py-2">
-            At {fullBusinessName}, we're committed to making your car look its
-            best—right from the convenience of your driveway. Our business is
-            built on the belief that top-quality car care should be easy,
-            professional, and stress-free. We bring our detailing expertise
-            straight to you, ensuring your vehicle shines without you needing to
-            go anywhere.
+            At {fullBusinessName}, we’re dedicated to making your car look its
+            best—from the comfort of your driveway. Our service combines
+            top-tier car care with convenience, bringing expertise and a
+            personal touch directly to you, so you can enjoy a spotless vehicle
+            without stepping out.
           </p>
           <h2 className=" p-5">Our Story</h2>
           <p>
-            Hi! I'm Nik, the owner of {fullBusinessName}. What started as a passion
-            for taking care of my own car quickly grew into helping family and
-            friends. Now, I'm excited to share that same care and attention with
-            you. {businessName} was created with a simple goal: to make car
-            detailing easier for people with busy lives. Whether you’re juggling
-            family responsibilities, constantly on the move, or simply love
-            keeping your car in top shape, we understand how hard it can be to
-            find time for vehicle care. That’s why we offer mobile detailing
-            services that work around your schedule. As passionate car
-            enthusiasts, we’re here to help you maintain your car’s appearance,
-            whenever and wherever it’s most convenient for you.{" "}
-            <strong>
-              No matter who you are or what you drive, we've got you covered.
-            </strong>
+            At {fullBusinessName}, we’re dedicated to making your car look its
+            best—from the comfort of your driveway. Our service combines
+            top-tier car care with convenience, bringing expertise and a
+            personal touch directly to you, so you can enjoy a spotless vehicle
+            without stepping out.
           </p>
           <h2 className=" p-5">What Drives Us</h2>
           <p>
-            Our mission is clear: to make your car shine, inside and out, with
-            exceptional attention to detail. We use premium, eco-friendly
-            products that are tough on dirt but gentle on the environment.
-            Whether it's a quick cleanup or an in-depth detailing service, we
-            ensure your car receives the same level of care we give our own.
+            Our mission is to provide top-quality, eco-friendly detailing that
+            enhances your vehicle inside and out. We’re passionate about using
+            safe, premium products that are tough on dirt but kind to the
+            environment. From quick refreshes to deep detailing, we ensure your
+            car looks its best with the utmost care.
           </p>
           <h2 className=" p-5 ">Why Choose {businessName}?</h2>
           <ul className="pl-5">
             <li className="list-disc">
-              <strong>We Come to You:</strong> Your time is valuable. We show up
-              wherever it's most convenient for you—home, work, or anywhere
-              else.
+              <strong>We Come to You:</strong> Enjoy the convenience of mobile
+              detailing where it’s easiest for you, be it at home, work, or any
+              other location.
             </li>
             <li className="list-disc">
               <strong>Quality Above All:</strong> Our trained professionals
-              deliver high-quality results every time, without cutting corners.
+              prioritize quality, ensuring your car looks flawless after every
+              service.
             </li>
             <li className="list-disc">
-              <strong>Environmental-safe:</strong>We believe in protecting your
-              car and the environment. That's why we exclusively use safe,
-              eco-friendly Car Care products that offer outstanding results
-              without harmful chemicals.
+              <strong>Eco-Friendly Products:</strong> Our products are both
+              effective and environmentally conscious, offering superior results
+              without harsh chemicals.
             </li>
             <li className="list-disc">
-              <strong>Customer First:</strong> We treat every vehicle as if it
-              were our own and every customer like family, making sure you love
-              the way your car looks.
+              <strong>Customer-Centric Approach:</strong> We treat each vehicle
+              with care and each customer with respect, ensuring satisfaction
+              with every service.
             </li>
           </ul>
           <h2 className=" p-5 ">The {businessName} Difference</h2>
           <p>
-            Life can be hectic, and maintaining your car shouldn't be a hassle.
-            Whether you need a simple refresh or a full detailing package, we
-            bring flawless results right to your door. Spend less time worrying
-            about your car's appearance and more time enjoying it.
+            Life is busy, but keeping your car clean doesn’t have to be. We
+            offer convenient, high-quality detailing that fits into your
+            schedule, helping you spend more time enjoying your car and less
+            time worrying about its appearance.
           </p>
           <h2 className=" p-5 ">Ready to Experience a New Level of Care?</h2>
           <p className=" text-base md:text-lg">
-            Book with {businessName} today, and let us bring the shine to
-            you—all while doing our part for the environment!
+            Schedule your appointment with {businessName} today and experience
+            the convenience and quality of mobile detailing—all while supporting
+            eco-friendly practices.
           </p>
           <div className="py-10">
             <BookButtons color="secondary" />

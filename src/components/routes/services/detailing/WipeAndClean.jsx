@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { STEAM_AND_GUARD_PATH } from "../../../../utils/constants";
+import {
+  GOOGLE_REVIEWS_URL,
+  STEAM_AND_GUARD_PATH,
+} from "../../../../utils/constants";
 import { wipeAndClean } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import EmbedWidget from "../../../ReviewsWidget";
 
 const WipeAndClean = () => {
   const service = wipeAndClean;
@@ -67,11 +71,14 @@ const WipeAndClean = () => {
               </Link>{" "}
               interior service, which adds thorough interior and trunk
               vacuuming, steam cleaning, conditioning and UV protection to
-              interior surfaces. Book now for an detailing car cleaing experience
-              that truly stands out!
+              interior surfaces. Book now for an detailing car cleaing
+              experience that truly stands out!
             </p>
           </div>
-        </section>
+        </section>{" "}
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
+          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+        </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>{service.type.split(" ")[0]} Addons</h2>
           <Addons type={service.type} />

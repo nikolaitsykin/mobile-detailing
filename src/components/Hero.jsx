@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import detailingVideo from "../assets/videos/6158070-hd_1920_1080_30fps.mp4";
-import { BOOKING_PAGE_PATH } from "../utils/constants";
+import { BOOKING_PAGE_PATH, GOOGLE_REVIEWS_URL } from "../utils/constants";
 import Services from "./Services";
 import Button from "./UI/Button";
+import EmbedWidget from "./ReviewsWidget";
 
 const Hero = ({ city, location }) => {
   return (
-    <div className="w-full bg-white ">
+    <div className="w-full bg-white">
       <div className="w-full bg-black">
         <video
           className="opacity-40 object-cover h-[450px] md:h-[550px] w-full mx-auto"
@@ -29,7 +30,8 @@ const Hero = ({ city, location }) => {
             {location} Premier Auto Detailing
           </h1>
           <p className=" text-center text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Mobile Auto Detailing & Ceramic Coating serving {city} & Surrounding Areas.
+            Mobile Auto Detailing & Ceramic Coating serving {city} & Surrounding
+            Areas.
           </p>
           <p className="font-poppins font-light text-center text-xs md:text-lg pb-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Whether you want to protect your car or give it a clean look, we
@@ -38,16 +40,22 @@ const Hero = ({ city, location }) => {
           <div className=" flex justify-center">
             <div className="min-w-48">
               <Link to={BOOKING_PAGE_PATH}>
-                <Button children={"BOOK NOW"} color={"primary"} border={'border'} />
+                <Button
+                  children={"BOOK NOW"}
+                  color={"primary"}
+                  border={"border"}
+                />
               </Link>
             </div>
           </div>
         </div>
       </div>
-
       <section>
         <article>
-          <h2>Detailing to Your Doorstep</h2>
+          <h2>
+            Eco-Friendly Mobile Detailing Services in {city} – Protect & Enhance
+            Your Car On-the-Go!
+          </h2>
           <p>
             At Spotless Auto Detailing, we offer a range of high-quality mobile
             detailing services that bring the car care to your doorstep. We also
@@ -62,10 +70,25 @@ const Hero = ({ city, location }) => {
         </article>
       </section>
       <section>
-        <h2 id="services" className="text-center">
-          Services
-        </h2>
-        <Services />
+        <article>
+          <h2 id="services" className="text-center">
+            Comprehensive Car Detailing Services – From Full Interior Cleaning
+            to Exterior Shine & Protection
+          </h2>
+          <p className="pb-10">
+            From interior cleaning to exterior shine and ceramic coating,
+            Spotless Auto Detailing offers a full range of mobile services
+            tailored to your car's needs. Our detailing packages are designed to
+            protect, enhance, and restore your vehicle, giving it a pristine
+            look and feel.
+          </p>
+          <div className="pb-16">
+            <Services />
+          </div>
+          <div>
+            <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+          </div>
+        </article>
       </section>
     </div>
   );

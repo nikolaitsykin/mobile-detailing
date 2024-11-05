@@ -6,6 +6,8 @@ export const TIKTOK_URL = "https://www.tiktok.com/@spotless.mobile.detail";
 export const BOOKING_URL =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services";
 
+export const GOOGLE_REVIEWS_URL = "https://34029f5c2c3a4f1cbc1c8ddd229acb3f.elf.site";
+
 export const CONTACT_PATH = "/contact";
 export const FAQS_PATH = "/faqs";
 export const SERVICES_PATH = "/services";
