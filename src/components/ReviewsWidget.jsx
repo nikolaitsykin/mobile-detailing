@@ -10,13 +10,16 @@ const EmbedWidget = ({ src }) => {
   }, []);
 
   return (
-    <iframe
-      ref={iframeRef}
-      src={src}
-      title="Embed Widget"
-      width="100%"
-      height="500px"
-    />
+    <div>
+      <h2>What our customers say</h2>
+      <iframe
+        ref={iframeRef}
+        src={src}
+        title="Embed Widget"
+        width="100%"
+        height="450px"
+      />
+    </div>
   );
 };
 

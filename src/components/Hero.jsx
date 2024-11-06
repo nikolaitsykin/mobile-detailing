@@ -82,7 +82,7 @@ const Hero = ({ city, location }) => {
             protect, enhance, and restore your vehicle, giving it a pristine
             look and feel.
           </p>
-          <div className="pb-16">
+          <div className="pb-12">
             <Services />
           </div>
           <div>

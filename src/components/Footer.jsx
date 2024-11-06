@@ -91,11 +91,11 @@ const Footer = () => {
       </section>
       <section>
         <div className="flex justify-between w-full py-10 items-center">
-          <div>
+          <div className="basis-1/2 xs:basis-auto">
             <SocialButtons />
           </div>
-          <div>
-            <p className="text-gray text-xxs sm:text-xs md:text-sm">&copy; 2024 {fullBusinessName}. All rights reserved.</p>
+          <div className="basis-1/2 xs:basis-auto"> 
+            <p className="text-gray text-xs md:text-sm">&copy; 2024 {fullBusinessName}. All rights reserved.</p>
           </div>
         </div>
       </section>

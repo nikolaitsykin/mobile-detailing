@@ -19,7 +19,7 @@ const Promos = () => {
   };
 
   return (
-    <div className="w-full pb-5 mt-5">
+    <div className="w-full mb-12">
       <h2 className="text-center text-black">Specials on Detailing Services</h2>
       <Slider {...settings} className="w-full h-56 pt-5">
         {permanentPromos.map((item, index) => (
