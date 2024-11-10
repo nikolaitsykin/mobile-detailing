@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/spotless_logo_with_slogan.avif";
 import {
   businessAddress,
   businessHours,
@@ -8,7 +7,7 @@ import {
   footerLinksActual,
   fullBusinessName,
   locationLinks,
-  locations
+  locations,
 } from "../utils/data";
 import SocialButtons from "./UI/SocialButtons";
 
@@ -19,12 +18,17 @@ const Footer = () => {
         <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3">
           <div className="min-w-48 md:pr-5 items-start">
             <div>
-              <img className="h-12 object-contain" src={logo} alt="logo" />
+              <img
+                loading="lazy"
+                className="h-12 object-contain"
+                src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/spotless_logo.avif"
+                alt="Spotless Logo"
+              />
             </div>
             <p className="pt-3 text-xs md:text-sm">
-              We specialize in mobile detailing, paint correction and ceramic
-              coating, — bringing high-quality care directly to you. We serve
-              Raleigh and surrounding areas.
+              We specialize in mobile detailing and ceramic coating, — bringing
+              high-quality care directly to you. We serve Raleigh and
+              surrounding areas.
             </p>
           </div>
         </div>
@@ -94,8 +98,10 @@ const Footer = () => {
           <div className="basis-1/2 xs:basis-auto">
             <SocialButtons />
           </div>
-          <div className="basis-1/2 xs:basis-auto"> 
-            <p className="text-gray text-xs md:text-sm">&copy; 2024 {fullBusinessName}. All rights reserved.</p>
+          <div className="basis-1/2 xs:basis-auto">
+            <p className="text-gray text-xs md:text-sm">
+              &copy; 2024 {fullBusinessName}. All rights reserved.
+            </p>
           </div>
         </div>
       </section>

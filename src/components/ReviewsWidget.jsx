@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from "react";
+import { GOOGLE_REVIEWS_URL } from "../utils/constants";
 
-const EmbedWidget = ({ src }) => {
+const EmbedWidget = () => {
   const iframeRef = useRef(null);
+
+  const src = GOOGLE_REVIEWS_URL;
 
   useEffect(() => {
     if (iframeRef.current) {
@@ -11,13 +14,13 @@ const EmbedWidget = ({ src }) => {
 
   return (
     <div>
-      <h2>What our customers say</h2>
+      <h2 className="pb-0">What our customers say</h2>
       <iframe
         ref={iframeRef}
         src={src}
         title="Embed Widget"
         width="100%"
-        height="450px"
+        height="510px"
       />
     </div>
   );

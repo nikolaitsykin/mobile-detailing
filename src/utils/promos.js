@@ -1,25 +1,24 @@
-import promoImageOne from "../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.avif";
-import promoImageTwo from "../assets/images/photo-boards-KZNTEn2r6tw-unsplash.avif";
-import promoImageThree from "../assets/images/meric-dagli-3KJpF86nR4c-unsplash.avif";
-import promoImageFour from "../assets/images/josep-martins-nAsdr5DC2Ss-unsplash.avif";
 
 export const permanentPromos = [
   {
     title: "10% Off for First-Time Customers",
     description:
       "Welcome new clients with a 10% discount on their first detailing service.",
-    image: promoImageFour,
+    image:
+      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/josep-martins-nAsdr5DC2Ss-unsplash.avif",
   },
   {
     title: "Refer a Friend and Save 5%",
     description:
       "Get 5% off your next service when your friend completes their first booking",
-    image: promoImageTwo,
+    image:
+      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/photo-boards-KZNTEn2r6tw-unsplash.avif",
   },
   {
     title: "Loyalty Program",
     description: "After every 6 services, get your 6th any service at 50% off.",
-    image: promoImageThree,
+    image:
+      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/meric-dagli-3KJpF86nR4c-unsplash.avif",
   },
 ];
 

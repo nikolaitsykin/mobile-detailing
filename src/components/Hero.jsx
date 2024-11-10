@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import detailingVideo from "../assets/videos/6158070-hd_1920_1080_30fps.mp4";
-import { BOOKING_PAGE_PATH, GOOGLE_REVIEWS_URL } from "../utils/constants";
+// import { detailingVideo } from "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/6158070-hd_1920_1080_30fps%203%20(1).mp4";
+import { BOOKING_PAGE_PATH } from "../utils/constants";
+import EmbedWidget from "./ReviewsWidget";
 import Services from "./Services";
 import Button from "./UI/Button";
-import EmbedWidget from "./ReviewsWidget";
 
 const Hero = ({ city, location }) => {
   return (
@@ -16,10 +16,12 @@ const Hero = ({ city, location }) => {
           loop
           playsInline
           muted
-          type="video/mp4"
-          src={detailingVideo}
-          preload="none"
-        />
+        >
+          <source
+            src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/6158070-hd_1920_1080_30fps.mp4"
+            type="video/mp4"
+          />
+        </video>
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-36">
         <div className="w-[90%] flex flex-col justify-center text-white">
@@ -86,7 +88,7 @@ const Hero = ({ city, location }) => {
             <Services />
           </div>
           <div>
-            <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+            <EmbedWidget />
           </div>
         </article>
       </section>

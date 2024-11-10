@@ -20,12 +20,12 @@ const SocialButtons = () => {
       <Link to={INSTAGRAM_URL} target="_blank">
         <Instagram />
       </Link>
-      <Link to={TIKTOK_URL} target="_blank">
+      {/* <Link to={TIKTOK_URL} target="_blank">
         <Tiktok />
       </Link>
       <Link to={YOUTUBE_URL} target="_blank">
         <Youtube />
-      </Link>
+      </Link> */}
     </div>
   );
 };

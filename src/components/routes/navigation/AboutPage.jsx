@@ -1,13 +1,15 @@
 import React from "react";
-import image from "../../../assets/images/man-washing-his-car-garage_1157-26072.avif";
-import BookButtons from "../../UI/BookButtons";
 import { businessName, fullBusinessName } from "../../../utils/data";
 import Banner from "../../Banner";
+import BookButtons from "../../UI/BookButtons";
 
 const AboutPage = () => {
   return (
     <div id="about" className="w-full z-20 bg-white font-poppins">
-      <Banner image={image} header="About" />
+      <Banner
+        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-washing-his-car-garage_1157-26072.avif"
+        header="About"
+      />
       <section>
         <article className="text-black flex flex-col justify-center">
           <h2 className="">Professional Service, Personal Care</h2>

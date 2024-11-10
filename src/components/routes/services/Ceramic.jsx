@@ -1,71 +1,88 @@
 import React from "react";
-import ceramicImage from "../../../assets/images/ceramic_coating.avif";
-import {
-  basicCeramicCoating,
-  primeCeramicCoating
-} from "../../../utils/services";
+import { sixMonthsCeramicCoating } from "../../../utils/detailingPackages";
+import Booking from "../../Booking";
 import Card from "../../Card";
+import EmbedWidget from "../../ReviewsWidget";
 
-const Ceramic = () => {
+const CeramicCoating = () => {
+  const service = sixMonthsCeramicCoating;
+
   return (
-    <section id="ceramic-coating" className="bg-white">
-      <div className="bg-black">
-        <img
-          className="w-full object-cover opacity-60"
-          src={ceramicImage}
-          alt="Auto detailing"
-        />
+    <div
+      id="exterior-detailing"
+      className=" z-20 bg-white font-poppins w-full mx-auto"
+    >
+      <div className="w-full bg-black h-[250px] flex justify-center items-center mx-auto text-white">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+          Ceramic Coating{" "}
+        </h1>
       </div>
-      <div className="w-[80%] mx-auto">
-        <div className="w-[80%] z-10 absolute top-10 md:top-32 left-1/2 -translate-x-1/2 text-center">
-          <h1
-            id="auto-detailing"
-            className="text-white"
-          >
-            Ceramic Coating
-          </h1>
+      <div className="mx-auto">
+        <section className="mt-12">
+          <article className=" text-start text-black">
+            <h3 className="text-center mb-10">What’s A Ceramic Coating?</h3>
+            <p className="mb-10">
+              Ceramic Coating is a solid protective layer that prevents your
+              vehicle from swirls and minor scratches in Raleigh's weather, not
+              to mention its extreme heat resistance properties. Think of
+              ceramic coating as a layer of paint protection superior to wax or
+              sealants.
+            </p>
+            <h3 className="text-center mb-10">
+              The Benefits Of A Ceramic Coating in Raleigh
+            </h3>
+            <p className="mb-10">
+              Plenty of coating companies make bold claims about their products,
+              and while there’s some truth to what they say, I prefer to keep
+              things grounded and not exaggerate. Here’s what you can genuinely
+              expect from a ceramic coating application:
+            </p>
+            <Card
+              title={service.title}
+              type={service.type}
+              service={service}
+              services={service.services}
+              description={service.description}
+              exteriorServices={service.exteriorServices}
+              image={service.image}
+              duration={service.duration}
+              link={service.link}
+              bestValue={service.bestValue}
+            />
+          </article>
+        </section>
+        <section>
+          <div className="text-xs md:text-sm">
+            <h3 className="text-center mb-10">
+              Common Myths About Ceramic Coatings
+            </h3>
+            <p>
+              Absolutely, ceramic in Miami coatings offer impressive durability,
+              but they’re not invincible armor for your vehicle. It’s vital to
+              understand their limits. Coatings resist light swirls and
+              scratches from proper washing and drying. However, they won’t
+              prevent deeper scratches caused by negligence or dragging rough
+              objects.
+              <br />
+              <br />
+              Maintenance is key. Just like anything valuable, neglecting care
+              will lead to gradual deterioration. Regular proper washing,
+              drying, and occasional maintenance boosts are essential for the
+              longevity of any ceramic coating application. Even a 6-year
+              coating can degrade by year 3 without proper care.
+              <br />
+              <br />
+            </p>
+          </div>
+        </section>
+        <div className="w-[90%] md:w-[80%] mx-auto">
+          <EmbedWidget />
         </div>
-        <h2 className=" p-5">
-          Auto Detailing
-        </h2>
-        <article className="">
-          Washing a car may seem simple, but achieving a flawless finish
-          requires more than just a quick rinse. At Prime, we take
-          detailing to the next level, both inside and out. Our service goes
-          beyond removing everyday dirt, grime, bird droppings, and dust—we use
-          advanced washing and drying techniques that significantly reduce
-          surface scratches. We also meticulously clean and condition every
-          interior surface, ensuring your vehicle looks and feels pristine
-          inside and out. Experience the Prime difference, where every detail
-          counts.
-        </article>
+        <div id="booking" className="scroll-mb-[750px]"></div>
+        <Booking />
       </div>
-      <section className="w-[90%] mx-auto">
-        <h2 className=" p-5 ">
-          Package Options
-        </h2>
-        <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-2">
-          <Card
-            title={basicCeramicCoating.title}
-            description={basicCeramicCoating.description}
-            image={basicCeramicCoating.image}
-            services={basicCeramicCoating.services}
-            border={"border"}
-            price={basicCeramicCoating.price}
-            
-          />
-          <Card
-            title={primeCeramicCoating.title}
-            description={primeCeramicCoating.description}
-            image={primeCeramicCoating.image}
-            services={primeCeramicCoating.services}
-            border={"border"}
-            price={primeCeramicCoating.price}
-          />
-        </div>
-      </section>
-    </section>
+    </div>
   );
 };
 
-export default Ceramic;
+export default CeramicCoating;

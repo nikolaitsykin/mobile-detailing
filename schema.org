@@ -15,7 +15,7 @@
     "addressCountry": "1",
     "addressRegion": "NC"
   },
-  "priceRange": "$60-360",
+  "priceRange": "$60-400",
   "sameAs": [
     "https://www.instagram.com/getspotlessnow",
     "https://www.facebook.com/getspotless"

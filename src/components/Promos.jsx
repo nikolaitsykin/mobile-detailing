@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { permanentPromos } from "../utils/promos";
 import PromoItem from "./PromoItem";
-// import backgroundImage from "../../assets/images/andrej-lisakov-qURnsLMPHrk-unsplash.avif";
 
 const Promos = () => {
   const settings = {
@@ -20,7 +19,7 @@ const Promos = () => {
 
   return (
     <div className="w-full mb-12">
-      <h2 className="text-center text-black">Specials on Detailing Services</h2>
+      <h2 className="text-center text-black pt-0">Specials on Detailing Services</h2>
       <Slider {...settings} className="w-full h-56 pt-5">
         {permanentPromos.map((item, index) => (
           <PromoItem

@@ -1,14 +1,16 @@
 import React from "react";
-import { sustainability } from "../../../utils/sustainability";
-import Services from "../../Services";
-import image from "../../../assets/images/AdobeStock_198465715.avif";
 import { businessName } from "../../../utils/data";
+import { sustainability } from "../../../utils/sustainability";
 import Banner from "../../Banner";
+import Services from "../../Services";
 
 const ServicesPage = () => {
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
-      <Banner image={image} header="Services" />
+      <Banner
+        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.avif"
+        header="Services"
+      />
       <section className="w-[90%] md:w-[80%] mx-auto">
         <article className="">
           <h2 id="services" className="py-16">

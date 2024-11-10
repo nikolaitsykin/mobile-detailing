@@ -1,12 +1,14 @@
 import React from "react";
-import detailingImage from "../../../assets/images/man-polish-salon-car-garage_1157-36595.avif";
-import Booking from "../../Booking";
 import Banner from "../../Banner";
+import Booking from "../../Booking";
 
 const BookingPage = () => {
   return (
     <div id="booking" className="w-full z-20 bg-white font-poppins">
-      <Banner image={detailingImage} header="Booking" />
+      <Banner
+        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-polish-salon-car-garage_1157-36595.avif"
+        header="Booking"
+      />
       <Booking />
     </div>
   );

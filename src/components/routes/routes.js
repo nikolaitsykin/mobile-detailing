@@ -3,11 +3,12 @@ import {
   ABOUT_PATH,
   APEX_PATH,
   BASE_CLEAN_PATH,
-  BASE_DETAILING_BOOKING_PATH,
   BASE_DETAILING_PATH,
   BASE_WASH_PATH,
   BOOKING_PAGE_PATH,
   CARY_PATH,
+  CERAMIC_COATING_PATH,
+  COMPLETE_DETAILING_PATH,
   CONTACT_PATH,
   DEEP_CLEANING_PATH,
   FAQS_PATH,
@@ -23,14 +24,13 @@ import {
   RALEIGH_PATH,
   SERVICES_PATH,
   SHINE_AND_SHIELD_PATH,
-  SPOTLESS_FINISH_PATH,
   STEAM_AND_GUARD_PATH,
   WASH_AND_WAX_PATH,
-  WIPE_AND_CLEAN_PATH
+  WIPE_AND_CLEAN_PATH,
 } from "../../utils/constants";
 import App from "../App";
 import ErrorPage from "../error-page";
-import Root from "../routes/Root";
+import Root from "./Root";
 import AboutPage from "./navigation/AboutPage";
 import BookingPage from "./navigation/BookingPage";
 import ContactPage from "./navigation/ContactPage";
@@ -49,15 +49,16 @@ import BaseDetailing from "./services/detailing/BaseDetailing";
 import BaseWash from "./services/detailing/BaseWash";
 import DeepCleaning from "./services/detailing/DeepCleaning";
 import ShineAndShield from "./services/detailing/ShineAndShield";
-import SpotlessFinish from "./services/detailing/SpotlessFinish";
 import SteamAndGuard from "./services/detailing/SteamAndGuard";
 import WashAndWax from "./services/detailing/WashAndWax";
 import WipeAndClean from "./services/detailing/WipeAndClean";
 import MobileExteriorDetailing from "./services/MobileExteriorDetailing";
 import MobileFullDetailing from "./services/MobileFullDetailing";
 import MobileInteriorDetailing from "./services/MobileInteriorDetailing";
+import CompleteDetailing from "./services/detailing/CompleteDetailing";
+import CeramicCoating from "./services/Ceramic";
 
-export const router = [
+export const routes = [
   {
     path: HOME_PATH,
     element: <App />,
@@ -83,11 +84,11 @@ export const router = [
         name: "Mobile Interior Detailing",
         element: <MobileExteriorDetailing />,
       },
-      {
-        path: BASE_WASH_PATH,
-        name: "Base Wash",
-        element: <BaseWash />,
-      },
+      // {
+      //   path: BASE_WASH_PATH,
+      //   name: "Base Wash",
+      //   element: <BaseWash />,
+      // },
       {
         path: WASH_AND_WAX_PATH,
         name: "Wash and Wax",
@@ -98,11 +99,11 @@ export const router = [
         name: "Shine and Shield",
         element: <ShineAndShield />,
       },
-      {
-        path: BASE_CLEAN_PATH,
-        name: "Base Clean",
-        element: <BaseClean />,
-      },
+      // {
+      //   path: BASE_CLEAN_PATH,
+      //   name: "Base Clean",
+      //   element: <BaseClean />,
+      // },
       {
         path: WIPE_AND_CLEAN_PATH,
         name: "Wipe and Clean",
@@ -119,24 +120,24 @@ export const router = [
         element: <BaseDetailing />,
       },
       {
+        path: COMPLETE_DETAILING_PATH,
+        name: "Complete Detailing",
+        element: <CompleteDetailing />,
+      },
+      {
         path: DEEP_CLEANING_PATH,
         name: "Deep Cleaning",
         element: <DeepCleaning />,
       },
       {
-        path: SPOTLESS_FINISH_PATH,
-        name: "Spotless Finish",
-        element: <SpotlessFinish />,
-      },
-      {
-        path: BASE_DETAILING_BOOKING_PATH,
-        name: "Base Detailing",
-        element: <BaseDetailing />,
-      },
-      {
         path: MOBILE_FULL_DETAILING_PATH,
         name: "Mobile Interior Detailing",
         element: <MobileFullDetailing />,
+      },
+      {
+        path: CERAMIC_COATING_PATH,
+        name: "Ceramic Coating",
+        element: <CeramicCoating />,
       },
       {
         path: BOOKING_PAGE_PATH,

@@ -1,13 +1,13 @@
 import React from "react";
-import ppfImage from "../../../assets/images/AdobeStock_428622212.avif";
 
 const PPF = () => {
   return (
     <section id="paint-protection-film" className="bg-white relative">
       <div className="bg-black">
         <img
+          loading="lazy"
           className="w-full object-cover opacity-60"
-          src={ppfImage}
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_428622212.avif"
           alt="Auto detailing"
         />
       </div>

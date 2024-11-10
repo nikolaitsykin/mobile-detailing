@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  GOOGLE_REVIEWS_URL,
-  SPOTLESS_FINISH_PATH,
+  DEEP_CLEANING_PATH
 } from "../../../../utils/constants";
 import { shineAndShield } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -35,7 +34,9 @@ const ShineAndShield = () => {
               service={service}
               steps={service.steps}
               image={service.image}
-              //   services={service.services}
+              description={service.description}
+              services={service.services}
+              exteriorServices={service.exteriorServices}
               singleService
               duration={service.duration}
               link={service.link}
@@ -66,19 +67,19 @@ const ShineAndShield = () => {
               our{" "}
               <Link
                 className="underline text-blue font-semibold"
-                to={SPOTLESS_FINISH_PATH}
+                to={DEEP_CLEANING_PATH}
               >
-                Spotless Finish
+                Deep Cleaning
               </Link>{" "}
-              full detailing package, which adds deep interior cleaning, steam
-              treatment and UV & dust protection to your car's interior. Book
-              now for complete detailing service experience that truly stands
-              out!
+              full detailing package, which adds deep interior vacuuming &
+              cleaning, steam treatment and UV & dust protection to your car's
+              interior. Book now for full detailing service experience that
+              truly stands out!
             </p>
           </div>
         </section>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+          <EmbedWidget />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>{service.type.split(" ")[0]} Addons</h2>

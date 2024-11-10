@@ -1,14 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { ABOUT_PATH, BOOKING_PAGE_PATH } from "../../../utils/constants";
-import { businessName, fullBusinessName } from "../../../utils/data";
+import React, { useEffect } from "react";
 import About from "../../About";
 import Hero from "../../Hero";
 import Promos from "../../Promos";
-import Button from "../../UI/Button";
 
 const RootGarner = () => {
   const currentCity = "Garner";
+  useEffect(() => {
+    document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating`;
+  }, []);
 
   return (
     <main className="w-full bg-white">

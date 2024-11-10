@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  GOOGLE_REVIEWS_URL,
-  STEAM_AND_GUARD_PATH,
+  STEAM_AND_GUARD_PATH
 } from "../../../../utils/constants";
 import { wipeAndClean } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -34,6 +33,9 @@ const WipeAndClean = () => {
               title={service.title}
               type={service.type}
               service={service}
+              services={service.services}
+              description={service.description}
+              interiorServices={service.interiorServices}
               steps={service.steps}
               image={service.image}
               singleService
@@ -77,7 +79,7 @@ const WipeAndClean = () => {
           </div>
         </section>{" "}
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+          <EmbedWidget />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>{service.type.split(" ")[0]} Addons</h2>

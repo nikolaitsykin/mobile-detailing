@@ -6,7 +6,8 @@ export const TIKTOK_URL = "https://www.tiktok.com/@spotless.mobile.detail";
 export const BOOKING_URL =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services";
 
-export const GOOGLE_REVIEWS_URL = "https://34029f5c2c3a4f1cbc1c8ddd229acb3f.elf.site";
+export const GOOGLE_REVIEWS_URL =
+"https://widgets.commoninja.com/iframe/df46aab9-db12-44f7-8a35-e48fa9cee35c";
 
 export const CONTACT_PATH = "/contact";
 export const FAQS_PATH = "/faqs";
@@ -31,25 +32,18 @@ export const MOBILE_FULL_DETAILING_BOOKING_PATH =
   "/mobile-full-detailing#booking";
 
 export const BASE_WASH_PATH = "/base-wash";
-export const BASE_WASH_BOOKING_PATH = "/base-wash#booking";
 export const WASH_AND_WAX_PATH = "/wash-and-wax";
-export const WASH_AND_WAX_BOOKING_PATH = "/wash-and-wax#booking";
 export const SHINE_AND_SHIELD_PATH = "/shine-and-shield";
-export const SHINE_AND_SHIELD_BOOKING_PATH = "/shine-and-shield#booking";
 
 export const BASE_CLEAN_PATH = "/base-clean";
-export const BASE_CLEAN_BOOKING_PATH = "/base-clean#booking";
 export const WIPE_AND_CLEAN_PATH = "/wipe-and-clean";
-export const WIPE_AND_CLEAN_BOOKING_PATH = "/wipe-and-clean#booking";
 export const STEAM_AND_GUARD_PATH = "/steam-and-guard";
-export const STEAM_AND_GUARD_BOOKING_PATH = "/steam-and-guard#booking";
 
 export const BASE_DETAILING_PATH = "/base-detailing";
-export const BASE_DETAILING_BOOKING_PATH = "/base-detailing#booking";
 export const DEEP_CLEANING_PATH = "/deep-cleaning";
-export const DEEP_CLEANING_BOOKING_PATH = "/deep-cleaning#booking";
-export const SPOTLESS_FINISH_PATH = "/spotless-finish";
-export const SPOTLESS_FINISH_BOOKING_PATH = "/spotless-finish#booking";
+export const COMPLETE_DETAILING_PATH = "/complete-detailing";
+
+export const CERAMIC_COATING_PATH = "/ceramic-coating";
 
 export const APEX_PATH = "/apex";
 export const RALEIGH_PATH = "/raleigh";

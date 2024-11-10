@@ -43,9 +43,10 @@ const ServiceItem = ({
         >
           {image && (
             <img
-              className="w-full w-lg align-start mb-3 px-4 py-1 rounded-sm overflow-hidden "
+              loading="lazy"
+              className="w-full w-lg align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
               src={image}
-              alt="Car wash"
+              alt="Auto detailing"
             />
           )}
           {description && (
@@ -79,7 +80,7 @@ const ServiceItem = ({
         )}
       </div>
       {button && (
-        <div className=" mt-4 flex justify-center items-end w-[100%]  px-4">
+        <div className="flex justify-center items-end w-[100%] px-4">
           <Link
             className="w-full max-w-xl flex justify-center items-center"
             preventScrollReset={false}

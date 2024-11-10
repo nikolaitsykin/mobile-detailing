@@ -15,7 +15,8 @@ const Card = ({
   link,
   bestValue,
   singleService,
-  steps,
+  exteriorServices,
+  interiorServices,
 }) => {
   return (
     <div
@@ -44,13 +45,14 @@ const Card = ({
           >
             {singleService && image && (
               <img
+                loading="lazy"
                 className="w-full max-w-xl align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
                 src={image}
                 alt="Car wash"
               />
             )}
             {description && (
-              <div className="flex flex-col max-w-xl w-full px-4 sm:pb-5 text-sm whitespace-pre-wrap">
+              <div className="flex flex-col max-w-xl w-full px-4 pb-2 sm:pb-5 text-sm whitespace-pre-wrap">
                 <p>{description}</p>
               </div>
             )}
@@ -60,7 +62,6 @@ const Card = ({
               <Menu service={service} card={true} />
             </div>
           )}
-          
         </div>
         <div>
           {services && (
@@ -78,17 +79,42 @@ const Card = ({
               </ul>
             </div>
           )}
-          {steps && (
+          {exteriorServices && (
             <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
-              <div className="hidden sm:block sm:h-[65px] md:h-[75px]"></div>
-              <h4 className="pt-5 sm:pt-0 pb-5 ">This service includes:</h4>
+              <div className="hidden sm:block sm:h-[75px]"></div>
+              <h4 className="mb-1 p-0">Exterior</h4>
               <ul className="h-full">
-                {steps.map((step, index) => (
+                {exteriorServices.map((service, index) => (
                   <li
                     key={index}
-                    className="text-start text-sm list-none p-[2px] whitespace-pre-wrap"
+                    className="text-start text-sm p-[2px] whitespace-pre-wrap list-disc ml-4"
                   >
-                    {step}
+                    {service}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {interiorServices && (
+            <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
+              {exteriorServices ? (
+                <>
+                  <div className="hidden sm:block sm:h-[0px]"></div>
+                  <h4 className="p-0 mb-1 mt-5">Interior</h4>
+                </>
+              ) : (
+                <>
+                  <div className="hidden sm:block sm:h-[75px]"></div>
+                  <h4 className="p-0 mb-1">Interior</h4>
+                </>
+              )}
+              <ul className="h-full">
+                {interiorServices.map((service, index) => (
+                  <li
+                    key={index}
+                    className="text-start text-sm p-[2px] whitespace-pre-wrap list-disc ml-4"
+                  >
+                    {service}
                   </li>
                 ))}
               </ul>
@@ -99,7 +125,6 @@ const Card = ({
               <h4 className="p-5"> {price}</h4>
             </div>
           )}
-
           {singleService && (
             <div className="text-center sm:text-start text-sm mt-2 p-4">
               *Pricing for this service is based on vehicles in average
@@ -110,7 +135,7 @@ const Card = ({
         </div>
       </div>
       {button && (
-        <div className=" mt-4 flex justify-center items-end w-[100%]  px-4">
+        <div className=" mt-4 flex justify-center items-end w-[100%] px-4">
           <HashLink
             smooth
             className="w-full max-w-xl flex justify-center items-center"

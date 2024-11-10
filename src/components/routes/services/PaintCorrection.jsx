@@ -1,19 +1,19 @@
 import React from "react";
-import carPolishImage from "../../../assets/images/AdobeStock_406854263.avif";
+import { businessName } from "../../../utils/data";
 import {
   oneStepPaintCorrection,
-  twoStepPaintCorrection,
+  twoStepPaintCorrection
 } from "../../../utils/services";
 import Card from "../../Card";
-import { businessName } from "../../../utils/data";
 
 const Polish = () => {
   return (
     <section id="paint-correction" className="bg-white  relative">
       <div className="bg-black">
         <img
+          loading="lazy"
           className="w-full object-cover opacity-60"
-          src={carPolishImage}
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_406854263.avif"
           alt="Auto detailing"
         />
       </div>

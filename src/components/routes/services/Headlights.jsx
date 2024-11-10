@@ -1,5 +1,4 @@
 import React from "react";
-import headlightImage from "../../../assets/images/headlights_restoration.avif";
 import Card from "../../Card";
 import {
   basicHeadlightRestoration,
@@ -11,8 +10,9 @@ const Headlights = () => {
     <section id="headlights-restoration" className="bg-white  relative">
       <div className="bg-black">
         <img
+          loading="lazy"  
           className="w-full object-cover opacity-60"
-          src={headlightImage}
+          // src={headlightImage}
           alt="Auto detailing"
         />
       </div>

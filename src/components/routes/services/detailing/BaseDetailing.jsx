@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  DEEP_CLEANING_PATH,
-  GOOGLE_REVIEWS_URL,
+  DEEP_CLEANING_PATH
 } from "../../../../utils/constants";
 import { baseDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -34,6 +33,10 @@ const BaseDetailing = () => {
               title={service.title}
               type={service.type}
               service={service}
+              services={service.services}
+              description={service.description}
+              exteriorServices={service.exteriorServices}
+              interiorServices={service.interiorServices}
               steps={service.steps}
               image={service.image}
               singleService
@@ -82,7 +85,7 @@ const BaseDetailing = () => {
           </div>
         </section>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+          <EmbedWidget />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>Addons</h2>

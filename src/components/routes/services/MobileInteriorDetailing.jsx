@@ -1,6 +1,5 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import detailingImage from "../../../assets/images/AdobeStock_539555302.avif";
 import { businessName } from "../../../utils/data";
 import { interiorDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
@@ -12,9 +11,10 @@ const AutoDetailing = () => {
     <div id="interior-detailing" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black">
         <img
+          loading="lazy"
           className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
-          src={detailingImage}
-          alt="car"
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_539555302.avif"
+          alt="Auto detailing"
         />
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
@@ -58,6 +58,8 @@ const AutoDetailing = () => {
             image={item.image}
             description={item.description}
             services={item.services}
+            exteriorServices={item.exteriorServices}
+            interiorServices={item.interiorServices}
             duration={item.duration}
             link={item.link}
             button={"Get Started"}
@@ -68,7 +70,7 @@ const AutoDetailing = () => {
         <Outlet />
       </section>
       <section id="addons" className="w-[90%] md:w-[80%] mx-auto">
-      <h2>{interiorDetailingServices[0].type.split(" ")[0]}{" "}Addons</h2>
+        <h2>{interiorDetailingServices[0].type.split(" ")[0]} Addons</h2>
         <Addons type={interiorDetailingServices[0].type} />
       </section>
       <div id="booking" className="scroll-mb-[750px]"></div>

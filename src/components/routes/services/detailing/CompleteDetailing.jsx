@@ -1,13 +1,16 @@
 import React from "react";
-import { GOOGLE_REVIEWS_URL } from "../../../../utils/constants";
-import { spotlessFinish } from "../../../../utils/detailingPackages";
+import { Link } from "react-router-dom";
+import {
+  DEEP_CLEANING_PATH
+} from "../../../../utils/constants";
+import { completeDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
 import EmbedWidget from "../../../ReviewsWidget";
 
-const SpotlessFinish = () => {
-  const service = spotlessFinish;
+const CompleteDetailing = () => {
+  const service = completeDetail;
 
   return (
     <div
@@ -30,6 +33,10 @@ const SpotlessFinish = () => {
               title={service.title}
               type={service.type}
               service={service}
+              services={service.services}
+              description={service.description}
+              exteriorServices={service.exteriorServices}
+              interiorServices={service.interiorServices}
               steps={service.steps}
               image={service.image}
               singleService
@@ -53,19 +60,31 @@ const SpotlessFinish = () => {
               exceptional value for our price. We don’t just "wash" your car—our
               detailing brings out a rich, long-lasting shine using premium
               products and meticulous attention, ensuring your car looks and
-              feels its absolute best.
-              <br />
+              feels its absolute best. <br />
               <br />
               Our skilled team handles it all, from dirt, grime, bird droppings,
               and bug stains on the exterior to dust, pet hair, and tough stains
               inside, leaving your car looking its absolute best.
               <br />
               <br />
+              If you’re ready to take your car’s shine to the next level, try
+              our{" "}
+              <Link
+                className="underline text-blue font-semibold"
+                to={DEEP_CLEANING_PATH}
+              >
+                Deep Cleaning{" "}
+              </Link>{" "}
+              exterior service, which adds clay bar treatment, gloss enhancement
+              and ceramic coating application for up to 6 month of protection
+              for exterior services and full vacuuming, steam cleaning,
+              conditioning and UV protection to interior services. Book now for
+              an exterior car wash experience that truly stands out!
             </p>
           </div>
         </section>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+          <EmbedWidget />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>Addons</h2>
@@ -78,4 +97,4 @@ const SpotlessFinish = () => {
   );
 };
 
-export default SpotlessFinish;
+export default CompleteDetailing;

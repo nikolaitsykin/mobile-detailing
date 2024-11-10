@@ -23,7 +23,7 @@ const DropdownList = ({ options, closeMenu, closeDropdown }) => {
         <ul
           className={`
             ${isOptionsOpen ? "block" : "hidden"} 
-            "z-10 flex-col absolute bg-black min-w-32 md:min-w-36 shadow-lg -mt-12 ml-32 md:ml-32`}
+            "z-10 flex-col absolute bg-black min-w-36 md:min-w-44 shadow-lg -mt-12 ml-40 md:ml-40`}
         >
           {options.map((option) => (
             <DropdownItem

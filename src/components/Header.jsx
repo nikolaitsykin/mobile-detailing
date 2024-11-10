@@ -1,17 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as MessageSms } from "../assets/icons/message-sms.svg";
-import { ReactComponent as PhoneCall } from "../assets/icons/phone-call.svg";
-import logoFull from "../assets/images/spotless_logo_300.png";
 import useScrollDirection from "../hooks/useScrollDirection";
 
-import {
-  BOOKING_PAGE_PATH,
-  CALL_NUMBER,
-  HOME_PATH,
-  TEXT_NUMBER,
-} from "../utils/constants";
-import Button from "./UI/Button";
+import { HOME_PATH } from "../utils/constants";
 import Navbar from "./UI/Navbar";
 
 const Header = () => {
@@ -28,9 +19,10 @@ const Header = () => {
           <Link to={HOME_PATH}>
             <div className="ml-5 md:ml-8 lg:ml-10 w-20 lg:w-32">
               <img
+                loading="lazy"
                 className="h-full w-full object-contain"
-                src={logoFull}
-                alt="logo"
+                src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/spotless_logo.avif"
+                alt="Spotless Logo"
               />
             </div>
           </Link>

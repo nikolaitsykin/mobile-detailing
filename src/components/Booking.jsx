@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import carSpacingNeeded from "../assets/images/car_spacing_spotless.avif";
 import { CALL_NUMBER } from "../utils/constants";
 import { businessName } from "../utils/data";
 import { whatToExpect } from "../utils/sustainability";
@@ -48,7 +47,11 @@ const Booking = () => {
         </ul>
       </article>
       <div>
-        <img src={carSpacingNeeded} alt="Space required for service" />
+        <img
+          loading="lazy"
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/car_spacing_spotless.avif"
+          alt="Space required for service"
+        />
       </div>
       <script src="https://square.site/appointments/buyer/widget/t25pubegvfjcw1/LDK47FK18Z9GH.js"></script>
     </section>

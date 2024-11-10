@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  GOOGLE_REVIEWS_URL,
-  SHINE_AND_SHIELD_PATH,
+  SHINE_AND_SHIELD_PATH
 } from "../../../../utils/constants";
 import { washAndWax } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -33,6 +32,9 @@ const WashAndWax = () => {
               title={service.title}
               type={service.type}
               service={service}
+              services={service.services}
+              description={service.description}
+              exteriorServices={service.exteriorServices}
               steps={service.steps}
               image={service.image}
               singleService
@@ -69,7 +71,7 @@ const WashAndWax = () => {
               >
                 Shine & Shield
               </Link>{" "}
-              exterior service, which adds clay bar treatment, gloss enhancment
+              exterior service, which adds clay bar treatment, gloss enhancement
               and ceramic coating application for up to 6 month of protection
               for an unbeatable finish. Book now for an exterior car detailing
               experience that truly stands out!
@@ -77,7 +79,7 @@ const WashAndWax = () => {
           </div>
         </section>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+          <EmbedWidget />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>{service.type.split(" ")[0]} Addons</h2>

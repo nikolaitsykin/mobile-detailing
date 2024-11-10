@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  GOOGLE_REVIEWS_URL,
-  SPOTLESS_FINISH_PATH,
+  DEEP_CLEANING_PATH
 } from "../../../../utils/constants";
 import { steamAndGuard } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -34,7 +33,9 @@ const SteamAndGuard = () => {
               title={service.title}
               type={service.type}
               service={service}
-              steps={service.steps}
+              services={service.services}
+              description={service.description}
+              interiorServices={service.interiorServices}
               image={service.image}
               singleService
               duration={service.duration}
@@ -65,19 +66,19 @@ const SteamAndGuard = () => {
               our{" "}
               <Link
                 className="underline text-blue font-semibold"
-                to={SPOTLESS_FINISH_PATH}
+                to={DEEP_CLEANING_PATH}
               >
-                Spotless Finish
+                Deep Cleaning{" "}
               </Link>{" "}
-              Full Detailing Package, which adds clay bar treatment, gloss
-              enhancment and ceramic coating application for up to 6 month of
-              protection for an unbeatable finish. Book now for complete
-              detailing service experience that truly stands out!
+              Full Detailing Package, which adds thorough exterior wash, wheels
+              & wheel wells cleaning, black exterior plastics restoration, clay
+              bar treatment and protective wax application. Book now for
+              full detailing service experience that truly stands out!
             </p>
           </div>
         </section>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget src={GOOGLE_REVIEWS_URL} />
+          <EmbedWidget />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>{service.type.split(" ")[0]} Addons</h2>

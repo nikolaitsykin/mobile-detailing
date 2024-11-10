@@ -1,10 +1,5 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import detailingImage from "../../../assets/images/AdobeStock_397247724.avif";
-import {
-  BASE_WASH_PATH,
-  MOBILE_EXTERIOR_DETAILING_BOOKING_PATH,
-} from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { exteriorDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
@@ -17,8 +12,8 @@ const AutoDetailing = () => {
       <div className="w-full bg-black">
         <img
           className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
-          src={detailingImage}
-          alt="car"
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_397247724.avif"
+          alt="Auto detailing"
         />
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
@@ -62,6 +57,8 @@ const AutoDetailing = () => {
             image={item.image}
             description={item.description}
             services={item.services}
+            exteriorServices={item.exteriorServices}
+            interiorServices={item.interiorServices}
             duration={item.duration}
             link={item.link}
             button={"Get Started"}
@@ -73,7 +70,7 @@ const AutoDetailing = () => {
       <div id="booking" className="scroll-mb-[750px]"></div>
       <Booking />
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2>{exteriorDetailingServices[0].type.split(" ")[0]}{" "}Addons</h2>
+        <h2>{exteriorDetailingServices[0].type.split(" ")[0]} Addons</h2>
         <Addons type={exteriorDetailingServices[0].type} />
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">

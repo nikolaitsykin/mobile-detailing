@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import About from "../../About";
 import Hero from "../../Hero";
 import Promos from "../../Promos";
 
 const RootApex = () => {
   const currentCity = "Apex";
+  useEffect(() => {
+    document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating`;
+  }, []);
+
   return (
     <main className="w-full bg-white">
       <div className="z-100">

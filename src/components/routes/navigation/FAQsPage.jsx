@@ -1,20 +1,22 @@
 import React from "react";
-import { autoDetailingQuestions, generalQuestions } from "../../../utils/faq";
-import image from "../../../assets/images/AdobeStock_399584907.avif";
-import FaqItem from "../../FaqItem";
 import { Link } from "react-router-dom";
 import {
   BOOKING_URL,
   CALL_NUMBER,
-  CONTACT_PATH,
+  CONTACT_PATH
 } from "../../../utils/constants";
+import { autoDetailingQuestions, generalQuestions } from "../../../utils/faq";
 import Banner from "../../Banner";
+import FaqItem from "../../FaqItem";
 import BookButtons from "../../UI/BookButtons";
 
 const FAQs = () => {
   return (
     <div id="faqs" className="w-full z-20 bg-white font-poppins">
-      <Banner image={image} header="FAQs" />
+      <Banner
+        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.avif"
+        header="FAQs"
+      />
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article>
           <h2 className=" ">Everything You Need to Know</h2>

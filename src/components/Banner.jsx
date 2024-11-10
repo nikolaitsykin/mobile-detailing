@@ -1,10 +1,11 @@
 import React from "react";
 
-const Banner = ({image, header}) => {
+const Banner = ({ image, header }) => {
   return (
     <div>
       <div className="w-full bg-black">
         <img
+          loading="lazy"
           className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
           src={image}
           alt="Car detailing"
