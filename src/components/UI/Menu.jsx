@@ -33,7 +33,7 @@ const Menu = ({ service, singleService }) => {
             <TabPanel key={car.title}>
               {service && (
                 <div className="w-full m-auto">
-                  <p className="pt-2 text-xs md:text-sm whitespace-pre-wrap h-full px-1">
+                  <p className="pt-2 text-xs md:text-base whitespace-pre-wrap h-full px-1">
                     {service.carsSize[tabIndex]}
                   </p>
                   {singleService ? (

@@ -13,7 +13,6 @@ const PromoItem = ({ title, image, description }) => {
       </div>
       <div>
         <img
-          loading="lazy"
           src={image}
           alt={title}
           className="object-cover w-full mx-auto h-56 absolute top-0"

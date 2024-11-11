@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  STEAM_AND_GUARD_PATH
-} from "../../../../utils/constants";
+import { STEAM_AND_GUARD_PATH } from "../../../../utils/constants";
 import { wipeAndClean } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import Gallery from "../../../Gallery";
 import EmbedWidget from "../../../ReviewsWidget";
 
 const WipeAndClean = () => {
@@ -46,7 +45,7 @@ const WipeAndClean = () => {
           </article>
         </section>
         <section>
-          <div className="text-xs md:text-sm">
+          <div className="text-xs md:text-base">
             <p>
               Rejuvinate your car's interior with our Wipe & Clean Interior
               Detailing Service! Our skilled technicians use premium
@@ -80,6 +79,9 @@ const WipeAndClean = () => {
         </section>{" "}
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <EmbedWidget />
+        </div>
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
+          <Gallery />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>{service.type.split(" ")[0]} Addons</h2>

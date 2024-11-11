@@ -7,6 +7,7 @@ import { steamAndGuard } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import Gallery from "../../../Gallery";
 import EmbedWidget from "../../../ReviewsWidget";
 
 const SteamAndGuard = () => {
@@ -45,8 +46,8 @@ const SteamAndGuard = () => {
           </article>
         </section>
         <section>
-          <div className="text-xs md:text-sm">
-            <p>
+        <div className="text-xs md:text-base">
+        <p>
               Rejuvinate your car's interior with our Steam & Guard Interior
               Detailing Service! Our skilled technicians use premium
               eco-friendly products, and proven techniques to clean every inch,
@@ -79,6 +80,9 @@ const SteamAndGuard = () => {
         </section>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <EmbedWidget />
+        </div>
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
+          <Gallery />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>{service.type.split(" ")[0]} Addons</h2>

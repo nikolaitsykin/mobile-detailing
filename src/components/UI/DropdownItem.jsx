@@ -7,7 +7,7 @@ const DropdownItem = ({ name, title, link, closeMenu, closeDropdown }) => {
     closeDropdown();
   };
   const dropdownLinkStyle =
-    "text-xs md:text-sm flex justify-start items-center text-gray focus:text-white hover:text-white w-[100%] h-12 md:w-full";
+    "text-xs md:text-base flex justify-start items-center text-gray focus:text-white hover:text-white w-[100%] h-12 md:w-full";
 
   return (
     <li

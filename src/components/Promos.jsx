@@ -19,7 +19,7 @@ const Promos = () => {
 
   return (
     <div className="w-full mb-12">
-      <h2 className="text-center text-black pt-0">Specials on Detailing Services</h2>
+      <h2 className="text-center text-black pt-5">Specials on Detailing Services</h2>
       <Slider {...settings} className="w-full h-56 pt-5">
         {permanentPromos.map((item, index) => (
           <PromoItem

@@ -50,7 +50,7 @@ const ServiceItem = ({
             />
           )}
           {description && (
-            <div className="flex flex-col max-w-xl w-full px-4 pb-5 text-sm whitespace-pre-wrap">
+            <div className="flex flex-col max-w-xl w-full px-4 pb-5 text-xs md:text-base whitespace-pre-wrap">
               <p className="">{description}</p>
             </div>
           )}
@@ -62,7 +62,7 @@ const ServiceItem = ({
               {services.map((service, index) => (
                 <li
                   key={index}
-                  className="text-start text-sm list-none p-[2px] whitespace-pre-wrap"
+                  className="text-start text-xs md:text-base list-none p-[2px] whitespace-pre-wrap"
                 >
                   {service}
                 </li>

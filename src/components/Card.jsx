@@ -52,7 +52,7 @@ const Card = ({
               />
             )}
             {description && (
-              <div className="flex flex-col max-w-xl w-full px-4 pb-2 sm:pb-5 text-sm whitespace-pre-wrap">
+              <div className="flex flex-col max-w-xl w-full px-4 pb-2 sm:pb-5 text-xs md:text-base whitespace-pre-wrap">
                 <p>{description}</p>
               </div>
             )}
@@ -71,7 +71,7 @@ const Card = ({
                 {services.map((service, index) => (
                   <li
                     key={index}
-                    className="text-start text-sm list-none p-[2px] whitespace-pre-wrap"
+                    className="text-start text-xs md:text-base list-none p-[2px] whitespace-pre-wrap"
                   >
                     {service}
                   </li>
@@ -87,7 +87,7 @@ const Card = ({
                 {exteriorServices.map((service, index) => (
                   <li
                     key={index}
-                    className="text-start text-sm p-[2px] whitespace-pre-wrap list-disc ml-4"
+                    className="text-start text-xs md:text-base p-[2px] whitespace-pre-wrap list-disc ml-4"
                   >
                     {service}
                   </li>

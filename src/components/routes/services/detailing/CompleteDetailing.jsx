@@ -7,6 +7,7 @@ import { completeDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import Gallery from "../../../Gallery";
 import EmbedWidget from "../../../ReviewsWidget";
 
 const CompleteDetailing = () => {
@@ -47,8 +48,8 @@ const CompleteDetailing = () => {
           </article>
         </section>
         <section>
-          <div className="text-xs md:text-sm">
-            <p>
+        <div className="text-xs md:text-base">
+        <p>
               Tired of scratches and swirls on your car, even after all those $5
               car washes? Those drive-thru machines can actually harm your paint
               instead of helping it. Our exterior car wash is a better choice,
@@ -85,6 +86,9 @@ const CompleteDetailing = () => {
         </section>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <EmbedWidget />
+        </div>
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
+          <Gallery />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
           <h2>Addons</h2>

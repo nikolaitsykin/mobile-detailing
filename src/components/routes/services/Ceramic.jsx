@@ -2,10 +2,12 @@ import React from "react";
 import { sixMonthsCeramicCoating } from "../../../utils/detailingPackages";
 import Booking from "../../Booking";
 import Card from "../../Card";
+import Gallery from "../../Gallery";
 import EmbedWidget from "../../ReviewsWidget";
 
 const CeramicCoating = () => {
   const service = sixMonthsCeramicCoating;
+  console.log(sixMonthsCeramicCoating.image);
 
   return (
     <div
@@ -44,7 +46,9 @@ const CeramicCoating = () => {
               services={service.services}
               description={service.description}
               exteriorServices={service.exteriorServices}
+              steps={service.steps}
               image={service.image}
+              singleService
               duration={service.duration}
               link={service.link}
               bestValue={service.bestValue}
@@ -52,7 +56,7 @@ const CeramicCoating = () => {
           </article>
         </section>
         <section>
-          <div className="text-xs md:text-sm">
+          <div className="text-xs md:text-base">
             <h3 className="text-center mb-10">
               Common Myths About Ceramic Coatings
             </h3>
@@ -77,6 +81,9 @@ const CeramicCoating = () => {
         </section>
         <div className="w-[90%] md:w-[80%] mx-auto">
           <EmbedWidget />
+        </div>
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
+          <Gallery />
         </div>
         <div id="booking" className="scroll-mb-[750px]"></div>
         <Booking />

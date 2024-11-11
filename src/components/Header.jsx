@@ -21,7 +21,7 @@ const Header = () => {
               <img
                 loading="lazy"
                 className="h-full w-full object-contain"
-                src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/spotless_logo.avif"
+                src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/spotless_logo_300.avif"
                 alt="Spotless Logo"
               />
             </div>
