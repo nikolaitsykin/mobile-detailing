@@ -23,14 +23,14 @@ export const locationLinks = [
 ];
 
 export const footerLinks = [
-  "Auto Detailing",
+  "Mobile Detailing",
   "Paint Correction",
   "Ceramic Coating",
   "PPF",
 ];
 
 export const footerLinksActual = [
-  "mobile-detailing",
+  "services",
   "services",
   "services",
   "services",
