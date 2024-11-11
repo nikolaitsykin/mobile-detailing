@@ -5,8 +5,12 @@ import Promos from "../../Promos";
 
 const RootHollySprings = () => {
   const currentCity = "Holly Springs";
+
   useEffect(() => {
     document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating`;
+    document.getElementById(
+      "canonical"
+    ).href = `https://getspotlessnc.com/${currentCity}`;
   }, []);
 
   return (

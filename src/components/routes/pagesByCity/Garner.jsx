@@ -5,8 +5,12 @@ import Promos from "../../Promos";
 
 const RootGarner = () => {
   const currentCity = "Garner";
+  
   useEffect(() => {
     document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating`;
+    document.getElementById(
+      "canonical"
+    ).href = `https://getspotlessnc.com/${currentCity}`;
   }, []);
 
   return (
