@@ -26,10 +26,6 @@ const Header = () => {
               />
             </div>
           </Link>
-          <h1 className="text-[1px] p-0">Spotless Auto Detailing</h1>
-          <h2 className="text-[1px] p-0">
-            Mobile Auto Detailing in Raleigh & Surrounding Areas
-          </h2>
         </div>
         <div className="flex items-center w-full lg:basis-6/7">
           <Navbar />

@@ -7,12 +7,12 @@ import GalleryItem from "./GalleryItem";
 
 const Gallery = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     centerPadding: "10px",
   };
