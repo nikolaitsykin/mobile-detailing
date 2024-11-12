@@ -38,13 +38,9 @@ const Root = () => {
             <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
               Premier Auto Detailing
             </h1>
-            <p className=" text-center text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            <p className=" text-center mb-10 text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
               Mobile Auto Detailing & Ceramic Coating serving {currentCity} &
               Surrounding Areas.
-            </p>
-            <p className="font-poppins font-light text-center text-xs md:text-lg pb-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-              Whether you want to protect your car or give it a clean look, we
-              deliver top-quality service.
             </p>
             <div className=" flex justify-center">
               <div className="min-w-48">

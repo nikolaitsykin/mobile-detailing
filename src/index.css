@@ -7,7 +7,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-  color: white;
+  color: gray;
   width: 40px;
 }
 

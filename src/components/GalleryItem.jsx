@@ -8,7 +8,7 @@ const PromoItem = ({ image }) => {
           loading="lazy"
           src={image}
           alt={"Car detailing"}
-          className="object-cover w-full mx-auto h-96 absolute top-0"
+          className="object-cover w-96 h-96 mx-auto px-0.5"
         />
       </div>
     </div>
