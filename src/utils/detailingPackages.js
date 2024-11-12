@@ -40,6 +40,7 @@ export const washAndWax = {
   type: "Exterior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/car-front-foglight.avif",
+  alt: "Mobile Wash & Wax Exterior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: [
     "Vehicle Hand Washed",
     "Gas Cap and Valve Cleaned",
@@ -68,6 +69,7 @@ export const shineAndShield = {
   type: "Exterior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.avif",
+  alt: "Mobile Shine & Shield Exterior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: [
     "Wheels & Wells Cleaned",
     "Vehicle Hand Washed",
@@ -99,6 +101,8 @@ export const wipeAndClean = {
   type: "Interior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-polish-salon-car-garage_1157-36595.avif",
+  alt: "Mobile Wipe & Clean Interior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
+
   interiorServices: [
     "Trunk Carpet Vacuumed",
     "Trunk Space Plastics Cleaned",
@@ -129,6 +133,8 @@ export const steamAndGuard = {
   type: "Interior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_539555302.avif",
+  alt: "Mobile Steam & Guard Interior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
+
   interiorServices: [
     "Trunk Carpet Vacuumed",
     "Trunk Space Plastics Cleaned",
@@ -161,6 +167,7 @@ export const baseDetail = {
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.avif",
+  alt: "Mobile Base Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: [
     "Vehicle Hand Washed",
     "Gas Cap and Valve Cleaned",
@@ -196,6 +203,7 @@ export const completeDetail = {
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_243325383.avif",
+  alt: "Mobile Complete Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: washAndWax.exteriorServices,
   interiorServices: wipeAndClean.interiorServices,
   price: ["$245", "$270", "$295"],
@@ -215,6 +223,7 @@ export const deepClean = {
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/pexels-khunkorn-laowisit-1359149-5233285.avif",
+  alt: "Mobile Deep Cleaning Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: shineAndShield.exteriorServices,
   interiorServices: steamAndGuard.interiorServices,
   price: ["$345", "$370", "$395"],
@@ -234,6 +243,7 @@ export const sixMonthsCeramicCoating = {
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.avif",
+  alt: "Mobile 6 Months Ceramic Coating Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: [
     "Wheels & Wells Cleaned",
     "Vehicle Hand Washed",

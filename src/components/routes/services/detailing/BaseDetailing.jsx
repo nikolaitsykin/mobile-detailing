@@ -38,6 +38,7 @@ const BaseDetailing = () => {
               interiorServices={service.interiorServices}
               steps={service.steps}
               image={service.image}
+              alt={service.alt}
               singleService
               duration={service.duration}
               link={service.link}

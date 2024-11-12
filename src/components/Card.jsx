@@ -8,6 +8,7 @@ const Card = ({
   service,
   title,
   image,
+  alt,
   description,
   services,
   price,
@@ -48,7 +49,7 @@ const Card = ({
                 loading="lazy"
                 className="w-full max-w-xl align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
                 src={image}
-                alt="Car wash"
+                alt={alt}
               />
             )}
             {description && (
@@ -112,7 +113,7 @@ const Card = ({
                 {interiorServices.map((service, index) => (
                   <li
                     key={index}
-                    className="text-start text-sm p-[2px] whitespace-pre-wrap list-disc ml-4"
+                    className="text-start text-xs md:text-base p-[2px] whitespace-pre-wrap list-disc ml-4"
                   >
                     {service}
                   </li>
