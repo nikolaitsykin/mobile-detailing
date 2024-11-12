@@ -7,6 +7,8 @@ import GalleryItem from "./GalleryItem";
 
 const Gallery = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+  const slidesToShow = windowWidth > 792 ? (windowWidth > 1200 ? 3 : 2) : 1;
+  console.log(windowWidth);
 
   React.useEffect(() => {
     let cb = function () {
@@ -23,7 +25,7 @@ const Gallery = () => {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: windowWidth > 792 ? 2 : 1,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
