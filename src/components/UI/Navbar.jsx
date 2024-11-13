@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   const navLinkStyle =
-    "flex px-3 justify-start md:justify-center items-center text-gray focus:text-white hover:text-white w-[100%] h-12 md:w-full text-md";
+    "flex px-3 justify-start md:justify-center items-center text-gray focus:text-white hover:text-white w-[100%] h-12 md:w-full text-xs md:text-base";
   return (
     <nav className="w-full text-white flex flex-col md:ml-5 md:flex-row justify-around items-end ">
       <ul
@@ -24,7 +24,7 @@ const Navbar = () => {
       >
         <li
           key={"service"}
-          className={`flex jutify-end md:justify-center items-start md:basis-1/4`}
+          className={`text-xs md:text-base flex jutify-end md:justify-center items-start md:basis-1/4`}
         >
           <Dropdown
             title={servicesLinks[0]}

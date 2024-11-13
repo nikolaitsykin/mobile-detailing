@@ -29,7 +29,7 @@ const Dropdown = ({ title, closeMenu }) => {
       </button>
       <ul
         className={`${isDropdownOpen ? "block" : "hidden"} 
-            z-10 flex-col absolute bg-black w-40 md:w-48 shadow-lg ml-24 -mt-12 md:m-0`}
+            z-10 flex-col absolute bg-black w-38 md:w-48 shadow-lg ml-20 -mt-12 md:m-0`}
       >
         <DropdownList
           options={exteriorDetailingServices}

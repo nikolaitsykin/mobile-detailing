@@ -10,7 +10,7 @@ const DropdownList = ({ options, closeMenu, closeDropdown }) => {
       onMouseLeave={() => setIsOptionsOpen(false)}
       id="interiorServices"
       key={"interiorServices"}
-      className=" float-none px-3 text-left flex items-center hover:bg-dark-gray"
+      className=" float-none px-2 text-left flex items-center hover:bg-dark-gray"
     >
       <div className="float-start md:float-left overflow-hidden ">
         <button
@@ -23,7 +23,7 @@ const DropdownList = ({ options, closeMenu, closeDropdown }) => {
         <ul
           className={`
             ${isOptionsOpen ? "block" : "hidden"} 
-            "z-10 flex-col absolute bg-black min-w-36 md:min-w-48 shadow-lg -mt-12 ml-44`}
+            "z-10 flex-col absolute bg-black min-w-36 md:min-w-48 shadow-lg -mt-12 ml-32 md:ml-44`}
         >
           {options.map((option) => (
             <DropdownItem
