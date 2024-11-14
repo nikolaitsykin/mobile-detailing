@@ -1,7 +1,6 @@
 // import React from "react";
 // import { Link } from "react-router-dom";
 // import {
-//   GOOGLE_REVIEWS_URL,
 //   WASH_AND_WAX_PATH,
 // } from "../../../../utils/constants";
 // import { baseWash } from "../../../../utils/detailingPackages";

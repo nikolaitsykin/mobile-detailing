@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <div id="about" className="w-full z-20 bg-white font-poppins">
       <Banner
-        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-washing-his-car-garage_1157-26072.avif"
+        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-washing-his-car-garage_1157-26072.jpg"
         header="About"
       />
       <section>

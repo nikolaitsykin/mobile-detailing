@@ -39,7 +39,7 @@ export const washAndWax = {
   title: "Wash & Wax",
   type: "Exterior Service",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/car-front-foglight.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/car-front-foglight.jpg",
   alt: "Mobile Wash & Wax Exterior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: [
     "Vehicle Hand Washed",
@@ -68,7 +68,7 @@ export const shineAndShield = {
   title: "Shine & Shield",
   type: "Exterior Service",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.jpeg",
   alt: "Mobile Shine & Shield Exterior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: [
     "Wheels & Wells Cleaned",
@@ -100,7 +100,7 @@ export const wipeAndClean = {
   title: "Wipe & Clean",
   type: "Interior Service",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-polish-salon-car-garage_1157-36595.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-polish-salon-car-garage_1157-36595.jpg",
   alt: "Mobile Wipe & Clean Interior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
 
   interiorServices: [
@@ -132,7 +132,7 @@ export const steamAndGuard = {
   title: "Steam & Guard",
   type: "Interior Service",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_539555302.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_539555302.jpeg",
   alt: "Mobile Steam & Guard Interior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
 
   interiorServices: [
@@ -166,7 +166,7 @@ export const baseDetail = {
   title: "Base Detailing",
   type: "Full Detailing",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.jpeg",
   alt: "Mobile Base Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: [
     "Vehicle Hand Washed",
@@ -202,7 +202,7 @@ export const completeDetail = {
   title: "Complete Detailing",
   type: "Full Detailing",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_243325383.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_243325383.jpeg",
   alt: "Mobile Complete Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: washAndWax.exteriorServices,
   interiorServices: wipeAndClean.interiorServices,
@@ -222,7 +222,7 @@ export const deepClean = {
   title: "Deep Cleaning",
   type: "Full Detailing",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/pexels-khunkorn-laowisit-1359149-5233285.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/pexels-khunkorn-laowisit-1359149-5233285.jpg",
   alt: "Mobile Deep Cleaning Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: shineAndShield.exteriorServices,
   interiorServices: steamAndGuard.interiorServices,
@@ -242,7 +242,7 @@ export const sixMonthsCeramicCoating = {
   title: "6 Months Ceramic Coating",
   type: "Ceramic Coating",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
   alt: "Mobile 6 Months Ceramic Coating Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: [
     "Wheels & Wells Cleaned",
@@ -328,7 +328,7 @@ export const exteriorDetailingService = {
   description:
     "Our exterior detailing includes a thorough hand wash, decontamination, and precision drying for a spotless, protected finish.",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_397247724.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_397247724.jpeg",
   link: MOBILE_EXTERIOR_DETAILING_PATH,
   options: exteriorDetailingServices,
 };
@@ -337,7 +337,7 @@ export const interiorDetailingService = {
   description:
     "Our interior detailing offers deep cleaning, vacuuming, and upholstery care, ensuring a fresh, and comfortable interior.",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_539555302.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_539555302.jpeg",
   link: MOBILE_INTERIOR_DETAILING_PATH,
   options: interiorDetailingServices,
 };
@@ -347,7 +347,7 @@ export const fullDetailingService = {
   description:
     "Our full detailing packages include a thorough hand wash, decontamination, deep cleaning, vacuuming, and upholstery care, leaving your exterior and interior both shining, and comfortable.",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.avif",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.jpeg",
   link: MOBILE_FULL_DETAILING_PATH,
   options: fullDetailingServices,
 };

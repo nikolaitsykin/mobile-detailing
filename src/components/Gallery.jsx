@@ -8,7 +8,6 @@ import GalleryItem from "./GalleryItem";
 const Gallery = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   const slidesToShow = windowWidth > 792 ? (windowWidth > 1200 ? 3 : 2) : 1;
-  console.log(windowWidth);
 
   React.useEffect(() => {
     let cb = function () {

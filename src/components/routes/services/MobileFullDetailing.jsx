@@ -13,7 +13,7 @@ const AutoDetailing = () => {
         <img
           loading="lazy"
           className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
-          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.avif"
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.jpeg"
           alt="Auto detailing"
         />
       </div>

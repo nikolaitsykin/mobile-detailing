@@ -1,7 +1,6 @@
 // import React, { useEffect } from "react";
 // import { Link } from "react-router-dom";
 // import {
-//   GOOGLE_REVIEWS_URL,
 //   WIPE_AND_CLEAN_PATH,
 // } from "../../../../utils/constants";
 // import { baseClean } from "../../../../utils/detailingPackages";

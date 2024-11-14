@@ -8,7 +8,7 @@ const ServicesPage = () => {
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
       <Banner
-        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.avif"
+        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.jpeg"
         header="Services"
       />
       <section className="w-[90%] md:w-[80%] mx-auto">

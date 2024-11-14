@@ -13,7 +13,7 @@ const Polish = () => {
         <img
           loading="lazy"
           className="w-full object-cover opacity-60"
-          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_406854263.avif"
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_406854263.jpeg"
           alt="Auto detailing"
         />
       </div>

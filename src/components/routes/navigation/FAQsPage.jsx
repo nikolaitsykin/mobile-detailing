@@ -14,7 +14,7 @@ const FAQs = () => {
   return (
     <div id="faqs" className="w-full z-20 bg-white font-poppins">
       <Banner
-        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.avif"
+        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.jpeg"
         header="FAQs"
       />
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">

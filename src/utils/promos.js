@@ -5,20 +5,20 @@ export const permanentPromos = [
     description:
       "Welcome new clients with a 10% discount on their first detailing service.",
     image:
-      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/josep-martins-nAsdr5DC2Ss-unsplash.avif",
+      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/josep-martins-nAsdr5DC2Ss-unsplash.jpg",
   },
   {
     title: "Refer a Friend and Save 5%",
     description:
       "Get 5% off your next service when your friend completes their first booking",
     image:
-      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/photo-boards-KZNTEn2r6tw-unsplash.avif",
+      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/photo-boards-KZNTEn2r6tw-unsplash.jpg",
   },
   {
     title: "Loyalty Program",
     description: "After every 6 services, get your 6th any service at 50% off.",
     image:
-      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/meric-dagli-3KJpF86nR4c-unsplash.avif",
+      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/meric-dagli-3KJpF86nR4c-unsplash.jpg",
   },
 ];
 
