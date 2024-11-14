@@ -11,6 +11,7 @@ const AutoDetailing = () => {
     <div id="exterior-detailing" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black">
         <img
+          loading="lazy"
           className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
           src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_397247724.jpeg"
           alt="Auto detailing"
