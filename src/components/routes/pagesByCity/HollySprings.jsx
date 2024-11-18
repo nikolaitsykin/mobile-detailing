@@ -11,7 +11,8 @@ const RootHollySprings = () => {
 
   useEffect(() => {
     document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating`;
-    document.getElementById("canonical").rel = "".href = "";
+    document.getElementById("canonical").href = "";
+    document.getElementById("canonical").rel = "";
   }, []);
 
   return (
