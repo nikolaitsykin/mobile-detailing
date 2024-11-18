@@ -1,5 +1,7 @@
 import React from "react";
 import Gallery from "./Gallery";
+import GoogleMap from "./Map";
+import GoogleReview from "./ReviewsWidget";
 import EmbedWidget from "./ReviewsWidget";
 import Services from "./Services";
 
@@ -41,8 +43,9 @@ const Hero = ({ city, location }) => {
           <div className="pb-12">
             <Services />
           </div>
-          <div>
-            <EmbedWidget />
+          <div className="pb-12">
+            <GoogleReview />
+            <GoogleMap />
           </div>
           <div>
             <Gallery />

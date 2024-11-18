@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { GOOGLE_REVIEWS_URL } from "../utils/constants";
 
-const EmbedWidget = () => {
+const GoogleReview = () => {
   const iframeRef = useRef(null);
 
   const src = GOOGLE_REVIEWS_URL;
@@ -20,10 +20,10 @@ const EmbedWidget = () => {
         src={src}
         title="Embed Widget"
         width="100%"
-        height="510px"
+        height="400px"
       />
     </div>
   );
 };
 
-export default EmbedWidget;
+export default GoogleReview;

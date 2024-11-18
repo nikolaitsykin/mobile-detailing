@@ -52,7 +52,7 @@ export const washAndWax = {
     "Premium Wax Applied",
     "Polished by Hand",
   ],
-  price: ["$125", "$150", "$175"],
+  price: ["$95", "$105", "$115"],
   carsSize: carTypes,
   link: WASH_AND_WAX_PATH,
   shortDescription:
@@ -83,9 +83,9 @@ export const shineAndShield = {
     "Chemical Bug & Target Removal",
     "Premium Wax Applied",
     "Polished by Hand",
-    "Upgrade to 6 Months Ceramic Coating for just $60",
+    "Upgrade to 6 Months Ceramic Coating for just $75",
   ],
-  price: ["$175", "$200", "$225"],
+  price: ["$145", "$160", "$175"],
   carsSize: carTypes,
   link: SHINE_AND_SHIELD_PATH,
   shortDescription:
@@ -93,7 +93,6 @@ export const shineAndShield = {
   description:
     "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by shiny tires and wheels. After protecting the windows, we perform a clay bar treatment and bug & tar decontamination. We finish with a premium wax application for gloss and protection. ",
   duration: ["2 hours 30 mins", "2 hours 45 mins", "3 hours"],
-  background: " ",
 };
 
 export const wipeAndClean = {
@@ -121,7 +120,7 @@ export const wipeAndClean = {
     "Interior detailing that leaves your car looking spotless and refreshed.",
   description:
     "We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. The surfaces, plastics, and cup holders get a thorough wipedown, and we finish with spotless glass and mirrors.\n\n",
-  price: ["$145", "$170", "$195"],
+  price: ["$115", "$145", "$175"],
   carsSize: carTypes,
   duration: ["2 hours", "2 hours 30 mins", "3 hours"],
   background: " ",
@@ -156,7 +155,7 @@ export const steamAndGuard = {
     "Our interior package includes carpet, trunk and interior cleaning and steam treatment.",
   description:
     "We vacuum and steam the interior, carpets, and trunk. Door panels, seats, vents, and surfaces receive a thorough cleaning with steam, followed by conditioning and UV protection. We ensure the glass and mirrors are spotless, leaving your vehicle looking polished.* Excessive pet hair or sand may require additional service.",
-  price: ["$215", "$240", "$265"],
+  price: ["$175", "$205", "$235"],
   carsSize: carTypes,
   duration: ["3 hours", "3 hours 30 mins", "4 hours"],
   background: " ",
@@ -187,7 +186,7 @@ export const baseDetail = {
     "Cup Holders Cleaned",
     "Glasses & Mirrors Cleaned",
   ],
-  price: ["$155", "$180", "205"],
+  price: ["$115", "$145", "175"],
   carsSize: carTypes,
   link: BASE_DETAILING_PATH,
   shortDescription:
@@ -206,7 +205,7 @@ export const completeDetail = {
   alt: "Mobile Complete Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: washAndWax.exteriorServices,
   interiorServices: wipeAndClean.interiorServices,
-  price: ["$245", "$270", "$295"],
+  price: ["$195", "$225", "$245"],
   carsSize: carTypes,
   link: COMPLETE_DETAILING_PATH,
   shortDescription:
@@ -226,7 +225,7 @@ export const deepClean = {
   alt: "Mobile Deep Cleaning Services in Raleigh | Spotless Mobile Auto Detailing.",
   exteriorServices: shineAndShield.exteriorServices,
   interiorServices: steamAndGuard.interiorServices,
-  price: ["$345", "$370", "$395"],
+  price: ["$295", "$325", "$345"],
   carsSize: carTypes,
   link: DEEP_CLEANING_PATH,
   shortDescription:

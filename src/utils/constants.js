@@ -7,7 +7,10 @@ export const BOOKING_URL =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services";
 
 export const GOOGLE_REVIEWS_URL =
-"https://widgets.commoninja.com/iframe/df46aab9-db12-44f7-8a35-e48fa9cee35c";
+  "https://widgets.commoninja.com/iframe/df46aab9-db12-44f7-8a35-e48fa9cee35c";
+
+export const GOOGLE_MAPS_URL =
+  "https://www.google.com/maps/d/u/3/embed?mid=1mtj3lKkRzf72krGSLKIV9mUKzDWvHW0&ehbc=2E312F&noprof=1";
 
 export const CONTACT_PATH = "/contact";
 export const FAQS_PATH = "/faqs";

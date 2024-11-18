@@ -11,15 +11,13 @@ const RootKnightdale = () => {
 
   useEffect(() => {
     document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating`;
-    document.getElementById(
-      "canonical"
-    ).href = `https://getspotlessnc.com/${currentCity}`;
+    document.getElementById("canonical").rel = "".href = "";
   }, []);
 
   return (
     <main className="w-full bg-white">
       <div className="z-100">
-      <div className="w-full bg-black">
+        <div className="w-full bg-black">
           <video
             className="opacity-40 object-cover h-[450px] md:h-[550px] w-full mx-auto"
             autoPlay
@@ -39,7 +37,7 @@ const RootKnightdale = () => {
               Top-Tier Service in {currentCity}, NC
             </h2>
             <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            {currentCity} Premier Auto Detailing
+              {currentCity} Premier Auto Detailing
             </h1>
             <p className=" text-center text-xs md:text-lg pt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
               Mobile Auto Detailing & Ceramic Coating serving {currentCity} &
