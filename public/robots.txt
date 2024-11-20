@@ -1,9 +1,10 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /login/
 Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
 Disallow: /private/
 
-# Allow all other directories
-User-agent: *
+# Allow all bots to crawl your site
 Allow: /
+
+# Link to your XML Sitemap
+Sitemap: https://getspotlessnc.com/sitemap.xml

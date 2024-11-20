@@ -5,6 +5,7 @@ import About from "../../About";
 import Hero from "../../Hero";
 import Promos from "../../Promos";
 import Button from "../../UI/Button";
+import detailingImage from "../../../assets/gallery/detailing_image.avif";
 
 const RootGarner = () => {
   const currentCity = "Garner";
@@ -19,18 +20,11 @@ const RootGarner = () => {
     <main className="w-full bg-white">
       <div className="z-100">
         <div className="w-full bg-black">
-          <video
-            className="opacity-40 object-cover h-[450px] md:h-[550px] w-full mx-auto"
-            autoPlay
-            loop
-            playsInline
-            muted
-          >
-            <source
-              src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/6158070-hd_1920_1080_30fps.mp4"
-              type="video/mp4"
-            />
-          </video>
+        <img
+            className="w-full object-cover h-[450px] md:h-[550px] mx-auto opacity-45"
+            src={detailingImage}
+            alt="Auto detailing"
+          />
         </div>
         <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-32 md:top-36">
           <div className="w-[90%] flex flex-col justify-center text-white">

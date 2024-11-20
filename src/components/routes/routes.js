@@ -199,6 +199,11 @@ export const routes = [
         name: "Garner Auto Detailing",
         element: <RootGarner />,
       },
+      {
+        path: "*",
+        name: "404",
+        element: <Root />,
+      }
     ],
   },
 ];
