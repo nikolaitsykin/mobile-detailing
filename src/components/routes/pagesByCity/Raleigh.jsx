@@ -5,7 +5,7 @@ import About from "../../About";
 import Hero from "../../Hero";
 import Promos from "../../Promos";
 import Button from "../../UI/Button";
-import detailingImage from "../../../assets/gallery/detailing_image.avif";
+import detailingImage from "../../../assets/gallery/detailing_image.jpeg";
 
 const RootRaleigh = () => {
   const currentCity = "Raleigh";
