@@ -5,7 +5,6 @@ import About from "../../About";
 import Hero from "../../Hero";
 import Promos from "../../Promos";
 import Button from "../../UI/Button";
-import detailingImage from "../../../assets/gallery/detailing_image.jpeg";
 
 const RootApex = () => {
   const currentCity = "Apex";
@@ -20,9 +19,9 @@ const RootApex = () => {
     <main className="w-full bg-white">
       <div className="z-100">
         <div className="w-full bg-black">
-        <img
+          <img
             className="w-full object-cover h-[450px] md:h-[550px] mx-auto opacity-45"
-            src={detailingImage}
+            src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.jpeg"
             alt="Auto detailing"
           />
         </div>
