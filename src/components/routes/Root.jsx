@@ -1,8 +1,7 @@
-import React, { lazy, useEffect } from "react";
-
-const About = lazy(() => import("../About"));
-const Hero = lazy(() => import("../Hero"));
-const Promos = lazy(() => import("../Promos"));
+import React, { useEffect } from "react";
+import About from "../About";
+import Hero from "../Hero";
+import Promos from "../Promos";
 
 const Root = () => {
   const currentCity = "Raleigh";

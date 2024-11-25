@@ -7,7 +7,7 @@
 // import Addons from "../../../Addons";
 // import Booking from "../../../Booking";
 // import Card from "../../../Card";
-// import EmbedWidget from "../../../ReviewsWidget";
+// import GoogleReview from "../../../ReviewsWidget";
 
 // const BaseWash = () => {
 //   const service = baseWash;
@@ -79,7 +79,7 @@
 //           </div>
 //         </section>
 //         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-//           <EmbedWidget />
+//           <GoogleReviews />
 //         </div>
 //         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
 //           <h2>{service.type.split(" ")[0]} Addons</h2>

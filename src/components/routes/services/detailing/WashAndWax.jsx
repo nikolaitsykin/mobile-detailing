@@ -7,7 +7,6 @@ import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import EmbedWidget from "../../../ReviewsWidget";
 
 const WashAndWax = () => {
   const service = washAndWax;

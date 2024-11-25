@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  DEEP_CLEANING_PATH
-} from "../../../../utils/constants";
+import { DEEP_CLEANING_PATH } from "../../../../utils/constants";
 import { completeDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
-import EmbedWidget from "../../../ReviewsWidget";
+import GoogleReview from "../../../ReviewsWidget";
 
 const CompleteDetailing = () => {
   const service = completeDetail;
@@ -48,12 +46,15 @@ const CompleteDetailing = () => {
           </article>
         </section>
         <section>
-        <div className="text-xs md:text-base">
-        <p>
+          <div className="text-xs md:text-base">
+            <p>
               Tired of scratches and swirls on your car, even after all those $5
               car washes? Those drive-thru machines can actually harm your paint
-              instead of helping it. Our exterior car wash is a better choice,
-              giving your car the care it really needs.
+              instead of helping it. Struggling with dirt, stains, and lingering
+              odors inside your car? Quick vacuuming or basic cleaning often
+              misses the details that matter most. Over time, spills, crumbs,
+              pet hair, and daily wear can build up, making your car’s interior
+              feel less inviting.
               <br />
               <br />
               Our Full Exterior and Interior Detailing package is all about
@@ -85,7 +86,7 @@ const CompleteDetailing = () => {
           </div>
         </section>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget />
+          <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <Gallery />

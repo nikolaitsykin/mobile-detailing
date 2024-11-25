@@ -19,7 +19,7 @@ const ConntactsButtons = () => {
           </div>
         </a>
       </div>
-      <div className="flex justify-center items-center active:scale-110 duration-300 px-2">
+      <div className="flex justify-center items-center active:scale-110 duration-300 px-1">
         <a href={TEXT_NUMBER}>
           <div className="hover:scale-110 duration-700">
             <MessageSms />

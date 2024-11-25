@@ -10,7 +10,7 @@ const Booking = () => {
     <section id="booking" className="w-[90%] md:w-[80%] mx-auto">
       <h2 className="py-10">Book your appointment today</h2>
       <article className="pb-3">
-        <p className="py-1">
+        <p className="pb-1">
           {businessName} has been proudly serving our community, offering the
           convenience of mobile detailing right at your doorstep. We understand
           that life gets busy, so we bring our eco-friendly, high-quality

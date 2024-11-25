@@ -17,7 +17,7 @@ const Header = () => {
       <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
         <div className="flex justify-start items-center basis:1/3 md:basis-1/7">
           <Link to={HOME_PATH}>
-            <div className="ml-5 md:ml-8 lg:ml-10 w-20 lg:w-32">
+            <div className="ml-2 mr-1 md:ml-8 lg:ml-10 w-20 lg:w-32">
               <img
                 loading="lazy"
                 className="h-full w-full object-contain"

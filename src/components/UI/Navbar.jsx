@@ -54,7 +54,7 @@ const Navbar = () => {
         <ConntactsButtons />
         <div
           onClick={closeMenu}
-          className="flex md:hidden justify-center items-center active:scale-110 duration-300 pl-2 ml-2"
+          className="flex md:hidden justify-center items-center active:scale-110 duration-300 pl-1 ml-2"
         >
           {isMenuOpen ? <Cross /> : <Menu />}
         </div>

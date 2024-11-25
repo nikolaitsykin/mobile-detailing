@@ -5,7 +5,6 @@ import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import EmbedWidget from "../../../ReviewsWidget";
 
 const DeepCleaning = () => {
   const service = deepClean;
@@ -49,8 +48,11 @@ const DeepCleaning = () => {
             <p>
               Tired of scratches and swirls on your car, even after all those $5
               car washes? Those drive-thru machines can actually harm your paint
-              instead of helping it. Our exterior car wash is a better choice,
-              giving your car the care it really needs.
+              instead of helping it. Struggling with dirt, stains, and
+              lingering odors inside your car? Quick vacuuming or basic cleaning
+              often misses the details that matter most. Over time, spills,
+              crumbs, pet hair, and daily wear can build up, making your car’s
+              interior feel less inviting.
               <br />
               <br />
               Our Full Exterior and Interior Detailing package is all about
@@ -69,7 +71,7 @@ const DeepCleaning = () => {
             </p>
           </div>
         </section>
-        <div className=" w-[90%] md:w-[80%] mx-auto">
+        <div className="w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">

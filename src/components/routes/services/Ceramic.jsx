@@ -3,11 +3,10 @@ import { sixMonthsCeramicCoating } from "../../../utils/detailingPackages";
 import Booking from "../../Booking";
 import Card from "../../Card";
 import Gallery from "../../Gallery";
-import EmbedWidget from "../../ReviewsWidget";
+import GoogleReview from "../../ReviewsWidget";
 
 const CeramicCoating = () => {
   const service = sixMonthsCeramicCoating;
-  console.log(sixMonthsCeramicCoating.image);
 
   return (
     <div
@@ -80,7 +79,7 @@ const CeramicCoating = () => {
           </div>
         </section>
         <div className="w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget />
+          <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <Gallery />
