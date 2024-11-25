@@ -61,12 +61,12 @@ const CeramicCoating = () => {
               Common Myths About Ceramic Coatings
             </h3>
             <p>
-              Absolutely, ceramic in Miami coatings offer impressive durability,
-              but they’re not invincible armor for your vehicle. It’s vital to
-              understand their limits. Coatings resist light swirls and
-              scratches from proper washing and drying. However, they won’t
-              prevent deeper scratches caused by negligence or dragging rough
-              objects.
+              Absolutely, ceramic coatings are durable. Ceramic coatings offer
+              impressive durability, but they’re not invincible armor for your
+              vehicle. It’s vital to understand their limits. Coatings resist
+              light swirls and scratches from proper washing and drying.
+              However, they won’t prevent deeper scratches caused by negligence
+              or dragging rough objects.
               <br />
               <br />
               Maintenance is key. Just like anything valuable, neglecting care

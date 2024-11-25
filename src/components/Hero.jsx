@@ -1,56 +1,64 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { BOOKING_PAGE_PATH, CALL_NUMBER } from "../utils/constants";
 import Gallery from "./Gallery";
 import GoogleMap from "./Map";
 import GoogleReview from "./ReviewsWidget";
-import EmbedWidget from "./ReviewsWidget";
 import Services from "./Services";
+import Button from "./UI/Button";
 
-const Hero = ({ city, location }) => {
+const Hero = ({ city }) => {
   return (
     <div className="w-full bg-white">
-      <section>
-        <article>
-          <h2>
-            Eco-Friendly Mobile Detailing Services in {city} – Protect & Enhance
-            Your Car On-the-Go!
+      <div className="w-full bg-black">
+        <img
+          decoding="async"
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.avif"
+          alt="Auto detailing"
+          className="opacity-40 object-cover h-[calc(50vh-80px)] sm:h-[calc(100vh-112px)] w-full mx-auto"
+        />
+      </div>
+      <div className="w-full object-cover h-[calc(50vh-80px)] sm:h-[calc(100vh-112px)] top-16 sm:top-20 flex justify-center items-center absolute  ">
+        <div className="w-[90%] flex flex-col justify-center text-white">
+          <h2 className="text-xs sm:text-base text-center font-light font-poppins p-1 sm:p-4">
+            Top-Tier Service in {city ? city : "Raleigh"}, NC
           </h2>
-          <p>
-            At Spotless Auto Detailing, we offer a range of high-quality mobile
-            detailing services that bring the car care to your doorstep. We also
-            specialize in ceramic coating for long-lasting protection and shine.
-            Our fully equipped mobile detailing unit has everything we need to
-            provide top-notch care for your vehicle. We do require access to a
-            power and water supply, but once that’s arranged, we’ll take care of
-            the rest. We proudly serve {city} and the surrounding areas. While
-            there may be some location-based limitations or criteria, we always
-            do our best to accommodate your needs and fit you into our schedule.
+          <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+            Spotless Detailing
+          </h1>
+          <p className="text-center mb-2 sm:mb-5 text-xs md:text-lg mt-2 sm:mt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Premier Mobile Auto Detailing & Ceramic Coating serving{" "}
+            {city ? city : "Triangle"} & Surrounding Areas.
           </p>
-        </article>
-      </section>
+          <div className="flex flex-row justify-center items-center w-full min-w-48 gap-1">
+            <Link to={BOOKING_PAGE_PATH}>
+              <Button
+                children={"BOOK NOW"}
+                color={"primary"}
+                border={"border"}
+              />
+            </Link>
+            <a href={CALL_NUMBER}>
+              <Button
+                children={"CALL NOW"}
+                color={"primary"}
+                border={"border"}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
       <section>
-        <article>
-          <h2 id="services" className="text-center">
-            Comprehensive Car Detailing Services – From Full Interior Cleaning
-            to Exterior Shine & Protection
-          </h2>
-          <p className="pb-10">
-            From interior cleaning to exterior shine and ceramic coating,
-            Spotless Auto Detailing offers a full range of mobile services
-            tailored to your car's needs. Our detailing packages are designed to
-            protect, enhance, and restore your vehicle, giving it a pristine
-            look and feel.
-          </p>
-          <div className="pb-12">
-            <Services />
-          </div>
-          <div className="pb-12">
-            <GoogleReview />
-            <GoogleMap />
-          </div>
-          <div>
-            <Gallery />
-          </div>
-        </article>
+        <div className="pb-12">
+          <Services />
+        </div>
+        <div className="pb-12">
+          <GoogleReview />
+          <GoogleMap />
+        </div>
+        <div>
+          <Gallery />
+        </div>
       </section>
     </div>
   );

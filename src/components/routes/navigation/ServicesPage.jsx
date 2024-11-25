@@ -1,5 +1,5 @@
 import React from "react";
-import { businessName } from "../../../utils/data";
+import { businessName, fullBusinessName } from "../../../utils/data";
 import { sustainability } from "../../../utils/sustainability";
 import Banner from "../../Banner";
 import Services from "../../Services";
@@ -17,7 +17,7 @@ const ServicesPage = () => {
             What we offer
           </h2>
           <p>
-            At Spotless Auto Detailing, we offer a range of high-quality mobile
+            At {fullBusinessName}, we offer a range of high-quality mobile
             detailing services that bring the car care to your doorstep. We also
             specialize in ceramic coating for long-lasting protection and shine.
             Our fully equipped mobile detailing unit has everything we need to
@@ -34,7 +34,7 @@ const ServicesPage = () => {
           </h2>
           <p className="pb-10">
             From interior cleaning to exterior shine and ceramic coating,
-            Spotless Auto Detailing offers a full range of mobile services
+            {fullBusinessName} offers a full range of mobile services
             tailored to your car's needs. Our detailing packages are designed to
             protect, enhance, and restore your vehicle, giving it a pristine
             look and feel.

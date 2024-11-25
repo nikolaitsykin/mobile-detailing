@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  DEEP_CLEANING_PATH
-} from "../../../../utils/constants";
+import { DEEP_CLEANING_PATH } from "../../../../utils/constants";
+import { fullBusinessName } from "../../../../utils/data";
 import { steamAndGuard } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
+import GoogleReview from "../../../ReviewsWidget";
 import EmbedWidget from "../../../ReviewsWidget";
 
 const SteamAndGuard = () => {
@@ -46,8 +46,8 @@ const SteamAndGuard = () => {
           </article>
         </section>
         <section>
-        <div className="text-xs md:text-base">
-        <p>
+          <div className="text-xs md:text-base">
+            <p>
               Rejuvinate your car's interior with our Steam & Guard Interior
               Detailing Service! Our skilled technicians use premium
               eco-friendly products, and proven techniques to clean every inch,
@@ -55,11 +55,10 @@ const SteamAndGuard = () => {
               like-new feel on every drive!
               <br />
               <br />
-              With Spotless Auto Detailing’s Steam & Guard Package, enjoy a
-              thorough, high-quality clean that keeps your car looking and
-              smelling its best. Reach out today for a pristine, refreshed
-              interior that enhances both your driving experience and your car’s
-              value.
+              With {fullBusinessName}’s Steam & Guard Package, enjoy a thorough,
+              high-quality clean that keeps your car looking and smelling its
+              best. Reach out today for a pristine, refreshed interior that
+              enhances both your driving experience and your car’s value.
               <br />
               <br />
               If you’re dealing with more dust, dirt, pet hair, tough stains, or
@@ -73,13 +72,13 @@ const SteamAndGuard = () => {
               </Link>{" "}
               Full Detailing Package, which adds thorough exterior wash, wheels
               & wheel wells cleaning, black exterior plastics restoration, clay
-              bar treatment and protective wax application. Book now for
-              full detailing service experience that truly stands out!
+              bar treatment and protective wax application. Book now for full
+              detailing service experience that truly stands out!
             </p>
           </div>
         </section>
-        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget />
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <Gallery />

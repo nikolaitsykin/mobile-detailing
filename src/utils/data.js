@@ -43,7 +43,70 @@ export const businessAddress = "Apex, NC 27502";
 export const businessHours = ["MON-SUN 9AM-5PM"];
 
 export const businessName = "Spotless";
-export const fullBusinessName = "Spotless Auto Detailing";
+export const fullBusinessName = "Spotless Detailing";
+
+export const reviews = [
+  {
+    name: "Vanessa G.",
+    rating: 5,
+    review:
+      "Just had my car detailed here for the first time,  and can't say enough great things about it. Excellent service, communication, and very detailed. This will be my go to for detailing going forwards.",
+  },
+  {
+    name: "Judith C.",
+    rating: 5,
+    review:
+      "Fantastic detailing done on my car (interior and exterior). Very satisfied and I can recommend this company to everyone",
+  },
+  {
+    name: "Igor T.",
+    rating: 5,
+    review:
+      "Our detailer arrived on time, went over the package of service and got to work.  His time estimate was accurate and the job was careful and thorough.",
+  },
+  {
+    name: "Hankko L.",
+    rating: 5,
+    review:
+      "Just had my car detailed by Spotless Auto Detailing, and I’m thrilled with the results! They were on time, super professional, and paid attention to every little detail. Highly recommend!",
+  },
+  {
+    name: "Natalia M.",
+    rating: 5,
+    review:
+      "I recently bought a used car that is in excellent technical condition but needs good mobile detailing. I am glad I found this high-quality service and fair prices.",
+  },
+  {
+    name: "Jacob D.",
+    rating: 5,
+    review:
+      "Spotless did an amazing job! My car is cleaner now than when we first bought it. Great service and attention to detail. Highly recommend.",
+  },
+  {
+    name: "Lizet T.",
+    rating: 5,
+    review:
+      "We got services from Spotless Auto detailing and our van looks like new. I highly recommend their services ! Also, they were great at working on my busy schedule.",
+  },
+  {
+    name: "Radha M.",
+    rating: 5,
+    review:
+      "Great Service. I highly recommend Spotless Auto detailing if you need the convenience of car wash while you’re working at home. My interior and exterior of car is looking awesome clean.",
+  },
+  {
+    name: "Murali T.",
+    rating: 5,
+    review:
+      "Great Service.....!!!",
+  },
+  {
+    name: "Natalia C.",
+    rating: 5,
+    review:
+      "Nik and his crew are great! I highly recommend their services!!",
+  },
+];
 
 export const galleyImages = [
   {

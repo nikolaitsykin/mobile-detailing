@@ -9,29 +9,28 @@ import ServiceItem from "./ServiceItem";
 const Services = () => {
   return (
     <>
-      <h2>Most Popular Car Detailing Services</h2>
-      <div id="services" className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <h3 className="text-3xl text-center p-0 pt-3 md:pt-10">Our Services</h3>
+      <h3 className="text-2xl text-center py-2 md:py-8">Popular Services</h3>
+      <div id="services" className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {popularDetailingServices.map((service) => (
           <ServiceItem
             key={service.title}
             title={service.title}
             image={service.image}
             description={service.shortDescription}
-            button={"Explore"}
             link={service.link}
           />
         ))}
         <Outlet />
       </div>
-      <h2>Other Detailing Services</h2>
-      <div id="services" className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <h3 className="text-2xl text-center">Other Services</h3>
+      <div id="services" className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {otherDetailingServices.map((service) => (
           <ServiceItem
             key={service.title}
             title={service.title}
             image={service.image}
             description={service.shortDescription}
-            button={"Explore"}
             link={service.link}
             background={service.background}
           />

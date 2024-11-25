@@ -13,7 +13,7 @@ import SocialButtons from "./UI/SocialButtons";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-black min-h-48 py-10 text-gray text-xxs sm:text-xs md:text-base">
+    <footer className="relative bg-black min-h-52 pt-10 text-gray text-xxs sm:text-xs md:text-base">
       <section className="flex justify-evenly flex-col md:flex-row ">
         <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3">
           <div className="min-w-48 md:pr-5 items-start">

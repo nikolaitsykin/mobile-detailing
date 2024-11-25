@@ -6,6 +6,7 @@ import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
+import GoogleReview from "../../../ReviewsWidget";
 import EmbedWidget from "../../../ReviewsWidget";
 
 const WashAndWax = () => {
@@ -77,8 +78,8 @@ const WashAndWax = () => {
             </p>
           </div>
         </section>
-        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget />
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <Gallery />

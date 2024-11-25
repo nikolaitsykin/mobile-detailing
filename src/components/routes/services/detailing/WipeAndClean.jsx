@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { STEAM_AND_GUARD_PATH } from "../../../../utils/constants";
+import { fullBusinessName } from "../../../../utils/data";
 import { wipeAndClean } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
+import GoogleReview from "../../../ReviewsWidget";
 import EmbedWidget from "../../../ReviewsWidget";
 
 const WipeAndClean = () => {
@@ -54,11 +56,10 @@ const WipeAndClean = () => {
               like-new feel on every drive!
               <br />
               <br />
-              With Spotless Auto Detailing’s Wipe & Clean Package, enjoy a
-              thorough, high-quality clean that keeps your car looking and
-              smelling its best. Reach out today for a pristine, refreshed
-              interior that enhances both your driving experience and your car’s
-              value.
+              With {fullBusinessName}’s Wipe & Clean Package, enjoy a thorough,
+              high-quality clean that keeps your car looking and smelling its
+              best. Reach out today for a pristine, refreshed interior that
+              enhances both your driving experience and your car’s value.
               <br />
               <br />
               If you’re dealing with more dust, dirt, pet hair, tough stains, or
@@ -77,8 +78,8 @@ const WipeAndClean = () => {
             </p>
           </div>
         </section>{" "}
-        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
-          <EmbedWidget />
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <Gallery />

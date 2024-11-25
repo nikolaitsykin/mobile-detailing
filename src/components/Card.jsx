@@ -127,10 +127,10 @@ const Card = ({
             </div>
           )}
           {singleService && (
-            <div className="text-center sm:text-start text-sm mt-2 p-4">
-              *Pricing for this service is based on vehicles in average
-              condition. Additional services may be required. Examples include
-              pet hair/sand, staining, excessive messes, etc
+            <div className="text-center sm:text-start text-xs md:text-base mt-2 p-4">
+              {service.title !== "Ceramic Coating"
+                ? "*Pricing for this service is based on vehicles in average condition. Additional services may be required. Examples include pet hair/sand, staining, excessive messes, etc."
+                : ""}
             </div>
           )}
         </div>

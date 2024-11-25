@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BOOKING_PAGE_PATH } from "../utils/constants";
 import Button from "./UI/Button";
 import Menu from "./UI/Menu";
 
@@ -9,17 +10,14 @@ const ServiceItem = ({
   title,
   image,
   description,
-  services,
-  price,
   button,
   link,
   background,
-  duration,
   bestValue,
 }) => {
   return (
     <div
-      className={`flex flex-col justify-between items-start pb-5 w-full mx-auto text-black border border-gray rounded-sm ${background}`}
+      className={`flex flex-col justify-between items-start pb-16 md:pb-5 w-full mx-auto text-black border-gray rounded-sm ${background}`}
     >
       <div className=" w-full">
         <div
@@ -30,66 +28,50 @@ const ServiceItem = ({
           <p className="text-lg font-medium text-blue animate-pulse">
             {bestValue}
           </p>
-          {title && <h3 className="text-xl text-center p-3">{title}</h3>}
-          {type && <h6 className="max-w-xl text-center pb-3">{type}</h6>}
         </div>
         {service && (
           <div className="w-full px-4 max-w-xl">
             <Menu service={service} card={true} />
           </div>
         )}
-        <div
-          className={`flex flex-col justify-start items-center w-full `}
-        >
+        <div className={`flex flex-col justify-start items-center w-full `}>
           {image && (
             <img
               loading="lazy"
-              className="w-full w-lg align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
+              className="w-full max-w-lg align-start rounded-sm overflow-hidden"
               src={image}
               alt="Auto detailing"
             />
           )}
+          {title && (
+            <h3 className="text-2xl text-center p-2 mt-2 font-poppins text-dark-gray">
+              {title.toUpperCase()}
+            </h3>
+          )}
+          {type && <h6 className="max-w-xl text-center pb-3">{type}</h6>}
           {description && (
-            <div className="flex flex-col max-w-xl w-full px-4 pb-5 text-xs md:text-base whitespace-pre-wrap">
+            <div className="flex flex-col max-w-lg w-full px-2 pb-2 text-xs md:text-base whitespace-pre-wrap">
               <p className="">{description}</p>
             </div>
           )}
         </div>
-
-        {services && (
-          <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
-            <ul className="h-full">
-              {services.map((service, index) => (
-                <li
-                  key={index}
-                  className="text-start text-xs md:text-base list-none p-[2px] whitespace-pre-wrap"
-                >
-                  {service}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        {price && (
-          <div className="flex justify-center items-end w-full">
-            <h4 className="p-5"> {price}</h4>
-          </div>
-        )}
-        {duration && (
-          <div className="text-center text-sm mt-2 p-4">{duration}</div>
-        )}
       </div>
-      {button && (
-        <div className="flex justify-center items-end w-[100%] px-4">
-          <Link
-            className="w-full max-w-xl flex justify-center items-center"
-            preventScrollReset={false}
-            to={`${link}`}
-          >
-            <Button children={button} color={"secondary"} />
-          </Link>
-        </div>
-      )}
+      <div className="flex flex-col justify-center items-center w-[100%]">
+        <Link
+          className="w-full flex justify-center items-center max-w-lg px-2 py-0.5"
+          preventScrollReset={false}
+          to={`${link}`}
+        >
+          <Button children={"Explore"} color={"tertiary"} width={"w-full"} />
+        </Link>
+        <Link
+          className="w-full  flex justify-center items-center max-w-lg px-2 py-0.5"
+          preventScrollReset={false}
+          to={BOOKING_PAGE_PATH}
+        >
+          <Button children={"Book Now"} color={"secondary"} width={"w-full"} />
+        </Link>
+      </div>
     </div>
   );
 };

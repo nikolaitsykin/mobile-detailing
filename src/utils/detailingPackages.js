@@ -40,7 +40,7 @@ export const washAndWax = {
   type: "Exterior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/car-front-foglight.jpg",
-  alt: "Mobile Wash & Wax Exterior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
+  alt: "Mobile Wash & Wax Exterior Detailing Services in Raleigh | Spotless Detailing.",
   exteriorServices: [
     "Vehicle Hand Washed",
     "Gas Cap and Valve Cleaned",
@@ -69,7 +69,7 @@ export const shineAndShield = {
   type: "Exterior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.jpeg",
-  alt: "Mobile Shine & Shield Exterior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
+  alt: "Mobile Shine & Shield Exterior Detailing Services in Raleigh | Spotless Detailing.",
   exteriorServices: [
     "Wheels & Wells Cleaned",
     "Vehicle Hand Washed",
@@ -83,7 +83,7 @@ export const shineAndShield = {
     "Chemical Bug & Target Removal",
     "Premium Wax Applied",
     "Polished by Hand",
-    "Upgrade to 6 Months Ceramic Coating for just $75",
+    "Upgrade to Ceramic Coating Application for just $75",
   ],
   price: ["$145", "$160", "$175"],
   carsSize: carTypes,
@@ -100,7 +100,7 @@ export const wipeAndClean = {
   type: "Interior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-polish-salon-car-garage_1157-36595.jpg",
-  alt: "Mobile Wipe & Clean Interior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
+  alt: "Mobile Wipe & Clean Interior Detailing Services in Raleigh | Spotless Detailing.",
 
   interiorServices: [
     "Trunk Carpet Vacuumed",
@@ -135,11 +135,10 @@ export const steamAndGuard = {
   alt: "Mobile Steam & Guard Interior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
 
   interiorServices: [
-    "Trunk Carpet Vacuumed",
+    "Trunk Carpet Vacuumed & Steamed",
     "Trunk Space Plastics Cleaned",
     "Interior Carpet Vacuumed & Steamed",
     "Floor Mats Shaampooed",
-    "Carpet Shaampooed & Steamed",
     "Door Panels, Jambs Cleaned & Steamed",
     "Surfaces and Plastics Cleaned & Steamed",
     "Fabric Seats Vacuumed & Steamed",
@@ -166,7 +165,7 @@ export const baseDetail = {
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.jpeg",
-  alt: "Mobile Base Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
+  alt: "Mobile Base Detailing Services in Raleigh | Spotless Detailing.",
   exteriorServices: [
     "Vehicle Hand Washed",
     "Gas Cap and Valve Cleaned",
@@ -202,7 +201,7 @@ export const completeDetail = {
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_243325383.jpeg",
-  alt: "Mobile Complete Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
+  alt: "Mobile Complete Detailing Services in Raleigh | Spotless Detailing.",
   exteriorServices: washAndWax.exteriorServices,
   interiorServices: wipeAndClean.interiorServices,
   price: ["$195", "$225", "$245"],
@@ -222,7 +221,7 @@ export const deepClean = {
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/pexels-khunkorn-laowisit-1359149-5233285.jpg",
-  alt: "Mobile Deep Cleaning Services in Raleigh | Spotless Mobile Auto Detailing.",
+  alt: "Mobile Deep Cleaning Services in Raleigh | Spotless Detailing.",
   exteriorServices: shineAndShield.exteriorServices,
   interiorServices: steamAndGuard.interiorServices,
   price: ["$295", "$325", "$345"],
@@ -238,11 +237,11 @@ export const deepClean = {
 };
 
 export const sixMonthsCeramicCoating = {
-  title: "6 Months Ceramic Coating",
-  type: "Ceramic Coating",
+  title: "Ceramic Coating",
+  type: "Exterior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
-  alt: "Mobile 6 Months Ceramic Coating Services in Raleigh | Spotless Mobile Auto Detailing.",
+  alt: "Mobile Ceramic Coating Services in Raleigh | Spotless Detailing.",
   exteriorServices: [
     "Wheels & Wells Cleaned",
     "Vehicle Hand Washed",
@@ -253,17 +252,18 @@ export const sixMonthsCeramicCoating = {
     "Black Textured Plastics Dressed",
     "Clay Bar Decontamination",
     "Chemical Bug & Target Removal",
-    "6 Months Ceramic Coating Applied",
+    "Ceramic Coating Applied",
   ],
   price: ["$225", "$250", "$275"],
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   shortDescription:
-    "Superior 6 month hydrophobic, shiny and resistant protection for your vehicle paint.",
+    "Superior hydrophobic, shiny and resistant protection for your vehicle paint.",
   description:
-    "To prepate for a ceramic coating we begin with a full hand wash and dry, followed tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for long-lasting gloss and protection.",
+    "To prepate for a ceramic coating we begin with a full hand wash and dry, followed tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to six months or more, ensuring long-lasting defense against various contaminants.",
   duration: ["2 hours 30 mins", "2 hours 45 mins", "3 hours"],
   background: " ",
+  bestValue: "Most Popular",
 };
 
 // export const baseWash = {

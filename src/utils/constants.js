@@ -6,11 +6,12 @@ export const TIKTOK_URL = "https://www.tiktok.com/@spotless.mobile.detail";
 export const BOOKING_URL =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services";
 
-export const GOOGLE_REVIEWS_URL =
-  "https://widgets.commoninja.com/iframe/df46aab9-db12-44f7-8a35-e48fa9cee35c";
-
 export const GOOGLE_MAPS_URL =
   "https://www.google.com/maps/d/u/3/embed?mid=1mtj3lKkRzf72krGSLKIV9mUKzDWvHW0&ehbc=2E312F&noprof=1";
+
+export const GOOGLE_REVIEWS_URL = "https://g.page/r/CakD_RcyWdf5EBM/review";
+export const GOOGLE_BUSINESS_URL =
+  "https://www.google.com/maps/place/Spotless+Auto+Detailing+%26+Ceramic+Coating/@35.723543,-78.8839443,17z/data=!4m8!3m7!1s0x2e3895aef2810335:0xf9d7593217fd03a9!8m2!3d35.723543!4d-78.8839443!9m1!1b1!16s%2Fg%2F11wh63g393?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D";
 
 export const CONTACT_PATH = "/contact";
 export const FAQS_PATH = "/faqs";

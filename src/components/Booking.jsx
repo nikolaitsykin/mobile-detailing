@@ -24,7 +24,7 @@ const Booking = () => {
           And if you don't see your preferred day or time, give us a call –
           we’ll do our best to accommodate you.{" "}
           <Link className="underline text-blue" to="/services">
-            Browse our services
+            Browse our services.
           </Link>
         </p>
       </article>

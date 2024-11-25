@@ -7,10 +7,10 @@ const About = ({ city }) => {
   return (
     <section className="w-full">
       <article className="text-black w-full">
-        <h2 id="about-us">About Spotless Auto Detailing</h2>
+        <h2 id="about-us">About {fullBusinessName}</h2>
         <div className="">
           <h4 className="">Who we are?</h4>
-          <p>
+          <p className="text-xs md:text-base">
             {fullBusinessName} proudly serves {city}, NC, and surrounding areas.
             Our team specializes in providing eco-friendly car detailing
             services that ensure your vehicle looks outstanding while
@@ -20,17 +20,17 @@ const About = ({ city }) => {
         </div>
         <div className="pt-5">
           <h4 className="">Our mission</h4>
-          <p>
+          <p className="text-xs md:text-base">
             Our mission is to offer premium car detailing and protection
             services through the use of safe, environmentally-friendly products.
-            Spotless Auto Detailing aims to keep both your vehicle and the
+            Spotless Detailing aims to keep both your vehicle and the
             environment in mind, providing top-notch results with eco-conscious
             solutions.
           </p>
         </div>
         <div className="pt-5">
           <h4 className="">Our values</h4>
-          <p>
+          <p className="text-xs md:text-base">
             With extensive experience detailing everything from family vehicles
             to luxury and performance cars, we focus on preserving your car’s
             value and enhancing your driving experience. We’re committed to
@@ -46,7 +46,7 @@ const About = ({ city }) => {
         <h2 id="what-is-detailing">What is Car Detailing </h2>
         <div className="pt-5">
           <h4>More Than a Simple Wash & Polish</h4>
-          <p>
+          <p className="text-xs md:text-base">
             Car detailing goes beyond a basic wash. It involves advanced,
             eco-friendly techniques to thoroughly clean, restore, and protect
             your vehicle inside and out. Our detailing process enhances both the
@@ -56,7 +56,7 @@ const About = ({ city }) => {
         </div>
         <div className="pt-5">
           <h4>Our approach</h4>
-          <p>
+          <p className="text-xs md:text-base">
             At {businessName}, we partner with leading brands known for their
             innovative, high-performance products that respect the environment.
             Our eco-friendly, pH-balanced solutions ensure that your vehicle

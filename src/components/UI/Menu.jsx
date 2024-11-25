@@ -46,7 +46,7 @@ const Menu = ({ service, singleService }) => {
                       Starts at {service.price[tabIndex]}
                     </h4>
                   )}
-                  <div className="text-center sm:text-start text-sm px-4 mb-4 h-12">
+                  <div className="text-center sm:text-start text-xs md:text-base px-4 mb-4 h-12">
                     Estimated duration: {service.duration[tabIndex]} depending
                     on vehicle size and condition.
                   </div>

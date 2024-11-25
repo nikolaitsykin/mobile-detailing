@@ -53,7 +53,7 @@
 //               on every drive!
 //               <br />
 //               <br />
-//               With Spotless Auto Detailing’s Base Clean Package, enjoy a
+//               With Spotless Detailing’s Base Clean Package, enjoy a
 //               thorough, high-quality clean that keeps your car looking and
 //               smelling its best. Reach out today for a pristine, refreshed
 //               interior that enhances both your driving experience and your car’s
