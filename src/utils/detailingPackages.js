@@ -238,7 +238,7 @@ export const deepClean = {
 
 export const sixMonthsCeramicCoating = {
   title: "Ceramic Coating",
-  type: "Exterior Service",
+  type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
   alt: "Mobile Ceramic Coating Services in Raleigh | Spotless Detailing.",
