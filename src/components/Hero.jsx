@@ -12,7 +12,6 @@ const Hero = ({ city }) => {
     <div className="w-full bg-white">
       <div className="w-full bg-black">
         <img
-          decoding="async"
           src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.avif"
           alt="Auto detailing"
           className="opacity-40 object-cover h-[calc(50vh-80px)] sm:h-[calc(100vh-112px)] w-full mx-auto"
