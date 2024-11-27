@@ -1,13 +1,16 @@
 import {
-  baseDetail, ceramicCoatingService, completeDetail,
+  baseDetail,
+  ceramicCoatingService,
+  completeDetail,
   deepClean,
   exteriorDetailingService,
   fullDetailingService,
-  interiorDetailingService, shineAndShield,
+  interiorDetailingService,
+  shineAndShield,
   sixMonthsCeramicCoating,
   steamAndGuard,
   washAndWax,
-  wipeAndClean
+  wipeAndClean,
 } from "./detailingPackages";
 
 // export const paintCorrectionService = {
@@ -29,6 +32,15 @@ import {
 //   image: ppfServiceImage,
 //   link: "paint-protection-film",
 // };
+
+export const exteriorServices = [
+  washAndWax,
+  shineAndShield,
+  sixMonthsCeramicCoating,
+];
+export const interiorServices = [wipeAndClean, steamAndGuard];
+
+export const fullDetailingServices = [baseDetail, completeDetail, deepClean];
 
 export const popularDetailingServices = [
   sixMonthsCeramicCoating,

@@ -13,9 +13,9 @@ const ServicesPage = () => {
       />
       <section className="w-[90%] md:w-[80%] mx-auto">
         <article className="">
-          <h2 id="services" className="py-16">
+          <h3 id="services" className="text-xl text-center">
             What we offer
-          </h2>
+          </h3>
           <p>
             At {fullBusinessName}, we offer a range of high-quality mobile
             detailing services that bring the car care to your doorstep. We also
@@ -28,10 +28,10 @@ const ServicesPage = () => {
             do our best to accommodate your needs and fit you into our schedule.
           </p>
 
-          <h2 id="services" className="text-center">
+          <h3 id="services" className="text-center text-xl">
             Comprehensive Car Detailing Services – From Full Interior Cleaning
             to Exterior Shine & Protection
-          </h2>
+          </h3>
           <p className="pb-10">
             From interior cleaning to exterior shine and ceramic coating,
             {fullBusinessName} offers a full range of mobile services
@@ -46,10 +46,10 @@ const ServicesPage = () => {
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
         <article className="px-5 py-0">
-          <h2 id="embracing-sustainability" className="py-16 ">
+          <h3 id="embracing-sustainability" className="text-xl text-center">
             Embracing Sustainability: Eco-Friendly Detailing for a Cleaner Car
             and a Greener Planet
-          </h2>
+          </h3>
           <p>
             In recent years, the demand for{" "}
             <strong>eco-friendly car detailing</strong> products has surged

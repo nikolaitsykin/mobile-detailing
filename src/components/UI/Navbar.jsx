@@ -26,10 +26,17 @@ const Navbar = () => {
           key={"service"}
           className={`text-xs md:text-base flex jutify-end md:justify-center items-start md:basis-1/4`}
         >
-          <Dropdown
-            title={servicesLinks[0]}
-            closeMenu={closeMenu}
-          />
+          <NavLink
+            onClick={closeMenu}
+            to={`/${servicesLinksActual[0]}`}
+            className={({ isActive }) =>
+              isActive
+                ? `text-white ${navLinkStyle}`
+                : `text-gray ${navLinkStyle}`
+            }
+          >
+            <Dropdown title={servicesLinks[0]} closeMenu={closeMenu} />
+          </NavLink>
         </li>
         {servicesLinks.slice(1).map((link, index) => (
           <li

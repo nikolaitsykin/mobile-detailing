@@ -56,7 +56,7 @@ export const washAndWax = {
   carsSize: carTypes,
   link: WASH_AND_WAX_PATH,
   shortDescription:
-    "Experience exterior detailing and premium wax protection for your vehicle.",
+    "Experience exterior detailing and premium wax protection for your vehicle. Includes: Hand wash and dry of body and wheels, tire shine, clay bar decontamination, and premium wax protection.",
   description:
     "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we ensure the tires and wheels are looking it's best. We follow with a clay bar treatment to decontaminate the paint and apply a premium wax for lasting protection. Finally, the windows are treated with a water repellent for clarity.",
   duration: ["1 hour 30 mins", "1 hour 45 mins", "2 hours"],
@@ -89,7 +89,7 @@ export const shineAndShield = {
   carsSize: carTypes,
   link: SHINE_AND_SHIELD_PATH,
   shortDescription:
-    "This service offers a thorough exterior wash, with a premium wax for protection.",
+    "This service offers a thorough exterior wash, with a premium wax for protection. Includes: Wash & Wax service, and in addition chemical decontamination, bug & target removal, and exterior plastic dressing.",
   description:
     "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by shiny tires and wheels. After protecting the windows, we perform a clay bar treatment and bug & tar decontamination. We finish with a premium wax application for gloss and protection. ",
   duration: ["2 hours 30 mins", "2 hours 45 mins", "3 hours"],
@@ -117,7 +117,7 @@ export const wipeAndClean = {
   ],
   link: WIPE_AND_CLEAN_PATH,
   shortDescription:
-    "Interior detailing that leaves your car looking spotless and refreshed.",
+    "Interior detailing that leaves your car looking spotless and refreshed. Includes: Interior and trunk vacuum, shampooed mats, doors and jambs wiping, seats, interior surfaces and plastics wiping, and spotless glass and mirrors.",
   description:
     "We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. The surfaces, plastics, and cup holders get a thorough wipedown, and we finish with spotless glass and mirrors.\n\n",
   price: ["$115", "$145", "$175"],
@@ -151,7 +151,7 @@ export const steamAndGuard = {
   ],
   link: STEAM_AND_GUARD_PATH,
   shortDescription:
-    "Our interior package includes carpet, trunk and interior cleaning and steam treatment.",
+    "This interior service offers a thorough interior cleaning, with conditioning and protection. Includes: Wipe & Clean service and in addition interior and trunk steam cleaning, and interior conditioning and UV protection.",
   description:
     "We vacuum and steam the interior, carpets, and trunk. Door panels, seats, vents, and surfaces receive a thorough cleaning with steam, followed by conditioning and UV protection. We ensure the glass and mirrors are spotless, leaving your vehicle looking polished.* Excessive pet hair or sand may require additional service.",
   price: ["$175", "$205", "$235"],
@@ -176,12 +176,12 @@ export const baseDetail = {
     "Tire Shine Applied",
   ],
   interiorServices: [
-    "Carpet & Floor Mats Vacuumed",
+    "Carpet Vacuumed",
+    "Floor Mats Shaampooed",
     "Fabric Seats Vacuumed",
     "Leather Seats Wiped",
     "Door Panels Cleaned",
     "Interior Surfaces & Plastics Cleaned",
-    "Vents, Cracks & Crevices Cleaned",
     "Cup Holders Cleaned",
     "Glasses & Mirrors Cleaned",
   ],
@@ -189,7 +189,7 @@ export const baseDetail = {
   carsSize: carTypes,
   link: BASE_DETAILING_PATH,
   shortDescription:
-    "This service includes a thorough exterior and interior detailing.",
+    "This service includes a thorough exterior and interior detailing. Includes: Hand wash and dry of body and wheels, tire shine, interior vacuum, shampooed mats, doors and jambs wiping, seats, interior surfaces and plastics wiping, and spotless glass and mirrors.",
   description:
     "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.",
   duration: ["2 hours", "2 hours 30 mins", "3 hours"],
@@ -208,7 +208,7 @@ export const completeDetail = {
   carsSize: carTypes,
   link: COMPLETE_DETAILING_PATH,
   shortDescription:
-    "This service includes a complete exterior and interior detailing with the following protection.",
+    "This service includes a complete exterior and interior detailing with the following protection. Includes: Base Detailing and in addition clay bar decontamination, premium wax protection, vents, cracks & crevices, trunk jambs, trunk vacuum and cleaning.",
   description:
     "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we clean tires and wheels are spotless. We follow with a clay bar treatment to decontaminate the paint and apply a premium wax for lasting protection. Finally, the windows are treated with a water repellent for clarity. We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. Using steam, we sanitize the fabric or leather seats and touch points to eliminate germs and bacteria. The surfaces, plastics, and cup holders get a deep clean, and we finish with spotless glass and mirrors.",
   duration: ["4 hours", "4 hours 30 mins", "5 hours"],
@@ -228,7 +228,7 @@ export const deepClean = {
   carsSize: carTypes,
   link: DEEP_CLEANING_PATH,
   shortDescription:
-    "Our most comprehensive detailing package for your vehicle.",
+    "Our most comprehensive detailing package for your vehicle. Includes: Complete Detailing and in addition addition chemical decontamination, bug & target removal, exterior plastic dressing, interior and trunk steam cleaning, and interior conditioning and UV protection.",
   description:
     "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by spotless tires and wheels. After protecting the windows, we perform a clay bar treatment and iron decontamination. We finish with a premium wax application for gloss and protection. We vacuum and steam the interior, carpets, and trunk. Door panels, seats, vents, and surfaces receive a thorough cleaning with steam, followed by conditioning and UV protection. We ensure the glass and mirrors are spotless, leaving your vehicle looking polished.* Excessive pet hair or sand may require additional service.",
   duration: ["6 hours", "6 hours 30 mins", "7 hours "],
@@ -258,7 +258,7 @@ export const sixMonthsCeramicCoating = {
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   shortDescription:
-    "Superior hydrophobic, shiny and resistant protection for your vehicle paint.",
+    "Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Shine & Shield service, and premium ceramic coating application for long-lasting protection.",
   description:
     "To prepate for a ceramic coating we begin with a full hand wash and dry, followed tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to six months or more, ensuring long-lasting defense against various contaminants.",
   duration: ["2 hours 30 mins", "2 hours 45 mins", "3 hours"],
