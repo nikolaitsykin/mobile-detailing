@@ -75,8 +75,8 @@ const CompleteDetailing = () => {
                 className="underline text-blue font-semibold"
                 to={DEEP_CLEANING_PATH}
               >
-                Deep Cleaning{" "}
-              </Link>{" "}
+                Deep Cleaning
+              </Link>
               exterior service, which adds clay bar treatment, gloss enhancement
               and ceramic coating application for up to 6 month of protection
               for exterior services and full vacuuming, steam cleaning,

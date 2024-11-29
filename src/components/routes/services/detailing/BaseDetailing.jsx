@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { DEEP_CLEANING_PATH } from "../../../../utils/constants";
+import { COMPLETE_DETAILING_PATH } from "../../../../utils/constants";
 import { baseDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
@@ -75,11 +75,11 @@ const BaseDetailing = () => {
               our{" "}
               <Link
                 className="underline text-blue font-semibold"
-                to={DEEP_CLEANING_PATH}
+                to={COMPLETE_DETAILING_PATH}
               >
-                Deep Cleaning
-              </Link>{" "}
-              exterior service, which adds clay bar treatment and wax
+                Complete Detailing
+              </Link>
+              full detailing service, which adds clay bar treatment and wax
               application for up to 1 month of protection for exterior services
               and trunk vacuuming, steam treatment to seats and interior
               services. Book now for an exterior car wash experience that truly

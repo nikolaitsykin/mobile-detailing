@@ -14,7 +14,7 @@ const Hero = ({ city }) => {
         <img
           src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.avif"
           alt="Auto detailing"
-          className="opacity-40 object-cover h-[calc(50vh-80px)] sm:h-[calc(100vh-112px)] w-full mx-auto"
+          className="opacity-40 object-cover h-[calc(100vh-80px)] sm:h-[calc(100vh-112px)] w-full mx-auto"
         />
       </div>
       <div className="w-full object-cover h-[calc(50vh-80px)] sm:h-[calc(100vh-112px)] top-16 sm:top-20 flex justify-center items-center absolute  ">
