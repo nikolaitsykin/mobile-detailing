@@ -78,7 +78,7 @@ const BaseDetailing = () => {
                 to={COMPLETE_DETAILING_PATH}
               >
                 Complete Detailing
-              </Link>
+              </Link>{" "}
               full detailing service, which adds clay bar treatment and wax
               application for up to 1 month of protection for exterior services
               and trunk vacuuming, steam treatment to seats and interior
