@@ -56,7 +56,7 @@ export const washAndWax = {
   carsSize: carTypes,
   link: WASH_AND_WAX_PATH,
   shortDescription:
-    "Experience exterior detailing and premium wax protection for your vehicle. Includes: Hand wash and dry of body and wheels, tire shine, clay bar decontamination, and premium wax protection. \nFrom $95. Up to 2 hours.",
+    "Experience exterior detailing and premium wax protection for your vehicle. Includes: Hand wash and dry of body and wheels, tire shine, clay bar decontamination, and premium wax protection. \nFrom $115. Up to 3 hours.",
   description:
     "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we ensure the tires and wheels are looking it's best. We follow with a clay bar treatment to decontaminate the paint and apply a premium wax for lasting protection. Finally, the windows are treated with a water repellent for clarity.",
   duration: ["2 hours", "2 hours 30 mins", "3 hours"],
@@ -89,7 +89,7 @@ export const shineAndShield = {
   carsSize: carTypes,
   link: SHINE_AND_SHIELD_PATH,
   shortDescription:
-    "This service offers a thorough exterior wash, with a premium wax for protection. Includes: Wash & Wax service, and in addition chemical decontamination, bug & target removal, and exterior plastic dressing. \nFrom $145. Up to 3 hours.",
+    "This service offers a thorough exterior wash, with a premium wax for protection. Includes: Wash & Wax service, and in addition chemical decontamination, bug & target removal, and exterior plastic dressing. \nFrom $155. Up to 3 hours.",
   description:
     "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by shiny tires and wheels. After protecting the windows, we perform a clay bar treatment and bug & tar decontamination. We finish with a premium wax application for gloss and protection. ",
   duration: ["2 hours 45 mins", "3 hours", "3 hours 15 mins"],
