@@ -52,14 +52,14 @@ export const washAndWax = {
     "Premium Wax Applied",
     "Polished by Hand",
   ],
-  price: ["$95", "$105", "$115"],
+  price: ["$115", "$145", "$175"],
   carsSize: carTypes,
   link: WASH_AND_WAX_PATH,
   shortDescription:
     "Experience exterior detailing and premium wax protection for your vehicle. Includes: Hand wash and dry of body and wheels, tire shine, clay bar decontamination, and premium wax protection. \nFrom $95. Up to 2 hours.",
   description:
     "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we ensure the tires and wheels are looking it's best. We follow with a clay bar treatment to decontaminate the paint and apply a premium wax for lasting protection. Finally, the windows are treated with a water repellent for clarity.",
-  duration: ["1 hour 30 mins", "1 hour 45 mins", "2 hours"],
+  duration: ["2 hours", "2 hours 30 mins", "3 hours"],
   background: " ",
   bestValue: "Most Popular",
 };
@@ -85,14 +85,14 @@ export const shineAndShield = {
     "Polished by Hand",
     "Upgrade to Ceramic Coating Application for just $75",
   ],
-  price: ["$145", "$160", "$175"],
+  price: ["$155", "$175", "$195"],
   carsSize: carTypes,
   link: SHINE_AND_SHIELD_PATH,
   shortDescription:
     "This service offers a thorough exterior wash, with a premium wax for protection. Includes: Wash & Wax service, and in addition chemical decontamination, bug & target removal, and exterior plastic dressing. \nFrom $145. Up to 3 hours.",
   description:
     "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by shiny tires and wheels. After protecting the windows, we perform a clay bar treatment and bug & tar decontamination. We finish with a premium wax application for gloss and protection. ",
-  duration: ["2 hours 30 mins", "2 hours 45 mins", "3 hours"],
+  duration: ["2 hours 45 mins", "3 hours", "3 hours 15 mins"],
 };
 
 export const sixMonthsCeramicCoating = {
@@ -100,7 +100,7 @@ export const sixMonthsCeramicCoating = {
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
-  alt: "Mobile Ceramic Coating Services in Raleigh | Spotless Detailing.",
+  alt: "Ceramic Coating Services in Raleigh | Spotless Detailing.",
   exteriorServices: [
     "Wheels & Wells Cleaned",
     "Vehicle Hand Washed",
@@ -130,7 +130,7 @@ export const wipeAndClean = {
   type: "Interior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-polish-salon-car-garage_1157-36595.jpg",
-  alt: "Mobile Wipe & Clean Interior Detailing Services in Raleigh | Spotless Detailing.",
+  alt: "Wipe & Clean Interior Detailing Services in Raleigh | Spotless Detailing.",
 
   interiorServices: [
     "Trunk Carpet Vacuumed",
@@ -162,7 +162,7 @@ export const steamAndGuard = {
   type: "Interior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_539555302.jpeg",
-  alt: "Mobile Steam & Guard Interior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
+  alt: "Steam & Guard Interior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
 
   interiorServices: [
     "Trunk Carpet Vacuumed & Steamed",
@@ -195,7 +195,7 @@ export const baseDetail = {
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.jpeg",
-  alt: "Mobile Base Detailing Services in Raleigh | Spotless Detailing.",
+  alt: "Base Detailing Services in Raleigh | Spotless Detailing.",
   exteriorServices: [
     "Vehicle Hand Washed",
     "Gas Cap and Valve Cleaned",
@@ -231,7 +231,7 @@ export const completeDetail = {
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_243325383.jpeg",
-  alt: "Mobile Complete Detailing Services in Raleigh | Spotless Detailing.",
+  alt: "Complete Detailing Services in Raleigh | Spotless Detailing.",
   exteriorServices: washAndWax.exteriorServices,
   interiorServices: wipeAndClean.interiorServices,
   price: ["$195", "$225", "$245"],
@@ -251,7 +251,7 @@ export const deepClean = {
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/pexels-khunkorn-laowisit-1359149-5233285.jpg",
-  alt: "Mobile Deep Cleaning Services in Raleigh | Spotless Detailing.",
+  alt: "Deep Cleaning Services in Raleigh | Spotless Detailing.",
   exteriorServices: shineAndShield.exteriorServices,
   interiorServices: steamAndGuard.interiorServices,
   price: ["$295", "$325", "$345"],
