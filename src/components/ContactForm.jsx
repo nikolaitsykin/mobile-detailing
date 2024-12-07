@@ -7,26 +7,33 @@ import SelectField from "./UI/SelectField";
 import TextareaField from "./UI/TextareaField";
 
 const ContactForm = () => {
-
   const [isChecked, setIsChecked] = useState(false);
+  console.log(isChecked);
   const [values, setValues] = useState({
     fullName: "",
     vehicle: "",
     year: "",
     email: "",
     mobile: "",
+    contact: "",
     address: "",
-    service: "",
-    addon: "",
+    serviceOne: "",
+    serviceTwo: "",
+    serviceThree: "",
+    addonOne: "",
+    addonTwo: "",
+    addonThree: "",
     date: "",
     time: "",
     message: "",
   });
+
   const [error, setError] = useState(false);
   const [status, setStatus] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const checkHandler = () => {
+    console.log(isChecked);
     setIsChecked(!isChecked);
   };
 
@@ -64,7 +71,7 @@ const ContactForm = () => {
       setError(true);
       return;
     }
-    if (!values.service || values.service === "") {
+    if (!values.serviceOne || values.serviceOne === "") {
       setErrorMessage("Service type is required");
       setError(true);
       return;
@@ -76,7 +83,7 @@ const ContactForm = () => {
     }
 
     emailjs
-      .send("service_2fhr2hn", "template_7dtehrt", values, "QaHYb2JsoQeJCIYVd")
+      .send("service_2fhr2hn", "template_5wl1qp6", values, "QaHYb2JsoQeJCIYVd")
       .then(
         (response) => {
           console.log("SUCCESS!", response);
@@ -86,9 +93,14 @@ const ContactForm = () => {
             year: "",
             email: "",
             mobile: "",
+            contact: "",
             address: "",
-            service: "",
-            addon: "",
+            serviceOne: "",
+            serviceTwo: "",
+            serviceThree: "",
+            addonOne: "",
+            addonTwo: "",
+            addonThree: "",
             date: "",
             time: "",
             message: "",
@@ -118,7 +130,7 @@ const ContactForm = () => {
   const renderAlert = () => {
     if (status === "SUCCESS") {
       return (
-        <div className="px-4 py-3 leading-normal mb-5 text-center">
+        <div className="px-4 py-3 leading-normal mb-5 text-center bg-blue text-white rounded-md">
           <p>Your message submitted successfully</p>
         </div>
       );
@@ -157,7 +169,7 @@ const ContactForm = () => {
               label="Email Address"
               name="email"
               type="email"
-              placeholder="jphn@example.com"
+              placeholder="john@example.com"
               required={true}
             />
             <InputField
@@ -168,6 +180,14 @@ const ContactForm = () => {
               type="tel"
               placeholder="(919) 906-0099"
               required={true}
+            />
+            <SelectField
+              handleChange={handleChange}
+              name="contact"
+              label="Preferred contact method?"
+              defaultOption="Contact method"
+              options={["Email", "Phone"]}
+              value={values.contact}
             />
             <InputField
               value={values.address}
@@ -211,39 +231,103 @@ const ContactForm = () => {
             3. Select your preferred service
           </h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
-            <SelectField
-              handleChange={handleChange}
-              name="service"
-              label="Which service are you interested in?"
-              defaultOption="Preferred service"
-              options={[
-                "Wash & Wax",
-                "Wipe & Clean",
-                "Shine & Shield",
-                "Steam & Guard",
-                "Full Detail",
-              ]}
-              value={values.service}
-              required={true}
-            />
-            <InputField
-              value={values.addon}
-              handleChange={handleChange}
-              label="Which addons are you interested in?"
-              name="addon"
-              type="text"
-              placeholder="Engine Bay Detail, Pet Hair Removal etc."
-            />
+            <div>
+              <SelectField
+                handleChange={handleChange}
+                name="serviceOne"
+                label="Which service are you interested in?"
+                defaultOption="Preferred service"
+                options={[
+                  "Wash & Wax",
+                  "Wipe & Clean",
+                  "Shine & Shield",
+                  "Steam & Guard",
+                  "Base Detailing",
+                  "Complete Detailing",
+                  "Deep Cleaning",
+                  "Ceramic Coating",
+                ]}
+                value={values.serviceOne}
+                required={true}
+              />
+              <SelectField
+                handleChange={handleChange}
+                name="serviceTwo"
+                defaultOption="Preferred service"
+                options={[
+                  "Wash & Wax",
+                  "Wipe & Clean",
+                  "Shine & Shield",
+                  "Steam & Guard",
+                  "Base Detailing",
+                  "Complete Detailing",
+                  "Deep Cleaning",
+                  "Ceramic Coating",
+                ]}
+                value={values.serviceTwo}
+              />
+              <SelectField
+                handleChange={handleChange}
+                name="serviceThree"
+                defaultOption="Preferred service"
+                options={[
+                  "Wash & Wax",
+                  "Wipe & Clean",
+                  "Shine & Shield",
+                  "Steam & Guard",
+                  "Base Detailing",
+                  "Complete Detailing",
+                  "Deep Cleaning",
+                  "Ceramic Coating",
+                ]}
+                value={values.serviceThree}
+              />
+            </div>
+            <div>
+              <SelectField
+                handleChange={handleChange}
+                name="addonOne"
+                label="Which add-on are you interested in?"
+                defaultOption="Preferred add-on"
+                options={[
+                  "Engine Detailing",
+                  "Excessice Hair/Sand Removal",
+                  "Seats/Carpet Shampoo",
+                  "Ceramic Coating",
+                ]}
+                value={values.addonOne}
+              />
+              <SelectField
+                handleChange={handleChange}
+                name="addonTwo"
+                defaultOption="Preferred add-on"
+                options={[
+                  "Engine Detailing",
+                  "Excessice Hair/Sand Removal",
+                  "Seats/Carpet Shampoo",
+                  "Ceramic Coating",
+                ]}
+                value={values.addonTwo}
+              />
+              <SelectField
+                handleChange={handleChange}
+                name="addonThree"
+                defaultOption="Preferred add-on"
+                options={[
+                  "Engine Detailing",
+                  "Excessice Hair/Sand Removal",
+                  "Seats/Carpet Shampoo",
+                  "Ceramic Coating",
+                ]}
+                value={values.addonThree}
+              />
+            </div>
           </div>
         </div>
         <div className="w-full flex flex-col">
           <h3 className="text-black text-lg my-4 border-b border-gray py-1">
             4. Select date and time what will be best for you
           </h3>
-          <p className="text-black text-base my-3">
-            We currently offer services on weekdays between 5 PM and 8 PM and
-            weekends between 9 AM and 6 PM
-          </p>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
             <InputField
               value={values.date}
@@ -261,7 +345,6 @@ const ContactForm = () => {
               name="time"
               type="time"
               placeholder="eg. 10:00 AM"
-              required={true}
             />
           </div>
         </div>
@@ -276,6 +359,7 @@ const ContactForm = () => {
             checkHandler={checkHandler}
             name="terms"
             value={values.terms}
+            label="I guarantee that access to power and water will be provided and accessible at the time of service"
           />
         </div>
         {errorMessage && (
@@ -285,7 +369,7 @@ const ContactForm = () => {
         <div className="flex justify-cente mt-8">
           <Button
             type="submit"
-            children="SEND SERVICE REQUEST"
+            children="Request Quote"
             color="secondary"
             className="w-full"
             disabled={error}

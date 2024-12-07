@@ -1,12 +1,12 @@
 import React from "react";
-import { sixMonthsCeramicCoating } from "../../../utils/detailingPackages";
+import { ceramicCoating } from "../../../utils/detailingPackages";
 import Booking from "../../Booking";
 import Card from "../../Card";
 import Gallery from "../../Gallery";
 import GoogleReview from "../../ReviewsWidget";
 
 const CeramicCoating = () => {
-  const service = sixMonthsCeramicCoating;
+  const service = ceramicCoating;
 
   return (
     <div
@@ -55,7 +55,7 @@ const CeramicCoating = () => {
           </article>
         </section>
         <section>
-          <div className="text-xs md:text-base">
+          <div className="text-sm md:text-base">
             <h3 className="text-center mb-10">
               Common Myths About Ceramic Coatings
             </h3>

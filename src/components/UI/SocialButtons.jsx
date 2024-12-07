@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Facebook } from "../../assets/icons/facebook.svg";
 import { ReactComponent as Instagram } from "../../assets/icons/instagram.svg";
-import { ReactComponent as Tiktok } from "../../assets/icons/tik-tok.svg";
+import { ReactComponent as Google } from "../../assets/icons/google-black-icon.svg";
 import { ReactComponent as Youtube } from "../../assets/icons/youtube.svg";
 import {
   FACEBOOK_URL,
+  GOOGLE_BUSINESS_URL,
   INSTAGRAM_URL,
   TIKTOK_URL,
   YOUTUBE_URL,
@@ -19,6 +20,9 @@ const SocialButtons = () => {
       </Link>
       <Link to={INSTAGRAM_URL} target="_blank">
         <Instagram />
+      </Link>
+      <Link to={GOOGLE_BUSINESS_URL} target="_blank">
+        <Google />
       </Link>
       {/* <Link to={TIKTOK_URL} target="_blank">
         <Tiktok />

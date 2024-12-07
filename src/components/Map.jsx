@@ -17,7 +17,7 @@ const GoogleMap = () => {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="pr-0 md:pr-2">
           <h4 className="p-0 pb-1">Unparalleled Convenience</h4>
-          <p className="pb-5 pr-5 md:pr-2 text-xs md:text-base">
+          <p className="pb-5 pr-5 md:pr-2 text-sm md:text-base">
             Experience the ultimate in automotive care with our Mobile Car
             Detailing service. Life's demands can be overwhelming, but
             maintaining a spotless clean car doesn't have to be. Our Mobile

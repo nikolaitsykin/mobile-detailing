@@ -14,7 +14,7 @@ const DropdownList = ({ options, closeMenu, closeDropdown }) => {
     >
       <div className="float-start md:float-left overflow-hidden ">
         <button
-          className="text-xs md:text-base flex justify-center items-center  text-gray focus:text-white hover:text-white h-12 text-md fill-gray hover:fill-white"
+          className="text-sm md:text-base flex justify-center items-center  text-gray focus:text-white hover:text-white h-12 text-md fill-gray hover:fill-white"
           type="button"
         >
           {options[0].type}

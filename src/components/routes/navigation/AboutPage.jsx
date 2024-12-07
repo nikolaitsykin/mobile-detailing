@@ -21,13 +21,18 @@ const AboutPage = () => {
             without stepping out.
           </p>
           <h2 className=" p-5">Our Story</h2>
-          <p>
-            At {fullBusinessName}, we’re dedicated to making your car look its
-            best—from the comfort of your driveway. Our service combines
-            top-tier car care with convenience, bringing expertise and a
-            personal touch directly to you, so you can enjoy a spotless vehicle
-            without stepping out.
-          </p>
+          Hi! I'm Nik, the owner of {fullBusinessName}. What started as a
+          passion for taking care of my own car quickly grew into helping family
+          and friends. Now, I'm excited to share that same care and attention
+          with you. {businessName} was created with a simple goal: to make car
+          detailing easier for people with busy lives. Whether you’re juggling
+          family responsibilities, constantly on the move, or simply love
+          keeping your car in top shape, we understand how hard it can be to
+          find time for vehicle care. That’s why we offer mobile detailing
+          services that work around your schedule. As passionate car
+          enthusiasts, we’re here to help you maintain your car’s appearance,
+          whenever and wherever it’s most convenient for you. No matter who you
+          are or what you drive, we've got you covered.
           <h2 className=" p-5">What Drives Us</h2>
           <p>
             Our mission is to provide top-quality, eco-friendly detailing that

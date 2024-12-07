@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CALL_NUMBER } from "../utils/constants";
-import { businessName } from "../utils/data";
+import { fullBusinessName } from "../utils/data";
 import { whatToExpect } from "../utils/sustainability";
 import BookButtons from "./UI/BookButtons";
 
@@ -11,10 +11,10 @@ const Booking = () => {
       <h2 className="py-10">Book your appointment today</h2>
       <article className="pb-3">
         <p className="pb-1">
-          {businessName} has been proudly serving our community, offering the
-          convenience of mobile detailing right at your doorstep. We understand
-          that life gets busy, so we bring our eco-friendly, high-quality
-          services to you.{" "}
+          {fullBusinessName} has been proudly serving our community, offering
+          the convenience of mobile detailing right at your doorstep. We
+          understand that life gets busy, so we bring our eco-friendly,
+          high-quality services to you.{" "}
           <strong>
             Products we use are environmentally safe, based on advanced polymer
             technologies, without the use of aggressive chemicals and produced

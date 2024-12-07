@@ -1,6 +1,5 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
-import Button from "./UI/Button";
+import BookButtons from "./UI/BookButtons";
 import Menu from "./UI/Menu";
 
 const Card = ({
@@ -53,7 +52,7 @@ const Card = ({
               />
             )}
             {description && (
-              <div className="flex flex-col max-w-xl w-full px-4 pb-2 sm:pb-5 text-xs md:text-base whitespace-pre-wrap">
+              <div className="flex flex-col max-w-xl w-full px-4 pb-2 sm:pb-5sm md:text-base whitespace-pre-wrap">
                 <p>{description}</p>
               </div>
             )}
@@ -72,7 +71,7 @@ const Card = ({
                 {services.map((service, index) => (
                   <li
                     key={index}
-                    className="text-start text-xs md:text-base list-none p-[2px] whitespace-pre-wrap"
+                    className="text-start text-sm md:text-base list-none p-[2px] whitespace-pre-wrap"
                   >
                     {service}
                   </li>
@@ -88,9 +87,17 @@ const Card = ({
                 {exteriorServices.map((service, index) => (
                   <li
                     key={index}
-                    className="text-start text-xs md:text-base p-[2px] whitespace-pre-wrap list-disc ml-4"
+                    className="text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
                   >
-                    {service}
+                    {service.bold ? (
+                      <strong>
+                        {index + 1}. {service.text}
+                      </strong>
+                    ) : (
+                      <>
+                        {index + 1}. {service.text}
+                      </>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -113,43 +120,39 @@ const Card = ({
                 {interiorServices.map((service, index) => (
                   <li
                     key={index}
-                    className="text-start text-xs md:text-base p-[2px] whitespace-pre-wrap list-disc ml-4"
+                    className="text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
                   >
-                    {service}
+                    {service.bold ? (
+                      <strong>
+                        {index + 1}. {service.text}
+                      </strong>
+                    ) : (
+                      <>
+                        {index + 1}. {service.text}
+                      </>
+                    )}
                   </li>
                 ))}
               </ul>
             </div>
           )}
+
           {price && (
             <div className="flex justify-center items-end w-full">
               <h4 className="p-5"> {price}</h4>
             </div>
           )}
+
           {singleService && (
-            <div className="text-center sm:text-start text-xs md:text-base mt-2 p-4">
+            <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4">
               {service.title !== "Ceramic Coating"
                 ? "*Pricing for this service is based on vehicles in average condition. Additional services may be required. Examples include pet hair/sand, staining, excessive messes, etc."
                 : ""}
             </div>
           )}
+          <BookButtons color={"secondary"} />
         </div>
       </div>
-      {button && (
-        <div className=" mt-4 flex justify-center items-end w-[100%] px-4">
-          <HashLink
-            smooth
-            className="w-full max-w-xl flex justify-center items-center"
-            preventScrollReset={false}
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: "auto", block: "end" })
-            }
-            to={`${link}`}
-          >
-            <Button children={button} color={"secondary"} />
-          </HashLink>
-        </div>
-      )}
     </div>
   );
 };

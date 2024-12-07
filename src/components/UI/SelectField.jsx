@@ -4,7 +4,10 @@ const SelectField = (props) => {
 
   return (
     <div className="w-full py-1">
-      <label className="flex flex-col text-md font-medium" htmlFor={name}>
+      <label
+        className="flex flex-col font-medium text-sm md:text-base"
+        htmlFor={name}
+      >
         {label}
       </label>
       <select
@@ -13,14 +16,22 @@ const SelectField = (props) => {
         value={value}
         onChange={handleChange}
         name={name}
-        className="w-full text-dark-gray bg-light-gray my-1 p-2 text-sm "
+        className="w-full text-dark-gray bg-light-gray my-1 p-2 text-sm md:text-base"
       >
-        <option key="blankKey" hidden value className="text-sm p-1">
+        <option
+          key="blankKey"
+          hidden
+          value
+          className="text-sm md:text-base p-1"
+        >
           {defaultOption}
         </option>
-
         {options.map((option, index) => (
-          <option key={index} value={option} className="text-sm p-1">
+          <option
+            key={index}
+            value={option}
+            className="text-sm md:text-base p-1 ml-10"
+          >
             {option}
           </option>
         ))}

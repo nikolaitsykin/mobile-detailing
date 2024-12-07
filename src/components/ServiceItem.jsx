@@ -50,7 +50,7 @@ const ServiceItem = ({
           )}
           {type && <h6 className="max-w-xl text-center pb-3">{type}</h6>}
           {description && (
-            <div className="flex flex-col max-w-lg w-full px-2 pb-2 text-xs md:text-base whitespace-pre-wrap">
+            <div className="flex flex-col max-w-lg w-full px-2 pb-2 text-sm md:text-base whitespace-pre-wrap">
               <p className="">{description}</p>
             </div>
           )}

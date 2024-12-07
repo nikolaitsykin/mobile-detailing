@@ -1,18 +1,21 @@
 import React from "react";
 
-const Checkbox = ({ checkHandler }) => {
+const Checkbox = (props) => {
+  const { label, name, value, required, checkHandler } = props;
+
   return (
     <div className="w-full py-1 flex items-start">
       <input
         type="checkbox"
-        id="checkbox"
+        required={required}
+        id={name}
+        value={value}
+        name={name}
         onChange={checkHandler}
-        className=" text-dark-gray bg-light-gray my-1 mx-2 text-sm "
+        className=" text-dark-gray bg-light-gray my-1 mx-2 text-sm md:text-base"
       />
-      <label className="" htmlFor={"checkbox"}>
-        I understand that the detailing service requires access to power and
-        water, and I guarantee that both will be provided and accessible at the
-        time of service
+      <label className="text-sm md:text-base" htmlFor={"checkbox"}>
+        {label}
       </label>
     </div>
   );

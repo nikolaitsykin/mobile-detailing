@@ -11,7 +11,7 @@ export const GOOGLE_MAPS_URL =
 
 export const GOOGLE_REVIEWS_URL = "https://g.page/r/CakD_RcyWdf5EBM/review";
 export const GOOGLE_BUSINESS_URL =
-  "https://www.google.com/maps/place/Spotless+Auto+Detailing+%26+Ceramic+Coating/@35.723543,-78.8839443,17z/data=!4m8!3m7!1s0x2e3895aef2810335:0xf9d7593217fd03a9!8m2!3d35.723543!4d-78.8839443!9m1!1b1!16s%2Fg%2F11wh63g393?hl=en&entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D";
+  "https://www.google.com/maps/place/Spotless+Detailing:+Mobile+Auto+Detailing+%26+Ceramic+Coating/@35.723543,-78.8839443,17z/data=!4m16!1m9!3m8!1s0x2e3895aef2810335:0xf9d7593217fd03a9!2sSpotless+Detailing:+Mobile+Auto+Detailing+%26+Ceramic+Coating!8m2!3d35.723543!4d-78.8839443!9m1!1b1!16s%2Fg%2F11wh63g393!3m5!1s0x2e3895aef2810335:0xf9d7593217fd03a9!8m2!3d35.723543!4d-78.8839443!16s%2Fg%2F11wh63g393?hl=en&entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D";
 
 export const CONTACT_PATH = "/contact";
 export const FAQS_PATH = "/faqs";

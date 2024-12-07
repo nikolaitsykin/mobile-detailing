@@ -21,11 +21,11 @@ export const addons = [
     price: "Starts at $50",
   },
   {
-    title: "Ceramic Coating (6 Months)",
+    title: "Ceramic Coating",
     type: "Exterior Service",
     description:
-      "Provides a durable, high-gloss layer of protection for your vehicle's exterior, lasting up to 6 months. This advanced coating shields against dirt, UV rays, and contaminants, keeping your paintwork looking glossy and new while making future cleanings a breeze.",
-    price: "Starts at $60",
+      "Provides a durable, high-gloss layer of protection for your vehicle's exterior, lasting up to 18 months. This advanced coating shields against dirt, UV rays, and contaminants, keeping your paintwork looking glossy and new while making future cleanings a breeze.",
+    price: "Starts at $70",
   },
   {
     title: "Seats/Carpet Shampoo",

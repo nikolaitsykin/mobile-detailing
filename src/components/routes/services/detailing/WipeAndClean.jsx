@@ -46,8 +46,8 @@ const WipeAndClean = () => {
           </article>
         </section>
         <section>
-          <div className="text-xs md:text-base">
-            <p>
+        <div className="text-sm md:text-base">
+        <p>
               Rejuvinate your car's interior with our Wipe & Clean Interior
               Detailing Service! Our skilled technicians use premium
               eco-friendly products, and proven techniques to clean every inch,

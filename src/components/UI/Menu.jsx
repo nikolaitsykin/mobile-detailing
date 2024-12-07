@@ -8,6 +8,7 @@ const Menu = ({ service, singleService }) => {
 
   return (
     <div className="w-full m-auto">
+      <h4 className="mb-1 text-center">Simple Pricing</h4>
       <Tabs
         selectedIndex={tabIndex}
         onSelect={(index) => setTabIndex(index)}
@@ -20,7 +21,7 @@ const Menu = ({ service, singleService }) => {
             carsSizes.map((car) => (
               <Tab
                 key={car.title}
-                className="cursor-pointer m-0.5 px-1 outline-none basis-1/3 flex items-center justify-center border border-gray"
+                className="cursor-pointer m-0.5 px-1 font-poppins outline-none basis-1/3 flex items-center justify-center border border-gray"
               >
                 <h5 className="h-12 flex justify-center items-center ">
                   {car.title}
@@ -33,7 +34,7 @@ const Menu = ({ service, singleService }) => {
             <TabPanel key={car.title}>
               {service && (
                 <div className="w-full m-auto">
-                  <p className="pt-2 text-xs md:text-base whitespace-pre-wrap h-full px-1">
+                  <p className="pt-2 text-sm md:text-base whitespace-pre-wrap h-full px-1">
                     {service.carsSize[tabIndex]}
                   </p>
                   {singleService ? (
@@ -46,7 +47,7 @@ const Menu = ({ service, singleService }) => {
                       Starts at {service.price[tabIndex]}
                     </h4>
                   )}
-                  <div className="text-center sm:text-start text-xs md:text-base px-4 mb-4 h-12">
+                  <div className="text-center sm:text-start text-sm md:text-base px-4 mb-4 h-12">
                     Estimated duration: {service.duration[tabIndex]} depending
                     on vehicle size and condition.
                   </div>

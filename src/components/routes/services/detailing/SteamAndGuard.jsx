@@ -45,7 +45,7 @@ const SteamAndGuard = () => {
           </article>
         </section>
         <section>
-          <div className="text-xs md:text-base">
+          <div className="text-sm md:text-base">
             <p>
               Rejuvinate your car's interior with our Steam & Guard Interior
               Detailing Service! Our skilled technicians use premium

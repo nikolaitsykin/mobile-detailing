@@ -7,7 +7,7 @@ import {
   fullDetailingService,
   interiorDetailingService,
   shineAndShield,
-  sixMonthsCeramicCoating,
+  ceramicCoating,
   steamAndGuard,
   washAndWax,
   wipeAndClean,
@@ -36,14 +36,14 @@ import {
 export const exteriorServices = [
   washAndWax,
   shineAndShield,
-  sixMonthsCeramicCoating,
+  ceramicCoating,
 ];
 export const interiorServices = [wipeAndClean, steamAndGuard];
 
 export const fullDetailingServices = [baseDetail, completeDetail, deepClean];
 
 export const popularDetailingServices = [
-  sixMonthsCeramicCoating,
+  ceramicCoating,
   deepClean,
   washAndWax,
   wipeAndClean,

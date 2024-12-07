@@ -44,7 +44,7 @@ const DeepCleaning = () => {
           </article>
         </section>
         <section>
-          <div className="text-xs md:text-base">
+          <div className="text-sm md:text-base">
             <p>
               Tired of scratches and swirls on your car, even after all those $5
               car washes? Those drive-thru machines can actually harm your paint

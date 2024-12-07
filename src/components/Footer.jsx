@@ -13,7 +13,7 @@ import SocialButtons from "./UI/SocialButtons";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-black min-h-52 pt-10 text-gray text-xxs sm:text-xs md:text-base">
+    <footer className="relative bg-black min-h-52 pt-10 text-gray text-xxs sm:text-sm md:text-base">
       <section className="flex justify-evenly flex-col md:flex-row ">
         <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3">
           <div className="min-w-48 md:pr-5 items-start">
@@ -25,7 +25,7 @@ const Footer = () => {
                 alt="Spotless Logo"
               />
             </div>
-            <p className="pt-3 text-xs md:text-base">
+            <p className="pt-3 text-sm md:text-base">
               We specialize in mobile detailing and ceramic coating, — bringing
               high-quality care directly to you. We serve Raleigh and
               surrounding areas.
@@ -42,7 +42,7 @@ const Footer = () => {
                 {footerLinks.map((link, index) => (
                   <li
                     key={link}
-                    className="text-gray hover:text-white py-[2px] text-xs md:text-base"
+                    className="text-gray hover:text-white py-[2px] text-sm md:text-base"
                   >
                     <NavLink to={`/${footerLinksActual[index]}`}>
                       {link}
@@ -61,7 +61,7 @@ const Footer = () => {
                 {locations.map((location, index) => (
                   <li
                     key={location}
-                    className="text-gray hover:text-white py-[2px] text-xs md:text-base"
+                    className="text-gray hover:text-white py-[2px] text-sm md:text-base"
                   >
                     <NavLink to={`/${locationLinks[index]}`}>
                       {location}
@@ -76,13 +76,13 @@ const Footer = () => {
               <h5 className="text-white font-poppins md:mb-3 font-medium text-sm md:text-base">
                 Address
               </h5>
-              <span className="text-xs md:text-base">{businessAddress}</span>
+              <span className="text-sm md:text-base">{businessAddress}</span>
             </div>
             <div className="pt-2 md:pt-3 ">
               <h5 className="text-white font-poppins md:mb-3 font-medium text-sm md:text-base">
                 Open Hours
               </h5>
-              <span className="flex flex-col text-xs md:text-base">
+              <span className="flex flex-cols text-sm md:text-base">
                 {businessHours.map((hour) => (
                   <p key={hour} className="pr-2">
                     {hour}
@@ -99,7 +99,7 @@ const Footer = () => {
             <SocialButtons />
           </div>
           <div className="basis-1/2 xs:basis-auto">
-            <p className="text-gray text-xs md:text-base">
+            <p className="text-gray text-sm md:text-base">
               &copy; 2024 {fullBusinessName}. All rights reserved.
             </p>
           </div>
