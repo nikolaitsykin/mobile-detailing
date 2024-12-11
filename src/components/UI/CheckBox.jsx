@@ -14,7 +14,7 @@ const Checkbox = (props) => {
         onChange={checkHandler}
         className=" text-dark-gray bg-light-gray my-1 mx-2 text-sm md:text-base"
       />
-      <label className="text-sm md:text-base" htmlFor={"checkbox"}>
+      <label className="text-sm md:text-base" htmlFor={name}>
         {label}
       </label>
     </div>

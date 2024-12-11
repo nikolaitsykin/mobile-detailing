@@ -36,6 +36,7 @@ export const MOBILE_EXTERIOR_DETAILING_BOOKING_PATH =
 export const MOBILE_FULL_DETAILING_PATH = "/mobile-full-detailing";
 export const MOBILE_FULL_DETAILING_BOOKING_PATH =
   "/mobile-full-detailing#booking";
+export const THANK_YOU_PATH = "/thank-you";
 
 export const BASE_WASH_PATH = "/base-wash";
 export const WASH_AND_WAX_PATH = "/wash-and-wax";

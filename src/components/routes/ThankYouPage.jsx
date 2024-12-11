@@ -1,0 +1,51 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { CALL_NUMBER, FAQS_PATH, SERVICES_PATH } from "../../utils/constants";
+
+const ThankYouPage = () => {
+  return (
+    <div
+      id="thank-you"
+      className="h-screen z-20 bg-white font-poppins w-full mx-auto"
+    >
+      <div className="w-full bg-black h-[250px] flex justify-center items-center mx-auto text-white">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+          Thank You!{" "}
+        </h1>
+      </div>
+      <div className="mx-auto">
+        <section className="my-32">
+          <h3 className="text-center my-5">
+            Thank you for submitting your quote request!
+          </h3>
+          <p className="text-center my-5">
+            Our team will review your details and get back to you shortly with a
+            personalized estimate. In the meantime, feel free to explore our{" "}
+            <Link
+              to={SERVICES_PATH}
+              className="text-blue underline font-semibold"
+            >
+              services
+            </Link>{" "}
+            or visit our{" "}
+            <Link to={FAQS_PATH} className="text-blue underline font-semibold">
+              FAQ
+            </Link>{" "}
+            page for more information.
+          </p>
+          <p className="text-center my-5">
+            If you have any questions, please don't hesitate to call us at{" "}
+            <Link
+              to={CALL_NUMBER}
+              className="text-blue underline font-semibold"
+            >
+              (919) 906-0099.
+            </Link>
+          </p>
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default ThankYouPage;

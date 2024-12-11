@@ -1,5 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { THANK_YOU_PATH } from "../utils/constants";
 import Button from "./UI/Button";
 import Checkbox from "./UI/Checkbox";
 import InputField from "./UI/InputField";
@@ -7,8 +9,8 @@ import SelectField from "./UI/SelectField";
 import TextareaField from "./UI/TextareaField";
 
 const ContactForm = () => {
+  const navigate = useNavigate();
   const [isChecked, setIsChecked] = useState(false);
-  console.log(isChecked);
   const [values, setValues] = useState({
     fullName: "",
     vehicle: "",
@@ -123,7 +125,8 @@ const ContactForm = () => {
       setErrorMessage("");
       setTimeout(() => {
         setStatus("");
-      }, 3000);
+        navigate(THANK_YOU_PATH);
+      }, 1500);
     }
   }, [status]);
 

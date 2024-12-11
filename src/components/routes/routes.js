@@ -2,18 +2,23 @@ import * as React from "react";
 import {
   ABOUT_PATH,
   BASE_DETAILING_PATH,
-  BOOKING_PAGE_PATH, CERAMIC_COATING_PATH,
+  BOOKING_PAGE_PATH,
+  CERAMIC_COATING_PATH,
   COMPLETE_DETAILING_PATH,
   CONTACT_PATH,
   DEEP_CLEANING_PATH,
   FAQS_PATH,
-  GALLERY_PATH, HOME_PATH, MOBILE_EXTERIOR_DETAILING_PATH,
+  GALLERY_PATH,
+  HOME_PATH,
+  MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
-  MOBILE_INTERIOR_DETAILING_PATH, SERVICES_PATH,
+  MOBILE_INTERIOR_DETAILING_PATH,
+  SERVICES_PATH,
   SHINE_AND_SHIELD_PATH,
   STEAM_AND_GUARD_PATH,
+  THANK_YOU_PATH,
   WASH_AND_WAX_PATH,
-  WIPE_AND_CLEAN_PATH
+  WIPE_AND_CLEAN_PATH,
 } from "../../utils/constants";
 import App from "../App";
 import ErrorPage from "../error-page";
@@ -35,6 +40,7 @@ import WipeAndClean from "./services/detailing/WipeAndClean";
 import MobileExteriorDetailing from "./services/MobileExteriorDetailing";
 import MobileFullDetailing from "./services/MobileFullDetailing";
 import MobileInteriorDetailing from "./services/MobileInteriorDetailing";
+import ThankYouPage from "./ThankYouPage";
 
 export const routes = [
   {
@@ -62,11 +68,6 @@ export const routes = [
         name: "Mobile Interior Detailing",
         element: <MobileExteriorDetailing />,
       },
-      // {
-      //   path: BASE_WASH_PATH,
-      //   name: "Base Wash",
-      //   element: <BaseWash />,
-      // },
       {
         path: WASH_AND_WAX_PATH,
         name: "Wash and Wax",
@@ -77,11 +78,6 @@ export const routes = [
         name: "Shine and Shield",
         element: <ShineAndShield />,
       },
-      // {
-      //   path: BASE_CLEAN_PATH,
-      //   name: "Base Clean",
-      //   element: <BaseClean />,
-      // },
       {
         path: WIPE_AND_CLEAN_PATH,
         name: "Wipe and Clean",
@@ -141,6 +137,11 @@ export const routes = [
         path: GALLERY_PATH,
         name: "Gallery",
         element: <Gallery />,
+      },
+      {
+        path: THANK_YOU_PATH,
+        name: "Thank You",
+        element: <ThankYouPage />,
       },
       {
         path: "*",
