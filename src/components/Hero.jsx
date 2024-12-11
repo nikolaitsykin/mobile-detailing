@@ -1,11 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { BOOKING_PAGE_PATH, CALL_NUMBER } from "../utils/constants";
 import Gallery from "./Gallery";
 import GoogleMap from "./Map";
 import GoogleReview from "./ReviewsWidget";
 import Services from "./Services";
-import Button from "./UI/Button";
+import BookButtons from "./UI/BookButtons";
 
 const Hero = ({ city }) => {
   return (
@@ -30,20 +28,7 @@ const Hero = ({ city }) => {
             Surrounding Areas.
           </p>
           <div className="flex flex-row justify-center items-center w-full min-w-48 gap-1">
-            <Link to={BOOKING_PAGE_PATH}>
-              <Button
-                children={"BOOK NOW"}
-                color={"primary"}
-                border={"border"}
-              />
-            </Link>
-            <a href={CALL_NUMBER}>
-              <Button
-                children={"CALL NOW"}
-                color={"primary"}
-                border={"border"}
-              />
-            </a>
+            <BookButtons color={"primary"} border={"border"} />
           </div>
         </div>
       </div>

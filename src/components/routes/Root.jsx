@@ -18,7 +18,7 @@ const Root = () => {
   useEffect(() => {
     document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating`;
     setCanonical(location.pathname);
-  }, [currentCity]);
+  }, [currentCity, location.pathname]);
 
   return (
     <main className="w-full bg-white">
