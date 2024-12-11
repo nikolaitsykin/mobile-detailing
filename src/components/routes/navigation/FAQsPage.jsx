@@ -3,14 +3,18 @@ import { Link } from "react-router-dom";
 import {
   BOOKING_URL,
   CALL_NUMBER,
-  CONTACT_PATH
+  CONTACT_PATH,
+  FAQS_PATH,
 } from "../../../utils/constants";
 import { autoDetailingQuestions, generalQuestions } from "../../../utils/faq";
+import { setCanonical } from "../../../utils/helpers";
 import Banner from "../../Banner";
 import FaqItem from "../../FaqItem";
 import BookButtons from "../../UI/BookButtons";
 
 const FAQs = () => {
+  setCanonical(FAQS_PATH);
+
   return (
     <div id="faqs" className="w-full z-20 bg-white font-poppins">
       <Banner

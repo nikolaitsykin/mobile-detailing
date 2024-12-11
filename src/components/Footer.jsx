@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 import {
   businessAddress,
   businessHours,
-  footerLinks,
-  footerLinksActual,
+  servicesLinks,
+  servicesLinksActual,
   fullBusinessName,
   locationLinks,
   locations,
 } from "../utils/data";
 import SocialButtons from "./UI/SocialButtons";
+import logo from "../assets/images/spotless_Logo_small.png";
 
 const Footer = () => {
   return (
@@ -17,11 +18,11 @@ const Footer = () => {
       <section className="flex justify-evenly flex-col md:flex-row ">
         <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3">
           <div className="min-w-48 md:pr-5 items-start">
-            <div>
+            <div className=" w-20 lg:w-32">
               <img
                 loading="lazy"
-                className="h-12 object-contain"
-                src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/spotless_logo_300.avif"
+                className="h-full w-full object-contain"
+                src={logo}
                 alt="Spotless Logo"
               />
             </div>
@@ -38,13 +39,13 @@ const Footer = () => {
               <h5 className="text-white font-poppins md:mb-3 font-medium text-sm md:text-base">
                 Links
               </h5>
-              <ul className="">
-                {footerLinks.map((link, index) => (
+              <ul>
+                {servicesLinks.map((link, index) => (
                   <li
                     key={link}
                     className="text-gray hover:text-white py-[2px] text-sm md:text-base"
                   >
-                    <NavLink to={`/${footerLinksActual[index]}`}>
+                    <NavLink to={`/${servicesLinksActual[index]}`}>
                       {link}
                     </NavLink>
                   </li>
@@ -53,11 +54,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="basis-1/3 pr-4 ">
-            <div className="">
+            <div>
               <h5 className="text-white font-poppins md:mb-3 font-medium text-sm md:text-base">
                 Locations
               </h5>
-              <ul className="">
+              <ul>
                 {locations.map((location, index) => (
                   <li
                     key={location}

@@ -23,11 +23,11 @@ const Hero = ({ city }) => {
             Top-Tier Service in {city ? city : "Raleigh"}, NC
           </h2>
           <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Spotless Detailing
+            Spotless Auto Detailing
           </h1>
           <p className="text-center mb-2 sm:mb-5 text-sm md:text-lg mt-2 sm:mt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Premier Mobile Auto Detailing & Ceramic Coating serving{" "}
-            {city ? city : "Triangle"} & Surrounding Areas.
+            Premier Mobile Auto Detailing & Ceramic Coating serving Triangle &
+            Surrounding Areas.
           </p>
           <div className="flex flex-row justify-center items-center w-full min-w-48 gap-1">
             <Link to={BOOKING_PAGE_PATH}>

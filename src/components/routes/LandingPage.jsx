@@ -1,15 +1,14 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { ceramicCoating } from "../../../utils/detailingPackages";
-import { setCanonical } from "../../../utils/helpers";
 import Booking from "../../Booking";
 import Card from "../../Card";
 import Gallery from "../../Gallery";
 import GoogleReview from "../../ReviewsWidget";
 
-const CeramicCoating = () => {
+const LandingPage = () => {
+  const location = useLocation();
   const service = ceramicCoating;
-  setCanonical(service.link);
-
 
   return (
     <div
@@ -94,4 +93,4 @@ const CeramicCoating = () => {
   );
 };
 
-export default CeramicCoating;
+export default LandingPage;

@@ -1,5 +1,6 @@
 import React from "react";
 import { deepClean } from "../../../../utils/detailingPackages";
+import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -8,6 +9,8 @@ import GoogleReview from "../../../ReviewsWidget";
 
 const DeepCleaning = () => {
   const service = deepClean;
+  setCanonical(service.link);
+
 
   return (
     <div

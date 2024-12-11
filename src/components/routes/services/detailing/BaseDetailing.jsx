@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { COMPLETE_DETAILING_PATH } from "../../../../utils/constants";
 import { baseDetail } from "../../../../utils/detailingPackages";
+import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -10,6 +11,7 @@ import GoogleReview from "../../../ReviewsWidget";
 
 const BaseDetailing = () => {
   const service = baseDetail;
+  setCanonical(service.link);
 
   return (
     <div

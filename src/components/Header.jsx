@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useScrollDirection from "../hooks/useScrollDirection";
-
+import logo from "../assets/images/spotless_Logo_small.png";
 import { HOME_PATH } from "../utils/constants";
 import Navbar from "./UI/Navbar";
 
@@ -21,7 +21,7 @@ const Header = () => {
               <img
                 loading="lazy"
                 className="h-full w-full object-contain"
-                src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/spotless_logo_300.avif"
+                src={logo}
                 alt="Spotless Logo"
               />
             </div>

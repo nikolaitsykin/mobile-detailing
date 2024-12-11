@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { STEAM_AND_GUARD_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { wipeAndClean } from "../../../../utils/detailingPackages";
+import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -11,6 +12,7 @@ import GoogleReview from "../../../ReviewsWidget";
 
 const WipeAndClean = () => {
   const service = wipeAndClean;
+  setCanonical(service.link);
 
   return (
     <div
@@ -46,8 +48,8 @@ const WipeAndClean = () => {
           </article>
         </section>
         <section>
-        <div className="text-sm md:text-base">
-        <p>
+          <div className="text-sm md:text-base">
+            <p>
               Rejuvinate your car's interior with our Wipe & Clean Interior
               Detailing Service! Our skilled technicians use premium
               eco-friendly products, and proven techniques to clean every inch,

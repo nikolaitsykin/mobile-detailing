@@ -1,12 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { MOBILE_FULL_DETAILING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { fullDetailingServices } from "../../../utils/detailingPackages";
+import { setCanonical } from "../../../utils/helpers";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
 import Card from "../../Card";
 
-const AutoDetailing = () => {
+const MobileFullDetailing = () => {
+  setCanonical(MOBILE_FULL_DETAILING_PATH);
+
   return (
     <div id="full-detailing" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black">
@@ -100,4 +104,4 @@ const AutoDetailing = () => {
   );
 };
 
-export default AutoDetailing;
+export default MobileFullDetailing;

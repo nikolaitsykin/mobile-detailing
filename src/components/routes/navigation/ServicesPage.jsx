@@ -1,10 +1,14 @@
 import React from "react";
+import { SERVICES_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
+import { setCanonical } from "../../../utils/helpers";
 import { sustainability } from "../../../utils/sustainability";
 import Banner from "../../Banner";
 import Services from "../../Services";
 
 const ServicesPage = () => {
+  setCanonical(SERVICES_PATH);
+
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
       <Banner
@@ -34,10 +38,10 @@ const ServicesPage = () => {
           </h3>
           <p className="pb-10">
             From interior cleaning to exterior shine and ceramic coating,
-            {fullBusinessName} offers a full range of mobile services
-            tailored to your car's needs. Our detailing packages are designed to
-            protect, enhance, and restore your vehicle, giving it a pristine
-            look and feel.
+            {fullBusinessName} offers a full range of mobile services tailored
+            to your car's needs. Our detailing packages are designed to protect,
+            enhance, and restore your vehicle, giving it a pristine look and
+            feel.
           </p>
           <div className="">
             <Services />

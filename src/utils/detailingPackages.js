@@ -108,7 +108,6 @@ export const ceramicCoating = {
     { text: "Tires Cleaned & Shine Applied" },
     { text: "Clay Bar Decontamination", bold: true },
     { text: "Chemical Bug & Target Removal", bold: true },
-    { text: "Black Textured Plastics Dressed", bold: true },
     { text: "18 months Ceramic Coating Applied", bold: true },
   ],
   price: ["$225", "$250", "$275"],
@@ -117,7 +116,7 @@ export const ceramicCoating = {
   shortDescription:
     "Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Shine & Shield service, and 18 months ceramic coating application for long-lasting protection. \nFrom $225. Up to 4 hours.",
   description:
-    "To prepate for a ceramic coating we begin with a full hand wash and dry, followed tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to six months or more, ensuring long-lasting defense against various contaminants.",
+    "To prepate for a ceramic coating we begin with a full hand wash and dry, followed tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to eighteen months or more, ensuring long-lasting defense against various contaminants.",
   duration: ["3 hours", "3 hours 30 mins", "4 hours"],
   background: " ",
   bestValue: "Most Popular",

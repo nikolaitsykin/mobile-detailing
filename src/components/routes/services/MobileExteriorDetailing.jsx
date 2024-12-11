@@ -1,12 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { MOBILE_EXTERIOR_DETAILING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { exteriorDetailingServices } from "../../../utils/detailingPackages";
+import { setCanonical } from "../../../utils/helpers";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
 import Card from "../../Card";
 
-const AutoDetailing = () => {
+const MobileExteriorDetailing = () => {
+  setCanonical(MOBILE_EXTERIOR_DETAILING_PATH);
+
   return (
     <div id="exterior-detailing" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black">
@@ -96,4 +100,4 @@ const AutoDetailing = () => {
   );
 };
 
-export default AutoDetailing;
+export default MobileExteriorDetailing;

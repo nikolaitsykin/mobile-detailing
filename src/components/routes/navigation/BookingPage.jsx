@@ -1,8 +1,12 @@
 import React from "react";
+import { BOOKING_PAGE_PATH } from "../../../utils/constants";
+import { setCanonical } from "../../../utils/helpers";
 import Banner from "../../Banner";
 import Booking from "../../Booking";
 
 const BookingPage = () => {
+  setCanonical(BOOKING_PAGE_PATH);
+
   return (
     <div id="booking" className="w-full z-20 bg-white font-poppins">
       <Banner

@@ -1,14 +1,15 @@
 import React from "react";
+import { GALLERY_PATH } from "../../../utils/constants";
+import { setCanonical } from "../../../utils/helpers";
 
 const Gallery = () => {
+  setCanonical(GALLERY_PATH);
 
   return (
     <div id="gallery" className="bg-white py-8">
       <section className="w-[80%] mx-auto">
         <h1 className="text-3xl text-center text-black my-3">Gallery</h1>
-        <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black">
-          
-        </article>
+        <article className="text-sm md:text-base tracking-wide leading-6 text-start text-black"></article>
       </section>
     </div>
   );

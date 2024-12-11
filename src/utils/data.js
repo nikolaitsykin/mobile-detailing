@@ -2,6 +2,15 @@ export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
 export const secondaryStyle =
   "text-black bg-gray hover:bg-dark-gray hover:text-white border-gray hover:border-white";
 
+export const localAreas = [
+  "apex",
+  "cary",
+  "garner",
+  "holly springs",
+  "knightdale",
+  "morrisville",
+];
+
 export const locations = [
   "Apex",
   "Cary",
@@ -97,14 +106,12 @@ export const reviews = [
   {
     name: "Murali T.",
     rating: 5,
-    review:
-      "Great Service.....!!!",
+    review: "Great Service.....!!!",
   },
   {
     name: "Natalia C.",
     rating: 5,
-    review:
-      "Nik and his crew are great! I highly recommend their services!!",
+    review: "Nik and his crew are great! I highly recommend their services!!",
   },
 ];
 
