@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as MessageSms } from "../../assets/icons/message-sms.svg";
 import { ReactComponent as PhoneCall } from "../../assets/icons/phone-call.svg";
 import {
   BOOKING_PAGE_PATH,
   CALL_NUMBER,
-  TEXT_NUMBER,
+  TEXT_NUMBER
 } from "../../utils/constants";
 import Button from "./Button";
 
@@ -27,7 +27,7 @@ const ConntactsButtons = () => {
         </a>
       </div>
       <div className="xs:flex items-center h-12 hidden">
-        <Link to={BOOKING_PAGE_PATH}>
+        <Link to={BOOKING_PAGE_PATH} target={"_blank"}>
           <Button
             children={"BOOK NOW"}
             color={"primary"}

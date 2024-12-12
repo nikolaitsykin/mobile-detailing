@@ -23,14 +23,18 @@ const Booking = () => {
           If you're looking for availability, check out our appointment options.
           And if you don't see your preferred day or time, give us a call –
           we’ll do our best to accommodate you.{" "}
-          <Link className="underline text-blue" to="/services">
+          <Link
+            target={"_blank"}
+            className="underline text-blue"
+            to="/services"
+          >
             Browse our services.
           </Link>
         </p>
       </article>
       <BookButtons color={"secondary"} />
       <article className="py-3">
-        <h3 className="text-center p-3">What to Expect</h3>
+        <h2 className="text-center p-3 py-10">What to Expect</h2>
         <ul>
           <li>
             ✔ Book your appointment online by clicking the "Book Online" button

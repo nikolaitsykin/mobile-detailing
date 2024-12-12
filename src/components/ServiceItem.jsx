@@ -58,6 +58,7 @@ const ServiceItem = ({
       </div>
       <div className="flex flex-col justify-center items-center w-[100%] mt-3">
         <Link
+          target={"_blank"}
           className="w-full flex justify-center items-center max-w-lg px-2 py-0.5"
           preventScrollReset={false}
           to={`${link}`}
@@ -65,6 +66,7 @@ const ServiceItem = ({
           <Button children={"Explore"} color={"tertiary"} width={"w-full"} />
         </Link>
         <Link
+          target={"_blank"}
           className="w-full flex justify-center items-center max-w-lg px-2 py-0.5"
           preventScrollReset={false}
           to={BOOKING_PAGE_PATH}

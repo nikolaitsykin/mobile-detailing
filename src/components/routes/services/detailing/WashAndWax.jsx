@@ -6,6 +6,7 @@ import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
@@ -25,7 +26,7 @@ const WashAndWax = () => {
       </div>
       <div className="mx-auto">
         <section className="mt-12">
-          <article className=" text-start text-black">
+          <di className=" text-start text-black">
             <h3 className="text-center mb-10">
               Restore your car’s beauty with our professional exterior detailing
               services.
@@ -44,7 +45,7 @@ const WashAndWax = () => {
               link={service.link}
               bestValue={service.bestValue}
             />
-          </article>
+          </di>
         </section>
         <section>
           <div className="text-sm md:text-base">
@@ -68,6 +69,7 @@ const WashAndWax = () => {
               If you’re ready to take your car’s shine to the next level, try
               our{" "}
               <Link
+                target={"_blank"}
                 className="underline text-blue font-semibold"
                 to={SHINE_AND_SHIELD_PATH}
               >
@@ -80,6 +82,9 @@ const WashAndWax = () => {
             </p>
           </div>
         </section>
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <ContactForm />
+        </div>
         <div className=" w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>

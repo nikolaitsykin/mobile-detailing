@@ -22,13 +22,18 @@ const ThankYouPage = () => {
             Our team will review your details and get back to you shortly with a
             personalized estimate. In the meantime, feel free to explore our{" "}
             <Link
+              target={"_blank"}
               to={SERVICES_PATH}
               className="text-blue underline font-semibold"
             >
               services
             </Link>{" "}
             or visit our{" "}
-            <Link to={FAQS_PATH} className="text-blue underline font-semibold">
+            <Link
+              target={"_blank"}
+              to={FAQS_PATH}
+              className="text-blue underline font-semibold"
+            >
               FAQ
             </Link>{" "}
             page for more information.
@@ -36,6 +41,7 @@ const ThankYouPage = () => {
           <p className="text-center my-5">
             If you have any questions, please don't hesitate to call us at{" "}
             <Link
+              target={"_blank"}
               to={CALL_NUMBER}
               className="text-blue underline font-semibold"
             >

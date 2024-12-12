@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  DEEP_CLEANING_PATH
-} from "../../../../utils/constants";
+import { DEEP_CLEANING_PATH } from "../../../../utils/constants";
 import { shineAndShield } from "../../../../utils/detailingPackages";
 import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
@@ -49,8 +48,8 @@ const ShineAndShield = () => {
           </article>
         </section>
         <section>
-        <div className="text-sm md:text-base">
-        <p>
+          <div className="text-sm md:text-base">
+            <p>
               Tired of scratches and swirls on your car, even after all those $5
               car washes? Those drive-thru machines can actually harm your paint
               instead of helping it. Our exterior car wash is a better choice,
@@ -70,6 +69,7 @@ const ShineAndShield = () => {
               If you’re ready to take your car’s shine to the next level, try
               our{" "}
               <Link
+                target={"_blank"}
                 className="underline text-blue font-semibold"
                 to={DEEP_CLEANING_PATH}
               >
@@ -82,6 +82,9 @@ const ShineAndShield = () => {
             </p>
           </div>
         </section>
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <ContactForm />
+        </div>
         <div className=" w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>

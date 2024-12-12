@@ -7,6 +7,7 @@ import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
@@ -26,7 +27,7 @@ const WipeAndClean = () => {
       </div>
       <div className="mx-auto">
         <section className="mt-12">
-          <article className=" text-start text-black">
+          <div className="text-start text-black mt-12 w-[90%] md:w-[80%] mx-auto">
             <h3 className="text-center mb-10">
               Restore your car’s beauty with our professional interior detailing
               services.
@@ -45,9 +46,7 @@ const WipeAndClean = () => {
               link={service.link}
               bestValue={service.bestValue}
             />
-          </article>
-        </section>
-        <section>
+          </div>
           <div className="text-sm md:text-base">
             <p>
               Rejuvinate your car's interior with our Wipe & Clean Interior
@@ -67,6 +66,7 @@ const WipeAndClean = () => {
               extra mess, and want to keep your car looking its best, consider
               our{" "}
               <Link
+                target={"_blank"}
                 className="underline text-blue font-semibold"
                 to={STEAM_AND_GUARD_PATH}
               >
@@ -78,7 +78,10 @@ const WipeAndClean = () => {
               experience that truly stands out!
             </p>
           </div>
-        </section>{" "}
+        </section>
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <ContactForm />
+        </div>
         <div className=" w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>

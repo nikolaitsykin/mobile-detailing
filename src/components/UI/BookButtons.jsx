@@ -12,7 +12,7 @@ const BookButtons = ({ color, border }) => {
         </Link>
       </div>
       <div className="m-0.5 min-w-32 md:w-40">
-        <Link to={CONTACT_PATH}>
+        <Link to={CONTACT_PATH} target={"_blank"}>
           <Button children={"Request Quote"} color={color} border={border} />
         </Link>
       </div>

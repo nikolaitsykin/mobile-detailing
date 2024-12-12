@@ -87,7 +87,7 @@ export const shineAndShield = {
   carsSize: carTypes,
   link: SHINE_AND_SHIELD_PATH,
   shortDescription:
-    "This service offers a thorough exterior wash, with a ceramic sealant for protection. Includes: Wash & Wax service, and in addition chemical decontamination, bug & target removal, exterior plastic dressing and ultra ceramic sealant application. \nFrom $155. Up to 3 hours 30 mins.",
+    "This is a thorough exterior detailing, with a ceramic sealant application. Includes: Wash & Wax service, and in addition chemical decontamination, bug & target removal, exterior plastic dressing and ultra ceramic sealant application. \nFrom $155. Up to 3 hours 30 mins.",
   description:
     "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by shiny tires and wheels. After protecting the windows, we perform a clay bar treatment and bug & tar decontamination. We finish with a premium wax application for gloss and protection. ",
   duration: ["2 hours 45 mins", "3 hours 15 mins", "3 hours 30 mins"],
@@ -169,15 +169,15 @@ export const steamAndGuard = {
     { text: "Surfaces and Plastics Cleaned & Steamed" },
     { text: "Fabric Seats Vacuumed & Steamed" },
     { text: "Leather Seats Wiped & Steamed" },
+    { text: "Cup Holders Cleaned & Steamed" },
     { text: "Leather Conditioning Applied", bold: true },
     { text: "Vents, Cracks & Crevices Cleaned & Steamed", bold: true },
-    { text: "Cup Holders Cleaned & Steamed" },
     { text: "Interior UV & Dust Protection Applied", bold: true },
     { text: "Glasses & Mirrors Cleaned" },
   ],
   link: STEAM_AND_GUARD_PATH,
   shortDescription:
-    "This interior service offers a thorough interior cleaning, with conditioning and protection. Includes: Wipe & Clean service and in addition interior and trunk steam cleaning, and interior conditioning and UV protection. \nFrom $175. Up to 4 hours.",
+    "This interior service offers a thorough interior detailing, with conditioning and protection. Includes: Wipe & Clean service and in addition interior and trunk steam cleaning, and interior conditioning and UV protection. \nFrom $175. Up to 4 hours.",
   description:
     "We vacuum and steam the interior, carpets, and trunk. Door panels, seats, vents, and surfaces receive a thorough cleaning with steam, followed by conditioning and UV protection. We ensure the glass and mirrors are spotless, leaving your vehicle looking polished.* Excessive pet hair or sand may require additional service.",
   price: ["$175", "$205", "$235"],

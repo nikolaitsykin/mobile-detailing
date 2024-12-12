@@ -13,7 +13,7 @@ const DropdownItem = ({ name, title, link, closeMenu, closeDropdown }) => {
     <li
       onClick={close}
       key={name}
-      className="float-none px-3 text-left flex items-center h-12 hover:bg-dark-gray"
+      className="float-none px-5 text-left flex items-center h-12 hover:bg-dark-gray"
     >
       <NavLink
         key={name}

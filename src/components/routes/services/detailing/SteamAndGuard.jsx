@@ -7,13 +7,13 @@ import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
 const SteamAndGuard = () => {
   const service = steamAndGuard;
   setCanonical(service.link);
-
 
   return (
     <div
@@ -67,10 +67,11 @@ const SteamAndGuard = () => {
               extra mess, and want to keep your car looking its best, consider
               our{" "}
               <Link
+                target={"_blank"}
                 className="underline text-blue font-semibold"
                 to={DEEP_CLEANING_PATH}
               >
-                Deep Cleaning{" "}
+                Deep Cleaning
               </Link>{" "}
               Full Detailing Package, which adds thorough exterior wash, wheels
               & wheel wells cleaning, black exterior plastics restoration, clay
@@ -79,6 +80,9 @@ const SteamAndGuard = () => {
             </p>
           </div>
         </section>
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <ContactForm />
+        </div>
         <div className=" w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>

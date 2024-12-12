@@ -1,16 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { CERAMIC_COATING_PATH } from "../../../../utils/constants";
 import { deepClean } from "../../../../utils/detailingPackages";
 import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
 const DeepCleaning = () => {
   const service = deepClean;
   setCanonical(service.link);
-
 
   return (
     <div
@@ -51,19 +53,27 @@ const DeepCleaning = () => {
             <p>
               Tired of scratches and swirls on your car, even after all those $5
               car washes? Those drive-thru machines can actually harm your paint
-              instead of helping it. Struggling with dirt, stains, and
-              lingering odors inside your car? Quick vacuuming or basic cleaning
-              often misses the details that matter most. Over time, spills,
-              crumbs, pet hair, and daily wear can build up, making your car’s
-              interior feel less inviting.
+              instead of helping it. Struggling with dirt, stains, and lingering
+              odors inside your car? Quick vacuuming or basic cleaning often
+              misses the details that matter most. Over time, spills, crumbs,
+              pet hair, and daily wear can build up, making your car’s interior
+              feel less inviting.
               <br />
               <br />
-              Our Full Exterior and Interior Detailing package is all about
-              quality. While we may not be the cheapest option, we offer
-              exceptional value for our price. We don’t just "wash" your car—our
-              detailing brings out a rich, long-lasting shine using premium
-              products and meticulous attention, ensuring your car looks and
-              feels its absolute best.
+              Our Full Exterior package is all about quality. While we may not
+              be the cheapest option, we offer exceptional value for our price.
+              We don’t just "wash" your car—our detailing brings out a rich,
+              long-lasting shine using premium products and meticulous
+              attention, ensuring your car looks and feels its absolute best.
+              Want more protection? Upgrade to{" "}
+              <Link
+                target={"_blank"}
+                className="underline text-blue font-semibold"
+                to={CERAMIC_COATING_PATH}
+              >
+                18 Months Ceramic Coating
+              </Link>{" "}
+              application for just $75.
               <br />
               <br />
               Our skilled team handles it all, from dirt, grime, bird droppings,
@@ -74,6 +84,9 @@ const DeepCleaning = () => {
             </p>
           </div>
         </section>
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <ContactForm />
+        </div>
         <div className="w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>

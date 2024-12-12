@@ -25,12 +25,12 @@ const GoogleReview = () => {
           </div>
         </div>
         <div>
-          <Link to={GOOGLE_REVIEWS_URL}>
+          <Link target={"_blank"} to={GOOGLE_REVIEWS_URL}>
             <Button children={"Leave a review"} color={"secondary"} />
           </Link>
         </div>
       </div>
-      <Link to={GOOGLE_BUSINESS_URL}>
+      <Link target={"_blank"} to={GOOGLE_BUSINESS_URL}>
         <div className="flex flex-col items-center justify-start sm:flex-row md:justify-between sm:items-start">
           {reviews
             .sort(() => 0.5 - Math.random())

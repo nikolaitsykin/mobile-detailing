@@ -6,6 +6,7 @@ import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
@@ -89,6 +90,9 @@ const BaseDetailing = () => {
             </p>
           </div>
         </section>
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <ContactForm />
+        </div>
         <div className=" w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>

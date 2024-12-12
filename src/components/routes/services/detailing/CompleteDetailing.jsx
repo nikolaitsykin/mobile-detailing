@@ -6,13 +6,13 @@ import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
+import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
 const CompleteDetailing = () => {
   const service = completeDetail;
   setCanonical(service.link);
-
 
   return (
     <div
@@ -75,6 +75,7 @@ const CompleteDetailing = () => {
               If you’re ready to take your car’s shine to the next level, try
               our{" "}
               <Link
+                target={"_blank"}
                 className="underline text-blue font-semibold"
                 to={DEEP_CLEANING_PATH}
               >
@@ -88,6 +89,9 @@ const CompleteDetailing = () => {
             </p>
           </div>
         </section>
+        <div className=" w-[90%] md:w-[80%] mx-auto">
+          <ContactForm />
+        </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>

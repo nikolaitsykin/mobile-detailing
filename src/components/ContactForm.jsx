@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { THANK_YOU_PATH } from "../utils/constants";
 import Button from "./UI/Button";
 import Checkbox from "./UI/Checkbox";
@@ -10,6 +10,10 @@ import TextareaField from "./UI/TextareaField";
 
 const ContactForm = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location.pathname);
+  const heading =
+    location.pathname === "/contact" ? "Tell Us About" : "Contact Us";
   const [isChecked, setIsChecked] = useState(false);
   const [values, setValues] = useState({
     fullName: "",
@@ -128,7 +132,7 @@ const ContactForm = () => {
         navigate(THANK_YOU_PATH);
       }, 1500);
     }
-  }, [status]);
+  }, [status, location.pathname]);
 
   const renderAlert = () => {
     if (status === "SUCCESS") {
@@ -147,10 +151,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full  mx-auto">
+    <div className="w-full mx-auto mb-10">
       <form className="flex flex-col mx-auto md:w-full" onSubmit={handleSubmit}>
         <h3 className="text-black text-2xl mt-4 py-1 border-b border-gray">
-          Tell us about
+          {heading}
         </h3>
         <div className="w-full flex flex-col">
           <h3 className="text-black text-lg my-4 border-b border-gray py-1">

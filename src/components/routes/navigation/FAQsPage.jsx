@@ -34,6 +34,7 @@ const FAQs = () => {
             , request a quote through our contact page or just simply book
             online. Click the{" "}
             <Link
+              target={"_blank"}
               to={CONTACT_PATH}
               className="underline text-blue font-semibold"
             >

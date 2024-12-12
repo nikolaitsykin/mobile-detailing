@@ -39,7 +39,7 @@ const About = ({ city }) => {
           </p>
         </div>
         <div className="my-5 pt-5">
-          <Link to={ABOUT_PATH}>
+          <Link to={ABOUT_PATH} target={"_blank"}>
             <Button color="secondary" children="Learn More" />
           </Link>
         </div>
@@ -70,7 +70,7 @@ const About = ({ city }) => {
         </p>
         <div className="pb-10">
           <div className="min-w-48">
-            <Link to={BOOKING_PAGE_PATH}>
+            <Link to={BOOKING_PAGE_PATH} target={"_blank"}>
               <Button children={"BOOK NOW"} color={"secondary"} />
             </Link>
           </div>
