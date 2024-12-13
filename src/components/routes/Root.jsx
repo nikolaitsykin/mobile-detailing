@@ -9,13 +9,13 @@ import ContactForm from "../ContactForm";
 
 const Root = () => {
   const location = useLocation();
-  console.log(location.pathname);
 
   const currentCity = localAreas.includes(location.pathname.split("/")[1])
     ? location.pathname
         .split("/")[1]
-        .replace(/^./, (char) => char.toUpperCase())
-    : "Raleigh";
+        .replace(/-/g, " ")    // Replace hyphens with spaces
+        .replace(/\b\w/g, (char) => char.toUpperCase())  // Capitalize first letter of each word
+        : "Raleigh";
 
   useEffect(() => {
     document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating | Right At Your Doorstep`;

@@ -6,9 +6,9 @@ export const localAreas = [
   "apex",
   "cary",
   "garner",
-  "holly springs",
-  "knightdale",
+  "holly-springs",
   "morrisville",
+  "fuquay-varina",
 ];
 
 export const locations = [
@@ -16,9 +16,9 @@ export const locations = [
   "Cary",
   "Garner",
   "Holly Springs",
-  "Knightdale",
   "Morrisville",
   "Raleigh",
+  "Fuquay Varina",
 ];
 
 export const locationLinks = [
@@ -26,9 +26,9 @@ export const locationLinks = [
   "cary",
   "garner",
   "holly-springs",
-  "knightdale",
   "morrisville",
   "raleigh",
+  "fuquay-varina",
 ];
 
 export const footerLinks = [
