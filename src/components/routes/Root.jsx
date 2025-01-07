@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import About from "../About";
-import Hero from "../Hero";
-import Promos from "../Promos";
 import { useLocation } from "react-router-dom";
 import { localAreas } from "../../utils/data";
-import { setCanonical } from "../../utils/helpers";
+import About from "../About";
 import ContactForm from "../ContactForm";
+import Hero from "../Hero";
+import Promos from "../Promos";
 
 const Root = () => {
   const location = useLocation();
@@ -19,7 +18,6 @@ const Root = () => {
 
   useEffect(() => {
     document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating | Right At Your Doorstep`;
-    setCanonical(location.pathname);
   }, [currentCity, location.pathname]);
 
   return (

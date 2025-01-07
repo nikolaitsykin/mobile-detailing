@@ -18,7 +18,7 @@ export const locations = [
   "Holly Springs",
   "Morrisville",
   "Raleigh",
-  "Fuquay Varina",
+  "Fuquay-Varina",
 ];
 
 export const locationLinks = [

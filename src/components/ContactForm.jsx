@@ -11,7 +11,6 @@ import TextareaField from "./UI/TextareaField";
 const ContactForm = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location.pathname);
   const heading =
     location.pathname === "/contact" ? "Tell Us About" : "Contact Us";
   const [isChecked, setIsChecked] = useState(false);

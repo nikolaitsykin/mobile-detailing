@@ -1,15 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { MOBILE_INTERIOR_DETAILING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { interiorDetailingServices } from "../../../utils/detailingPackages";
-import { setCanonical } from "../../../utils/helpers";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
 import Card from "../../Card";
 
 const MobileInteriorDetailing = () => {
-  setCanonical(MOBILE_INTERIOR_DETAILING_PATH);
 
   return (
     <div id="interior-detailing" className="w-full z-20 bg-white font-poppins">

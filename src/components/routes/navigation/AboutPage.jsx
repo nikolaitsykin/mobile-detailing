@@ -1,12 +1,9 @@
 import React from "react";
-import { ABOUT_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
-import { setCanonical } from "../../../utils/helpers";
 import Banner from "../../Banner";
 import BookButtons from "../../UI/BookButtons";
 
 const AboutPage = () => {
-  setCanonical(ABOUT_PATH);
 
   return (
     <div id="about" className="w-full z-20 bg-white font-poppins">

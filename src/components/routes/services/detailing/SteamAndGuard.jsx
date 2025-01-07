@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { DEEP_CLEANING_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { steamAndGuard } from "../../../../utils/detailingPackages";
-import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -13,7 +12,6 @@ import GoogleReview from "../../../ReviewsWidget";
 
 const SteamAndGuard = () => {
   const service = steamAndGuard;
-  setCanonical(service.link);
 
   return (
     <div

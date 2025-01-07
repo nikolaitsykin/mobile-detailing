@@ -1,10 +1,7 @@
 import React from "react";
-import { CONTACT_PATH } from "../../../utils/constants";
-import { setCanonical } from "../../../utils/helpers";
 import ContactForm from "../../ContactForm";
 
 const ContactPage = () => {
-  setCanonical(CONTACT_PATH);
 
   return (
     <div id="contact" className="bg-white">

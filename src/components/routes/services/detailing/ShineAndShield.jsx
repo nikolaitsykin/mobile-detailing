@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { DEEP_CLEANING_PATH } from "../../../../utils/constants";
 import { shineAndShield } from "../../../../utils/detailingPackages";
-import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -12,7 +11,6 @@ import GoogleReview from "../../../ReviewsWidget";
 
 const ShineAndShield = () => {
   const service = shineAndShield;
-  setCanonical(service.link);
 
   return (
     <div

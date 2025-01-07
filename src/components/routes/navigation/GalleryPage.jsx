@@ -1,9 +1,6 @@
 import React from "react";
-import { GALLERY_PATH } from "../../../utils/constants";
-import { setCanonical } from "../../../utils/helpers";
 
 const Gallery = () => {
-  setCanonical(GALLERY_PATH);
 
   return (
     <div id="gallery" className="bg-white py-8">

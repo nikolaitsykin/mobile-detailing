@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { STEAM_AND_GUARD_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { wipeAndClean } from "../../../../utils/detailingPackages";
-import { setCanonical } from "../../../../utils/helpers";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -13,7 +12,6 @@ import GoogleReview from "../../../ReviewsWidget";
 
 const WipeAndClean = () => {
   const service = wipeAndClean;
-  setCanonical(service.link);
 
   return (
     <div

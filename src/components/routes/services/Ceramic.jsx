@@ -1,6 +1,5 @@
 import React from "react";
 import { ceramicCoating } from "../../../utils/detailingPackages";
-import { setCanonical } from "../../../utils/helpers";
 import Booking from "../../Booking";
 import Card from "../../Card";
 import Gallery from "../../Gallery";
@@ -8,7 +7,6 @@ import GoogleReview from "../../ReviewsWidget";
 
 const CeramicCoating = () => {
   const service = ceramicCoating;
-  setCanonical(service.link);
 
 
   return (

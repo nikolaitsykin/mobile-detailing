@@ -1,13 +1,10 @@
 import React from "react";
-import { SERVICES_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
-import { setCanonical } from "../../../utils/helpers";
 import { sustainability } from "../../../utils/sustainability";
 import Banner from "../../Banner";
 import Services from "../../Services";
 
 const ServicesPage = () => {
-  setCanonical(SERVICES_PATH);
 
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
