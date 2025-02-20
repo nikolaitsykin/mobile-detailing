@@ -244,14 +244,13 @@ const ContactForm = () => {
                 label="Which service are you interested in?"
                 defaultOption="Preferred service"
                 options={[
-                  "Wash & Wax",
-                  "Wipe & Clean",
-                  "Shine & Shield",
-                  "Steam & Guard",
-                  "Base Detailing",
-                  "Complete Detailing",
-                  "Deep Cleaning",
-                  "Winter Special Detailing",
+                  "Express Eterior",
+                  "Express Interior",
+                  "Ultimate Exterior",
+                  "Ultimate Interior",
+                  "Express Full Detail",
+                  "Ultimate Full Detail",
+                  "Promo Special Detailing",
                   "Ceramic Coating",
                 ]}
                 value={values.serviceOne}
@@ -262,13 +261,13 @@ const ContactForm = () => {
                 name="serviceTwo"
                 defaultOption="Preferred service"
                 options={[
-                  "Wash & Wax",
-                  "Wipe & Clean",
-                  "Shine & Shield",
-                  "Steam & Guard",
-                  "Base Detailing",
-                  "Complete Detailing",
-                  "Deep Cleaning",
+                  "Express Eterior",
+                  "Express Interior",
+                  "Ultimate Exterior",
+                  "Ultimate Interior",
+                  "Express Full Detail",
+                  "Ultimate Full Detail",
+                  "Promo Special Detailing",
                   "Ceramic Coating",
                 ]}
                 value={values.serviceTwo}
@@ -278,13 +277,13 @@ const ContactForm = () => {
                 name="serviceThree"
                 defaultOption="Preferred service"
                 options={[
-                  "Wash & Wax",
-                  "Wipe & Clean",
-                  "Shine & Shield",
-                  "Steam & Guard",
-                  "Base Detailing",
-                  "Complete Detailing",
-                  "Deep Cleaning",
+                  "Express Eterior",
+                  "Express Interior",
+                  "Ultimate Exterior",
+                  "Ultimate Interior",
+                  "Express Full Detail",
+                  "Ultimate Full Detail",
+                  "Promo Special Detailing",
                   "Ceramic Coating",
                 ]}
                 value={values.serviceThree}
