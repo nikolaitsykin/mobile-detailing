@@ -1,37 +1,37 @@
 
 export const addons = [
-  // {
-  //   title: "Headliner Steam Sanitize",
-  //   description:
-  //     "Rediscover the road with our Headlight Steam Sanitize service. Eliminate dim, cloudy headlights and enjoy enhanced visibility and safety. Our solution will make your headlights fill like new again. Schedule your appointment today and experience the clear difference!",
-  //   price: "Starts at $75",
-  // },
+  {
+    title: "Headliner Cleaning",
+    description:
+      "Includes: \n• Deep Cleaning: Removal of stains, dirt, and grime from the fabric or vinyl headliner. \n• Gentle Brushing & Steam: Careful agitation and steam treatment to lift embedded debris without damaging the material. \n• Odor Neutralization: Eliminates trapped odors, leaving your car’s interior fresh and clean. \nBenefits: \n• Restored Appearance: Removes stains and discoloration, bringing back the original look of your headliner. \n• Improved Air Quality: Cleans out dust, allergens, and odors for a fresher cabin environment. \n• Prevents Sagging: Regular maintenance helps prevent fabric detachment and extends the life of your headliner. Boosts Resale Value: A clean, well-maintained interior makes a strong impression when selling your vehicle.",
+    price: "Starts at $75",
+  },
   {
     title: "Engine Bay Detailing",
     type: "Exterior Service",
     description:
-      "Our Engine Bay Detailing service safely removes dirt, grease, and grime using eco-friendly products. We enhance the appearance and longevity of your engine with a thorough, detailed clean, leaving it spotless and ready for optimal performance.\n\n",
+      "Includes: \n• Degreasing: Removal of built-up grease, oil, and grime from the engine bay. \n• Foaming and Scrubbing: Detailed cleaning using foam and brushes to reach all components. \n• Optional Engine Shine: Application of a shine product to give the engine bay a polished, like-new appearance. \nBenefits:\n• Improved Performance: A clean engine bay can help with the identification of potential issues and improve overall engine performance. \n• Aesthetic Appeal: A well-maintained engine bay adds to the overall cleanliness and presentation of the vehicle. \n• Easier Maintenance: Regular cleaning makes it easier to work on the engine and spot any leaks or issues early on. \n• Resale Value: A clean engine bay can positively impact the resale value of your car by demonstrating good maintenance practices.\n",
     price: "Starts at $50",
   },
   {
     title: "Excessive Hair/Sand Removal",
     type: "Interior Service",
     description:
-      "Our Excessive Pet Hair/Sand Removal add-on is designed to tackle stubborn pet hair or sand that regular cleaning can’t handle. We thoroughly remove pet hair or sand from seats, carpets, trunk and hard-to-reach areas using specialized tools and techniques, leaving your vehicle fur- and sand-free.",
+      "Includes: \nThorough Vacuuming: \n• Deep extraction of embedded pet hair and sand from carpets, seats, and floor mats. \n• Specialized Brushes & Tools: Agitation and removal using industry-grade tools designed to lift stubborn debris. Detailing & Finishing Touches: Ensuring all surfaces are as clean and hair-free as possible. \nBenefits: \n• Restored Cleanliness: Removes trapped pet hair and sand, leaving your interior fresh and tidy. \n• Improved Air Quality: Reduces allergens and dust for a healthier cabin environment. \n• Enhanced Comfort: Eliminates rough, gritty surfaces for a smoother, more enjoyable ride. \n• Better Detailing Results: Prepares your vehicle for deeper cleaning and a polished finish.",
     price: "Starts at $50",
   },
   {
-    title: "Ceramic Coating",
+    title: "Ceramic Sealant",
     type: "Exterior Service",
     description:
-      "Provides a durable, high-gloss layer of protection for your vehicle's exterior, lasting up to 18 months. This advanced coating shields against dirt, UV rays, and contaminants, keeping your paintwork looking glossy and new while making future cleanings a breeze.",
+      "Includes: \n• Clay Bar Treatment: Detailed clay bar treatment to remove embedded contaminants and leave the paint smooth. 6-Month Sealant: Application of a high-quality sealant that provides up to 6 months of protection. \nBenefits: \n• Smooth and Clean Surface: The clay bar treatment effectively removes embedded contaminants that regular washing can't, leaving the paint smooth to the touch. \n• Durable Protection: The 6-month sealant offers strong protection against environmental factors such as UV rays, bird droppings, and road salt, helping to maintain your car's exterior. \n• Enhanced Appearance: The thorough exterior wash and sealant application enhance the gloss and shine of your car’s paint, making it look like new. \n• Ease of Maintenance: The protective layer created by the sealant makes future cleaning easier, as dirt and grime are less likely to adhere to the surface.",
     price: "Starts at $70",
   },
   {
     title: "Seats/Carpet Shampoo",
     type: "Interior Service",
     description:
-      "This treatment eliminates stains, dirt, and odors, leaving your fabric or leather seats and carpets looking and smelling fresh, with a like-new feel! Perfect for tackling everyday spills and grime buildup.\n\n",
+      "Includes:\n• Deep Cleaning: Extraction of dirt, stains, and grime from fabric seats and carpets. \n• Shampoo & Agitation: Specialized cleaners and brushes to lift embedded debris. \n• Steam Treatment: Helps break down tough stains and eliminate bacteria. \n• Drying & Deodorizing: Removes excess moisture and leaves a fresh, clean scent. \nBenefits: \n• Restores Appearance: Revives fabric, removing stains and discoloration. \n• Eliminates Odors: Gets rid of trapped smells from spills, pets, and everyday use. \n• Improves Air Quality: Reduces allergens and bacteria in the cabin. \n• Enhances Comfort: Clean, fresh upholstery makes every ride more enjoyable.",
     price: "Starts at $50",
   }
 ];

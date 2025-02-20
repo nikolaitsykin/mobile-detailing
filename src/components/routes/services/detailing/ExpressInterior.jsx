@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { STEAM_AND_GUARD_PATH } from "../../../../utils/constants";
+import { ULTIMATE_INTERIOR_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
-import { wipeAndClean } from "../../../../utils/detailingPackages";
+import { expressInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -10,8 +10,8 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
-const WipeAndClean = () => {
-  const service = wipeAndClean;
+const ExpressInterior = () => {
+  const service = expressInterior;
 
   return (
     <div
@@ -24,15 +24,15 @@ const WipeAndClean = () => {
         </h1>
       </div>
       <div className="mx-auto">
-        <section className="mt-12">
-          <div className="text-start text-black mt-12 w-[90%] md:w-[80%] mx-auto">
-            <h3 className="text-center mb-10">
-              Restore your car’s beauty with our professional interior detailing
-              services.
+        <section className="">
+          <article className=" text-start text-black">
+            <h3 className="text-center mx-auto my-5 max-w-5xl">
+              Get your vehicle interior looking bright and refreshed with
+              Spotless Detailing’s Express Interior service.
             </h3>
             <Card
-              title={service.title}
-              type={service.type}
+              // title={service.title}
+              // type={service.type}
               service={service}
               services={service.services}
               description={service.description}
@@ -42,9 +42,8 @@ const WipeAndClean = () => {
               singleService
               duration={service.duration}
               link={service.link}
-              bestValue={service.bestValue}
             />
-          </div>
+          </article>
           <div className="text-sm md:text-base">
             <p>
               Rejuvinate your car's interior with our Wipe & Clean Interior
@@ -66,9 +65,9 @@ const WipeAndClean = () => {
               <Link
                 target={"_blank"}
                 className="underline text-blue font-semibold"
-                to={STEAM_AND_GUARD_PATH}
+                to={ULTIMATE_INTERIOR_PATH}
               >
-                Steam & Guard
+                Ultimate Interior
               </Link>{" "}
               interior service, which adds thorough interior and trunk
               vacuuming, steam cleaning, conditioning and UV protection to
@@ -97,4 +96,4 @@ const WipeAndClean = () => {
   );
 };
 
-export default WipeAndClean;
+export default ExpressInterior;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Banner = ({ image, header }) => {
+const Banner = ({ image, header, alt }) => {
   return (
     <div>
       <div className="w-full bg-black">
@@ -8,7 +8,7 @@ const Banner = ({ image, header }) => {
           loading="lazy"
           className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
           src={image}
-          alt="Car detailing"
+          alt={alt}
         />
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-24">

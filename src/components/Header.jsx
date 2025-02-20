@@ -1,8 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import useScrollDirection from "../hooks/useScrollDirection";
-import logo from "../assets/images/spotless_Logo_small.png";
-import { HOME_PATH } from "../utils/constants";
+import Topbar from "./UI/Topbar";
 import Navbar from "./UI/Navbar";
 
 const Header = () => {
@@ -14,20 +12,11 @@ const Header = () => {
         scrollDirection === "down" ? "-top-20 md:-top-32" : "top-0"
       }`}
     >
-      <section className="w-full flex flex-row justify-around h-20 md:h-28 bg-black">
-        <div className="flex justify-start items-center basis:1/3 md:basis-1/7">
-          <Link to={HOME_PATH}>
-            <div className="ml-2 mr-1 md:ml-8 lg:ml-10 w-20 lg:w-32">
-              <img
-                loading="lazy"
-                className="h-full w-full object-contain"
-                src={logo}
-                alt="Spotless Logo"
-              />
-            </div>
-          </Link>
+      <section className="w-full flex flex-col justify-around h-20 md:h-28 bg-black">
+        <div className="flex justify-between items-center w-full">
+          <Topbar />
         </div>
-        <div className="flex items-center w-full lg:basis-6/7">
+        <div className="flex items-center w-full">
           <Navbar />
         </div>
       </section>

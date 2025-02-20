@@ -1,24 +1,21 @@
 import * as React from "react";
 import {
-  ABOUT_PATH,
-  BASE_DETAILING_PATH,
-  BOOKING_PAGE_PATH,
-  CERAMIC_COATING_PATH,
-  COMPLETE_DETAILING_PATH,
-  CONTACT_PATH,
-  DEEP_CLEANING_PATH,
+  ABOUT_PATH, BOOKING_PAGE_PATH,
+  CERAMIC_COATING_PATH, CONTACT_PATH, EXPRESS_EXTERIOR_PATH,
+  EXPRESS_FULL_DETAILING_PATH,
+  EXPRESS_INTERIOR_PATH,
   FAQS_PATH,
   GALLERY_PATH,
   HOME_PATH,
+  MAINTENANCE_FULL_DETAILING_PATH,
+  MOBILE_DETAILING_PATH,
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
-  SERVICES_PATH,
-  SHINE_AND_SHIELD_PATH,
-  STEAM_AND_GUARD_PATH,
-  THANK_YOU_PATH,
-  WASH_AND_WAX_PATH,
-  WIPE_AND_CLEAN_PATH,
+  SERVICES_PATH, THANK_YOU_PATH,
+  ULTIMATE_EXTERIOR_PATH,
+  ULTIMATE_FULL_DETAILING_PATH,
+  ULTIMATE_INTERIOR_PATH
 } from "../../utils/constants";
 import App from "../App";
 import ErrorPage from "../error-page";
@@ -30,13 +27,14 @@ import Gallery from "./navigation/GalleryPage";
 import ServicesPage from "./navigation/ServicesPage";
 import Root from "./Root";
 import CeramicCoating from "./services/Ceramic";
-import BaseDetailing from "./services/detailing/BaseDetailing";
-import CompleteDetailing from "./services/detailing/CompleteDetailing";
-import DeepCleaning from "./services/detailing/DeepCleaning";
-import ShineAndShield from "./services/detailing/ShineAndShield";
-import SteamAndGuard from "./services/detailing/SteamAndGuard";
-import WashAndWax from "./services/detailing/WashAndWax";
-import WipeAndClean from "./services/detailing/WipeAndClean";
+import ExpressExterior from "./services/detailing/ExpressExterior";
+import ExpressFullDetailing from "./services/detailing/ExpressFullDetailing";
+import ExpressInterior from "./services/detailing/ExpressInterior";
+import MaintenanceDetailing from "./services/detailing/MaintenanceDetailing";
+import UltimateExterior from "./services/detailing/UltimateExterior";
+import UltimateFullDetailing from "./services/detailing/UltimateFullDetailing";
+import UltimateInterior from "./services/detailing/UltimateInterior";
+import MobileDetailing from "./services/MobileDetailing";
 import MobileExteriorDetailing from "./services/MobileExteriorDetailing";
 import MobileFullDetailing from "./services/MobileFullDetailing";
 import MobileInteriorDetailing from "./services/MobileInteriorDetailing";
@@ -69,44 +67,49 @@ export const routes = [
         element: <MobileExteriorDetailing />,
       },
       {
-        path: WASH_AND_WAX_PATH,
-        name: "Wash and Wax",
-        element: <WashAndWax />,
+        path: EXPRESS_EXTERIOR_PATH,
+        name: "Express Exterior",
+        element: <ExpressExterior />,
       },
       {
-        path: SHINE_AND_SHIELD_PATH,
-        name: "Shine and Shield",
-        element: <ShineAndShield />,
+        path: ULTIMATE_EXTERIOR_PATH,
+        name: "Ultimate Exterior",
+        element: <UltimateExterior />,
       },
       {
-        path: WIPE_AND_CLEAN_PATH,
-        name: "Wipe and Clean",
-        element: <WipeAndClean />,
+        path: EXPRESS_INTERIOR_PATH,
+        name: "Express Interior",
+        element: <ExpressInterior />,
       },
       {
-        path: STEAM_AND_GUARD_PATH,
-        name: "Steam and Guard",
-        element: <SteamAndGuard />,
+        path: ULTIMATE_INTERIOR_PATH,
+        name: "Ultimate Interior",
+        element: <UltimateInterior />,
       },
       {
-        path: BASE_DETAILING_PATH,
-        name: "Base Detailing",
-        element: <BaseDetailing />,
+        path: MAINTENANCE_FULL_DETAILING_PATH,
+        name: "Maintenance Detailing",
+        element: <MaintenanceDetailing />,
       },
       {
-        path: COMPLETE_DETAILING_PATH,
-        name: "Complete Detailing",
-        element: <CompleteDetailing />,
+        path: EXPRESS_FULL_DETAILING_PATH,
+        name: "Express Full Detailing",
+        element: <ExpressFullDetailing />,
       },
       {
-        path: DEEP_CLEANING_PATH,
-        name: "Deep Cleaning",
-        element: <DeepCleaning />,
+        path: ULTIMATE_FULL_DETAILING_PATH,
+        name: "Ultimate Full Detailing",
+        element: <UltimateFullDetailing />,
       },
       {
         path: MOBILE_FULL_DETAILING_PATH,
-        name: "Mobile Interior Detailing",
+        name: "Mobile Full Detailing",
         element: <MobileFullDetailing />,
+      },
+      {
+        path: MOBILE_DETAILING_PATH,
+        name: "Mobile Detailing",
+        element: <MobileDetailing />,
       },
       {
         path: CERAMIC_COATING_PATH,

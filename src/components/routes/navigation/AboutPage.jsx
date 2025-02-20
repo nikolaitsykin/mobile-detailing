@@ -10,6 +10,7 @@ const AboutPage = () => {
       <Banner
         image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-washing-his-car-garage_1157-26072.jpg"
         header="About"
+        alt={"Mobile Detailing Service Technician performing car detailing | Spotless Auto Detailing"}
       />
       <section>
         <article className="text-black flex flex-col justify-center">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SHINE_AND_SHIELD_PATH } from "../../../../utils/constants";
-import { washAndWax } from "../../../../utils/detailingPackages";
+import { ULTIMATE_EXTERIOR_PATH } from "../../../../utils/constants";
+import { expressExterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -9,8 +9,8 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
-const WashAndWax = () => {
-  const service = washAndWax;
+const ExpressExterior = () => {
+  const service = expressExterior;
 
   return (
     <div
@@ -23,15 +23,15 @@ const WashAndWax = () => {
         </h1>
       </div>
       <div className="mx-auto">
-        <section className="mt-12">
-          <di className=" text-start text-black">
-            <h3 className="text-center mb-10">
-              Restore your car’s beauty with our professional exterior detailing
-              services.
+        <section className="">
+          <article className=" text-start text-black">
+            <h3 className="text-center mx-auto my-5 max-w-5xl">
+              Experience the shine of a professional car detailing with Spotless
+              Detailing’s Express Exterior service..
             </h3>
             <Card
-              title={service.title}
-              type={service.type}
+              // title={service.title}
+              // type={service.type}
               service={service}
               services={service.services}
               description={service.description}
@@ -41,9 +41,8 @@ const WashAndWax = () => {
               singleService
               duration={service.duration}
               link={service.link}
-              bestValue={service.bestValue}
             />
-          </di>
+          </article>
         </section>
         <section>
           <div className="text-sm md:text-base">
@@ -69,12 +68,12 @@ const WashAndWax = () => {
               <Link
                 target={"_blank"}
                 className="underline text-blue font-semibold"
-                to={SHINE_AND_SHIELD_PATH}
+                to={ULTIMATE_EXTERIOR_PATH}
               >
-                Shine & Shield
+                Ultimate Exterior
               </Link>{" "}
               exterior service, which adds clay bar treatment, gloss enhancement
-              and ceramic coating application for up to 6 month of protection
+              and ceramic sealant application for up to 6 month of protection
               for an unbeatable finish. Book now for an exterior car detailing
               experience that truly stands out!
             </p>
@@ -100,4 +99,4 @@ const WashAndWax = () => {
   );
 };
 
-export default WashAndWax;
+export default ExpressExterior;

@@ -65,7 +65,6 @@ const MobileInteriorDetailing = () => {
             link={item.link}
             button={"Get Started"}
             background={item.background}
-            bestValue={item.bestValue}
           />
         ))}
         <Outlet />

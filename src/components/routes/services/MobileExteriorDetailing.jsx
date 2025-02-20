@@ -64,7 +64,6 @@ const MobileExteriorDetailing = () => {
             duration={item.duration}
             link={item.link}
             button={"Get Started"}
-            bestValue={item.bestValue}
           />
         ))}
         <Outlet />

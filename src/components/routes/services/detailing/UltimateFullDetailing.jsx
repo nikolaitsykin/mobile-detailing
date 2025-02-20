@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { COMPLETE_DETAILING_PATH } from "../../../../utils/constants";
-import { baseDetail } from "../../../../utils/detailingPackages";
+import { CERAMIC_COATING_PATH } from "../../../../utils/constants";
+import { ultimateFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -9,8 +9,8 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
-const BaseDetailing = () => {
-  const service = baseDetail;
+const UltimateFullDetailing = () => {
+  const service = ultimateFullDetail;
 
   return (
     <div
@@ -23,27 +23,25 @@ const BaseDetailing = () => {
         </h1>
       </div>
       <div className="mx-auto">
-        <section className="mt-12">
+        <section className="">
           <article className=" text-start text-black">
-            <h3 className="text-center mb-10">
-              Restore your car’s beauty with our professional full exterior and
-              interior detailing services.
+            <h3 className="text-center mx-auto my-5 max-w-5xl">
+              Complete car rejuvenation, exterior and interior detailing, 5-6
+              hours, top-of-the-line products.
             </h3>
             <Card
-              title={service.title}
-              type={service.type}
+              // title={service.title}
+              // type={service.type}
               service={service}
+              steps={service.steps}
               services={service.services}
               description={service.description}
               exteriorServices={service.exteriorServices}
               interiorServices={service.interiorServices}
-              steps={service.steps}
               image={service.image}
-              alt={service.alt}
               singleService
               duration={service.duration}
               link={service.link}
-              bestValue={service.bestValue}
             />
           </article>
         </section>
@@ -59,39 +57,34 @@ const BaseDetailing = () => {
               feel less inviting.
               <br />
               <br />
-              Our Full Exterior and Interior Detailing package is all about
-              quality. While we may not be the cheapest option, we offer
-              exceptional value for our price. We don’t just "wash" your car—our
-              detailing brings out a rich, long-lasting shine using premium
-              products and meticulous attention, ensuring your car looks and
-              feels its absolute best.
+              Our Full Exterior package is all about quality. While we may not
+              be the cheapest option, we offer exceptional value for our price.
+              We don’t just "wash" your car—our detailing brings out a rich,
+              long-lasting shine using premium products and meticulous
+              attention, ensuring your car looks and feels its absolute best.
+              Want more protection? Upgrade to{" "}
+              <Link
+                target={"_blank"}
+                className="underline text-blue font-semibold"
+                to={CERAMIC_COATING_PATH}
+              >
+                24 Months Graphene Ceramic Coating
+              </Link>{" "}
+              application for just $150.
               <br />
               <br />
               Our skilled team handles it all, from dirt, grime, bird droppings,
-              and bug stains on the exterior to dust, pet hair, and stains
+              and bug stains on the exterior to dust, pet hair, and tough stains
               inside, leaving your car looking its absolute best.
               <br />
               <br />
-              If you’re ready to take your car’s shine to the next level, try
-              our{" "}
-              <Link
-                className="underline text-blue font-semibold"
-                to={COMPLETE_DETAILING_PATH}
-              >
-                Complete Detailing
-              </Link>{" "}
-              full detailing service, which adds clay bar treatment and wax
-              application for up to 1 month of protection for exterior services
-              and trunk vacuuming, steam treatment to seats and interior
-              services. Book now for an exterior car wash experience that truly
-              stands out!
             </p>
           </div>
         </section>
         <div className=" w-[90%] md:w-[80%] mx-auto">
           <ContactForm />
         </div>
-        <div className=" w-[90%] md:w-[80%] mx-auto">
+        <div className="w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
@@ -108,4 +101,4 @@ const BaseDetailing = () => {
   );
 };
 
-export default BaseDetailing;
+export default UltimateFullDetailing;

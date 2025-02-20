@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ABOUT_PATH, BOOKING_PAGE_PATH } from "../utils/constants";
 import { businessName, fullBusinessName } from "../utils/data";
+import BookButtons from "./UI/BookButtons";
 import Button from "./UI/Button";
 const About = ({ city }) => {
   return (
@@ -70,9 +71,7 @@ const About = ({ city }) => {
         </p>
         <div className="pb-10">
           <div className="min-w-48">
-            <Link to={BOOKING_PAGE_PATH} target={"_blank"}>
-              <Button children={"BOOK NOW"} color={"secondary"} />
-            </Link>
+            <BookButtons color={"secondary"}/>
           </div>
         </div>
         <p className="text-white text-[1px]">

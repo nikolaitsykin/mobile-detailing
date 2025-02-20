@@ -1,15 +1,16 @@
 import {
-  BASE_DETAILING_PATH,
+  MOBILE_DETAILING_PATH,
   CERAMIC_COATING_PATH,
-  COMPLETE_DETAILING_PATH,
-  DEEP_CLEANING_PATH,
+  EXPRESS_EXTERIOR_PATH,
+  EXPRESS_FULL_DETAILING_PATH,
+  EXPRESS_INTERIOR_PATH,
+  MAINTENANCE_FULL_DETAILING_PATH,
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
-  SHINE_AND_SHIELD_PATH,
-  STEAM_AND_GUARD_PATH,
-  WASH_AND_WAX_PATH,
-  WIPE_AND_CLEAN_PATH,
+  ULTIMATE_EXTERIOR_PATH,
+  ULTIMATE_FULL_DETAILING_PATH,
+  ULTIMATE_INTERIOR_PATH,
 } from "./constants";
 
 export const carsSizes = [
@@ -35,62 +36,58 @@ const carTypes = [
   "SUVs, crossovers, and small trucks (e.g., Kia Sorento, Hyundai Tucson, Toyota Tacoma)",
   "Full-size SUVs, large trucks, and vans (e.g., Chevy Suburban, Ford F-150, Honda Odyssey)",
 ];
-export const washAndWax = {
-  title: "Wash & Wax",
+
+export const expressExterior = {
+  title: "Express Exterior",
   type: "Exterior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/car-front-foglight.jpg",
-  alt: "Mobile Wash & Wax Exterior Detailing Services in Raleigh | Spotless Detailing.",
+  alt: "Express Exterior Detailing Services in Raleigh | Spotless Auto Detailing.",
   exteriorServices: [
-    { text: "Vehicle Hand Washed" },
-    { text: "Gas Cap and Valve Cleaned" },
-    { text: "Bodywork Air Dried and Finished with Towel" },
-    { text: "Windows Cleaned and Protected" },
-    { text: "Tires & Wheels Cleaned" },
-    { text: "Tire Shine Applied" },
-    { text: "Clay Bar Decontamination", bold: true },
-    { text: "Premium Wax Applied", bold: true },
+    { text: "Meticulous Wheels & Tires Cleaning & Shine" },
+    { text: "Luxurious Foam Hand Wash" },
+    { text: "Gas Cap & Valve Cleaning" },
+    { text: "Spotless Air & Towel Drying" },
+    { text: "Crystal Clear Windows Cleaning" },
+    { text: "Premium Wax Application" },
   ],
-  price: ["$115", "$130", "$145"],
+  price: ["$125", "$145", "$165"],
   carsSize: carTypes,
-  link: WASH_AND_WAX_PATH,
+  link: EXPRESS_EXTERIOR_PATH,
   shortDescription:
-    "Experience exterior detailing and premium wax protection for your vehicle. Includes: Hand wash and dry of body and wheels, tire shine, clay bar decontamination, and premium wax protection. \nFrom $115. Up to 3 hours.",
+    "Experience the shine of a professional car detailing with Spotless Detailing’s Express Exterior service. \n\nFrom $125. Up to 2 hours.",
   description:
-    "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we ensure the tires and wheels are looking it's best. We follow with a clay bar treatment to decontaminate the paint and apply a premium wax for lasting protection. Finally, the windows are treated with a water repellent for clarity.",
-  duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
+    "Clean your car in no time with Spotless Detailing's Express Exterior service. We use high quality detailing products that are designed to quickly and effectively remove dirt, grime and other contaminants from the exterior of your car. Our experienced team of professionals will make sure that your car looks like new again.",
+  duration: ["1 hour", "1 hour 15 mins", "1 hour 30 mins"],
   background: " ",
-  bestValue: "Most Popular",
 };
 
-export const shineAndShield = {
-  title: "Shine & Shield",
+export const ultimateExterior = {
+  title: "Ultimate Exterior",
   type: "Exterior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.jpeg",
-  alt: "Mobile Shine & Shield Exterior Detailing Services in Raleigh | Spotless Detailing.",
+  alt: "Ultimate Exterior Detailing Services in Raleigh | Spotless Auto Detailing.",
   exteriorServices: [
-    { text: "Wheels & Wells Cleaned" },
-    { text: "Vehicle Hand Washed" },
-    { text: "Gas Cap and Valve Cleaned" },
-    { text: "Bodywork Air Dried and Finished with Towel" },
-    { text: "Windows Cleaned and Protected" },
-    { text: "Door & Trunk Jambs Cleaned" },
-    { text: "Tires Cleaned & Shine Applied" },
-    { text: "Black Textured Plastics Dressed" },
-    { text: "Clay Bar Decontamination" },
-    { text: "Chemical Bug & Target Removal", bold: true },
-    { text: "Ultra Ceramic Sealant Applied", bold: true },
-    { text: "Upgrade to 18 months Ceramic Coating for just $75", bold: true },
+    { text: "Meticulous Wheels & Tires Cleaning & Shine" },
+    { text: "Luxurious Foam Hand Wash" },
+    { text: "Gas Cap & Valve Cleaning" },
+    { text: "Spotless Air & Towel Drying" },
+    { text: "Crystal Clear Windows Cleaning" },
+    { text: "Detailed Door & Trunk Jambs Cleaning" },
+    { text: "Exterior Black Plastic Dressing" },
+    { text: "Precision Clay Bar Treatment" },
+    { text: "Powerful Chemical Bug & Tar Removal" },
+    { text: "Ultra Ceramic Sealant (up to 6-Month Protection)" },
   ],
-  price: ["$155", "$175", "$195"],
+  price: ["$165", "$190", "$215"],
   carsSize: carTypes,
-  link: SHINE_AND_SHIELD_PATH,
+  link: ULTIMATE_EXTERIOR_PATH,
   shortDescription:
-    "This is a thorough exterior detailing, with a ceramic sealant application. Includes: Wash & Wax service, and in addition chemical decontamination, bug & target removal, exterior plastic dressing and ultra ceramic sealant application. \nFrom $155. Up to 3 hours 30 mins.",
+    "Get your car looking like new again with Spotless Detailing’s Ultimate Exterior service. \n\nFrom $165. Up to 2 hours 45 mins.",
   description:
-    "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by shiny tires and wheels. After protecting the windows, we perform a clay bar treatment and bug & tar decontamination. We finish with a premium wax application for gloss and protection. ",
-  duration: ["2 hours 45 mins", "3 hours 15 mins", "3 hours 30 mins"],
+    "Get your car looking like new again with Spotless Detailing’s Ultimate Exterior service. Our professional team of detailers will bring your car back to its showroom shine with a full exterior detail. We’ll wash, clay and finish up with a ceramic based paint sealant for a deep, glossy shine. Make sure your car is looking its best with our Ultimate Exterior package.",
+  duration: ["2 hours mins", "2 hours 15 mins", "2 hours 30 mins"],
 };
 
 export const ceramicCoating = {
@@ -98,225 +95,189 @@ export const ceramicCoating = {
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
-  alt: "Ceramic Coating Services in Raleigh | Spotless Detailing.",
+  alt: "Ceramic Coating Services in Raleigh | Spotless Auto Detailing.",
   exteriorServices: [
-    { text: "Wheels & Wells Cleaned" },
-    { text: "Vehicle Hand Washed" },
-    { text: "Bodywork Air Dried and Finished with Towel" },
-    { text: "Windows Cleaned and Protected" },
-    { text: "Door & Trunk Jambs Cleaned" },
-    { text: "Tires Cleaned & Shine Applied" },
-    { text: "Clay Bar Decontamination", bold: true },
-    { text: "Chemical Bug & Target Removal", bold: true },
-    { text: "18 months Ceramic Coating Applied", bold: true },
+    { text: "Meticulous Wheels & Tires Cleaning & Shine" },
+    { text: "Luxurious Foam Hand Wash" },
+    { text: "Gas Cap & Valve Cleaning" },
+    { text: "Spotless Air & Towel Drying" },
+    { text: "Crystal Clear Windows Cleaning" },
+    { text: "Precision Clay Bar Treatment" },
+    { text: "Powerful Chemical Bug & Tar Removal" },
+    { text: "24 months Graphene Ceramic Coating Applied" },
   ],
-  price: ["$225", "$250", "$275"],
+  price: ["$350", "$375", "$400"],
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   shortDescription:
-    "Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Shine & Shield service, and 18 months ceramic coating application for long-lasting protection. \nFrom $225. Up to 4 hours.",
+    "Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Shine & Shield service, and 24 months graphene ceramic coating application for long-lasting protection. \n\nFrom $350. Up to 4 hours.",
   description:
-    "To prepate for a ceramic coating we begin with a full hand wash and dry, followed tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to eighteen months or more, ensuring long-lasting defense against various contaminants.",
+    "To prepare for a ceramic coating we begin with a full hand wash and dry, followed by tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to 24 months, ensuring long-lasting defense against various contaminants.",
   duration: ["3 hours", "3 hours 30 mins", "4 hours"],
   background: " ",
-  bestValue: "Most Popular",
 };
 
-export const wipeAndClean = {
-  title: "Wipe & Clean",
+export const expressInterior = {
+  title: "Express Interior",
   type: "Interior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-polish-salon-car-garage_1157-36595.jpg",
-  alt: "Wipe & Clean Interior Detailing Services in Raleigh | Spotless Detailing.",
+  alt: "Express Interior Detailing Services in Raleigh | Spotless Auto Detailing.",
   interiorServices: [
-    { text: "Trunk Carpet Vacuumed", bold: true },
-    { text: "Trunk Space Plastics Cleaned", bold: true },
-    { text: "Interior Carpet Vacuumed" },
-    { text: "Floor Mats Shaampooed" },
-    { text: "Door Panels & Jambs Cleaned" },
-    { text: "Fabric Seats Vacuumed" },
-    { text: "Leather Seats Wiped" },
-    { text: "Interior Surfaces & Plastics Cleaned" },
-    { text: "Vents, Cracks & Crevices Cleaned", bold: true },
-    { text: "Cup Holders Cleaned" },
-    { text: "Glasses & Mirrors Cleaned" },
+    { text: "Thorough Interior & Trunk Vacuuming" },
+    { text: "Interior Surfaces & Plastics Cleaning" },
+    { text: "Thorough Floor Mats Cleaning" },
+    { text: "Meticulous Door Panels & Jambs Cleaning" },
+    { text: "Comprehensive Seats Vacuuming & Cleaning" },
+    { text: "Detailed Dashboard and Console Cleaning" },
+    { text: "Vents and Crevices Detailing" },
+    { text: "Crystal Clear Glasses & Mirrors Cleaning" },
   ],
-  link: WIPE_AND_CLEAN_PATH,
+  link: EXPRESS_INTERIOR_PATH,
   shortDescription:
-    "Interior detailing that leaves your car looking spotless and refreshed. Includes: Interior and trunk vacuum, shampooed mats, doors and jambs wiping, seats, interior surfaces and plastics wiping, and spotless glass and mirrors.\nFrom $115. Up to 3 hours.",
+    "Get your vehicle interior looking refreshed and shiny with Spotless Detailing’s Express Interior service.\n\nFrom $155. Up to 2.5 hours.",
   description:
-    "We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. The surfaces, plastics, and cup holders get a thorough wipedown, and we finish with spotless glass and mirrors.\n\n",
-  price: ["$115", "$130", "$145"],
+    "Quickly freshen up your car's interior with Spotless Detailing's Express Interior service. Designed to get your car looking its best in no time, this service includes a thorough vacuuming of all interior surfaces, a detailed wipe-down of all plastics, leather, and vinyl, and a window cleaning. Get your car looking like new again in no time with this express service.\n\n",
+  price: ["$155", "$170", "$195"],
   carsSize: carTypes,
   duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
   background: " ",
-  bestValue: "Most Popular",
 };
 
-export const steamAndGuard = {
-  title: "Steam & Guard",
+export const ultimateInterior = {
+  title: "Ultimate Interior",
   type: "Interior Service",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_539555302.jpeg",
-  alt: "Steam & Guard Interior Detailing Services in Raleigh | Spotless Mobile Auto Detailing.",
-
+  alt: "Ultimate Interior Detailing Services in Raleigh | Spotless Auto Detailing.",
   interiorServices: [
-    { text: "Trunk Carpet Vacuumed & Steamed" },
-    { text: "Trunk Space Plastics Cleaned" },
-    { text: "Interior Carpet Vacuumed & Steamed" },
-    { text: "Floor Mats Shaampooed" },
-    { text: "Door Panels, Jambs Cleaned & Steamed" },
+    { text: "Thorough Interior & Trunk Vacuuming & Steaming" },
+    { text: "Interior Surfaces & Plastics Cleaned with Steaming" },
+    { text: "Thorough Floor Mats Cleaning with Steaming" },
+    { text: "Meticulous Door Panels & Jambs Cleaning with Steaming" },
     { text: "Surfaces and Plastics Cleaned & Steamed" },
-    { text: "Fabric Seats Vacuumed & Steamed" },
-    { text: "Leather Seats Wiped & Steamed" },
-    { text: "Cup Holders Cleaned & Steamed" },
-    { text: "Leather Conditioning Applied", bold: true },
-    { text: "Vents, Cracks & Crevices Cleaned & Steamed", bold: true },
-    { text: "Interior UV & Dust Protection Applied", bold: true },
-    { text: "Glasses & Mirrors Cleaned" },
+    { text: "Fabric Seats Vacuuming & Steaming" },
+    { text: "Leather Seats Wiping, Steaming & Conditioning" },
+    { text: "Vents, Cracks & Crevices Cleaning & Steaming" },
+    { text: "Interior UV & Dust Protection Application" },
+    { text: "Crystal Clear Glasses & Mirrors Cleaning" },
   ],
-  link: STEAM_AND_GUARD_PATH,
+  link: ULTIMATE_INTERIOR_PATH,
   shortDescription:
-    "This interior service offers a thorough interior detailing, with conditioning and protection. Includes: Wipe & Clean service and in addition interior and trunk steam cleaning, and interior conditioning and UV protection. \nFrom $175. Up to 4 hours.",
+    "Experience the luxury of Spotless Detailing's Ultimate Interior service. \n\nFrom $205. Up to 4 hours.",
   description:
-    "We vacuum and steam the interior, carpets, and trunk. Door panels, seats, vents, and surfaces receive a thorough cleaning with steam, followed by conditioning and UV protection. We ensure the glass and mirrors are spotless, leaving your vehicle looking polished.* Excessive pet hair or sand may require additional service.",
-  price: ["$175", "$205", "$235"],
+    "Experience the luxury of Spotless Detailing's Ultimate Interior service. We use the latest techniques and top-of-the-line products to give your car a deep clean and protect it from the elements. Our detailing technicians are highly trained and experienced in providing superior service, making sure your car looks and feels like new. Schedule an appointment today and let us turn your car into a masterpiece.",
+  price: ["$205", "$230", "$255"],
   carsSize: carTypes,
-  duration: ["3 hours", "3 hours 30 mins", "4 hours"],
-  background: " ",
-};
-
-export const baseDetail = {
-  title: "Base Detailing",
-  type: "Full Detailing",
-  image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.jpeg",
-  alt: "Base Detailing Services in Raleigh | Spotless Detailing.",
-  exteriorServices: [
-    { text: "Vehicle Hand Washed" },
-    { text: "Gas Cap and Valve Cleaned" },
-    { text: "Bodywork Air Dried and Finished with Towel" },
-    { text: "Windows Cleaned" },
-    { text: "Door Jambs Cleaned" },
-    { text: "Tires & Wheels Cleaned" },
-    { text: "Tire Shine Applied" },
-  ],
-  interiorServices: [
-    { text: "Carpet Vacuumed" },
-    { text: "Floor Mats Shaampooed" },
-    { text: "Fabric Seats Vacuumed" },
-    { text: "Leather Seats Wiped" },
-    { text: "Door Panels Cleaned" },
-    { text: "Interior Surfaces & Plastics Claned" },
-    { text: "Cup Holders Cleaned" },
-    { text: "Glasses & Mirrors Cleaned" },
-  ],
-  price: ["$145", "$175", "195"],
-  carsSize: carTypes,
-  link: BASE_DETAILING_PATH,
-  shortDescription:
-    "This service includes a thorough exterior and interior detailing. Includes: Hand wash and dry of body and wheels, tire shine, interior vacuum, shampooed mats, doors and jambs wiping, seats, interior surfaces and plastics wiping, and spotless glass and mirrors. \nFrom $145. Up to 3 hours 30 mins.",
-  description:
-    "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.",
   duration: ["2 hours 30 mins", "3 hours", "3 hours 30 mins"],
   background: " ",
 };
 
-export const completeDetail = {
-  title: "Complete Detailing",
+export const maintenanceFullDetail = {
+  title: "Maintenance Detailing",
+  type: "Full Detailing",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.jpeg",
+  alt: "Maintenance Full Detailing Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: [
+    { text: "Vehicle Hand Washed" },
+    { text: "Gas Cap Cleaned" },
+    { text: "Tires & Wheels Cleaned" },
+    { text: "Tire Shine Applied" },
+    { text: "Bodywork Air Dried and Finished with Towel" },
+    { text: "Windows Cleaned" },
+  ],
+  interiorServices: [
+    { text: "Carpet & Mats Vacuumed" },
+    { text: "Fabric Seats Vacuumed" },
+    { text: "Leather Seats Wiped" },
+    { text: "Door Panels & Jambs Cleaned" },
+    { text: "Interior Surfaces & Plastics Cleaned" },
+    { text: "Cup Holders Cleaned" },
+    { text: "Glasses & Mirrors Cleaned" },
+  ],
+  price: ["$155", "$175", "$195"],
+  carsSize: carTypes,
+  link: MAINTENANCE_FULL_DETAILING_PATH,
+  shortDescription:
+    "This service designed as maintenance detailing for cars which was detailed not more that 4 weeks ago. Includes: Hand wash and dry of body and wheels, tire shine, interior vacuum, cleaned mats, doors and jambs wiping, seats, interior surfaces and plastics wiping, and spotless glass and mirrors. \nFrom $155. Up to 2.5 hours.",
+  description:
+    "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.",
+  duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
+  background: " ",
+};
+
+export const expressFullDetail = {
+  title: "Express Detail",
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_243325383.jpeg",
-  alt: "Complete Detailing Services in Raleigh | Spotless Detailing.",
-  exteriorServices: washAndWax.exteriorServices,
-  interiorServices: wipeAndClean.interiorServices,
-  price: ["$195", "$225", "$245"],
+  alt: "Express Full Detailing Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: expressExterior.exteriorServices,
+  interiorServices: expressInterior.interiorServices,
+  price: ["$225", "$250", "$275"],
   carsSize: carTypes,
-  link: COMPLETE_DETAILING_PATH,
-  shortDescription:
-    "This service includes a complete exterior and interior detailing with the following protection. Includes: Base Detailing and in addition clay bar decontamination, premium wax protection, vents, cracks & crevices, trunk jambs, trunk vacuum and cleaning. \nFrom $195. Up to 5 hours.",
+  link: EXPRESS_FULL_DETAILING_PATH,
+  shortDescription: `Professional-grade detailing without the wait with Spotless Detailing’s Express Full Detail Package. \n\nFrom $215. Up to 4.5 hours.`,
   description:
-    "After a complete hand wash and dry of the paintwork, including the gas cap and valve, we clean tires and wheels are spotless. We follow with a clay bar treatment to decontaminate the paint and apply a premium wax for lasting protection. Finally, the windows are treated with a water repellent for clarity. We vacuum the interior and trunk, shampoo the mats, and clean the door panels and jambs. Using steam, we sanitize the fabric or leather seats and touch points to eliminate germs and bacteria. The surfaces, plastics, and cup holders get a deep clean, and we finish with spotless glass and mirrors.",
-  duration: ["4 hours", "4 hours 30 mins", "5 hours"],
+    "Experience the Ultimate Car Care with Spotless Detailing’s Express Full Detail! This luxurious service includes a complete interior and exterior cleaning, deep vacuum, hand wax, and more—all done in just 3-4 hours! Get your car looking its absolute best with our professional team giving it the attention it truly deserves.",
+  duration: ["4 hours", "4 hours 15 mins", "4 hours 30 mins"],
   background: "gray",
-  bestValue: "Most Popular",
 };
 
-export const deepClean = {
-  title: "Deep Cleaning",
+export const ultimateFullDetail = {
+  title: "Ultimate Detail",
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/pexels-khunkorn-laowisit-1359149-5233285.jpg",
-  alt: "Deep Cleaning Services in Raleigh | Spotless Detailing.",
-  exteriorServices: shineAndShield.exteriorServices,
-  interiorServices: steamAndGuard.interiorServices,
-  price: ["$295", "$325", "$345"],
+  alt: "Ultimate Full Detailing Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: ultimateExterior.exteriorServices,
+  interiorServices: ultimateInterior.interiorServices,
+  price: ["$355", "$385", "$415"],
   carsSize: carTypes,
-  link: DEEP_CLEANING_PATH,
+  link: ULTIMATE_FULL_DETAILING_PATH,
   shortDescription:
-    "Our most comprehensive detailing package for your vehicle. Includes: Complete Detailing and in addition addition chemical decontamination, bug & target removal, exterior plastic dressing, Ultra Ceramic Sealant application, interior and trunk steam cleaning, and interior conditioning and UV protection. \nFrom $295. Up to 7 hours.",
+    "Complete car rejuvenation, exterior and interior detailing, top-of-the-line products. \n\nFrom $355. Up to 7 hours.",
   description:
-    "We begin with a full hand wash and dry, including detailed cleaning of the gas cap and valve, followed by spotless tires and wheels. After protecting the windows, we perform a clay bar treatment and iron decontamination. We finish with a premium wax application for gloss and protection. We vacuum and steam the interior, carpets, and trunk. Door panels, seats, vents, and surfaces receive a thorough cleaning with steam, followed by conditioning and UV protection. We ensure the glass and mirrors are spotless, leaving your vehicle looking polished.* Excessive pet hair or sand may require additional service.",
-  duration: ["6 hours", "6 hours 30 mins", "7 hours "],
+    "Complete car rejuvenation, exterior and interior detailing, top-of-the-line products. Experience the executive car rejuvenation with Spotless Detailing's Ultimate Full Detail. This top-of-the-line service includes exterior and interior detailing to bring your car back to showroom-quality shine. Our technicians use only the best products and ensure every square inch of your car is looking its best.",
+  duration: ["6 hours", "6 hours 30 mins", "7 hours"],
   background: "bg-gray",
-  bestValue: "Best Value",
 };
 
-// export const baseWash = {
-//   title: "Base Wash",
-//   type: "Exterior Service",
-//   image: regularExteriorWashImage,
-//   exteriorServices: [
-//     "Vehicle Hand Washed & Dried",
-//     "Door Jambs Cleaned",
-//     "Gas Cap and Valve Cleaned",
-//     "Tires & Wheels Cleaned",
-//     "Tire Shine Applied",
-//     "Windows Cleaned",
-//   ],
-//   price: ["$60", "$80", "$100"],
-//   carsSize: carTypes,
-//   link: BASE_WASH_PATH,
-//   description:
-//     "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve, and clean the door jambs. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish.",
-//   duration: ["45 mins", "1 hour", "1 hour 15 mins"],
-//   background: " ",
-// };
+export const exteriorDetailingServices = [expressExterior, ultimateExterior];
+export const interiorDetailingServices = [expressInterior, ultimateInterior];
+export const fullDetailingServices = [expressFullDetail, ultimateFullDetail];
 
-// export const baseClean = {
-//   title: "Base Clean",
-//   type: "Interior Service",
-//   image: regularInteriorWashImage,
-//   interiorServices: [
-//     "Interior & Floor Mats Vacuumed",
-//     "Leather Seats Wiped",
-//     "Door Panels & Jambs Cleaned",
-//     "Surfaces & Plastics Cleaned",
-//     "Vents, Cracks & Crevices Cleaned",
-//     "Cup Holders Cleaned",
-//     "Glasses & Mirrors Cleaned",
-//   ],
-//   link: BASE_CLEAN_PATH,
-//   description:
-//     "We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.\n\n",
-//   price: ["$80", "$100", "$120"],
-//   carsSize: carTypes,
-//   duration: ["1 hour", "1 hour 30 mins", "2 hours"],
-// };
+export const ceramicCoatingServices = [ceramicCoating];
 
-export const exteriorDetailingServices = [
-  // baseWash,
-  washAndWax,
-  shineAndShield,
+export const mobileDetailingServices = [
+  expressExterior,
+  expressInterior,
+  expressFullDetail,
+  ultimateExterior,
+  ultimateInterior,
+  ultimateFullDetail,
 ];
-export const interiorDetailingServices = [
-  // baseClean,
-  wipeAndClean,
-  steamAndGuard,
-];
-export const fullDetailingServices = [baseDetail, completeDetail, deepClean];
 
-export const ceramicCoatingService = [ceramicCoating];
+export const mobileDetailingService = {
+  title: "Mobile Detailing",
+  shortDescription:
+    "Mobile detailing is a fast and convenient way to keep your car looking its best. Professional auto detailing techs will come to your home or office in Raleigh and detail your car using premium products that will make it look like new again.",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.jpeg",
+  link: MOBILE_DETAILING_PATH,
+  options: mobileDetailingServices,
+};
+
+export const ceramicCoatingService = {
+  title: "Ceramic Coating",
+  shortDescription:
+    "Ceramic coatings are a durable, long lasting form of paint protection that can be applied to your vehicle's clear coat finish. These materials provide more gloss than waxes and sealants while also providing an additional layer to better protect your cars paint and clear coat.",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
+  link: CERAMIC_COATING_PATH,
+  options: ceramicCoatingServices,
+};
 
 export const exteriorDetailingService = {
   title: "Exterior Detailing",
@@ -338,7 +299,7 @@ export const interiorDetailingService = {
 };
 
 export const fullDetailingService = {
-  title: "Full Detailing",
+  title: "Full Car Detailing",
   description:
     "Our full detailing packages include a thorough hand wash, decontamination, deep cleaning, vacuuming, and upholstery care, leaving your exterior and interior both shining, and comfortable.",
   image:
@@ -347,34 +308,16 @@ export const fullDetailingService = {
   options: fullDetailingServices,
 };
 
-export const biWeekly = {
-  title: "Bi-Weekly",
-  service: [
-    "For those who demand their vehicle always looksimmaculate, with a full detail every two weeks with the best price.",
-  ],
-  package: [
-    "Regular wash",
-    "Essential Detail",
-    "Prime Detail",
-    "Ultimate Detail",
-  ],
-  prices: ["x", "from $150", "from $225", "from $300"],
-  discount: ["from $90", "from $120", "from $180", "from $240"],
-};
+export const detailingServices = [
+  // exteriorDetailingService,
+  // interiorDetailingService,
+  // fullDetailingService,
+  mobileDetailingService,
+  ceramicCoatingService,
+];
 
-export const monthly = {
-  title: "Monthly",
-  service: [
-    "Perfect for those who want a consistently clean ride, with a monthly full detail at a discounted rate.",
-  ],
-  package: ["Regular wash", "Essential Detail", "Prime Detail", "U Detail"],
-  prices: ["x", "from $150", "from $225", "from $300"],
-  discount: ["from $90", "from $135", "from $200", "from $270"],
-};
-export const membershipBenefits = [
-  "Regular Detailing: Enjoy scheduled detailing services tailored to your needs, ensuring your vehicle stays in prime condition.",
-  "Exclusive Discounts: Members receive up to 20% off all detailing services and 10% off for family members, including premium upgrades and special treatments.",
-  "Priority Scheduling: Get priority booking to fit detailing into your busy schedule, so your car always shines when you need it to.",
-  "Monthly Service: Get your vehicle serviced every month, with a monthly detail at a discounted rate.",
-  // "Bonus Perks: Receive complimentary add-ons like tire shine, interior fragrance, or seasonal protection services",
+export const detailingPackages = [
+  exteriorDetailingService,
+  interiorDetailingService,
+  fullDetailingService,
 ];

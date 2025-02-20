@@ -51,7 +51,6 @@ const CeramicCoating = () => {
               singleService
               duration={service.duration}
               link={service.link}
-              bestValue={service.bestValue}
             />
           </article>
         </section>

@@ -13,7 +13,7 @@ const GoogleMap = () => {
   }, []);
 
   return (
-    <div className="w-full mt-10">
+    <div id="google_map" className="w-full mt-10">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="pr-0 md:pr-2">
           <h4 className="p-0 pb-1">Unparalleled Convenience</h4>

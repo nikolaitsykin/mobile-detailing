@@ -1,39 +1,48 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { businessName } from "../../../utils/data";
-import { fullDetailingServices } from "../../../utils/detailingPackages";
+import {
+  exteriorDetailingServices,
+  mobileDetailingService,
+} from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
-import Card from "../../Card";
+import ServiceItem from "../../ServiceItem";
 
-const MobileFullDetailing = () => {
-
+const CeramicCoating = () => {
   return (
-    <div id="full-detailing" className="w-full z-20 bg-white font-poppins">
+    <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black">
         <img
           loading="lazy"
           className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
-          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.jpeg"
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_397247724.jpeg"
           alt="Auto detailing"
         />
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className=" text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Mobile Exterior & Interior Detailing
+            Ceramic Coating and Paint Correction in Raleigh, NC
           </h1>
         </div>
       </div>
       <section>
         <article className=" text-start text-black">
-          <h2 className="">Mobile Exterior & Interior Detailing</h2>
-          <p>
-            Washing a car might seem simple, but achieving a flawless finish
-            requires more than just a quick rinse. We take detailing to the next
-            level, both inside and out. Our advanced washing and drying
-            techniques go beyond removing everyday dirt, grime, bird droppings,
-            and dust—while minimizing surface scratches.
+          <h2 className="">
+            Advanced Nano-Ceramic Coating: The Future of Car Protection
+          </h2>
+          <p className="">
+            What is Ceramic Coating? Ceramic coating is made from nano-ceramic
+            particles that form a chemical bond with your car’s paintwork,
+            creating a protective layer that is resistant to scratches, chips,
+            and all sorts of damage. And the best part? It lasts for years
+            without needing to be reapplied, which means less time and money
+            spent on waxing and polishing your ride. ​ We offer top-of-the-line
+            auto ceramic coating services that protect your car’s exterior. Our
+            ceramic coating is made up of nano-ceramic particles that form a
+            strong bond with your car’s paint, providing long-lasting protection
+            against scratches, chips, UV rays, and other forms of damage.
             <br />
             <br />
             Inside, we use only safe, eco-friendly detergents, ensuring that
@@ -47,40 +56,25 @@ const MobileFullDetailing = () => {
         </article>
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 id="full-detailing" className="">
-          Full Detailing Services
+        <h2 id="exterior-detailing" className="">
+          Mobile Detailing Services
         </h2>
-        {fullDetailingServices.map((item, index) => (
-          <Card
-            key={index}
-            title={item.title}
-            type={item.type}
-            service={item}
-            image={item.image}
-            description={item.description}
-            services={item.services}
-            exteriorServices={item.exteriorServices}
-            interiorServices={item.interiorServices}
-            duration={item.duration}
-            link={item.link}
-            button={"Get Started"}
-            background={item.background}
-          />
-        ))}
-        <Outlet />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+          {mobileDetailingService.map((item, index) => (
+            <ServiceItem key={index} props={item} />
+          ))}
+          <Outlet />
+        </div>
       </section>
-      <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 className="">Addons</h2>
-        <Addons full />
-      </section>
-      <div
-        id="booking"
-        className="scroll-mb-[850px] sm:scroll-mb-[800px] md:scroll-mb-[750px]"
-      ></div>
+      <div id="booking" className="scroll-mb-[750px]"></div>
       <Booking />
+      <section className="w-[90%] md:w-[80%] mx-auto">
+        <h2>{exteriorDetailingServices[0].type.split(" ")[0]} Addons</h2>
+        <Addons type={exteriorDetailingServices[0].type} />
+      </section>
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article className=" w-full flex flex-col justify-center">
-          <h2 id="how-we-do-it" className="">
+          <h2 id="how-we-do-it">
             Say Goodbye to Mess and Hello to a Healthier, Cleaner Car with
             Eco-Friendly Detailing
           </h2>
@@ -100,4 +94,4 @@ const MobileFullDetailing = () => {
   );
 };
 
-export default MobileFullDetailing;
+export default CeramicCoating;

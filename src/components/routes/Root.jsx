@@ -4,7 +4,6 @@ import { localAreas } from "../../utils/data";
 import About from "../About";
 import ContactForm from "../ContactForm";
 import Hero from "../Hero";
-import Promos from "../Promos";
 
 const Root = () => {
   const location = useLocation();
@@ -25,9 +24,6 @@ const Root = () => {
       <div className="z-100">
         <div>
           <Hero city={currentCity} />
-        </div>
-        <div className="w-[90%] md:w-[80%] mx-auto bg-white">
-          <Promos />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto bg-white">
           <ContactForm />

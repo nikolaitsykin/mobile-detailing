@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { DEEP_CLEANING_PATH } from "../../../../utils/constants";
+import { ULTIMATE_FULL_DETAILING_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
-import { steamAndGuard } from "../../../../utils/detailingPackages";
+import { ultimateInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -10,8 +10,8 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
-const SteamAndGuard = () => {
-  const service = steamAndGuard;
+const UltimateInterior = () => {
+  const service = ultimateInterior;
 
   return (
     <div
@@ -24,15 +24,14 @@ const SteamAndGuard = () => {
         </h1>
       </div>
       <div className="mx-auto">
-        <section className="mt-12">
+        <section className="">
           <article className=" text-start text-black">
-            <h3 className="text-center mb-10">
-              Restore your car’s beauty with our professional interior detailing
-              services.
+            <h3 className="text-center mx-auto my-5 max-w-5xl">
+            Experience the luxury of Top Star Detailing's Executive Interior service.
             </h3>
             <Card
-              title={service.title}
-              type={service.type}
+              // title={service.title}
+              // type={service.type}
               service={service}
               services={service.services}
               description={service.description}
@@ -41,7 +40,6 @@ const SteamAndGuard = () => {
               singleService
               duration={service.duration}
               link={service.link}
-              bestValue={service.bestValue}
             />
           </article>
         </section>
@@ -67,9 +65,9 @@ const SteamAndGuard = () => {
               <Link
                 target={"_blank"}
                 className="underline text-blue font-semibold"
-                to={DEEP_CLEANING_PATH}
+                to={ULTIMATE_FULL_DETAILING_PATH}
               >
-                Deep Cleaning
+                Ultimate Full Detailing
               </Link>{" "}
               Full Detailing Package, which adds thorough exterior wash, wheels
               & wheel wells cleaning, black exterior plastics restoration, clay
@@ -98,4 +96,4 @@ const SteamAndGuard = () => {
   );
 };
 
-export default SteamAndGuard;
+export default UltimateInterior;

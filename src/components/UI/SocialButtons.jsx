@@ -8,13 +8,11 @@ import {
   FACEBOOK_URL,
   GOOGLE_BUSINESS_URL,
   INSTAGRAM_URL,
-  TIKTOK_URL,
-  YOUTUBE_URL,
 } from "../../utils/constants";
 
 const SocialButtons = () => {
   return (
-    <div className="w-32 xs:w-40 md:min-w-48 flex justify-start items-center gap-4">
+    <div className=" flex items-center gap-4">
       <Link to={FACEBOOK_URL} target="_blank">
         <Facebook />
       </Link>

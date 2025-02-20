@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from "./Card";
 import Button from "./UI/Button";
-import Menu from "./UI/Menu";
+import PriceTabs from "./UI/PriceTabs";
 const Package = ({ packageType }) => {
   return (
     <div className="w-full text-black mx-auto border border-gray">
@@ -10,7 +10,7 @@ const Package = ({ packageType }) => {
         <h3 className=" text-center py-6">{packageType.title}</h3>
       </div>
       <div>
-        <Menu service={packageType} />
+        <PriceTabs service={packageType} />
       </div>
       <div className="flex justify-center items-center md:items-start flex-col md:flex-row">
         <Card

@@ -15,7 +15,7 @@ const Button = ({ children, color, onClick, type, border, header, width }) => {
   return (
     <div className="flex justify-center items-center w-full ">
       <button
-        className={`tracking-widest text-sm md:text-base ${border} shadow rounded-sm
+        className={`tracking-widest text-sm md:text-base ${border} shadow rounded-md
           ${header ? "w-32 h-8 md:h-10 lg:w-40" : width} ${
           width ? width : "w-40"
         } h-10 flex justify-center items-center

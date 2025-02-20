@@ -11,7 +11,7 @@ const GoogleReview = () => {
   const stars = Array.from({ length: 5 }, (_, index) => <Star key={index} />);
 
   return (
-    <div>
+    <div id="google_reviews">
       <h2 className="pb-10">What our customers say</h2>
       <div className="w-full flex justify-between">
         <div>

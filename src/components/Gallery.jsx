@@ -32,7 +32,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="w-full mb-12">
+    <div id="gallery" className="w-full mb-12">
       <h2 className="text-center text-black pt-0">Our work</h2>
       <Slider {...settings} className="w-full pt-5">
         {galleyImages.map((item, index) => (

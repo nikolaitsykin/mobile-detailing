@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as ArrowDown } from "../../assets/icons/arrow_down_icon.svg";
 import {
-  ceramicCoatingService,
+  ceramicCoatingServices,
   exteriorDetailingServices,
   fullDetailingServices,
   interiorDetailingServices,
@@ -21,7 +21,7 @@ const Dropdown = ({ title, closeMenu }) => {
       onMouseLeave={() => setIsDropdownOpen(false)}
     >
       <button
-        className="flex justify-center items-center  text-gray focus:text-white hover:text-white  h-12 text-md m-0 px-3 fill-gray hover:fill-white"
+        className="ml-5 md:ml-2  h-12 flex justify-center md:items-start items-center text-gray focus:text-white hover:text-white text-md md:m-0 px-2 fill-gray hover:fill-white"
         type="button"
       >
         {title}
@@ -29,7 +29,7 @@ const Dropdown = ({ title, closeMenu }) => {
       </button>
       <ul
         className={`${isDropdownOpen ? "block" : "hidden"} 
-            z-10 flex-col absolute bg-black w-38 md:w-48 shadow-lg ml-20 -mt-12 md:m-0 px-1`}
+            z-10 flex-col absolute bg-black w-38 md:w-48 shadow-lg ml-28 -mt-12 md:-mt-4 md:ml-2 `}
       >
         <DropdownList
           options={exteriorDetailingServices}
@@ -47,7 +47,7 @@ const Dropdown = ({ title, closeMenu }) => {
           closeMenu={closeMenu}
         />
         <DropdownList
-          options={ceramicCoatingService}
+          options={ceramicCoatingServices}
           closeDropdown={closeDropdown}
           closeMenu={closeMenu}
         />

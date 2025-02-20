@@ -11,10 +11,12 @@ const ServicesPage = () => {
       <Banner
         image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.jpeg"
         header="Services"
+        alt={"Mobile Detailing Service Technician performing car detailing | Spotless Auto Detailing"}
+
       />
       <section className="w-[90%] md:w-[80%] mx-auto">
         <article className="">
-          <h3 id="services" className="text-xl text-center">
+          <h3 id="services" className="text-2xl text-center m-10">
             What we offer
           </h3>
           <p>
@@ -29,7 +31,7 @@ const ServicesPage = () => {
             do our best to accommodate your needs and fit you into our schedule.
           </p>
 
-          <h3 id="services" className="text-center text-xl">
+          <h3 id="services" className="text-center text-2xl m-10">
             Comprehensive Car Detailing Services – From Full Interior Cleaning
             to Exterior Shine & Protection
           </h3>

@@ -251,6 +251,7 @@ const ContactForm = () => {
                   "Base Detailing",
                   "Complete Detailing",
                   "Deep Cleaning",
+                  "Winter Special Detailing",
                   "Ceramic Coating",
                 ]}
                 value={values.serviceOne}
@@ -299,7 +300,7 @@ const ContactForm = () => {
                   "Engine Detailing",
                   "Excessice Hair/Sand Removal",
                   "Seats/Carpet Shampoo",
-                  "Ceramic Coating",
+                  "Ceramic Sealant",
                 ]}
                 value={values.addonOne}
               />
@@ -311,7 +312,7 @@ const ContactForm = () => {
                   "Engine Detailing",
                   "Excessice Hair/Sand Removal",
                   "Seats/Carpet Shampoo",
-                  "Ceramic Coating",
+                  "Ceramic Sealant",
                 ]}
                 value={values.addonTwo}
               />
@@ -323,7 +324,7 @@ const ContactForm = () => {
                   "Engine Detailing",
                   "Excessice Hair/Sand Removal",
                   "Seats/Carpet Shampoo",
-                  "Ceramic Coating",
+                  "Ceramic Sealant",
                 ]}
                 value={values.addonThree}
               />

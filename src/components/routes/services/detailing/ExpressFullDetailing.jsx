@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CERAMIC_COATING_PATH } from "../../../../utils/constants";
-import { deepClean } from "../../../../utils/detailingPackages";
+import { ULTIMATE_FULL_DETAILING_PATH } from "../../../../utils/constants";
+import { expressFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -9,8 +9,8 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
-const DeepCleaning = () => {
-  const service = deepClean;
+const ExpressFullDetailing = () => {
+  const service = expressFullDetail;
 
   return (
     <div
@@ -23,26 +23,25 @@ const DeepCleaning = () => {
         </h1>
       </div>
       <div className="mx-auto">
-        <section className="mt-12">
+        <section className="">
           <article className=" text-start text-black">
-            <h3 className="text-center mb-10">
-              Restore your car’s beauty with our professional full exterior and
-              interior detailing services.
+            <h3 className="text-center mx-auto my-5 max-w-5xl">
+              Professional-grade detailing without the wait with Spotless
+              Detailing’s Express Full Detail Package.
             </h3>
             <Card
-              title={service.title}
-              type={service.type}
+              // title={service.title}
+              // type={service.type}
               service={service}
-              steps={service.steps}
               services={service.services}
               description={service.description}
               exteriorServices={service.exteriorServices}
               interiorServices={service.interiorServices}
+              steps={service.steps}
               image={service.image}
               singleService
               duration={service.duration}
               link={service.link}
-              bestValue={service.bestValue}
             />
           </article>
         </section>
@@ -58,34 +57,39 @@ const DeepCleaning = () => {
               feel less inviting.
               <br />
               <br />
-              Our Full Exterior package is all about quality. While we may not
-              be the cheapest option, we offer exceptional value for our price.
-              We don’t just "wash" your car—our detailing brings out a rich,
-              long-lasting shine using premium products and meticulous
-              attention, ensuring your car looks and feels its absolute best.
-              Want more protection? Upgrade to{" "}
-              <Link
-                target={"_blank"}
-                className="underline text-blue font-semibold"
-                to={CERAMIC_COATING_PATH}
-              >
-                18 Months Ceramic Coating
-              </Link>{" "}
-              application for just $75.
-              <br />
+              Our Full Exterior and Interior Detailing package is all about
+              quality. While we may not be the cheapest option, we offer
+              exceptional value for our price. We don’t just "wash" your car—our
+              detailing brings out a rich, long-lasting shine using premium
+              products and meticulous attention, ensuring your car looks and
+              feels its absolute best. <br />
               <br />
               Our skilled team handles it all, from dirt, grime, bird droppings,
               and bug stains on the exterior to dust, pet hair, and tough stains
               inside, leaving your car looking its absolute best.
               <br />
               <br />
+              If you’re ready to take your car’s shine to the next level, try
+              our{" "}
+              <Link
+                target={"_blank"}
+                className="underline text-blue font-semibold"
+                to={ULTIMATE_FULL_DETAILING_PATH}
+              >
+                Ultimate Full Detailing
+              </Link>{" "}
+              exterior service, which adds clay bar treatment, gloss enhancement
+              and ceramic coating application for up to 6 month of protection
+              for exterior services and full vacuuming, steam cleaning,
+              conditioning and UV protection to interior services. Book now for
+              an exterior car wash experience that truly stands out!
             </p>
           </div>
         </section>
         <div className=" w-[90%] md:w-[80%] mx-auto">
           <ContactForm />
         </div>
-        <div className="w-[90%] md:w-[80%] mx-auto">
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
@@ -102,4 +106,4 @@ const DeepCleaning = () => {
   );
 };
 
-export default DeepCleaning;
+export default ExpressFullDetailing;

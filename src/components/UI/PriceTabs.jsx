@@ -3,7 +3,7 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { carsSizes } from "../../utils/detailingPackages";
 
-const Menu = ({ service, singleService }) => {
+const PriceTabs = ({ service, singleService }) => {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
@@ -60,4 +60,4 @@ const Menu = ({ service, singleService }) => {
   );
 };
 
-export default Menu;
+export default PriceTabs;

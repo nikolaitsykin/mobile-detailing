@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { DEEP_CLEANING_PATH } from "../../../../utils/constants";
-import { shineAndShield } from "../../../../utils/detailingPackages";
+import { ULTIMATE_FULL_DETAILING_PATH } from "../../../../utils/constants";
+import { ultimateExterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -9,8 +9,8 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
-const ShineAndShield = () => {
-  const service = shineAndShield;
+const UltimateExterior = () => {
+  const service = ultimateExterior;
 
   return (
     <div
@@ -23,15 +23,15 @@ const ShineAndShield = () => {
         </h1>
       </div>
       <div className="mx-auto">
-        <section className="mt-12">
+        <section className="">
           <article className=" text-start text-black">
-            <h3 className="text-center mb-10">
-              Restore your car’s beauty with our professional exterior detailing
-              services.
+            <h3 className="text-center mx-auto my-5 max-w-5xl">
+              Get your car looking like new again with Spotless Detailing’s
+              Ultimate Exterior service.
             </h3>
             <Card
-              title={service.title}
-              type={service.type}
+              // title={service.title}
+              // type={service.type}
               service={service}
               steps={service.steps}
               image={service.image}
@@ -41,7 +41,6 @@ const ShineAndShield = () => {
               singleService
               duration={service.duration}
               link={service.link}
-              bestValue={service.bestValue}
             />
           </article>
         </section>
@@ -69,9 +68,9 @@ const ShineAndShield = () => {
               <Link
                 target={"_blank"}
                 className="underline text-blue font-semibold"
-                to={DEEP_CLEANING_PATH}
+                to={ULTIMATE_FULL_DETAILING_PATH}
               >
-                Deep Cleaning
+                Ultimate Full Detailing
               </Link>{" "}
               full detailing package, which adds deep interior vacuuming &
               cleaning, steam treatment and UV & dust protection to your car's
@@ -100,4 +99,4 @@ const ShineAndShield = () => {
   );
 };
 
-export default ShineAndShield;
+export default UltimateExterior;

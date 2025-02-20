@@ -1,7 +1,7 @@
-export const FACEBOOK_URL = "https://www.facebook.com/getspotless";
+export const FACEBOOK_URL = "https://www.facebook.com/getspotlessnow";
 export const INSTAGRAM_URL = "https://www.instagram.com/getspotlessnow/";
 export const YOUTUBE_URL = "https://www.youtube.com/@SpotlessMobileDetailing";
-export const TIKTOK_URL = "https://www.tiktok.com/@spotless.mobile.detail";
+export const TIKTOK_URL = "https://www.tiktok.com/@getspotlessnow";
 
 export const BASE_URL = "https://getspotlessnc.com";
 
@@ -16,7 +16,9 @@ export const GOOGLE_BUSINESS_URL =
   "https://www.google.com/maps/place/Spotless+Detailing:+Mobile+Auto+Detailing+%26+Ceramic+Coating/@35.723543,-78.8839443,17z/data=!4m16!1m9!3m8!1s0x2e3895aef2810335:0xf9d7593217fd03a9!2sSpotless+Detailing:+Mobile+Auto+Detailing+%26+Ceramic+Coating!8m2!3d35.723543!4d-78.8839443!9m1!1b1!16s%2Fg%2F11wh63g393!3m5!1s0x2e3895aef2810335:0xf9d7593217fd03a9!8m2!3d35.723543!4d-78.8839443!16s%2Fg%2F11wh63g393?hl=en&entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D";
 
 export const CONTACT_PATH = "/contact";
-export const FAQS_PATH = "/faqs";
+export const GIFT_CARDS_PATH =
+  "https://app.squareup.com/gift/MLZ25VXQNPSCW/order";
+export const FAQS_PATH = "/faq";
 export const SERVICES_PATH = "/services";
 export const ABOUT_PATH = "/about";
 export const HOME_PATH = "/";
@@ -38,17 +40,16 @@ export const MOBILE_FULL_DETAILING_BOOKING_PATH =
   "/mobile-full-detailing#booking";
 export const THANK_YOU_PATH = "/thank-you";
 
-export const BASE_WASH_PATH = "/base-wash";
-export const WASH_AND_WAX_PATH = "/wash-and-wax";
-export const SHINE_AND_SHIELD_PATH = "/shine-and-shield";
 
-export const BASE_CLEAN_PATH = "/base-clean";
-export const WIPE_AND_CLEAN_PATH = "/wipe-and-clean";
-export const STEAM_AND_GUARD_PATH = "/steam-and-guard";
+export const EXPRESS_EXTERIOR_PATH = "/express-exterior";
+export const ULTIMATE_EXTERIOR_PATH = "/ultimate-exterior";
 
-export const BASE_DETAILING_PATH = "/base-detailing";
-export const DEEP_CLEANING_PATH = "/deep-cleaning";
-export const COMPLETE_DETAILING_PATH = "/complete-detailing";
+export const EXPRESS_INTERIOR_PATH = "/express-interior";
+export const ULTIMATE_INTERIOR_PATH = "/ultimate-interior";
+
+export const MAINTENANCE_FULL_DETAILING_PATH = "/maintenance-full-detailing";
+export const ULTIMATE_FULL_DETAILING_PATH = "/ultimate-full-detailing";
+export const EXPRESS_FULL_DETAILING_PATH = "/express-full-detailing";
 
 export const CERAMIC_COATING_PATH = "/ceramic-coating";
 

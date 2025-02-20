@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { currentYear } from "../utils/helpers";
 import {
   businessAddress,
   businessHours,
@@ -101,7 +102,7 @@ const Footer = () => {
           </div>
           <div className="basis-1/2 xs:basis-auto">
             <p className="text-gray text-sm md:text-base">
-              &copy; 2024 {fullBusinessName}. All rights reserved.
+              &copy; {currentYear} {fullBusinessName}. All rights reserved.
             </p>
           </div>
         </div>
