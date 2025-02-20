@@ -3,17 +3,26 @@ import { Link } from "react-router-dom";
 import {
   BOOKING_URL,
   CALL_NUMBER,
-  CONTACT_PATH
+  CONTACT_PATH,
+  FAQS_PATH
 } from "../../../utils/constants";
 import { autoDetailingQuestions, generalQuestions } from "../../../utils/faq";
 import Banner from "../../Banner";
 import FaqItem from "../../FaqItem";
+import SEO from "../../SEO";
 import BookButtons from "../../UI/BookButtons";
 
 const FAQs = () => {
 
   return (
     <div id="faq" className="w-full z-20 bg-white font-poppins">
+      <SEO
+        type="FAQPage"
+        name="FAQs | Spotless Auto Detailing - Your Questions Answered"
+        title="Contact Us | Spotless Auto Detailing in Raleigh, NC"
+        description="Find answers to common questions about mobile detailing, ceramic coating, pricing, and service areas in Raleigh. Learn more about Spotless Auto Detailing."
+        canonical={FAQS_PATH}
+      />
       <Banner
         image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_399584907.jpeg"
         header="FAQ"

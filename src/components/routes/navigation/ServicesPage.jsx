@@ -1,18 +1,27 @@
 import React from "react";
+import { SERVICES_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
 import { sustainability } from "../../../utils/sustainability";
 import Banner from "../../Banner";
+import SEO from "../../SEO";
 import Services from "../../Services";
 
 const ServicesPage = () => {
-
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
+      <SEO
+        type="ServicesPage"
+        name="Our Mobile Detailing Services"
+        title="Our Services | Mobile Car Detailing in Raleigh, NC"
+        description="Explore Spotless Auto Detailing’s range of services, including interior detailing, exterior detailing, ceramic coating, and mobile car care in Raleigh."
+        canonical={SERVICES_PATH}
+      />
       <Banner
         image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.jpeg"
         header="Services"
-        alt={"Mobile Detailing Service Technician performing car detailing | Spotless Auto Detailing"}
-
+        alt={
+          "Mobile Detailing Service Technician performing car detailing | Spotless Auto Detailing"
+        }
       />
       <section className="w-[90%] md:w-[80%] mx-auto">
         <article className="">

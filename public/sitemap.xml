@@ -11,6 +11,16 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://getspotlessnc.com/mobile-detailing</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://getspotlessnc.com/ceramic-coating</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://getspotlessnc.com/about</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -26,37 +36,32 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://getspotlessnc.com/base-detailing</loc>
+        <loc>https://getspotlessnc.com/express-exterior</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://getspotlessnc.com/wash-and-wax</loc>
+        <loc>https://getspotlessnc.com/exrpess-interior</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://getspotlessnc.com/wipe-and-clean</loc>
+        <loc>https://getspotlessnc.com/ultimate-full-detailing</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://getspotlessnc.com/deep-cleaning</loc>
+        <loc>https://getspotlessnc.com/ultimate-exterior</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://getspotlessnc.com/shine-and-shield</loc>
+        <loc>https://getspotlessnc.com/ultimate-interior</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://getspotlessnc.com/steam-and-guard</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://getspotlessnc.com/complete-detailing</loc>
+        <loc>https://getspotlessnc.com/express-full-detailing</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>

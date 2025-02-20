@@ -1,19 +1,26 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { MOBILE_DETAILING_PATH } from "../../../utils/constants";
 import {
-    detailingPackages,
-    detailingServices,
   exteriorDetailingServices,
   mobileDetailingServices,
 } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
+import SEO from "../../SEO";
 import ServiceItem from "../../ServiceItem";
-import ServiceTabs from "../../UI/ServiceTabs";
 
 const MobileDetailing = () => {
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
+      <SEO
+        title="Mobile Car Detailing in Raleigh | Spotless Auto Detailing"
+        canonical={MOBILE_DETAILING_PATH}
+        description="Get high-quality mobile car detailing at your home or office in Raleigh. Eco-friendly, professional, and convenient car care services."
+        name="Mobile Car Detailing Services"
+        type="ServicePage"
+      />
+
       <div className="w-full bg-black">
         <img
           loading="lazy"
@@ -44,8 +51,8 @@ const MobileDetailing = () => {
               <p className="text-sm lg:text-base md:pl-5">
                 If you want to ensure that your vehicle's exterior stays looking
                 pristine, then it is important for them not only be cleaned
-                regularly but also deep-cleaned on occasion. Scrapes and
-                swirls can quickly wear away at the paint job over time while
+                regularly but also deep-cleaned on occasion. Scrapes and swirls
+                can quickly wear away at the paint job over time while
                 contaminants and chemical etching will leave dark spots in
                 paint. Not to mention the strong Las Vegas sun can damage your
                 cars paint. Ensure your car looks great with exterior auto

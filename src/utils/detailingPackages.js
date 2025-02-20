@@ -37,6 +37,15 @@ const carTypes = [
   "Full-size SUVs, large trucks, and vans (e.g., Chevy Suburban, Ford F-150, Honda Odyssey)",
 ];
 
+const expressExteriorPrices = ["$125", "$140", "$155"];
+const expressInteriorPrices = ["$165", "$180", "$195"];
+const expressFullDetailPrices = ["$225", "$250", "$275"];
+const ultimateExteriorPrices = ["$155", "$170", "$185"];
+const ultimateInteriorPrices = ["$235", "$255", "$275"];
+const ultimateFullDetailPrices = ["$365", "$390", "$415"];
+const ceramicCoatingPrices = ["$350", "375", "$400"];
+
+
 export const expressExterior = {
   title: "Express Exterior",
   type: "Exterior Service",
@@ -51,7 +60,7 @@ export const expressExterior = {
     { text: "Crystal Clear Windows Cleaning" },
     { text: "Premium Wax Application" },
   ],
-  price: ["$125", "$145", "$165"],
+  price: expressExteriorPrices,
   carsSize: carTypes,
   link: EXPRESS_EXTERIOR_PATH,
   shortDescription:
@@ -80,7 +89,7 @@ export const ultimateExterior = {
     { text: "Powerful Chemical Bug & Tar Removal" },
     { text: "Ultra Ceramic Sealant (up to 6-Month Protection)" },
   ],
-  price: ["$165", "$190", "$215"],
+  price: ultimateExteriorPrices,
   carsSize: carTypes,
   link: ULTIMATE_EXTERIOR_PATH,
   shortDescription:
@@ -106,7 +115,7 @@ export const ceramicCoating = {
     { text: "Powerful Chemical Bug & Tar Removal" },
     { text: "24 months Graphene Ceramic Coating Applied" },
   ],
-  price: ["$350", "$375", "$400"],
+  price: ceramicCoatingPrices,
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   shortDescription:
@@ -138,7 +147,7 @@ export const expressInterior = {
     "Get your vehicle interior looking refreshed and shiny with Spotless Detailing’s Express Interior service.\n\nFrom $155. Up to 2.5 hours.",
   description:
     "Quickly freshen up your car's interior with Spotless Detailing's Express Interior service. Designed to get your car looking its best in no time, this service includes a thorough vacuuming of all interior surfaces, a detailed wipe-down of all plastics, leather, and vinyl, and a window cleaning. Get your car looking like new again in no time with this express service.\n\n",
-  price: ["$155", "$170", "$195"],
+  price: expressInteriorPrices,
   carsSize: carTypes,
   duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
   background: " ",
@@ -167,7 +176,7 @@ export const ultimateInterior = {
     "Experience the luxury of Spotless Detailing's Ultimate Interior service. \n\nFrom $205. Up to 4 hours.",
   description:
     "Experience the luxury of Spotless Detailing's Ultimate Interior service. We use the latest techniques and top-of-the-line products to give your car a deep clean and protect it from the elements. Our detailing technicians are highly trained and experienced in providing superior service, making sure your car looks and feels like new. Schedule an appointment today and let us turn your car into a masterpiece.",
-  price: ["$205", "$230", "$255"],
+  price: ultimateInteriorPrices,
   carsSize: carTypes,
   duration: ["2 hours 30 mins", "3 hours", "3 hours 30 mins"],
   background: " ",
@@ -215,7 +224,7 @@ export const expressFullDetail = {
   alt: "Express Full Detailing Services in Raleigh | Spotless Auto Detailing.",
   exteriorServices: expressExterior.exteriorServices,
   interiorServices: expressInterior.interiorServices,
-  price: ["$225", "$250", "$275"],
+  price: expressFullDetailPrices,
   carsSize: carTypes,
   link: EXPRESS_FULL_DETAILING_PATH,
   shortDescription: `Professional-grade detailing without the wait with Spotless Detailing’s Express Full Detail Package. \n\nFrom $215. Up to 4.5 hours.`,
@@ -233,7 +242,7 @@ export const ultimateFullDetail = {
   alt: "Ultimate Full Detailing Services in Raleigh | Spotless Auto Detailing.",
   exteriorServices: ultimateExterior.exteriorServices,
   interiorServices: ultimateInterior.interiorServices,
-  price: ["$355", "$385", "$415"],
+  price: ultimateFullDetailPrices,
   carsSize: carTypes,
   link: ULTIMATE_FULL_DETAILING_PATH,
   shortDescription:
@@ -243,6 +252,7 @@ export const ultimateFullDetail = {
   duration: ["6 hours", "6 hours 30 mins", "7 hours"],
   background: "bg-gray",
 };
+
 
 export const exteriorDetailingServices = [expressExterior, ultimateExterior];
 export const interiorDetailingServices = [expressInterior, ultimateInterior];

@@ -8,7 +8,6 @@ const Services = () => {
       id="services"
       className="w-full m-auto flex flex-col md:flex-row gap-2 mt-20"
     >
-      {/* <ServiceTabs /> */}
       {detailingServices &&
         detailingServices.map((service) => <ServiceItem props={service} />)}
     </div>

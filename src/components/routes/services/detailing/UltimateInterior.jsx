@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ULTIMATE_FULL_DETAILING_PATH } from "../../../../utils/constants";
+import { ULTIMATE_FULL_DETAILING_PATH, ULTIMATE_INTERIOR_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { ultimateInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -9,6 +9,7 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const UltimateInterior = () => {
   const service = ultimateInterior;
@@ -18,6 +19,13 @@ const UltimateInterior = () => {
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
+      <SEO
+        type="ServicesPage"
+        name="Ultimate Interior Detailing"
+        title="Ultimate Interior Car Detailing | Spotless Auto Detailing"
+        description="Deep interior detailing service with steam cleaning, stain removal, and odor elimination. The best option for a spotless and refreshed car interior."
+        canonical={ULTIMATE_INTERIOR_PATH}
+      />
       <div className="w-full bg-black h-[250px] flex justify-center items-center mx-auto text-white">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
           {service.title}{" "}
@@ -27,7 +35,8 @@ const UltimateInterior = () => {
         <section className="">
           <article className=" text-start text-black">
             <h3 className="text-center mx-auto my-5 max-w-5xl">
-            Experience the luxury of Top Star Detailing's Executive Interior service.
+              Experience the luxury of Top Star Detailing's Executive Interior
+              service.
             </h3>
             <Card
               // title={service.title}

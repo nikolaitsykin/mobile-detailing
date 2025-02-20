@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { CERAMIC_COATING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import {
   exteriorDetailingServices,
@@ -7,11 +8,20 @@ import {
 } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
+import SEO from "../../SEO";
 import ServiceItem from "../../ServiceItem";
 
 const CeramicCoating = () => {
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
+      <SEO
+        type="ServicesPage"
+        name="Ceramic Coating Protection"
+        title="Ceramic Coating Services in Raleigh | Spotless Auto Detailing"
+        description="Protect your car’s paint with our high-quality ceramic coating. Long-lasting shine, water resistance, and UV protection in Raleigh, NC."
+        canonical={CERAMIC_COATING_PATH}
+      />
+
       <div className="w-full bg-black">
         <img
           loading="lazy"

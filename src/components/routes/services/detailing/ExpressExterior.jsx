@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ULTIMATE_EXTERIOR_PATH } from "../../../../utils/constants";
+import { EXPRESS_EXTERIOR_PATH, ULTIMATE_EXTERIOR_PATH } from "../../../../utils/constants";
 import { expressExterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
@@ -8,6 +8,7 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const ExpressExterior = () => {
   const service = expressExterior;
@@ -17,6 +18,13 @@ const ExpressExterior = () => {
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
+      <SEO
+        type="ServicesPage"
+        name="Express Exterior Detailing"
+        title="Express Exterior Car Detailing | Spotless Auto Detailing"
+        description="Quick and efficient exterior car detailing in Raleigh. Our express service includes a hand wash, wax, and rim cleaning for a spotless shine."
+        canonical={EXPRESS_EXTERIOR_PATH}
+      />
       <div className="w-full bg-black h-[250px] flex justify-center items-center mx-auto text-white">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
           {service.title}
@@ -26,8 +34,7 @@ const ExpressExterior = () => {
         <section className="">
           <article className=" text-start text-black">
             <h3 className="text-center mx-auto my-5 max-w-5xl">
-              Experience the shine of a professional car detailing with Spotless
-              Detailing’s Express Exterior service..
+              {service.shortDescription}
             </h3>
             <Card
               // title={service.title}
