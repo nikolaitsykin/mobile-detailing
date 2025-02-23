@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Google } from "../assets/icons/google.svg";
 import { ReactComponent as Star } from "../assets/icons/star.svg";
-import { GOOGLE_BUSINESS_URL, GOOGLE_REVIEWS_URL } from "../utils/constants";
+import {
+  GOOGLE_BUSINESS_URL,
+  GOOGLE_REVIEWS_URL,
+  LEAVE_REVIEW_URL,
+} from "../utils/constants";
 import { reviews } from "../utils/data";
 import ReviewItem from "./ReviewItem";
 import Button from "./UI/Button";
@@ -26,10 +30,25 @@ const GoogleReview = () => {
         </div>
         <div>
           <Link target={"_blank"} to={GOOGLE_REVIEWS_URL}>
+            <span className="hidden md:block underline text-blue text-center">
+              Check out what our customers are saying on Google
+            </span>
+          </Link>
+        </div>
+        <div>
+          <Link target={"_blank"} to={LEAVE_REVIEW_URL}>
             <Button children={"Leave a review"} color={"secondary"} />
           </Link>
         </div>
       </div>
+      <div>
+        <Link target={"_blank"} to={GOOGLE_REVIEWS_URL}>
+          <span className="md:hidden block underline text-blue text-center mt-5">
+            Check out what our customers are saying on Google
+          </span>
+        </Link>
+      </div>
+
       <Link target={"_blank"} to={GOOGLE_BUSINESS_URL}>
         <div className="flex flex-col items-center justify-start sm:flex-row md:justify-between sm:items-start">
           {reviews

@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CALL_NUMBER, FAQS_PATH, SERVICES_PATH, THANK_YOU_PATH } from "../../utils/constants";
+import {
+  CALL_NUMBER,
+  FAQS_PATH,
+  SERVICES_PATH,
+  THANK_YOU_PATH,
+} from "../../utils/constants";
 import SEO from "../SEO";
 
 const ThankYouPage = () => {

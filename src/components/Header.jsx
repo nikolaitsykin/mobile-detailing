@@ -8,11 +8,10 @@ const Header = () => {
 
   return (
     <header
-      className={`font-poppins z-30 flex flex-col w-full sticky transition-all duration-300 ${
-        scrollDirection === "down" ? "-top-20 md:-top-32" : "top-0"
-      }`}
+      className={`absolute font-poppins z-30 flex flex-col w-full transition-all duration-300
+      `}
     >
-      <section className="w-full flex flex-col justify-around h-20 md:h-28 bg-black">
+      <section className="w-full flex flex-col justify-around h-20 md:h-28 bg-transparent">
         <div className="flex justify-between items-center w-full">
           <Topbar />
         </div>

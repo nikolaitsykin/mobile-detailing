@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   const navLinkStyle =
-    "ml-5 md:ml-0 flex px-2 justify-start md:justify-center md:items-start items-center text-gray focus:text-white hover:text-white w-[100%] h-10 md:h-10 md:w-full text-sm md:text-base whitespace-nowrap";
+    "ml-5 md:ml-0 flex px-2 justify-start md:justify-center md:items-start items-center text-white hover:text-gray w-[100%] h-10 md:h-10 md:w-full text-sm md:text-base whitespace-nowrap";
 
   return (
     <nav className="w-full text-white flex justify-between items-start">
@@ -57,8 +57,8 @@ const Navbar = () => {
                 to={`/${servicesLinksActual.slice(1)[index]}`}
                 className={({ isActive }) =>
                   isActive
-                    ? `text-white ${navLinkStyle}`
-                    : `text-gray ${navLinkStyle}`
+                    ? `text-gray ${navLinkStyle}`
+                    : `text-white ${navLinkStyle}`
                 }
               >
                 {link}
@@ -72,8 +72,8 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? `text-white ${navLinkStyle}`
-                  : `text-gray ${navLinkStyle}`
+                  ? `text-gray ${navLinkStyle}`
+                  : `text-white ${navLinkStyle}`
               }
               target="_blank"
               to={GIFT_CARDS_PATH}

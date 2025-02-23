@@ -1,10 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { MOBILE_DETAILING_PATH } from "../../../utils/constants";
-import {
-  exteriorDetailingServices,
-  mobileDetailingServices,
-} from "../../../utils/detailingPackages";
+import { mobileDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
 import SEO from "../../SEO";
@@ -31,9 +28,13 @@ const MobileDetailing = () => {
       </div>
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className=" text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+          <h1 className="md:w-[80%] mx-auto m-0 p-0 text-3xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             Interior & Exterior Auto Detailing in Raleigh, NC
           </h1>
+          <h3 className="m-0 p-0 text-center sm:mb-5 text-xs sm:text-sm md:text-lg sm:mt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Refresh and Restore: Premium Mobile Car Detailing in Raleigh, Cary,
+            Apex and Nearby Areas
+          </h3>
         </div>
       </div>
       <section>
@@ -49,14 +50,13 @@ const MobileDetailing = () => {
             <span className="md:w-1/2 flex flex-col justify-center">
               <h2 className="md:px-4 py-4 text-start">Exterior Detailing</h2>
               <p className="text-sm lg:text-base md:pl-5">
-                If you want to ensure that your vehicle's exterior stays looking
-                pristine, then it is important for them not only be cleaned
-                regularly but also deep-cleaned on occasion. Scrapes and swirls
-                can quickly wear away at the paint job over time while
-                contaminants and chemical etching will leave dark spots in
-                paint. Not to mention the strong Las Vegas sun can damage your
-                cars paint. Ensure your car looks great with exterior auto
-                detailing!
+                Regular cleaning is important to keep your vehicle's exterior
+                looking its best, but occasionally it needs a deeper clean to
+                remove contaminants and imperfections. Without it, your car's
+                paint job can become dull and marred by scrapes, swirls, and
+                chemical etching, while the hot sun can cause damage and fading.
+                Our exterior auto detailing services can help keep your car
+                looking like new.
               </p>
             </span>
           </div>
@@ -64,16 +64,18 @@ const MobileDetailing = () => {
             <span className="md:w-1/2 flex flex-col justify-center">
               <h2 className="py-4 text-start">Interior Detailing</h2>
               <p className="text-sm lg:text-base md:pr-5">
-                Car interiors are riddled with small cracks and crevices that
-                become dirty over time. We specialize in the most difficult to
-                reach places and will restore your interior to a level of clean
-                you never knew was possible. We'll go over every inch of your
-                interior so not one speck is left behind. With our steamers,
-                extractors as well as professional staff who are experts at
-                reconditioning, shampooing or deep cleaning any area--we have
-                everything needed for an amazing job! Protect your cars interior
-                by getting it detailed. Trust us when we say this will make
-                driving more enjoyable.
+                From crumbs and spills to dirt and grime, car interiors can
+                quickly become a mess. That's why we're dedicated to providing
+                top-notch interior detailing services that will leave your car
+                looking and feeling like new. Our team of experts will
+                thoroughly clean every inch of your interior, paying special
+                attention to those hard-to-reach areas. We'll use specialized
+                tools and equipment, such as steamers and extractors, to remove
+                even the toughest stains and odors. And, with our premium
+                cleaning products, you can trust that your car's interior will
+                be protected and preserved for years to come. Don't let a dirty
+                interior ruin your driving experience - let us help you get back
+                to enjoying the road.
               </p>
             </span>
             <span className="md:w-1/2">
@@ -97,8 +99,8 @@ const MobileDetailing = () => {
       <div id="booking" className="scroll-mb-[750px]"></div>
       <Booking />
       <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2>{exteriorDetailingServices[0].type.split(" ")[0]} Addons</h2>
-        <Addons type={exteriorDetailingServices[0].type} />
+        <h2>Additional Services</h2>
+        <Addons full />
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article className=" w-full flex flex-col justify-center">
