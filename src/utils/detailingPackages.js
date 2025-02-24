@@ -37,8 +37,8 @@ const carTypes = [
   "Full-size SUVs, large trucks, and vans (e.g., Chevy Suburban, Ford F-150, Honda Odyssey)",
 ];
 
-const expressExteriorPrices = ["$125", "$140", "$155"];
-const expressInteriorPrices = ["$165", "$180", "$195"];
+const expressExteriorPrices = ["$125", "$145", "$165"];
+const expressInteriorPrices = ["$165", "$185", "$205"];
 const expressFullDetailPrices = ["$225", "$260", "$295"];
 const ultimateExteriorPrices = ["$155", "$175", "$195"];
 const ultimateInteriorPrices = ["$235", "$255", "$275"];
