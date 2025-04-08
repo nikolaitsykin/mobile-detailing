@@ -1,6 +1,6 @@
 import React from "react";
 
-const PromoItem = ({ image }) => {
+const GalleryItem = ({ image }) => {
   return (
     <div className="h-96 w-full mx-auto relative font-poppins">
       <div>
@@ -15,4 +15,4 @@ const PromoItem = ({ image }) => {
   );
 };
 
-export default PromoItem;
+export default GalleryItem;

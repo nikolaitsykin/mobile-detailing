@@ -33,7 +33,7 @@ const Gallery = () => {
 
   return (
     <div id="gallery" className="w-full mb-12">
-      <h1 className="text-center text-black pt-0">Our work</h1>
+      <h2 className="text-center text-black pt-0">Our work</h2>
       <Slider {...settings} className="w-full pt-5">
         {galleyImages.map((item, index) => (
           <GalleryItem key={index} image={item.image} />

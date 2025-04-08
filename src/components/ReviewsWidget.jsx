@@ -16,15 +16,15 @@ const GoogleReview = () => {
 
   return (
     <div id="google_reviews">
-      <h3 className="pb-10">What our customers say</h3>
+      <h3 className="pb-10 text-center">What our customers say</h3>
       <div className="w-full flex justify-between">
         <div>
           <div className="flex items-center">
-            <Google className="mr-2" />
+            <Google className="mr-2 w-[30%] sm:w-[50%]" />
             <span>My reviews</span>
           </div>
           <div className="flex">
-            <span className="py-2 pr-2">5.0</span>
+            <span className="py-2 pr-2 font-semibold">5.0</span>
             <span className="flex">{stars}</span>
           </div>
         </div>

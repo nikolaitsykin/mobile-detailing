@@ -9,7 +9,7 @@ const TextareaField = (props) => {
         id={name}
         onChange={handleChange}
         name={name}
-        rows="8"
+        rows="6"
         className="my-1 p-2 text-black bg-light-gray w-full font-inherit text-sm"
         value={value}
         placeholder="Tell us more about your vehicle or anything important we need to know"

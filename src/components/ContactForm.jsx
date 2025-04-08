@@ -13,6 +13,8 @@ const ContactForm = () => {
   const location = useLocation();
   const heading =
     location.pathname === "/contact" ? "Tell Us About" : "Contact Us";
+  const headingClass =
+    location.pathname === "/contact" ? "text-start" : "text-center";
   const [isChecked, setIsChecked] = useState(false);
   const [values, setValues] = useState({
     fullName: "",
@@ -152,7 +154,7 @@ const ContactForm = () => {
   return (
     <div className="w-full mx-auto mb-10">
       <form className="flex flex-col mx-auto md:w-full" onSubmit={handleSubmit}>
-        <h3 className="text-black text-2xl mt-4 py-1 border-b border-gray">
+        <h3 className={`text-black text-2xl mt-4 py-1  ${headingClass}`}>
           {heading}
         </h3>
         <div className="w-full flex flex-col">
@@ -192,7 +194,7 @@ const ContactForm = () => {
               name="contact"
               label="Preferred contact method?"
               defaultOption="Contact method"
-              options={["Email", "Phone"]}
+              options={["Email", "Call", "Text"]}
               value={values.contact}
             />
             <InputField
@@ -250,8 +252,7 @@ const ContactForm = () => {
                   "Ultimate Interior",
                   "Express Full Detail",
                   "Ultimate Full Detail",
-                  "Promo Special Detailing",
-                  "Ceramic Coating",
+                  "2 year Ceramic Coating",
                 ]}
                 value={values.serviceOne}
                 required={true}
@@ -267,8 +268,7 @@ const ContactForm = () => {
                   "Ultimate Interior",
                   "Express Full Detail",
                   "Ultimate Full Detail",
-                  "Promo Special Detailing",
-                  "Ceramic Coating",
+                  "2 yearCeramic Coating",
                 ]}
                 value={values.serviceTwo}
               />
@@ -283,8 +283,7 @@ const ContactForm = () => {
                   "Ultimate Interior",
                   "Express Full Detail",
                   "Ultimate Full Detail",
-                  "Promo Special Detailing",
-                  "Ceramic Coating",
+                  "2 year Ceramic Coating",
                 ]}
                 value={values.serviceThree}
               />
@@ -296,10 +295,14 @@ const ContactForm = () => {
                 label="Which add-on are you interested in?"
                 defaultOption="Preferred add-on"
                 options={[
-                  "Engine Detailing",
+                  "Water Spot Removal",
+                  "Exterior Plastic Trim Rejuvenation",
+                  "Claybar Treatment",
+                  "Headliner Cleaning",
+                  "Engine Bay Detailing",
                   "Excessice Hair/Sand Removal",
                   "Seats/Carpet Shampoo",
-                  "Ceramic Sealant",
+                  "6 months Ceramic Sealant",
                 ]}
                 value={values.addonOne}
               />
@@ -308,10 +311,14 @@ const ContactForm = () => {
                 name="addonTwo"
                 defaultOption="Preferred add-on"
                 options={[
-                  "Engine Detailing",
+                  "Water Spot Removal",
+                  "Exterior Plastic Trim Rejuvenation",
+                  "Claybar Treatment",
+                  "Headliner Cleaning",
+                  "Engine Bay Detailing",
                   "Excessice Hair/Sand Removal",
                   "Seats/Carpet Shampoo",
-                  "Ceramic Sealant",
+                  "6 months Ceramic Sealant",
                 ]}
                 value={values.addonTwo}
               />
@@ -320,10 +327,14 @@ const ContactForm = () => {
                 name="addonThree"
                 defaultOption="Preferred add-on"
                 options={[
-                  "Engine Detailing",
+                  "Water Spot Removal",
+                  "Exterior Plastic Trim Rejuvenation",
+                  "Claybar Treatment",
+                  "Headliner Cleaning",
+                  "Engine Bay Detailing",
                   "Excessice Hair/Sand Removal",
                   "Seats/Carpet Shampoo",
-                  "Ceramic Sealant",
+                  "6 months Ceramic Sealant",
                 ]}
                 value={values.addonThree}
               />
@@ -342,15 +353,14 @@ const ContactForm = () => {
               name="date"
               type="date"
               placeholder="eg. 01/01/2024"
-              required={true}
             />
-            <InputField
+            <SelectField
               value={values.time}
               handleChange={handleChange}
               label="Preferred Time"
               name="time"
-              type="time"
-              placeholder="eg. 10:00 AM"
+              defaultOption="Preferred time"
+              options={["Morning", "Afternoon", "Evening"]}
             />
           </div>
         </div>
@@ -365,7 +375,7 @@ const ContactForm = () => {
             checkHandler={checkHandler}
             name="terms"
             value={values.terms}
-            label="I guarantee that access to power and water will be provided and accessible at the time of service"
+            label="I guarantee that access to power will be provided and accessible at the time of service"
           />
         </div>
         {errorMessage && (
