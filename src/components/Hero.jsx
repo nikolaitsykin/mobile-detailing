@@ -51,12 +51,12 @@ const Hero = ({ city }) => {
         </div>
       </div>
       <section>
-        <div className="pb-12 mt-20">
+        <div className="mt-10">
           <Testimonials />
         </div>
       </section>
       <section>
-        <div className="pb-12 mt-20">
+        <div className="pb-12 mt-10">
           <Services />
         </div>
         <div className="pb-12">
