@@ -8,7 +8,7 @@ const About = ({ city }) => {
   return (
     <section className="w-full">
       <article className="text-black w-full">
-        <h2 id="about-us">About {fullBusinessName}</h2>
+        <h1 id="about-us">About {fullBusinessName}</h1>
         <div className="">
           <h4 className="">Who we are?</h4>
           <p className="text-sm md:text-base">

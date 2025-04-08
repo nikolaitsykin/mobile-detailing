@@ -29,7 +29,7 @@ const FAQs = () => {
       />
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article>
-          <h2 className=" ">Everything You Need to Know</h2>
+          <h1 className=" ">Everything You Need to Know</h1>
           <h3 className="text-center py-0 mb-4">General Questions</h3>
           <h5>How Can I Book A Detail?</h5>
           <p>

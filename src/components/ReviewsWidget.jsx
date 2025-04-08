@@ -16,7 +16,7 @@ const GoogleReview = () => {
 
   return (
     <div id="google_reviews">
-      <h2 className="pb-10">What our customers say</h2>
+      <h3 className="pb-10">What our customers say</h3>
       <div className="w-full flex justify-between">
         <div>
           <div className="flex items-center">
@@ -31,7 +31,7 @@ const GoogleReview = () => {
         <div>
           <Link target={"_blank"} to={GOOGLE_REVIEWS_URL}>
             <span className="hidden md:block underline text-blue text-center">
-              Check out what our customers are saying on Google
+              Check out our Google Business Reviews for more!{" "}
             </span>
           </Link>
         </div>
@@ -44,7 +44,7 @@ const GoogleReview = () => {
       <div>
         <Link target={"_blank"} to={GOOGLE_REVIEWS_URL}>
           <span className="md:hidden block underline text-blue text-center mt-5">
-            Check out what our customers are saying on Google
+            Check out our Google Business Reviews for more!{" "}
           </span>
         </Link>
       </div>
