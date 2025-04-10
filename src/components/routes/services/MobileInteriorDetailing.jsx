@@ -7,7 +7,6 @@ import Booking from "../../Booking";
 import Card from "../../Card";
 
 const MobileInteriorDetailing = () => {
-
   return (
     <div id="interior-detailing" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black">
@@ -46,10 +45,8 @@ const MobileInteriorDetailing = () => {
           </p>
         </article>
       </section>
-      <section className="w-[90%] md:w-[80%] mx-auto">
-        <h2 id="interior-detailing" className="">
-          Interior Detail Services
-        </h2>
+      <section className="mx-auto">
+        <h2 id="interior-detailing">Interior Detailing Services</h2>
         {interiorDetailingServices.map((item, index) => (
           <Card
             key={index}
@@ -70,7 +67,7 @@ const MobileInteriorDetailing = () => {
         <Outlet />
       </section>
       <section id="addons" className="w-[90%] md:w-[80%] mx-auto">
-        <h2>{interiorDetailingServices[0].type.split(" ")[0]} Addons</h2>
+        <h2>{interiorDetailingServices[0].type.split(" ")[0]}Addons</h2>
         <Addons type={interiorDetailingServices[0].type} />
       </section>
       <div id="booking" className="scroll-mb-[750px]"></div>

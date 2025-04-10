@@ -2,24 +2,28 @@
 export const addons = [
   {
     title: "Water Spot Removal",
+    type: "Exterior Service",
     description:
       "Includes: \n• Mineral Deposit Breakdown: Safely dissolves stubborn water spots caused by hard water and acid rain. \n• Surface Decontamination: Removes calcium, magnesium, and other mineral buildups that etch into paint and glass. \n• Polish & Restore: Light polishing (if needed) to restore clarity and shine to affected surfaces. \nBenefits: \n• Restores Clarity: Eliminates unsightly water spots from paint, glass, and trim for a cleaner look. \n• Prevents Etching: Protects your vehicle from long-term damage caused by mineral deposits. \n• Enhances Shine: Helps maintain a spotless finish by removing dull, cloudy residues. \n• Boosts Visibility: Clears up glass surfaces for improved driving visibility, especially in sunlight or at night.",
     price: "Starts at $30",
   },
   {
     title: "Exterior Plastic Trim Rejuvenation",
+    type: "Exterior Service",
     description:
       "Includes: \n• Deep Cleaning: Removes built-up dirt, oxidation, and faded layers from plastic trim. \n• Restoration Treatment: Applies a premium trim restorer to revive color and enhance UV protection. \n• Long-Lasting Protection: Seals the surface to prevent future fading, cracking, and discoloration. \nBenefits: \n• Restores Deep Black Finish: Brings back the original look of faded plastic and rubber trim. \n• UV & Weather Protection: Shields against sun damage, rain, and harsh environmental elements. \n• Prevents Drying & Cracking: Keeps trim flexible and moisturized to extend its lifespan. \n• Enhances Overall Appearance: Adds contrast and depth, giving your vehicle a refreshed and well-maintained look.",
     price: "Starts at $30",
   },
   {
     title: "Claybar Treatment",
+    type: "Exterior Service",
     description:
       "Includes: \n• Contaminant Removal: Safely lifts embedded dirt, brake dust, and industrial fallout that regular washing can't remove. \n• Smooth Surface Restoration: Eliminates roughness by removing bonded debris, leaving the paint silky smooth. \n• Prepares for Protection: Ensures a clean surface for better adhesion of wax, sealant, or ceramic coating. \nBenefits: \n • Enhanced Shine: Restores gloss and clarity by removing surface contaminants. \n • Protects Paint: Reduces the risk of swirl marks and oxidation by keeping the paint clean. \n• Boosts Hydrophobic Properties: Helps waxes and coatings last longer and perform better. \n • Improves Touch & Feel: Leaves the paint feeling ultra-smooth for a like-new finish.",
     price: "Starts at $50",
   },
   {
     title: "Headliner Cleaning",
+    type: "Interior Service",
     description:
       "Includes: \n• Deep Cleaning: Removal of stains, dirt, and grime from the fabric or vinyl headliner. \n• Gentle Brushing & Steam: Careful agitation and steam treatment to lift embedded debris without damaging the material. \n• Odor Neutralization: Eliminates trapped odors, leaving your car’s interior fresh and clean. \nBenefits: \n• Restored Appearance: Removes stains and discoloration, bringing back the original look of your headliner. \n• Improved Air Quality: Cleans out dust, allergens, and odors for a fresher cabin environment. \n• Prevents Sagging: Regular maintenance helps prevent fabric detachment and extends the life of your headliner. Boosts Resale Value: A clean, well-maintained interior makes a strong impression when selling your vehicle.",
     price: "Starts at $50",

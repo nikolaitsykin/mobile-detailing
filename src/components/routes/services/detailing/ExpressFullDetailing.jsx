@@ -28,7 +28,7 @@ const ExpressFullDetailing = () => {
         description="Need a fast, complete detail? Our express full detailing service includes interior and exterior cleaning, perfect for busy schedules in Raleigh."
         canonical={EXPRESS_FULL_DETAILING_PATH}
       />
-      <div className="w-full bg-black h-[250px] flex justify-center items-center mx-auto text-white">
+      <div className="w-full bg-black h-[450px] flex justify-center items-center mx-auto text-white">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
           {service.title}{" "}
         </h1>
