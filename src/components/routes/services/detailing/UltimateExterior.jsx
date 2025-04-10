@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ULTIMATE_EXTERIOR_PATH, ULTIMATE_FULL_DETAILING_PATH } from "../../../../utils/constants";
+import {
+  ULTIMATE_EXTERIOR_PATH,
+  ULTIMATE_FULL_DETAILING_PATH,
+} from "../../../../utils/constants";
 import { ultimateExterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
@@ -26,8 +29,8 @@ const UltimateExterior = () => {
         canonical={ULTIMATE_EXTERIOR_PATH}
       />
 
-<div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
-<h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
           {service.title}
         </h1>
       </div>

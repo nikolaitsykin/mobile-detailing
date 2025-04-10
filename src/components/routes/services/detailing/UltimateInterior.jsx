@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ULTIMATE_FULL_DETAILING_PATH, ULTIMATE_INTERIOR_PATH } from "../../../../utils/constants";
+import {
+  ULTIMATE_FULL_DETAILING_PATH,
+  ULTIMATE_INTERIOR_PATH,
+} from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { ultimateInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -27,7 +30,7 @@ const UltimateInterior = () => {
         canonical={ULTIMATE_INTERIOR_PATH}
       />
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
-      <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
           {service.title}{" "}
         </h1>
       </div>
