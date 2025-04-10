@@ -26,8 +26,8 @@ const ExpressInterior = () => {
         description="Fast interior car detailing in Raleigh. Our express service includes vacuuming, wipe-downs, and odor removal for a fresh and clean interior."
         canonical={EXPRESS_INTERIOR_PATH}
       />
-      <div className="w-full bg-black h-[450px] flex justify-center items-center mx-auto text-white">
-        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
+      <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
           {service.title}{" "}
         </h1>
       </div>

@@ -26,8 +26,8 @@ const UltimateInterior = () => {
         description="Deep interior detailing service with steam cleaning, stain removal, and odor elimination. The best option for a spotless and refreshed car interior."
         canonical={ULTIMATE_INTERIOR_PATH}
       />
-      <div className="w-full bg-black h-[450px] flex justify-center items-center mx-auto text-white">
-        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
+      <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
           {service.title}{" "}
         </h1>
       </div>
