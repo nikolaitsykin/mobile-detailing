@@ -25,8 +25,9 @@ const Testimonials = () => {
           </div>
         </div>
         <p className="text-sm lg:text-base">
-          Here at <strong>{fullBusinessName}</strong>, our team doesn’t just vacuum and wash
-          vehicles — <strong>we restore, protect, and maintain them.</strong> Our expert
+          Here at <strong>{fullBusinessName}</strong>, our team doesn’t just
+          vacuum and wash vehicles —{" "}
+          <strong>we restore, protect, and maintain them.</strong> Our expert
           detailing service guarantees to restore your vehicle to a like new or
           better than new condition. Whatever your needs may be, we are equipped
           with specialized tools and innovative methods to deliver results that
@@ -38,7 +39,7 @@ const Testimonials = () => {
         <img
           loading="lazy"
           className="w-full max-w-xl align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
-          src={people_img}
+          src="https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/people%202.png"
           alt={"Smiling people"}
         />
       </div>
