@@ -17,7 +17,7 @@ const Header = () => {
         </p>
       </div>
 
-      <section className="w-full flex flex-col justify-around h-20 md:h-28 bg-transparent">
+      <section className="w-full flex flex-col justify-start h-36 bg-gradient-to-b from-black to-transparent ">
         <div className="flex justify-between items-center w-full">
           <Topbar />
         </div>

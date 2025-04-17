@@ -42,11 +42,11 @@ export const MOBILE_FULL_DETAILING_BOOKING_PATH =
 export const THANK_YOU_PATH = "/thank-you";
 
 
-export const EXPRESS_EXTERIOR_PATH = "/express-exterior";
-export const ULTIMATE_EXTERIOR_PATH = "/ultimate-exterior";
+export const EXPRESS_EXTERIOR_PATH = "/express-exterior-detailing";
+export const ULTIMATE_EXTERIOR_PATH = "/ultimate-exterior-detailing";
 
-export const EXPRESS_INTERIOR_PATH = "/express-interior";
-export const ULTIMATE_INTERIOR_PATH = "/ultimate-interior";
+export const EXPRESS_INTERIOR_PATH = "/express-interior-detailing";
+export const ULTIMATE_INTERIOR_PATH = "/ultimate-interior-detailing";
 
 export const MAINTENANCE_FULL_DETAILING_PATH = "/maintenance-full-detailing";
 export const ULTIMATE_FULL_DETAILING_PATH = "/ultimate-full-detailing";
@@ -54,13 +54,13 @@ export const EXPRESS_FULL_DETAILING_PATH = "/express-full-detailing";
 
 export const CERAMIC_COATING_PATH = "/ceramic-coating";
 
-export const APEX_PATH = "/apex";
-export const RALEIGH_PATH = "/raleigh";
-export const CARY_PATH = "/cary";
-export const HOLLY_SPRINGS_PATH = "/holly-springs";
-export const MORRISVILLE_PATH = "/morrisville";
-export const KNIGHTDALE_PATH = "/knightdale";
-export const GARNER_PATH = "/garner";
+export const APEX_PATH = "/apex-mobile-detailing";
+export const RALEIGH_PATH = "/raleigh-mobile-detailing";
+export const CARY_PATH = "/cary-mobile-detailing";
+export const HOLLY_SPRINGS_PATH = "/holly-springs-mobile-detailing";
+export const MORRISVILLE_PATH = "/morrisville-mobile-detailing";
+export const KNIGHTDALE_PATH = "/knightdale-mobile-detailing";
+export const GARNER_PATH = "/garner-mobile-detailing";
 
 export const CALL_NUMBER = "tel:9199060099";
 export const TEXT_NUMBER = "sms:9199060099";

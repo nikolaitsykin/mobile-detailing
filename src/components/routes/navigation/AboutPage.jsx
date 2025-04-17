@@ -1,26 +1,15 @@
 import React from "react";
-import { ABOUT_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
-import Banner from "../../Banner";
-import SEO from "../../SEO";
 import BookButtons from "../../UI/BookButtons";
 
 const AboutPage = () => {
-
   return (
     <div id="about" className="w-full z-20 bg-white font-poppins">
-      <SEO
-        title="About Us | Spotless Auto Detailing in Raleigh, NC"
-        canonical={ABOUT_PATH}
-        description="Learn about Spotless Auto Detailing, Raleigh’s eco-friendly mobile car detailing service. Passionate about quality, convenience, and protecting what matters to you."
-        name="About Spotless Auto Detailing"
-        type="AboutPage"
-      />
-      <Banner
-        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/man-washing-his-car-garage_1157-26072.jpg"
-        header="About"
-        alt={"Mobile Detailing Service Technician performing car detailing | Spotless Auto Detailing"}
-      />
+      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
+          About{" "}
+        </h1>
+      </div>
       <section>
         <article className="text-black flex flex-col justify-center">
           <h2 className="">Professional Service, Personal Care</h2>

@@ -1,28 +1,16 @@
 import React from "react";
-import { SERVICES_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
 import { sustainability } from "../../../utils/sustainability";
-import Banner from "../../Banner";
-import SEO from "../../SEO";
 import Services from "../../Services";
 
 const ServicesPage = () => {
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
-      <SEO
-        type="ServicesPage"
-        name="Our Mobile Detailing Services"
-        title="Our Services | Mobile Car Detailing in Raleigh, NC"
-        description="Explore Spotless Auto Detailing’s range of services, including interior detailing, exterior detailing, ceramic coating, and mobile car care in Raleigh."
-        canonical={SERVICES_PATH}
-      />
-      <Banner
-        image="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_198465715.jpeg"
-        header="Services"
-        alt={
-          "Mobile Detailing Service Technician performing car detailing | Spotless Auto Detailing"
-        }
-      />
+      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
+          Our Services{" "}
+        </h1>
+      </div>
       <section className="w-[90%] md:w-[80%] mx-auto">
         <article className="">
           <h3 id="services" className="text-2xl text-center m-10">

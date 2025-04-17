@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { THANK_YOU_PATH } from "../utils/constants";
 import Button from "./UI/Button";
-import Checkbox from "./UI/Checkbox";
 import InputField from "./UI/InputField";
 import SelectField from "./UI/SelectField";
 import TextareaField from "./UI/TextareaField";
@@ -15,7 +14,6 @@ const ContactForm = () => {
     location.pathname === "/contact" ? "Tell Us About" : "Contact Us";
   const headingClass =
     location.pathname === "/contact" ? "text-start" : "text-center";
-  const [isChecked, setIsChecked] = useState(false);
   const [values, setValues] = useState({
     fullName: "",
     vehicle: "",
@@ -38,11 +36,6 @@ const ContactForm = () => {
   const [error, setError] = useState(false);
   const [status, setStatus] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
-  const checkHandler = () => {
-    console.log(isChecked);
-    setIsChecked(!isChecked);
-  };
 
   const handleChange = (e) => {
     const target = e?.target;
@@ -83,11 +76,6 @@ const ContactForm = () => {
       setError(true);
       return;
     }
-    if (!isChecked) {
-      setErrorMessage("Please accept terms and conditions");
-      setError(true);
-      return;
-    }
 
     emailjs
       .send("service_2fhr2hn", "template_5wl1qp6", values, "QaHYb2JsoQeJCIYVd")
@@ -114,7 +102,6 @@ const ContactForm = () => {
           });
           setStatus("SUCCESS");
           setError(false);
-          setIsChecked(false);
         },
         (error) => {
           console.log("FAILED...", error);
@@ -370,14 +357,6 @@ const ContactForm = () => {
           label="Anything else we should know?"
           name="message"
         />
-        <div className="w-full flex justify-start items-start">
-          <Checkbox
-            checkHandler={checkHandler}
-            name="terms"
-            value={values.terms}
-            label="I guarantee that access to power will be provided and accessible at the time of service"
-          />
-        </div>
         {errorMessage && (
           <div className="text-red-500 text-center pt-5">{errorMessage}</div>
         )}
