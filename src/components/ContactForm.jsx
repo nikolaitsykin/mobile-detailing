@@ -233,7 +233,7 @@ const ContactForm = () => {
                 label="Which service are you interested in?"
                 defaultOption="Preferred service"
                 options={[
-                  "Express Eterior",
+                  "Express Exterior",
                   "Express Interior",
                   "Ultimate Exterior",
                   "Ultimate Interior",
@@ -249,7 +249,7 @@ const ContactForm = () => {
                 name="serviceTwo"
                 defaultOption="Preferred service"
                 options={[
-                  "Express Eterior",
+                  "Express Exterior",
                   "Express Interior",
                   "Ultimate Exterior",
                   "Ultimate Interior",
@@ -264,7 +264,7 @@ const ContactForm = () => {
                 name="serviceThree"
                 defaultOption="Preferred service"
                 options={[
-                  "Express Eterior",
+                  "Express Exterior",
                   "Express Interior",
                   "Ultimate Exterior",
                   "Ultimate Interior",
