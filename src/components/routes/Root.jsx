@@ -11,12 +11,13 @@ const Root = () => {
   const currentCity = localAreas.includes(location.pathname.split("/")[1])
     ? location.pathname
         .split("/")[1]
-        .replace(/-/g, " ")    // Replace hyphens with spaces
-        .replace(/\b\w/g, (char) => char.toUpperCase())  // Capitalize first letter of each word
-        : "Raleigh";
+        .replace(/-/g, " ") // Replace hyphens with spaces
+        .replace(/\b\w/g, (char) => char.toUpperCase()) // Capitalize first letter of each word
+    : "Raleigh";
 
   useEffect(() => {
-    document.title = `Mobile Auto Detailing in ${currentCity} | Exterior Detailing | Interior Detailing | Ceramic Coating | Right At Your Doorstep`;
+    document.title = `Spotless Auto Detailing: Mobile Car Detailing & Ceramic Coating in ${currentCity}.
+`;
   }, [currentCity, location.pathname]);
 
   return (

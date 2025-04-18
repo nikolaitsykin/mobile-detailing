@@ -5,9 +5,8 @@ import Card from "../../Card";
 import Gallery from "../../Gallery";
 import GoogleReview from "../../ReviewsWidget";
 
-const CeramicCoating = () => {
+const Ceramic = () => {
   const service = ceramicCoating;
-
 
   return (
     <div
@@ -91,4 +90,4 @@ const CeramicCoating = () => {
   );
 };
 
-export default CeramicCoating;
+export default Ceramic;
