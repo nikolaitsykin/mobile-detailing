@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { EXPRESS_INTERIOR_PATH, ULTIMATE_INTERIOR_PATH } from "../../../../utils/constants";
+import {
+  ULTIMATE_INTERIOR_PATH
+} from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { expressInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -9,7 +11,6 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import SEO from "../../../SEO";
 
 const ExpressInterior = () => {
   const service = expressInterior;
@@ -19,16 +20,9 @@ const ExpressInterior = () => {
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
-      <SEO
-        type="ServicesPage"
-        name="Express Interior Detailing"
-        title="Express Interior Car Detailing | Spotless Auto Detailing"
-        description="Fast interior car detailing in Raleigh. Our express service includes vacuuming, wipe-downs, and odor removal for a fresh and clean interior."
-        canonical={EXPRESS_INTERIOR_PATH}
-      />
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
-      <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          {service.title}{" "}
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
+          Express Interior Detailing
         </h1>
       </div>
       <div className="mx-auto">

@@ -1,8 +1,7 @@
 import React from "react";
-import { fullBusinessName } from "../utils/data";
-import people_img from "../assets/images/people.png";
 import { ReactComponent as Google } from "../assets/icons/google.svg";
 import { ReactComponent as Star } from "../assets/icons/star.svg";
+import { fullBusinessName } from "../utils/data";
 
 const Testimonials = () => {
   const stars = Array.from({ length: 5 }, (_, index) => <Star key={index} />);

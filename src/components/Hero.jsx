@@ -5,7 +5,6 @@ import GoogleReview from "./ReviewsWidget";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
 import BookButtons from "./UI/BookButtons";
-import background_image from "../assets/images/serjan-midili-1O1v7Fe0Lto-unsplash.jpg";
 
 const Hero = ({ city }) => {
   return (

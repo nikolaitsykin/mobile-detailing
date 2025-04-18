@@ -213,7 +213,7 @@ export const maintenanceFullDetail = {
 };
 
 export const expressFullDetail = {
-  title: "Express Detail",
+  title: "Express Detailing",
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_243325383.jpeg",
@@ -231,7 +231,7 @@ export const expressFullDetail = {
 };
 
 export const ultimateFullDetail = {
-  title: "Ultimate Detail",
+  title: "Ultimate Detailing",
   type: "Full Detailing",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/pexels-khunkorn-laowisit-1359149-5233285.jpg",

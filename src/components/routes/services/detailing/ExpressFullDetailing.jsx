@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  EXPRESS_FULL_DETAILING_PATH,
-  ULTIMATE_FULL_DETAILING_PATH,
+  ULTIMATE_FULL_DETAILING_PATH
 } from "../../../../utils/constants";
 import { expressFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -11,7 +10,6 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import SEO from "../../../SEO";
 
 const ExpressFullDetailing = () => {
   const service = expressFullDetail;
@@ -21,16 +19,9 @@ const ExpressFullDetailing = () => {
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
-      <SEO
-        type="ServicesPage"
-        name="Express Full Car Detailing"
-        title="Express Full Car Detailing | Spotless Auto Detailing"
-        description="Need a fast, complete detail? Our express full detailing service includes interior and exterior cleaning, perfect for busy schedules in Raleigh."
-        canonical={EXPRESS_FULL_DETAILING_PATH}
-      />
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
-      <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          {service.title}{" "}
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
+          Express Full Detailing
         </h1>
       </div>
       <div className="mx-auto">

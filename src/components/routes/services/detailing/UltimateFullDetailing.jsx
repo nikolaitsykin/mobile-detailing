@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  CERAMIC_COATING_PATH,
-  ULTIMATE_FULL_DETAILING_PATH,
+  CERAMIC_COATING_PATH
 } from "../../../../utils/constants";
 import { ultimateFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -11,7 +10,6 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import SEO from "../../../SEO";
 
 const UltimateFullDetailing = () => {
   const service = ultimateFullDetail;
@@ -21,17 +19,9 @@ const UltimateFullDetailing = () => {
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
-      <SEO
-        type="ServicesPage"
-        name="Ultimate Full Detailing"
-        title="Ultimate Full Car Detailing | Spotless Auto Detailing"
-        description="Get the most comprehensive mobile detailing in Raleigh with our ultimate full service. Interior and exterior deep cleaning with premium protection."
-        canonical={ULTIMATE_FULL_DETAILING_PATH}
-      />
-
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          {service.title}{" "}
+          Ultimate Full Detailing
         </h1>
       </div>
       <div className="mx-auto">
