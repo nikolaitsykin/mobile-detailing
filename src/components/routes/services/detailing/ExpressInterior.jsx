@@ -39,11 +39,11 @@ const ExpressInterior = () => {
               services={service.services}
               description={service.description}
               interiorServices={service.interiorServices}
-              steps={service.steps}
               image={service.image}
               singleService
               duration={service.duration}
               link={service.link}
+              bookingLink={service.bookingLink}
             />
           </article>
           <div className="text-sm md:text-base">

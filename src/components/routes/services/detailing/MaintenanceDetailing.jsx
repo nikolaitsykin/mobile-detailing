@@ -37,12 +37,12 @@ const MaintenanceDetailing = () => {
               description={service.description}
               exteriorServices={service.exteriorServices}
               interiorServices={service.interiorServices}
-              steps={service.steps}
               image={service.image}
               alt={service.alt}
               singleService
               duration={service.duration}
               link={service.link}
+              bookingLink={service.bookingLink}
             />
           </article>
         </section>

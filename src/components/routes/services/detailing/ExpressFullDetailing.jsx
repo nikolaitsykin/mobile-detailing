@@ -39,11 +39,11 @@ const ExpressFullDetailing = () => {
               description={service.description}
               exteriorServices={service.exteriorServices}
               interiorServices={service.interiorServices}
-              steps={service.steps}
               image={service.image}
               singleService
               duration={service.duration}
               link={service.link}
+              bookingLink={service.bookingLink}
             />
           </article>
         </section>

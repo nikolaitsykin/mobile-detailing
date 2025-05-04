@@ -24,14 +24,14 @@ const Testimonials = () => {
           </div>
         </div>
         <p className="text-sm lg:text-base">
-          Here at <strong>{fullBusinessName}</strong>, our team doesn’t just
-          vacuum and wash vehicles —{" "}
-          <strong>we restore, protect, and maintain them.</strong> Our expert
-          detailing service guarantees to restore your vehicle to a like new or
-          better than new condition. Whatever your needs may be, we are equipped
-          with specialized tools and innovative methods to deliver results that
-          go beyond your expectations. Get in touch with us today, and see how
-          we can provide services at our shop or at your doorstep.
+          At <strong>{fullBusinessName}</strong>, we don’t just clean cars — {" "}
+          <strong>we restore, protect, and preserve them </strong> using expert
+          techniques and premium, eco-friendly products. Whether you’re looking
+          to bring your vehicle back to a like-new condition or maintain its
+          showroom shine, our skilled detailing team delivers exceptional
+          results at your home or on-site. Equipped with specialized tools and
+          advanced methods, we’re committed to exceeding your expectations with
+          every detail. Contact us today to schedule mobile or in-shop service.
         </p>
       </div>
       <div>

@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   const navLinkStyle =
-    "ml-5 md:ml-0 flex px-2 justify-start md:justify-center md:items-start items-center text-white hover:text-gray w-[100%] h-10 md:h-10 md:w-full text-sm md:text-base whitespace-nowrap";
+    "ml-5 md:ml-0 flex px-2 justify-start md:justify-center md:items-start items-center text-white hover:text-gray w-[100%] h-10 md:h-10 md:w-full text-xs md:text-base whitespace-nowrap";
 
   return (
     <nav className="w-full text-white flex justify-between items-start">
@@ -67,7 +67,7 @@ const Navbar = () => {
           ))}
           <li
             key={"gift-cards"}
-            className={`text-sm md:text-base flex jutify-end md:justify-center items-start`}
+            className={`text-xs md:text-base flex jutify-end md:justify-center items-start`}
           >
             <NavLink
               className={({ isActive }) =>

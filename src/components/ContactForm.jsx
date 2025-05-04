@@ -17,19 +17,14 @@ const ContactForm = () => {
   const [values, setValues] = useState({
     fullName: "",
     vehicle: "",
-    year: "",
     email: "",
     mobile: "",
     contact: "",
-    address: "",
     serviceOne: "",
     serviceTwo: "",
-    serviceThree: "",
     addonOne: "",
     addonTwo: "",
-    addonThree: "",
     date: "",
-    time: "",
     message: "",
   });
 
@@ -66,11 +61,6 @@ const ContactForm = () => {
       setError(true);
       return;
     }
-    if (!values.address || values.address === "") {
-      setErrorMessage("Service Address is required");
-      setError(true);
-      return;
-    }
     if (!values.serviceOne || values.serviceOne === "") {
       setErrorMessage("Service type is required");
       setError(true);
@@ -85,19 +75,14 @@ const ContactForm = () => {
           setValues({
             fullName: "",
             vehicle: "",
-            year: "",
             email: "",
             mobile: "",
             contact: "",
-            address: "",
             serviceOne: "",
             serviceTwo: "",
-            serviceThree: "",
             addonOne: "",
             addonTwo: "",
-            addonThree: "",
             date: "",
-            time: "",
             message: "",
           });
           setStatus("SUCCESS");
@@ -184,16 +169,6 @@ const ContactForm = () => {
               options={["Email", "Call", "Text"]}
               value={values.contact}
             />
-            <InputField
-              value={values.address}
-              handleChange={handleChange}
-              label="Where would you like us to serve?"
-              name="address"
-              type="address"
-              placeholder="327 S Academy St, Cary"
-              autocomplete="address"
-              required={true}
-            />
           </div>
         </div>
         <div className="w-full flex flex-col">
@@ -204,19 +179,10 @@ const ContactForm = () => {
             <InputField
               value={values.vehicle}
               handleChange={handleChange}
-              label="Your Vehicle Make and Model"
+              label="Your Vehicle Year, Make and Model"
               name="vehicle"
               type="text"
               placeholder="Toyota RAV4"
-              required={true}
-            />
-            <InputField
-              value={values.year}
-              handleChange={handleChange}
-              label="Your Vehicle Year"
-              name="year"
-              type="year"
-              placeholder="2023"
               required={true}
             />
           </div>
@@ -259,21 +225,6 @@ const ContactForm = () => {
                 ]}
                 value={values.serviceTwo}
               />
-              <SelectField
-                handleChange={handleChange}
-                name="serviceThree"
-                defaultOption="Preferred service"
-                options={[
-                  "Express Exterior",
-                  "Express Interior",
-                  "Ultimate Exterior",
-                  "Ultimate Interior",
-                  "Express Full Detail",
-                  "Ultimate Full Detail",
-                  "2 year Ceramic Coating",
-                ]}
-                value={values.serviceThree}
-              />
             </div>
             <div>
               <SelectField
@@ -309,28 +260,12 @@ const ContactForm = () => {
                 ]}
                 value={values.addonTwo}
               />
-              <SelectField
-                handleChange={handleChange}
-                name="addonThree"
-                defaultOption="Preferred add-on"
-                options={[
-                  "Water Spot Removal",
-                  "Exterior Plastic Trim Rejuvenation",
-                  "Claybar Treatment",
-                  "Headliner Cleaning",
-                  "Engine Bay Detailing",
-                  "Excessice Hair/Sand Removal",
-                  "Seats/Carpet Shampoo",
-                  "6 months Ceramic Sealant",
-                ]}
-                value={values.addonThree}
-              />
             </div>
           </div>
         </div>
         <div className="w-full flex flex-col">
           <h3 className="text-black text-lg my-4 border-b border-gray py-1">
-            4. Select date and time what will be best for you
+            4. Select date what will be best for you
           </h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
             <InputField
@@ -340,14 +275,6 @@ const ContactForm = () => {
               name="date"
               type="date"
               placeholder="eg. 01/01/2024"
-            />
-            <SelectField
-              value={values.time}
-              handleChange={handleChange}
-              label="Preferred Time"
-              name="time"
-              defaultOption="Preferred time"
-              options={["Morning", "Afternoon", "Evening"]}
             />
           </div>
         </div>

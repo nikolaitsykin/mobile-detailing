@@ -35,7 +35,6 @@ const UltimateFullDetailing = () => {
               // title={service.title}
               // type={service.type}
               service={service}
-              steps={service.steps}
               services={service.services}
               description={service.description}
               exteriorServices={service.exteriorServices}
@@ -44,6 +43,7 @@ const UltimateFullDetailing = () => {
               singleService
               duration={service.duration}
               link={service.link}
+              bookingLink={service.bookingLink}
             />
           </article>
         </section>

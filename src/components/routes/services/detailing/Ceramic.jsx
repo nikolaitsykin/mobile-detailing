@@ -1,9 +1,9 @@
 import React from "react";
-import { ceramicCoating } from "../../../utils/detailingPackages";
-import Booking from "../../Booking";
-import Card from "../../Card";
-import Gallery from "../../Gallery";
-import GoogleReview from "../../ReviewsWidget";
+import { ceramicCoating } from "../../../../utils/detailingPackages";
+import Booking from "../../../Booking";
+import Card from "../../../Card";
+import Gallery from "../../../Gallery";
+import GoogleReview from "../../../ReviewsWidget";
 
 const Ceramic = () => {
   const service = ceramicCoating;
@@ -45,11 +45,11 @@ const Ceramic = () => {
               services={service.services}
               description={service.description}
               exteriorServices={service.exteriorServices}
-              steps={service.steps}
               image={service.image}
               singleService
               duration={service.duration}
               link={service.link}
+              bookingLink={service.bookingLink}
             />
           </article>
         </section>

@@ -33,7 +33,6 @@ const UltimateExterior = () => {
               // title={service.title}
               // type={service.type}
               service={service}
-              steps={service.steps}
               image={service.image}
               description={service.description}
               services={service.services}
@@ -41,6 +40,7 @@ const UltimateExterior = () => {
               singleService
               duration={service.duration}
               link={service.link}
+              bookingLink={service.bookingLink}
             />
           </article>
         </section>

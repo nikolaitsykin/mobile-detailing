@@ -21,7 +21,7 @@ const Dropdown = ({ title, closeMenu }) => {
       onMouseLeave={() => setIsDropdownOpen(false)}
     >
       <button
-        className="ml-5 md:ml-2  h-12 flex justify-center md:items-start items-center text-white  hover:text-gray text-md md:m-0 px-2 fill-white hover:fill-gray"
+        className="ml-5 md:ml-2  h-12 flex justify-center md:items-start items-center text-white  hover:text-gray text-xs md:text-base md:m-0 px-2 fill-white hover:fill-gray"
         type="button"
       >
         {title}

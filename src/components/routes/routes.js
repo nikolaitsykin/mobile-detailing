@@ -26,7 +26,7 @@ import FAQs from "./navigation/FAQsPage";
 import Gallery from "./navigation/GalleryPage";
 import ServicesPage from "./navigation/ServicesPage";
 import Root from "./Root";
-import CeramicCoating from "./services/Ceramic";
+import CeramicCoating from "./services/detailing/Ceramic";
 import ExpressExterior from "./services/detailing/ExpressExterior";
 import ExpressFullDetailing from "./services/detailing/ExpressFullDetailing";
 import ExpressInterior from "./services/detailing/ExpressInterior";

@@ -12,6 +12,7 @@ import {
 } from "../utils/data";
 import SocialButtons from "./UI/SocialButtons";
 import logo from "../assets/images/spotless_Logo_small.png";
+import { GIFT_CARDS_PATH } from "../utils/constants";
 
 const Footer = () => {
   return (
@@ -51,6 +52,18 @@ const Footer = () => {
                     </NavLink>
                   </li>
                 ))}
+                <li
+                  key={"gift-cards"}
+                  className="text-gray hover:text-white py-[2px] text-sm md:text-base"
+                >
+                  <NavLink
+                    key={"gift-cards"}
+                    target="_blank"
+                    to={GIFT_CARDS_PATH}
+                  >
+                    Gift Cards
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </div>

@@ -11,8 +11,7 @@ const Card = ({
   description,
   services,
   price,
-  button,
-  link,
+  bookingLink,
   singleService,
   exteriorServices,
   interiorServices,
@@ -110,7 +109,7 @@ const Card = ({
                 : ""}
             </div>
           )}
-          <BookButtons color={"secondary"} />
+          <BookButtons color={"secondary"} bookingLink={bookingLink} />
         </div>
       </div>
     </div>

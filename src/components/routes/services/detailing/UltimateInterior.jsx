@@ -43,6 +43,7 @@ const UltimateInterior = () => {
               singleService
               duration={service.duration}
               link={service.link}
+              bookingLink={service.bookingLink}
             />
           </article>
         </section>
