@@ -115,7 +115,7 @@ export const reviews = [
   },
 ];
 
-export const galleyImages = [
+export const galleryImages = [
   {
     image:
       "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/0DACF3D9-564F-4817-9266-A08E1BA0AF7F_1719800800%2B(1).webp",

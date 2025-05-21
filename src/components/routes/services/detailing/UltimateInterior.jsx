@@ -29,7 +29,7 @@ const UltimateInterior = () => {
         <section className="">
           <article className=" text-start text-black">
             <h3 className="text-center mx-auto my-5 max-w-5xl">
-              Experience the luxury of Top Star Detailing's Executive Interior
+              Experience the luxury of Spotless Auto Detailing's Ultimate Interior Detailing
               service.
             </h3>
             <Card
