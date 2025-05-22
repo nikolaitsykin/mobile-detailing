@@ -12,21 +12,24 @@ import Button from "./Button";
 const ConntactsButtons = () => {
   return (
     <div className="flex h-12 gap-2">
-      <div className="flex justify-center items-center active:scale-110 duration-300 ">
+      <div className="md:flex hidden justify-center items-center px-1">
+        <span className="text-3xl font-semibold text-white font-stretch-ultra-condensed ">919-906-0099</span>
+      </div>
+      <div className="flex md:hidden justify-center items-center active:scale-110 duration-300 ">
         <a href={CALL_NUMBER}>
           <div className="hover:scale-110 duration-700">
             <PhoneCall />
           </div>
         </a>
       </div>
-      <div className="flex justify-center items-center active:scale-110 duration-300 px-1">
+      <div className="flex md:hidden justify-center items-center active:scale-110 duration-300 px-1">
         <a href={TEXT_NUMBER}>
           <div className="hover:scale-110 duration-700">
             <MessageSms />
           </div>
         </a>
       </div>
-      <div className="xs:flex items-center h-12 hidden">
+      <div className="flex items-center h-12 ">
         <Link to={BOOKING_PAGE_PATH} target={"_blank"}>
           <Button
             children={"BOOK NOW"}

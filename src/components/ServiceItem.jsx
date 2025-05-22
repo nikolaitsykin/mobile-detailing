@@ -25,7 +25,7 @@ const ServiceItem = ({props}) => {
             />
           )}
           {props.title && (
-            <h3 className="text-2xl text-center p-2 mt-2 font-poppins text-dark-gray">
+            <h3 className="text-2xl text-center p-2 mt-2 font-poppins text-black">
               {props.title.toUpperCase()}
             </h3>
           )}

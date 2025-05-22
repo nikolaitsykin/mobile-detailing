@@ -3,9 +3,9 @@ const SelectField = (props) => {
     props;
 
   return (
-    <div className="w-full py-1">
+    <div className="flex flex-col w-full py-1 justify-between h-full">
       <label
-        className="flex flex-col font-medium text-sm md:text-base"
+        className="  font-medium text-sm md:text-base"
         htmlFor={name}
       >
         {label}

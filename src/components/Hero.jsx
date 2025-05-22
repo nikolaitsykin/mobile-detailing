@@ -10,7 +10,9 @@ const Hero = ({ city }) => {
   return (
     <div className="w-full bg-white ">
       <div className="w-full bg-black">
-        <div className="bg-black opacity-40 object-cover h-[calc(60vh-0px)] sm:h-[calc(100vh-0px)] w-full mx-auto absolute">123</div>
+        <div className="bg-black opacity-40 object-cover h-[calc(60vh-0px)] sm:h-[calc(100vh-0px)] w-full mx-auto absolute">
+          123
+        </div>
         <img
           src="https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/serjan-midili-1O1v7Fe0Lto-unsplash%202.jpg"
           alt="Auto detailing"
@@ -32,10 +34,10 @@ const Hero = ({ city }) => {
           />
         </video> */}
       </div>
-      <div className="w-full object-cover h-[calc(65vh-0px)] sm:h-[calc(100vh-0px)] top-0 flex justify-center items-center absolute  ">
+      <div className="w-full object-cover h-[calc(75vh-0px)] sm:h-[calc(115vh-0px)] top-0 flex justify-center items-center absolute  ">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h3 className="text-base sm:text-xl text-center font-light font-poppins p-1 sm:p-4">
-            Top-Tier Service in <span className="font-bold px-3 py-1 bg-blue rounded-md">{city ? city : "Raleigh"}, NC</span>
+            Top-Tier Service in {city ? city : "Raleigh"}, NC
           </h3>
           <h1 className="text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Mobile Car Detailing & Ceramic Coating

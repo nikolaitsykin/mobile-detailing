@@ -11,9 +11,9 @@ const ContactPage = () => {
       </div>
       <section className="w-[90%] md:w-[80%] mx-auto">
         <article className=" text-black">
-          <p className="p-1  text-center">
-            “Fill out our simple quote request form to get a personalized
-            estimate for your project needs.”
+          <p className="p-1  text-center textsm md:text-lg mt-5">
+            Fill out our simple quote request form to get a personalized
+            estimate for your project needs.
           </p>
         </article>
         <div className=" text-black flex justify-center mx-auto mb-5 py-3 ">

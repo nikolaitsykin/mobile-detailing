@@ -29,10 +29,10 @@ const MobileDetailing = () => {
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className="md:w-[80%] mx-auto m-0 p-0 text-xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Interior & Exterior Auto Detailing in Raleigh, NC
+            Interior & Exterior Mobile Car Detailing in Raleigh, NC
           </h1>
           <h3 className="m-0 p-0 text-center sm:mb-5 text-xs sm:text-sm md:text-lg sm:mt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Refresh and Restore: Premium Mobile Car Detailing in Raleigh and
+            Refresh and Restore: Premium Auto Detailing in Raleigh and
             Nearby Areas
           </h3>
         </div>

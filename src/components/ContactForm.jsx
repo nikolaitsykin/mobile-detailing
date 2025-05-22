@@ -11,7 +11,9 @@ const ContactForm = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const heading =
-    location.pathname === "/contact" ? "Tell Us About" : "Contact Us";
+    location.pathname === "/contact"
+      ? "Tell Us About"
+      : <span>Not Sure What You Need?<br/> Talk to a Specialist!</span>;
   const headingClass =
     location.pathname === "/contact" ? "text-start" : "text-center";
   const [values, setValues] = useState({
@@ -21,9 +23,7 @@ const ContactForm = () => {
     mobile: "",
     contact: "",
     serviceOne: "",
-    serviceTwo: "",
     addonOne: "",
-    addonTwo: "",
     date: "",
     message: "",
   });
@@ -79,9 +79,7 @@ const ContactForm = () => {
             mobile: "",
             contact: "",
             serviceOne: "",
-            serviceTwo: "",
             addonOne: "",
-            addonTwo: "",
             date: "",
             message: "",
           });
@@ -133,11 +131,11 @@ const ContactForm = () => {
           <h3 className="text-black text-lg my-4 border-b border-gray py-1">
             1. Your personal details
           </h3>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-2">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2  gap-2">
             <InputField
               value={values.fullName}
               handleChange={handleChange}
-              label="Full Name"
+              label="First and Last Name"
               name="fullName"
               type="name"
               placeholder="John Doe"
@@ -164,7 +162,7 @@ const ContactForm = () => {
             <SelectField
               handleChange={handleChange}
               name="contact"
-              label="Preferred contact method?"
+              label="Best Way to Reach You"
               defaultOption="Contact method"
               options={["Email", "Call", "Text"]}
               value={values.contact}
@@ -175,7 +173,7 @@ const ContactForm = () => {
           <h3 className="text-black text-lg my-4 border-b border-gray py-1">
             2. Your vehicle details
           </h3>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="w-full grid grid-cols-1 gap-2">
             <InputField
               value={values.vehicle}
               handleChange={handleChange}
@@ -191,39 +189,21 @@ const ContactForm = () => {
           <h3 className="text-black text-lg my-4 border-b border-gray py-1">
             3. Select your preferred service
           </h3>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2">
             <div>
               <SelectField
                 handleChange={handleChange}
                 name="serviceOne"
-                label="Which service are you interested in?"
+                label="Which type of service are you interested in?"
                 defaultOption="Preferred service"
                 options={[
-                  "Express Exterior",
-                  "Express Interior",
-                  "Ultimate Exterior",
-                  "Ultimate Interior",
-                  "Express Full Detail",
-                  "Ultimate Full Detail",
-                  "2 year Ceramic Coating",
+                  "Exterior Detailing",
+                  "Interior Detailing",
+                  "Full Car Detailing",
+                  "Ceramic Coating",
                 ]}
                 value={values.serviceOne}
                 required={true}
-              />
-              <SelectField
-                handleChange={handleChange}
-                name="serviceTwo"
-                defaultOption="Preferred service"
-                options={[
-                  "Express Exterior",
-                  "Express Interior",
-                  "Ultimate Exterior",
-                  "Ultimate Interior",
-                  "Express Full Detail",
-                  "Ultimate Full Detail",
-                  "2 yearCeramic Coating",
-                ]}
-                value={values.serviceTwo}
               />
             </div>
             <div>
@@ -244,34 +224,18 @@ const ContactForm = () => {
                 ]}
                 value={values.addonOne}
               />
-              <SelectField
-                handleChange={handleChange}
-                name="addonTwo"
-                defaultOption="Preferred add-on"
-                options={[
-                  "Water Spot Removal",
-                  "Exterior Plastic Trim Rejuvenation",
-                  "Claybar Treatment",
-                  "Headliner Cleaning",
-                  "Engine Bay Detailing",
-                  "Excessice Hair/Sand Removal",
-                  "Seats/Carpet Shampoo",
-                  "6 months Ceramic Sealant",
-                ]}
-                value={values.addonTwo}
-              />
             </div>
           </div>
         </div>
         <div className="w-full flex flex-col">
           <h3 className="text-black text-lg my-4 border-b border-gray py-1">
-            4. Select date what will be best for you
+            4. Select preferred date
           </h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
             <InputField
               value={values.date}
               handleChange={handleChange}
-              label="Preferred Date"
+              label="What Date Works Best for You?"
               name="date"
               type="date"
               placeholder="eg. 01/01/2024"
