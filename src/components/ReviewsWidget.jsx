@@ -52,6 +52,7 @@ const GoogleReview = () => {
         <Link target={"_blank"} to={GOOGLE_BUSINESS_URL}>
           <div className="grid grid-flow-col grid-rows-3 sm:flex-row md:justify-between sm:items-start gap-2">
             {reviews
+              .sort(() => 0.5 - Math.random())
               .map((item) => (
                 <ReviewItem
                   name={item.name}
