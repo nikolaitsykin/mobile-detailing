@@ -19,7 +19,7 @@ const Testimonials = () => {
             <Google className="px-2" />
           </div>
           <div className="flex items-center">
-            <span className="px-2 font-semibold text-center">50+ reviews</span>
+            <span className="px-2 font-semibold text-center">70+ 5-star reviews</span>
             <span className="flex px-2">{stars}</span>
           </div>
         </div>
