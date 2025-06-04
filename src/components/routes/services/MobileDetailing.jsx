@@ -7,23 +7,15 @@ import ServiceItem from "../../ServiceItem";
 const MobileDetailing = () => {
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
-      <div className="w-full bg-black">
-        <img
-          loading="lazy"
-          className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
-          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_397247724.jpeg"
-          alt="Auto detailing"
-        />
-      </div>
-      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
-        <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className="md:w-[80%] mx-auto m-0 p-0 text-xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Interior & Exterior Mobile Car Detailing in Raleigh, NC
+      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
+        <div className="flex flex-col text-center">
+          <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-40">
+            Interior & Exterior Mobile Car Detailing in Raleigh, NC{" "}
           </h1>
-          <h3 className="m-0 p-0 text-center sm:mb-5 text-xs sm:text-sm md:text-lg sm:mt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Refresh and Restore: Premium Auto Detailing in Raleigh and
-            Nearby Areas
-          </h3>
+          <h2 className="text-sm md:text-lg">
+            Refresh and Restore: Premium Auto Detailing in Raleigh and Nearby
+            Areas
+          </h2>
         </div>
       </div>
       <section>
