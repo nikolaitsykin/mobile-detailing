@@ -7,12 +7,12 @@ import ServiceItem from "../../ServiceItem";
 const MobileDetailing = () => {
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
-      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
+      <div className="w-full bg-black h-[200px] md:h-[300px] flex justify-center items-center mx-auto text-white top-20">
         <div className="flex flex-col text-center">
-          <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-40">
-            Interior & Exterior Mobile Car Detailing in Raleigh, NC{" "}
+          <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Mobile Car Detailing in Raleigh, NC{" "}
           </h1>
-          <h2 className="text-sm md:text-lg">
+          <h2 className="text-sm md:text-lg px-5">
             Refresh and Restore: Premium Auto Detailing in Raleigh and Nearby
             Areas
           </h2>

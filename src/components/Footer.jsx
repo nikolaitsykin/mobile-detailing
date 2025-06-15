@@ -13,10 +13,14 @@ import {
 import SocialButtons from "./UI/SocialButtons";
 import logo from "../assets/images/spotless_Logo_small.png";
 import { GIFT_CARDS_PATH } from "../utils/constants";
+import BookButtons from "./UI/BookButtons";
 
 const Footer = () => {
   return (
     <footer className="relative bg-black min-h-52 pt-10 text-gray text-xxs sm:text-sm md:text-base">
+      {/* <div className="fixed bottom-0 mb-2 left-0 right-0 md:left-auto md:right-0">
+        <BookButtons color={"secondary"} />
+      </div> */}
       <section className="flex justify-evenly flex-col md:flex-row ">
         <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3">
           <div className="min-w-48 md:pr-5 items-start">
@@ -109,8 +113,8 @@ const Footer = () => {
         </div>
       </section>
       <section>
-        <div className="flex justify-between w-full py-10 items-center">
-          <div className="basis-1/2 xs:basis-auto">
+        <div className="flex justify-between w-full pt-10 pb-16 items-center">
+          <div className="basis-1/2 xs:basis-auto mr-3">
             <SocialButtons />
           </div>
           <div className="basis-1/2 xs:basis-auto">

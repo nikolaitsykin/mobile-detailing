@@ -1,7 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { ULTIMATE_EXTERIOR_PATH } from "../../../../utils/constants";
-import { expressExterior } from "../../../../utils/detailingPackages";
+import { fullBusinessName } from "../../../../utils/data";
+import { odorRemoval } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -9,8 +7,8 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
-const ExpressExterior = () => {
-  const service = expressExterior;
+const OdorRemoval = () => {
+  const service = odorRemoval;
 
   return (
     <div
@@ -19,7 +17,7 @@ const ExpressExterior = () => {
     >
       <div className="w-full bg-black h-[200px] md:h-[300px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-          Express Exterior Detailing
+          Odor Removal
         </h1>
       </div>
       <div className="mx-auto">
@@ -34,7 +32,7 @@ const ExpressExterior = () => {
               service={service}
               services={service.services}
               description={service.description}
-              exteriorServices={service.exteriorServices}
+              interiorServices={service.interiorServices}
               image={service.image}
               singleService
               duration={service.duration}
@@ -48,35 +46,17 @@ const ExpressExterior = () => {
         <section>
           <div className="text-sm md:text-base">
             <p>
-              Tired of scratches and swirls on your car, even after all those $5
-              car washes? Those drive-thru machines can actually harm your paint
-              instead of helping it. Our exterior car wash is a better choice,
-              giving your car the care it really needs.
+              Rejuvinate your car's interior with our Odor Removal Service! Our
+              skilled technicians use premium eco-friendly products, and proven
+              techniques to clean every inch, eliminating dust, dirt, and grime.
+              Book today and enjoy a fresh, like-new feel on every drive!
               <br />
               <br />
-              While we may not be the cheapest option, we offer top-notch
-              quality for our price. We don’t just “wash” your car—our exterior
-              detailing is designed to bring out a deep, lasting shine with
-              premium products and expert care.
+              With {fullBusinessName}’s Odor Removal Service, enjoy a thorough,
+              high-quality clean that keeps your car looking and smelling its
+              best. Reach out today for a pristine, refreshed interior that
+              enhances both your driving experience and your car’s value.
               <br />
-              <br />
-              Our skilled team tackles everything from dirt and grime to bird
-              droppings and bug stains, leaving your car looking its best.
-              <br />
-              <br />
-              If you’re ready to take your car’s shine to the next level, try
-              our{" "}
-              <Link
-                target={"_blank"}
-                className="underline text-blue font-semibold"
-                to={ULTIMATE_EXTERIOR_PATH}
-              >
-                Ultimate Exterior
-              </Link>{" "}
-              exterior service, which adds clay bar treatment, gloss enhancement
-              and ceramic sealant application for up to 6 month of protection
-              for an unbeatable finish. Book now for an exterior car detailing
-              experience that truly stands out!
             </p>
           </div>
         </section>
@@ -100,4 +80,4 @@ const ExpressExterior = () => {
   );
 };
 
-export default ExpressExterior;
+export default OdorRemoval;

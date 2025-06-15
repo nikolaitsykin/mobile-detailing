@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header
-      className={`absolute font-poppins z-30 flex flex-col w-full transition-all duration-300
+      className={`sticky top-0 font-poppins z-30 flex flex-col w-full transition-all duration-300
       `}
     >
       <div className="w-full bg-black text-white h-8 md:h-8 flex justify-center items-center">
@@ -16,7 +16,6 @@ const Header = () => {
           Fully Licenced and Insured
         </p>
       </div>
-
       <section className="w-full flex flex-col justify-start h-36 bg-gradient-to-b from-black to-transparent ">
         <div className="flex justify-between items-center w-full">
           <Topbar />

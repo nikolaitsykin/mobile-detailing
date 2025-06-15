@@ -18,6 +18,7 @@ import {
   ULTIMATE_INTERIOR_BOOKING_PATH,
   EXPRESS_FULL_DETAILING_BOOKING_PATH,
   ULTIMATE_FULL_DETAILING_BOOKING_PATH,
+  ODOR_REMOVAL_PATH,
 } from "./constants";
 
 export const carsSizes = [
@@ -34,14 +35,14 @@ export const carsSizes = [
   {
     title: "Large/XL",
     description:
-      "Full-size SUVs, large trucks, and vans (e.g., Chevy Suburban, Ford F-150, Honda Odyssey)",
+      "Third-row SUVs, large trucks, and vans (e.g., Chevy Suburban, Ford F-150, Honda Odyssey)",
   },
 ];
 
 const carTypes = [
   "Sedans, compact cars, and coupes (e.g., Subaru Impreza, Kia Soul, Ford Mustang)",
   "SUVs, crossovers, and small trucks (e.g., Kia Sorento, Hyundai Tucson, Toyota Tacoma)",
-  "Full-size SUVs, large trucks, and vans (e.g., Chevy Suburban, Ford F-150, Honda Odyssey)",
+  "Third-row SUVs, large trucks, and vans (e.g., Chevy Suburban, Ford F-150, Honda Odyssey)",
 ];
 
 const expressExteriorPrices = ["$125", "$145", "$165"];
@@ -49,8 +50,8 @@ const expressInteriorPrices = ["$165", "$185", "$205"];
 const expressFullDetailPrices = ["$225", "$260", "$295"];
 const ultimateExteriorPrices = ["$175", "$195", "$215"];
 const ultimateInteriorPrices = ["$235", "$255", "$275"];
-const ultimateFullDetailPrices = ["$375", "$410", "$445"];
-const ceramicCoatingPrices = ["$350", "375", "$400"];
+const ultimateFullDetailPrices = ["$395", "$430", "$465"];
+const ceramicCoatingPrices = ["$400", "450", "$500"];
 
 export const expressExterior = {
   title: "Express Exterior Detailing",
@@ -73,9 +74,12 @@ export const expressExterior = {
   bookingLink: EXPRESS_EXTERIOR_BOOKING_PATH,
   shortDescription: `Experience the shine of a professional car detailing with Spotless Detailing’s Express Exterior service. \n\nFrom ${expressExteriorPrices[0]}. Up to 2 hours.`,
   description:
-    "Clean your car in no time with Spotless Detailing's Express Exterior service. We use high quality detailing products that are designed to quickly and effectively remove dirt, grime and other contaminants from the exterior of your car. Our experienced team of professionals will make sure that your car looks like new again.",
+    "Detail your car in a flash with Spotless Detailing's Express Exterior. We use high-quality detailing products designed to rapidly and effectively remove dirt, grime, and other pollutants from the exterior of your car. Our experienced team of professionals will have your car look like new again.",
   duration: ["1 hour", "1 hour 15 mins", "1 hour 30 mins"],
   background: " ",
+  suggestionHeader: "Good for a quick refresh and adding shine.",
+  suggestion:
+    "Perfect if your car needs a fast but thorough clean — ideal before a trip, an event, or just when you want it looking sharp without a full detail.",
 };
 
 export const ultimateExterior = {
@@ -103,7 +107,10 @@ export const ultimateExterior = {
   shortDescription: `Get your car looking new again with Spotless Detailing’s Ultimate Exterior service. \n\nFrom ${ultimateExteriorPrices[0]}. Up to 2 hours 45 mins.`,
   description:
     "Get your car looking like new again with Spotless Detailing’s Ultimate Exterior service. Our professional team of detailers will bring your car back to its showroom shine with a full exterior detail. We’ll wash, clay and finish up with a ceramic based paint sealant for a deep, glossy shine. Make sure your car is looking its best with our Ultimate Exterior package.",
-  duration: ["2 hours mins", "2 hours 15 mins", "2 hours 30 mins"],
+  duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
+  suggestionHeader: "Best for deep cleaning and long-lasting protection.",
+  suggestion:
+    "Great if you want to go beyond the basics — includes clay bar, bug and tar removal, and ceramic sealant for added shine and protection.",
 };
 
 export const ceramicCoating = {
@@ -155,11 +162,13 @@ export const expressInterior = {
   bookingLink: EXPRESS_INTERIOR_BOOKING_PATH,
   shortDescription: `Get your vehicle interior looking refreshed and shiny with Spotless Detailing’s Express Interior service.\n\nFrom ${expressInteriorPrices[0]}. Up to 2.5 hours.`,
   description:
-    "Quickly freshen up your car's interior with Spotless Detailing's Express Interior service. Designed to get your car looking its best in no time, this service includes a thorough vacuuming of all interior surfaces, a detailed wipe-down of all plastics, leather, and vinyl, and a window cleaning. Get your car looking like new again in no time with this express service.\n\n",
+    "Give your car's interior a quick refresh with Spotless Detailing's Express Interior. This is meant to get your car in its best condition in an instant and involves a full vacuum of all the interior surfaces, thorough wipe-down of all plastics, leather, and vinyl, and window wash. Give your car a like-new look in an instant with this express service.\n\n",
   price: expressInteriorPrices,
   carsSize: carTypes,
   duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
-  background: " ",
+  suggestionHeader: "Great for light interior cleanup and tidy-up.",
+  suggestion:
+    "Ideal if the inside of your car just needs some care — vacuuming, wiping down surfaces, and removing dust from the interior.",
 };
 
 export const ultimateInterior = {
@@ -178,18 +187,55 @@ export const ultimateInterior = {
     { text: "Spot stain treatment applied" },
     { text: "Vents, cracks, and crevices cleaned and steamed" },
     { text: "UV and dust protection applied to interior" },
-    { text: "Leather seats and panelsconditioned to prevent cracking" },
+    { text: "Leather seats and panels conditioned to prevent cracking" },
     { text: "Glass and mirrors cleaned" },
   ],
   link: ULTIMATE_INTERIOR_PATH,
   bookingLink: ULTIMATE_INTERIOR_BOOKING_PATH,
   shortDescription: `Experience the luxury of Spotless Detailing's Ultimate Interior service. \n\nFrom ${ultimateInteriorPrices[0]}. Up to 4 hours.`,
   description:
-    "Experience the luxury of Spotless Detailing's Ultimate Interior service. We use the latest techniques and top-of-the-line products to give your car a deep clean and protect it from the elements. Our detailing technicians are highly trained and experienced in providing superior service, making sure your car looks and feels like new. Schedule an appointment today and let us turn your car into a masterpiece.",
+    "Give your car the care it deserves with our Ultimate Interior Detailing. We use high-quality tools and materials to clean deep into every corner of your vehicle and help protect it from daily wear. Our detailers are well-trained and have years of hands-on experience making cars look and feel like new. Schedule your appointment today and see how great your car can feel inside.",
   price: ultimateInteriorPrices,
   carsSize: carTypes,
   duration: ["2 hours 30 mins", "3 hours", "3 hours 30 mins"],
-  background: " ",
+  suggestionHeader: "Perfect for deep cleaning and restoring the interior.",
+  suggestion:
+    "If your car’s interior feels worn, stained, or just overdue for serious attention — this is the one. Deep steam cleaning, stain treatment, leather care, and more.",
+};
+
+export const odorRemoval = {
+  title: "Odor Removal",
+  type: "Interior Service",
+  image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/7.webp",
+  alt: "Odor Removal Services in Raleigh | Spotless Auto Detailing.",
+  interiorServices: [
+    { text: "Interior and trunk vacuumed and steamed" },
+    { text: "Interior plastics and surfaces cleaned with steaming" },
+    { text: "Floor mats cleaned with steaming" },
+    { text: "Door panels and jambs cleaned with steaming" },
+    { text: "Surfaces and plastics cleaned and steamed" },
+    { text: "Seats vacuumed, wiped and steamed" },
+    { text: "Spot stain treatment applied" },
+    { text: "Vents, cracks, and crevices cleaned and steamed" },
+    { text: "UV and dust protection applied to interior" },
+    { text: "Leather seats and panels conditioned to prevent cracking" },
+    { text: "Glass and mirrors cleaned" },
+    { text: "Additional Headliner Steam Cleaning starts at $70" },
+    { text: "Additional Carpet Shampoo/Extraction starts at $70" },
+    { text: "Additional Seats Shampoo/Extraction starts at $50" },
+    { text: "Additional Ozone Odor Removal starts at $100" },
+  ],
+  link: ODOR_REMOVAL_PATH,
+  bookingLink: ULTIMATE_INTERIOR_BOOKING_PATH,
+  shortDescription: `Eliminate stubborn smells with our deep Odor Removal treatment. \n\nFrom ${ultimateInteriorPrices[0]}. Up to 4 hours.`,
+  description:
+    "We go beyond surface cleaning to eliminate odors at the source. Our process includes enzyme-based cleaners to break down organic residue, steam and deep shampooing to lift contaminants from carpets, seats, and headliners, and a hydrogen peroxide-based finisher to sanitize and neutralize lingering odors. For severe cases, we finish with a professional ozone treatment to fully purify the cabin air. Our trained technicians don’t just mask the smell — they eliminate it. Schedule your appointment today and enjoy a car that smells as clean as it looks.",
+  price: ultimateInteriorPrices,
+  carsSize: carTypes,
+  duration: ["2 hours 30 mins", "3 hours", "3 hours 30 mins"],
+  suggestionHeader: "Great for getting rid of strong or stubborn smells.",
+  suggestion:
+    "Whether it’s smoke, food, pets, or musty odors — this treatment targets and neutralizes smells at the source, leaving your car’s interior clean and fresh.",
 };
 
 export const maintenanceFullDetail = {
@@ -242,7 +288,9 @@ export const expressFullDetail = {
   description:
     "Experience the Ultimate Car Care with Spotless Detailing’s Express Full Detail! This luxurious service includes a complete interior and exterior cleaning, deep vacuum, hand wax, and more—all done in just 3-4 hours! Get your car looking its absolute best with our professional team giving it the attention it truly deserves.",
   duration: ["4 hours", "4 hours 15 mins", "4 hours 30 mins"],
-  background: "gray",
+  suggestionHeader: "Best for a quick inside-and-out reset.",
+  suggestion:
+    "A full vehicle clean, inside and out, when you want everything looking fresh but don’t need deep restoration.",
 };
 
 export const ultimateFullDetail = {
@@ -261,11 +309,13 @@ export const ultimateFullDetail = {
   description:
     "Complete car rejuvenation, exterior and interior detailing, top-of-the-line products. Experience the executive car rejuvenation with Spotless Detailing's Ultimate Full Detail. This top-of-the-line service includes exterior and interior detailing to bring your car back to showroom-quality shine. Our technicians use only the best products and ensure every square inch of your car is looking its best.",
   duration: ["6 hours", "6 hours 30 mins", "7 hours"],
-  background: "bg-gray",
+  suggestionHeader: "Top-to-bottom restoration — the works.",
+  suggestion:
+    "Best for anyone who wants their car looking and feeling as close to new as possible, inside and out. Great for resale, special occasions, or just treating yourself.",
 };
 
 export const exteriorDetailingServices = [expressExterior, ultimateExterior];
-export const interiorDetailingServices = [expressInterior, ultimateInterior];
+export const interiorDetailingServices = [expressInterior, ultimateInterior, odorRemoval];
 export const fullDetailingServices = [expressFullDetail, ultimateFullDetail];
 
 export const ceramicCoatingServices = [ceramicCoating];
@@ -277,6 +327,7 @@ export const mobileDetailingServices = [
   ultimateExterior,
   ultimateInterior,
   ultimateFullDetail,
+  odorRemoval
 ];
 
 export const mobileDetailingService = {

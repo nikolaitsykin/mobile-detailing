@@ -12,31 +12,29 @@ const About = ({ city }) => {
         <div className="">
           <h4 className="">Who we are?</h4>
           <p className="text-sm md:text-base">
-            {fullBusinessName} proudly serves {city}, NC, and surrounding areas.
-            Our team specializes in providing eco-friendly car detailing
-            services that ensure your vehicle looks outstanding while
-            prioritizing environmental responsibility. We bring high-quality
-            mobile detailing directly to you.
+            {fullBusinessName} is honored to serve {city}, NC, and the nearby
+            communities. We offer environmentally friendly car detailing
+            services that make your car appear fantastic and are gentle on the
+            environment. We bring high-quality mobile detailing right to you.
           </p>
         </div>
         <div className="pt-5">
           <h4 className="">Our mission</h4>
           <p className="text-sm md:text-base">
-            Our mission is to offer premium car detailing and protection
-            services through the use of safe, environmentally-friendly products.
-            Spotless Detailing aims to keep both your vehicle and the
-            environment in mind, providing top-notch results with eco-conscious
-            solutions.
+            It is our goal to offer premium car detailing and protection
+            services using eco-friendly and safe products. Spotless Detailing
+            makes it a point to think not just about your car but also about the
+            environment, providing quality results using environmentally
+            friendly options.{" "}
           </p>
         </div>
         <div className="pt-5">
           <h4 className="">Our values</h4>
           <p className="text-sm md:text-base">
-            With extensive experience detailing everything from family vehicles
-            to luxury and performance cars, we focus on preserving your car’s
-            value and enhancing your driving experience. We’re committed to
-            sustainability and ensuring each detail aligns with our eco-friendly
-            values.
+            Having ranged from family vehicles to luxury and performance cars,
+            we specialize in enhancing your driving experience and keeping your
+            car's value. We are committed to sustainability and ensuring each
+            detail is aligned with our eco-friendly values.
           </p>
         </div>
         <div className="my-5 pt-5">

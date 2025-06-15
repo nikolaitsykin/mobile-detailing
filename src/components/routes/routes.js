@@ -1,7 +1,10 @@
 import * as React from "react";
 import {
-  ABOUT_PATH, BOOKING_PAGE_PATH,
-  CERAMIC_COATING_PATH, CONTACT_PATH, EXPRESS_EXTERIOR_PATH,
+  ABOUT_PATH,
+  BOOKING_PAGE_PATH,
+  CERAMIC_COATING_PATH,
+  CONTACT_PATH,
+  EXPRESS_EXTERIOR_PATH,
   EXPRESS_FULL_DETAILING_PATH,
   EXPRESS_INTERIOR_PATH,
   FAQS_PATH,
@@ -12,10 +15,12 @@ import {
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
-  SERVICES_PATH, THANK_YOU_PATH,
+  ODOR_REMOVAL_PATH,
+  SERVICES_PATH,
+  THANK_YOU_PATH,
   ULTIMATE_EXTERIOR_PATH,
   ULTIMATE_FULL_DETAILING_PATH,
-  ULTIMATE_INTERIOR_PATH
+  ULTIMATE_INTERIOR_PATH,
 } from "../../utils/constants";
 import App from "../App";
 import ErrorPage from "../error-page";
@@ -31,6 +36,7 @@ import ExpressExterior from "./services/detailing/ExpressExterior";
 import ExpressFullDetailing from "./services/detailing/ExpressFullDetailing";
 import ExpressInterior from "./services/detailing/ExpressInterior";
 import MaintenanceDetailing from "./services/detailing/MaintenanceDetailing";
+import OdorRemoval from "./services/detailing/OdorRemoval";
 import UltimateExterior from "./services/detailing/UltimateExterior";
 import UltimateFullDetailing from "./services/detailing/UltimateFullDetailing";
 import UltimateInterior from "./services/detailing/UltimateInterior";
@@ -81,10 +87,16 @@ export const routes = [
         name: "Express Interior",
         element: <ExpressInterior />,
       },
+
       {
         path: ULTIMATE_INTERIOR_PATH,
         name: "Ultimate Interior",
         element: <UltimateInterior />,
+      },
+      {
+        path: ODOR_REMOVAL_PATH,
+        name: "Odor Removal",
+        element: <OdorRemoval />,
       },
       {
         path: MAINTENANCE_FULL_DETAILING_PATH,

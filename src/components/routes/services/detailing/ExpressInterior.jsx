@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  ULTIMATE_INTERIOR_PATH
-} from "../../../../utils/constants";
+import { ULTIMATE_INTERIOR_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { expressInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -20,8 +18,8 @@ const ExpressInterior = () => {
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
-      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
-        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
+      <div className="w-full bg-black h-[200px] md:h-[300px] flex justify-center items-center mx-auto text-white top-20">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           Express Interior Detailing
         </h1>
       </div>
@@ -29,8 +27,7 @@ const ExpressInterior = () => {
         <section className="">
           <article className=" text-start text-black">
             <h3 className="text-center mx-auto my-5 max-w-5xl">
-              Get your vehicle interior looking bright and refreshed with
-              Spotless Detailing’s Express Interior service.
+              {service.shortDescription}
             </h3>
             <Card
               // title={service.title}
@@ -44,18 +41,20 @@ const ExpressInterior = () => {
               duration={service.duration}
               link={service.link}
               bookingLink={service.bookingLink}
+              suggestionHeader={service.suggestionHeader}
+              suggestion={service.suggestion}
             />
           </article>
           <div className="text-sm md:text-base">
             <p>
-              Rejuvinate your car's interior with our Wipe & Clean Interior
-              Detailing Service! Our skilled technicians use premium
-              eco-friendly products, and proven techniques to clean every inch,
-              eliminating dust, dirt, and grime. Book today and enjoy a fresh,
-              like-new feel on every drive!
+              Rejuvinate your car's interior with our Express Interior Detailing
+              Service! Our skilled technicians use premium eco-friendly
+              products, and proven techniques to clean every inch, eliminating
+              dust, dirt, and grime. Book today and enjoy a fresh, like-new feel
+              on every drive!
               <br />
               <br />
-              With {fullBusinessName}’s Wipe & Clean Package, enjoy a thorough,
+              With {fullBusinessName}’s Express Package, enjoy a thorough,
               high-quality clean that keeps your car looking and smelling its
               best. Reach out today for a pristine, refreshed interior that
               enhances both your driving experience and your car’s value.

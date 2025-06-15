@@ -55,6 +55,8 @@ export const ULTIMATE_EXTERIOR_PATH = "/ultimate-exterior-detailing";
 
 export const EXPRESS_INTERIOR_PATH = "/express-interior-detailing";
 export const ULTIMATE_INTERIOR_PATH = "/ultimate-interior-detailing";
+export const ODOR_REMOVAL_PATH = "/odor-removal";
+
 
 export const MAINTENANCE_FULL_DETAILING_PATH = "/maintenance-full-detailing";
 export const ULTIMATE_FULL_DETAILING_PATH = "/ultimate-full-detailing";

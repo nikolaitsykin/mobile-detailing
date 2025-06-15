@@ -11,7 +11,7 @@ const Hero = ({ city }) => {
     <div className="w-full bg-white ">
       <div className="w-full bg-black">
         <div className="bg-black opacity-40 object-cover h-[calc(60vh-0px)] sm:h-[calc(100vh-0px)] w-full mx-auto absolute">
-          123
+          
         </div>
         <img
           src="https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/serjan-midili-1O1v7Fe0Lto-unsplash%202.jpg"
@@ -40,7 +40,7 @@ const Hero = ({ city }) => {
             Top-Tier Service in {city ? city : "Raleigh"}, NC
           </h3>
           <h1 className="text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Mobile Car Detailing & Ceramic Coating
+            Spotless Auto Detailing & Ceramic Coating
           </h1>
           <h3 className="my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             We bring the best car detailing services to your home or office.

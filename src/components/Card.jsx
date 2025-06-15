@@ -11,6 +11,8 @@ const Card = ({
   description,
   services,
   price,
+  suggestionHeader,
+  suggestion,
   bookingLink,
   singleService,
   exteriorServices,
@@ -101,7 +103,12 @@ const Card = ({
               <h4 className="p-5"> {price}</h4>
             </div>
           )}
-
+          {suggestion && (
+            <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4">
+              <h6 className="text-start italic pb-2"> {suggestionHeader}</h6>
+              <span>{suggestion} </span>
+            </div>
+          )}
           {singleService && (
             <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4">
               {service.title !== "Ceramic Coating"

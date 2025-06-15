@@ -19,19 +19,22 @@ const Testimonials = () => {
             <Google className="px-2" />
           </div>
           <div className="flex items-center">
-            <span className="px-2 font-semibold text-center">80+ 5-star reviews</span>
+            <span className="px-2 font-semibold text-center">
+              80+ 5-star reviews
+            </span>
             <span className="flex px-2">{stars}</span>
           </div>
         </div>
         <p className="text-sm lg:text-base">
-          At <strong>{fullBusinessName}</strong>, we don’t just clean cars — {" "}
-          <strong>we restore, protect, and preserve them </strong> using expert
-          techniques and premium, eco-friendly products. Whether you’re looking
-          to bring your vehicle back to a like-new condition or maintain its
-          showroom shine, our skilled detailing team delivers exceptional
-          results at your home or on-site. Equipped with specialized tools and
-          advanced methods, we’re committed to exceeding your expectations with
-          every detail. Contact us today to schedule mobile or in-shop service.
+          At <strong>{fullBusinessName}</strong>, we don't just clean cars.{" "}
+          <strong>We restore, protect, and preserve them </strong> with expert
+          techniques and high-quality, eco-friendly professional products.
+          Whether you want to make your vehicle look like new or keep it looking
+          its best, our seasoned detailing team provides excellent results at
+          your residence or on site. We possess the specialty equipment and
+          tried-and-true techniques. We strive to exceed your expectations with
+          every detail, leaving your car spotless. Contact us today to schedule
+          our mobile or in-shop service.
         </p>
       </div>
       <div>
