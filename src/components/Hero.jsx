@@ -11,7 +11,6 @@ const Hero = ({ city }) => {
     <div className="w-full bg-white ">
       <div className="w-full bg-black">
         <div className="bg-black opacity-40 object-cover h-[calc(60vh-0px)] sm:h-[calc(100vh-0px)] w-full mx-auto absolute">
-          
         </div>
         <img
           src="https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/serjan-midili-1O1v7Fe0Lto-unsplash%202.jpg"

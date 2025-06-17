@@ -4,10 +4,10 @@ import { BOOKING_PAGE_PATH } from "../utils/constants";
 import Button from "./UI/Button";
 import PriceTabs from "./UI/PriceTabs";
 
-const ServiceItem = ({props}) => {
+const ServiceItem = ({ props }) => {
   return (
     <div
-      className={`bg-white hover:opacity-90 flex flex-col justify-between items-start rounded-sm shadow-md hover:outline-gray hover:outline duration-100 pb-5 w-full mx-auto z-100`}
+      className={`bg-white hover:opacity-90 flex flex-col justify-between items-start rounded-sm shadow-md hover:outline-gray hover:outline duration-100 pb-5 w-full mx-auto z-100 border border-gray`}
     >
       <div className="w-full">
         {props.service && (
@@ -15,26 +15,32 @@ const ServiceItem = ({props}) => {
             <PriceTabs service={props.service} card={true} />
           </div>
         )}
-        <div className={`flex flex-col justify-start items-center w-full `}>
+        <div className={`flex flex-col justify-start items-center w-full px-4`}>
           {props.image && (
             <img
               loading="lazy"
-              className="w-full p-2 max-w-lg align-start rounded-sm overflow-hidden"
+              className="h-64 object-cover w-full p-2 max-w-lg align-start rounded-sm overflow-hidden "
               src={props.image}
               alt="Auto detailing"
             />
           )}
           {props.title && (
-            <h3 className="text-2xl text-center p-2 mt-2 font-poppins text-black">
+            <h3 className="text-2xl text-center p-2 my-2 font-poppins text-black">
               {props.title.toUpperCase()}
             </h3>
           )}
-          {props.type && <h6 className="max-w-xl text-center pb-3">{props.type}</h6>}
-          {props.shortDescription && (
-            <div className="flex flex-col max-w-lg w-full px-2 pb-2 text-sm md:text-base whitespace-pre-wrap">
-              <p className="">{props.shortDescription}</p>
-            </div>
-          )}
+          <div className="w-full">
+            {props.suggestionHeader && (
+              <h6 className="max-w-xl font-semibold text-start pb-1">
+                {props.suggestionHeader}
+              </h6>
+            )}
+            {props.suggestion && (
+              <div className="flex flex-col max-w-lg w-full pb-2 text-sm md:text-base whitespace-pre-wrap">
+                <p className="">{props.suggestion}</p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center w-[100%] mt-3">

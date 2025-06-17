@@ -7,17 +7,26 @@ import ServiceItem from "../../ServiceItem";
 const MobileDetailing = () => {
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
-      <div className="w-full bg-black h-[200px] md:h-[300px] flex justify-center items-center mx-auto text-white top-20">
+      {/* <div className="w-full bg-black h-32"></div> */}
+      <div className="w-full bg-black h-[250px] md:h-[450px] flex flex-col justify-center items-center mx-auto text-white top-20">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
+          Mobile Car Detailing in Raleigh, NC{" "}
+        </h1>
+        <h2 className="text-sm md:text-lg px-5">
+          Refresh and Restore: Premium Auto Detailing in Raleigh and Nearby
+          Areas
+        </h2>
+      </div>
+
+      {/* <div className="w-full bg-black h-[200px] md:h-[300px] flex justify-center items-center mx-auto text-white top-20">
         <div className="flex flex-col text-center">
-          <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Mobile Car Detailing in Raleigh, NC{" "}
-          </h1>
+          <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] px-2"></h1>
           <h2 className="text-sm md:text-lg px-5">
             Refresh and Restore: Premium Auto Detailing in Raleigh and Nearby
             Areas
           </h2>
         </div>
-      </div>
+      </div> */}
       <section>
         <article className="text-start text-black">
           <div className="flex flex-col md:flex-row mt-14">
@@ -69,8 +78,9 @@ const MobileDetailing = () => {
           </div>
         </article>
       </section>
-      <section className="w-[90%] md:w-[80%] mx-auto mt-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <section className="w-[90%] md:w-[80%] mx-auto mt-24">
+        <h2 className="py-4 text-center">Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {mobileDetailingServices.map((item, index) => (
             <ServiceItem key={index} props={item} />
           ))}

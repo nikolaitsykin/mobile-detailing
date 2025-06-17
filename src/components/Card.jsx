@@ -42,7 +42,7 @@ const Card = ({
             {singleService && image && (
               <img
                 loading="lazy"
-                className="w-full max-w-xl align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
+                className="object-cover w-full max-w-xl align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
                 src={image}
                 alt={alt}
               />

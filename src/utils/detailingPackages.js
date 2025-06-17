@@ -65,7 +65,7 @@ export const expressExterior = {
     { text: "Gas cap and fuel area carefully cleaned" },
     { text: "Dried with air blowers and soft towels to avoid scratches" },
     { text: "Glass and mirrors cleaned for clear visibility" },
-    { text: "Protective wax applied for lasting shine and protection" },
+    { text: "Protective wax for up to 3 months shine and protection" },
     { text: "Hand-polished to enhance smoothness and finish" },
   ],
   price: expressExteriorPrices,
@@ -97,7 +97,7 @@ export const ultimateExterior = {
     { text: "Door jambs cleaned" },
     { text: "Paint decontaminated with clay bar treatment" },
     { text: "Bugs removed with chemical treatment" },
-    { text: "Ceramic sealant applied for up to 6 months of protection" },
+    { text: "Ceramic sealant for up to 6 months of protection" },
     { text: "Paint polished by hand to boost shine" },
   ],
   price: ultimateExteriorPrices,
@@ -168,7 +168,7 @@ export const expressInterior = {
   duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
   suggestionHeader: "Great for light interior cleanup and tidy-up.",
   suggestion:
-    "Ideal if the inside of your car just needs some care — vacuuming, wiping down surfaces, and removing dust from the interior.",
+    "Il if the inside of your car just needs some care — vacuuming, wiping down surfaces, and removing dust from the interior.",
 };
 
 export const ultimateInterior = {
@@ -261,7 +261,7 @@ export const maintenanceFullDetail = {
     { text: "Cup Holders Cleaned" },
     { text: "Glasses & Mirrors Cleaned" },
   ],
-  price: ["$155", "$175", "$195"],
+  price: ["$165", "$180", "$195"],
   carsSize: carTypes,
   link: MAINTENANCE_FULL_DETAILING_PATH,
   shortDescription:
@@ -269,7 +269,9 @@ export const maintenanceFullDetail = {
   description:
     "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.",
   duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
-  background: " ",
+  suggestionHeader: "Best for a keeping your car looking its best.",
+  suggestion:
+    "A full vehicle clean, inside and out. Available for cars which were detailed not more than 4 weeks ago by Spotless Detailing.",
 };
 
 export const expressFullDetail = {
@@ -309,25 +311,35 @@ export const ultimateFullDetail = {
   description:
     "Complete car rejuvenation, exterior and interior detailing, top-of-the-line products. Experience the executive car rejuvenation with Spotless Detailing's Ultimate Full Detail. This top-of-the-line service includes exterior and interior detailing to bring your car back to showroom-quality shine. Our technicians use only the best products and ensure every square inch of your car is looking its best.",
   duration: ["6 hours", "6 hours 30 mins", "7 hours"],
-  suggestionHeader: "Top-to-bottom restoration — the works.",
+  suggestionHeader:
+    "Like-new, inside and out.Top-to-bottom restoration — our most complete detail.",
   suggestion:
     "Best for anyone who wants their car looking and feeling as close to new as possible, inside and out. Great for resale, special occasions, or just treating yourself.",
 };
 
 export const exteriorDetailingServices = [expressExterior, ultimateExterior];
-export const interiorDetailingServices = [expressInterior, ultimateInterior, odorRemoval];
-export const fullDetailingServices = [expressFullDetail, ultimateFullDetail];
+export const interiorDetailingServices = [
+  expressInterior,
+  ultimateInterior,
+  odorRemoval,
+];
+export const fullDetailingServices = [
+  expressFullDetail,
+  ultimateFullDetail,
+  maintenanceFullDetail,
+];
 
 export const ceramicCoatingServices = [ceramicCoating];
 
 export const mobileDetailingServices = [
+  expressFullDetail,
+  ultimateFullDetail,
   expressExterior,
   expressInterior,
-  expressFullDetail,
   ultimateExterior,
   ultimateInterior,
-  ultimateFullDetail,
-  odorRemoval
+  odorRemoval,
+  maintenanceFullDetail,
 ];
 
 export const mobileDetailingService = {

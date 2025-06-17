@@ -17,7 +17,6 @@ const FAQs = () => {
           FAQs{" "}
         </h1>
       </div>
-
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article>
           <h2 className=" ">Everything You Need to Know</h2>
