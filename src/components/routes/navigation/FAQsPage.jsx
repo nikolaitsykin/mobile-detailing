@@ -24,9 +24,9 @@ const FAQs = () => {
           <h5>How Can I Book A Detail?</h5>
           <p>
             You can call us at{" "}
-            <a href={CALL_NUMBER} className="underline text-blue font-semibold">
+            <Link to={CALL_NUMBER} className="underline text-blue font-semibold">
               (919) 906-0099
-            </a>
+            </Link>
             , request a quote through our contact page or just simply book
             online. Click the{" "}
             <Link

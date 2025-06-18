@@ -40,9 +40,9 @@ const Booking = () => {
             ✔ Book your appointment online by clicking the "Book Online" button
             or contact us by clicking the "Request a Quote" button or give us a
             call at{" "}
-            <a href={CALL_NUMBER} className="underline text-blue">
+            <Link to={CALL_NUMBER} className="underline text-blue">
               (919)&nbsp;906&#8209;0099
-            </a>
+            </Link>
             . Be sure to include your address when scheduling!
           </li>
           {whatToExpect.map((item, index) => (
