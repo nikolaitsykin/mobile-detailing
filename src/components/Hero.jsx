@@ -10,8 +10,7 @@ const Hero = ({ city }) => {
   return (
     <div className="w-full bg-white ">
       <div className="w-full bg-black">
-        <div className="bg-black opacity-40 object-cover h-[calc(60vh-0px)] sm:h-[calc(100vh-0px)] w-full mx-auto absolute">
-        </div>
+        <div className="bg-black opacity-40 object-cover h-[calc(60vh-0px)] sm:h-[calc(100vh-0px)] w-full mx-auto absolute"></div>
         <img
           src="https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/serjan-midili-1O1v7Fe0Lto-unsplash%202.jpg"
           alt="Auto detailing"
@@ -42,7 +41,8 @@ const Hero = ({ city }) => {
             Premium Car Detailing
           </h1>
           <h3 className="my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Spotless Auto Detailing brings the best car detailing services to your home or office.
+            Spotless Auto Detailing provides the finest car detailing services
+            directly to your home or office.{" "}
           </h3>
           <div
             id="book_buttons"
