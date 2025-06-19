@@ -33,6 +33,14 @@ const ContactForm = () => {
     "Odor Removal",
     "Ceramic Coating",
   ];
+  const dates = [
+    "Today",
+    "Tomorrow",
+    "This Week",
+    "Next Week",
+    "This Month",
+    "Next Month",
+  ];
 
   const [values, setValues] = useState({
     fullName: "",
@@ -236,13 +244,13 @@ const ContactForm = () => {
             4. Select preferred date
           </h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
-            <InputField
+            <SelectField
               value={values.date}
               handleChange={handleChange}
-              label="What Date Works Best for You?"
+              label="How soon do you need the service?"
               name="date"
-              type="date"
-              placeholder="eg. 01/01/2024"
+              defaultOption="Preferred date?"
+              options={dates}
             />
           </div>
         </div>
