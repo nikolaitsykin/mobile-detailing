@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { addons } from "../utils/addons";
 import { THANK_YOU_PATH } from "../utils/constants";
 import Button from "./UI/Button";
 import InputField from "./UI/InputField";
@@ -11,11 +12,28 @@ const ContactForm = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const heading =
-    location.pathname === "/contact"
-      ? "Tell Us About"
-      : <span>Not Sure What You Need?<br/> Talk to a Specialist!</span>;
+    location.pathname === "/contact" ? (
+      "Tell Us About"
+    ) : (
+      <span>
+        Not Sure What You Need?
+        <br /> Talk to a Specialist!
+      </span>
+    );
   const headingClass =
     location.pathname === "/contact" ? "text-start" : "text-center";
+
+  console.log(addons);
+
+  const addonsList = addons.map((addon) => addon.title);
+  const servicesList = [
+    "Exterior Detailing",
+    "Interior Detailing",
+    "Full Detailing",
+    "Odor Removal",
+    "Ceramic Coating",
+  ];
+
   const [values, setValues] = useState({
     fullName: "",
     vehicle: "",
@@ -196,12 +214,7 @@ const ContactForm = () => {
                 name="serviceOne"
                 label="Which type of service are you interested in?"
                 defaultOption="Preferred service"
-                options={[
-                  "Exterior Detailing",
-                  "Interior Detailing",
-                  "Full Car Detailing",
-                  "Ceramic Coating",
-                ]}
+                options={servicesList}
                 value={values.serviceOne}
                 required={true}
               />
@@ -212,16 +225,7 @@ const ContactForm = () => {
                 name="addonOne"
                 label="Which add-on are you interested in?"
                 defaultOption="Preferred add-on"
-                options={[
-                  "Water Spot Removal",
-                  "Exterior Plastic Trim Rejuvenation",
-                  "Claybar Treatment",
-                  "Headliner Cleaning",
-                  "Engine Bay Detailing",
-                  "Excessice Hair/Sand Removal",
-                  "Seats/Carpet Shampoo",
-                  "6 months Ceramic Sealant",
-                ]}
+                options={addonsList}
                 value={values.addonOne}
               />
             </div>

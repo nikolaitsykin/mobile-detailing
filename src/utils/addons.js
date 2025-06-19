@@ -29,7 +29,7 @@ export const addons = [
     price: "Starts at $50",
   },
   {
-    title: "Ceramic Sealant",
+    title: "6 Months Ceramic Sealant",
     type: "Exterior Service",
     description:
       "Includes: \n• Clay Bar Treatment: Detailed clay bar treatment to remove embedded contaminants and leave the paint smooth. 6-Month Sealant: Application of a high-quality sealant that provides up to 6 months of protection. \nBenefits: \n• Smooth and Clean Surface: The clay bar treatment effectively removes embedded contaminants that regular washing can't, leaving the paint smooth to the touch. \n• Durable Protection: The 6-month sealant offers strong protection against environmental factors such as UV rays, bird droppings, and road salt, helping to maintain your car's exterior. \n• Enhanced Appearance: The thorough exterior wash and sealant application enhance the gloss and shine of your car’s paint, making it look like new. \n• Ease of Maintenance: The protective layer created by the sealant makes future cleaning easier, as dirt and grime are less likely to adhere to the surface.",
