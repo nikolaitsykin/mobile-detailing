@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo_for_web.png";
+import logo from "../../assets/images/spotless_logo_new_small.png";
 import { HOME_PATH } from "../../utils/constants";
 import ConntactsButtons from "./ConntactsButtons";
 
