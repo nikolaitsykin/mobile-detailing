@@ -17,6 +17,7 @@ import {
   MOBILE_INTERIOR_DETAILING_PATH,
   ODOR_REMOVAL_PATH,
   SERVICES_PATH,
+  SHAMPOO_PATH,
   THANK_YOU_PATH,
   ULTIMATE_EXTERIOR_PATH,
   ULTIMATE_FULL_DETAILING_PATH,
@@ -37,6 +38,7 @@ import ExpressFullDetailing from "./services/detailing/ExpressFullDetailing";
 import ExpressInterior from "./services/detailing/ExpressInterior";
 import MaintenanceDetailing from "./services/detailing/MaintenanceDetailing";
 import OdorRemoval from "./services/detailing/OdorRemoval";
+import SteamAndShampoo from "./services/detailing/SteamAndShampoo";
 import UltimateExterior from "./services/detailing/UltimateExterior";
 import UltimateFullDetailing from "./services/detailing/UltimateFullDetailing";
 import UltimateInterior from "./services/detailing/UltimateInterior";
@@ -87,7 +89,6 @@ export const routes = [
         name: "Express Interior",
         element: <ExpressInterior />,
       },
-
       {
         path: ULTIMATE_INTERIOR_PATH,
         name: "Ultimate Interior",
@@ -97,6 +98,11 @@ export const routes = [
         path: ODOR_REMOVAL_PATH,
         name: "Odor Removal",
         element: <OdorRemoval />,
+      },
+      {
+        path: SHAMPOO_PATH,
+        name: "Steam and Shampoo",
+        element: <SteamAndShampoo />,
       },
       {
         path: MAINTENANCE_FULL_DETAILING_PATH,

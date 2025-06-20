@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { addons } from "../utils/addons";
 import { THANK_YOU_PATH } from "../utils/constants";
+import { mobileDetailingServices } from "../utils/detailingPackages";
 import Button from "./UI/Button";
 import InputField from "./UI/InputField";
 import SelectField from "./UI/SelectField";
@@ -26,13 +27,7 @@ const ContactForm = () => {
   console.log(addons);
 
   const addonsList = addons.map((addon) => addon.title);
-  const servicesList = [
-    "Exterior Detailing",
-    "Interior Detailing",
-    "Full Detailing",
-    "Odor Removal",
-    "Ceramic Coating",
-  ];
+  const servicesList = mobileDetailingServices.map((service) => service.title);
   const dates = [
     "Today",
     "Tomorrow",

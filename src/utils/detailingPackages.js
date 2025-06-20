@@ -1,24 +1,27 @@
 import {
-  MOBILE_DETAILING_PATH,
+  CERAMIC_COATING_BOOKING_PATH,
   CERAMIC_COATING_PATH,
+  EXPRESS_EXTERIOR_BOOKING_PATH,
   EXPRESS_EXTERIOR_PATH,
+  EXPRESS_FULL_DETAILING_BOOKING_PATH,
   EXPRESS_FULL_DETAILING_PATH,
+  EXPRESS_INTERIOR_BOOKING_PATH,
   EXPRESS_INTERIOR_PATH,
   MAINTENANCE_FULL_DETAILING_PATH,
+  MOBILE_DETAILING_PATH,
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
-  ULTIMATE_EXTERIOR_PATH,
-  ULTIMATE_FULL_DETAILING_PATH,
-  ULTIMATE_INTERIOR_PATH,
-  EXPRESS_EXTERIOR_BOOKING_PATH,
-  ULTIMATE_EXTERIOR_BOOKING_PATH,
-  CERAMIC_COATING_BOOKING_PATH,
-  EXPRESS_INTERIOR_BOOKING_PATH,
-  ULTIMATE_INTERIOR_BOOKING_PATH,
-  EXPRESS_FULL_DETAILING_BOOKING_PATH,
-  ULTIMATE_FULL_DETAILING_BOOKING_PATH,
+  ODOR_REMOVAL_BOOKING_PATH,
   ODOR_REMOVAL_PATH,
+  SEATS_SHAMPOO_BOOKING_PATH,
+  SHAMPOO_PATH,
+  ULTIMATE_EXTERIOR_BOOKING_PATH,
+  ULTIMATE_EXTERIOR_PATH,
+  ULTIMATE_FULL_DETAILING_BOOKING_PATH,
+  ULTIMATE_FULL_DETAILING_PATH,
+  ULTIMATE_INTERIOR_BOOKING_PATH,
+  ULTIMATE_INTERIOR_PATH,
 } from "./constants";
 
 export const carsSizes = [
@@ -50,6 +53,8 @@ const expressInteriorPrices = ["$165", "$185", "$205"];
 const expressFullDetailPrices = ["$225", "$260", "$295"];
 const ultimateExteriorPrices = ["$175", "$195", "$215"];
 const ultimateInteriorPrices = ["$235", "$255", "$275"];
+const odorRemovalPrices = ["$205", "225", "$245"];
+const shampooPrices = ["$150", "$175", "$200"];
 const ultimateFullDetailPrices = ["$395", "$430", "$465"];
 const ceramicCoatingPrices = ["$400", "450", "$500"];
 
@@ -209,33 +214,46 @@ export const odorRemoval = {
   image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/7.webp",
   alt: "Odor Removal Services in Raleigh | Spotless Auto Detailing.",
   interiorServices: [
-    { text: "Interior and trunk vacuumed and steamed" },
-    { text: "Interior plastics and surfaces cleaned with steaming" },
-    { text: "Floor mats cleaned with steaming" },
-    { text: "Door panels and jambs cleaned with steaming" },
-    { text: "Surfaces and plastics cleaned and steamed" },
-    { text: "Seats vacuumed, wiped and steamed" },
-    { text: "Spot stain treatment applied" },
-    { text: "Vents, cracks, and crevices cleaned and steamed" },
-    { text: "UV and dust protection applied to interior" },
-    { text: "Leather seats and panels conditioned to prevent cracking" },
-    { text: "Glass and mirrors cleaned" },
-    { text: "Additional Headliner Steam Cleaning starts at $70" },
-    { text: "Additional Carpet Shampoo/Extraction starts at $70" },
-    { text: "Additional Seats Shampoo/Extraction starts at $50" },
-    { text: "Additional Ozone Odor Removal starts at $100" },
+    { text: "Headliner Steam Cleaning" },
+    { text: "Carpet Shampoo/Extraction" },
+    { text: "Seats Shampoo/Extraction" },
+    { text: "Ozone Odor Removal" },
   ],
   link: ODOR_REMOVAL_PATH,
-  bookingLink: ULTIMATE_INTERIOR_BOOKING_PATH,
-  shortDescription: `Eliminate stubborn smells with our deep Odor Removal treatment. \n\nFrom ${ultimateInteriorPrices[0]}. Up to 4 hours.`,
+  bookingLink: ODOR_REMOVAL_BOOKING_PATH,
+  shortDescription: `Eliminate stubborn smells with our deep Odor Removal treatment. \n\nFrom ${odorRemovalPrices[0]}. Up to 4 hours.`,
   description:
     "We go beyond surface cleaning to eliminate odors at the source. Our process includes enzyme-based cleaners to break down organic residue, steam and deep shampooing to lift contaminants from carpets, seats, and headliners, and a hydrogen peroxide-based finisher to sanitize and neutralize lingering odors. For severe cases, we finish with a professional ozone treatment to fully purify the cabin air. Our trained technicians don’t just mask the smell — they eliminate it. Schedule your appointment today and enjoy a car that smells as clean as it looks.",
-  price: ultimateInteriorPrices,
+  price: odorRemovalPrices,
   carsSize: carTypes,
-  duration: ["2 hours 30 mins", "3 hours", "3 hours 30 mins"],
+  duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
   suggestionHeader: "Great for getting rid of strong or stubborn smells.",
   suggestion:
     "Whether it’s smoke, food, pets, or musty odors — this treatment targets and neutralizes smells at the source, leaving your car’s interior clean and fresh.",
+};
+
+export const steamAndShampoo = {
+  title: "Steam and Shampoo",
+  type: "Interior Service",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_262763320.avif",
+  alt: "Steam and Shampoo Seats Services in Raleigh | Spotless Auto Detailing.",
+  interiorServices: [
+    { text: "Carpet Shampoo/Extraction" },
+    { text: "Seats Shampoo/Extraction" },
+  ],
+  link: SHAMPOO_PATH,
+  bookingLink: SEATS_SHAMPOO_BOOKING_PATH,
+  shortDescription: `Refresh and restore your upholstery with deep steam and shampoo cleaning. \n\nFrom ${shampooPrices[0]}. Up to 3 hours.`,
+  description:
+    "Our upholstery steam and shampoo service is designed to lift embedded dirt, stains, and odors from your seats or carpet. Using high-temperature steam and premium fabric-safe shampoo, we break down grime and extract deep-seated contaminants, leaving your seats or carpet looking cleaner and smelling fresher. Ideal for cloth seats and carpet needing a serious refresh. Book now to bring life back to your interior.",
+  price: shampooPrices,
+  carsSize: carTypes,
+  duration: ["1 hour", "1 hour 15 mins", "1 hour 30 mins"],
+  suggestionHeader:
+    "Perfect for deep-cleaning stained or smelly upholstery.",
+  suggestion:
+    "Whether it’s food spills or dropings, dirt or pet messes — this service lifts stains and refreshes your vehicle upholstery using high-heat steam and deep shampoo extraction.",
 };
 
 export const maintenanceFullDetail = {
@@ -322,6 +340,7 @@ export const interiorDetailingServices = [
   expressInterior,
   ultimateInterior,
   odorRemoval,
+  steamAndShampoo,
 ];
 export const fullDetailingServices = [
   expressFullDetail,
@@ -338,8 +357,8 @@ export const mobileDetailingServices = [
   expressInterior,
   ultimateExterior,
   ultimateInterior,
+  steamAndShampoo,
   odorRemoval,
-  maintenanceFullDetail,
 ];
 
 export const mobileDetailingService = {

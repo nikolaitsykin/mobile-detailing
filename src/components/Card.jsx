@@ -54,7 +54,7 @@ const Card = ({
             </div>
           )}
         </div>
-        <div>
+        <div className="flex flex-col justify-around h-full">
           {services && (
             <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
               <ul className="h-full">
@@ -116,7 +116,9 @@ const Card = ({
                 : ""}
             </div>
           )}
-          <BookButtons color={"secondary"} bookingLink={bookingLink} />
+          <div className="mb-3">
+            <BookButtons color={"secondary"} bookingLink={bookingLink} />
+          </div>
         </div>
       </div>
     </div>

@@ -33,16 +33,16 @@ const Hero = ({ city }) => {
         </video> */}
       </div>
       <div className="w-full object-cover h-[calc(75vh-0px)] sm:h-[calc(115vh-0px)] top-0 flex justify-center items-center absolute  ">
-        <div className="w-[90%] flex flex-col justify-center text-white">
-          <h3 className="text-base sm:text-xl text-center font-light font-poppins p-1 sm:p-4">
+        <div className="w-[90%] flex flex-col justify-center items-center text-white">
+          {/* <h3 className="text-base sm:text-xl text-center font-light font-poppins p-1 sm:p-4">
             Top-Tier Service in {city ? city : "Raleigh"}, NC
-          </h3>
-          <h1 className="uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Premium Car Detailing
+          </h3> */}
+          <h1 className=" w-full md:w-1/2 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Spotless Mobile Auto Detailing {city ? city : "Raleigh"}
           </h1>
-          <h3 className="my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h3 className="w-full md:w-1/2 my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Spotless Auto Detailing provides the finest car detailing services
-            directly to your home or office.{" "}
+            in Raleigh, Cary, Apex and the surrounding areas.{" "}
           </h3>
           <div
             id="book_buttons"

@@ -11,7 +11,8 @@ export const BOOKING_URL =
 export const GOOGLE_MAPS_URL =
   "https://www.google.com/maps/d/u/3/embed?mid=1mtj3lKkRzf72krGSLKIV9mUKzDWvHW0&ehbc=2E312F&noprof=1";
 
-export const GOOGLE_REVIEWS_URL = "https://www.google.com/maps/place/Spotless+Auto+Detailing:+Mobile+Car+Detailing+%26+Ceramic+Coating/@35.7156926,-78.9257241,13z/data=!4m12!1m2!2m1!1smobile+detailing!3m8!1s0x2e3895aef2810335:0xf9d7593217fd03a9!8m2!3d35.723543!4d-78.8839443!9m1!1b1!15sChBtb2JpbGUgZGV0YWlsaW5nWhIiEG1vYmlsZSBkZXRhaWxpbmeSARVjYXJfZGV0YWlsaW5nX3NlcnZpY2XgAQA!16s%2Fg%2F11wh63g393?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D#:~:text=Overview-,Reviews,-About";
+export const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/maps/place/Spotless+Auto+Detailing:+Mobile+Car+Detailing+%26+Ceramic+Coating/@35.7156926,-78.9257241,13z/data=!4m12!1m2!2m1!1smobile+detailing!3m8!1s0x2e3895aef2810335:0xf9d7593217fd03a9!8m2!3d35.723543!4d-78.8839443!9m1!1b1!15sChBtb2JpbGUgZGV0YWlsaW5nWhIiEG1vYmlsZSBkZXRhaWxpbmeSARVjYXJfZGV0YWlsaW5nX3NlcnZpY2XgAQA!16s%2Fg%2F11wh63g393?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D#:~:text=Overview-,Reviews,-About";
 export const LEAVE_REVIEW_URL = "https://g.page/r/CakD_RcyWdf5EBM/review";
 export const GOOGLE_BUSINESS_URL =
   "https://www.google.com/maps/place/Spotless+Detailing:+Mobile+Auto+Detailing+%26+Ceramic+Coating/@35.723543,-78.8839443,17z/data=!4m16!1m9!3m8!1s0x2e3895aef2810335:0xf9d7593217fd03a9!2sSpotless+Detailing:+Mobile+Auto+Detailing+%26+Ceramic+Coating!8m2!3d35.723543!4d-78.8839443!9m1!1b1!16s%2Fg%2F11wh63g393!3m5!1s0x2e3895aef2810335:0xf9d7593217fd03a9!8m2!3d35.723543!4d-78.8839443!16s%2Fg%2F11wh63g393?hl=en&entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D";
@@ -41,14 +42,24 @@ export const MOBILE_FULL_DETAILING_BOOKING_PATH =
   "/mobile-full-detailing#booking";
 export const THANK_YOU_PATH = "/thank-you";
 
-export const EXPRESS_EXTERIOR_BOOKING_PATH = "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/FQHA5CSJHRIRJ5Y4Q7BCS4GE";
-export const ULTIMATE_EXTERIOR_BOOKING_PATH = "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/UPNMJMJ5YN47XWJ7JBJIEOTC";
-export const EXPRESS_INTERIOR_BOOKING_PATH = "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/MTCYBC4AUTE5432G2ANIALXV";
-export const ULTIMATE_INTERIOR_BOOKING_PATH = "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/YQGCB4KHU52DBUKKLXFFQ2CH";
-export const EXPRESS_FULL_DETAILING_BOOKING_PATH = "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/6DDBV3HEKXOERXKKJVL47NLY";
-export const ULTIMATE_FULL_DETAILING_BOOKING_PATH = "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/6QQIRLPLFXKWKX7NWHFARYFI";
-export const CERAMIC_COATING_BOOKING_PATH = "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/QDUQOND743CV22TO3AQCDTAV";
-
+export const EXPRESS_EXTERIOR_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/FQHA5CSJHRIRJ5Y4Q7BCS4GE";
+export const ULTIMATE_EXTERIOR_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/UPNMJMJ5YN47XWJ7JBJIEOTC";
+export const EXPRESS_INTERIOR_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/MTCYBC4AUTE5432G2ANIALXV";
+export const SEATS_SHAMPOO_BOOKING_PATH =
+  "https://app.squareup.com/dashboard/items/services/7G2V2LTPYMF6LOISEGDKVLDO";
+export const ODOR_REMOVAL_BOOKING_PATH =
+  "https://app.squareup.com/dashboard/items/services/2BVTEZFNT7VWN3QIRILRXX3P";
+export const ULTIMATE_INTERIOR_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/YQGCB4KHU52DBUKKLXFFQ2CH";
+export const EXPRESS_FULL_DETAILING_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/6DDBV3HEKXOERXKKJVL47NLY";
+export const ULTIMATE_FULL_DETAILING_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/6QQIRLPLFXKWKX7NWHFARYFI";
+export const CERAMIC_COATING_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/QDUQOND743CV22TO3AQCDTAV";
 
 export const EXPRESS_EXTERIOR_PATH = "/express-exterior-detailing";
 export const ULTIMATE_EXTERIOR_PATH = "/ultimate-exterior-detailing";
@@ -56,7 +67,7 @@ export const ULTIMATE_EXTERIOR_PATH = "/ultimate-exterior-detailing";
 export const EXPRESS_INTERIOR_PATH = "/express-interior-detailing";
 export const ULTIMATE_INTERIOR_PATH = "/ultimate-interior-detailing";
 export const ODOR_REMOVAL_PATH = "/odor-removal";
-
+export const SHAMPOO_PATH = "/steam-and-shampoo-seats-and-carpet";
 
 export const MAINTENANCE_FULL_DETAILING_PATH = "/maintenance-full-detailing";
 export const ULTIMATE_FULL_DETAILING_PATH = "/ultimate-full-detailing";
