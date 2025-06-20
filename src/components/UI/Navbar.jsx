@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`top-24 md:top-20  ${
+          className={`top-28 md:top-20  ${
             isMenuOpen ? "absolute" : "hidden"
           } flex md:flex md:static flex-col md:flex-row w-full items-start pt-0 bg-black md:bg-transparent h-64 md:h-10`}
         >
