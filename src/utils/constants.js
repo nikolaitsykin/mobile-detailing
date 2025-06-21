@@ -49,9 +49,9 @@ export const ULTIMATE_EXTERIOR_BOOKING_PATH =
 export const EXPRESS_INTERIOR_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/MTCYBC4AUTE5432G2ANIALXV";
 export const SEATS_SHAMPOO_BOOKING_PATH =
-  "https://app.squareup.com/dashboard/items/services/7G2V2LTPYMF6LOISEGDKVLDO";
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/7G2V2LTPYMF6LOISEGDKVLDO";
 export const ODOR_REMOVAL_BOOKING_PATH =
-  "https://app.squareup.com/dashboard/items/services/2BVTEZFNT7VWN3QIRILRXX3P";
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/2BVTEZFNT7VWN3QIRILRXX3P";
 export const ULTIMATE_INTERIOR_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/YQGCB4KHU52DBUKKLXFFQ2CH";
 export const EXPRESS_FULL_DETAILING_BOOKING_PATH =
