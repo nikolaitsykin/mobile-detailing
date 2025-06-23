@@ -24,8 +24,6 @@ const ContactForm = () => {
   const headingClass =
     location.pathname === "/contact" ? "text-start" : "text-center";
 
-  console.log(addons);
-
   const addonsList = addons.map((addon) => addon.title);
   const servicesList = mobileDetailingServices.map((service) => service.title);
   const dates = [

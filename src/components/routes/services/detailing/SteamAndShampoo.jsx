@@ -1,3 +1,4 @@
+import { SHAMPOO_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { steamAndShampoo } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -6,10 +7,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const SteamAndShampoo = () => {
   const service = steamAndShampoo;
-
+  SEO({
+    canonical: SHAMPOO_PATH,
+  });
   return (
     <div
       id="exterior-detailing"

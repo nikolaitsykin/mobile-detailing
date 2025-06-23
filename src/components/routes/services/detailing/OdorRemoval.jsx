@@ -1,3 +1,4 @@
+import { ODOR_REMOVAL_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { odorRemoval } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -6,10 +7,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const OdorRemoval = () => {
   const service = odorRemoval;
-
+  SEO({
+    canonical: ODOR_REMOVAL_PATH,
+  });
   return (
     <div
       id="exterior-detailing"

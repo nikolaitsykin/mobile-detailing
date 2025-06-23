@@ -3,13 +3,18 @@ import { Link } from "react-router-dom";
 import {
   BOOKING_URL,
   CALL_NUMBER,
-  CONTACT_PATH
+  CONTACT_PATH,
+  FAQS_PATH,
 } from "../../../utils/constants";
 import { autoDetailingQuestions, generalQuestions } from "../../../utils/faq";
 import FaqItem from "../../FaqItem";
+import SEO from "../../SEO";
 import BookButtons from "../../UI/BookButtons";
 
 const FAQs = () => {
+  SEO({
+    canonical: FAQS_PATH,
+  });
   return (
     <div id="faq" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
@@ -24,7 +29,10 @@ const FAQs = () => {
           <h5>How Can I Book A Detail?</h5>
           <p>
             You can call us at{" "}
-            <Link to={CALL_NUMBER} className="underline text-blue font-semibold">
+            <Link
+              to={CALL_NUMBER}
+              className="underline text-blue font-semibold"
+            >
               (919) 906-0099
             </Link>
             , request a quote through our contact page or just simply book

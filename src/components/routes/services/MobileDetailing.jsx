@@ -13,7 +13,7 @@ const MobileDetailing = () => {
           Mobile Car Detailing in Raleigh, NC{" "}
         </h1>
         <h2 className="text-sm md:text-lg px-5">
-          Refresh and Restore: Premium Auto Detailing in Raleigh and Nearby
+          Refresh and Restore: Premium Car Detailing near you. We provide service in Raleigh and nearby areas.
           Areas
         </h2>
       </div>

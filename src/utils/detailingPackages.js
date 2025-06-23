@@ -56,7 +56,7 @@ const ultimateInteriorPrices = ["$235", "$255", "$275"];
 const odorRemovalPrices = ["$205", "225", "$245"];
 const shampooPrices = ["$150", "$175", "$200"];
 const ultimateFullDetailPrices = ["$395", "$430", "$465"];
-const ceramicCoatingPrices = ["$400", "450", "$500"];
+const ceramicCoatingPrices = ["$545", "$645", "$745"];
 
 export const expressExterior = {
   title: "Express Exterior Detailing",
@@ -119,7 +119,7 @@ export const ultimateExterior = {
 };
 
 export const ceramicCoating = {
-  title: "Ceramic Coating",
+  title: "3 year Ceramic Coating",
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
@@ -134,16 +134,16 @@ export const ceramicCoating = {
     { text: "Exterior black plastic trim restored and protected" },
     { text: "Paint decontaminated with clay bar treatment" },
     { text: "Bugs and tar removed with chemical treatment" },
-    { text: "24 months Graphene Ceramic Coating Applied" },
+    { text: "3 years Ceramic Coating Applied" },
   ],
   price: ceramicCoatingPrices,
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   bookingLink: CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Shine & Shield service, and 24 months graphene ceramic coating application for long-lasting protection. \n\nFrom  ${ceramicCoatingPrices[0]}. Up to 4 hours.`,
+  shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Shine & Shield service, and 3 years ceramic coating application for long-lasting protection. \n\nFrom  ${ceramicCoatingPrices[0]}. Up to 4 hours.`,
   description:
-    "To prepare for a ceramic coating we begin with a full hand wash and dry, followed by tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to 24 months, ensuring long-lasting defense against various contaminants.",
-  duration: ["3 hours", "3 hours 30 mins", "4 hours"],
+    "To prepare for a ceramic coating we begin with a full hand wash and dry, followed by tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to 3 years, ensuring long-lasting defense against various contaminants.",
+  duration: ["5 hours", "5 hours 30 mins", "6 hours"],
   background: " ",
 };
 
@@ -250,8 +250,7 @@ export const steamAndShampoo = {
   price: shampooPrices,
   carsSize: carTypes,
   duration: ["1 hour", "1 hour 15 mins", "1 hour 30 mins"],
-  suggestionHeader:
-    "Perfect for deep-cleaning stained or smelly upholstery.",
+  suggestionHeader: "Perfect for deep-cleaning stained or smelly upholstery.",
   suggestion:
     "Whether it’s food spills or dropings, dirt or pet messes — this service lifts stains and refreshes your vehicle upholstery using high-heat steam and deep shampoo extraction.",
 };
@@ -359,6 +358,7 @@ export const mobileDetailingServices = [
   ultimateInterior,
   steamAndShampoo,
   odorRemoval,
+  ceramicCoating,
 ];
 
 export const mobileDetailingService = {

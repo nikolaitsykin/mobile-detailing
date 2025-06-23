@@ -100,7 +100,7 @@ const Card = ({
 
           {price && (
             <div className="flex justify-center items-end w-full">
-              <h4 className="p-5"> {price}</h4>
+              <h4 className="p-5"> ${price}</h4>
             </div>
           )}
           {suggestion && (

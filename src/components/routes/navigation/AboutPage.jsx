@@ -1,8 +1,12 @@
-import React from "react";
+import { ABOUT_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
+import SEO from "../../SEO";
 import BookButtons from "../../UI/BookButtons";
 
 const AboutPage = () => {
+  SEO({
+    canonical: ABOUT_PATH,
+  });
   return (
     <div id="about" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">

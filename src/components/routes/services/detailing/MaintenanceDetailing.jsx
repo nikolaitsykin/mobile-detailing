@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
-  EXPRESS_FULL_DETAILING_PATH,
+  MAINTENANCE_FULL_DETAILING_PATH,
   ULTIMATE_FULL_DETAILING_PATH,
 } from "../../../../utils/constants";
 import { maintenanceFullDetail } from "../../../../utils/detailingPackages";
@@ -11,10 +10,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const MaintenanceDetailing = () => {
   const service = maintenanceFullDetail;
-
+  SEO({
+    canonical: MAINTENANCE_FULL_DETAILING_PATH,
+  });
   return (
     <div
       id="exterior-detailing"

@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ULTIMATE_FULL_DETAILING_PATH } from "../../../../utils/constants";
+import {
+  ULTIMATE_FULL_DETAILING_PATH,
+  ULTIMATE_INTERIOR_PATH,
+} from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { ultimateInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -9,10 +12,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const UltimateInterior = () => {
   const service = ultimateInterior;
-
+  SEO({
+    canonical: ULTIMATE_INTERIOR_PATH,
+  });
   return (
     <div
       id="exterior-detailing"

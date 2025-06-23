@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ULTIMATE_INTERIOR_PATH } from "../../../../utils/constants";
+import {
+  EXPRESS_INTERIOR_PATH,
+  ULTIMATE_INTERIOR_PATH,
+} from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { expressInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -9,10 +12,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const ExpressInterior = () => {
   const service = expressInterior;
-
+  SEO({
+    canonical: EXPRESS_INTERIOR_PATH,
+  });
   return (
     <div
       id="exterior-detailing"

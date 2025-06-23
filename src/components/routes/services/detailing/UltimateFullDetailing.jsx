@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CERAMIC_COATING_PATH } from "../../../../utils/constants";
+import { CERAMIC_COATING_PATH, ULTIMATE_FULL_DETAILING_PATH } from "../../../../utils/constants";
 import { ultimateFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
@@ -8,10 +8,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const UltimateFullDetailing = () => {
   const service = ultimateFullDetail;
-
+SEO({
+    canonical: ULTIMATE_FULL_DETAILING_PATH,
+  });
   return (
     <div
       id="exterior-detailing"
@@ -69,7 +72,7 @@ const UltimateFullDetailing = () => {
                 className="underline text-blue font-semibold"
                 to={CERAMIC_COATING_PATH}
               >
-                24 Months Graphene Ceramic Coating
+                3 years Ceramic Coating
               </Link>{" "}
               application for just $150.
               <br />

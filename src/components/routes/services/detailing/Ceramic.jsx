@@ -1,12 +1,17 @@
 import React from "react";
+import { CERAMIC_COATING_PATH } from "../../../../utils/constants";
 import { ceramicCoating } from "../../../../utils/detailingPackages";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const Ceramic = () => {
   const service = ceramicCoating;
+  SEO({
+    canonical: CERAMIC_COATING_PATH,
+  });
 
   return (
     <div

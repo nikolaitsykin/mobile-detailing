@@ -1,7 +1,12 @@
 import React from "react";
+import { CONTACT_PATH } from "../../../utils/constants";
 import ContactForm from "../../ContactForm";
+import SEO from "../../SEO";
 
 const ContactPage = () => {
+  SEO({
+    canonical: CONTACT_PATH,
+  });
   return (
     <div id="contact" className="bg-white">
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">

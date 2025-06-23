@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ULTIMATE_FULL_DETAILING_PATH } from "../../../../utils/constants";
+import { EXPRESS_FULL_DETAILING_PATH, ULTIMATE_FULL_DETAILING_PATH } from "../../../../utils/constants";
 import { expressFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
@@ -8,10 +8,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
+import SEO from "../../../SEO";
 
 const ExpressFullDetailing = () => {
   const service = expressFullDetail;
-
+  SEO({
+    canonical: EXPRESS_FULL_DETAILING_PATH,
+  });
   return (
     <div
       id="exterior-detailing"
