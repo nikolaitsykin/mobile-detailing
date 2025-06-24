@@ -13,7 +13,7 @@ const Header = () => {
     >
       <div className="md:absolute w-full bg-black text-white h-7 md:h-7 flex justify-center items-center">
         <p className="font-montserrat text-xs sm:text-base text-center font-semibold tracking-widest mt-1">
-          Fully Licenced and Insured
+          100% Licenced and Insured
         </p>
       </div>
       <div className="-mt-1 md:mt-5 w-full flex flex-col justify-start bg-gradient-to-b from-black to-transparent hover:bg-black ease-in-out duration-500">

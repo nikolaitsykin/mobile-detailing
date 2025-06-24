@@ -56,7 +56,7 @@ const ultimateInteriorPrices = ["$235", "$255", "$275"];
 const odorRemovalPrices = ["$205", "225", "$245"];
 const shampooPrices = ["$150", "$175", "$200"];
 const ultimateFullDetailPrices = ["$395", "$430", "$465"];
-const ceramicCoatingPrices = ["$545", "$645", "$745"];
+const ceramicCoatingPrices = ["$595", "$695", "$795"];
 
 export const expressExterior = {
   title: "Express Exterior Detailing",
