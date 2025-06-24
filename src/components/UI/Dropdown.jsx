@@ -1,5 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as ArrowDown } from "../../assets/icons/arrow_down_icon.svg";
+import {
+  CERAMIC_COATING_PATH,
+  MOBILE_EXTERIOR_DETAILING_PATH,
+  MOBILE_FULL_DETAILING_PATH,
+  MOBILE_INTERIOR_DETAILING_PATH,
+} from "../../utils/constants";
 import {
   ceramicCoatingServices,
   exteriorDetailingServices,
@@ -31,26 +38,34 @@ const Dropdown = ({ title, closeMenu }) => {
         className={`${isDropdownOpen ? "block" : "hidden"} 
             z-10 flex-col absolute bg-black w-38 md:w-48 shadow-lg ml-28 -mt-11 md:-mt-4 md:ml-2 `}
       >
-        <DropdownList
-          options={exteriorDetailingServices}
-          closeDropdown={closeDropdown}
-          closeMenu={closeMenu}
-        />
-        <DropdownList
-          options={interiorDetailingServices}
-          closeDropdown={closeDropdown}
-          closeMenu={closeMenu}
-        />
-        <DropdownList
-          options={fullDetailingServices}
-          closeDropdown={closeDropdown}
-          closeMenu={closeMenu}
-        />
-        <DropdownList
-          options={ceramicCoatingServices}
-          closeDropdown={closeDropdown}
-          closeMenu={closeMenu}
-        />
+        <Link to={MOBILE_EXTERIOR_DETAILING_PATH}>
+          <DropdownList
+            options={exteriorDetailingServices}
+            closeDropdown={closeDropdown}
+            closeMenu={closeMenu}
+          />
+        </Link>
+        <Link to={MOBILE_INTERIOR_DETAILING_PATH}>
+          <DropdownList
+            options={interiorDetailingServices}
+            closeDropdown={closeDropdown}
+            closeMenu={closeMenu}
+          />
+        </Link>
+        <Link to={MOBILE_FULL_DETAILING_PATH}>
+          <DropdownList
+            options={fullDetailingServices}
+            closeDropdown={closeDropdown}
+            closeMenu={closeMenu}
+          />
+        </Link>
+        <Link to={CERAMIC_COATING_PATH}>
+          <DropdownList
+            options={ceramicCoatingServices}
+            closeDropdown={closeDropdown}
+            closeMenu={closeMenu}
+          />
+        </Link>
       </ul>
     </div>
   );

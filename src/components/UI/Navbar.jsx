@@ -5,7 +5,8 @@ import { ReactComponent as Menu } from "../../assets/icons/menu-burger.svg";
 import { servicesLinks, servicesLinksActual } from "../../utils/data";
 import Dropdown from "./Dropdown";
 import SocialButtons from "./SocialButtons";
-import { GIFT_CARDS_PATH } from "../../utils/constants";
+import { GIFT_CARDS_PATH, SERVICES_PATH } from "../../utils/constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,20 +34,22 @@ const Navbar = () => {
             isMenuOpen ? "absolute" : "hidden"
           } flex md:flex md:static flex-col md:flex-row w-full items-start pt-0 bg-black md:bg-transparent h-64 md:h-10`}
         >
-          <li
-            key={"service"}
-            className={`text-sm md:text-base flex jutify-end md:justify-center items-start`}
-          >
-            <Dropdown
-              title={servicesLinks[0]}
-              closeMenu={closeMenu}
-              className={({ isActive }) =>
-                isActive
-                  ? `text-white ${navLinkStyle}`
-                  : `text-gray ${navLinkStyle}`
-              }
-            />
-          </li>
+          <Link to={SERVICES_PATH}>
+            <li
+              key={"service"}
+              className={`text-sm md:text-base flex jutify-end md:justify-center items-start`}
+            >
+              <Dropdown
+                title={servicesLinks[0]}
+                closeMenu={closeMenu}
+                className={({ isActive }) =>
+                  isActive
+                    ? `text-white ${navLinkStyle}`
+                    : `text-gray ${navLinkStyle}`
+                }
+              />
+            </li>
+          </Link>
           {servicesLinks.slice(1).map((link, index) => (
             <li
               key={link + index}
