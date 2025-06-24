@@ -1,20 +1,20 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
+  BASE_URL,
   BOOKING_URL,
   CALL_NUMBER,
   CONTACT_PATH,
-  FAQS_PATH,
+  FAQS_PATH
 } from "../../../utils/constants";
 import { autoDetailingQuestions, generalQuestions } from "../../../utils/faq";
 import FaqItem from "../../FaqItem";
-import SEO from "../../SEO";
 import BookButtons from "../../UI/BookButtons";
 
 const FAQs = () => {
-  SEO({
-    canonical: FAQS_PATH,
-  });
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + FAQS_PATH);
+  console.log(canonical);
+
   return (
     <div id="faq" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">

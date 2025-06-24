@@ -1,12 +1,11 @@
-import React from "react";
-import { BOOKING_PATH } from "../../../utils/constants";
+import { BASE_URL, BOOKING_PATH } from "../../../utils/constants";
 import Booking from "../../Booking";
-import SEO from "../../SEO";
 
 const BookingPage = () => {
-  SEO({
-    canonical: BOOKING_PATH,
-  });
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + BOOKING_PATH);
+  console.log(canonical);
+
   return (
     <div id="booking" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">

@@ -1,14 +1,13 @@
-import React from "react";
-import { SERVICES_PATH } from "../../../utils/constants";
+import { BASE_URL, SERVICES_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
 import { sustainability } from "../../../utils/sustainability";
-import SEO from "../../SEO";
 import Services from "../../Services";
 
 const ServicesPage = () => {
-  SEO({
-    canonical: SERVICES_PATH,
-  });
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + SERVICES_PATH);
+  console.log(canonical);
+
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">

@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
+  BASE_URL,
   ULTIMATE_FULL_DETAILING_PATH,
   ULTIMATE_INTERIOR_PATH,
 } from "../../../../utils/constants";
@@ -12,13 +12,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import SEO from "../../../SEO";
 
 const UltimateInterior = () => {
   const service = ultimateInterior;
-  SEO({
-    canonical: ULTIMATE_INTERIOR_PATH,
-  });
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + ULTIMATE_INTERIOR_PATH);
+  console.log(canonical);
+
   return (
     <div
       id="exterior-detailing"

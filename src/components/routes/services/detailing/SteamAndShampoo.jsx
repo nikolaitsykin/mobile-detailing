@@ -1,4 +1,4 @@
-import { SHAMPOO_PATH } from "../../../../utils/constants";
+import { BASE_URL, SHAMPOO_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { steamAndShampoo } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -7,13 +7,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import SEO from "../../../SEO";
 
 const SteamAndShampoo = () => {
   const service = steamAndShampoo;
-  SEO({
-    canonical: SHAMPOO_PATH,
-  });
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + SHAMPOO_PATH);
+  console.log(canonical);
+
   return (
     <div
       id="exterior-detailing"

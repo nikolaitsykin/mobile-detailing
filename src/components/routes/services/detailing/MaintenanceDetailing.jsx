@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import {
+  BASE_URL,
   MAINTENANCE_FULL_DETAILING_PATH,
-  ULTIMATE_FULL_DETAILING_PATH,
+  ULTIMATE_FULL_DETAILING_PATH
 } from "../../../../utils/constants";
 import { maintenanceFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -10,13 +11,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import SEO from "../../../SEO";
 
 const MaintenanceDetailing = () => {
   const service = maintenanceFullDetail;
-  SEO({
-    canonical: MAINTENANCE_FULL_DETAILING_PATH,
-  });
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + MAINTENANCE_FULL_DETAILING_PATH);
+  console.log(canonical);
+
   return (
     <div
       id="exterior-detailing"

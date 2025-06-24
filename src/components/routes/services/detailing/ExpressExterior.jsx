@@ -1,6 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { EXPRESS_EXTERIOR_PATH, ULTIMATE_EXTERIOR_PATH } from "../../../../utils/constants";
+import {
+  BASE_URL,
+  EXPRESS_EXTERIOR_PATH,
+  ULTIMATE_EXTERIOR_PATH,
+} from "../../../../utils/constants";
 import { expressExterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
@@ -8,13 +11,12 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import SEO from "../../../SEO";
 
 const ExpressExterior = () => {
   const service = expressExterior;
-  SEO({
-    canonical: EXPRESS_EXTERIOR_PATH,
-  });
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + EXPRESS_EXTERIOR_PATH);
+  console.log(canonical);
 
   return (
     <div

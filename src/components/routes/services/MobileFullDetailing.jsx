@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { BASE_URL, MOBILE_FULL_DETAILING_PATH } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { fullDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
@@ -7,6 +8,8 @@ import Booking from "../../Booking";
 import Card from "../../Card";
 
 const MobileFullDetailing = () => {
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + MOBILE_FULL_DETAILING_PATH);
 
   return (
     <div id="full-detailing" className="w-full z-20 bg-white font-poppins">

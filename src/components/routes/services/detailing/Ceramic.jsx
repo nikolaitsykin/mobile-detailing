@@ -1,17 +1,15 @@
-import React from "react";
-import { CERAMIC_COATING_PATH } from "../../../../utils/constants";
+import { BASE_URL, CERAMIC_COATING_PATH } from "../../../../utils/constants";
 import { ceramicCoating } from "../../../../utils/detailingPackages";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import SEO from "../../../SEO";
 
 const Ceramic = () => {
   const service = ceramicCoating;
-  SEO({
-    canonical: CERAMIC_COATING_PATH,
-  });
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + CERAMIC_COATING_PATH);
+  console.log(canonical);
 
   return (
     <div
@@ -19,7 +17,7 @@ const Ceramic = () => {
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
       <div className="w-full bg-black h-[200px] md:h-[300px] flex justify-center items-center mx-auto text-white top-20">
-      <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
           Ceramic Coating{" "}
         </h1>
       </div>

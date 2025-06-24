@@ -1,8 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
+  BASE_URL,
   ULTIMATE_EXTERIOR_PATH,
-  ULTIMATE_FULL_DETAILING_PATH,
+  ULTIMATE_FULL_DETAILING_PATH
 } from "../../../../utils/constants";
 import { ultimateExterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -11,13 +11,13 @@ import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
-import SEO from "../../../SEO";
 
 const UltimateExterior = () => {
   const service = ultimateExterior;
-  SEO({
-    canonical: ULTIMATE_EXTERIOR_PATH,
-  });
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + ULTIMATE_EXTERIOR_PATH);
+  console.log(canonical);
+
   return (
     <div
       id="exterior-detailing"
@@ -25,7 +25,7 @@ const UltimateExterior = () => {
     >
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          Ultomate Exterior Detailing{" "}
+          Ultimate Exterior Detailing{" "}
         </h1>
       </div>
       <div className="mx-auto">

@@ -1,10 +1,15 @@
 import { Outlet } from "react-router-dom";
+import { BASE_URL, MOBILE_DETAILING_PATH } from "../../../utils/constants";
 import { mobileDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
 import ServiceItem from "../../ServiceItem";
 
 const MobileDetailing = () => {
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + MOBILE_DETAILING_PATH);
+  console.log(canonical);
+
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
       {/* <div className="w-full bg-black h-32"></div> */}
@@ -13,8 +18,8 @@ const MobileDetailing = () => {
           Mobile Car Detailing in Raleigh, NC{" "}
         </h1>
         <h2 className="text-sm md:text-lg px-5">
-          Refresh and Restore: Premium Car Detailing near you. We provide service in Raleigh and nearby areas.
-          Areas
+          Refresh and Restore: Premium Car Detailing near you. We provide
+          service in Raleigh and nearby areas. Areas
         </h2>
       </div>
 

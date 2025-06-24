@@ -16,25 +16,7 @@
       })(window, document, "script", "dataLayer", "GTM-W6XBJ975");
     </script>
     <!-- End Google Tag Manager -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const existingCanonical = document.querySelector(
-          'link[rel="canonical"]'
-        );
-        const canonicalURL = window.location.origin + window.location.pathname;
-        console.log(canonicalURL);
-
-        if (existingCanonical) {
-          existingCanonical.href = canonicalURL;
-        } else {
-          const canonicalLink = document.createElement("link");
-          canonicalLink.setAttribute("rel", "canonical");
-          canonicalLink.setAttribute("href", canonicalURL);
-          document.head.appendChild(canonicalLink);
-        }
-      });
-    </script>
-
+    
     <title>
       Spotless Auto Detailing: Mobile Car Detailing & Ceramic Coating in Raleigh
     </title>

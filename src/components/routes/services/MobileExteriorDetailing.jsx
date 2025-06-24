@@ -1,5 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import {
+  BASE_URL,
+  MOBILE_EXTERIOR_DETAILING_PATH,
+} from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { exteriorDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
@@ -7,6 +11,9 @@ import Booking from "../../Booking";
 import Card from "../../Card";
 
 const MobileExteriorDetailing = () => {
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + MOBILE_EXTERIOR_DETAILING_PATH);
+  console.log(canonical);
 
   return (
     <div id="exterior-detailing" className="w-full z-20 bg-white font-poppins">
