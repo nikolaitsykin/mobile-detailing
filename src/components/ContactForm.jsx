@@ -50,6 +50,7 @@ const ContactForm = () => {
   const [error, setError] = useState(false);
   const [status, setStatus] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  console.log(values.date)
 
   const handleChange = (e) => {
     const target = e?.target;
