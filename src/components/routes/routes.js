@@ -31,6 +31,7 @@ import {
 } from "../../utils/constants";
 import App from "../App";
 import ErrorPage from "../error-page";
+import NotFound from "./404";
 import Apex from "./locations/Apex";
 import Cary from "./locations/Cary";
 import FuquayVarina from "./locations/FuquayVarina";
@@ -209,7 +210,7 @@ export const routes = [
       {
         path: "*",
         name: "404",
-        element: <Root />,
+        element: <NotFound />,
       },
     ],
   },
