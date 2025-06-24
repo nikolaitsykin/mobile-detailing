@@ -1,3 +1,14 @@
+import {
+  APEX_PATH,
+  CARY_PATH,
+  FUQUAY_VARINA_PATH,
+  GARNER_PATH,
+  HOLLY_SPRINGS_PATH,
+  KNIGHTDALE_PATH,
+  MORRISVILLE_PATH,
+  RALEIGH_PATH,
+} from "./constants";
+
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
 export const secondaryStyle =
   "text-black bg-gray hover:bg-dark-gray hover:text-white border-gray hover:border-white";
@@ -22,13 +33,13 @@ export const locations = [
 ];
 
 export const locationLinks = [
-  "apex",
-  "cary",
-  "garner",
-  "holly-springs",
-  "morrisville",
-  "raleigh",
-  "fuquay-varina",
+  APEX_PATH,
+  CARY_PATH,
+  GARNER_PATH,
+  HOLLY_SPRINGS_PATH,
+  MORRISVILLE_PATH,
+  RALEIGH_PATH,
+  FUQUAY_VARINA_PATH,
 ];
 
 export const footerLinks = [

@@ -1,12 +1,15 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { BASE_URL } from "../../utils/constants";
-import { localAreas } from "../../utils/data";
-import About from "../About";
-import ContactForm from "../ContactForm";
-import Hero from "../Hero";
+import {
+  BASE_URL,
+  FUQUAY_VARINA_PATH
+} from "../../../utils/constants";
+import { localAreas } from "../../../utils/data";
+import About from "../../About";
+import ContactForm from "../../ContactForm";
+import Hero from "../../Hero";
 
-const Root = () => {
+const FuquayVarina = () => {
   const location = useLocation();
 
   const currentCity = localAreas.includes(location.pathname.split("/")[1])
@@ -17,7 +20,7 @@ const Root = () => {
     : "Raleigh";
 
   const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + location.pathname);
+  canonical.setAttribute("href", BASE_URL + FUQUAY_VARINA_PATH);
   console.log(canonical);
 
   useEffect(() => {
@@ -42,4 +45,4 @@ const Root = () => {
   );
 };
 
-export default Root;
+export default FuquayVarina;

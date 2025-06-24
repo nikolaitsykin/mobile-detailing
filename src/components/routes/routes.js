@@ -1,20 +1,26 @@
 import * as React from "react";
 import {
   ABOUT_PATH,
+  APEX_PATH,
   BOOKING_PAGE_PATH,
+  CARY_PATH,
   CERAMIC_COATING_PATH,
   CONTACT_PATH,
   EXPRESS_EXTERIOR_PATH,
   EXPRESS_FULL_DETAILING_PATH,
   EXPRESS_INTERIOR_PATH,
   FAQS_PATH,
+  FUQUAY_VARINA_PATH,
   GALLERY_PATH,
+  GARNER_PATH,
+  HOLLY_SPRINGS_PATH,
   HOME_PATH,
   MAINTENANCE_FULL_DETAILING_PATH,
   MOBILE_DETAILING_PATH,
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
+  MORRISVILLE_PATH,
   ODOR_REMOVAL_PATH,
   SERVICES_PATH,
   SHAMPOO_PATH,
@@ -25,6 +31,12 @@ import {
 } from "../../utils/constants";
 import App from "../App";
 import ErrorPage from "../error-page";
+import Apex from "./locations/Apex";
+import Cary from "./locations/Cary";
+import FuquayVarina from "./locations/FuquayVarina";
+import Garner from "./locations/Garner";
+import HollySprings from "./locations/HollySprings";
+import Morrisville from "./locations/Morrisville";
 import AboutPage from "./navigation/AboutPage";
 import BookingPage from "./navigation/BookingPage";
 import ContactPage from "./navigation/ContactPage";
@@ -58,6 +70,36 @@ export const routes = [
         index: true,
         name: "Home",
         element: <Root />,
+      },
+      {
+        path: APEX_PATH,
+        name: "Apex",
+        element: <Apex />,
+      },
+      {
+        path: CARY_PATH,
+        name: "Apex",
+        element: <Cary />,
+      },
+      {
+        path: FUQUAY_VARINA_PATH,
+        name: "Apex",
+        element: <FuquayVarina />,
+      },
+      {
+        path: GARNER_PATH,
+        name: "Apex",
+        element: <Garner />,
+      },
+      {
+        path: HOLLY_SPRINGS_PATH,
+        name: "Apex",
+        element: <HollySprings />,
+      },
+      {
+        path: MORRISVILLE_PATH,
+        name: "Apex",
+        element: <Morrisville />,
       },
       {
         path: SERVICES_PATH,

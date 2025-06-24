@@ -1,19 +1,15 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
-import { currentYear } from "../utils/helpers";
-import {
-  businessAddress,
-  businessHours,
-  servicesLinks,
-  servicesLinksActual,
-  fullBusinessName,
-  locationLinks,
-  locations,
-} from "../utils/data";
-import SocialButtons from "./UI/SocialButtons";
 import logo from "../assets/images/spotless_Logo_small.png";
 import { GIFT_CARDS_PATH } from "../utils/constants";
-import BookButtons from "./UI/BookButtons";
+import {
+  businessAddress,
+  businessHours, fullBusinessName,
+  locationLinks,
+  locations, servicesLinks,
+  servicesLinksActual
+} from "../utils/data";
+import { currentYear } from "../utils/helpers";
+import SocialButtons from "./UI/SocialButtons";
 
 const Footer = () => {
   return (
@@ -82,7 +78,7 @@ const Footer = () => {
                     key={location}
                     className="text-gray hover:text-white py-[2px] text-sm md:text-base"
                   >
-                    <NavLink to={`/${locationLinks[index]}`}>
+                    <NavLink to={`${locationLinks[index]}`}>
                       {location}
                     </NavLink>
                   </li>
