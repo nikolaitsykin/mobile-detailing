@@ -1,14 +1,17 @@
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/spotless_Logo_small.png";
+import logo from "../assets/images/spotless_logo_new_small.png";
 import { GIFT_CARDS_PATH } from "../utils/constants";
 import {
   businessAddress,
-  businessHours, fullBusinessName,
+  businessHours,
+  fullBusinessName,
   locationLinks,
-  locations, servicesLinks,
-  servicesLinksActual
+  locations,
+  servicesLinks,
+  servicesLinksActual,
 } from "../utils/data";
 import { currentYear } from "../utils/helpers";
+import GoogleMap from "./Map";
 import SocialButtons from "./UI/SocialButtons";
 
 const Footer = () => {
@@ -17,8 +20,12 @@ const Footer = () => {
       {/* <div className="fixed bottom-0 mb-2 left-0 right-0 md:left-auto md:right-0">
         <BookButtons color={"secondary"} />
       </div> */}
+      <section className="mb-10">
+        <GoogleMap />
+      </section>
+
       <section className="flex justify-evenly flex-col md:flex-row ">
-        <div className="basis-1/2 mb-5 md:mb-0 md:basis-1/3">
+        <div className="basis-1/2 mb-5 md:mb-0  md:basis-1/3">
           <div className="min-w-48 md:pr-5 items-start">
             <div className=" w-20 lg:w-32">
               <img
@@ -78,9 +85,7 @@ const Footer = () => {
                     key={location}
                     className="text-gray hover:text-white py-[2px] text-sm md:text-base"
                   >
-                    <NavLink to={`${locationLinks[index]}`}>
-                      {location}
-                    </NavLink>
+                    <NavLink to={`${locationLinks[index]}`}>{location}</NavLink>
                   </li>
                 ))}
               </ul>

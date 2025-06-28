@@ -38,7 +38,8 @@ const Hero = ({ city }) => {
             Top-Tier Service in {city ? city : "Raleigh"}, NC
           </h3> */}
           <h1 className="w-full md:w-1/2 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Spotless Auto Detailing & Ceramic Coating in {city ? city : "Raleigh"}
+            Spotless Auto Detailing & Ceramic Coating in{" "}
+            {city ? city : "Raleigh"}
           </h1>
           <h3 className="w-full md:w-1/2 my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Spotless Auto Detailing provides the finest car detailing services
@@ -53,18 +54,14 @@ const Hero = ({ city }) => {
         </div>
       </div>
       <section>
-        <div className="mt-10">
+        <div>
           <Testimonials />
+          <GoogleReview />
         </div>
-      </section>
-      <section>
-        <div className="pb-12 mt-10">
+        <div className="mb-10">
           <Services />
         </div>
-        <div className="pb-12">
-          <GoogleReview />
-          <GoogleMap />
-        </div>
+
         <div>
           <Gallery />
         </div>

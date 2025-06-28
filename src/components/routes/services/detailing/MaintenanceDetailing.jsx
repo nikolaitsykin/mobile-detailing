@@ -16,7 +16,6 @@ const MaintenanceDetailing = () => {
   const service = maintenanceFullDetail;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + MAINTENANCE_FULL_DETAILING_PATH);
-  console.log(canonical);
 
   return (
     <div

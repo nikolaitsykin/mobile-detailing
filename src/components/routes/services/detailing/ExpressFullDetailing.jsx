@@ -16,7 +16,6 @@ const ExpressFullDetailing = () => {
   const service = expressFullDetail;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + EXPRESS_FULL_DETAILING_PATH);
-  console.log(canonical);
 
   return (
     <div

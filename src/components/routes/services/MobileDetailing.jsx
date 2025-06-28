@@ -8,7 +8,6 @@ import ServiceItem from "../../ServiceItem";
 const MobileDetailing = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + MOBILE_DETAILING_PATH);
-  console.log(canonical);
 
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">

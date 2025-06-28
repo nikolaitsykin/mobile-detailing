@@ -12,7 +12,6 @@ const SteamAndShampoo = () => {
   const service = steamAndShampoo;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + SHAMPOO_PATH);
-  console.log(canonical);
 
   return (
     <div

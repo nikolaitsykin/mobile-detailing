@@ -5,7 +5,6 @@ import BookButtons from "../../UI/BookButtons";
 const AboutPage = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + ABOUT_PATH);
-  console.log(canonical);
 
   return (
     <div id="about" className="w-full z-20 bg-white font-poppins">

@@ -4,7 +4,6 @@ import { BASE_URL, GALLERY_PATH } from "../../../utils/constants";
 const Gallery = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + GALLERY_PATH);
-  console.log(canonical);
 
   return (
     <div id="gallery" className="bg-white py-8">

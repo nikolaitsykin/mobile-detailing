@@ -16,7 +16,6 @@ const ExpressExterior = () => {
   const service = expressExterior;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + EXPRESS_EXTERIOR_PATH);
-  console.log(canonical);
 
   return (
     <div

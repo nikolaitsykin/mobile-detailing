@@ -18,7 +18,6 @@ const Root = () => {
 
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + location.pathname);
-  console.log(canonical);
 
   useEffect(() => {
     document.title = `Spotless Auto Detailing: Mobile Car Detailing & Ceramic Coating in ${currentCity}.

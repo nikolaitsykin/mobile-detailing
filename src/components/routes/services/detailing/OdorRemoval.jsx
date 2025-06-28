@@ -12,7 +12,6 @@ const OdorRemoval = () => {
   const service = odorRemoval;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + ODOR_REMOVAL_PATH);
-  console.log(canonical);
 
   return (
     <div

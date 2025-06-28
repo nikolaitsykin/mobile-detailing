@@ -17,7 +17,6 @@ const UltimateInterior = () => {
   const service = ultimateInterior;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + ULTIMATE_INTERIOR_PATH);
-  console.log(canonical);
 
   return (
     <div

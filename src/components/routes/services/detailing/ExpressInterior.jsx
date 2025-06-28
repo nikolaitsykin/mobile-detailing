@@ -17,7 +17,6 @@ const ExpressInterior = () => {
   const service = expressInterior;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + EXPRESS_INTERIOR_PATH);
-  console.log(canonical);
 
   return (
     <div

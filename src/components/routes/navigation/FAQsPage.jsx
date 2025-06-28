@@ -13,7 +13,6 @@ import BookButtons from "../../UI/BookButtons";
 const FAQs = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + FAQS_PATH);
-  console.log(canonical);
 
   return (
     <div id="faq" className="w-full z-20 bg-white font-poppins">

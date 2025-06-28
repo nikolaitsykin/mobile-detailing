@@ -4,7 +4,6 @@ import Booking from "../../Booking";
 const BookingPage = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + BOOKING_PATH);
-  console.log(canonical);
 
   return (
     <div id="booking" className="w-full z-20 bg-white font-poppins">

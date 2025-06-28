@@ -9,7 +9,6 @@ const Ceramic = () => {
   const service = ceramicCoating;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + CERAMIC_COATING_PATH);
-  console.log(canonical);
 
   return (
     <div

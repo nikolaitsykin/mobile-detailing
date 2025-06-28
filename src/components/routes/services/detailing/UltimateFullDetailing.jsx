@@ -16,7 +16,6 @@ const UltimateFullDetailing = () => {
   const service = ultimateFullDetail;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + ULTIMATE_FULL_DETAILING_PATH);
-  console.log(canonical);
 
   return (
     <div

@@ -6,7 +6,6 @@ import Services from "../../Services";
 const ServicesPage = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + SERVICES_PATH);
-  console.log(canonical);
 
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">

@@ -16,7 +16,6 @@ const UltimateExterior = () => {
   const service = ultimateExterior;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + ULTIMATE_EXTERIOR_PATH);
-  console.log(canonical);
 
   return (
     <div
