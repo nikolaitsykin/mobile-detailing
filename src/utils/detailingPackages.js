@@ -57,6 +57,12 @@ const odorRemovalPrices = ["$205", "225", "$245"];
 const shampooPrices = ["$150", "$175", "$200"];
 const ultimateFullDetailPrices = ["$395", "$430", "$465"];
 const ceramicCoatingPrices = ["$595", "$695", "$795"];
+const oneStepCeramicCoatingPrices = ["$895", "$995", "$1095"];
+const twoStepCeramicCoatingPrices = ["$1195", "$1295", "$1395"];
+const oneStepPaintCorrectionPrices = ["$595", "$695", "$795"];
+const twoStepPaintCorrectionPrices = ["$795", "$795", "$1095"];
+const paintEnchancementPrices = ["$895", "$995", "$1095"];
+
 
 export const expressExterior = {
   title: "Express Exterior Detailing",

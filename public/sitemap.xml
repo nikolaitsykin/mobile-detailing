@@ -11,6 +11,21 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://getspotlessnc.com/about</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://getspotlessnc.com/booking</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://getspotlessnc.com/faqs</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://getspotlessnc.com/mobile-detailing</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -31,17 +46,12 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://getspotlessnc.com/about</loc>
+        <loc>https://getspotlessnc.com/odor-removal</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://getspotlessnc.com/booking</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://getspotlessnc.com/faqs</loc>
+        <loc>https://www.getspotlessnc.com/steam-and-shampoo-seats-and-carpet</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
