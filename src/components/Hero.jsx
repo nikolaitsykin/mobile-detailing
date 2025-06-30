@@ -1,6 +1,6 @@
-import React from "react";
+import About from "./About";
+import ContactForm from "./ContactForm";
 import Gallery from "./Gallery";
-import GoogleMap from "./Map";
 import GoogleReview from "./ReviewsWidget";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
@@ -43,7 +43,7 @@ const Hero = ({ city }) => {
           </h1>
           <h3 className="w-full md:w-1/2 my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Spotless Auto Detailing provides the finest car detailing services
-            in Raleigh, Cary, Apex and the surrounding areas.{" "}
+            in {city ? city : "Raleigh"} and the surrounding areas.{" "}
           </h3>
           <div
             id="book_buttons"
@@ -61,9 +61,14 @@ const Hero = ({ city }) => {
         <div className="mb-10">
           <Services />
         </div>
-
         <div>
           <Gallery />
+        </div>
+        <div>
+          <ContactForm />
+        </div>
+        <div>
+          <About city={city} />
         </div>
       </section>
     </div>

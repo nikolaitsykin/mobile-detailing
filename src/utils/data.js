@@ -25,6 +25,7 @@ export const locations = [
   "Cary",
   "Garner",
   "Holly Springs",
+  "Knightdale",
   "Morrisville",
   "Raleigh",
   "Fuquay-Varina",

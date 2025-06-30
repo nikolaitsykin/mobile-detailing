@@ -1,13 +1,11 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import {
-  BASE_URL,
-  FUQUAY_VARINA_PATH
-} from "../../../utils/constants";
+import { BASE_URL, FUQUAY_VARINA_PATH } from "../../../utils/constants";
 import { localAreas } from "../../../utils/data";
 import About from "../../About";
 import ContactForm from "../../ContactForm";
 import Hero from "../../Hero";
+import { MetaTags } from "../../MetaTags";
 
 const FuquayVarina = () => {
   const location = useLocation();
@@ -29,6 +27,7 @@ const FuquayVarina = () => {
 
   return (
     <main className="w-full bg-white">
+      <MetaTags city={currentCity} />
       <div className="z-100">
         <div>
           <Hero city={currentCity} />

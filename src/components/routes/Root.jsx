@@ -23,19 +23,12 @@ const Root = () => {
     document.title = `Spotless Auto Detailing: Mobile Car Detailing & Ceramic Coating in ${currentCity}.
 `;
   }, [currentCity, location.pathname]);
+  console.log(currentCity);
 
   return (
     <main className="w-full bg-white">
       <div className="z-100">
-        <div>
-          <Hero city={currentCity} />
-        </div>
-        <div className="w-[90%] md:w-[80%] mx-auto bg-white">
-          <ContactForm />
-        </div>
-        <div className="w-[90%] md:w-[80%] mx-auto bg-white">
-          <About city={"Raleigh"} />
-        </div>
+        <Hero city={currentCity} />={" "}
       </div>
     </main>
   );

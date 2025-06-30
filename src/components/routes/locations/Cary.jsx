@@ -5,6 +5,7 @@ import { localAreas } from "../../../utils/data";
 import About from "../../About";
 import ContactForm from "../../ContactForm";
 import Hero from "../../Hero";
+import { MetaTags } from "../../MetaTags";
 
 const Cary = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ const Cary = () => {
 
   return (
     <main className="w-full bg-white">
+      <MetaTags city={currentCity} />
       <div className="z-100">
         <div>
           <Hero city={currentCity} />
