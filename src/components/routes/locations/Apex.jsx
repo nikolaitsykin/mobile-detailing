@@ -31,7 +31,7 @@ const Apex = () => {
           <ContactForm />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto bg-white">
-          <About city={"Raleigh"} />
+          <About city={currentCity} />
         </div>
       </div>
     </main>
