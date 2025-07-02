@@ -20,16 +20,16 @@ export const MetaTags = ({ city }) => (
     />
     <meta
       property="og:description"
-      content={`Spotless Auto Detailing provides premium mobile car detailing and ceramic coating services in ${city}. Eco-friendly, high-quality, and convenient. Book now.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. ⭐100+ 5-star reviews⭐ Free Estimate - Call Us (919) 906-0099. Interior, Exterior, Ceramic Coating.`}
     />
     <meta
       property="twitter:description"
-      content={`Spotless Auto Detailing provides premium mobile detailing and ceramic coating services in ${city}. Eco-friendly, high-quality, and convenient.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. ⭐100+ 5-star reviews⭐ Free Estimate - Call Us (919) 906-0099. Interior, Exterior, Ceramic Coating.`}
     />
 
     <meta
       name="description"
-      content={`Spotless Auto Detailing provides premium mobile detailing and ceramic coating services in ${city}. Eco-friendly, high-quality, and convenient. Book now.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. ⭐100+ 5-star reviews⭐ Free Estimate - Call Us (919) 906-0099. Interior, Exterior, Ceramic Coating.`}
     />
   </Helmet>
 );
