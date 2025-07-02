@@ -1,6 +1,9 @@
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { BASE_URL } from "../../utils/constants";
 import { localAreas } from "../../utils/data";
+import About from "../About";
+import ContactForm from "../ContactForm";
 import Hero from "../Hero";
 
 const Root = () => {
@@ -15,6 +18,11 @@ const Root = () => {
 
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + location.pathname);
+
+//   useEffect(() => {
+//     document.title = `Spotless Auto Detailing: Mobile Car Detailing & Ceramic Coating in ${currentCity}.
+// `;
+//   }, [currentCity, location.pathname]);
 
   return (
     <main className="w-full bg-white">

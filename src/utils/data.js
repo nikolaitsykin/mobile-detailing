@@ -3,8 +3,11 @@ import {
   CARY_PATH,
   FUQUAY_VARINA_PATH,
   GARNER_PATH,
-  HOLLY_SPRINGS_PATH, MORRISVILLE_PATH,
-  RALEIGH_PATH
+  HOLLY_SPRINGS_PATH,
+  HOME_PATH,
+  KNIGHTDALE_PATH,
+  MORRISVILLE_PATH,
+  RALEIGH_PATH,
 } from "./constants";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
@@ -16,7 +19,9 @@ export const localAreas = [
   "cary",
   "garner",
   "holly-springs",
+  "knightdale",
   "morrisville",
+  "/raleigh",
   "fuquay-varina",
 ];
 
@@ -28,7 +33,7 @@ export const locations = [
   "Knightdale",
   "Morrisville",
   "Raleigh",
-  "Fuquay-Varina",
+  "Fuquay Varina",
 ];
 
 export const locationLinks = [
@@ -36,6 +41,7 @@ export const locationLinks = [
   CARY_PATH,
   GARNER_PATH,
   HOLLY_SPRINGS_PATH,
+  KNIGHTDALE_PATH,
   MORRISVILLE_PATH,
   RALEIGH_PATH,
   FUQUAY_VARINA_PATH,

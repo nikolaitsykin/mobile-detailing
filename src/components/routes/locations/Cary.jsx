@@ -25,6 +25,8 @@ const Cary = () => {
 `;
   }, [currentCity, location.pathname]);
 
+
+
   return (
     <main className="w-full bg-white">
       <MetaTags city={currentCity} />

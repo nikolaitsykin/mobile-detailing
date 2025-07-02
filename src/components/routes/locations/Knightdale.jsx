@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { BASE_URL, FUQUAY_VARINA_PATH } from "../../../utils/constants";
+import { BASE_URL, KNIGHTDALE_PATH } from "../../../utils/constants";
 import { localAreas } from "../../../utils/data";
 import About from "../../About";
 import ContactForm from "../../ContactForm";
 import Hero from "../../Hero";
 import { MetaTags } from "../../MetaTags";
 
-const FuquayVarina = () => {
+const Knightdale = () => {
   const location = useLocation();
 
   const currentCity = localAreas.includes(location.pathname.split("/")[1])
@@ -17,10 +17,8 @@ const FuquayVarina = () => {
         .replace(/\b\w/g, (char) => char.toUpperCase()) // Capitalize first letter of each word
     : "Raleigh";
 
-  console.log(currentCity);
-
   const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + FUQUAY_VARINA_PATH);
+  canonical.setAttribute("href", BASE_URL + KNIGHTDALE_PATH);
 
   useEffect(() => {
     document.title = `Spotless Auto Detailing: Mobile Car Detailing & Ceramic Coating in ${currentCity}.
@@ -45,4 +43,4 @@ const FuquayVarina = () => {
   );
 };
 
-export default FuquayVarina;
+export default Knightdale;

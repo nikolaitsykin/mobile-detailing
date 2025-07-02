@@ -15,9 +15,9 @@ const Ceramic = () => {
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
-      <div className="w-full bg-black h-[200px] md:h-[300px] flex justify-center items-center mx-auto text-white top-20">
+      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          Ceramic Coating{" "}
+          {service.title}{" "}
         </h1>
       </div>
       <div className="mx-auto">
@@ -41,8 +41,8 @@ const Ceramic = () => {
               expect from a ceramic coating application:
             </p>
             <Card
-              title={service.title}
-              type={service.type}
+              // title={service.title}
+              // type={service.type}
               service={service}
               services={service.services}
               description={service.description}
@@ -52,6 +52,8 @@ const Ceramic = () => {
               duration={service.duration}
               link={service.link}
               bookingLink={service.bookingLink}
+              suggestionHeader={service.suggestionHeader}
+              suggestion={service.suggestion}
             />
           </article>
         </section>

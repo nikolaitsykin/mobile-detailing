@@ -15,6 +15,7 @@ import {
   GARNER_PATH,
   HOLLY_SPRINGS_PATH,
   HOME_PATH,
+  KNIGHTDALE_PATH,
   MAINTENANCE_FULL_DETAILING_PATH,
   MOBILE_DETAILING_PATH,
   MOBILE_EXTERIOR_DETAILING_PATH,
@@ -37,6 +38,7 @@ import Cary from "./locations/Cary";
 import FuquayVarina from "./locations/FuquayVarina";
 import Garner from "./locations/Garner";
 import HollySprings from "./locations/HollySprings";
+import Knightdale from "./locations/Knightdale";
 import Morrisville from "./locations/Morrisville";
 import AboutPage from "./navigation/AboutPage";
 import BookingPage from "./navigation/BookingPage";
@@ -79,28 +81,33 @@ export const routes = [
       },
       {
         path: CARY_PATH,
-        name: "Apex",
+        name: "Cary",
         element: <Cary />,
       },
       {
         path: FUQUAY_VARINA_PATH,
-        name: "Apex",
+        name: "Fuquay-Varina",
         element: <FuquayVarina />,
       },
       {
         path: GARNER_PATH,
-        name: "Apex",
+        name: "Garner",
         element: <Garner />,
       },
       {
         path: HOLLY_SPRINGS_PATH,
-        name: "Apex",
+        name: "Holly Springs",
         element: <HollySprings />,
       },
       {
         path: MORRISVILLE_PATH,
-        name: "Apex",
+        name: "Morrisville",
         element: <Morrisville />,
+      },
+      {
+        path: KNIGHTDALE_PATH,
+        name: "Knightdale",
+        element: <Knightdale />,
       },
       {
         path: SERVICES_PATH,

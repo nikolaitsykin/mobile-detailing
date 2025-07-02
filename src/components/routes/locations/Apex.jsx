@@ -9,6 +9,7 @@ import { MetaTags } from "../../MetaTags";
 const Apex = () => {
   const location = useLocation();
 
+
   const currentCity = localAreas.includes(location.pathname.split("/")[1])
     ? location.pathname
         .split("/")[1]

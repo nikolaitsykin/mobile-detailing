@@ -82,7 +82,7 @@ const Footer = () => {
               <ul>
                 {locations.map((location, index) => (
                   <li
-                    key={location}
+                    key={index}
                     className="text-gray hover:text-white py-[2px] text-sm md:text-base"
                   >
                     <NavLink to={`${locationLinks[index]}`}>{location}</NavLink>
