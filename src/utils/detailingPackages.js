@@ -57,12 +57,11 @@ const odorRemovalPrices = ["$205", "225", "$245"];
 const shampooPrices = ["$150", "$175", "$200"];
 const ultimateFullDetailPrices = ["$395", "$430", "$465"];
 const ceramicCoatingPrices = ["$595", "$695", "$795"];
-const oneStepCeramicCoatingPrices = ["$895", "$995", "$1095"];
+const oneStepCeramicCoatingPrices = ["$995", "$1095", "$1195"];
 const twoStepCeramicCoatingPrices = ["$1195", "$1295", "$1395"];
-const oneStepPaintCorrectionPrices = ["$595", "$695", "$795"];
-const twoStepPaintCorrectionPrices = ["$795", "$795", "$1095"];
-const paintEnchancementPrices = ["$895", "$995", "$1095"];
-
+const oneStepPaintCorrectionPrices = ["$495", "$595", "$695"];
+const twoStepPaintCorrectionPrices = ["$695", "$795", "$895"];
+const paintEnchancementPrices = ["$345", "$455", "$545"];
 
 export const expressExterior = {
   title: "Express Exterior Detailing",
@@ -131,16 +130,9 @@ export const ceramicCoating = {
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
   alt: "Ceramic Coating Services in Raleigh | Spotless Auto Detailing.",
   exteriorServices: [
-    { text: "Wheels and tires cleaned and dressed" },
-    { text: "Full hand wash with foam to safely lift dirt" },
-    { text: "Gas cap and fuel area cleaned" },
-    { text: "Blow-dried and towel-dried to prevent water spots" },
-    { text: "Glass and mirrors cleaned inside and out" },
-    { text: "Door jambs cleaned" },
-    { text: "Exterior black plastic trim restored and protected" },
-    { text: "Paint decontaminated with clay bar treatment" },
-    { text: "Bugs and tar removed with chemical treatment" },
-    { text: "3 years Ceramic Coating Applied" },
+    { text: "Exterior detailing" },
+    { text: "Paint preparation" },
+    { text: "3 years Ceramic Coating" },
   ],
   price: ceramicCoatingPrices,
   carsSize: carTypes,
@@ -150,7 +142,124 @@ export const ceramicCoating = {
   description:
     "To prepare for a ceramic coating we begin with a full hand wash and dry, followed by tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to 3 years, ensuring long-lasting defense against various contaminants.",
   duration: ["5 hours", "5 hours 30 mins", "6 hours"],
-  background: " ",
+};
+export const oneStepCeramicCoating = {
+  title: "3 year Ceramic Coating",
+  type: "Ceramic Coating",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
+  alt: "Ceramic Coating Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: [
+    { text: "Exterior detailing" },
+    { text: "Paint preparation" },
+    { text: "One Step Polishing to a high gloss finish" },
+    { text: "3 years Ceramic Coating" },
+  ],
+  price: oneStepCeramicCoatingPrices,
+  carsSize: carTypes,
+  link: CERAMIC_COATING_PATH,
+  bookingLink: CERAMIC_COATING_BOOKING_PATH,
+  shortDescription: `Get the ultimate protection for your car with Step 1 Ceramic Coating from Spotless Auto Detailing. \n\nFrom  ${ceramicCoatingPrices[0]}. Up to 4 hours.`,
+  description:
+    "Experience the best car detailing service with Spotless Auto Detailing and our Step 1 Ceramic Coating. Our ceramic coating enhances the look and feel of your car, while protecting it from dirt and grime. Our team of professionals use high-quality products and meticulous detailing techniques to ensure your car looks its best.",
+  duration: ["6 hours", "6 hours 30 mins", "7 hours"],
+};
+export const twoStepCeramicCoating = {
+  title: "2 step Ceramic Coating",
+  type: "Ceramic Coating",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
+  alt: "Ceramic Coating Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: [
+    { text: "Exterior detailing" },
+    { text: "Paint preparation" },
+    { text: "Two Step Polishing to a high gloss finish" },
+    { text: "3 years Ceramic Coating" },
+  ],
+  price: twoStepCeramicCoatingPrices,
+  carsSize: carTypes,
+  link: CERAMIC_COATING_PATH,
+  bookingLink: CERAMIC_COATING_BOOKING_PATH,
+  shortDescription: `Take your car's protection to the next level with Step 2 Ceramic Coating from Spotless Auto Detailing. \n\nFrom  ${ceramicCoatingPrices[0]}. Up to 4 hours.`,
+  description:
+    "Take your car's protection to the next level with Step 2 Ceramic Coating from Spotless Auto Detailing. Our ceramic coating is a long-term nano-ceramic coating that provides a strong layer of protection for your car's paint. This coating will create a durable, hydrophobic layer that resists contamination, scratches, and fading, keeping your car looking its best.",
+  duration: ["7 hours", "7 hours 30 mins", "8 hours"],
+};
+export const oneStepPaintCorrection = {
+  title: "2 step Ceramic Coating",
+  type: "Ceramic Coating",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
+  alt: "Ceramic Coating Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: [
+    { text: "Exterior detailing" },
+    { text: "Paint preparation" },
+    { text: "Polishing to a high gloss finish" },
+    { text: "3 years Ceramic Coating Applied" },
+  ],
+  price: oneStepPaintCorrectionPrices,
+  carsSize: carTypes,
+  link: CERAMIC_COATING_PATH,
+  bookingLink: CERAMIC_COATING_BOOKING_PATH,
+  shortDescription: `Polish and restore paintwork with Spotless Auto Detailing's Step 1 Paint Correction.
+
+. \n\nFrom  ${ceramicCoatingPrices[0]}. Up to 4 hours.`,
+  description:
+    "Step up your car's shine with Spotless Auto Detailing's Step 1 Paint Correction service. This service includes a detailed clay bar, iron remover and polishing process to remove surface contaminants and minor defects from your car's paint. Afterwards, your car will look better than ever with a deep, glossy shine. Get the best finish for your car with Spotless Auto Detailing.",
+  duration: ["7 hours", "7 hours 30 mins", "8 hours"],
+};
+
+export const twoStepPaintCorrection = {
+  title: "3 year Ceramic Coating",
+  type: "Ceramic Coating",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
+  alt: "Ceramic Coating Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: [
+    { text: "Exterior detailing" },
+    { text: "Paint preparation" },
+    { text: "Cutting compound to remove any scratches and swirls" },
+    { text: "Polishing to a high gloss finish" },
+    { text: "3 years Ceramic Coating Applied" },
+  ],
+  price: twoStepPaintCorrectionPrices,
+  carsSize: carTypes,
+  link: CERAMIC_COATING_PATH,
+  bookingLink: CERAMIC_COATING_BOOKING_PATH,
+  shortDescription: `Polish and refine your car’s paint with Spotless Auto Detailing’s Step 2 Paint Correction.
+
+. \n\nFrom  ${ceramicCoatingPrices[0]}. Up to 4 hours.`,
+  description:
+    "Polishing and waxing your car won’t always bring out the shine you’re looking for. Step 2 Paint Correction from Spotless Auto Detailing is the perfect solution for cars that need a little extra help. We use a combination of polishing and waxing and a specialized paint correction process to restore the luster of your car’s finish and make it look like new. Schedule your appointment today and get ready to show off your beautiful car.",
+  duration: ["7 hours", "7 hours 30 mins", "8 hours"],
+};
+
+export const paintEnchancement = {
+  title: "3 year Ceramic Coating",
+  type: "Ceramic Coating",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
+  alt: "Ceramic Coating Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: [
+    { text: "Wheels and tires cleaned and dressed" },
+    { text: "Full hand wash with foam to safely lift dirt" },
+    { text: "Gas cap and fuel area cleaned" },
+    { text: "Blow-dried and towel-dried to prevent water spots" },
+    { text: "Glass and mirrors cleaned inside and out" },
+    { text: "Door jambs cleaned" },
+    { text: "Exterior black plastic trim restored and protected" },
+    { text: "Paint decontaminated with clay bar treatment" },
+    { text: "Bugs and tar removed with chemical treatment" },
+    { text: "Paint Enchancemtnt" },
+  ],
+  price: paintEnchancementPrices,
+  carsSize: carTypes,
+  link: CERAMIC_COATING_PATH,
+  bookingLink: CERAMIC_COATING_BOOKING_PATH,
+  shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Shine & Shield service, and 3 years ceramic coating application for long-lasting protection. \n\nFrom  ${ceramicCoatingPrices[0]}. Up to 4 hours.`,
+  description:
+    "To prepare for a ceramic coating we begin with a full hand wash and dry, followed by tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to 3 years, ensuring long-lasting defense against various contaminants.",
+  duration: ["3 hours", "3 hours 30 mins", "4 hours"],
 };
 
 export const expressInterior = {
