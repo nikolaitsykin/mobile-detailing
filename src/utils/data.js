@@ -6,8 +6,7 @@ import {
   HOLLY_SPRINGS_PATH,
   HOME_PATH,
   KNIGHTDALE_PATH,
-  MORRISVILLE_PATH,
-  RALEIGH_PATH,
+  MORRISVILLE_PATH
 } from "./constants";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
