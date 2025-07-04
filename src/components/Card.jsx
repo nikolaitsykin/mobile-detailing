@@ -29,10 +29,10 @@ const Card = ({
       )}
       <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-start w-full">
         <div>
-          <div className="flex flex-col items-center justify-end">
+          {/* <div className="flex flex-col items-center justify-end">
             {title && <h3 className=" text-center py-1">{title}</h3>}
             {type && <h6 className="max-w-xl text-center pb-3">{type}</h6>}
-          </div>
+          </div> */}
 
           <div
             className={`grid grid-cols-1 ${
@@ -111,9 +111,10 @@ const Card = ({
           )}
           {singleService && (
             <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4">
-              {service.title !== "Ceramic Coating"
+              {service.type !== "Ceramic Coating"
                 ? "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include pet hair/sand, staining, excessive messes, etc."
-                : ""}
+                : "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include excessive bug, tar, tree sap etc."
+                }
             </div>
           )}
           <div className="mb-3">
