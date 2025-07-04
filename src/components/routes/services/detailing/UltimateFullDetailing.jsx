@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import {
   BASE_URL,
   CERAMIC_COATING_PATH,
-  ULTIMATE_FULL_DETAILING_PATH
+  ULTIMATE_FULL_DETAILING_PATH,
 } from "../../../../utils/constants";
 import { ultimateFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -68,15 +68,6 @@ const UltimateFullDetailing = () => {
               We don’t just "wash" your car—our detailing brings out a rich,
               long-lasting shine using premium products and meticulous
               attention, ensuring your car looks and feels its absolute best.
-              Want more protection? Upgrade to{" "}
-              <Link
-                target={"_blank"}
-                className="underline text-blue font-semibold"
-                to={CERAMIC_COATING_PATH}
-              >
-                3 years Ceramic Coating
-              </Link>{" "}
-              application for just $150.
               <br />
               <br />
               Our skilled team handles it all, from dirt, grime, bird droppings,

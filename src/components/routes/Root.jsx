@@ -25,7 +25,6 @@ const Root = () => {
   return (
     <main className="w-full bg-white">
       <MetaTags city={currentCity} />
-
       <div className="z-100">
         <Hero city={currentCity} />={" "}
       </div>

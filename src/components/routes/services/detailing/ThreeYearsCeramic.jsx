@@ -1,12 +1,12 @@
 import { BASE_URL, CERAMIC_COATING_PATH } from "../../../../utils/constants";
-import { ceramicCoating } from "../../../../utils/detailingPackages";
+import { threeYearsceramicCoating } from "../../../../utils/detailingPackages";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
-const Ceramic = () => {
-  const service = ceramicCoating;
+const ThreeYearsCeramic = () => {
+  const service = threeYearsceramicCoating;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + CERAMIC_COATING_PATH);
 
@@ -94,4 +94,4 @@ const Ceramic = () => {
   );
 };
 
-export default Ceramic;
+export default ThreeYearsCeramic;

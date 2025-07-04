@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ReactComponent as ArrowDown } from "../../assets/icons/arrow_down_icon.svg";
 import DropdownItem from "./DropdownItem";
 

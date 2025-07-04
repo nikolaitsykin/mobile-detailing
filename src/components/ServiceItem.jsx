@@ -4,7 +4,7 @@ import { BOOKING_PAGE_PATH } from "../utils/constants";
 import Button from "./UI/Button";
 import PriceTabs from "./UI/PriceTabs";
 
-const ServiceItem = ({ props }) => {
+const ServiceItem = ({ props, city }) => {
   return (
     <div
       className={`bg-white hover:opacity-90 flex flex-col justify-between items-start rounded-sm shadow-md hover:outline-gray hover:outline duration-100 pb-5 w-full mx-auto z-100 border border-gray`}
@@ -19,7 +19,7 @@ const ServiceItem = ({ props }) => {
           {props.image && (
             <img
               loading="lazy"
-              className="h-64 object-cover w-full p-2 max-w-lg align-start rounded-sm overflow-hidden "
+              className="h-64 pt-4 object-cover w-full max-w-lg align-start rounded-sm overflow-hidden "
               src={props.image}
               alt="Auto detailing"
             />
@@ -48,7 +48,7 @@ const ServiceItem = ({ props }) => {
           target={"_blank"}
           className="w-full flex justify-center items-center max-w-lg px-2 py-0.5"
           preventScrollReset={false}
-          to={`${props.link}`}
+          to={`${props.link}?location=${city}`}
         >
           <Button children={"Explore"} color={"tertiary"} width={"w-full"} />
         </Link>

@@ -6,6 +6,7 @@ import {
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
+  THREE_YEARS_CERAMIC_PATH,
 } from "../../utils/constants";
 import {
   ceramicCoatingServices,

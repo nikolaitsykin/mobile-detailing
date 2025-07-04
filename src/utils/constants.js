@@ -74,6 +74,9 @@ export const ULTIMATE_FULL_DETAILING_PATH = "/ultimate-full-detailing";
 export const EXPRESS_FULL_DETAILING_PATH = "/express-full-detailing";
 
 export const CERAMIC_COATING_PATH = "/ceramic-coating";
+export const THREE_YEARS_CERAMIC_PATH = "/3-years-ceramic-coating";
+
+
 
 export const APEX_PATH = "/apex";
 export const RALEIGH_PATH = "/raleigh";

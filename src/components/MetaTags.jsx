@@ -20,16 +20,16 @@ export const MetaTags = ({ city }) => (
     />
     <meta
       property="og:description"
-      content={`Spotless Auto Detailing services in ${city} and surrounding areas. ⭐100+ 5-star reviews⭐ Free Estimate - Call Us (919) 906-0099. Interior, Exterior, Ceramic Coating.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us (919) 906-0099. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
     <meta
       property="twitter:description"
-      content={`Spotless Auto Detailing services in ${city} and surrounding areas. ⭐100+ 5-star reviews⭐ Free Estimate - Call Us (919) 906-0099. Interior, Exterior, Ceramic Coating.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us (919) 906-0099. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
 
     <meta
       name="description"
-      content={`Spotless Auto Detailing services in ${city} and surrounding areas. ⭐100+ 5-star reviews⭐ Free Estimate - Call Us (919) 906-0099. Interior, Exterior, Ceramic Coating.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us (919) 906-0099. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
   </Helmet>
 );

@@ -1,4 +1,3 @@
-import * as React from "react";
 import {
   ABOUT_PATH,
   APEX_PATH,
@@ -26,9 +25,10 @@ import {
   SERVICES_PATH,
   SHAMPOO_PATH,
   THANK_YOU_PATH,
+  THREE_YEARS_CERAMIC_PATH,
   ULTIMATE_EXTERIOR_PATH,
   ULTIMATE_FULL_DETAILING_PATH,
-  ULTIMATE_INTERIOR_PATH,
+  ULTIMATE_INTERIOR_PATH
 } from "../../utils/constants";
 import App from "../App";
 import ErrorPage from "../error-page";
@@ -47,13 +47,14 @@ import FAQs from "./navigation/FAQsPage";
 import Gallery from "./navigation/GalleryPage";
 import ServicesPage from "./navigation/ServicesPage";
 import Root from "./Root";
-import CeramicCoating from "./services/detailing/Ceramic";
+import CeramicCoating from "./services/CeramicCoating";
 import ExpressExterior from "./services/detailing/ExpressExterior";
 import ExpressFullDetailing from "./services/detailing/ExpressFullDetailing";
 import ExpressInterior from "./services/detailing/ExpressInterior";
 import MaintenanceDetailing from "./services/detailing/MaintenanceDetailing";
 import OdorRemoval from "./services/detailing/OdorRemoval";
 import SteamAndShampoo from "./services/detailing/SteamAndShampoo";
+import ThreeYearsCeramic from "./services/detailing/ThreeYearsCeramic";
 import UltimateExterior from "./services/detailing/UltimateExterior";
 import UltimateFullDetailing from "./services/detailing/UltimateFullDetailing";
 import UltimateInterior from "./services/detailing/UltimateInterior";
@@ -178,6 +179,11 @@ export const routes = [
         path: MOBILE_DETAILING_PATH,
         name: "Mobile Detailing",
         element: <MobileDetailing />,
+      },
+      {
+        path: THREE_YEARS_CERAMIC_PATH,
+        name: "Three Years Ceramic Coating",
+        element: <ThreeYearsCeramic />,
       },
       {
         path: CERAMIC_COATING_PATH,

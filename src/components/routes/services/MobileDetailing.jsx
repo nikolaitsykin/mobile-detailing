@@ -6,31 +6,38 @@ import Booking from "../../Booking";
 import ServiceItem from "../../ServiceItem";
 
 const MobileDetailing = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const city = urlParams.get("location");
+
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + MOBILE_DETAILING_PATH);
 
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
-      {/* <div className="w-full bg-black h-32"></div> */}
-      <div className="w-full bg-black h-[250px] md:h-[450px] flex flex-col justify-center items-center mx-auto text-white top-20">
-        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          Mobile Car Detailing in Raleigh, NC{" "}
-        </h1>
-        <h2 className="text-sm md:text-lg px-5">
-          Refresh and Restore: Premium Car Detailing near you. We provide
-          service in Raleigh and nearby areas. Areas
-        </h2>
+      <div className="w-full bg-black">
+        <div className="bg-black opacity-40 object-cover c w-full mx-auto absolute"></div>
+        <img
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/pexels-lynxexotics-3954436%20(2).avif"
+          alt="Auto detailing"
+          className="w-full object-[25%_75%] object-cover h-[450px] md:h-[600px] mx-auto opacity-80"
+        />
+      </div>
+      <div className="w-full object-cover h-[450px] md:h-[700px]  top-0 flex justify-center items-center absolute  ">
+        <div className="w-[90%] flex flex-col justify-center items-center text-white">
+          <h1 className="whitespace-pre-line w-3/4 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Mobile Car Detailing in {city}
+          </h1>
+          <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Refresh and Restore: Premium Car Detailing near you. We provide
+            service in {city} and nearby areas.
+          </h3>
+          <div
+            id="book_buttons"
+            className="flex flex-row justify-center items-center w-full min-w-48 gap-1 "
+          ></div>
+        </div>
       </div>
 
-      {/* <div className="w-full bg-black h-[200px] md:h-[300px] flex justify-center items-center mx-auto text-white top-20">
-        <div className="flex flex-col text-center">
-          <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] px-2"></h1>
-          <h2 className="text-sm md:text-lg px-5">
-            Refresh and Restore: Premium Auto Detailing in Raleigh and Nearby
-            Areas
-          </h2>
-        </div>
-      </div> */}
       <section>
         <article className="text-start text-black">
           <div className="flex flex-col md:flex-row mt-14">
