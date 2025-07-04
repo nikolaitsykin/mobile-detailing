@@ -25,7 +25,7 @@ const MobileDetailing = () => {
       <div className="w-full object-cover h-[450px] md:h-[700px]  top-0 flex justify-center items-center absolute  ">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
           <h1 className="whitespace-pre-line w-3/4 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Mobile Car Detailing in {city}
+            Mobile Car Detailing {city ? "in " + city : ""}
           </h1>
           <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Refresh and Restore: Premium Car Detailing near you. We provide

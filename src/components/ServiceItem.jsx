@@ -19,7 +19,7 @@ const ServiceItem = ({ props, city }) => {
           {props.image && (
             <img
               loading="lazy"
-              className="h-64 pt-4 object-cover w-full max-w-lg align-start rounded-sm overflow-hidden "
+              className="h-64 mt-4 object-cover w-full max-w-lg align-start rounded-sm overflow-hidden "
               src={props.image}
               alt="Auto detailing"
             />
@@ -43,12 +43,12 @@ const ServiceItem = ({ props, city }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center w-[100%] mt-3">
+      <div className="flex flex-col justify-center items-center w-[100%] mt-3 px-2">
         <Link
           target={"_blank"}
           className="w-full flex justify-center items-center max-w-lg px-2 py-0.5"
           preventScrollReset={false}
-          to={`${props.link}?location=${city}`}
+          to={`${props.link}`}
         >
           <Button children={"Explore"} color={"tertiary"} width={"w-full"} />
         </Link>

@@ -20,10 +20,10 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`mb-10 pb-5 max-w-5xl mx-auto text-black rounded-md shadow-md `}
+      className={`mb-10 pb-5 mx-auto text-black rounded-md shadow-md `}
     >
       {description && (
-        <div className=" w-full px-4 pb-6 sm:pb-6 text-sm md:text-base">
+        <div className=" w-full pb-6 sm:pb-6 text-sm md:text-base">
           <p>{description}</p>
         </div>
       )}
@@ -42,21 +42,21 @@ const Card = ({
             {singleService && image && (
               <img
                 loading="lazy"
-                className="object-cover w-full max-w-xl align-start mb-3 px-4 py-1 rounded-sm overflow-hidden"
+                className="object-cover w-full align-start mb-3  py-1 rounded-sm overflow-hidden"
                 src={image}
                 alt={alt}
               />
             )}
           </div>
           {service && (
-            <div className="w-full px-4 max-w-xl">
+            <div className="w-full max-w-xl">
               <PriceTabs service={service} card={true} />
             </div>
           )}
         </div>
         <div className="flex flex-col justify-around h-full">
           {services && (
-            <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
+            <div className="flex flex-col justify-between w-full max-w-xl h-full ">
               <ul className="h-full">
                 {services.map((service, index) => (
                   <li
