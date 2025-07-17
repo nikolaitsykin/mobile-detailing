@@ -4,9 +4,7 @@ import Hero from "../Hero";
 import { MetaTags } from "../MetaTags";
 
 const Root = () => {
-  useEffect(() => {
-    localStorage.setItem("location", "Raleigh");
-  }, []);
+  localStorage.setItem("location", "Raleigh");
 
   const currentCity = localStorage.getItem("location");
 
