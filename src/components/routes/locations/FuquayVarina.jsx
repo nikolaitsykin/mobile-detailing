@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { BASE_URL, FUQUAY_VARINA_PATH } from "../../../utils/constants";
 import About from "../../About";
 import ContactForm from "../../ContactForm";
@@ -6,12 +5,10 @@ import Hero from "../../Hero";
 import { MetaTags } from "../../MetaTags";
 
 const FuquayVarina = () => {
-  useEffect(() => {
-    const path = window.location.pathname.split("/").filter(Boolean);
-    const city = path[0].replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letter of each word
+  const path = window.location.pathname.split("/").filter(Boolean);
+  const city = path[0].replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letter of each word
 
-    localStorage.setItem("location", city);
-  }, []);
+  localStorage.setItem("location", city);
 
   const currentCity = localStorage.getItem("location");
 
