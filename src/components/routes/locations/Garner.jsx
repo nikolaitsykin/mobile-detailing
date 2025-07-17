@@ -1,29 +1,21 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import { BASE_URL, GARNER_PATH } from "../../../utils/constants";
-import { localAreas } from "../../../utils/data";
 import About from "../../About";
 import ContactForm from "../../ContactForm";
 import Hero from "../../Hero";
 import { MetaTags } from "../../MetaTags";
 
 const Garner = () => {
-  const location = useLocation();
+  useEffect(() => {
+    const path = window.location.pathname.split("/").filter(Boolean);
+    const city = path[0].charAt(0).toUpperCase() + path[0].slice(1);
+    localStorage.setItem("location", city);
+  }, []);
 
-  const currentCity = localAreas.includes(location.pathname.split("/")[1])
-    ? location.pathname
-        .split("/")[1]
-        .replace(/-/g, " ") // Replace hyphens with spaces
-        .replace(/\b\w/g, (char) => char.toUpperCase()) // Capitalize first letter of each word
-    : "Raleigh";
+  const currentCity = localStorage.getItem("location");
 
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + GARNER_PATH);
-
-  useEffect(() => {
-    document.title = `Spotless Auto Detailing: Mobile Car Detailing & Ceramic Coating in ${currentCity}.
-`;
-  }, [currentCity, location.pathname]);
 
   return (
     <main className="w-full bg-white">

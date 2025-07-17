@@ -6,7 +6,7 @@ import {
   HOLLY_SPRINGS_PATH,
   HOME_PATH,
   KNIGHTDALE_PATH,
-  MORRISVILLE_PATH
+  MORRISVILLE_PATH,
 } from "./constants";
 
 export const primaryStyle = "text-white bg-blue hover:bg-dark-blue border-blue";
@@ -32,7 +32,7 @@ export const locations = [
   "Knightdale",
   "Morrisville",
   "Raleigh",
-  "Fuquay Varina",
+  "Fuquay-Varina",
 ];
 
 export const locationLinks = [
@@ -53,13 +53,6 @@ export const footerLinks = [
   "PPF",
 ];
 
-export const footerLinksActual = [
-  "services",
-  "services",
-  "services",
-  "services",
-];
-
 export const servicesLinks = ["Services", "Booking", "Faq", "About"];
 export const servicesLinksActual = ["services", "booking", "faq", "about"];
 
@@ -68,6 +61,33 @@ export const businessHours = ["MON-SUN 9AM-8PM"];
 
 export const businessName = "Spotless";
 export const fullBusinessName = "Spotless Auto Detailing";
+
+export const ceramicReviews = [
+  {
+    name: "Andrew Simpson",
+    rating: 5,
+    review:
+      "I had the ceramic coating done about a month ago, and my car still looks freshly detailed every time it rains. The water just beads right off. Super happy with the results and the level of professionalism.",
+  },
+  {
+    name: "Jason Bradley",
+    rating: 5,
+    review:
+      "The shine is unreal. I never thought my 2018 SUV could look this good again. Spotless Auto Detailing knocked it out of the park with their ceramic coating service.",
+  },
+  {
+    name: "Kevin Roberts",
+    rating: 5,
+    review:
+      "I wanted something to protect my paint from the North Carolina sun and road salt. The 3 year ceramic coating has made a noticeable difference — way easier to clean, and the paint feels smooth like glass.",
+  },
+  {
+    name: "David Donovan",
+    rating: 5,
+    review:
+      "I booked ceramic coating to protect my new car, and I’m blown away. The depth of the shine is incredible, and dirt barely sticks to the paint now. Totally worth it — feels like I’m driving a brand-new car every day.",
+  },
+];
 
 export const reviews = [
   {

@@ -16,10 +16,10 @@ const ContactForm = () => {
     location.pathname === "/contact" ? (
       "Tell Us About"
     ) : (
-      <span>
+      <h2>
         Not Sure What You Need?
         <br /> Talk to a Specialist!
-      </span>
+      </h2>
     );
   const headingClass =
     location.pathname === "/contact" ? "text-start" : "text-center";

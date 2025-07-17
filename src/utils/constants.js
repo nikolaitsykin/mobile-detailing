@@ -1,3 +1,4 @@
+
 export const FACEBOOK_URL = "https://www.facebook.com/getspotlessnow";
 export const INSTAGRAM_URL = "https://www.instagram.com/getspotlessnow/";
 export const YOUTUBE_URL = "https://www.youtube.com/@SpotlessMobileDetailing";
@@ -60,6 +61,10 @@ export const ULTIMATE_FULL_DETAILING_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/6QQIRLPLFXKWKX7NWHFARYFI";
 export const CERAMIC_COATING_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/QDUQOND743CV22TO3AQCDTAV";
+export const ONE_STEP_CERAMIC_COATING_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/U3C7IRETJOMWQHQMCSOIP4WG";
+export const TWO_STEP_CERAMIC_COATING_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/2Q3QVR2EGZG7GG3DQCEOB57T";
 
 export const EXPRESS_EXTERIOR_PATH = "/express-exterior-detailing";
 export const ULTIMATE_EXTERIOR_PATH = "/ultimate-exterior-detailing";
@@ -75,8 +80,7 @@ export const EXPRESS_FULL_DETAILING_PATH = "/express-full-detailing";
 
 export const CERAMIC_COATING_PATH = "/ceramic-coating";
 export const THREE_YEARS_CERAMIC_PATH = "/3-years-ceramic-coating";
-
-
+export const PAINT_CORRECTION_PATH = "/paint-correction";
 
 export const APEX_PATH = "/apex";
 export const RALEIGH_PATH = "/raleigh";

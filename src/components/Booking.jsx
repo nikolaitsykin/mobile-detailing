@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CALL_NUMBER } from "../utils/constants";
+import { CALL_NUMBER, SERVICES_PATH } from "../utils/constants";
 import { fullBusinessName } from "../utils/data";
 import { whatToExpect } from "../utils/sustainability";
 import BookButtons from "./UI/BookButtons";
@@ -25,8 +25,8 @@ const Booking = () => {
           we’ll do our best to accommodate you.{" "}
           <Link
             target={"_blank"}
-            className="underline text-blue"
-            to="/services"
+            className="font-semibold text-blue"
+            to={SERVICES_PATH}
           >
             Browse our services.
           </Link>
@@ -40,7 +40,7 @@ const Booking = () => {
             ✔ Book your appointment online by clicking the "Book Online" button
             or contact us by clicking the "Request a Quote" button or give us a
             call at{" "}
-            <Link to={CALL_NUMBER} className="underline text-blue">
+            <Link to={CALL_NUMBER} className="font-semibold text-blue">
               (919)&nbsp;906&#8209;0099
             </Link>
             . Be sure to include your address when scheduling!

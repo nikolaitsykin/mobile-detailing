@@ -48,8 +48,16 @@ const PriceTabs = ({ service, singleService }) => {
                     </h4>
                   )}
                   <div className="text-center sm:text-start text-sm md:text-base px-4 mb-4 h-12">
-                    Estimated duration: {service.duration[tabIndex]} depending
-                    on vehicle size and condition.
+                    {service.type === "Ceramic Coating" ? (
+                      <p className="text-center  text-sm md:text-base px-4 mb-4 h-12">
+                        Estimated duration: {service.duration[tabIndex]}{" "}
+                      </p>
+                    ) : (
+                      <p className="text-center sm:text-start text-sm md:text-base px-4 mb-4 h-12">
+                        Estimated duration: {service.duration[tabIndex]}{" "}
+                        depending on vehicle size and condition.
+                      </p>
+                    )}
                   </div>
                 </div>
               )}

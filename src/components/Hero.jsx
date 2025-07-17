@@ -13,7 +13,7 @@ const Hero = ({ city }) => {
         <div className="bg-black opacity-40 object-cover h-[calc(60vh-0px)] sm:h-[calc(100vh-0px)] w-full mx-auto absolute"></div>
         <img
           src="https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/serjan-midili-1O1v7Fe0Lto-unsplash%202.jpg"
-          alt="Auto detailing"
+          alt="Spotless Auto Detailing"
           className="object-cover h-[calc(60vh-0px)] sm:h-[calc(100vh-0px)] w-full mx-auto"
         />
         {/* <video
@@ -38,11 +38,11 @@ const Hero = ({ city }) => {
             Top-Tier Service in {city ? city : "Raleigh"}, NC
           </h3> */}
           <h1 className="w-full md:w-3/4 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Сar Detailing & Ceramic Coating in {city ? city : "Raleigh"}
+            Сar Detailing & Ceramic Coating in {city}
           </h1>
           <h3 className="w-full md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Spotless Auto Detailing provides the finest car detailing, ceramic coating & paint correction services
-            in {city ? city : "Raleigh"} and the surrounding areas.{" "}
+            Spotless Auto Detailing provides the finest mobile car detailing, ceramic coating & paint correction services
+            in {city} and the surrounding areas.{" "}
           </h3>
           <div
             id="book_buttons"
@@ -53,7 +53,7 @@ const Hero = ({ city }) => {
         </div>
       </div>
       <section>
-        <div>
+        <div className="mt-10">
           <Testimonials />
           <GoogleReview />
         </div>

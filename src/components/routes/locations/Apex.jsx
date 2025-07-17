@@ -1,29 +1,28 @@
-import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { APEX_PATH, BASE_URL } from "../../../utils/constants";
-import { localAreas } from "../../../utils/data";
 import About from "../../About";
 import ContactForm from "../../ContactForm";
 import Hero from "../../Hero";
 import { MetaTags } from "../../MetaTags";
 
 const Apex = () => {
-  const location = useLocation();
+  useEffect(() => {
+    const path = window.location.pathname.split("/").filter(Boolean);
+    const city = path[0]
+      .replace(/-/g, " ") // Replace hyphens with spaces
+      .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letter of each word
 
+    localStorage.setItem("location", city);
+  }, []);
 
-  const currentCity = localAreas.includes(location.pathname.split("/")[1])
-    ? location.pathname
-        .split("/")[1]
-        .replace(/-/g, " ") // Replace hyphens with spaces
-        .replace(/\b\w/g, (char) => char.toUpperCase()) // Capitalize first letter of each word
-    : "Raleigh";
+  const currentCity = localStorage.getItem("location");
 
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + APEX_PATH);
 
-
   return (
     <main className="w-full bg-white">
-      <MetaTags city={currentCity} /> 
+      <MetaTags city={currentCity} />
       <div className="z-100">
         <div>
           <Hero city={currentCity} />

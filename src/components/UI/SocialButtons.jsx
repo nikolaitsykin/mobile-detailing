@@ -1,13 +1,11 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Facebook } from "../../assets/icons/facebook.svg";
-import { ReactComponent as Instagram } from "../../assets/icons/instagram.svg";
 import { ReactComponent as Google } from "../../assets/icons/google-black-icon.svg";
-import { ReactComponent as Youtube } from "../../assets/icons/youtube.svg";
+import { ReactComponent as Instagram } from "../../assets/icons/instagram.svg";
 import {
   FACEBOOK_URL,
   GOOGLE_BUSINESS_URL,
-  INSTAGRAM_URL,
+  INSTAGRAM_URL
 } from "../../utils/constants";
 
 const SocialButtons = () => {

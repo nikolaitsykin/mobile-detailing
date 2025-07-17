@@ -1,61 +1,94 @@
-import React from "react";
 import { businessName } from "../../../utils/data";
-import {
-  oneStepPaintCorrection,
-  twoStepPaintCorrection
-} from "../../../utils/services";
+import Booking from "../../Booking";
+import { paintCorrectionServices } from "../../../utils/detailingPackages";
 import Card from "../../Card";
 
-const Polish = () => {
+const PaintCorrection = () => {
+  const city = localStorage.getItem("location");
+
   return (
-    <section id="paint-correction" className="bg-white  relative">
-      <div className="bg-black">
+    <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
+      <div className="w-full bg-black">
+        <div className="bg-black opacity-40 object-cover c w-full mx-auto absolute"></div>
         <img
-          loading="lazy"
-          className="w-full object-cover opacity-60"
-          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_406854263.jpeg"
-          alt="Auto detailing"
+          src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/ceramic_coating_collection.webp"
+          alt="Car ceramic coating in Raleigh | Spotless Auto Detailing."
+          className="w-full object-[25%_75%] object-cover h-[450px] md:h-[600px] mx-auto opacity-80"
         />
       </div>
-      <div className="w-[80%] mx-auto">
-        <div className="w-[80%] z-10 absolute top-10 md:top-32 left-1/2 -translate-x-1/2 text-center">
-          <h1 id="auto-detailing" className="text-white">
-            PAINT CORRECTION
+      <div className="w-full object-cover h-[450px] md:h-[600px] top-0 flex justify-center items-center absolute  ">
+        <div className="w-[90%] flex flex-col justify-center items-center text-white">
+          <h1 className="whitespace-pre-line w-3/4 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Paint Correction {city ? "in " + city : ""}
           </h1>
+          <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Protect and Enhance: Premium Car Paint Correction near you. We
+            provide service in {city ? city : "Raleigh"} and nearby areas.
+          </h3>
         </div>
-        <h2>Paint correction</h2>
-        <article className="">
-          Washing a car may seem simple, but achieving a flawless finish
-          requires more than just a quick rinse. At {businessName}, we take
-          detailing to the next level, both inside and out. Our service goes
-          beyond removing everyday dirt, grime, bird droppings, and dust—we use
-          advanced washing and drying techniques that significantly reduce
-          surface scratches. We also meticulously clean and condition every
-          interior surface, ensuring your vehicle looks and feels pristine
-          inside and out. Experience the difference, where every detail counts.
-        </article>
       </div>
-      <section className="w-[80%] mx-auto">
-        <h2 className=" p-5 ">Package Options</h2>
-        <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2">
-          <Card
-            title={oneStepPaintCorrection.title}
-            image={oneStepPaintCorrection.image}
-            description={oneStepPaintCorrection.description}
-            button={"BOOK NOW"}
-            link={"booking"}
-          />
-          <Card
-            title={twoStepPaintCorrection.title}
-            image={twoStepPaintCorrection.image}
-            description={twoStepPaintCorrection.description}
-            button={"BOOK NOW"}
-            link={"booking"}
-          />
+      <section className="">
+        <article className=" text-start text-black">
+          <h2 className="">
+            Advanced Nano-Ceramic Coating: The Future of Car Protection
+          </h2>
+          <p className="">
+            What is Ceramic Coating? Ceramic coating is made from nano-ceramic
+            particles that form a chemical bond with your car’s paintwork,
+            creating a protective layer that is resistant to scratches, chips,
+            and all sorts of damage. And the best part? It lasts for years
+            without needing to be reapplied, which means less time and money
+            spent on waxing and polishing your ride. ​ We offer top-of-the-line
+            auto ceramic coating services that protect your car’s exterior. Our
+            ceramic coating is made up of nano-ceramic particles that form a
+            strong bond with your car’s paint, providing long-lasting protection
+            against scratches, chips, UV rays, and other forms of damage.
+            <br />
+            <br />
+            Inside, we use only safe, eco-friendly detergents, ensuring that
+            every surface is thoroughly cleaned and conditioned. Our products
+            are not just tough on messes but gentle enough for you, your kids,
+            and your pets. With {businessName}, you get a pristine vehicle that
+            looks and feels fresh, without compromising safety or quality.
+            Experience detailing where every detail counts—because your family’s
+            well-being matters.
+          </p>
+        </article>
+      </section>
+      <div className="mx-auto">
+        <section className="">
+          {paintCorrectionServices.map((service) => (
+            <div key={service.id}>
+              <h3 className="text-center mx-auto my-5 max-w-5xl">
+                {service.title}
+              </h3>
+              <h5 className="mb-2">{service.shortDescription}</h5>
+              <Card
+                title={service.title}
+                // type={service.type}
+                service={service}
+                services={service.services}
+                description={service.description}
+                exteriorServices={service.exteriorServices}
+                image={service.image}
+                singleService
+                duration={service.duration}
+                link={service.link}
+                bookingLink={service.bookingLink}
+                suggestionHeader={service.suggestionHeader}
+                suggestion={service.suggestion}
+              />
+            </div>
+          ))}
+        </section>
+      </div>
+      <section className="bg-white z-100  top-[1400px] w-full">
+        <div id="booking" className="scroll-mb-[750px] bg-white  w-full z-10">
+          <Booking />
         </div>
       </section>
-    </section>
+    </div>
   );
 };
 
-export default Polish;
+export default PaintCorrection;

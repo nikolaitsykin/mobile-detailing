@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as ArrowDown } from "../../assets/icons/arrow_down_icon.svg";
 import {
@@ -6,13 +6,13 @@ import {
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
-  THREE_YEARS_CERAMIC_PATH,
+  PAINT_CORRECTION_PATH
 } from "../../utils/constants";
 import {
-  ceramicCoatingServices,
-  exteriorDetailingServices,
+  ceramicCoatingServices, exteriorDetailingServices,
   fullDetailingServices,
   interiorDetailingServices,
+  paintCorrectionServices
 } from "../../utils/detailingPackages";
 import DropdownList from "./DropdownList";
 
@@ -67,6 +67,13 @@ const Dropdown = ({ title, closeMenu }) => {
             closeMenu={closeMenu}
           />
         </Link>
+        {/* <Link to={PAINT_CORRECTION_PATH}>
+          <DropdownList
+            options={paintCorrectionServices}
+            closeDropdown={closeDropdown}
+            closeMenu={closeMenu}
+          />
+        </Link> */}
       </ul>
     </div>
   );

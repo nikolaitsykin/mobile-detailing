@@ -19,9 +19,7 @@ const Card = ({
   interiorServices,
 }) => {
   return (
-    <div
-      className={`mb-10 pb-5 mx-auto text-black rounded-md shadow-md `}
-    >
+    <div className={`mb-10 pb-5 mx-auto text-black rounded-md shadow-md `}>
       {description && (
         <div className=" w-full pb-6 sm:pb-6 text-sm md:text-base">
           <p>{description}</p>
@@ -33,7 +31,6 @@ const Card = ({
             {title && <h3 className=" text-center py-1">{title}</h3>}
             {type && <h6 className="max-w-xl text-center pb-3">{type}</h6>}
           </div> */}
-
           <div
             className={`grid grid-cols-1 ${
               image ? "content-start h-full" : ""
@@ -42,7 +39,7 @@ const Card = ({
             {singleService && image && (
               <img
                 loading="lazy"
-                className="object-cover w-full align-start mb-3  py-1 rounded-sm overflow-hidden"
+                className="object-cover align-start mb-3 py-1 rounded-sm overflow-hidden"
                 src={image}
                 alt={alt}
               />
@@ -71,6 +68,7 @@ const Card = ({
           )}
           {exteriorServices && (
             <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
+              <p className="font-semibold">This package includes:</p>
               <ul className="h-full">
                 {exteriorServices.map((service, index) => (
                   <li
@@ -85,6 +83,11 @@ const Card = ({
           )}
           {interiorServices && (
             <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
+              {exteriorServices ? (
+                ""
+              ) : (
+                <p className="font-semibold">This package includes:</p>
+              )}
               <ul className="h-full">
                 {interiorServices.map((service, index) => (
                   <li
@@ -113,8 +116,7 @@ const Card = ({
             <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4">
               {service.type !== "Ceramic Coating"
                 ? "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include pet hair/sand, staining, excessive messes, etc."
-                : "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include excessive bug, tar, tree sap etc."
-                }
+                : "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include excessive bug, tar, tree sap etc."}
             </div>
           )}
           <div className="mb-3">

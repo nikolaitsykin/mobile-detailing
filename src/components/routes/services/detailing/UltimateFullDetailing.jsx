@@ -1,8 +1,5 @@
-import { Link } from "react-router-dom";
 import {
-  BASE_URL,
-  CERAMIC_COATING_PATH,
-  ULTIMATE_FULL_DETAILING_PATH,
+  BASE_URL, ULTIMATE_FULL_DETAILING_PATH
 } from "../../../../utils/constants";
 import { ultimateFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
