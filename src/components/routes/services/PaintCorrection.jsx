@@ -16,7 +16,7 @@ const PaintCorrection = () => {
           className="w-full object-[25%_75%] object-cover h-[450px] md:h-[600px] mx-auto opacity-80"
         />
       </div>
-      <div className="w-full object-cover h-[450px] md:h-[600px] top-0 flex justify-center items-center absolute  ">
+      <div className="w-full object-cover h-[450px] md:h-[600px] top-20 flex justify-center items-center absolute  ">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
           <h1 className="whitespace-pre-line w-3/4 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Paint Correction {city ? "in " + city : ""}

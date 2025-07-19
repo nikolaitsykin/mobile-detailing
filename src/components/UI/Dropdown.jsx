@@ -20,6 +20,7 @@ const Dropdown = ({ title, closeMenu }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const closeDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+    closeMenu();
   };
 
   return (

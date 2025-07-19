@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { BASE_URL } from "../../utils/constants";
 import Hero from "../Hero";
 import { MetaTags } from "../MetaTags";

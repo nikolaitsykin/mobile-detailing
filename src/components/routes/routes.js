@@ -16,7 +16,9 @@ import {
   HOME_PATH,
   KNIGHTDALE_PATH,
   MAINTENANCE_FULL_DETAILING_PATH,
-  MOBILE_DETAILING_PATH, MOBILE_FULL_DETAILING_PATH,
+  MOBILE_DETAILING_PATH,
+  MOBILE_EXTERIOR_DETAILING_PATH,
+  MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
   MORRISVILLE_PATH,
   ODOR_REMOVAL_PATH,
@@ -58,6 +60,7 @@ import UltimateExterior from "./services/detailing/UltimateExterior";
 import UltimateFullDetailing from "./services/detailing/UltimateFullDetailing";
 import UltimateInterior from "./services/detailing/UltimateInterior";
 import MobileDetailing from "./services/MobileDetailing";
+import MobileExteriorDetailing from "./services/MobileExteriorDetailing";
 import MobileFullDetailing from "./services/MobileFullDetailing";
 import MobileInteriorDetailing from "./services/MobileInteriorDetailing";
 import PaintCorrection from "./services/PaintCorrection";
@@ -118,6 +121,11 @@ export const routes = [
         path: MOBILE_INTERIOR_DETAILING_PATH,
         name: "Mobile Interior Detailing",
         element: <MobileInteriorDetailing />,
+      },
+      {
+        path: MOBILE_EXTERIOR_DETAILING_PATH,
+        name: "Mobile Exterior Detailing",
+        element: <MobileExteriorDetailing />,
       },
       {
         path: EXPRESS_EXTERIOR_PATH,
@@ -227,4 +235,3 @@ export const routes = [
     ],
   },
 ];
-

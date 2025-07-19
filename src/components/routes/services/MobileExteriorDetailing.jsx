@@ -1,4 +1,3 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import {
   BASE_URL,
@@ -74,12 +73,12 @@ const MobileExteriorDetailing = () => {
         ))}
         <Outlet />
       </section>
-      <div id="booking" className="scroll-mb-[750px]"></div>
-      <Booking />
       <section className="w-[90%] md:w-[80%] mx-auto">
         <h2>{exteriorDetailingServices[0].type.split(" ")[0]} Addons</h2>
         <Addons type={exteriorDetailingServices[0].type} />
       </section>
+      <div id="booking" className="scroll-mb-[750px]"></div>
+      <Booking />
       <section className="w-[90%] md:w-[80%] mx-auto pb-16">
         <article className=" w-full flex flex-col justify-center">
           <h2 id="how-we-do-it">

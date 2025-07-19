@@ -1,8 +1,7 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import {
   BASE_URL,
-  MOBILE_INTERIOR_DETAILING_PATH,
+  MOBILE_INTERIOR_DETAILING_PATH
 } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { interiorDetailingServices } from "../../../utils/detailingPackages";
@@ -68,7 +67,6 @@ const MobileInteriorDetailing = () => {
             duration={item.duration}
             link={item.link}
             button={"Get Started"}
-            background={item.background}
           />
         ))}
         <Outlet />
