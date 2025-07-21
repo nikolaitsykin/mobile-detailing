@@ -6,6 +6,8 @@ import Services from "../../Services";
 const ServicesPage = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + SERVICES_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + SERVICES_PATH);
 
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
