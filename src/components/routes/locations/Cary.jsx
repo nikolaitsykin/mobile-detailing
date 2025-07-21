@@ -13,6 +13,8 @@ const Cary = () => {
 
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + CARY_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + CARY_PATH);
 
   return (
     <main className="w-full bg-white">

@@ -10,6 +10,8 @@ const MobileDetailing = () => {
 
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + MOBILE_DETAILING_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + MOBILE_DETAILING_PATH);
 
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
@@ -23,7 +25,8 @@ const MobileDetailing = () => {
       <div className="w-full object-cover h-[450px] md:h-[600px] top-10 flex justify-center items-center absolute">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
           <h1 className="whitespace-pre-line w-1/2 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Mobile Car Detailing {city}, NC
+            Mobile Car Detailing
+            <br /> in {city}
           </h1>
           <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Over 100+ 5-star reviews from our happy customers. From interior
@@ -70,9 +73,9 @@ const MobileDetailing = () => {
                 tools and equipment, such as steamers and extractors, to remove
                 even the toughest stains and odors. And, with our premium
                 cleaning products, you can trust that your car's interior will
-                be protected and preserved. Don't let a dirty
-                interior ruin your driving experience - let us help you get back
-                to enjoying the road.
+                be protected and preserved. Don't let a dirty interior ruin your
+                driving experience - let us help you get back to enjoying the
+                road.
               </p>
             </span>
             <span className="md:w-1/2">

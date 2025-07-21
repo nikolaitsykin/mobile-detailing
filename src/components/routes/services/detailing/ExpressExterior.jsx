@@ -16,11 +16,11 @@ const ExpressExterior = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const city = urlParams.get("location");
 
-  console.log(urlParams.get("location"));
-
   const service = expressExterior;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + EXPRESS_EXTERIOR_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + EXPRESS_EXTERIOR_PATH);
 
   return (
     <div

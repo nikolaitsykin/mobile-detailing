@@ -10,21 +10,25 @@ import Card from "../../Card";
 const MobileFullDetailing = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + MOBILE_FULL_DETAILING_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + MOBILE_FULL_DETAILING_PATH);
+
+  const city = localStorage.getItem("location");
 
   return (
     <div id="full-detailing" className="w-full z-20 bg-white font-poppins">
       <div className="w-full bg-black">
         <img
           loading="lazy"
-          className="w-full object-cover h-[300px] md:h-[450px] mx-auto opacity-50"
+          className="w-full object-cover h-[450px] md:h-[600px] mx-auto opacity-50"
           src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.jpeg"
           alt="Auto detailing"
         />
       </div>
-      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
+      <div className="w-full object-cover h-[450px] md:h-[600px]  flex justify-center items-center absolute top-10 md:top-20">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className=" text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Mobile Exterior & Interior Detailing
+            Mobile Exterior & Interior Detailing <br /> in {city}
           </h1>
         </div>
       </div>

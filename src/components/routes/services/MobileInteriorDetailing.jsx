@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import {
   BASE_URL,
-  MOBILE_INTERIOR_DETAILING_PATH
+  MOBILE_INTERIOR_DETAILING_PATH,
 } from "../../../utils/constants";
 import { businessName } from "../../../utils/data";
 import { interiorDetailingServices } from "../../../utils/detailingPackages";
@@ -12,6 +12,7 @@ import Card from "../../Card";
 const MobileInteriorDetailing = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + MOBILE_INTERIOR_DETAILING_PATH);
+  const city = localStorage.getItem("location");
 
   return (
     <div id="interior-detailing" className="w-full z-20 bg-white font-poppins">
@@ -23,10 +24,10 @@ const MobileInteriorDetailing = () => {
           alt="Auto detailing"
         />
       </div>
-      <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
+      <div className="w-full object-cover h-[450px] md:h-[600px]  flex justify-center items-center absolute top-16 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className=" text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Mobile Interior Detailing
+            Mobile Interior Detailing<br /> in {city}
           </h1>
         </div>
       </div>

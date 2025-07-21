@@ -10,6 +10,9 @@ const ThreeYearsCeramic = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + CERAMIC_COATING_PATH);
 
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + CERAMIC_COATING_PATH);
+
   return (
     <div
       id="exterior-detailing"

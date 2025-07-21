@@ -16,6 +16,8 @@ const HollySprings = () => {
 
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + HOLLY_SPRINGS_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + HOLLY_SPRINGS_PATH);
 
   return (
     <main className="w-full bg-white">

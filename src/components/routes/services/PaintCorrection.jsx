@@ -2,9 +2,14 @@ import { businessName } from "../../../utils/data";
 import Booking from "../../Booking";
 import { paintCorrectionServices } from "../../../utils/detailingPackages";
 import Card from "../../Card";
+import { BASE_URL, PAINT_CORRECTION_PATH } from "../../../utils/constants";
 
 const PaintCorrection = () => {
   const city = localStorage.getItem("location");
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + PAINT_CORRECTION_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + PAINT_CORRECTION_PATH);
 
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">

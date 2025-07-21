@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import {
   BASE_URL,
   EXPRESS_INTERIOR_PATH,
-  ULTIMATE_INTERIOR_PATH
+  ULTIMATE_INTERIOR_PATH,
 } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { expressInterior } from "../../../../utils/detailingPackages";
@@ -17,6 +17,8 @@ const ExpressInterior = () => {
   const service = expressInterior;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + EXPRESS_INTERIOR_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + EXPRESS_INTERIOR_PATH);
 
   return (
     <div

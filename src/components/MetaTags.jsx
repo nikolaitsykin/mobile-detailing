@@ -23,6 +23,10 @@ export const MetaTags = ({ city }) => (
       content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us (919) 906-0099. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
     <meta
+      property="og:url"
+      content={`${city}`}
+    />
+    <meta
       property="twitter:description"
       content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us (919) 906-0099. Car Detailing, Ceramic Coating, Paint Correction.`}
     />

@@ -12,6 +12,9 @@ import Card from "../../Card";
 const MobileExteriorDetailing = () => {
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + MOBILE_EXTERIOR_DETAILING_PATH);
+  const city = localStorage.getItem("location");
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + MOBILE_EXTERIOR_DETAILING_PATH);
 
   return (
     <div id="exterior-detailing" className="w-full z-20 bg-white font-poppins">
@@ -27,6 +30,7 @@ const MobileExteriorDetailing = () => {
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className=" text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
             Mobile Exterior Detailing
+            <br /> in {city}
           </h1>
         </div>
       </div>

@@ -13,6 +13,8 @@ const Garner = () => {
 
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + GARNER_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + GARNER_PATH);
 
   return (
     <main className="w-full bg-white">

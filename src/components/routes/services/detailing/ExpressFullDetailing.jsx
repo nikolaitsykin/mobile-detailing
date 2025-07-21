@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import {
   BASE_URL,
   EXPRESS_FULL_DETAILING_PATH,
-  ULTIMATE_FULL_DETAILING_PATH
+  ULTIMATE_FULL_DETAILING_PATH,
 } from "../../../../utils/constants";
 import { expressFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
@@ -16,6 +16,8 @@ const ExpressFullDetailing = () => {
   const service = expressFullDetail;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + EXPRESS_FULL_DETAILING_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + EXPRESS_FULL_DETAILING_PATH);
 
   return (
     <div
