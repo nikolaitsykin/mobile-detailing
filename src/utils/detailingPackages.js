@@ -178,7 +178,7 @@ export const oneStepCeramicCoating = {
   duration: ["6 hours", "6 hours 30 mins", "7 hours"],
 };
 export const twoStepCeramicCoating = {
-  title: "2 step Ceramic Coating",
+  title: "Two Step Ceramic Coating",
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/What-If-It-Rains-After-Getting-A-Ceramic-Coating-Applied-Daylans-Mobile-Detailing-Sea-Girt-NJ-1.jpg.webp",
@@ -198,7 +198,7 @@ export const twoStepCeramicCoating = {
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   bookingLink: TWO_STEP_CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Take your car's protection to the next level with Step 2 Ceramic Coating from Spotless Auto Detailing.`,
+  shortDescription: `Take your car's protection to the next level with Step 2 Polishing followed by Ceramic Coating from Spotless Auto Detailing.`,
   description:
     "Take your car's protection to the next level with Step 2 Ceramic Coating from Spotless Auto Detailing. Our ceramic coating is a long-term nano-ceramic coating that provides a strong layer of protection for your car's paint. This coating will create a durable, hydrophobic layer that resists contamination, scratches, and fading, keeping your car looking its best.",
   duration: ["7 hours", "7 hours 30 mins", "8 hours"],

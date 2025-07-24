@@ -28,9 +28,8 @@ const CeramicCoating = () => {
       </div>
       <div className="w-full object-cover h-[450px] md:h-[600px] top-10 flex justify-center items-center absolute  ">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
-          <h1 className="whitespace-pre-line uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Professional Ceramic Coating
-            <br /> in {city}, NC
+          <h1 className="md:w-1/2 whitespace-pre-line uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Professional Ceramic Coating in {city}
           </h1>
           <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Ceramic Coating offers unmatched durability, resisting swirls,
@@ -201,7 +200,7 @@ const CeramicCoating = () => {
             Ceramic Coating Packages
           </h2>
           {ceramicCoatingServices.map((service) => (
-            <div key={service.id}>
+            <div key={service.title}>
               <h3 className="text-center mx-auto my-5 max-w-5xl">
                 {service.title}
               </h3>
