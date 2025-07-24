@@ -14,21 +14,21 @@ const ConntactsButtons = () => {
           </span>
         </Link>
       </div>
-      <div className="flex md:hidden justify-center items-center active:scale-110 duration-300 ">
+      <div className="hidden justify-center items-center active:scale-110 duration-300 ">
         <Link to={CALL_NUMBER}>
           <div className="hover:scale-110 duration-700">
             <PhoneCall />
           </div>
         </Link>
       </div>
-      <div className="flex md:hidden justify-center items-center active:scale-110 duration-300 px-1">
+      <div className="hidden justify-center items-center active:scale-110 duration-300 px-1">
         <Link to={TEXT_NUMBER}>
           <div className="hover:scale-110 duration-700">
             <MessageSms />
           </div>
         </Link>
       </div>
-      <div className="flex items-center h-12 ">
+      <div className="flex items-end md:items-center h-12 ">
         <Link to={BOOKING_URL} target={"_blank"}>
           <Button
             children={"BOOK NOW"}

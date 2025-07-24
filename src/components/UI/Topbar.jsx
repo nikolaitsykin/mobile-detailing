@@ -6,7 +6,7 @@ import ConntactsButtons from "./ConntactsButtons";
 const Topbar = () => {
   return (
     <div className="flex justify-between items-center w-full ">
-      <div className="flex justify-start items-center ml-6 md:ml-9 w-24 md:w-44 h-16 md:h-20">
+      <div className="flex justify-start items-end md:items-center ml-6 md:ml-9 w-24 md:w-44 h-16 md:h-20 pb-2">
         <Link to={HOME_PATH}>
           <div className="">
             <img
@@ -18,7 +18,7 @@ const Topbar = () => {
           </div>
         </Link>
       </div>
-      <div className="flex justify-start items-center mr-5 md:mr-14">
+      <div className="flex justify-start items-end md:items-center mr-5 md:mr-14">
         <ConntactsButtons />
       </div>
     </div>

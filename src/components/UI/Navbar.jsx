@@ -5,8 +5,14 @@ import { ReactComponent as Menu } from "../../assets/icons/menu-burger.svg";
 import { servicesLinks, servicesLinksActual } from "../../utils/data";
 import Dropdown from "./Dropdown";
 import SocialButtons from "./SocialButtons";
-import { GIFT_CARDS_PATH, SERVICES_PATH } from "../../utils/constants";
+import {
+  BOOKING_URL,
+  CALL_NUMBER,
+  GIFT_CARDS_PATH,
+  SERVICES_PATH,
+} from "../../utils/constants";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,8 +92,18 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full flex justify-end items-start h-10 md:h-10 mr-5 md:mr-14">
+      <div className="w-full hidden md:flex justify-end items-start h-10 md:h-10 mr-5 md:mr-14">
         <SocialButtons />
+      </div>
+      <div className="flex md:hidden justify-start items-center mr-5 md:mr-14">
+        <Link to={CALL_NUMBER}>
+          <Button
+            children={"CALL NOW"}
+            color={"tertiary"}
+            border="border"
+            header
+          />
+        </Link>
       </div>
     </nav>
   );
