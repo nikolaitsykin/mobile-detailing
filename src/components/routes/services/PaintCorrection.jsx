@@ -140,7 +140,7 @@ const PaintCorrection = () => {
             locks it in for years. Skipping either step means you're leaving
             results—and longevity—on the table.{" "}
           </p>
-          <div id="preparation"lassName="flex flex-col-reverse md:flex-row-reverse gap-2">
+          <div id="preparation" className="flex flex-col-reverse md:flex-row-reverse gap-2">
             <span className="flex items-center md:w-1/2">
               <img
                 className="w-full object-cover max-h-80 md:pr-5"
