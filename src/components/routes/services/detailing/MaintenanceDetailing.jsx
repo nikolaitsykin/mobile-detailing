@@ -33,8 +33,7 @@ const MaintenanceDetailing = () => {
         <section className="mt-12">
           <article className=" text-start text-black">
             <h3 className="text-center mx-auto mb-10 max-w-5xl">
-              Restore your car’s beauty with our professional full exterior and
-              interior detailing services.
+              {service.shortDescription}
             </h3>
             <Card
               title={service.title}

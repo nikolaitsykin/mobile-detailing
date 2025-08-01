@@ -6,7 +6,6 @@ import { servicesLinks, servicesLinksActual } from "../../utils/data";
 import Dropdown from "./Dropdown";
 import SocialButtons from "./SocialButtons";
 import {
-  BOOKING_URL,
   CALL_NUMBER,
   GIFT_CARDS_PATH,
   SERVICES_PATH,
@@ -22,7 +21,7 @@ const Navbar = () => {
   };
 
   const navLinkStyle =
-    "ml-5 md:ml-0 flex px-2 justify-start md:justify-center md:items-start items-center text-white hover:text-gray w-[100%] h-10 md:h-10 md:w-full text-xs md:text-base whitespace-nowrap";
+    "ml-5 md:ml-0 flex px-2 justify-start md:justify-center md:items-start items-center text-white hover:text-gray w-[100%] h-9 md:h-10 md:w-full text-xs md:text-base whitespace-nowrap";
 
   return (
     <nav className="w-full text-white flex justify-between items-start">
@@ -36,9 +35,9 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`top-28 md:top-20  ${
+          className={`top-32 md:top-20  ${
             isMenuOpen ? "absolute" : "hidden"
-          } flex md:flex md:static flex-col md:flex-row w-full items-start pt-0 bg-black md:bg-transparent h-64 md:h-10`}
+          } flex md:flex md:static flex-col md:flex-row w-full items-start pt-0 bg-black md:bg-transparent h-72 md:h-10`}
         >
           <Link to={SERVICES_PATH}>
             <li
@@ -56,24 +55,26 @@ const Navbar = () => {
               />
             </li>
           </Link>
-          {servicesLinks.slice(1).map((link, index) => (
-            <li
-              key={link + index}
-              className="flex jutify-end md:justify-center items-start"
-            >
-              <NavLink
-                onClick={closeMenu}
-                to={`/${servicesLinksActual.slice(1)[index]}`}
-                className={({ isActive }) =>
-                  isActive
-                    ? `text-gray ${navLinkStyle}`
-                    : `text-white ${navLinkStyle}`
-                }
+          <div className="md:flex md:flex-row flex flex-col">
+            {servicesLinks.slice(1).map((link, index) => (
+              <li
+                key={link + index}
+                className="flex jutify-end md:justify-center items-start"
               >
-                {link}
-              </NavLink>
-            </li>
-          ))}
+                <NavLink
+                  onClick={closeMenu}
+                  to={`/${servicesLinksActual.slice(1)[index]}`}
+                  className={({ isActive }) =>
+                    isActive
+                      ? `text-gray ${navLinkStyle}`
+                      : `text-white ${navLinkStyle}`
+                  }
+                >
+                  {link}
+                </NavLink>
+              </li>
+            ))}
+          </div>
           <li
             key={"gift-cards"}
             className={`text-xs md:text-base flex jutify-end md:justify-center items-start`}
@@ -92,7 +93,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full hidden md:flex justify-end items-start h-10 md:h-10 mr-5 md:mr-14">
+      <div className="w-full hidden lg:flex justify-end items-start h-10 md:h-10 mr-5 md:mr-14">
         <SocialButtons />
       </div>
       <div className="flex md:hidden justify-start items-center mr-5 md:mr-14">

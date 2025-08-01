@@ -6,13 +6,14 @@ import {
   MOBILE_EXTERIOR_DETAILING_PATH,
   MOBILE_FULL_DETAILING_PATH,
   MOBILE_INTERIOR_DETAILING_PATH,
-  PAINT_CORRECTION_PATH
+  PAINT_CORRECTION_PATH,
 } from "../../utils/constants";
 import {
-  ceramicCoatingServices, exteriorDetailingServices,
+  ceramicCoatingServices,
+  exteriorDetailingServices,
   fullDetailingServices,
   interiorDetailingServices,
-  paintCorrectionServices
+  paintCorrectionServices,
 } from "../../utils/detailingPackages";
 import DropdownList from "./DropdownList";
 
@@ -38,7 +39,7 @@ const Dropdown = ({ title, closeMenu }) => {
       </button>
       <ul
         className={`${isDropdownOpen ? "block" : "hidden"} 
-            z-10 flex-col absolute bg-black w-38 md:w-48 shadow-lg ml-28 -mt-11 md:-mt-4 md:ml-2 `}
+            z-10 flex-col absolute bg-black w-48 md:w-48 shadow-lg ml-24 -mt-11 md:-mt-4 md:ml-2`}
       >
         <Link to={MOBILE_EXTERIOR_DETAILING_PATH}>
           <DropdownList
@@ -61,20 +62,22 @@ const Dropdown = ({ title, closeMenu }) => {
             closeMenu={closeMenu}
           />
         </Link>
-        <Link to={CERAMIC_COATING_PATH}>
-          <DropdownList
-            options={ceramicCoatingServices}
-            closeDropdown={closeDropdown}
-            closeMenu={closeMenu}
-          />
-        </Link>
-        {/* <Link to={PAINT_CORRECTION_PATH}>
-          <DropdownList
-            options={paintCorrectionServices}
-            closeDropdown={closeDropdown}
-            closeMenu={closeMenu}
-          />
-        </Link> */}
+        <div className="hidden">
+          <Link to={CERAMIC_COATING_PATH}>
+            <DropdownList
+              options={ceramicCoatingServices}
+              closeDropdown={closeDropdown}
+              closeMenu={closeMenu}
+            />
+          </Link>
+          <Link to={PAINT_CORRECTION_PATH}>
+            <DropdownList
+              options={paintCorrectionServices}
+              closeDropdown={closeDropdown}
+              closeMenu={closeMenu}
+            />
+          </Link>
+        </div>
       </ul>
     </div>
   );

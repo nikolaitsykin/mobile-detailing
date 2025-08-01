@@ -1,6 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BookButtons from "./UI/BookButtons";
-import PriceTabs from "./UI/PriceTabs";
+import { carsSizes } from "../utils/detailingPackages";
+import {
+  CERAMIC_COATING_PATH,
+  PAINT_CORRECTION_PATH,
+} from "../utils/constants";
 
 const Card = ({
   type,
@@ -8,11 +13,10 @@ const Card = ({
   title,
   image,
   alt,
+  ceramicAdditionalService,
+  paintCorrectionAdditionalService,
   description,
   services,
-  price,
-  suggestionHeader,
-  suggestion,
   bookingLink,
   singleService,
   exteriorServices,
@@ -27,10 +31,6 @@ const Card = ({
       )}
       <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-start w-full">
         <div>
-          {/* <div className="flex flex-col items-center justify-end">
-            {title && <h3 className=" text-center py-1">{title}</h3>}
-            {type && <h6 className="max-w-xl text-center pb-3">{type}</h6>}
-          </div> */}
           <div
             className={`grid grid-cols-1 ${
               image ? "content-start h-full" : ""
@@ -47,78 +47,153 @@ const Card = ({
           </div>
           {service && (
             <div className="w-full max-w-xl">
-              <PriceTabs service={service} card={true} />
+              <div id="prices" className="py-5">
+                <div className="font-montserrat mb-10 md:mb-0">
+                  <h4 className="mb-1 text-center">Simple Pricing</h4>
+                  <div className="flex justify-between">
+                    <h5 className="px-2 w-4/5 text-start flex items-center bg-black text-white h-12">
+                      Vehicle
+                    </h5>
+                    <h5 className="ml-0.5 px-2 w-1/5 flex justify-center items-center bg-black text-white h-12">
+                      Price
+                    </h5>
+                  </div>
+                  <div className="text-base md:text-lg font-medium">
+                    <div className="flex justify-between">
+                      <span className=" px-2 w-4/5 flex flex-col h-16 justify-center">
+                        <span className="flex justify-start items-center">
+                          {carsSizes[0].title}
+                        </span>
+                        <span className="flex justify-start items-center text-xs md:text-xs font-normal">
+                          {carsSizes[0].description}
+                        </span>
+                      </span>
+                      <span className="ml-1 px-2 w-1/5 text-center flex justify-center items-center">
+                        {service.price[0]}
+                      </span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className=" px-2 w-4/5 flex flex-col h-16 justify-center">
+                        <span className="flex justify-start items-center">
+                          {carsSizes[1].title}
+                        </span>
+                        <span className="flex justify-start items-center text-xs md:text-xs font-normal">
+                          {carsSizes[1].description}
+                        </span>
+                      </span>
+                      <span className="ml-1  px-2 w-1/5 text-center flex justify-center items-center">
+                        {service.price[1]}
+                      </span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className=" px-2 w-4/5 flex flex-col h-16 justify-center">
+                        <span className="flex justify-start items-center">
+                          {carsSizes[2].title}
+                        </span>
+                        <span className="flex justify-start items-center text-xs md:text-xs font-normal">
+                          {carsSizes[2].description}
+                        </span>
+                      </span>
+                      <span className="ml-1  px-2 w-1/5 text-center flex justify-center items-center">
+                        {service.price[2]}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           )}
         </div>
-        <div className="flex flex-col justify-around h-full">
-          {services && (
-            <div className="flex flex-col justify-between w-full max-w-xl h-full ">
-              <ul className="h-full">
-                {services.map((service, index) => (
-                  <li
-                    key={index}
-                    className="text-start text-sm md:text-base list-none p-[2px] whitespace-pre-wrap"
-                  >
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {exteriorServices && (
-            <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
-              <p className="font-semibold">This package includes:</p>
-              <ul className="h-full">
-                {exteriorServices.map((service, index) => (
-                  <li
-                    key={index}
-                    className="text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
-                  >
-                    {"•"} {service.text}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {interiorServices && (
-            <div className="flex flex-col justify-between w-full max-w-xl h-full px-4">
-              {exteriorServices ? (
-                ""
-              ) : (
+        <div className="flex flex-col justify-between h-full">
+          <div>
+            {services && (
+              <div className="flex flex-col justify-between w-full max-w-xl h-full ">
+                <ul className="h-full">
+                  {services.map((service, index) => (
+                    <li
+                      key={index}
+                      className="text-start text-sm md:text-base list-none p-[2px] whitespace-pre-wrap"
+                    >
+                      {service}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {exteriorServices && (
+              <div className="flex flex-col w-full max-w-xl px-4">
                 <p className="font-semibold">This package includes:</p>
-              )}
-              <ul className="h-full">
-                {interiorServices.map((service, index) => (
-                  <li
-                    key={index}
-                    className="text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
-                  >
-                    {"•"} {service.text}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {price && (
-            <div className="flex justify-center items-end w-full">
-              <h4 className="p-5"> ${price}</h4>
-            </div>
-          )}
-          {suggestion && (
+                <ul className="">
+                  {exteriorServices.map((service, index) => (
+                    <li
+                      key={index}
+                      className="ml-5 list-disc text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
+                    >
+                      {service.text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {paintCorrectionAdditionalService && (
+              <div className="flex flex-col w-full px-4">
+                <ul className="">
+                  {paintCorrectionAdditionalService.map((item, index) => (
+                    <Link to={CERAMIC_COATING_PATH}>
+                      <li
+                        key={index}
+                        className="ml-5 list-disc text-start text-sm md:text-base p-[2px] whitespace-pre-wrap text-blue underline font-semibold"
+                      >
+                        {item.text}
+                      </li>
+                    </Link>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {ceramicAdditionalService && (
+              <div className="flex flex-col w-full max-w-xl px-4">
+                <ul className="">
+                  {ceramicAdditionalService.map((item, index) => (
+                    <Link to={PAINT_CORRECTION_PATH}>
+                      <li
+                        key={index}
+                        className="ml-5 list-disc text-start text-sm md:text-base p-[2px] whitespace-pre-wrap text-blue underline font-semibold"
+                      >
+                        {item.text}
+                      </li>
+                    </Link>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {interiorServices && (
+              <div className="flex flex-col w-full max-w-xl h-full px-4">
+                {exteriorServices ? (
+                  ""
+                ) : (
+                  <p className="font-semibold">This package includes:</p>
+                )}
+                <ul className="h-full">
+                  {interiorServices.map((service, index) => (
+                    <li
+                      key={index}
+                      className="list-disc ml-5 text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
+                    >
+                      {service.text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4">
-              <h6 className="text-start italic pb-2"> {suggestionHeader}</h6>
-              <span>{suggestion} </span>
-            </div>
-          )}
-          {singleService && (
-            <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4">
-              {service.type !== "Ceramic Coating"
+              {service.type !== "Ceramic Coating" &&
+              service.type !== "Paint Correction"
                 ? "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include pet hair/sand, staining, excessive messes, etc."
                 : "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include excessive bug, tar, tree sap etc."}
             </div>
-          )}
+          </div>
+
           <div className="mb-3">
             <BookButtons color={"secondary"} bookingLink={bookingLink} />
           </div>

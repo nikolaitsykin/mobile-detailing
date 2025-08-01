@@ -10,7 +10,7 @@ const DropdownList = ({ options, closeMenu, closeDropdown }) => {
       onMouseLeave={() => setIsOptionsOpen(false)}
       id="interiorServices"
       key={"interiorServices"}
-      className=" float-none px-2 text-left flex items-center hover:bg-dark-gray"
+      className="float-none px-2 text-left flex items-center hover:bg-dark-gray"
     >
       <div className="float-start md:float-left overflow-hidden ">
         <button

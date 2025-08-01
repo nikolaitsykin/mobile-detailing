@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex justify-between items-center w-full">
           <Topbar />
         </div>
-        <div className="flex items-center w-full">
+        <div className="flex items-center w-full h-12">
           <Navbar />
         </div>
       </div>

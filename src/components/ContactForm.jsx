@@ -16,10 +16,10 @@ const ContactForm = () => {
     location.pathname === "/contact" ? (
       "Tell Us About"
     ) : (
-      <h2>
+      <h3>
         Not Sure What You Need?
         <br /> Talk to a Specialist!
-      </h2>
+      </h3>
     );
   const headingClass =
     location.pathname === "/contact" ? "text-start" : "text-center";
@@ -32,7 +32,6 @@ const ContactForm = () => {
     "This Week",
     "Next Week",
     "This Month",
-    "Next Month",
   ];
 
   const [values, setValues] = useState({

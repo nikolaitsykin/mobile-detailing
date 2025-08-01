@@ -28,8 +28,9 @@ const CeramicCoating = () => {
       </div>
       <div className="w-full object-cover h-[450px] md:h-[600px] top-10 flex justify-center items-center absolute  ">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
-          <h1 className="md:w-1/2 whitespace-pre-line uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Professional Ceramic Coating in {city}
+          <h1 className=" whitespace-pre-line uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Professional Ceramic
+            <br /> Coating in {city}
           </h1>
           <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Ceramic Coating offers unmatched durability, resisting swirls,
@@ -55,7 +56,7 @@ const CeramicCoating = () => {
               ></iframe>
             </div>
             <div className="md:w-1/2 flex flex-col justify-center">
-              <p className="text-sm lg:text-base md:pl-5 mt-4 md:mt-0">
+              <p className="text-sm lg:text-base md:pr-5 mt-4 md:mt-0">
                 Ceramic Coating is a solid protective layer that prevents your
                 vehicle from swirls and minor scratches in {city}'s weather, not
                 to mention its extreme heat resistance properties. Think of
@@ -158,7 +159,7 @@ const CeramicCoating = () => {
             <Link
               to={PAINT_CORRECTION_PATH}
               target={"_blank"}
-              className="font-bold text-blue"
+              className="font-bold text-blue underline underline-offset-2"
             >
               Paint Correction
             </Link>{" "}
@@ -219,6 +220,7 @@ const CeramicCoating = () => {
                 bookingLink={service.bookingLink}
                 suggestionHeader={service.suggestionHeader}
                 suggestion={service.suggestion}
+                ceramicAdditionalService={service.additional}
               />
             </div>
           ))}

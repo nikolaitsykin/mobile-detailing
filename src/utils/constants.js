@@ -59,12 +59,18 @@ export const EXPRESS_FULL_DETAILING_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/6DDBV3HEKXOERXKKJVL47NLY";
 export const ULTIMATE_FULL_DETAILING_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/6QQIRLPLFXKWKX7NWHFARYFI";
-export const CERAMIC_COATING_BOOKING_PATH =
+export const THREE_YEARS_CERAMIC_COATING_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/QDUQOND743CV22TO3AQCDTAV";
-export const ONE_STEP_CERAMIC_COATING_BOOKING_PATH =
+export const SIX_YEARS_CERAMIC_COATING_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/U3C7IRETJOMWQHQMCSOIP4WG";
-export const TWO_STEP_CERAMIC_COATING_BOOKING_PATH =
+export const TEN_YEARS_CERAMIC_COATING_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/2Q3QVR2EGZG7GG3DQCEOB57T";
+export const PAINT_ENHANCEMENT_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/ZLDSIH5UWEKBNRVLTDGHEJXE";
+export const ONE_STEP_PAINT_CORRECTION_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/HOZJOGKJFFB67XDMH4LI2JQH";
+export const TWO_STEP_PAINT_CORRECTION_BOOKING_PATH =
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/UKIM6WXP344FFBLPE2LP5LE2";
 
 export const EXPRESS_EXTERIOR_PATH = "/express-exterior-detailing";
 export const ULTIMATE_EXTERIOR_PATH = "/ultimate-exterior-detailing";

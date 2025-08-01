@@ -53,11 +53,11 @@ export const footerLinks = [
   "PPF",
 ];
 
-export const servicesLinks = ["Services", "Booking", "Faq", "About"];
-export const servicesLinksActual = ["services", "booking", "faq", "about"];
+export const servicesLinks = ["Services", "Ceramic Coating", "Paint Correction", "Booking", "Faq", "About"];
+export const servicesLinksActual = ["services", "ceramic-coating", "paint-correction", "booking", "faq", "about"];
 
 export const businessAddress = "Apex, NC 27502";
-export const businessHours = ["MON-SUN 9AM-8PM"];
+export const businessHours = ["MON-SUN 8AM-8PM"];
 
 export const businessName = "Spotless";
 export const fullBusinessName = "Spotless Auto Detailing";

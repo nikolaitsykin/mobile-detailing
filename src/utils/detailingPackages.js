@@ -1,5 +1,4 @@
 import {
-  CERAMIC_COATING_BOOKING_PATH,
   CERAMIC_COATING_PATH,
   EXPRESS_EXTERIOR_BOOKING_PATH,
   EXPRESS_EXTERIOR_PATH,
@@ -14,11 +13,15 @@ import {
   MOBILE_INTERIOR_DETAILING_PATH,
   ODOR_REMOVAL_BOOKING_PATH,
   ODOR_REMOVAL_PATH,
-  ONE_STEP_CERAMIC_COATING_BOOKING_PATH,
+  ONE_STEP_PAINT_CORRECTION_BOOKING_PATH,
+  PAINT_ENHANCEMENT_BOOKING_PATH,
   SEATS_SHAMPOO_BOOKING_PATH,
   SHAMPOO_PATH,
+  SIX_YEARS_CERAMIC_COATING_BOOKING_PATH,
+  TEN_YEARS_CERAMIC_COATING_BOOKING_PATH,
+  THREE_YEARS_CERAMIC_COATING_BOOKING_PATH,
   THREE_YEARS_CERAMIC_PATH,
-  TWO_STEP_CERAMIC_COATING_BOOKING_PATH,
+  TWO_STEP_PAINT_CORRECTION_BOOKING_PATH,
   ULTIMATE_EXTERIOR_BOOKING_PATH,
   ULTIMATE_EXTERIOR_PATH,
   ULTIMATE_FULL_DETAILING_BOOKING_PATH,
@@ -29,19 +32,19 @@ import {
 
 export const carsSizes = [
   {
-    title: "Standard",
+    title: "Standard ",
     description:
-      "Sedans, compact cars, and coupes (e.g., Subaru Impreza, Kia Soul, Ford Mustang)",
+      "Sedans, and coupes (e.g., Subaru Impreza, Ford Mustang)",
   },
   {
     title: "Mid-Size",
     description:
-      "SUVs, crossovers, and small trucks (e.g., Jeep Grand Cherokee, Hyundai Tucson, Toyota Tacoma)",
+      "SUVs, and small trucks (e.g., Hyundai Tucson, Toyota Tacoma)",
   },
   {
-    title: "Large/XL",
+    title: "Large/XL ",
     description:
-      "Third-row SUVs, large trucks, and vans (e.g., Chevy Suburban, Ford F-150, Honda Odyssey)",
+      "Third-row SUVs and vans (e.g., Chevy Suburban, Honda Odyssey)",
   },
 ];
 
@@ -54,14 +57,15 @@ const carTypes = [
 const expressExteriorPrices = ["$125", "$145", "$165"];
 const expressInteriorPrices = ["$165", "$185", "$205"];
 const expressFullDetailPrices = ["$225", "$260", "$295"];
+const maintenanceFullDetailPrices = ["$140", "$150", "$160"];
 const ultimateExteriorPrices = ["$175", "$195", "$215"];
 const ultimateInteriorPrices = ["$235", "$255", "$275"];
 const odorRemovalPrices = ["$205", "225", "$245"];
 const shampooPrices = ["$150", "$175", "$200"];
 const ultimateFullDetailPrices = ["$395", "$430", "$465"];
-const threeYearsCeramicCoatingPrices = ["$595", "$695", "$795"];
-const oneStepCeramicCoatingPrices = ["$995", "$1095", "$1195"];
-const twoStepCeramicCoatingPrices = ["$1195", "$1295", "$1395"];
+const threeYearsCeramicCoatingPrices = ["$645", "$745", "$845"];
+const sixYearsCeramicCoatingPrices = ["$945", "$1045", "$1145"];
+const tenYearsCeramicCoatingPrices = ["$1295", "$1395", "$1495"];
 const oneStepPaintCorrectionPrices = ["$495", "$595", "$695"];
 const twoStepPaintCorrectionPrices = ["$695", "$795", "$895"];
 const paintEnchancementPrices = ["$345", "$445", "$545"];
@@ -126,7 +130,7 @@ export const ultimateExterior = {
 };
 
 export const threeYearsceramicCoating = {
-  title: "3 year Ceramic Coating",
+  title: "3 years Ceramic Coating",
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
@@ -141,18 +145,21 @@ export const threeYearsceramicCoating = {
     { text: "Exterior vinyl and plastics coated" },
     { text: "Headlights and taillights coated" },
   ],
+  additional: [
+    { text: "For a best results add Paint Correction with $150 off" },
+  ],
   price: threeYearsCeramicCoatingPrices,
   carsSize: carTypes,
   link: THREE_YEARS_CERAMIC_PATH,
-  bookingLink: CERAMIC_COATING_BOOKING_PATH,
+  bookingLink: THREE_YEARS_CERAMIC_COATING_BOOKING_PATH,
   shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Ultimate Exterior service, and 3 years ceramic coating application for long-lasting protection.`,
   description:
     "To prepare for a ceramic coating we begin with a full hand wash and dry, followed by tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to 3 years, ensuring long-lasting defense against various contaminants.",
   duration: ["5 hours", "5 hours 30 mins", "6 hours"],
 };
 
-export const oneStepCeramicCoating = {
-  title: "One Step Ceramic Coating",
+export const sixYearsCeramicCoating = {
+  title: "6 Years Ceramic Coating",
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/1398-hero-what-is-ceramic-coating.avif",
@@ -163,22 +170,24 @@ export const oneStepCeramicCoating = {
     { text: "Clay bar paint decontamination " },
     { text: "Iron decontamination" },
     { text: "Paint preparation " },
-    { text: "One-step Polishing to a high-gloss finish" },
     { text: "Application of ceramic to paint and body work" },
     { text: "Exterior vinyl and plastics coated" },
     { text: "Headlights and taillights coated" },
   ],
-  price: oneStepCeramicCoatingPrices,
+  additional: [
+    { text: "For a best results add Paint Correction with $150 off" },
+  ],
+  price: sixYearsCeramicCoatingPrices,
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
-  bookingLink: ONE_STEP_CERAMIC_COATING_BOOKING_PATH,
+  bookingLink: SIX_YEARS_CERAMIC_COATING_BOOKING_PATH,
   shortDescription: `Get the ultimate protection for your car with Step 1 Polishing followed by 3 years Ceramic Coating.`,
   description:
     "Get long-lasting protection and a stunning finish with our 1-Step Paint Correction plus 3-Year Ceramic Coating. We polish the paint to remove light defects and restore depth and gloss. Then, we lock in that finish with a professional-grade ceramic coating that shields your vehicle from UV rays, water spots, dirt, and daily wear. It enhances shine, repels grime, and makes maintenance effortless.This is the perfect package to revive and protect your car’s appearance for years to come.  ",
   duration: ["6 hours", "6 hours 30 mins", "7 hours"],
 };
-export const twoStepCeramicCoating = {
-  title: "Two Step Ceramic Coating",
+export const tenYearsCeramicCoating = {
+  title: "Ten Years Ceramic Coating",
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/What-If-It-Rains-After-Getting-A-Ceramic-Coating-Applied-Daylans-Mobile-Detailing-Sea-Girt-NJ-1.jpg.webp",
@@ -189,15 +198,17 @@ export const twoStepCeramicCoating = {
     { text: "Clay bar paint decontamination " },
     { text: "Iron decontamination" },
     { text: "Paint preparation " },
-    { text: "One-step Polishing to a high-gloss finish" },
     { text: "Application of ceramic to paint and body work" },
     { text: "Exterior vinyl and plastics coated" },
     { text: "Headlights and taillights coated" },
   ],
-  price: twoStepCeramicCoatingPrices,
+  additional: [
+    { text: "For a best results add Paint Correction with $150 off" },
+  ],
+  price: tenYearsCeramicCoatingPrices,
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
-  bookingLink: TWO_STEP_CERAMIC_COATING_BOOKING_PATH,
+  bookingLink: TEN_YEARS_CERAMIC_COATING_BOOKING_PATH,
   shortDescription: `Take your car's protection to the next level with Step 2 Polishing followed by Ceramic Coating from Spotless Auto Detailing.`,
   description:
     "Take your car's protection to the next level with Step 2 Ceramic Coating from Spotless Auto Detailing. Our ceramic coating is a long-term nano-ceramic coating that provides a strong layer of protection for your car's paint. This coating will create a durable, hydrophobic layer that resists contamination, scratches, and fading, keeping your car looking its best.",
@@ -207,52 +218,7 @@ export const oneStepPaintCorrection = {
   title: "One Step Paint Correction",
   type: "Paint Correction",
   image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
-  alt: "Paint Correction Services in Raleigh | Spotless Auto Detailing.",
-  exteriorServices: [
-    { text: "Exterior detailing" },
-    { text: "Paint preparation" },
-    { text: "Polishing to a high-gloss finish" },
-    { text: "3 years Ceramic Coating Applied" },
-  ],
-  price: oneStepPaintCorrectionPrices,
-  carsSize: carTypes,
-  link: CERAMIC_COATING_PATH,
-  bookingLink: TWO_STEP_CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Polish and restore paintwork with Spotless Auto Detailing's Step 1 Paint Correction.`,
-  description:
-    "Step up your car's shine with Spotless Auto Detailing's Step 1 Paint Correction service. This service includes a detailed clay bar, iron remover to remove surface contaminants, and polishing to remove scratches and minor defects from your car's paint. Afterwards, your car will look better than ever with a deep, glossy shine. Get the best finish for your car with Spotless Auto Detailing.",
-  duration: ["8 hours", "8 hours 30 mins", "9 hours"],
-};
-
-export const twoStepPaintCorrection = {
-  title: "Two Step Paint Correction",
-  type: "Paint Correction",
-  image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
-  alt: "Paint Correction Services in Raleigh | Spotless Auto Detailing.",
-  exteriorServices: [
-    { text: "Exterior detailing" },
-    { text: "Paint preparation" },
-    { text: "Cutting compound to remove any scratches and swirls" },
-    { text: "Polishing to a high-gloss finish" },
-    { text: "3 years Ceramic Coating Applied" },
-  ],
-  price: twoStepPaintCorrectionPrices,
-  carsSize: carTypes,
-  link: CERAMIC_COATING_PATH,
-  bookingLink: CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Polish and refine your car’s paint with Spotless Auto Detailing’s Step 2 Paint Correction.`,
-  description:
-    "Not all paint imperfections can be solved with just polishing. Our 2-Step Paint Correction at Spotless Auto Detailing is designed for vehicles that need more than a quick touch-up. This advanced process removes deeper defects, revives faded paint, and restores the rich, vibrant color your car once had. It’s the difference between “clean” and jaw-dropping shine. Ready to bring your paint back to life? Book your appointment today and turn heads wherever you go.",
-  duration: ["7 hours", "7 hours 30 mins", "8 hours"],
-};
-
-export const paintEnchancement = {
-  title: "Paint Enchancement",
-  type: "Paint Correction",
-  image:
-    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Paint-Buffer-768x512.avif",
   alt: "Paint Correction Services in Raleigh | Spotless Auto Detailing.",
   exteriorServices: [
     { text: "Thorough exterior detailing" },
@@ -260,13 +226,73 @@ export const paintEnchancement = {
     { text: "Clay bar paint decontamination " },
     { text: "Iron decontamination" },
     { text: "Paint preparation " },
-    { text: "Machine polishing" },
-    { text: "6 months Ceramic Sealant" },
+    { text: "One-step paint correction for high-gloss finish" },
+    { text: "6 months Ceramic Sealant Protection" },
+  ],
+  additional: [
+    { text: "For a best results add Ceramic Coating with $150 off" },
+  ],
+  price: oneStepPaintCorrectionPrices,
+  carsSize: carTypes,
+  link: CERAMIC_COATING_PATH,
+  bookingLink: ONE_STEP_PAINT_CORRECTION_BOOKING_PATH,
+  shortDescription: `Polish and restore paintwork with Spotless Auto Detailing's Step 1 Paint Correction.`,
+  description:
+    "Step up your car's shine with Spotless Auto Detailing's Step 1 Paint Correction service. This service includes a detailed clay bar, iron remover to remove surface contaminants, and polishing to remove scratches and minor defects from your car's paint. Afterwards, your car will look better than ever with a deep, glossy shine. Removes 50-70% of imperfections. Get the best finish for your car with Spotless Auto Detailing.",
+  duration: ["5 hours", "5 hours 30 mins", "6 hours"],
+};
+
+export const twoStepPaintCorrection = {
+  title: "Two Step Paint Correction",
+  type: "Paint Correction",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Men-doing-paint-correction-with-polisher-Budget-Auto-Detailing-Burlington-ON-1-1.avif",
+  alt: "Paint Correction Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: [
+    { text: "Thorough exterior detailing" },
+    { text: "Bug and tar removal (if applicable)" },
+    { text: "Clay bar paint decontamination " },
+    { text: "Iron decontamination" },
+    { text: "Paint preparation " },
+    { text: "Cutting compound to remove any scratches and swirls" },
+    { text: "Two-step polishing to a perfect high-gloss finish" },
+    { text: "6 months Ceramic Sealant Protection" },
+  ],
+  additional: [
+    { text: "For a best results add Ceramic Coating with $150 off" },
+  ],
+  price: twoStepPaintCorrectionPrices,
+  carsSize: carTypes,
+  link: CERAMIC_COATING_PATH,
+  bookingLink: TWO_STEP_PAINT_CORRECTION_BOOKING_PATH,
+  shortDescription: `Polish and refine your car’s paint with Spotless Auto Detailing’s Step 2 Paint Correction.`,
+  description:
+    "Not all paint imperfections can be solved with just polishing. Our 2-Step Paint Correction at Spotless Auto Detailing is designed for vehicles that need more than a quick touch-up. This advanced process removes deeper defects, revives faded paint, and restores the rich, vibrant color your car once had. It’s the difference between “clean” and jaw-dropping shine. Removes up to 90% of imperfections. Ready to bring your paint back to life? Book your appointment today and turn heads wherever you go.",
+  duration: ["7 hours", "7 hours 30 mins", "8 hours"],
+};
+
+export const paintEnchancement = {
+  title: "Paint Enchancement",
+  type: "Paint Correction",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/process-polishing-white-car-hood-600nw-2459901539.webp",
+  alt: "Paint Correction Services in Raleigh | Spotless Auto Detailing.",
+  exteriorServices: [
+    { text: "Thorough exterior detailing" },
+    { text: "Bug and tar removal (if applicable)" },
+    { text: "Clay bar paint decontamination " },
+    { text: "Iron decontamination" },
+    { text: "Paint preparation " },
+    { text: "Machine polishing for a gloss finish" },
+    { text: "6 months Ceramic sealant protection" },
+  ],
+  additional: [
+    { text: "For a best results add Ceramic Coating with $150 off" },
   ],
   price: paintEnchancementPrices,
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
-  bookingLink: CERAMIC_COATING_BOOKING_PATH,
+  bookingLink: PAINT_ENHANCEMENT_BOOKING_PATH,
   shortDescription: `Boost your car's shine with Spotless Auto Detailing's Paint Enchancement.`,
   description:
     "If your car’s paint looks dull or tired but doesn’t need full correction, a Paint Enhancement is the perfect in-between. This service uses a single-stage polishing process to boost gloss, deepen color, and reduce light swirls—giving your vehicle a noticeably cleaner, richer finish without the time or cost of multi-step correction. It’s ideal before a coating or just to refresh the look.",
@@ -291,7 +317,7 @@ export const expressInterior = {
   ],
   link: EXPRESS_INTERIOR_PATH,
   bookingLink: EXPRESS_INTERIOR_BOOKING_PATH,
-  shortDescription: `Get your vehicle interior looking refreshed and shiny with Spotless Detailing’s Express Interior service.\n\nFrom ${expressInteriorPrices[0]}. Up to 2.5 hours.`,
+  shortDescription: `Get your vehicle interior looking refreshed and shiny with Spotless Detailing’s Express Interior service.\n\nFrom ${expressInteriorPrices[0]}. Up to 1.5 hours.`,
   description:
     "Give your car's interior a quick refresh with Spotless Detailing's Express Interior. This is meant to get your car in its best condition in an instant and involves a full vacuum of all the interior surfaces, thorough wipe-down of all plastics, leather, and vinyl, and window wash. Give your car a like-new look in an instant with this express service.\n\n",
   price: expressInteriorPrices,
@@ -299,7 +325,7 @@ export const expressInterior = {
   duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
   suggestionHeader: "Great for light interior cleanup and tidy-up.",
   suggestion:
-    "Il if the inside of your car just needs some care — vacuuming, wiping down surfaces, and removing dust from the interior.",
+    "If the inside of your car just needs some care — vacuuming, wiping down surfaces, and removing dust from the interior.",
 };
 
 export const ultimateInterior = {
@@ -322,7 +348,7 @@ export const ultimateInterior = {
   ],
   link: ULTIMATE_INTERIOR_PATH,
   bookingLink: ULTIMATE_INTERIOR_BOOKING_PATH,
-  shortDescription: `Experience the luxury of Spotless Detailing's Ultimate Interior service.`,
+  shortDescription: `Experience the luxury of Spotless Detailing's Ultimate Interior service.\n\nFrom ${ultimateInteriorPrices[0]}. Up to 2.5 hours.`,
   description:
     "Give your car the care it deserves with our Ultimate Interior Detailing. We use high-quality tools and materials to clean deep into every corner of your vehicle and help protect it from daily wear. Our detailers are well-trained and have years of hands-on experience making cars look and feel like new. Schedule your appointment today and see how great your car can feel inside.",
   price: ultimateInteriorPrices,
@@ -403,14 +429,14 @@ export const maintenanceFullDetail = {
     { text: "Cup Holders Cleaned" },
     { text: "Glasses & Mirrors Cleaned" },
   ],
-  price: ["$165", "$180", "$195"],
+  price: maintenanceFullDetailPrices,
   carsSize: carTypes,
   link: MAINTENANCE_FULL_DETAILING_PATH,
   shortDescription:
-    "This service designed as maintenance detailing for cars which was detailed not more that 4 weeks ago. Includes: Hand wash and dry of body and wheels, tire shine, interior vacuum, cleaned mats, doors and jambs wiping, seats, interior surfaces and plastics wiping, and spotless glass and mirrors. \nFrom $155. Up to 2.5 hours.",
+    `"This service designed as maintenance detailing for cars which was detailed not more that 4 weeks ago. \nFrom ${maintenanceFullDetailPrices[0]}. Up to 2 hours."`,
   description:
     "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.",
-  duration: ["2 hours", "2 hours 15 mins", "2 hours 30 mins"],
+  duration: ["1 hour 30 mins", "1 hour 45 min", "2 hours"],
   suggestionHeader: "Best for a keeping your car looking its best.",
   suggestion:
     "A full vehicle clean, inside and out. Available for cars which were detailed not more than 4 weeks ago by Spotless Detailing.",
@@ -428,7 +454,7 @@ export const expressFullDetail = {
   carsSize: carTypes,
   link: EXPRESS_FULL_DETAILING_PATH,
   bookingLink: EXPRESS_FULL_DETAILING_BOOKING_PATH,
-  shortDescription: `Professional-grade detailing without the wait with Spotless Detailing’s Express Full Detail Package. \n\nFrom ${expressFullDetailPrices[0]}. Up to 4.5 hours.`,
+  shortDescription: `Professional-grade detailing without the wait with Spotless Detailing’s Express Full Detail Package. \n\nFrom ${expressFullDetailPrices[0]}. Up to 3 hours.`,
   description:
     "Experience the Ultimate Car Care with Spotless Detailing’s Express Full Detail! This luxurious service includes a complete interior and exterior cleaning, deep vacuum, hand wax, and more—all done in just 3-4 hours! Get your car looking its absolute best with our professional team giving it the attention it truly deserves.",
   duration: ["4 hours", "4 hours 15 mins", "4 hours 30 mins"],
@@ -449,7 +475,7 @@ export const ultimateFullDetail = {
   carsSize: carTypes,
   link: ULTIMATE_FULL_DETAILING_PATH,
   bookingLink: ULTIMATE_FULL_DETAILING_BOOKING_PATH,
-  shortDescription: `Complete car rejuvenation, exterior and interior detailing, top-of-the-line products. \n\nFrom ${ultimateFullDetailPrices[0]}. Up to 7 hours.`,
+  shortDescription: `Complete car rejuvenation, exterior and interior detailing, top-of-the-line products. \n\nFrom ${ultimateFullDetailPrices[0]}. Up to 5 hours.`,
   description:
     "Complete car rejuvenation, exterior and interior detailing, top-of-the-line products. Experience the executive car rejuvenation with Spotless Detailing's Ultimate Full Detail. This top-of-the-line service includes exterior and interior detailing to bring your car back to showroom-quality shine. Our technicians use only the best products and ensure every square inch of your car is looking its best.",
   duration: ["6 hours", "6 hours 30 mins", "7 hours"],
@@ -474,8 +500,8 @@ export const fullDetailingServices = [
 
 export const ceramicCoatingServices = [
   threeYearsceramicCoating,
-  oneStepCeramicCoating,
-  twoStepCeramicCoating,
+  sixYearsCeramicCoating,
+  tenYearsCeramicCoating,
 ];
 
 export const paintCorrectionServices = [
