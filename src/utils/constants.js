@@ -62,9 +62,9 @@ export const ULTIMATE_FULL_DETAILING_BOOKING_PATH =
 export const THREE_YEARS_CERAMIC_COATING_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/QDUQOND743CV22TO3AQCDTAV";
 export const SIX_YEARS_CERAMIC_COATING_BOOKING_PATH =
-  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/U3C7IRETJOMWQHQMCSOIP4WG";
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/NWYSZF5Y3NOHRGMMUSWD2RWM";
 export const TEN_YEARS_CERAMIC_COATING_BOOKING_PATH =
-  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/2Q3QVR2EGZG7GG3DQCEOB57T";
+  "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/YJVBIY7C6XTFOFQAB6K2D35D";
 export const PAINT_ENHANCEMENT_BOOKING_PATH =
   "https://book.squareup.com/appointments/t25pubegvfjcw1/location/LDK47FK18Z9GH/services/ZLDSIH5UWEKBNRVLTDGHEJXE";
 export const ONE_STEP_PAINT_CORRECTION_BOOKING_PATH =
