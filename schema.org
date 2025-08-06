@@ -6,7 +6,7 @@
   "image": "https://getspotlessnc.com/spotless_logo.png",
   "@id": "",
   "url": "https://getspotlessnc.com/",
-  "telephone": "9199060099",
+  "telephone": "9199299996",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "1156 Bungalow Park Drive",

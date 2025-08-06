@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import {
   CALL_NUMBER,
   FAQS_PATH,
+  NEW_PHONE_NUMBER,
   SERVICES_PATH,
   THANK_YOU_PATH,
 } from "../../utils/constants";
@@ -59,7 +60,7 @@ const ThankYouPage = () => {
               to={CALL_NUMBER}
               className="text-blue underline font-semibold"
             >
-              (919) 906-0099.
+              {NEW_PHONE_NUMBER}
             </Link>
           </p>
         </section>

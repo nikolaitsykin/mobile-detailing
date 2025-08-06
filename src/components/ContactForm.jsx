@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { addons } from "../utils/addons";
-import { THANK_YOU_PATH } from "../utils/constants";
+import { NEW_PHONE_NUMBER, THANK_YOU_PATH } from "../utils/constants";
 import { mobileDetailingServices } from "../utils/detailingPackages";
 import Button from "./UI/Button";
 import InputField from "./UI/InputField";
@@ -174,7 +174,7 @@ const ContactForm = () => {
               label="Phone Number"
               name="mobile"
               type="tel"
-              placeholder="(919) 906-0099"
+              placeholder={NEW_PHONE_NUMBER}
               required={true}
             />
             <SelectField

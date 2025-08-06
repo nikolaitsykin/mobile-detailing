@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CALL_NUMBER, SERVICES_PATH } from "../utils/constants";
+import { CALL_NUMBER, NEW_PHONE_NUMBER, SERVICES_PATH } from "../utils/constants";
 import { fullBusinessName } from "../utils/data";
 import { whatToExpect } from "../utils/sustainability";
 import BookButtons from "./UI/BookButtons";
@@ -41,7 +41,7 @@ const Booking = () => {
             or contact us by clicking the "Request a Quote" button or give us a
             call at{" "}
             <Link to={CALL_NUMBER} className="font-semibold text-blue">
-              (919)&nbsp;906&#8209;0099
+              {NEW_PHONE_NUMBER}
             </Link>
             . Be sure to include your address when scheduling!
           </li>

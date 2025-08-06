@@ -97,5 +97,8 @@ export const KNIGHTDALE_PATH = "/knightdale";
 export const GARNER_PATH = "/garner";
 export const FUQUAY_VARINA_PATH = "/fuquay-varina";
 
-export const CALL_NUMBER = "tel:9199060099";
-export const TEXT_NUMBER = "sms:9199060099";
+export const CALL_NUMBER = "tel:+19196299996";
+export const TEXT_NUMBER = "sms:+19196299996";
+
+export const OLD_PHONE_NUMBER = "(919) 906-0099";
+export const NEW_PHONE_NUMBER = "(919) 629-9996";
