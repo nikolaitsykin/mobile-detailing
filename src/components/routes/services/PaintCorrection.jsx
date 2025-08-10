@@ -46,7 +46,7 @@ const PaintCorrection = () => {
           <div className="flex flex-col md:flex-row-reverse items-start">
             <div className="aspect-w-4 aspect-h-3 w-full h-80 md:w-1/2 max-w-2xl mx-auto">
               <iframe
-                src="https://youtu.be/4y62tg1qmHs?rel=0"
+                src="https://www.youtube.com/embed/4y62tg1qmHs?rel=0"
                 title="YouTube video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -142,7 +142,10 @@ const PaintCorrection = () => {
             locks it in for years. Skipping either step means you're leaving
             results—and longevity—on the table.{" "}
           </p>
-          <div id="preparation" className="flex flex-col-reverse md:flex-row-reverse gap-2">
+          <div
+            id="preparation"
+            className="flex flex-col-reverse md:flex-row-reverse gap-2"
+          >
             <span className="flex items-center md:w-1/2">
               <img
                 className="w-full object-cover max-h-80 md:pr-5"
