@@ -23,7 +23,7 @@ const CeramicCoating = () => {
         <img
           src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/ceramic_coating_collection.webp"
           alt="Car ceramic coating in Raleigh | Spotless Auto Detailing."
-          className="w-full object-[25%_75%] object-cover h-[450px] md:h-[600px] mx-auto opacity-80"
+          className="w-full md:object-[25%_75%] object-cover h-[450px] md:h-[600px] mx-auto opacity-80"
         />
       </div>
       <div className="w-full object-cover h-[450px] md:h-[600px] top-10 flex justify-center items-center absolute  ">
