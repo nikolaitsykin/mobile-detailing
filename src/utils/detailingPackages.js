@@ -14,6 +14,7 @@ import {
   ODOR_REMOVAL_BOOKING_PATH,
   ODOR_REMOVAL_PATH,
   ONE_STEP_PAINT_CORRECTION_BOOKING_PATH,
+  PAINT_CORRECTION_PATH,
   PAINT_ENHANCEMENT_BOOKING_PATH,
   SEATS_SHAMPOO_BOOKING_PATH,
   SHAMPOO_PATH,
@@ -541,6 +542,16 @@ export const ceramicCoatingService = {
   options: ceramicCoatingServices,
 };
 
+export const paintCorrectionService = {
+  title: "Paint Correction",
+  shortDescription:
+    "Paint correction is a professional process that removes surface imperfections like swirl marks, light scratches, oxidation, and dullness from your vehicle’s clear coat. Performed by skilled detailers, paint correction restores depth, clarity, and a mirror-like gloss to your car’s finish, making it look better than new while preparing it for lasting protection.",
+  image:
+    "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/shutterstock_1073921648_1200x.avif",
+  link: PAINT_CORRECTION_PATH,
+  options: paintCorrectionServices,
+};
+
 export const exteriorDetailingService = {
   title: "Exterior Detailing",
   description:
@@ -576,6 +587,7 @@ export const detailingServices = [
   // fullDetailingService,
   mobileDetailingService,
   ceramicCoatingService,
+  paintCorrectionService,
 ];
 
 export const detailingPackages = [
