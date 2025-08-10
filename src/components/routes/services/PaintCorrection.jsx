@@ -44,13 +44,15 @@ const PaintCorrection = () => {
             What’s A Paint Correction?
           </h2>
           <div className="flex flex-col md:flex-row-reverse items-start">
-            <span className="flex items-center">
-              <img
-                className="w-full object-cover max-h-80 md:pr-5"
-                src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/shutterstock_1073921648_1200x.avif"
-                alt=""
-              />
-            </span>
+            <div className="aspect-w-4 aspect-h-3 w-full h-80 md:w-1/2 max-w-2xl mx-auto">
+              <iframe
+                src="https://youtu.be/4y62tg1qmHs?rel=0"
+                title="YouTube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
             <div className="md:w-1/2 flex flex-col justify-center">
               <p className="text-sm lg:text-base md:pl-5 mt-4 md:mt-0">
                 Paint Correction is the process of removing swirls, oxidation,
