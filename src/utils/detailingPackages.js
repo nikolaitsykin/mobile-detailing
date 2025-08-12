@@ -520,6 +520,12 @@ export const mobileDetailingServices = [
   ultimateInterior,
   steamAndShampoo,
   odorRemoval,
+  threeYearsceramicCoating,
+  sixYearsCeramicCoating,
+  tenYearsCeramicCoating,
+  paintEnchancement,
+  oneStepPaintCorrection,
+  twoStepPaintCorrection
 ];
 
 export const mobileDetailingService = {

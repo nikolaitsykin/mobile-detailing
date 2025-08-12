@@ -2,12 +2,10 @@ import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { addons } from "../utils/addons";
-import { NEW_PHONE_NUMBER, THANK_YOU_PATH } from "../utils/constants";
+import { OLD_PHONE_NUMBER, THANK_YOU_PATH } from "../utils/constants";
 import { mobileDetailingServices } from "../utils/detailingPackages";
 import Button from "./UI/Button";
 import InputField from "./UI/InputField";
-import SelectField from "./UI/SelectField";
-import TextareaField from "./UI/TextareaField";
 
 const ContactForm = () => {
   const navigate = useNavigate();
@@ -173,7 +171,7 @@ const ContactForm = () => {
               label="Phone Number"
               name="mobile"
               type="tel"
-              placeholder={NEW_PHONE_NUMBER}
+              placeholder={OLD_PHONE_NUMBER}
               required={true}
             />
             <InputField

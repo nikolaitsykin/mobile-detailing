@@ -2,8 +2,7 @@ import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { addons } from "../utils/addons";
-import { NEW_PHONE_NUMBER, THANK_YOU_PATH } from "../utils/constants";
-import { mobileDetailingServices } from "../utils/detailingPackages";
+import { OLD_PHONE_NUMBER, THANK_YOU_PATH } from "../utils/constants";
 import Button from "./UI/Button";
 import InputField from "./UI/InputField";
 import SelectField from "./UI/SelectField";
@@ -25,14 +24,20 @@ const ContactForm = () => {
     location.pathname === "/contact" ? "text-start" : "text-center";
 
   const addonsList = addons.map((addon) => addon.title);
-  const servicesList = mobileDetailingServices.map((service) => service.title);
-  const dates = [
-    "Today",
-    "Tomorrow",
-    "This Week",
-    "Next Week",
-    "This Month",
+  const servicesList = [
+    "Ceramic Coating",
+    "Paint Correction",
+    "Express Exterior",
+    "Express Interior",
+    "Express Full Detailing",
+    "Ultimate Exterior",
+    "Ultimate Interior",
+    "Ultimate Full Detailing",
+    "Maintenance Detailing",
+    "Odor Removal",
+    "Steam and Shampoo",
   ];
+  const dates = ["Today", "Tomorrow", "This Week", "Next Week", "This Month"];
 
   const [values, setValues] = useState({
     fullName: "",
@@ -174,7 +179,7 @@ const ContactForm = () => {
               label="Phone Number"
               name="mobile"
               type="tel"
-              placeholder={NEW_PHONE_NUMBER}
+              placeholder={OLD_PHONE_NUMBER}
               required={true}
             />
             <SelectField

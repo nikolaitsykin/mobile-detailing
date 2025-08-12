@@ -11,6 +11,7 @@ import {
   ultimateInterior,
   expressExterior,
   expressInterior,
+  paintCorrectionService,
 } from "./detailingPackages";
 
 export const mobileDetailingServices = [
@@ -32,6 +33,7 @@ export const fullDetailingServices = [expressFullDetail, ultimateFullDetail];
 export const detailingServices = [
   mobileDetailingServices,
   ceramicCoatingServices,
+  paintCorrectionService
 ];
 
 export const detailingServicesTypes = [

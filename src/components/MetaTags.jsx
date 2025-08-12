@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { NEW_PHONE_NUMBER } from "../utils/constants";
+import { OLD_PHONE_NUMBER } from "../utils/constants";
 
 export const MetaTags = ({ city }) => (
   <Helmet>
@@ -21,7 +21,7 @@ export const MetaTags = ({ city }) => (
     />
     <meta
       property="og:description"
-      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${NEW_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
     <meta
       property="og:url"
@@ -29,12 +29,12 @@ export const MetaTags = ({ city }) => (
     />
     <meta
       property="twitter:description"
-      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${NEW_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
 
     <meta
       name="description"
-      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${NEW_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
     <meta
       data-rh="true"

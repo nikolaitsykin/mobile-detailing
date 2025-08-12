@@ -5,7 +5,7 @@ import {
   CALL_NUMBER,
   CONTACT_PATH,
   FAQS_PATH,
-  NEW_PHONE_NUMBER
+  OLD_PHONE_NUMBER
 } from "../../../utils/constants";
 import { autoDetailingQuestions, generalQuestions } from "../../../utils/faq";
 import FaqItem from "../../FaqItem";
@@ -33,7 +33,7 @@ const FAQs = () => {
               to={CALL_NUMBER}
               className="underline text-blue font-semibold"
             >
-              {NEW_PHONE_NUMBER}
+              {OLD_PHONE_NUMBER}
             </Link>
             , request a quote through our contact page or just simply book
             online. Click the{" "}
