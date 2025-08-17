@@ -398,7 +398,7 @@ export const steamAndShampoo = {
   bookingLink: SEATS_SHAMPOO_BOOKING_PATH,
   shortDescription: `Refresh and restore your upholstery with deep steam and shampoo cleaning. \n\nFrom ${shampooPrices[0]}. Up to 3 hours.`,
   description:
-    "Our upholstery steam and shampoo service is designed to lift embedded dirt, stains, and odors from your seats or carpet. Using high-temperature steam and premium fabric-safe shampoo, we break down grime and extract deep-seated contaminants, leaving your seats or carpet looking cleaner and smelling fresher. Ideal for cloth seats and carpet needing a serious refresh. Book now to bring life back to your interior.",
+    "Our upholstery steam and shampoo service is designed to lift embedded dirt, stains, mold and odors from your seats or carpet. Using high-temperature steam and premium fabric-safe shampoo, we break down grime and extract deep-seated contaminants, leaving your seats or carpet looking cleaner and smelling fresher. Ideal for cloth seats and carpet needing a serious refresh. Book now to bring life back to your interior.",
   price: shampooPrices,
   carsSize: carTypes,
   duration: ["1 hour", "1 hour 15 mins", "1 hour 30 mins"],
