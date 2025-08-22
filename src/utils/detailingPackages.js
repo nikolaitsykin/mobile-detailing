@@ -34,13 +34,11 @@ import {
 export const carsSizes = [
   {
     title: "Standard ",
-    description:
-      "Sedans, and coupes (e.g., Subaru Impreza, Ford Mustang)",
+    description: "Sedans, and coupes (e.g., Subaru Impreza, Ford Mustang)",
   },
   {
     title: "Mid-Size",
-    description:
-      "SUVs, and small trucks (e.g., Hyundai Tucson, Toyota Tacoma)",
+    description: "SUVs, and small trucks (e.g., Hyundai Tucson, Toyota Tacoma)",
   },
   {
     title: "Large/XL ",
@@ -153,9 +151,9 @@ export const threeYearsceramicCoating = {
   carsSize: carTypes,
   link: THREE_YEARS_CERAMIC_PATH,
   bookingLink: THREE_YEARS_CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Ultimate Exterior service, and 3 years ceramic coating application for long-lasting protection.`,
+  shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Exterior detailing, paint preparation, and 3 years ceramic coating application for long-lasting protection.`,
   description:
-    "To prepare for a ceramic coating we begin with a full hand wash and dry, followed by tires and wheels detailing. Then we perform a clay bar treatment, iron decontamination and bug & tar removal. We finish with a durable ceramic coating for extended protection, lasting up to 3 years, ensuring long-lasting defense against various contaminants.",
+    "Protect your vehicle’s finish with Spotless Auto Detailing’s 3-Year Ceramic Coating. This durable coating forms a glossy, water-repelling barrier that shields against UV rays, road grime, and everyday contaminants. It’s the perfect entry into long-term protection, keeping your car easier to clean and looking sharp year after year.",
   duration: ["5 hours", "5 hours 30 mins", "6 hours"],
 };
 
@@ -182,9 +180,9 @@ export const sixYearsCeramicCoating = {
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   bookingLink: SIX_YEARS_CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Get the ultimate protection for your car with Step 1 Polishing followed by 3 years Ceramic Coating.`,
+  shortDescription: `Enhanced hydrophobic, glossy, and durable protection for your vehicle paint. Includes: Exterior detailing, paint preparation, and 6 years ceramic coating application for extended protection.`,
   description:
-    "Get long-lasting protection and a stunning finish with our 1-Step Paint Correction plus 3-Year Ceramic Coating. We polish the paint to remove light defects and restore depth and gloss. Then, we lock in that finish with a professional-grade ceramic coating that shields your vehicle from UV rays, water spots, dirt, and daily wear. It enhances shine, repels grime, and makes maintenance effortless.This is the perfect package to revive and protect your car’s appearance for years to come.  ",
+    "Get long-lasting protection with Spotless Auto Detailing’s 6-Year Ceramic Coating. This advanced nano-ceramic layer creates a tough, glossy shield that bonds to your vehicle’s paint. It delivers strong hydrophobic properties while resisting UV rays, chemicals, and light scratches—keeping your car’s finish shining and protected for years to come.",
   duration: ["6 hours", "6 hours 30 mins", "7 hours"],
 };
 export const tenYearsCeramicCoating = {
@@ -210,9 +208,9 @@ export const tenYearsCeramicCoating = {
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   bookingLink: TEN_YEARS_CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Take your car's protection to the next level with Step 2 Polishing followed by Ceramic Coating from Spotless Auto Detailing.`,
+  shortDescription: `Ultimate hydrophobic, mirror-like shine and maximum resistance for your vehicle paint. Includes: Exterior detailing, paint preparation, and 10+ years ceramic coating application with lifetime protection.`,
   description:
-    "Take your car's protection to the next level with Step 2 Ceramic Coating from Spotless Auto Detailing. Our ceramic coating is a long-term nano-ceramic coating that provides a strong layer of protection for your car's paint. This coating will create a durable, hydrophobic layer that resists contamination, scratches, and fading, keeping your car looking its best.",
+    "Experience the ultimate in long-term protection with Spotless Auto Detailing’s 10-Year Ceramic Coating. This premium nano-ceramic shield is our most durable option, designed to bond permanently with your vehicle’s paint. It forms a rock-solid, hydrophobic barrier that resists scratches, UV damage, chemicals, and environmental contaminants—keeping your car’s finish deep, glossy, and protected for a decade",
   duration: ["7 hours", "7 hours 30 mins", "8 hours"],
 };
 export const oneStepPaintCorrection = {
@@ -237,9 +235,9 @@ export const oneStepPaintCorrection = {
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   bookingLink: ONE_STEP_PAINT_CORRECTION_BOOKING_PATH,
-  shortDescription: `Polish and restore paintwork with Spotless Auto Detailing's Step 1 Paint Correction.`,
+  shortDescription: `Take the first step toward perfect paintwork. 1-Step Paint Correction safely removes light swirls, haze, and surface imperfections, restoring clarity and luster to your vehicle’s finish. A noticeable transformation for paint that’s lost its sparkle.`,
   description:
-    "Step up your car's shine with Spotless Auto Detailing's Step 1 Paint Correction service. This service includes a detailed clay bar, iron remover to remove surface contaminants, and polishing to remove scratches and minor defects from your car's paint. Afterwards, your car will look better than ever with a deep, glossy shine. Removes 50-70% of imperfections. Get the best finish for your car with Spotless Auto Detailing.",
+    "Step up your car's shine with Spotless Auto Detailing's 1-Step Paint Correction service. This service includes a detailed clay bar, iron remover to remove surface contaminants, and polishing to remove scratches and minor defects from your car's paint. Afterwards, your car will look better than ever with a deep, glossy shine. Removes 50-70% of imperfections. Get the best finish for your car with Spotless Auto Detailing.",
   duration: ["5 hours", "5 hours 30 mins", "6 hours"],
 };
 
@@ -266,7 +264,7 @@ export const twoStepPaintCorrection = {
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   bookingLink: TWO_STEP_PAINT_CORRECTION_BOOKING_PATH,
-  shortDescription: `Polish and refine your car’s paint with Spotless Auto Detailing’s Step 2 Paint Correction.`,
+  shortDescription: `For those who demand perfection. 2-Step Paint Correction goes deeper, eliminating moderate scratches, oxidation, and blemishes while refining the finish to a flawless, mirror-like gloss. The ultimate process to bring out your paint’s true potential.`,
   description:
     "Not all paint imperfections can be solved with just polishing. Our 2-Step Paint Correction at Spotless Auto Detailing is designed for vehicles that need more than a quick touch-up. This advanced process removes deeper defects, revives faded paint, and restores the rich, vibrant color your car once had. It’s the difference between “clean” and jaw-dropping shine. Removes up to 90% of imperfections. Ready to bring your paint back to life? Book your appointment today and turn heads wherever you go.",
   duration: ["7 hours", "7 hours 30 mins", "8 hours"],
@@ -294,7 +292,7 @@ export const paintEnchancement = {
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   bookingLink: PAINT_ENHANCEMENT_BOOKING_PATH,
-  shortDescription: `Boost your car's shine with Spotless Auto Detailing's Paint Enchancement.`,
+  shortDescription: `Give your car’s paint a new lease on life. Our Paint Enhancement service boosts depth, gloss, and smoothness, restoring a vibrant shine that turns heads while adding an extra layer of protection.`,
   description:
     "If your car’s paint looks dull or tired but doesn’t need full correction, a Paint Enhancement is the perfect in-between. This service uses a single-stage polishing process to boost gloss, deepen color, and reduce light swirls—giving your vehicle a noticeably cleaner, richer finish without the time or cost of multi-step correction. It’s ideal before a coating or just to refresh the look.",
   duration: ["3 hours", "3 hours 30 mins", "4 hours"],
@@ -433,8 +431,7 @@ export const maintenanceFullDetail = {
   price: maintenanceFullDetailPrices,
   carsSize: carTypes,
   link: MAINTENANCE_FULL_DETAILING_PATH,
-  shortDescription:
-    `"This service designed as maintenance detailing for cars which was detailed not more that 4 weeks ago. \nFrom ${maintenanceFullDetailPrices[0]}. Up to 2 hours."`,
+  shortDescription: `"This service designed as maintenance detailing for cars which was detailed not more that 4 weeks ago. \nFrom ${maintenanceFullDetailPrices[0]}. Up to 2 hours."`,
   description:
     "We start with a thorough hand wash and dry of all the paintwork, including the gas cap and valve. Tires and wheels are left spotless and shining. We finish by treating the windows with a water repellent for a crystal-clear finish. We vacuum the interior and mats, wipe down the leather seats, and thoroughly clean the door panels, jambs, plastics, and cup holders. The service ends with spotless glass and mirrors for a refreshed look.",
   duration: ["1 hour 30 mins", "1 hour 45 min", "2 hours"],
@@ -525,7 +522,7 @@ export const mobileDetailingServices = [
   tenYearsCeramicCoating,
   paintEnchancement,
   oneStepPaintCorrection,
-  twoStepPaintCorrection
+  twoStepPaintCorrection,
 ];
 
 export const mobileDetailingService = {
