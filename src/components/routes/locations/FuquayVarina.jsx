@@ -5,8 +5,7 @@ import Hero from "../../Hero";
 import { MetaTags } from "../../MetaTags";
 
 const FuquayVarina = () => {
-  const path = window.location.pathname.split("/").filter(Boolean);
-  const city = path[0].replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letter of each word
+  const city = "Fuquay Varina";
 
   localStorage.setItem("location", city);
 

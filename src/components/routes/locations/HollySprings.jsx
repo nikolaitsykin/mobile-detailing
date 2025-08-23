@@ -5,10 +5,7 @@ import Hero from "../../Hero";
 import { MetaTags } from "../../MetaTags";
 
 const HollySprings = () => {
-  const path = window.location.pathname.split("/").filter(Boolean);
-  const city = path[0]
-    .replace(/-/g, " ") // Replace hyphens with spaces
-    .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letter of each word
+  const city = "Holly Springs";
 
   localStorage.setItem("location", city);
 
