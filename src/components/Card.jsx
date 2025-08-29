@@ -147,7 +147,7 @@ const Card = ({
                     <Link to={CERAMIC_COATING_PATH}>
                       <li
                         key={index}
-                        className="ml-5 list-disc text-start text-sm md:text-base p-[2px] whitespace-pre-wrap text-blue underline font-semibold"
+                        className="ml3  text-start text-sm md:text-base p-[2px] whitespace-pre-wrap text-blue underline font-semibold"
                       >
                         {item.text}
                       </li>
@@ -163,7 +163,7 @@ const Card = ({
                     <Link to={PAINT_CORRECTION_PATH}>
                       <li
                         key={index}
-                        className="ml-5 list-disc text-start text-sm md:text-base p-[2px] whitespace-pre-wrap text-blue underline font-semibold"
+                        className="ml-3 text-start text-sm md:text-base p-[2px] whitespace-pre-wrap text-blue underline font-semibold"
                       >
                         {item.text}
                       </li>

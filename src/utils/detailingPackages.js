@@ -202,7 +202,7 @@ export const tenYearsCeramicCoating = {
     { text: "Headlights and taillights coated" },
   ],
   additional: [
-    { text: "For a best results add Paint Correction with $200 off" },
+    { text: "For a best results add Paint Correction with $150 off" },
   ],
   price: tenYearsCeramicCoatingPrices,
   carsSize: carTypes,
