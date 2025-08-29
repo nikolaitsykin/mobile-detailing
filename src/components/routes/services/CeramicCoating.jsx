@@ -110,14 +110,14 @@ const CeramicCoating = () => {
             professionally applied ceramic coating:
           </p>
           <div className="flex flex-col-reverse md:flex-row gap-2">
-            <span className="flex items-center md:w-1/2">
+            <span className="flex items-center md:w-1/2 xl:w-1/3">
               <img
-                className="w-full max-h-80 md:pr-5"
+                className="w-full object-cover md:pr-5"
                 src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/ceramic_before_after.avif"
                 alt=""
               />
             </span>
-            <span className="md:w-1/2">
+            <span className="md:w-1/2 xl:w-2/3">
               <ul>
                 <li>
                   <span className="font-bold">Long-Term Protection</span>: When
@@ -168,14 +168,14 @@ const CeramicCoating = () => {
             flawless, mirror-like finish you're expecting.{" "}
           </p>
           <div className="flex flex-col-reverse md:flex-row-reverse gap-2">
-            <span className="flex items-center md:w-1/2">
+            <span className="flex items-center md:w-1/2 xl:w-1/3">
               <img
-                className="w-full object-cover max-h-80 md:pr-5"
+                className="w-full object-cover md:pr-5"
                 src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/preparation.avif"
                 alt=""
               />
             </span>
-            <span className="md:w-1/2">
+            <span className="md:w-1/2 xl:w-2/3">
               <p className="pb-5">
                 That’s why having a skilled installer matters. At{" "}
                 <span className="font-bold">{fullBusinessName}</span>, we’ve

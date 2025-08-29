@@ -8,9 +8,7 @@ import {
 } from "../utils/constants";
 
 const Card = ({
-  type,
   service,
-  title,
   image,
   alt,
   ceramicAdditionalService,
@@ -123,13 +121,20 @@ const Card = ({
             {exteriorServices && (
               <div className="flex flex-col w-full max-w-xl px-4">
                 <p className="font-semibold">This package includes:</p>
-                <ul className="">
+                <ul>
+                  {!singleService && (
+                    <span className="font-semibold">For the exterior:</span>
+                  )}
                   {exteriorServices.map((service, index) => (
                     <li
                       key={index}
-                      className="ml-5 list-disc text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
+                      className="ml-3 text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
                     >
-                      {service.text}
+                      {service.bold ? (
+                        <strong>{service.text}</strong>
+                      ) : (
+                        service.text
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -175,12 +180,19 @@ const Card = ({
                   <p className="font-semibold">This package includes:</p>
                 )}
                 <ul className="h-full">
+                  {!singleService && (
+                    <span className="font-semibold">For the interior:</span>
+                  )}
                   {interiorServices.map((service, index) => (
                     <li
                       key={index}
-                      className="list-disc ml-5 text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
+                      className=" ml-2 text-start text-sm md:text-base p-[2px] whitespace-pre-wrap"
                     >
-                      {service.text}
+                      {service.bold ? (
+                        <strong>{service.text}</strong>
+                      ) : (
+                        service.text
+                      )}
                     </li>
                   ))}
                 </ul>
