@@ -15,6 +15,14 @@ const FuquayVarina = () => {
   canonical.setAttribute("href", BASE_URL + FUQUAY_VARINA_PATH);
   const ogUrl = document.querySelector('meta[property="og:url"]');
   ogUrl.setAttribute("content", BASE_URL + FUQUAY_VARINA_PATH);
+  const metaTitle = document.querySelector('meta[property="title"]');
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+
+  if (metaTitle && ogTitle) {
+    const newTitle = `Mobile Car Detailing & Ceramic Coating ${city}`;
+    metaTitle.setAttribute("content", newTitle);
+    ogTitle.setAttribute("content", newTitle);
+  }
 
   return (
     <main className="w-full bg-white">
