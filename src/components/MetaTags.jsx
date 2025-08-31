@@ -3,6 +3,10 @@ import { OLD_PHONE_NUMBER } from "../utils/constants";
 
 export const MetaTags = ({ city }) => (
   <Helmet>
+    <title>
+      Mobile Car Detailing & Ceramic Coating {city} | Spotless Auto Detailing
+    </title>
+
     <meta
       property="twitter:title"
       content={`Mobile Car Detailing & Ceramic Coating ${city}`}
@@ -23,10 +27,7 @@ export const MetaTags = ({ city }) => (
       property="og:description"
       content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
-    <meta
-      property="og:url"
-      content={`${city}`}
-    />
+    <meta property="og:url" content={`${city}`} />
     <meta
       property="twitter:description"
       content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
