@@ -14,6 +14,8 @@ import Gallery from "../../../Gallery";
 import GoogleReview from "../../../ReviewsWidget";
 
 const ExpressInterior = () => {
+  const city = localStorage.getItem("location");
+
   const service = expressInterior;
   const canonical = document.querySelector("link[rel=canonical]");
   canonical.setAttribute("href", BASE_URL + EXPRESS_INTERIOR_PATH);
@@ -27,7 +29,7 @@ const ExpressInterior = () => {
     >
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          Express Interior Detailing{" "}
+          {service.title} {city ? `in ${city}` : ""}
         </h1>
       </div>
       <div className="mx-auto">
