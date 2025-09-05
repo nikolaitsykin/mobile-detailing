@@ -105,7 +105,7 @@ export const ultimateExterior = {
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_273206890.jpeg",
   alt: "Ultimate Exterior Detailing Services in Raleigh | Spotless Auto Detailing.",
   exteriorServices: [
-    { text: "Evetrything in Express Service:" },
+    { text: "Evetrything in Express Service:", bold: true },
     { text: "• Wheels and tires cleaned and dressed" },
     { text: "• Full hand wash with foam to safely lift dirt" },
     { text: "• Gas cap and fuel area cleaned" },
@@ -336,7 +336,7 @@ export const ultimateInterior = {
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_539555302.jpeg",
   alt: "Ultimate Interior Detailing Services in Raleigh | Spotless Auto Detailing.",
   interiorServices: [
-    { text: "Evetrything in Express Service:" },
+    { text: "Evetrything in Express Service:", bold: true },
     { text: "• Interior and trunk carpet vacuumed " },
     { text: "• Interior plastics and surfaces cleaned " },
     { text: "• Floor mats cleaned" },
