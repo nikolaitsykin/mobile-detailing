@@ -102,11 +102,11 @@ const Card = ({
             </div>
           )}
         </div>
-        <div className="flex flex-col justify-between h-full">
+        <div className="flex flex-col justify-between ">
           <div>
             {services && (
-              <div className="flex flex-col justify-between w-full max-w-xl h-full ">
-                <ul className="h-full">
+              <div className="flex flex-col justify-between w-full max-w-xl  ">
+                <ul className="">
                   {services.map((service, index) => (
                     <li
                       key={index}
@@ -173,13 +173,13 @@ const Card = ({
               </div>
             )}
             {interiorServices && (
-              <div className="flex flex-col w-full max-w-xl h-full px-4">
+              <div className="flex flex-col w-full max-w-xl px-4">
                 {exteriorServices ? (
                   ""
                 ) : (
                   <p className="font-semibold ml-3">This package includes:</p>
                 )}
-                <ul className="h-full">
+                <ul className="">
                   {!singleService && (
                     <span className="font-semibold">For the interior:</span>
                   )}
@@ -205,7 +205,6 @@ const Card = ({
                 : "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include excessive bug, tar, tree sap etc."}
             </div>
           </div>
-
           <div className="mb-3">
             <BookButtons color={"secondary"} bookingLink={bookingLink} />
           </div>
