@@ -7,7 +7,15 @@ import GalleryItem from "./GalleryItem";
 
 const Gallery = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-  const slidesToShow = windowWidth > 792 ? (windowWidth > 1200 ? 3 : 2) : 1;
+  let slidesToShow = 1;
+
+  if (windowWidth > 2000) {
+    slidesToShow = 4;
+  } else if (windowWidth > 1200) {
+    slidesToShow = 3;
+  } else if (windowWidth > 792) {
+    slidesToShow = 2;
+  }
 
   React.useEffect(() => {
     let cb = function () {
@@ -28,16 +36,18 @@ const Gallery = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    centerPadding: "10px",
+    centerPadding: "5px",
   };
 
   return (
     <div id="gallery" className="w-full mb-12">
-      <h2 className="text-center text-black pt-0">Our work</h2>
-      <Slider {...settings} className="w-full pt-5">
-        {galleryImages.map((item, index) => (
-          <GalleryItem key={index} image={item.image} link={item.link} />
-        ))}
+      <h2 className="text-center text-black pt-16">Our Customers</h2>
+      <Slider {...settings} className="w-full px-6">
+        {galleryImages
+          .sort(() => Math.random() - 0.5)
+          .map((item, index) => (
+            <GalleryItem key={index} item={item} />
+          ))}
       </Slider>
     </div>
   );

@@ -5,7 +5,7 @@ import ServiceItem from "./ServiceItem";
 const Services = ({city}) => {
   return (
     <div id="services">
-      <h2 className="text-center">Explore our services</h2>
+      <h2 className="text-center">We Offer Premium Services</h2>
       <div className="w-full m-auto flex flex-col md:flex-row gap-2">
         {detailingServices &&
           detailingServices.map((service) => (

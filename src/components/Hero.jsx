@@ -1,7 +1,7 @@
 import About from "./About";
 import ContactForm from "./ContactForm";
 import Gallery from "./Gallery";
-import GoogleReview from "./ReviewsWidget";
+import GoogleReview from "./GoogleReview";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
 import BookButtons from "./UI/BookButtons";
@@ -37,16 +37,17 @@ const Hero = ({ city }) => {
           {/* <h3 className="text-base sm:text-xl text-center font-light font-poppins p-1 sm:p-4">
             Top-Tier Service in {city ? city : "Raleigh"}, NC
           </h3> */}
-          <h1 className="w-full md:w-3/4 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Mobile Сar Detailing <br />& Ceramic Coating in {city}
+          <h1 className="w-full md:w-2/3 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Spotless Mobile Auto Detailing & Ceramic Coating {city}
           </h1>
-          <h3 className="w-full md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Spotless Auto Detailing provides premium mobile car detailing, ceramic coating & paint correction services
-            in {city} and the surrounding areas.{" "}
+          <h3 className="w-full md:w-2/3 my-3 p-0 md:my-4 text-center text-sm sm:text-base md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Premium Mobile Car Detailing,
+            Ceramic Coating & Paint Correction  in {city} and
+            Nearby Areas.{" "}
           </h3>
           <div
             id="book_buttons"
-            className="flex flex-row justify-center items-center w-full min-w-48 gap-1 "
+            className="flex flex-row justify-center items-center w-full min-w-48 gap-1 mt-3"
           >
             <BookButtons color={"primary"} border={"border"} />
           </div>
@@ -57,7 +58,7 @@ const Hero = ({ city }) => {
           <Testimonials />
           <GoogleReview />
         </div>
-        <div className="mb-10">
+        <div>
           <Services city={city} />
         </div>
         <div>

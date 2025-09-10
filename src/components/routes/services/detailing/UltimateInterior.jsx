@@ -11,7 +11,7 @@ import Booking from "../../../Booking";
 import Card from "../../../Card";
 import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
-import GoogleReview from "../../../ReviewsWidget";
+import GoogleReview from "../../../GoogleReview";
 
 const UltimateInterior = () => {
   const city = localStorage.getItem("location");

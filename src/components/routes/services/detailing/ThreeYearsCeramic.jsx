@@ -3,7 +3,7 @@ import { threeYearsceramicCoating } from "../../../../utils/detailingPackages";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
 import Gallery from "../../../Gallery";
-import GoogleReview from "../../../ReviewsWidget";
+import GoogleReview from "../../../GoogleReview";
 
 const ThreeYearsCeramic = () => {
   const service = threeYearsceramicCoating;

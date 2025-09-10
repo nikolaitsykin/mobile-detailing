@@ -53,8 +53,22 @@ export const footerLinks = [
   "PPF",
 ];
 
-export const servicesLinks = ["Services", "Ceramic Coating", "Paint Correction", "Booking", "Faq", "About"];
-export const servicesLinksActual = ["services", "ceramic-coating", "paint-correction", "booking", "faq", "about"];
+export const servicesLinks = [
+  "Services",
+  "Ceramic Coating",
+  "Paint Correction",
+  "Booking",
+  "Faq",
+  "About",
+];
+export const servicesLinksActual = [
+  "services",
+  "ceramic-coating",
+  "paint-correction",
+  "booking",
+  "faq",
+  "about",
+];
 
 export const businessAddress = "Apex, NC 27502";
 export const businessHours = ["MON-SUN 8AM-8PM"];
@@ -62,7 +76,122 @@ export const businessHours = ["MON-SUN 8AM-8PM"];
 export const businessName = "Spotless";
 export const fullBusinessName = "Spotless Auto Detailing";
 
+export const testimonialItems = [
+  {
+    name: "Randy Brown",
+    rating: 5,
+    review:
+      "Nik, did a really good job I have a BMW 650i convertible that needed to be defunct from the previous owner who must have sprayed two bottles of car smell in it. He did a wonderful job can't smell a thing in it now it smells fantastic. Would recommend him highly.",
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Randy.jpg",
+  },
+  {
+    name: "Michael Quackenbush",
+    rating: 5,
+    review:
+      "Nik did a great job on my Macan - highly recommend. Great communication and flexibility; walked me through all my wash and wax options. Very professional. Update - Nik came and did a 3 year ceramic coating on the Macan - looks beautiful.",
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Michael.jpg",
+  },
+  {
+    name: "Robert Correiro",
+    rating: 5,
+    review:
+      "Nik did a full detail and ceramic coating on my Tesla Model 3 and it came out fantastic. He took the extra time to chase the small stuff instead of rushing, and it shows—the paint has a deep, even gloss all around. Trim, glass and wheels were dialed in, interior cleaned right, and the car looks brand new in person and in photos. Professional, meticulous work and solid communication throughout. I’m very happy with the result and wouldn’t hesitate to go back. Highly recommend.",
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Robert.jpg",
+  },
+  {
+    name: "Garrett Morrison",
+    rating: 5,
+    review: `He did an excellent job detailing my Acura, I would absolutely give them my business again. Thank you`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Garret.jpg",
+  },
+  {
+    name: "Juan Rodriguez",
+    rating: 5,
+    review: `Even though my car is brand new, Nik took it to a whole new level. I honestly didn’t think it could look better than when I drove it off the lot, but after his detail, it’s flawless. His work easily outperformed the dealership’s so called "new car detail". He was punctual, professional, and incredibly meticulous. Every surface, inside and out, was cleaned and polished to perfection. The paint looks deeper and richer, and the interior feels fresher and more refined than ever. If you’re looking for someone who truly knows what they’re doing and pays attention to every detail, Nik is the one to call. Outstanding work! Highly recommended!`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Juan.jpg",
+  },
+  {
+    name: "Roberto Gonzalez",
+    rating: 5,
+    review: `Nik did a great job! My car looks brand new again!`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Roberto.jpg",
+  },
+  {
+    name: "Hilary Chadwick",
+    rating: 5,
+    review: `Nik did a great job! My car looks brand new again!`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Hilary.jpg",
+  },
+  {
+    name: "Tim Spahr",
+    rating: 5,
+    review: `We hired him to do 4 vehicles. He did a great job with all of them. There were no chemical smells, all smells in our van, that we use to transport our 6 kid, were gone, all pet hair was gone and removed a rubber marker, from a shoe sole that burned on the chrome pipes to our motorcycle.`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Tim.jpg",
+  },
+  {
+    name: "Chad Lew",
+    rating: 5,
+    review: `Amazing work. We got the car detailed inside and out including carpet shampooing and ceramic coating. My Toyota Highlander looks better than when I bought it from the dealership! He working really hard getting every little crevice and kept me informed the whole way. I would highly recommend Nik.`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Chad.jpg",
+  },
+  {
+    name: "Steve Superville",
+    rating: 5,
+    review: `My car has never been more clean since I bought it. A years worth of travel, kids and dirt — I can’t tell it’s not new. Nik has an awesome work ethic. Can’t recommend more highly.`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Steve.jpg",
+  },
+  {
+    name: "Lilith Mae",
+    rating: 5,
+    review: `Great service, great work, very kind & gentle to the car, took his time super patient as well! 10/10 recommend! `,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Lilith.jpg",
+  },
+  {
+    name: "Michael Robinson",
+    rating: 5,
+    review: `TRUE PROFESSIONAL. On time and explained the process of detailing my BMW 750. Recommended a higher level of service than I originally requested but, also showed the grit and I was able to feel the imperfections. Huge difference in the gloss , finish, and water now runs of the vehicle. White leather interior was clean and conditioned. Car looking like new again. I honestly didn’t want to drive it and get it dirty …. LOL.HIGHLY recommended and I’ll be sending referrals.`,
+    image:
+      "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Michael%20R.jpg",
+  },
+  {
+    name: "Bryce Ruggieri",
+    rating: 5,
+    review: `Amazing service, responsiveness, and detailing. My car looks brand new.`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Bryce.jpg",
+  },
+  {
+    name: "Sean Hendricks",
+    rating: 5,
+    review: `I had Nik detail and do the one step paint correction on an older Honda Pilot with oxidation and stubborn dirt and mildew. He showed up on time, honored the quote and did a fantastic job restoring the paint to like new finish. Definitely would recommend his services. Very professional.`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Sean.jpeg",
+  },
+  {
+    name: "Rob Matthews",
+    rating: 5,
+    review: `Nik was on time and did a fabulous job on my show corvette! Thank you so much for the amazing detail.`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Rob.jpg",
+  },
+  {
+    name: "David Lacy",
+    rating: 5,
+    review: `Nik arrived on time and went right to work. He got my F150 Platinum looking better than when I drove it off the showroom floor. He did an amazing job, and has a pleasant personality and disposition. I would not hesitate to refer his service to family and friends. You cannot go wrong with this young man. Good Luck Nik with your business “Spotless Auto Detailing”.`,
+    image: "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/David.jpeg",
+  },
+];
+
 export const ceramicReviews = [
+  {
+    name: "Michael Quackenbush",
+    rating: 5,
+    review:
+      "Nik did a great job on my Macan - highly recommend. Great communication and flexibility; walked me through all my wash and wax options. Very professional. Update - Nik came and did a 3 year ceramic coating on the Macan - looks beautiful.",
+  },
+  {
+    name: "Robert Correiro",
+    rating: 5,
+    review:
+      "Nik did a full detail and ceramic coating on my Tesla Model 3 and it came out fantastic. He took the extra time to chase the small stuff instead of rushing, and it shows—the paint has a deep, even gloss all around. Trim, glass and wheels were dialed in, interior cleaned right, and the car looks brand new in person and in photos. Professional, meticulous work and solid communication throughout. I’m very happy with the result and wouldn’t hesitate to go back. Highly recommend.",
+  },
   {
     name: "Andrew Simpson",
     rating: 5,
@@ -302,97 +431,53 @@ export const reviews = [
   },
 ];
 
+export const newGalleryImages = [
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Randy.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Michael.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Robert.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Garret.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Juan.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Roberto.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Hilary.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Tim.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Chad.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Steve.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Lilith.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Michael%20R.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Bryce.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Sean.jpeg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Rob.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/David.jpeg",
+];
+
 export const galleryImages = [
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/0DACF3D9-564F-4817-9266-A08E1BA0AF7F_1719800800%2B(1).webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/112-1687927537-67324accb366f%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/113_1687927537%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/114_1687927538%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/117_1687927941%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/33594FDF-1FC7-4D23-AADA-B6831514F5F6_1686863368%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/5A312470-98CE-4124-A942-1407FD87FE33_1686863363.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/5D4BA67D-7A96-4D27-A2B5-4F2D09F38358_1718500840.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/7E9A8A1F-3448-4E39-82A6-F85B6232E624_1686863361.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/8AD75E48-9635-4933-AE10-3B13265D1F5C_1686863364%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/8D307122-0D42-4EF8-9103-41685B2B8973_1686863365%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/ADD47E3C-CA97-4F68-899D-E407C33DAABC_1686863368%2B720x720.webp ",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/EC5AD31E-2909-47A4-9FE3-DF4D49F50676_1711312087%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/auto-detailing-1536x2048-673251a518bee.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/car-wash-in-boston-massachusetts-67324ad95c26d%2B(1)%2B720x716.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/exterior-car-wash-1536x2048-6732519ccb105.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/interior-car-1536x2048-6732519cc282c.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/interior-detailing-1536x2048-673251a1a1113.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/mobile-car-detailing-bostonmassachusetts-67324ae1c9989%2B720x728.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/porsche-1536x2048-67324ae3b08eb%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/riv_1718500840%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/unnamed-1-1722958239-67324ae7d16c5%2B720x720.webp",
-  },
-  {
-    image:
-      "https://pub-a032091c79624619ade299caa8a7dbc6.r2.dev/unnamed_1687394966%2B720x720.webp",
-  },
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Randy.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Michael.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Robert.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Garret.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Juan.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Roberto.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Hilary.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Tim.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Chad.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Steve.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Lilith.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Michael%20R.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Bryce.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/Rob.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/David.jpeg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery1.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery2.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery3.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery4.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery5.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery6.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery7.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery8.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery9.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery10.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery11.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery12.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery13.jpg",
+  "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/newgallery14.jpg",
 ];
