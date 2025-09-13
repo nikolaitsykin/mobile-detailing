@@ -145,7 +145,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full mx-auto mb-10">
+    <div className="w-full mx-auto mb-10 mt-5">
       <form className="flex flex-col mx-auto md:w-full" onSubmit={handleSubmit}>
         <h3 className={`text-black text-2xl mt-4 py-1  ${headingClass}`}>
           {heading}

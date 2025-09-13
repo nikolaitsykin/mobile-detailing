@@ -1,6 +1,10 @@
 const TestimonalItem = ({ item }) => {
+  function truncateString(str, maxLength = 450) {
+    return str.length > maxLength ? str.slice(0, maxLength) + "..." : str;
+  }
+
   return (
-    <div className="h-[450px] w-full mx-auto relative font-poppins px-2">
+    <div className="h-auto w-full mx-auto relative font-poppins px-2">
       <div className="cursor-pointer">
         <div>
           <img
@@ -11,7 +15,7 @@ const TestimonalItem = ({ item }) => {
           />
           <div className="flex flex-col text-xs md:text-sm">
             <span className="font-semibold">{item.name}</span>
-            <span>"{item.review}"</span>
+            <span>"{truncateString(item.review)}"</span>
           </div>
         </div>
       </div>

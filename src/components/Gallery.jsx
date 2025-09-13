@@ -40,8 +40,8 @@ const Gallery = () => {
   };
 
   return (
-    <div id="gallery" className="w-full mb-12">
-      <h2 className="text-center text-black pt-16">Our Customers</h2>
+    <div id="gallery" className="w-full">
+      <h2 className="text-center text-black pt-10">Our Customers</h2>
       <Slider {...settings} className="w-full px-6">
         {galleryImages
           .sort(() => Math.random() - 0.5)
