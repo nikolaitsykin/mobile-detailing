@@ -5,7 +5,6 @@ const TestimonalItem = ({ item }) => {
         <div>
           <img
             loading="lazy"
-            // src={item.image}
             src={item.image}
             alt={"Car detailing"}
             className=" object-cover w-48 h-48 mx-auto px-0.5 rounded-full"

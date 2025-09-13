@@ -19,18 +19,18 @@ const Testimonials = () => {
   }, []);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     centerPadding: "10px",
   };
 
   return (
-    <div id="testimonials" className="w-full mb-8">
+    <div id="testimonials" className="w-full mt-10">
       <h2 className="text-center text-black pt-5">What Our Clients Say</h2>
       <Slider {...settings} className="w-full px-5">
         {testimonialItems.map((item, index) => (

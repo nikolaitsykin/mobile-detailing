@@ -41,9 +41,8 @@ const Hero = ({ city }) => {
             Spotless Mobile Auto Detailing & Ceramic Coating {city}
           </h1>
           <h3 className="w-full md:w-2/3 my-3 p-0 md:my-4 text-center text-sm sm:text-base md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Premium Mobile Car Detailing,
-            Ceramic Coating & Paint Correction  in {city} and
-            Nearby Areas.{" "}
+            Premium Mobile Car Detailing, Ceramic Coating & Paint Correction in{" "}
+            {city} and Nearby Areas.{" "}
           </h3>
           <div
             id="book_buttons"
@@ -55,11 +54,11 @@ const Hero = ({ city }) => {
       </div>
       <section>
         <div className="mt-10">
-          <Testimonials />
           <GoogleReview />
         </div>
         <div>
           <Services city={city} />
+          <Testimonials />
         </div>
         <div>
           <Gallery />
