@@ -7,7 +7,7 @@ const GalleryItem = ({ item }) => {
           loading="lazy"
           src={item}
           alt={"Car detailing"}
-          className="object-cover h-96 px-0.5"
+          className="object-cover h-auto md:h-96 px-0.5"
         />
       </div>
     </div>
