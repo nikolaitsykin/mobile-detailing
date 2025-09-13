@@ -26,7 +26,7 @@ const Testimonials = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    centerPadding: "10px",
+    centerPadding: "5px",
   };
 
   return (
