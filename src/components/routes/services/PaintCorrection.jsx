@@ -91,7 +91,7 @@ const PaintCorrection = () => {
                 alt=""
               />
             </span>
-            <span className="md:w-1/2">
+            <span className="md:w-1/2 xl:w-2/3">
               <ul>
                 <li>
                   <span className="font-bold">Restored Clarity and Shine</span>:
