@@ -25,17 +25,17 @@ export const MetaTags = ({ city }) => (
     />
     <meta
       property="og:description"
-      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 170+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
     <meta property="og:url" content={`${city}`} />
     <meta
       property="twitter:description"
-      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 170+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
 
     <meta
       name="description"
-      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 100+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
+      content={`Spotless Auto Detailing services in ${city} and surrounding areas. 170+ 5-star reviews.Call Us ${OLD_PHONE_NUMBER}. Car Detailing, Ceramic Coating, Paint Correction.`}
     />
     <meta
       data-rh="true"
