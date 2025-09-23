@@ -29,7 +29,7 @@ const MobileDetailing = () => {
             <br /> in {city}
           </h1>
           <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Over 100+ 5-star reviews from our happy customers. From interior
+            Over 170+ 5-star reviews from our happy customers. From interior
             cleaning to protective exterior treatments. We provide professional
             mobile car detailing for all your vehicle needs in {city} and
             surrounding areas.

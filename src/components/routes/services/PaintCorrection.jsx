@@ -87,7 +87,7 @@ const PaintCorrection = () => {
             <span className="flex items-center md:w-1/2">
               <img
                 className="w-full max-h-80 md:pr-5"
-                src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/mmexport1704511044904-1-scaled%20(1).webp"
+                src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/photo_2019-04-04_09-12-43%20conv.jpg"
                 alt=""
               />
             </span>
