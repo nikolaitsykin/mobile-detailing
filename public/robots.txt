@@ -1,10 +1,14 @@
+# Allow all search engines to crawl the main site
 User-agent: *
-Disallow: /wp-admin/
-Allow: /wp-admin/admin-ajax.php
-Disallow: /private/
-
-# Allow all bots to crawl your site
 Allow: /
 
-# Link to your XML Sitemap
-Sitemap: https://getspotlessnc.com/sitemap.xml
+# Block sensitive or irrelevant files/folders
+Disallow: /static/js/*.map
+Disallow: /static/css/*.map
+Disallow: /__tests__/
+Disallow: /src/
+Disallow: /public/
+
+# Sitemap location (important for SEO)
+Sitemap: https://www.example.com/sitemap.xml
+
