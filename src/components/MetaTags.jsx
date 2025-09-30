@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { OLD_PHONE_NUMBER } from "../utils/constants";
 
 export const MetaTags = ({ city }) => (

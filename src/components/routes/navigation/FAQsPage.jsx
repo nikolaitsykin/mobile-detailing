@@ -17,7 +17,7 @@ const FAQs = () => {
   // canonical.setAttribute("href", BASE_URL + FAQS_PATH);
 
   return (
-    <div id="faq" className="w-full z-20 bg-white font-poppins">
+    <div id="faqs" className="w-full z-20 bg-white font-poppins">
       <Helmet>
         <link rel="canonical" href={BASE_URL + FAQS_PATH} />
         <title>Car Detailing FAQs Raleigh NC | Spotless Auto Detailing</title>

@@ -58,7 +58,7 @@ export const servicesLinks = [
   "Ceramic Coating",
   "Paint Correction",
   "Booking",
-  "Faq",
+  "Faqs",
   "About",
 ];
 export const servicesLinksActual = [
@@ -66,7 +66,7 @@ export const servicesLinksActual = [
   "ceramic-coating",
   "paint-correction",
   "booking",
-  "faq",
+  "faqs",
   "about",
 ];
 

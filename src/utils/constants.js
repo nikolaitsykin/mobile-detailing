@@ -21,7 +21,7 @@ export const GOOGLE_BUSINESS_URL =
 export const CONTACT_PATH = "/contact";
 export const GIFT_CARDS_PATH =
   "https://app.squareup.com/gift/MLZ25VXQNPSCW/order";
-export const FAQS_PATH = "/faq";
+export const FAQS_PATH = "/faqs";
 export const SERVICES_PATH = "/services";
 export const ABOUT_PATH = "/about";
 export const HOME_PATH = "/";
