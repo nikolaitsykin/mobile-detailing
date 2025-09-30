@@ -2,13 +2,14 @@
 User-agent: *
 Allow: /
 
-# Block sensitive or irrelevant files/folders
+
 Disallow: /static/js/*.map
 Disallow: /static/css/*.map
+
+# Exclude internal or dev folders (if any)
 Disallow: /__tests__/
 Disallow: /src/
 Disallow: /public/
 
-# Sitemap location (important for SEO)
-Sitemap: https://www.example.com/sitemap.xml
-
+# Sitemap
+Sitemap: https://getspotlessnc.com/sitemap.xml
