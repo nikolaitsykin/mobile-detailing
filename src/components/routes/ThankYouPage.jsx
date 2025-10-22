@@ -1,13 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
   CALL_NUMBER,
   FAQS_PATH,
   OLD_PHONE_NUMBER,
-  SERVICES_PATH,
-  THANK_YOU_PATH,
+  SERVICES_PATH
 } from "../../utils/constants";
-import SEO from "../SEO";
 
 const ThankYouPage = () => {
   return (
@@ -15,16 +12,8 @@ const ThankYouPage = () => {
       id="thank-you"
       className="h-screen z-20 bg-white font-poppins w-full mx-auto"
     >
-      <SEO
-        title="Thank You | Spotless Auto Detailing"
-        canonical={THANK_YOU_PATH}
-        description="Thank you for booking with Spotless Auto Detailing! We’ll be in touch soon to confirm your mobile detailing appointment in Raleigh."
-        name="Thank You for Booking"
-        type="WebPage"
-      />
-
-      <div className="w-full bg-black h-[450px] flex justify-center items-center mx-auto text-white">
-        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+      <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
+        <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
           Thank You!{" "}
         </h1>
       </div>
@@ -54,7 +43,7 @@ const ThankYouPage = () => {
             page for more information.
           </p>
           <p className="text-center my-5">
-            If you have any questions, please don't hesitate to call us at{" "}
+            If you have any questions, please don't hesitate to text or call us at{" "}
             <Link
               target={"_blank"}
               to={CALL_NUMBER}

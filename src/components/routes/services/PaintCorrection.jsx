@@ -188,8 +188,6 @@ const PaintCorrection = () => {
               </h3>
               <h5 className="mb-2">{service.shortDescription}</h5>
               <Card
-                title={service.title}
-                // type={service.type}
                 service={service}
                 services={service.services}
                 description={service.description}

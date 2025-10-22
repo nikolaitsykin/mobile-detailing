@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
   BASE_URL,
@@ -14,24 +15,26 @@ import GoogleReview from "../../../GoogleReview";
 
 const ExpressExterior = () => {
   const city = localStorage.getItem("location");
-
   const service = expressExterior;
-  const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + EXPRESS_EXTERIOR_PATH);
-  const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + EXPRESS_EXTERIOR_PATH);
 
   return (
     <div
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + EXPRESS_EXTERIOR_PATH} />
+        <title>Express Exterior Car Detailing Raleigh NC | Quick Shine</title>
+        <meta
+          name="description"
+          content="Get your car shining fast with express exterior detailing in Raleigh NC. Professional wash, wax, and polish in record time."
+        />
+      </Helmet>
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          {service.title}  {city ? `in ${city}` : ""}
+          Express Exterior Car Detailing {city ? `in ${city}` : ""}
         </h1>
       </div>
-
       <div className="mx-auto">
         <section className="">
           <article className=" text-start text-black">

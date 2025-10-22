@@ -1,5 +1,7 @@
+import { Helmet } from "react-helmet-async";
 import { Outlet } from "react-router-dom";
 import { BASE_URL, MOBILE_DETAILING_PATH } from "../../../utils/constants";
+import { mobileInteriorAndExteriorDetailingTexts } from "../../../utils/data";
 import { mobileDetailingServices } from "../../../utils/detailingPackages";
 import Addons from "../../Addons";
 import Booking from "../../Booking";
@@ -7,14 +9,20 @@ import ServiceItem from "../../ServiceItem";
 
 const MobileDetailing = () => {
   const city = localStorage.getItem("location");
-
-  const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + MOBILE_DETAILING_PATH);
-  const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + MOBILE_DETAILING_PATH);
+  const cityKey = city.toLowerCase().replace(/\s|-/g, "");
+  const texts = mobileInteriorAndExteriorDetailingTexts[cityKey];
 
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + MOBILE_DETAILING_PATH} />
+        <title>Mobile Car Detailing Raleigh NC | Spotless Auto Detailing</title>
+        <meta
+          name="description"
+          content="Get professional mobile car detailing in Raleigh NC. Interior cleaning, exterior shine, ceramic coating & paint correction at your doorstep."
+        />
+      </Helmet>
+
       <div className="w-full bg-black">
         <img
           src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/pexels-lynxexotics-3954436%20(2).avif"
@@ -25,8 +33,7 @@ const MobileDetailing = () => {
       <div className="w-full object-cover h-[450px] md:h-[600px] top-10 flex justify-center items-center absolute">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
           <h1 className="whitespace-pre-line w-1/2 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Mobile Car Detailing
-            <br /> in {city}
+            Mobile Car Detailing Services in {city} NC
           </h1>
           <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Over 170+ 5-star reviews from our happy customers. From interior
@@ -48,35 +55,16 @@ const MobileDetailing = () => {
               />
             </span>
             <span className="md:w-1/2 flex flex-col justify-center">
-              <h2 className="md:px-4 py-4 text-start">Exterior Detailing</h2>
-              <p className="text-sm lg:text-base md:pl-5">
-                Regular cleaning is important to keep your vehicle's exterior
-                looking its best, but occasionally it needs a deeper clean to
-                remove contaminants and imperfections. Without it, your car's
-                paint job can become dull and marred by scrapes, swirls, and
-                chemical etching, while the hot sun can cause damage and fading.
-                Our exterior auto detailing services can help keep your car
-                looking like new.
-              </p>
+              <h2 className="md:px-4 py-4 text-start">
+                Exterior Detailing in {city}
+              </h2>
+              <p className="text-sm lg:text-base md:pl-5">{texts.exterior}</p>
             </span>
           </div>
           <div className="flex flex-col-reverse md:flex-row mt-10">
             <span className="md:w-1/2 flex flex-col justify-center">
-              <h2 className="py-4 text-start">Interior Detailing</h2>
-              <p className="text-sm lg:text-base md:pr-5">
-                From crumbs and spills to dirt and grime, car interiors can
-                quickly become a mess. That's why we're dedicated to providing
-                top-notch interior detailing services that will leave your car
-                looking and feeling like new. Our team of experts will
-                thoroughly clean every inch of your interior, paying special
-                attention to those hard-to-reach areas. We'll use specialized
-                tools and equipment, such as steamers and extractors, to remove
-                even the toughest stains and odors. And, with our premium
-                cleaning products, you can trust that your car's interior will
-                be protected and preserved. Don't let a dirty interior ruin your
-                driving experience - let us help you get back to enjoying the
-                road.
-              </p>
+              <h2 className="py-4 text-start">Interior Detailing in {city}</h2>
+              <p className="text-sm lg:text-base md:pr-5">{texts.interior}</p>
             </span>
             <span className="md:w-1/2">
               <img
@@ -90,7 +78,7 @@ const MobileDetailing = () => {
       </section>
       <section className="w-[90%] md:w-[80%] mx-auto mt-24">
         <h2 className="py-4 text-center">Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
           {mobileDetailingServices.map((item, index) => (
             <ServiceItem key={index} props={item} />
           ))}

@@ -8,6 +8,7 @@ import {
 } from "../utils/constants";
 
 const Card = ({
+  title,
   service,
   image,
   alt,
@@ -22,6 +23,13 @@ const Card = ({
 }) => {
   return (
     <div className={`mb-10 pb-5 mx-auto text-black rounded-md shadow-md `}>
+      {title && (
+        <div className="text-center ">
+          <h3 className="text-2xl text-center p-2 my-2 font-poppins text-black">
+            {title.toUpperCase()}
+          </h3>
+        </div>
+      )}
       {description && (
         <div className=" w-full pb-6 sm:pb-6 text-sm md:text-base">
           <p>{description}</p>
@@ -120,7 +128,7 @@ const Card = ({
             )}
             {exteriorServices && (
               <div className="flex flex-col w-full max-w-xl px-4">
-                <p className="font-semibold ml-3" >This package includes:</p>
+                <p className="font-semibold">This package includes:</p>
                 <ul>
                   {!singleService && (
                     <span className="font-semibold">For the exterior:</span>
@@ -177,7 +185,7 @@ const Card = ({
                 {exteriorServices ? (
                   ""
                 ) : (
-                  <p className="font-semibold ml-3">This package includes:</p>
+                  <p className="font-semibold ">This package includes:</p>
                 )}
                 <ul className="">
                   {!singleService && (
@@ -198,11 +206,11 @@ const Card = ({
                 </ul>
               </div>
             )}
-            <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4">
+            <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4 whitespace-pre-line">
               {service.type !== "Ceramic Coating" &&
               service.type !== "Paint Correction"
-                ? "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include pet hair/sand, staining, excessive messes, etc."
-                : "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include excessive bug, tar, tree sap etc."}
+                ? "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include pet hair/sand, staining, excessive messes, etc. \n**Location beyond our free 20-mile service range may be subject to additional charges."
+                : "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include excessive bug, tar, tree sap etc. \n**Location beyond our free 20-mile service range may be subject to additional charges."}
             </div>
           </div>
           <div className="mb-3">

@@ -25,8 +25,8 @@ const ReviewItem = ({ name, content, rating }) => {
             </span>
             <p className="text-sm font-medium pl-1">{name}</p>
           </div>
-          <div>
-            <G className="w-5 h-5" />
+          <div className="flex items-center">
+            <G className="w-8 h-8"/>
           </div>
         </div>
         <div>

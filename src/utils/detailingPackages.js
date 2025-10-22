@@ -131,7 +131,7 @@ export const ultimateExterior = {
 };
 
 export const threeYearsceramicCoating = {
-  title: "3 Year Ceramic Coating",
+  title: "3-Year Ceramic Coating",
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
@@ -147,20 +147,20 @@ export const threeYearsceramicCoating = {
     { text: "• Headlights and taillights coated" },
   ],
   additional: [
-    { text: "For a best results add Paint Correction with up to $200 off" },
+    { text: "For a best results we recommend to add Paint Correction with up to $200 off" },
   ],
   price: threeYearsCeramicCoatingPrices,
   carsSize: carTypes,
   link: THREE_YEARS_CERAMIC_PATH,
   bookingLink: THREE_YEARS_CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Exterior detailing, paint preparation, and 3 years ceramic coating application for long-lasting protection.`,
+  shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Exterior detailing, paint preparation, and 3-year ceramic coating application for long-lasting protection.`,
   description:
-    "Protect your vehicle’s finish with Spotless Auto Detailing’s 3 Year Ceramic Coating. This durable coating forms a glossy, water-repelling barrier that shields against UV rays, road grime, and everyday contaminants. It’s the perfect entry into long-term protection, keeping your car easier to clean and looking sharp year after year.",
+    "Protect your vehicle’s finish with Spotless Auto Detailing’s 3-Year Ceramic Coating. This durable coating forms a glossy, water-repelling barrier that shields against UV rays, road grime, and everyday contaminants. It’s the perfect entry into long-term protection, keeping your car easier to clean and looking sharp year after year.",
   duration: ["5 hours", "5 hours 30 mins", "6 hours"],
 };
 
 export const sixYearsCeramicCoating = {
-  title: "6 Year Ceramic Coating",
+  title: "6-Year Ceramic Coating",
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/1398-hero-what-is-ceramic-coating.avif",
@@ -176,19 +176,19 @@ export const sixYearsCeramicCoating = {
     { text: "• Headlights and taillights coated" },
   ],
   additional: [
-    { text: "For a best results add Paint Correction with up to $200 off" },
+    { text: "For a best results we recommend to add Paint Correction with up to $200 off" },
   ],
   price: sixYearsCeramicCoatingPrices,
   carsSize: carTypes,
   link: CERAMIC_COATING_PATH,
   bookingLink: SIX_YEARS_CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Enhanced hydrophobic, glossy, and durable protection for your vehicle paint. Includes: Exterior detailing, paint preparation, and 6 Year ceramic coating application for extended protection.`,
+  shortDescription: `Enhanced hydrophobic, glossy, and durable protection for your vehicle paint. Includes: Exterior detailing, paint preparation, and 6-Year ceramic coating application for extended protection.`,
   description:
     "Get long-lasting protection with Spotless Auto Detailing’s 6-Year Ceramic Coating. This advanced nano-ceramic layer creates a tough, glossy shield that bonds to your vehicle’s paint. It delivers strong hydrophobic properties while resisting UV rays, chemicals, and light scratches—keeping your car’s finish shining and protected for years to come.",
   duration: ["6 hours", "6 hours 30 mins", "7 hours"],
 };
 export const tenYearsCeramicCoating = {
-  title: "10 Years Ceramic Coating",
+  title: "10-Year Ceramic Coating",
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/What-If-It-Rains-After-Getting-A-Ceramic-Coating-Applied-Daylans-Mobile-Detailing-Sea-Girt-NJ-1.jpg.webp",
@@ -204,7 +204,7 @@ export const tenYearsCeramicCoating = {
     { text: "• Headlights and taillights coated" },
   ],
   additional: [
-    { text: "For a best results add Paint Correction with $150 off" },
+    { text: "For a best results we recommend to add Paint Correction with up to $200 off" },
   ],
   price: tenYearsCeramicCoatingPrices,
   carsSize: carTypes,
@@ -212,7 +212,7 @@ export const tenYearsCeramicCoating = {
   bookingLink: TEN_YEARS_CERAMIC_COATING_BOOKING_PATH,
   shortDescription: `Ultimate hydrophobic, mirror-like shine and maximum resistance for your vehicle paint. Includes: Exterior detailing, paint preparation, and 10+ years ceramic coating application with lifetime protection.`,
   description:
-    "Experience the ultimate in long-term protection with Spotless Auto Detailing’s 10 Year Ceramic Coating. This premium nano-ceramic shield is our most durable option, designed to bond permanently with your vehicle’s paint. It forms a rock-solid, hydrophobic barrier that resists scratches, UV damage, chemicals, and environmental contaminants—keeping your car’s finish deep, glossy, and protected for a decade",
+    "Experience the ultimate in long-term protection with Spotless Auto Detailing’s 10-Year Ceramic Coating. This premium nano-ceramic shield is our most durable option, designed to bond permanently with your vehicle’s paint. It forms a rock-solid, hydrophobic barrier that resists scratches, UV damage, chemicals, and environmental contaminants—keeping your car’s finish deep, glossy, and protected for a decade",
   duration: ["7 hours", "7 hours 30 mins", "8 hours"],
 };
 export const oneStepPaintCorrection = {
@@ -565,12 +565,12 @@ export const mobileDetailingServices = [
   ultimateInterior,
   steamAndShampoo,
   odorRemoval,
-  threeYearsceramicCoating,
-  sixYearsCeramicCoating,
-  tenYearsCeramicCoating,
-  paintEnchancement,
-  oneStepPaintCorrection,
-  twoStepPaintCorrection,
+  // threeYearsceramicCoating,
+  // sixYearsCeramicCoating,
+  // tenYearsCeramicCoating,
+  // paintEnchancement,
+  // oneStepPaintCorrection,
+  // twoStepPaintCorrection,
 ];
 
 export const mobileDetailingService = {

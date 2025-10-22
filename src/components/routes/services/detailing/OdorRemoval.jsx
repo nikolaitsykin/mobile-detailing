@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { BASE_URL, ODOR_REMOVAL_PATH } from "../../../../utils/constants";
 import { fullBusinessName } from "../../../../utils/data";
 import { odorRemoval } from "../../../../utils/detailingPackages";
@@ -10,21 +11,24 @@ import GoogleReview from "../../../GoogleReview";
 
 const OdorRemoval = () => {
   const city = localStorage.getItem("location");
-
   const service = odorRemoval;
-  const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + ODOR_REMOVAL_PATH);
-  const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + ODOR_REMOVAL_PATH);
 
   return (
     <div
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + ODOR_REMOVAL_PATH} />
+        <title>Car Odor Removal Raleigh NC | Fresh Interior Guaranteed</title>
+        <meta
+          name="description"
+          content="Eliminate tough odors with professional car odor removal in Raleigh NC. Fast, effective, and long-lasting freshness you’ll love."
+        />
+      </Helmet>
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          {service.title} {city ? `in ${city}` : ""}
+          Car Odor Removal Services {city ? `in ${city} NC` : ""}
         </h1>
       </div>
       <div className="mx-auto">

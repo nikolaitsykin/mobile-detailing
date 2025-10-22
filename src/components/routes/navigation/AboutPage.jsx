@@ -1,18 +1,25 @@
+import { Helmet } from "react-helmet-async";
 import { ABOUT_PATH, BASE_URL } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
-import { MetaTags } from "../../MetaTags";
 import BookButtons from "../../UI/BookButtons";
 
 const AboutPage = () => {
-  const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + ABOUT_PATH);
 
   return (
     <div id="about" className="w-full z-20 bg-white font-poppins">
-      <MetaTags city={"Raleigh"} />
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + ABOUT_PATH} />
+        <title>
+          About Spotless Auto Detailing Raleigh | Our Story
+        </title>
+        <meta
+          name="description"
+          content="Learn the story behind Spotless Auto Detailing Raleigh NC. Passionate experts delivering proven mobile detailing and ceramic coating results."
+        />
+      </Helmet>
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          About{" "}
+          About Spotless Auto Detailing in Raleigh{" "}
         </h1>
       </div>
       <section>

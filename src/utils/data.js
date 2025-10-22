@@ -76,6 +76,41 @@ export const businessHours = ["MON-SUN 8AM-8PM"];
 export const businessName = "Spotless";
 export const fullBusinessName = "Spotless Auto Detailing";
 
+export const mobileInteriorAndExteriorDetailingTexts = {
+  raleigh: {
+    exterior: `Regular cleaning is important to keep your vehicle's exterior looking its best, but occasionally it needs a deeper clean to remove contaminants and imperfections. Without it, your car's paint job can become dull and marred by scrapes, swirls, and chemical etching, while the hot sun can cause damage and fading. Our exterior auto detailing services can help keep your car looking like new.`,
+    interior: `From crumbs and spills to dirt and grime, car interiors can quickly become a mess. That's why we're dedicated to providing top-notch interior detailing services that will leave your car looking and feeling like new. Our team of experts will thoroughly clean every inch of your interior, paying special attention to those hard-to-reach areas. We'll use specialized tools and equipment, such as steamers and extractors, to remove even the toughest stains and odors. And, with our premium cleaning products, you can trust that your car's interior will be protected and preserved. Don't let a dirty interior ruin your driving experience - let us help you get back to enjoying the road.`
+  },
+  apex: {
+    exterior: `Keeping your car’s exterior clean is important, but sometimes it needs more than a wash. Road grime, swirls, and sun fading can dull the paint. Our Apex exterior detailing services safely remove built-up contaminants and restore shine, helping your car look like new again.`,
+    interior: `Everyday driving takes a toll on your interior — crumbs, stains, and dust build up fast. Our Apex interior detailing team gives your cabin a full refresh using steam, extraction, and premium products to eliminate stains and odors, even in hard-to-reach spots. The result: a cleaner, fresher ride that feels brand new.`
+  },
+  cary: {
+    exterior: `A basic wash only goes so far. Over time, scratches, etching, and fading from the sun affect your paint. That’s why our Cary exterior detailing services include deep decontamination and restoration, giving your vehicle back its original gloss and protection.`,
+    interior: `From kids to commutes, interiors in Cary vehicles get messy quickly. We deep clean every surface, from carpets to vents, using advanced tools that lift out dirt and odors. With our care, your interior doesn’t just look clean — it’s protected and comfortable again.`
+  },
+  garner: {
+    exterior: `Vehicles in Garner face plenty of sun and road wear. Our exterior detailing service removes imperfections like swirls and chemical etching that dull your finish. We restore your paint’s clarity and give it lasting protection, so it stays sharp mile after mile.`,
+    interior: `Your car’s cabin should feel welcoming, not messy. Our Garner interior detailing team focuses on a full reset — steaming, extracting, and treating surfaces so stains, odors, and dirt are gone. Every detail is handled to give you that “like new” feeling.`
+  },
+  hollysprings: {
+    exterior: `Weather and daily driving take a toll on your paint in Holly Springs. Regular washes can’t always stop scratches or fading. Our exterior detailing service uses proven methods to decontaminate, polish, and protect, bringing back the depth and gloss of your paintwork.`,
+    interior: `Busy schedules mean interiors often get neglected. We specialize in restoring Holly Springs interiors with professional steam cleaning, stain removal, and odor treatment. From dashboards to floor mats, we refresh every inch so you enjoy stepping into your vehicle again.`
+  },
+  knightdale: {
+    exterior: `Knightdale drivers know the sun and road conditions can quickly wear down a car’s finish. Our exterior detailing service goes beyond washing — we remove contaminants, fix minor defects, and revive your paint, so it keeps that showroom-level look longer.`,
+    interior: `Food crumbs, pet hair, and daily use all add up inside your car. Our Knightdale interior detailing process is designed to clean deeply, protect surfaces, and leave your vehicle smelling and feeling fresh. Even hard-to-reach spots are handled with care.`
+  },
+  morrisville: {
+    exterior: `In Morrisville, your car’s exterior faces constant exposure to the sun and road grime. Our detailing service eliminates paint imperfections and restores gloss. It’s the best way to prevent dullness and keep your vehicle’s finish looking sharp.`,
+    interior: `Our Morrisville interior detailing leaves nothing untouched. Using extractors, steam, and specialized cleaners, we remove dirt, odors, and stains while protecting surfaces. You’ll notice the difference immediately when your interior feels refreshed and well-kept.`
+  },
+  fuquayvarina: {
+    exterior: `Over time, even well-kept cars in Fuquay-Varina develop scratches, swirls, and fading. Our exterior detailing provides the deeper clean your paint needs, removing embedded contaminants and reviving shine so your vehicle stands out again.`,
+    interior: `Life happens — spills, dust, and pet messes can ruin your interior. Our Fuquay-Varina interior detailing service restores your cabin with professional cleaning tools and premium products, targeting every surface until your car looks and feels like new inside.`
+  }
+};
+
 export const testimonialItems = [
   {
     name: "Randy Brown",

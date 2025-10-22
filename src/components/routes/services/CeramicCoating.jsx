@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
   BASE_URL,
@@ -18,6 +19,18 @@ const CeramicCoating = () => {
 
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
+      <Helmet>
+        <link
+          rel="canonical"
+          href={BASE_URL + CERAMIC_COATING_PATH}
+        />
+        <title>Ceramic Coating Raleigh NC | Proven Paint Protection</title>
+        <meta
+          name="description"
+          content="Get long-lasting ceramic coating in Raleigh NC. Protect your vehicle’s paint with advanced technology for unmatched shine & durability."
+        />
+      </Helmet>
+
       <div className="w-full bg-black">
         {/* <div className="bg-black opacity-40 object-cover w-full mx-auto absolute"></div> */}
         <img
@@ -28,15 +41,14 @@ const CeramicCoating = () => {
       </div>
       <div className="w-full object-cover h-[450px] md:h-[600px] top-10 flex justify-center items-center absolute  ">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
-          <h1 className=" whitespace-pre-line uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Professional Ceramic
-            <br /> Coating in {city}
+          <h1 className="w-full md:w-2/3 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Professional Ceramic Coating Services in {city} NC
           </h1>
           <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Ceramic Coating offers unmatched durability, resisting swirls,
             scratches, UV rays, and dirt while delivering a stunning shine. With
             its heat resistance and hydrophobic properties, it keeps your car
-            cleaner, longer—no constant waxing needed.
+            cleaner, longer - no constant waxing needed.
           </h3>
         </div>
       </div>
@@ -202,12 +214,11 @@ const CeramicCoating = () => {
           </h2>
           {ceramicCoatingServices.map((service) => (
             <div key={service.title}>
-              <h3 className="text-center mx-auto my-5 max-w-5xl">
-                {service.title}
-              </h3>
+          <h3 className="text-2xl text-center p-2 my-2 font-poppins text-black">
+            {service.title.toUpperCase()}
+          </h3>
               <h5 className="mb-2">{service.shortDescription}</h5>
               <Card
-                title={service.title}
                 // type={service.type}
                 service={service}
                 services={service.services}

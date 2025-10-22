@@ -34,15 +34,15 @@ const Hero = ({ city }) => {
       </div>
       <div className="w-full object-cover h-[calc(75vh-0px)] sm:h-[calc(115vh-0px)] top-0 flex justify-center items-center absolute  ">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
-          {/* <h3 className="text-base sm:text-xl text-center font-light font-poppins p-1 sm:p-4">
-            Top-Tier Service in {city ? city : "Raleigh"}, NC
-          </h3> */}
+          <h3 className="w-full md:w-2/3 my-3 p-0 md:my-4 text-center text-sm sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Spotless Auto Detailing & Ceramic Coating
+          </h3>
           <h1 className="w-full md:w-2/3 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Spotless Auto Detailing & Ceramic Coating {city}
+            {city}’s #1 Mobile Car Detailing Service{" "}
           </h1>
-          <h3 className="w-full md:w-2/3 my-3 p-0 md:my-4 text-center text-sm sm:text-base md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <h3 className="w-full md:w-2/3 my-3 p-0 md:my-4 text-center text-sm sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Premium Mobile Car Detailing, Ceramic Coating & Paint Correction in{" "}
-            {city} and Nearby Areas.{" "}
+            {city} and Nearby Areas{" "}
           </h3>
           <div
             id="book_buttons"

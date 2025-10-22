@@ -1,19 +1,26 @@
+import { Helmet } from "react-helmet-async";
 import { BASE_URL, SERVICES_PATH } from "../../../utils/constants";
 import { businessName, fullBusinessName } from "../../../utils/data";
 import { sustainability } from "../../../utils/sustainability";
 import Services from "../../Services";
 
 const ServicesPage = () => {
-  const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + SERVICES_PATH);
-  const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + SERVICES_PATH);
-
   return (
     <div id="services" className="w-full z-20 bg-white font-poppins pb-10">
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + SERVICES_PATH} />
+        <title>
+          Auto Detailing Services Raleigh NC | Spotless Auto Detailing
+        </title>
+        <meta
+          name="description"
+          content="Explore full-service auto detailing in Raleigh NC. From ceramic coating to deep interior cleaning we deliver spotless results every time."
+        />
+      </Helmet>
+
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          Our Services{" "}
+          Professional Auto Detailing Services in Raleigh{" "}
         </h1>
       </div>
       <section className="w-[90%] md:w-[80%] mx-auto">

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Outlet } from "react-router-dom";
 import {
   BASE_URL,
@@ -10,12 +11,19 @@ import Booking from "../../Booking";
 import Card from "../../Card";
 
 const MobileInteriorDetailing = () => {
-  const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + MOBILE_INTERIOR_DETAILING_PATH);
   const city = localStorage.getItem("location");
 
   return (
     <div id="interior-detailing" className="w-full z-20 bg-white font-poppins">
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + MOBILE_INTERIOR_DETAILING_PATH} />
+        <title>Mobile Interior Car Detailing Raleigh NC | Deep Clean</title>
+        <meta
+          name="description"
+          content="Refresh your car’s interior with Raleigh NC’s trusted mobile detailing experts. Seats, carpets, and surfaces spotless at your location.."
+        />
+      </Helmet>
+
       <div className="w-full bg-black">
         <img
           loading="lazy"
@@ -24,10 +32,10 @@ const MobileInteriorDetailing = () => {
           alt="Auto detailing"
         />
       </div>
-      <div className="w-full object-cover h-[450px] md:h-[600px]  flex justify-center items-center absolute top-16 md:top-28">
-        <div className="w-[90%] flex flex-col justify-center text-white">
-          <h1 className=" text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Mobile Interior Detailing<br /> in {city}
+      <div className="w-full object-cover h-[450px] md:h-[600px] top-10 flex justify-center items-center absolute">
+        <div className="w-[90%] flex flex-col justify-center items-center text-white">
+          <h1 className="whitespace-pre-line w-1/2 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Mobile Interior Detailing in {city} NC
           </h1>
         </div>
       </div>
@@ -53,7 +61,6 @@ const MobileInteriorDetailing = () => {
         </article>
       </section>
       <section className="mx-auto">
-        <h2 id="interior-detailing">Interior Detailing Services</h2>
         {interiorDetailingServices.map((item, index) => (
           <Card
             key={index}

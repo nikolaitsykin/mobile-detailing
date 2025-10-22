@@ -50,7 +50,7 @@ const Booking = () => {
           ))}
         </ul>
       </article>
-      <div>
+      <div className="flex justify-center">
         <img
           loading="lazy"
           src="https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/car_spacing_spotless.avif"

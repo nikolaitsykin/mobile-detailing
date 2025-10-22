@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Outlet } from "react-router-dom";
 import {
   BASE_URL,
@@ -10,14 +11,22 @@ import Booking from "../../Booking";
 import Card from "../../Card";
 
 const MobileExteriorDetailing = () => {
-  const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + MOBILE_EXTERIOR_DETAILING_PATH);
   const city = localStorage.getItem("location");
-  const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + MOBILE_EXTERIOR_DETAILING_PATH);
 
   return (
     <div id="exterior-detailing" className="w-full z-20 bg-white font-poppins">
+      <Helmet>
+        <link
+          rel="canonical"
+          href={BASE_URL + MOBILE_EXTERIOR_DETAILING_PATH}
+        />
+        <title>Mobile Exterior Car Detailing Raleigh NC | Spotless Shine</title>
+        <meta
+          name="description"
+          content="Protect and restore your car’s paint with mobile exterior detailing in Raleigh NC. Wash, wax, and ceramic coating that lasts."
+        />
+      </Helmet>
+
       <div className="w-full bg-black">
         <img
           loading="lazy"
@@ -29,8 +38,7 @@ const MobileExteriorDetailing = () => {
       <div className="w-full object-cover h-[300px] md:h-[450px] flex justify-center items-center absolute top-16 md:top-28">
         <div className="w-[90%] flex flex-col justify-center text-white">
           <h1 className=" text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-            Mobile Exterior Detailing
-            <br /> in {city}
+            Mobile Exterior Car Detailing in {city}
           </h1>
         </div>
       </div>

@@ -13,8 +13,6 @@ import FaqItem from "../../FaqItem";
 import BookButtons from "../../UI/BookButtons";
 
 const FAQs = () => {
-  // const canonical = document.querySelector("link[rel=canonical]");
-  // canonical.setAttribute("href", BASE_URL + FAQS_PATH);
 
   return (
     <div id="faqs" className="w-full z-20 bg-white font-poppins">
@@ -23,7 +21,7 @@ const FAQs = () => {
         <title>Car Detailing FAQs Raleigh NC | Spotless Auto Detailing</title>
         <meta
           name="description"
-          content="Find answers to common questions about mobile car detailing, ceramic coating, and paint correction in Raleigh NC before you book with us. about booking, detailing services, pricing, and preparation for Spotless Auto Detailing."
+          content="Find answers to common questions about mobile car detailing, ceramic coating, and paint correction in Raleigh NC before you book with us."
         />
       </Helmet>
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">

@@ -119,6 +119,7 @@ const ContactForm = () => {
 
   useEffect(() => {
     if (status === "SUCCESS") {
+      console.log("SUCCESS");
       setError(false);
       setErrorMessage("");
       setTimeout(() => {
