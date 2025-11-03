@@ -206,7 +206,7 @@ const Card = ({
                 </ul>
               </div>
             )}
-            <div className="text-center sm:text-start text-sm md:text-base mt-2 p-4 whitespace-pre-line">
+            <div className="text-start text-sm md:text-base mt-2 p-4 whitespace-pre-line">
               {service.type !== "Ceramic Coating" &&
               service.type !== "Paint Correction"
                 ? "*Pricing may be subject to change based on the vehicles condition upon inspection at arrival. Additional services may be required. Examples include pet hair/sand, staining, excessive messes, etc. \n**Location beyond our free 20-mile service range may be subject to additional charges."

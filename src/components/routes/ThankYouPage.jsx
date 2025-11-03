@@ -69,7 +69,7 @@ const ThankYouPage = () => {
               Want a faster quote? Text us a couple of photos of your vehicle:
             </p>
             <p className="mt-2">
-              <a
+              <a 
                 href={CALL_NUMBER}
                 className="inline-flex items-center justify-center rounded-2xl border border-black/10 px-4 py-2 font-semibold underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-black/30"
               >
