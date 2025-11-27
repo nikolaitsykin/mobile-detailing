@@ -131,7 +131,7 @@ export const ultimateExterior = {
 };
 
 export const threeYearsceramicCoating = {
-  title: "3-Year Ceramic Coating",
+  title: "2-Year Ceramic Coating",
   type: "Ceramic Coating",
   image:
     "https://pub-47230ec8befa4d53953b33b120822d8f.r2.dev/AdobeStock_799868847.jpeg",
@@ -153,9 +153,9 @@ export const threeYearsceramicCoating = {
   carsSize: carTypes,
   link: THREE_YEARS_CERAMIC_PATH,
   bookingLink: THREE_YEARS_CERAMIC_COATING_BOOKING_PATH,
-  shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Exterior detailing, paint preparation, and 3-year ceramic coating application for long-lasting protection.`,
+  shortDescription: `Superior hydrophobic, shiny and resistant protection for your vehicle paint. Includes: Exterior detailing, paint preparation, and 2-year ceramic coating application for long-lasting protection.`,
   description:
-    "Protect your vehicle’s finish with Spotless Auto Detailing’s 3-Year Ceramic Coating. This durable coating forms a glossy, water-repelling barrier that shields against UV rays, road grime, and everyday contaminants. It’s the perfect entry into long-term protection, keeping your car easier to clean and looking sharp year after year.",
+    "Protect your vehicle’s finish with Spotless Auto Detailing’s 2-Year Ceramic Coating. This durable coating forms a glossy, water-repelling barrier that shields against UV rays, road grime, and everyday contaminants. It’s the perfect entry into long-term protection, keeping your car easier to clean and looking sharp year after year.",
   duration: ["5 hours", "5 hours 30 mins", "6 hours"],
 };
 

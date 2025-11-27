@@ -27,23 +27,23 @@ const Navbar = () => {
     <nav className="w-full text-white flex justify-between items-start">
       <div className="flex flex-row justify-start items-start">
         <div className="flex justify-start items-start ml-5 md:ml-8 h-10">
-          <div
+          <button
             onClick={closeMenu}
             className="flex md:hidden justify-center items-start active:scale-110 duration-300 pl-1 ml-2"
           >
             {isMenuOpen ? <Cross /> : <Menu />}
-          </div>
+          </button>
         </div>
         <ul
           className={`top-32 md:top-20  ${
             isMenuOpen ? "absolute" : "hidden"
           } flex md:flex md:static flex-col md:flex-row w-full items-start pt-0 bg-black md:bg-transparent h-72 md:h-10`}
         >
-          <Link to={SERVICES_PATH}>
-            <li
-              key={"service"}
-              className={`text-sm md:text-base flex jutify-end md:justify-center items-start`}
-            >
+          <li
+            key={"service"}
+            className={`text-sm md:text-base flex jutify-end md:justify-center items-start`}
+          >
+            <Link to={SERVICES_PATH}>
               <Dropdown
                 title={servicesLinks[0]}
                 closeMenu={closeMenu}
@@ -53,8 +53,8 @@ const Navbar = () => {
                     : `text-gray ${navLinkStyle}`
                 }
               />
-            </li>
-          </Link>
+            </Link>
+          </li>
           <div className="md:flex md:flex-row flex flex-col">
             {servicesLinks.slice(1).map((link, index) => (
               <li
