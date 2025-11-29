@@ -68,9 +68,11 @@ export const sustainability = [
 ];
 
 export const whatToExpect = [
-  "✔  We’ll come directly to your location—just provide access to water, power and a safe spot for our team to park.",
-  "✔  Hand over your keys, and when we’re done, you’ll pick up your car.",
-  "✔  You can pay on-site or wait for an invoice.",
-  "✔  While we aim to arrive on time, factors like weather or previous appointments can sometimes affect our schedule. If there’s a change, we’ll notify you as soon as possible—though it might occasionally be on the same day. We appreciate your understanding and flexibility! ",
-  "✔  See below for the amount of spacing we need in order to complete the mobile service. Please note that if we cannot perform the service, a reschedule/cancellation fee will apply. *Locations outside our 20-mile radius may incur an additional service fee.",
+  "✔  A $50 deposit is required for all detailing services and a $200 deposit for ceramic coating appointments. We also require a card on file to protect against no-shows and same-day cancellations.",
+  "✔  We’ll come directly to your location—just make sure there’s access to water, power, and a safe place for our team to park.",
+  "✔  Hand us your keys, and when we’re finished, you’ll be all set to pick up your car.",
+  "✔  You can pay on-site or wait for the invoice. We accept cash, cards, Apple Pay, Venmo, or Zelle.",
+  "✔  We do our best to arrive on time, but weather and previous appointments can occasionally affect our schedule. If anything changes, we’ll notify you as soon as possible—even if it’s sometimes the same day. We appreciate your understanding and flexibility!",
+  "✔  Below is the minimum space required for us to complete the mobile service. Please note that if we’re unable to perform the service due to space restrictions, a reschedule or cancellation fee will apply.",
+  "*Locations outside our 20-mile radius may incur an additional service fee.",
 ];
