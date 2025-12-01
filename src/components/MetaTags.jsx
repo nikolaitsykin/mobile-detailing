@@ -21,16 +21,16 @@ export const MetaTags = ({ city }) => (
     />
     <meta
       property="og:description"
-      content={`${city} ’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 190+ 5-star reviews. Book today.`}
+      content={`${city} ’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 200+ 5-star reviews. Book today.`}
     />
     <meta property="og:url" content={`${city}`} />
     <meta
       property="twitter:description"
-      content={`${city} ’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 190+ 5-star reviews. Book today.`}
+      content={`${city} ’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 200+ 5-star reviews. Book today.`}
     />
     <meta
       name="description"
-      content={`${city} ’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 190+ 5-star reviews. Book today.`}
+      content={`${city} ’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 200+ 5-star reviews. Book today.`}
     />
     <meta
       data-rh="true"

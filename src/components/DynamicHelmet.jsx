@@ -21,7 +21,7 @@ export default function DynamicHelmet({ currentCity }) {
       </title>
       <meta
         name="description"
-        content="Raleigh’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 190+ 5-star reviews. Book today."
+        content="Raleigh’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 200+ 5-star reviews. Book today."
       />
     </Helmet>
   );

@@ -28,7 +28,7 @@ const GoogleReview = () => {
               </div>
               <div className="flex items-center">
                 <span className="px-2 font-semibold text-center">
-                  190+ 5-star reviews
+                  200+ 5-star reviews
                 </span>
                 <span className="flex px-2">{stars}</span>
               </div>

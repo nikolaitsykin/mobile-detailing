@@ -15,7 +15,7 @@ const Root = () => {
         </title>
         <meta
           name="description"
-          content={`${currentCity}’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 190+ 5-star reviews. Book today.`}
+          content={`${currentCity}’s trusted mobile car detailing experts. Interior, exterior, ceramic coating & paint correction with 200+ 5-star reviews. Book today.`}
         />
       </Helmet>
       <div className="z-100">
