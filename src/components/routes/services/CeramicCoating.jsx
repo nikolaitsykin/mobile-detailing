@@ -30,7 +30,6 @@ const CeramicCoating = () => {
           content="Get long-lasting ceramic coating in Raleigh NC. Protect your vehicle’s paint with advanced technology for unmatched shine & durability."
         />
       </Helmet>
-
       <div className="w-full bg-black">
         {/* <div className="bg-black opacity-40 object-cover w-full mx-auto absolute"></div> */}
         <img
@@ -42,7 +41,7 @@ const CeramicCoating = () => {
       <div className="w-full object-cover h-[450px] md:h-[600px] top-10 flex justify-center items-center absolute  ">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
           <h1 className="w-full md:w-2/3 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Professional Ceramic Coating Services in {city} NC
+            Professional Ceramic Coating Services {city ? `in ${city} NC` : ""}
           </h1>
           <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Ceramic Coating offers unmatched durability, resisting swirls,

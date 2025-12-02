@@ -38,7 +38,7 @@ const Hero = ({ city }) => {
             Spotless Auto Detailing & Ceramic Coating
           </h3>
           <h1 className="w-full md:w-2/3 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            {city}’s #1 Mobile Car Detailing Service{" "}
+            Mobile Car Detailing Service {city} NC{" "}
           </h1>
           <h3 className="w-full md:w-2/3 my-3 p-0 md:my-4 text-center text-sm sm:text-base md:text-xl sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Premium Mobile Car Detailing, Ceramic Coating & Paint Correction in{" "}

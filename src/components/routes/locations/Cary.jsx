@@ -1,33 +1,32 @@
+import { Helmet } from "react-helmet";
 import { BASE_URL, CARY_PATH } from "../../../utils/constants";
 import About from "../../About";
 import ContactForm from "../../ContactForm";
 import Hero from "../../Hero";
-import { MetaTags } from "../../MetaTags";
 
 const Cary = () => {
   const city = "Cary";
   localStorage.setItem("location", city);
 
-  const currentCity = localStorage.getItem("location");
-
-  const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + CARY_PATH);
-  const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + CARY_PATH);
-  
-
   return (
     <main className="w-full bg-white">
-      <MetaTags city={currentCity} />
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + CARY_PATH} />
+        <title>Mobile Car Detailing Cary NC | Car Detailing Experts</title>
+        <meta
+          name="description"
+          content="Get professional mobile car detailing in Cary NC. Interior deep cleaning, paint correction, and ceramic coating for lasting shine."
+        />
+      </Helmet>
       <div className="z-100">
         <div>
-          <Hero city={currentCity} />
+          <Hero city={city} />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto bg-white">
           <ContactForm />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto bg-white">
-          <About city={currentCity} />
+          <About city={city} />
         </div>
       </div>
     </main>

@@ -1,8 +1,11 @@
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import {
   BASE_URL,
+  EXPRESS_FULL_DETAILING_PATH,
   ULTIMATE_FULL_DETAILING_PATH,
 } from "../../../../utils/constants";
-import { ultimateFullDetail } from "../../../../utils/detailingPackages";
+import { expressFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -10,23 +13,31 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../GoogleReview";
 
-const UltimateFullDetailing = () => {
+const ExpressFullDetailing = () => {
   const city = localStorage.getItem("location");
 
-  const service = ultimateFullDetail;
+  const service = expressFullDetail;
   const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + ULTIMATE_FULL_DETAILING_PATH);
+  canonical.setAttribute("href", BASE_URL + EXPRESS_FULL_DETAILING_PATH);
   const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + ULTIMATE_FULL_DETAILING_PATH);
+  ogUrl.setAttribute("content", BASE_URL + EXPRESS_FULL_DETAILING_PATH);
 
   return (
     <div
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + EXPRESS_FULL_DETAILING_PATH} />
+        <title>Express Full Car Detailing Raleigh NC | Spotless Auto</title>
+        <meta
+          name="description"
+          content="Quick interior and exterior refresh with express full car detailing in Raleigh NC. Professional cleaning made fast and simple."
+        />
+      </Helmet>
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          {service.title} {city ? `in ${city}` : ""}
+          Express Full Car Detailing {city ? `in ${city} NC` : ""}
         </h1>
       </div>
       <div className="mx-auto">
@@ -65,25 +76,39 @@ const UltimateFullDetailing = () => {
               feel less inviting.
               <br />
               <br />
-              Our Full Exterior package is all about quality. While we may not
-              be the cheapest option, we offer exceptional value for our price.
-              We don’t just "wash" your car—our detailing brings out a rich,
-              long-lasting shine using premium products and meticulous
-              attention, ensuring your car looks and feels its absolute best.
-              <br />
+              Our Full Exterior and Interior Detailing package is all about
+              quality. While we may not be the cheapest option, we offer
+              exceptional value for our price. We don’t just "wash" your car—our
+              detailing brings out a rich, long-lasting shine using premium
+              products and meticulous attention, ensuring your car looks and
+              feels its absolute best. <br />
               <br />
               Our skilled team handles it all, from dirt, grime, bird droppings,
               and bug stains on the exterior to dust, pet hair, and tough stains
               inside, leaving your car looking its absolute best.
               <br />
               <br />
+              If you’re ready to take your car’s shine to the next level, try
+              our{" "}
+              <Link
+                target={"_blank"}
+                className="underline text-blue font-semibold"
+                to={ULTIMATE_FULL_DETAILING_PATH}
+              >
+                Ultimate Full Detailing
+              </Link>{" "}
+              exterior service, which adds clay bar treatment, gloss enhancement
+              and ceramic coating application for up to 6 month of protection
+              for exterior services and full vacuuming, steam cleaning,
+              conditioning and UV protection to interior services. Book now for
+              an exterior car wash experience that truly stands out!
             </p>
           </div>
         </section>
         <div className=" w-[90%] md:w-[80%] mx-auto">
           <ContactForm />
         </div>
-        <div className="w-[90%] md:w-[80%] mx-auto">
+        <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
@@ -100,4 +125,4 @@ const UltimateFullDetailing = () => {
   );
 };
 
-export default UltimateFullDetailing;
+export default ExpressFullDetailing;

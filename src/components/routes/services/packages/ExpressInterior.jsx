@@ -1,10 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
   BASE_URL,
-  ULTIMATE_EXTERIOR_PATH,
-  ULTIMATE_FULL_DETAILING_PATH,
+  EXPRESS_INTERIOR_PATH,
+  ULTIMATE_INTERIOR_PATH,
 } from "../../../../utils/constants";
-import { ultimateExterior } from "../../../../utils/detailingPackages";
+import { fullBusinessName } from "../../../../utils/data";
+import { expressInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -12,23 +14,31 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../GoogleReview";
 
-const UltimateExterior = () => {
+const ExpressInterior = () => {
   const city = localStorage.getItem("location");
 
-  const service = ultimateExterior;
+  const service = expressInterior;
   const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + ULTIMATE_EXTERIOR_PATH);
+  canonical.setAttribute("href", BASE_URL + EXPRESS_INTERIOR_PATH);
   const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + ULTIMATE_EXTERIOR_PATH);
+  ogUrl.setAttribute("content", BASE_URL + EXPRESS_INTERIOR_PATH);
 
   return (
     <div
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + EXPRESS_INTERIOR_PATH} />
+        <title>Express Interior Car Detailing Raleigh NC | Fast Clean</title>
+        <meta
+          name="description"
+          content="Quick interior detailing in Raleigh NC. Seats, carpets, and surfaces spotless in minutes with our express detailing service."
+        />
+      </Helmet>
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          {service.title} {city ? `in ${city}` : ""}
+          Express Interior Car Detailing {city ? `in ${city} NC` : ""}
         </h1>
       </div>
       <div className="mx-auto">
@@ -41,10 +51,10 @@ const UltimateExterior = () => {
               // title={service.title}
               // type={service.type}
               service={service}
-              image={service.image}
-              description={service.description}
               services={service.services}
-              exteriorServices={service.exteriorServices}
+              description={service.description}
+              interiorServices={service.interiorServices}
+              image={service.image}
               singleService
               duration={service.duration}
               link={service.link}
@@ -53,39 +63,35 @@ const UltimateExterior = () => {
               suggestion={service.suggestion}
             />
           </article>
-        </section>
-        <section>
           <div className="text-sm md:text-base">
             <p>
-              Tired of scratches and swirls on your car, even after all those $5
-              car washes? Those drive-thru machines can actually harm your paint
-              instead of helping it. Our exterior car wash is a better choice,
-              giving your car the care it really needs.
+              Rejuvinate your car's interior with our Express Interior Detailing
+              Service! Our skilled technicians use premium eco-friendly
+              products, and proven techniques to clean every inch, eliminating
+              dust, dirt, and grime. Book today and enjoy a fresh, like-new feel
+              on every drive!
               <br />
               <br />
-              While we may not be the cheapest option, we offer top-notch
-              quality for our price. We don’t just “wash” your car—our exterior
-              detailing is designed to bring out a deep, lasting shine with
-              premium products and expert care.
+              With {fullBusinessName}’s Express Package, enjoy a thorough,
+              high-quality clean that keeps your car looking and smelling its
+              best. Reach out today for a pristine, refreshed interior that
+              enhances both your driving experience and your car’s value.
               <br />
               <br />
-              Our skilled team tackles everything from dirt and grime to bird
-              droppings and bug stains, leaving your car looking its best.
-              <br />
-              <br />
-              If you’re ready to take your car’s shine to the next level, try
+              If you’re dealing with more dust, dirt, pet hair, tough stains, or
+              extra mess, and want to keep your car looking its best, consider
               our{" "}
               <Link
                 target={"_blank"}
                 className="underline text-blue font-semibold"
-                to={ULTIMATE_FULL_DETAILING_PATH}
+                to={ULTIMATE_INTERIOR_PATH}
               >
-                Ultimate Full Detailing
+                Ultimate Interior
               </Link>{" "}
-              full detailing package, which adds deep interior vacuuming &
-              cleaning, steam treatment and UV & dust protection to your car's
-              interior. Book now for full detailing service experience that
-              truly stands out!
+              interior service, which adds thorough interior and trunk
+              vacuuming, steam cleaning, conditioning and UV protection to
+              interior surfaces. Book now for an detailing car cleaing
+              experience that truly stands out!
             </p>
           </div>
         </section>
@@ -109,4 +115,4 @@ const UltimateExterior = () => {
   );
 };
 
-export default UltimateExterior;
+export default ExpressInterior;

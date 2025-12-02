@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import {
   BASE_URL,
-  EXPRESS_INTERIOR_PATH,
-  ULTIMATE_INTERIOR_PATH,
+  ULTIMATE_FULL_DETAILING_PATH,
 } from "../../../../utils/constants";
-import { fullBusinessName } from "../../../../utils/data";
-import { expressInterior } from "../../../../utils/detailingPackages";
+import { ultimateFullDetail } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -13,23 +11,31 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../GoogleReview";
 
-const ExpressInterior = () => {
+const UltimateFullDetailing = () => {
   const city = localStorage.getItem("location");
 
-  const service = expressInterior;
+  const service = ultimateFullDetail;
   const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + EXPRESS_INTERIOR_PATH);
+  canonical.setAttribute("href", BASE_URL + ULTIMATE_FULL_DETAILING_PATH);
   const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + EXPRESS_INTERIOR_PATH);
+  ogUrl.setAttribute("content", BASE_URL + ULTIMATE_FULL_DETAILING_PATH);
 
   return (
     <div
       id="exterior-detailing"
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + ULTIMATE_FULL_DETAILING_PATH} />
+        <title>Ultimate Full Car Detailing Raleigh NC | Spotless Shine</title>
+        <meta
+          name="description"
+          content="Experience complete transformation with our ultimate full car detailing in Raleigh NC. Interior, exterior, and ceramic protection included."
+        />
+      </Helmet>
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          {service.title} {city ? `in ${city}` : ""}
+          Ultimate Full Car Detailing {city ? `in ${city} NC` : ""}
         </h1>
       </div>
       <div className="mx-auto">
@@ -44,6 +50,7 @@ const ExpressInterior = () => {
               service={service}
               services={service.services}
               description={service.description}
+              exteriorServices={service.exteriorServices}
               interiorServices={service.interiorServices}
               image={service.image}
               singleService
@@ -54,50 +61,46 @@ const ExpressInterior = () => {
               suggestion={service.suggestion}
             />
           </article>
+        </section>
+        <section>
           <div className="text-sm md:text-base">
             <p>
-              Rejuvinate your car's interior with our Express Interior Detailing
-              Service! Our skilled technicians use premium eco-friendly
-              products, and proven techniques to clean every inch, eliminating
-              dust, dirt, and grime. Book today and enjoy a fresh, like-new feel
-              on every drive!
+              Tired of scratches and swirls on your car, even after all those $5
+              car washes? Those drive-thru machines can actually harm your paint
+              instead of helping it. Struggling with dirt, stains, and lingering
+              odors inside your car? Quick vacuuming or basic cleaning often
+              misses the details that matter most. Over time, spills, crumbs,
+              pet hair, and daily wear can build up, making your car’s interior
+              feel less inviting.
               <br />
               <br />
-              With {fullBusinessName}’s Express Package, enjoy a thorough,
-              high-quality clean that keeps your car looking and smelling its
-              best. Reach out today for a pristine, refreshed interior that
-              enhances both your driving experience and your car’s value.
+              Our Full Exterior package is all about quality. While we may not
+              be the cheapest option, we offer exceptional value for our price.
+              We don’t just "wash" your car—our detailing brings out a rich,
+              long-lasting shine using premium products and meticulous
+              attention, ensuring your car looks and feels its absolute best.
               <br />
               <br />
-              If you’re dealing with more dust, dirt, pet hair, tough stains, or
-              extra mess, and want to keep your car looking its best, consider
-              our{" "}
-              <Link
-                target={"_blank"}
-                className="underline text-blue font-semibold"
-                to={ULTIMATE_INTERIOR_PATH}
-              >
-                Ultimate Interior
-              </Link>{" "}
-              interior service, which adds thorough interior and trunk
-              vacuuming, steam cleaning, conditioning and UV protection to
-              interior surfaces. Book now for an detailing car cleaing
-              experience that truly stands out!
+              Our skilled team handles it all, from dirt, grime, bird droppings,
+              and bug stains on the exterior to dust, pet hair, and tough stains
+              inside, leaving your car looking its absolute best.
+              <br />
+              <br />
             </p>
           </div>
         </section>
         <div className=" w-[90%] md:w-[80%] mx-auto">
           <ContactForm />
         </div>
-        <div className=" w-[90%] md:w-[80%] mx-auto">
+        <div className="w-[90%] md:w-[80%] mx-auto">
           <GoogleReview />
         </div>
         <div className="pt-10 w-[90%] md:w-[80%] mx-auto">
           <Gallery />
         </div>
         <section className="w-[90%] md:w-[80%] mx-auto pb-10">
-          <h2>{service.type.split(" ")[0]} Addons</h2>
-          <Addons type={service.type} />
+          <h2>Addons</h2>
+          <Addons full />
         </section>
         <div id="booking" className="scroll-mb-[750px]"></div>
         <Booking />
@@ -106,4 +109,4 @@ const ExpressInterior = () => {
   );
 };
 
-export default ExpressInterior;
+export default UltimateFullDetailing;

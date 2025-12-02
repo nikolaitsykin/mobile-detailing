@@ -1,8 +1,8 @@
+import { Helmet } from "react-helmet-async";
 import { BASE_URL, GARNER_PATH } from "../../../utils/constants";
 import About from "../../About";
 import ContactForm from "../../ContactForm";
 import Hero from "../../Hero";
-import { MetaTags } from "../../MetaTags";
 
 const Garner = () => {
   const city = "Garner";
@@ -18,7 +18,14 @@ const Garner = () => {
 
   return (
     <main className="w-full bg-white">
-      <MetaTags city={currentCity} />
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + GARNER_PATH} />
+        <title>`Mobile Car Detailing ${city} NC | Car Detailing Experts`</title>
+        <meta
+          name="description"
+          content="Experience premium mobile car detailing in Garner NC. Interior and exterior detailing, odor removal, and ceramic coating you can trust."
+        />
+      </Helmet>
       <div className="z-100">
         <div>
           <Hero city={currentCity} />

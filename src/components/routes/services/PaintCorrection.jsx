@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
   BASE_URL,
@@ -18,6 +19,17 @@ const PaintCorrection = () => {
 
   return (
     <div id="mobile-detailing" className="w-full z-20 bg-white font-poppins">
+      <Helmet>
+        <link
+          rel="canonical"
+          href={BASE_URL + PAINT_CORRECTION_PATH}
+        />
+        <title>Paint Correction Raleigh NC | Professional Polishing & Scratch Removal</title>
+        <meta
+          name="description"
+          content="Restore your vehicle’s shine with professional paint correction in Raleigh NC. Remove swirls, scratches, and imperfections with expert polishing."
+        />
+      </Helmet>
       <div className="w-full bg-black">
         <div className="bg-black opacity-40 object-cover c w-full mx-auto absolute"></div>
         <img
@@ -29,8 +41,7 @@ const PaintCorrection = () => {
       <div className="w-full object-cover h-[450px] md:h-[600px] top-20 flex justify-center items-center absolute  ">
         <div className="w-[90%] flex flex-col justify-center items-center text-white">
           <h1 className="whitespace-pre-line w-3/4 uppercase text-2xl md:text-5xl font-bold text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Professional Paint
-            <br /> Correction {city ? "in " + city : ""}
+            Professional Paint Correction {city ? "in " + city : ""}
           </h1>
           <h3 className="md:w-3/4 my-2 p-0 md:my-4 text-center text-xs sm:text-sm md:text-lg sm:mt-5 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             Protect and Enhance: Premium Car Paint Correction near you. We

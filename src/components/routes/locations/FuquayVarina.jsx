@@ -1,34 +1,32 @@
+import { Helmet } from "react-helmet-async";
 import { BASE_URL, FUQUAY_VARINA_PATH } from "../../../utils/constants";
 import About from "../../About";
 import ContactForm from "../../ContactForm";
 import Hero from "../../Hero";
-import { MetaTags } from "../../MetaTags";
 
 const FuquayVarina = () => {
   const city = "Fuquay Varina";
-
-  localStorage.setItem("location", city);
-
-  const currentCity = localStorage.getItem("location");
-
-  const canonical = document.querySelector("link[rel=canonical]");
-  canonical.setAttribute("href", BASE_URL + FUQUAY_VARINA_PATH);
-  const ogUrl = document.querySelector('meta[property="og:url"]');
-  ogUrl.setAttribute("content", BASE_URL + FUQUAY_VARINA_PATH);
-  
+  localStorage.setItem("location", city);  
 
   return (
     <main className="w-full bg-white">
-      <MetaTags city={currentCity} />
+      <Helmet>
+        <link rel="canonical" href={BASE_URL + FUQUAY_VARINA_PATH} />
+        <title>`Mobile Car Detailing ${city} NC | Car Detailing Experts`</title>
+        <meta
+          name="description"
+          content="Fuquay Varina NC mobile car detailing services. Interior deep cleaning, exterior detailing, and ceramic coating brought to you."
+        />
+      </Helmet>
       <div className="z-100">
         <div>
-          <Hero city={currentCity} />
+          <Hero city={city} />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto bg-white">
           <ContactForm />
         </div>
         <div className="w-[90%] md:w-[80%] mx-auto bg-white">
-          <About city={currentCity} />
+          <About city={city} />
         </div>
       </div>
     </main>

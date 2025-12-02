@@ -2,10 +2,11 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
   BASE_URL,
-  EXPRESS_EXTERIOR_PATH,
-  ULTIMATE_EXTERIOR_PATH,
+  ULTIMATE_FULL_DETAILING_PATH,
+  ULTIMATE_INTERIOR_PATH,
 } from "../../../../utils/constants";
-import { expressExterior } from "../../../../utils/detailingPackages";
+import { fullBusinessName } from "../../../../utils/data";
+import { ultimateInterior } from "../../../../utils/detailingPackages";
 import Addons from "../../../Addons";
 import Booking from "../../../Booking";
 import Card from "../../../Card";
@@ -13,9 +14,14 @@ import ContactForm from "../../../ContactForm";
 import Gallery from "../../../Gallery";
 import GoogleReview from "../../../GoogleReview";
 
-const ExpressExterior = () => {
+const UltimateInterior = () => {
   const city = localStorage.getItem("location");
-  const service = expressExterior;
+
+  const service = ultimateInterior;
+  const canonical = document.querySelector("link[rel=canonical]");
+  canonical.setAttribute("href", BASE_URL + ULTIMATE_INTERIOR_PATH);
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  ogUrl.setAttribute("content", BASE_URL + ULTIMATE_FULL_DETAILING_PATH);
 
   return (
     <div
@@ -23,16 +29,16 @@ const ExpressExterior = () => {
       className=" z-20 bg-white font-poppins w-full mx-auto"
     >
       <Helmet>
-        <link rel="canonical" href={BASE_URL + EXPRESS_EXTERIOR_PATH} />
-        <title>Express Exterior Car Detailing Raleigh NC | Quick Shine</title>
+        <link rel="canonical" href={BASE_URL + ULTIMATE_INTERIOR_PATH} />
+        <title>Ultimate Interior Car Detailing Raleigh NC | Deep Clean</title>
         <meta
           name="description"
-          content="Get your car shining fast with express exterior detailing in Raleigh NC. Professional wash, wax, and polish in record time."
+          content="Deep clean your interior with our ultimate detailing service in Raleigh NC. Remove stains, odors, and dirt for a like-new feel."
         />
       </Helmet>
       <div className="w-full bg-black h-[250px] md:h-[450px] flex justify-center items-center mx-auto text-white top-20">
         <h1 className="text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mt-28">
-          Express Exterior Car Detailing {city ? `in ${city}` : ""}
+          Ultimate Interior Car Detailing {city ? `in ${city} NC` : ""}
         </h1>
       </div>
       <div className="mx-auto">
@@ -47,7 +53,7 @@ const ExpressExterior = () => {
               service={service}
               services={service.services}
               description={service.description}
-              exteriorServices={service.exteriorServices}
+              interiorServices={service.interiorServices}
               image={service.image}
               singleService
               duration={service.duration}
@@ -61,35 +67,33 @@ const ExpressExterior = () => {
         <section>
           <div className="text-sm md:text-base">
             <p>
-              Tired of scratches and swirls on your car, even after all those $5
-              car washes? Those drive-thru machines can actually harm your paint
-              instead of helping it. Our exterior car wash is a better choice,
-              giving your car the care it really needs.
+              Rejuvinate your car's interior with our Ultimate Interior
+              Detailing Service! Our skilled technicians use premium
+              eco-friendly products, and proven techniques to clean every inch,
+              eliminating dust, dirt, and grime. Book today and enjoy a fresh,
+              like-new feel on every drive!
               <br />
               <br />
-              While we may not be the cheapest option, we offer top-notch
-              quality for our price. We don’t just “wash” your car—our exterior
-              detailing is designed to bring out a deep, lasting shine with
-              premium products and expert care.
+              With {fullBusinessName}’s Ultimate Package, enjoy a thorough,
+              high-quality clean that keeps your car looking and smelling its
+              best. Reach out today for a pristine, refreshed interior that
+              enhances both your driving experience and your car’s value.
               <br />
               <br />
-              Our skilled team tackles everything from dirt and grime to bird
-              droppings and bug stains, leaving your car looking its best.
-              <br />
-              <br />
-              If you’re ready to take your car’s shine to the next level, try
+              If you’re dealing with more dust, dirt, pet hair, tough stains, or
+              extra mess, and want to keep your car looking its best, consider
               our{" "}
               <Link
                 target={"_blank"}
                 className="underline text-blue font-semibold"
-                to={ULTIMATE_EXTERIOR_PATH}
+                to={ULTIMATE_FULL_DETAILING_PATH}
               >
-                Ultimate Exterior
+                Ultimate Full Detailing
               </Link>{" "}
-              exterior service, which adds clay bar treatment, gloss enhancement
-              and ceramic sealant application for up to 6 month of protection
-              for an unbeatable finish. Book now for an exterior car detailing
-              experience that truly stands out!
+              Full Detailing Package, which adds thorough exterior wash, wheels
+              & wheel wells cleaning, black exterior plastics restoration, clay
+              bar treatment and protective wax application. Book now for full
+              detailing service experience that truly stands out!
             </p>
           </div>
         </section>
@@ -113,4 +117,4 @@ const ExpressExterior = () => {
   );
 };
 
-export default ExpressExterior;
+export default UltimateInterior;

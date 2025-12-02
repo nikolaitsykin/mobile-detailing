@@ -22,7 +22,7 @@ const Card = ({
   interiorServices,
 }) => {
   return (
-    <div className={`mb-10 pb-5 mx-auto text-black rounded-md shadow-md `}>
+    <div className={`mb-10 p-3 mx-auto text-black rounded-md shadow-md `}>
       {title && (
         <div className="text-center ">
           <h3 className="text-2xl text-center p-2 my-2 font-poppins text-black">
