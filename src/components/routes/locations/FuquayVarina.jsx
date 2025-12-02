@@ -5,7 +5,7 @@ import ContactForm from "../../ContactForm";
 import Hero from "../../Hero";
 
 const FuquayVarina = () => {
-  const city = "Fuquay Varina";
+  const city = "Fuquay\u2011Varina";
   localStorage.setItem("location", city);  
 
   return (
